@@ -59,6 +59,22 @@ label groceryShopping:
     asgore "I'm sorry Papyrus, real monster hair doesn't work like humans'"
     papyrus "THANKS AGAIN SIR"
     asgore "A pleasure"
+    if resets < 3 and resets > 1:
+        asgore "..."
+        show papyrusImg worried flip at fade
+        papyrus "?!"
+        asgore "Uh, nothing... bye Papyrus"
+    elif resets < 5 and resets > 3:
+        asgore "You know"
+        asgore "You suddenly remind me of... someone"
+        papyrus "IT'S THEIR NAME W.D. GASTER?"
+        asgore "Not sure"
+    elif resets > 5:
+        asgore ".."
+        papyrus "IT´S THERE SOMETHING YOU WANT TO TELL ME?"
+        asgore "Not exactly"
+        asgore "I'm fine"
+    papyrus "STAY WELL YOUR MAJESTY"
     jump morningGo
 
 label torielSchool:
