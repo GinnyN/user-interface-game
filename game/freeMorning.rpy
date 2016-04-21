@@ -44,7 +44,21 @@ label groceryShopping:
     papyrus "YOU NEVER KNOW WHAT CAN YOU GET WITH A NEW HAIRSTYLE"
     asgore "I will personally not worry about it"
     asgore "Especially when you don't have any hair"
-    papyrus "YOUR MAJESTY!"     
+    papyrus "YOUR MAJESTY!"
+    papyrus "I´M PRETTY SURE I CAN USE SOME EXTENSIONS"
+    papyrus "LACK OF HAIR HAS NEVER BEEN A PROBLEM FOR ME"
+    papyrus "WE SKELETONS ARE SMART!"
+    asgore "There´s no way I can stop you, do I?"
+    papyrus "OF COURSE NOT"
+    asgore "I guess I´d better help then"
+    asgore "Take some of my beard"
+    papyrus "REALLY SIR??"
+    papyrus "THANKS YOU!"
+    "*Asgore gives Papyrus some of his hair, but inmediatly becomes ashes when he recieve it"
+    papyrus "AHHHHWWWW...."
+    asgore "I'm sorry Papyrus, real monster hair doesn't work like humans'"
+    papyrus "THANKS AGAIN SIR"
+    asgore "A pleasure"
     jump morningGo
 
 label torielSchool:
