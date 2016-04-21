@@ -1,0 +1,138 @@
+label freeMorning:
+    
+    papyrus "LOOKIE THAT!"
+    papyrus "I HAVE FREE THE MORNING!"
+    papyrus "WHAT SHALL I DO?"
+
+    menu:
+        "Go help Toriel at the School" if not helpedToriel:
+            papyrus "LET'S SEE IF TORIEL HAVE SOMETHING TO DO!"
+            papyrus "THEY ARE STILL MOVING THINGS FROM THE UNDERGROUND AFTER ALL"
+            $ helpedToriel = True
+            jump torielSchool
+
+        "Go grocery shopping" if not metAsgore:
+            papyrus "I'LL BETTER GO TO GET SOME GROCERIES"
+            papyrus "MAYBE I CAN FIND SOME DISCOUNTS ON THE SPIDER BAKERY"
+            papyrus "EVERYTHING IS ALWAYS SO EXPENSIVE"
+            $ metAsgore = True
+            jump groceryShopping
+
+label groceryShopping:
+    papyrus "YES, EVERYTHING IS SO EXPENSIVE"
+    papyrus "I THOUGHT YOU GUYS HAVE ALREADY MOVE ALL OF YOU FROM THE RUINS"
+    muffet "It's called offer and demand deary"
+    muffet "Monsters buy at this price anyways"
+    papyrus "YES, MONSTERS LIKE ME"
+    "Papyrus pays Muffet for the bread and some donuts"
+    asgore "Excuse me, Do you have some spider muffins?"
+    papyrus "YOUR MAJESTY!"
+    asgore "Oh, howdy!"
+    papyrus "WHAT ARE YOU DOING HERE?!"
+    asgore "Buying some spider bread, like you do"
+    asgore "I like grocery shopping"
+    asgore "It help me to stay connected with everybody"
+    papyrus "IF YOU SAY SO"
+    asgore "Your head in the school yard got a severe case of bad eyebrows"
+    asgore "I need to fix it before the afternoon or else"
+    papyrus "MAYBE I NEED SOME EYEBROWS"
+    papyrus "HOW I WILL LOOK WITH SOME EYEBROWS?"
+    papyrus "INTERESTING I THINK"
+    asgore "You are as great as you can be the way you are"
+    papyrus "YES, I KNOW THAT"
+    papyrus "I JUST THINK ON TRYING A NEW STYLE ONCE IN A WHILE"
+    papyrus "YOU NEVER KNOW WHAT CAN YOU GET WITH A NEW HAIRSTYLE"
+    asgore "I will personally not worry about it"
+    asgore "Especially when you don't have any hair"
+    papyrus "YOUR MAJESTY!"     
+    jump morningGo
+
+label torielSchool:
+    toriel "Papyrus!"
+    papyrus "I CAME TO SEE IF YOU NEED HELP ON SOMETHING!"
+    toriel "I don't know if I have something for you today Papyrus"
+    toriel "The kids are running around the forest now"
+    toriel "Maybe you can help us with the parts of the laboratory"
+    papyrus "FROM THE LAB?"
+    papyrus "MAYBE YOU SHOULD CALL SANS INSTEAD"
+    papyrus "HE LOVES SCIENCE AFTER ALL!"
+    toriel "It's just moving things around"
+    toriel "Alphys is sorting the aparatus right now"
+    toriel "She needs some muscle"
+    toriel "And Undyne is with the kids right now"
+    papyrus "BUT I DON'T HAVE A MUSCLE"
+    toriel "..."
+    toriel "Oh!"
+    toriel "Don't worry, your bones are going to be a perfect replacement"
+    papyrus "REALLY?!"
+    papyrus "THEN THE GREAT PAPYRUS IS GOING TO HELP"
+    papyrus "DOOOOCCCCTOOOOOORRRRR ALLLLLLLPHHYYYYYYSSSSSS!!!!!!"
+    toriel "I'll better go to check as well"
+
+##School Basement
+
+    alphys "Yet another of this papers"
+    alphys "I know that giant goat head is a determination extractor"
+    alphys "But why it was built in the first place..."
+    alphys "Why I never made that question before?"
+    papyrus "DOCTOR ALPHYS!"
+    alphys "Papyrus!"
+    alphys "We already did our training this week!"
+    papyrus "TORIEL TOLD ME YOU NEED HELP WITH MOVING AROUND SOME MACHINES"
+    alphys "Oh"
+    alphys "That"
+    alphys "THAT"
+    alphys "Ok..."
+    toriel "What do you have there Alphys?"
+    alphys "This?"
+    alphys "It's nothing"
+    alphys "It just some files with weird symbols"
+    papyrus "WEIRD? DOESN'T LOOK WEIRD TO ME?"
+    alphys "What are you talking about, Papyrus?"
+    "Papyrus reads from the notes"
+    papyrus "{font=fonts/NewAster.ttf} Today I was supposed to make an annoucement to the king. {/font}"
+    papyrus "{font=fonts/NewAster.ttf} But my assistant decided it was prank day or something. {/font}"
+    papyrus "SOUNDS LIKE SANS TO ME, NYEHEHEH"
+    alphys "You can read that?!"
+    papyrus "IT'S JUST AN ACCENT"
+    toriel "Like yours and Sans'?"
+    papyrus "I GUESS?"
+    alphys "I just this week I found tons and tons of papers with those symbols, everywhere!"
+    alphys "And it's weird, because it's the first time I pay attention to them somehow"
+    toriel "Maybe you just forgot!"
+    alphys "That's kind of the only solution I have..."
+    alphys "But how I'm going to forget piles of papers with..."
+    alphys "symbols..."
+    papyrus "LETTERS ARE SYMBOLS"
+    alphys "You know what I'm talking about"
+    papyrus "I'M NOT??"
+    toriel "It's ok Alphys, you can sort this next week"
+    toriel "Then we'll ask Papyrus and maybe Sans to help you out with those papers"
+    alphys "I guess you right"
+    "Toriel and Alphys leaves"
+    papyrus "MMMMMM..."
+    "Papyrus read the note again"
+    papyrus "{font=fonts/NewAster.ttf} I decided that maybe he feels alone. {/font}"
+    papyrus "{font=fonts/NewAster.ttf} Maybe, he needs some company.{/font}"
+    papyrus "{font=fonts/NewAster.ttf} I shall make him a brother, maybe.{/font}"
+    papyrus "?!"
+    papyrus "{font=fonts/NewAster.ttf} I'll analyse that in the morning.{/font}"
+    papyrus "I THINK I JUST READ QUITE ENOUGH"
+
+    if resets > 1 and not papersPapyrusCreation:
+        papyrus "..."
+        papyrus "{font=fonts/NewAster.ttf} I spoke to Sans about that idea this morning.{/font}"
+        papyrus "I KNEW IT"
+        papyrus "{font=fonts/NewAster.ttf} He seems stoked. I can hardly blame him.{/font}"
+        papyrus "{font=fonts/NewAster.ttf} I never had a brother myself, and staying always with an old skeleton like me is not something a young lad must look forward everyday.{/font}" 
+        papyrus "{font=fonts/NewAster.ttf} I also asked if he had a good name for him.{/font}"
+        papyrus "{font=fonts/NewAster.ttf} He asks me why. I forgot I never told him.{/font}"
+        papyrus "{font=fonts/NewAster.ttf} But after explain to him, I think he got a great name.{/font}"
+        papyrus "..."
+        papyrus "I NEED TO TALK ABOUT THIS WITH SANS"
+        papyrus "BUT WHEN?"
+        $ papersPapyrusCreation = True
+    
+label morningGo:
+    if fromDay == 3:
+        jump forest
