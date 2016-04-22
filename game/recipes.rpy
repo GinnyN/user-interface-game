@@ -22,12 +22,17 @@ define papyrusTraining = 0
 define doors = False
 define idea = False
 define torielKnows = False
+define asgoreKnows = False
 define pen = False
 define penAtAlphys = False
 define penAtSans = False
 define program = False
 define papersPapyrusCreation = False
 
+#Gaster's Dialogue Tree
+gasterPapyrusSansDad = False
+
+#Free Mornings
 define helpedToriel = False
 define metAsgore = False
 define visitSans = False
