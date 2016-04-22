@@ -180,6 +180,7 @@ label groceryShopping:
         papyrus "IT´S THERE SOMETHING YOU WANT TO TELL ME?"
         asgore "Not exactly"
         asgore "I'm fine"
+        $ asgoreKnows = True
     papyrus "STAY WELL YOUR MAJESTY"
     jump morningGo
 
