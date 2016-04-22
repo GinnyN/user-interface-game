@@ -20,8 +20,6 @@ label freeMorning:
             
         "Go check Sans" if not visitSans:
             papyrus "MAYBE I SHOULD CHECK WHAT SANS IS DOING"
-            papyrus "HE'S GETTING BETTER THANKS TO MISS TORIEL"
-            papyrus "BUT HE'S STILL SLACKING OFF WAY TOO OFTEN!"
             $ visitSans = True
             jump checkSans
 
@@ -58,7 +56,35 @@ label checkSans:
         papyrus "BUT THIS IS NOT DONE YET!"
         papyrus "HOMEWORK GRABING ATTACK!!!"
         "CHOMP!"
+        sans "uh?"
+        papyrus "TALK SANS!"
+        sans "but... i´m too sleepy right... now..."
+        sans "zzzzZZZZzzzz"
+        papyrus "GREAT, THE SPECIAL ABILITY OF MY BROTHER"
+        papyrus "SLEEPING EVERYWHERE AND EVERY MOMENT"
+        papyrus "I WILL NOT GET ANSWERS FROM HIM"
+        papyrus "I GUESS I HAVE TO ASK GASTER"
+        sans "gaster?"
+        papyrus "NOW WE'RE TALKING!"
+        papyrus "EXPLAIN"
+        sans "...."
+        sans "w. d. gaster is our dad"
+        papyrus "HE NEVER TOLD ME THAT"
+        sans "he doesn't like the term, because he created us in regeneration tubes"
+        sans "those probable are notes from he decided to create either of us"
+        papyrus "BUT WHY NOBODY ELSE REMEMBER HIM?"
+        sans "you shouldn´t remember him, only me"
+        sans "how do you remember him?"
+        papyrus "GOTTA GO BYE"
+        "*Papyrus leaves*"
+        sans "i will never catch him"
+        sans "but how he knows anything about gaster?"
+        sans "something weird is happening"
+        $ gasterPapyrusSansDad = True
     else:
+        papyrus "HE'S GETTING BETTER THANKS TO TORIEL"
+        papyrus "BUT HE'S STILL SLACKING OFF WAY TOO OFTEN!"
+        "*change scene*"
         papyrus "SANS IS NO WHERE TO BE FOUND"
         papyrus "HE'S LUCKY THERE'S NO MONSTERS WANTING TO GO TO HIGH SNOWDIN"
         papyrus "BUT HE SHOULD BE HERE!"
