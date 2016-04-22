@@ -30,7 +30,7 @@ define program = False
 define papersPapyrusCreation = False
 
 #Gaster's Dialogue Tree
-gasterPapyrusSansDad = False
+define gasterPapyrusSansDad = False
 
 #Free Mornings
 define helpedToriel = False
