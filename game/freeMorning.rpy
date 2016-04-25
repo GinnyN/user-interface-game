@@ -36,7 +36,69 @@ label freeMorning:
             papyrus "BUT SHOULD BE INTERESTING!"
             $ visitAlphys = True
             jump visitAlphys
+        
+        "Go check how Frisk is doing" if not visitFrisk:
+            papyrus "FRISK IS NOT GOING TO SCHOOL"
+            papyrus "POOR HUMAN IS RESTING AFTER EVERYTHING JUST HAPPENED"
+            papyrus "MAYBE WE CAN DO THAT TOGETHER!"
+            $ visitFrisk = True
+            jump visitFrisk
             
+label visitFrisk
+    papyrus "LOOK WHO'S THERE!"
+    papyrus "IT'S THE GREAT PAPYRUS WHO'S VISITING YOU!"
+    frisk "*smiles*"
+    frisk "*i wanted to talk with you*"
+    papyrus "ABOUT WHAT?"
+    frisk "*it's a hunch i have*"
+    papyrus "OH, THEN MUST BE IMPORTANT!"
+    frisk "*have you feel something is deciding for you things?*"
+    if resets < 0:
+        papyrus "NO, NOT REALLY"
+        frisk "..."
+        papyrus "DON'T FEEL BAD!"
+        papyrus "LET'S GO TO THE SPIDER BAKERY TO GET SOME POWER BRACELETS!"
+        frisk ".."
+        papyrus "YES, RIGHT, I FORGOT"
+        papyrus "I'LL BRING THEM TO YOU THEN!"
+        "WHOOOOSSSHHHHHH"
+        papyrus "BACK!"
+        papyrus "TAKE SOME GREAT BRECELETS!"
+        frisk "..."
+        papyrus "THOSE CAME BACK?"
+        frisk "..."
+        papyrus "THAT'RE REALLY COOL BRACELETS!"
+        papyrus "..."
+        frisk "..."
+        papyrus "ISN'T IT WEIRD?"
+        frisk "?!"
+        papyrus "WE'RE ALL OUT"
+        papyrus "I KNEW PEOPLE WHO LOST HOPE"
+        papyrus "AND PEOPLE WHO DIED STILL HOPING"
+        papyrus "BUT SOMEHOW, WE'RE OUT"
+        papyrus "THANKS TO YOU"
+        frisk "*pats Papyrus*"
+        papyrus "I ONLY KNEW IF I HAD 1% OF POWER ON GET IN US OUT, I WILL USE IT"
+        papyrus "BUT I STILL DON'T KNOW IF I HAD SOMETHING TO DO ON THIS"
+        frisk "??"
+        papyrus "YEAH"
+        papyrus "IT'S A WEIRD THING TO ASK"
+        papyrus "SOMETIMES I FEEL POWERLESS OVER THINGS"
+        papyrus "BUT AFTER THAT I FORGET ABOUT IT"
+        papyrus "I DO WHAT I CAN, WITH THE AMOUNT OF POWER I HAVE"
+        papyrus "I GUESS THAT'S THE IMPORTANT PART"
+        frisk "..."
+        frisk "sometimes, I feel i have none"
+        papyrus "YES, ME TOO"
+        papyrus "BUT NOT ALL THE TIME"
+        frisk "now"
+        papyrus "OH FRISK!"
+        papyrus "YOU ARE MY FAVORITE HUMAN, ALWAYS REMEMBER THAT!"
+        papyrus "AND CHOOSED THAT WITH MY OWN WILL!"
+        "HUGS"
+        
+    jump morningGo
+         
 label visitAlphys:
     papyrus "DR ALPHYS!"
     alphys "Papyrus!"
@@ -107,7 +169,7 @@ label visitAlphys:
     alphys "A singleton?" 
     papyrus "AN OBJECT WHICH HAVE A SINGLE INSTANCE DURING RUN"
     alphys "And Script Oriented Programming?"
-    papyrus "A SMALL PROGRAM WHICH RUNS ONCE AND THEN CLOSE"
+    papyrus "A SMALL PROGRAM WHICH RUNS ON SEQUENCIAL ORDER"
     alphys "And a stack?"
     papyrus "A DATA STRUCTURE OF OBJECTS IN WHICH CAN ONLY ACCESS THE LAST ONE AT A TIME"
     alphys "Papyrus"
@@ -118,6 +180,7 @@ label visitAlphys:
     papyrus "I KNOW"
     papyrus "I KNOW..."
     $ papyrusKnowsProgramming = True
+    jump morningGo
 
 label visitUndyne:
     papyrus "UNDYNE!"
