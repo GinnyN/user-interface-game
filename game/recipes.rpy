@@ -28,15 +28,18 @@ define penAtAlphys = False
 define penAtSans = False
 define program = False
 define papersPapyrusCreation = False
+define readStats = False
 
 #Gaster's Dialogue Tree
 define gasterPapyrusSansDad = False
+define papyrusKnowsProgramming = False
 
 #Free Mornings
 define helpedToriel = False
 define metAsgore = False
 define visitSans = False
 define visitUndyne = False
+define visitAlphys = False
 
 #Define Day Alternatives
 define day2 = False
