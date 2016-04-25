@@ -36,6 +36,7 @@ define gasterPapyrusSansDad = False
 define helpedToriel = False
 define metAsgore = False
 define visitSans = False
+define visitUndyne = False
 
 #Define Day Alternatives
 define day2 = False
