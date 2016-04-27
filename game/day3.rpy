@@ -58,8 +58,55 @@ label forest:
     menu:
         "Help them out":
             jump helpthemout
-        #"Let's them go alone":
-        #    jump megalovaniaSuit
+        "Let's them go alone":
+            jump leaveThemAlone
+
+label leaveThemAlone:
+    "Monster 1" "* Let´s move"
+    papyrus "HOPEFULLY THOSE TWO ARE GOING TO BE OK"
+    papyrus "SNIFF, SNIFF.."
+    papyrus "LET'S FOLLOW THE SCENT"
+    "Papyrus follow the scent until he found an abandoned castle"
+    papyrus "ANOTHER OF THIS HUMAN BUILDINGS"
+    papyrus "I'D BETTER TELL UNDYNE AND THE KING"
+    asgore "This must be one of the buildings of the monster during the war"
+    asgore "The humans must have found it and restore it"
+    papyrus "WOWIE"
+    papyrus "A PIECE OF MONSTERS' HISTORY!"
+    undyne "Let's better check inside before any human appears"
+    undyne "For their own sake"
+    papyrus "HEEEEYYYY!!!! KIDNAPPEEEEERRRRRRSSSSSS!!!"
+    undyne "Stop doing that Papyrus!"
+    papyrus "I'M SORRY"
+    asgore "Calm down everyone"
+    asgore "Let's keep moving"
+    papyrus "UH?"
+    papyrus "WHAT'S THAT?"
+    papyrus "HEY! YOU!"
+    "Human Kid" "* AAAHHGGG"
+    "Human Kid" "* A MONSTER!"
+    papyrus "YES, A MONSTER!"
+    papyrus "WHO CAME TO SAVE YOU FROM THE EVIL..."
+    "Human Kid" "* Monsters?"
+    papyrus "COME AGAIN?"
+    "Human Kid" "* A black one, kind of furry with horns"
+    papyrus "..."
+    papyrus "COME ON HUMAN, I'LL TAKE YOU OUT OF HERE"
+    "Human Kid" "* But... my brother..."
+    papyrus "IS HE HERE?"
+    "Human Kid" "* I don't know"
+    papyrus "I'LL LEAVE YOU WITH A GOOD FRIEND OF MINE"
+    papyrus "SHE LOVES KIDS"
+    papyrus "I'LL SEARCH FOR YOUR BROTHER AFTER THAT"
+    
+    alphys "Toriel is not here! She's with Sans at the humans'"
+    papyrus "YOU RIGHT!"
+    papyrus "THEN WE'LL HAVE TO TAKE CARE OF THE HUMAN"
+    metatton "Sorry I'm asking, but did you tell Undyne and the King about this?"
+    papyrus "OOOPPPSSS"
+    papyrus "I'D BETTER BE GOING!"
+    frisk "Don't worry, you'll be fine"
+    frisk "They are my friends"
 
 label helpthemout:
     papyrus "NOW I THINK ABOUT IT"
