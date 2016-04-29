@@ -107,6 +107,28 @@ label leaveThemAlone:
     papyrus "I'D BETTER BE GOING!"
     frisk "Don't worry, you'll be fine"
     frisk "They are my friends"
+    
+    papyrus "UNDYNE!"
+    papyrus "YOUR MAJESTY!"
+    papyrus "WHERE'S EVERYBODY?"
+    "Monster 1" "ARGH!"
+    "Monster 2" "The Skeleton!"
+    papyrus "HEY YOU!"
+    
+    $ time = resets + papyrusTraining
+    $ timer_range = resets + papyrusTraining
+    $ timer_jump = 'papyrusAttackAsgore'
+
+    if time > 1:
+        show screen countdown
+
+        menu:
+            "Try to convince them peacefully":
+                hide screen countdown
+                jump papyrusSuckerPunch
+
+    else:
+        jump papyrusAttackAsgore
 
 label helpthemout:
     papyrus "NOW I THINK ABOUT IT"
@@ -187,7 +209,7 @@ label papyrusAttackAsgore:
 
 label backNewerHome:
     "Back to Newer Home, Sans and Toriel are formally dressed just back from the meeting with the human autorities"
-    sans "what just happened"
+    sans "what just happened?"
     sans "we were at the middle of an meeting"
     toriel "Hopefully they are already captured the humans"
     undyne "Not really"
