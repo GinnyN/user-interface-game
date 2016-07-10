@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/freeMorning.rpy", line 8: expected menuitem
-    if !helpedToriel:
-    ^
+File "game/day3.rpy", line 142: end of line expected.
+    "Monster 1" "NO, YOU ARE THE ONE WHO DON'T GET IT"!
+                                                      ^
 
 Ren'Py Version: Ren'Py 6.99.8.959

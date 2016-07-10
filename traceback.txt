@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/freeMorning.rpy", line 27, in script
-    if papersPapyrusCreation == true:
-  File "game/freeMorning.rpy", line 27, in <module>
-    if papersPapyrusCreation == true:
-NameError: name 'true' is not defined
+  File "game/day4.rpy", line 10, in script
+    if whoRescueMauricio:
+  File "game/day4.rpy", line 10, in <module>
+    if whoRescueMauricio:
+NameError: name 'whoRescueMauricio' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/freeMorning.rpy", line 27, in script
-    if papersPapyrusCreation == true:
+  File "game/day4.rpy", line 10, in script
+    if whoRescueMauricio:
   File "/Users/xcontreras/Downloads/renpy-6.99.8-sdk/renpy/ast.py", line 1647, in execute
     if renpy.python.py_eval(condition):
   File "/Users/xcontreras/Downloads/renpy-6.99.8-sdk/renpy/python.py", line 1490, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "/Users/xcontreras/Downloads/renpy-6.99.8-sdk/renpy/python.py", line 1485, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/freeMorning.rpy", line 27, in <module>
-    if papersPapyrusCreation == true:
-NameError: name 'true' is not defined
+  File "game/day4.rpy", line 10, in <module>
+    if whoRescueMauricio:
+NameError: name 'whoRescueMauricio' is not defined
 
 Darwin-15.3.0-x86_64-i386-64bit
 Ren'Py 6.99.8.959

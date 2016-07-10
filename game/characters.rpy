@@ -1,7 +1,7 @@
 # Declare characters used by this game.
 define papyrus = Character("Papyrus", color="#0000FF", what_prefix="{font=fonts/Papyrus.ttf} ", what_suffix="{/font}")
 define frisk = Character("Frisk", color="#FF0000", what_prefix="* ", what_suffix=" *")
-define sans = Character("Sans", color="#0000FF", what_prefix="{font=fonts/Comic Sans MS.ttf}* ", what_suffix=".{/font}")
+define sans = Character("Sans", color="#0000FF", what_prefix="*{font=fonts/Comic Sans MS.ttf} ", what_suffix=".{/font}")
 define gaster = Character("W.D. Gaster", color="#0000FF", what_prefix="{font=fonts/NewAster.ttf} ", what_suffix=".{/font}")
 define undyne = Character("Undyne", color="#00FF00", what_prefix="* ")
 define toriel = Character("Toriel", color="#FF0000", what_prefix="* ")

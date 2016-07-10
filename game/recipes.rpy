@@ -30,6 +30,9 @@ define program = False
 define papersPapyrusCreation = False
 define readStats = False
 
+#Flag variables which have to be reset
+define whoRescueMauricio = False
+
 #Gaster's Dialogue Tree
 define gasterPapyrusSansDad = False
 define papyrusKnowsProgramming = False
@@ -40,6 +43,7 @@ define metAsgore = False
 define visitSans = False
 define visitUndyne = False
 define visitAlphys = False
+define visitFrisk = False
 
 #Define Day Alternatives
 define day2 = False

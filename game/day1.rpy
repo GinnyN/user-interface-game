@@ -205,7 +205,6 @@ label outside:
         xalign 0.9 yalign 1.0
     undyne "There you are Frisk!"
     show undyneImg frisk hug zorder 2 at fade
-    frisk "..."
     undyne "We will make sure this humans will learn their lesson!"
     undyne "We were so worried about you!"
     show sansImg surprised flip zorder 3 at fade:
@@ -287,11 +286,9 @@ label reunionRoomDay1:
     toriel "But at least they would have a trial"
     toriel "They are humans, like Frisk"
     toriel "Sadly"
-    show friskImg papyrus at fade
-    frisk ""
+    frisk "But where`s Papyrus?"
     show torielImg pajamas worried surprised zorder 1 at fade
     toriel "Yes, that's right!"
-    show friskImg worried at fade
     show torielImg pajamas worried at fade
     toriel "Where's he?"
     show sansImg hoddie worried flip zorder 3 at fade:
@@ -305,7 +302,6 @@ label reunionRoomDay1:
     show undyneImg troll flip at fade
     toriel "Tell him I want to talk with him"
     sans "are you sure?"
-    show torielImg pajamas strong at fade
     toriel "Alone"
     sans "k then"
     hide sansImg
@@ -315,7 +311,7 @@ label reunionRoomDay1:
     hide alphysImg
     show friskImg ilu flip zorder 3 at fade:
         xalign 1.0 yalign 1.0
-    frisk ""
+    frisk "Good luck"
     hide friskImg
     show undyneImg bored flip at fade
     undyne "I still don't see the problem"

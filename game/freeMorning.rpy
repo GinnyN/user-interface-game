@@ -44,7 +44,7 @@ label freeMorning:
             $ visitFrisk = True
             jump visitFrisk
             
-label visitFrisk
+label visitFrisk:
     papyrus "LOOK WHO'S THERE!"
     papyrus "IT'S THE GREAT PAPYRUS WHO'S VISITING YOU!"
     frisk "*smiles*"
@@ -53,7 +53,7 @@ label visitFrisk
     frisk "*it's a hunch i have*"
     papyrus "OH, THEN MUST BE IMPORTANT!"
     frisk "*have you feel something is deciding for you things?*"
-    if resets < 0:
+    if resets < 1:
         papyrus "NO, NOT REALLY"
         frisk "..."
         papyrus "DON'T FEEL BAD!"
@@ -78,7 +78,7 @@ label visitFrisk
         papyrus "BUT SOMEHOW, WE'RE OUT"
         papyrus "THANKS TO YOU"
         frisk "*pats Papyrus*"
-        papyrus "I ONLY KNEW IF I HAD 1% OF POWER ON GET IN US OUT, I WILL USE IT"
+        papyrus "I ONLY KNEW IF I HAD 1%% OF POWER ON GET IN US OUT, I WILL USE IT"
         papyrus "BUT I STILL DON'T KNOW IF I HAD SOMETHING TO DO ON THIS"
         frisk "??"
         papyrus "YEAH"
@@ -480,7 +480,7 @@ label torielSchool:
     papyrus "{font=fonts/NewAster.ttf} i'll analyse that in the morning.{/font}"
     papyrus "I THINK I JUST READ QUITE ENOUGH"
 
-    if resets > 1 and not papersPapyrusCreation:
+    if resets > 2 and not papersPapyrusCreation:
         papyrus "..."
         papyrus "{font=fonts/NewAster.ttf} i spoke to Sans about that idea this morning.{/font}"
         papyrus "I KNEW IT"
