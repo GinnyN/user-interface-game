@@ -124,7 +124,7 @@ label day4:
         papyrus "OF COURSE!"
         papyrus "DR ALPHYS IS THE SMARTEST MONSTER OF NEWER HOME"
         papyrus "I´M PRETTY SURE SHE COULD MADE IT WHILE WATCHING THE LAST EPISODE OF KISSY CUTIE MEW MEW"
-        papyrus "AND ONE HAND TIED TO HER BACK"
+        papyrus "AND HAVING ONE HAND TIED TO HER BACK"
         gaster "i don't know what are you talking about, but i trust you"
         gaster "MOVE POST HASTE! SO WE SHALL END THIS NIGHTMARE ONCE AND FOR ALL!"
         papyrus "YES SIR!"
@@ -136,7 +136,12 @@ label day4:
         $ pendrive = True
     
     if resets == 0:
-
-
+        papyrus "I HAVE THIS TINGLING SENSATION THAT THEY WILL NOT ALLOW ME TO JOIN WHATEVER THEY WANT TO DO TODAY"
+        papyrus "EVEN IF I WAS RIGHT YESTERDAY, THEY HAVE A POINT"
+        papyrus "A REALLY SMALL POINT, BUT STILL"
+        papyrus "..."
+        papyrus "SOMETIMES I WONDER IF THEY HAVE MEETINGS WHICH I DON'T GET INVITED..."
+        papyrus "OR THE INVITATION WAS LOST IN THE MAIL???"
+        papyrus "I ALWAYS SEEM TO MISS SOME CRUCIAL INFORMATION OR SOMETHING"
 
 return
