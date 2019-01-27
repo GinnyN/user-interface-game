@@ -45,8 +45,6 @@ image papyrusImg coolDude sorry flip = im.Flip("papyrus/coolDude/sorry.png", hor
 image papyrusImg coolDude grandiose = "papyrus/coolDude/grandiose.png"
 image papyrusImg coolDude grandiose flip = im.Flip("papyrus/coolDude/grandiose.png",horizontal=True)
 
-
-
 #Sans
 #Puffy Jacket
 image sansImg flustered = "sans/flustered.png"
@@ -60,6 +58,10 @@ image sansImg serious looking up = "sans/seriousLookingUp.png"
 #Hoddie
 image sansImg hoddie worried = "sans/hoddie/worried.png"
 image sansImg hoddie worried flip = im.Flip("sans/hoddie/worried.png", horizontal=True)
+image sansImg hoddie content = im.FactorScale("sans/hoddie/content.png",0.8)
+image sansImg hoddie content flip = im.Flip(im.FactorScale("sans/hoddie/content.png",0.8), horizontal=True)
+image sansImg hoddie surprised = im.FactorScale("sans/hoddie/surprised.png",0.8)
+image sansImg hoddie surprised flip = im.Flip(im.FactorScale("sans/hoddie/surprised.png",0.8), horizontal=True)
 
 #Undyne
 #Black Shirt

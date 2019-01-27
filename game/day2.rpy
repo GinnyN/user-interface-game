@@ -71,6 +71,7 @@ label schoolPapyrusRun:
     show undyneImg gym shy at fade
     extend "whatever is called now"
     show undyneImg gym frustrated at fade
+
     undyne "NOW GO!"
     hide undyneImg
     papyrus "..."
@@ -133,11 +134,15 @@ label grillsby:
     scene grillsbys inside with vpunch
     play sound "music/fx/thump.wav"
     pause(1)
+    show sansImg hoddie content flip at fade:
+        xpos 0.6 ypos 0.205
     if torielKnows:
         sans "but how toriel did.."
     else:
         sans "time to..."
+    show sansImg hoddie surprised flip at fade
     sans "papyrus?!"
+    hide sansImg
     show grillsby neutral flip zorder 3 at fade:
         xpos 0.1 ypos 0.2
     show dogamy surprised  flip zorder 2 at fade:
