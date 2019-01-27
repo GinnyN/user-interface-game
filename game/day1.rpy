@@ -199,7 +199,7 @@ label papyrusAngry:
     hide goon2
     hide goon3
 
-label outside:
+#label outside:
     scene day1 scene4 with dissolve
     show undyneImg frisk happy zorder 2 at fade:
         xalign 0.9 yalign 1.0
@@ -242,7 +242,7 @@ label outside:
     stop music fadeout 1
     hide papyrusImg
 
-label reunionRoomDay1:
+#label reunionRoomDay1:
     scene newerHome night with dissolve:
         xalign 0.3
         linear 5 xalign 0.8
@@ -337,11 +337,6 @@ label reunionRoomDay1:
     show torielImg pajamas embarrased at fade
     toriel "You don't have to call me that"
     show papyrusImg nervious flip at fade
-    papyrus "I'M JUST SO SORRY THAT I CALLED YOU ASGORE'S CLONE"
-    toriel "It's not your fault..."
-    toriel "You never heard of me before..."
-    toriel "And we are from the same species..."
-    toriel "And I think we're getting side tracked right now..."
 
     menu:
         "Toriel, I... I...":

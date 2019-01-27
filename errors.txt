@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/day3.rpy", line 142: end of line expected.
-    "Monster 1" "NO, YOU ARE THE ONE WHO DON'T GET IT"!
-                                                      ^
+File "game/day2.rpy", line 128: expected statement.
+    wait(0.5)
+             ^
 
-Ren'Py Version: Ren'Py 6.99.8.959
+Ren'Py Version: Ren'Py 6.99.12.2.2029

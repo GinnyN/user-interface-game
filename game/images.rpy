@@ -41,6 +41,11 @@ image papyrusImg coolDude screaming flip = im.Flip("papyrus/coolDude/screaming.p
 image papyrusImg coolDude speakless = "papyrus/coolDude/speakless.png"
 image papyrusImg coolDude speakless flip = im.Flip("papyrus/coolDude/speakless.png", horizontal=True)
 image papyrusImg coolDude sorry = "papyrus/coolDude/sorry.png"
+image papyrusImg coolDude sorry flip = im.Flip("papyrus/coolDude/sorry.png", horizontal=True)
+image papyrusImg coolDude grandiose = "papyrus/coolDude/grandiose.png"
+image papyrusImg coolDude grandiose flip = im.Flip("papyrus/coolDude/grandiose.png",horizontal=True)
+
+
 
 #Sans
 #Puffy Jacket
@@ -146,3 +151,23 @@ image goon3 = "randomgoon3.png"
 image goon1 flip = im.Flip("randomgoon1.png", horizontal=True)
 image goon2 flip = im.Flip("randomgoon2.png", horizontal=True)
 image goon3 flip = im.Flip("randomgoon3.png", horizontal=True)
+
+#Grillsby
+image grillsby neutral = im.FactorScale("grillsby.png",0.8)
+image grillsby neutral flip = im.Flip(im.FactorScale("grillsby.png",0.8), horizontal=True)
+
+#Dogamy
+image dogamy neutral = im.FactorScale("dog/dogamyNeutral.png",0.8)
+image dogamy neutral flip = im.Flip(im.FactorScale("dog/dogamyNeutral.png",0.8), horizontal=True)
+image dogamy surprised = im.FactorScale("dog/dogamySurprised.png",0.8)
+image dogamy surprised flip = im.Flip(im.FactorScale("dog/dogamySurprised.png",0.8), horizontal=True)
+image dogamy worried = im.FactorScale("dog/dogamyWorried.png", 0.8)
+image dogamy worried flip = im.Flip(im.FactorScale("dog/dogamyWorried.png", 0.8), horizontal=True)
+
+#Dogaressa
+image dogaressa neutral = im.FactorScale("dog/dogaressaNeutral.png", 0.8)
+image dogaressa neutral flip = im.Flip(im.FactorScale("dog/dogaressaNeutral.png", 0.8), horizontal=True)
+image dogaressa surprised = im.FactorScale("dog/dogaressaSurprised.png", 0.8)
+image dogaressa surprised flip = im.Flip(im.FactorScale("dog/dogaressaSurprised.png", 0.8), horizontal=True)
+image dogaressa worried = im.FactorScale("dog/dogaressaWorried.png", 0.8)
+image dogaressa worried flip = im.Flip(im.FactorScale("dog/dogaressaWorried.png", 0.8), horizontal=True)
