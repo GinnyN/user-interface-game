@@ -77,7 +77,8 @@ label schoolPapyrusRun:
     papyrus "..."
     hide papyrusImg
 
-label grillsby:
+# Grillsby
+
     scene black with dissolve
     play sound "music/fx/steps.wav"
     pause(1.0)
@@ -200,6 +201,7 @@ label school:
     sans "you don't feel ok with it"
     undyne "Despite I think those humans have it coming"
     show sansImg hoddie unsure flip
+    stop music
     sans "we need to find a way to solve this..."
     show undyneImg gym frustrated
     undyne "Before Papyrus does something REALLY crazy"
