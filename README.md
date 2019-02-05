@@ -1,3 +1,3 @@
-### USER INTERFACE ###
+# USER INTERFACE #
 
-# An Undertale Fan Visual Novel, developed by GinnyN #
+### An Undertale Fan Visual Novel, developed by GinnyN ###
