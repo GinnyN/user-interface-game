@@ -159,9 +159,9 @@ label school:
         linear 5 ypos -0.5
     pause(1.5)
     scene school gym with dissolve:
-        xpos -0.2
-        linear 5 xpos -0
-    pause(0.5)
+        xpos 0
+        linear 5 xpos -0.1
+    pause(0.8)
     show undyneImg gym happy at fade:
         xpos 0
     undyne "Today was a long one, those kids!"
