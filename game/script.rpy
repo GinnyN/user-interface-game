@@ -1,2 +1,2 @@
 label start:
-    jump grillsby
+    jump school

@@ -62,6 +62,12 @@ image sansImg hoddie content = im.FactorScale("sans/hoddie/content.png",0.8)
 image sansImg hoddie content flip = im.Flip(im.FactorScale("sans/hoddie/content.png",0.8), horizontal=True)
 image sansImg hoddie surprised = im.FactorScale("sans/hoddie/surprised.png",0.8)
 image sansImg hoddie surprised flip = im.Flip(im.FactorScale("sans/hoddie/surprised.png",0.8), horizontal=True)
+image sansImg hoddie angry = im.FactorScale("sans/hoddie/angry.png",0.8)
+image sansImg hoddie angry flip = im.Flip(im.FactorScale("sans/hoddie/angry.png",0.8), horizontal=True)
+image sansImg hoddie unsure = im.FactorScale("sans/hoddie/unsure.png",0.8)
+image sansImg hoddie unsure flip = im.Flip(im.FactorScale("sans/hoddie/unsure.png",0.8), horizontal=True)
+image sansImg hoddie annoyed = im.FactorScale("sans/hoddie/annoyed.png",0.8)
+image sansImg hoddie annoyed flip = im.Flip(im.FactorScale("sans/hoddie/annoyed.png",0.8), horizontal=True)
 
 #Undyne
 #Black Shirt
@@ -93,11 +99,13 @@ image undyneImg frisk surprised flip = im.Flip("undyne/frisk/surprised.png", hor
 image undyneImg frisk confused = "undyne/frisk/confused.png"
 image undyneImg frisk confused flip = im.Flip("undyne/frisk/confused.png", horizontal=True)
 #Gym Teacher
-image undyneImg gym sarcastic = "undyne/gym/sarcastic.png"
-image undyneImg gym bored = "undyne/gym/bored.png"
-image undyneImg gym yelling = "undyne/gym/yelling.png"
-image undyneImg gym frustrated = "undyne/gym/frustrated.png"
-image undyneImg gym shy = "undyne/gym/shy.png"
+image undyneImg gym sarcastic = im.FactorScale("undyne/gym/sarcastic.png", 0.75)
+image undyneImg gym bored = im.FactorScale("undyne/gym/bored.png", 0.75)
+image undyneImg gym yelling = im.FactorScale("undyne/gym/yelling.png", 0.75)
+image undyneImg gym frustrated = im.FactorScale("undyne/gym/frustrated.png", 0.75)
+image undyneImg gym shy = im.FactorScale("undyne/gym/shy.png", 0.75)
+image undyneImg gym happy = im.FactorScale("undyne/gym/happy.png", 0.75)
+image undyneImg gym mildSurprise = im.FactorScale("undyne/gym/mildsurprise.png", 0.75)
 
 #Toriel
 #Pajamas
