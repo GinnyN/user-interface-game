@@ -106,6 +106,7 @@ image undyneImg gym frustrated = im.FactorScale("undyne/gym/frustrated.png", 0.7
 image undyneImg gym shy = im.FactorScale("undyne/gym/shy.png", 0.75)
 image undyneImg gym happy = im.FactorScale("undyne/gym/happy.png", 0.75)
 image undyneImg gym mildSurprise = im.FactorScale("undyne/gym/mildsurprise.png", 0.75)
+image undyneImg gym mildSurprise flip = im.Flip(im.FactorScale("undyne/gym/mildsurprise.png", 0.75), horizontal=True)
 
 #Toriel
 #Pajamas
@@ -118,6 +119,8 @@ image torielImg pajamas embarrased = "toriel/pajamas/embarrased.png"
 image torielImg pajamas compasionate = "toriel/pajamas/compasionate.png"
 image torielImg pajamas happy = "toriel/pajamas/happy.png"
 image torielImg pajamas ejem = "toriel/pajamas/ejem.png"
+#Teacher
+image torielImg teacher angry ="toriel/teacher/angry.png"
 
 #Alphys
 #Pajamas

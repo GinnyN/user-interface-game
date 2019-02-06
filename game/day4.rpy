@@ -163,7 +163,7 @@ label day4:
         "* The mist become a lab with a computer and two giant tanks. Papyrus is really surprised *"
         papyrus "WOWIE..."
         papyrus "WHAT IS THIS?!"
-        "???" "{font=fonts/NewAster.ttf}PAPYRUS! MY DEAR BOY! YOU MADE IT!"{/font}"
+        "???" "{font=fonts/NewAster.ttf}PAPYRUS! MY DEAR BOY! YOU MADE IT!{/font}"
         papyrus "?!"
         "* The scene now points to Gaster, somewhat bigger, half melted, but still his eyes, mouth and cracks visible *"
         papyrus "AN ANALGAMATE?!"
@@ -203,7 +203,7 @@ label day4:
         gaster "WE EVEN WENT BACK TO WAR..."
         gaster "BUT EVENTUALLY I COULD FIGURE OUT A WAY TO OBTAIN DETERMINATION FROM BEYOND THE REALITY, WHERE EVERYTHING IS SHROUDED IN DARKNESS"
         papyrus "BEYOND..."
-        papyrus "REALITY?
+        papyrus "REALITY?"
         gaster "AT LEAST THAT WAS THE HYPOTESIS, SO WE TRIED OUT SEVERAL EXPERIMENTS"
         gaster "WE FORGOT THEM ALMOST IMMEDIATLY"
         gaster "UNTIL ONE OF MY ASSISTANTS DECIDED TO INJECT HIMSELF WITH DETERMINATION"
@@ -320,6 +320,22 @@ label cont2:
     gaster "I PUT THEM IN A PENDRIVE, RIGHT HERE"
     gaster "SINCE I TOUCHED IT, IT SHOULD SURVIVE TIME AND SPACE"
     gaster "WITH THIS INFORMATION, YOU SHOULD BE ABLE TO FORMULATE SOMETHING TO HELP ME"
+    papyrus "I'M GOING TO EXPLAIN THIS TO EVERYBODY"
+    papyrus "I HAVE LITTLE PROOF, BUT THE BLUPRINT MUST BE ENOUGH FOR THEM TO BELIEVE ME!"
+    gaster "MY DEAR PAPYRUS..."
+    gaster "IT'S THERE SOMETHING ELSE I MUST TELL YOU"
+    gaster "THE COMPUTER IS GOING TO SELF DESTRUCT TODAY"
+    gaster "AND THAT MEANS YOU WOULDN'T BE ABLE TO HELP ME WITHOUT ALL THIS DETERMINATION"
+    papyrus "HAVE YOU"
+    gaster "OF COURSE"
+    gaster "I WOULDN'T CALLED YOU BEFORE EVEN TRYING"
+    papyrus "THEN..."
+    papyrus "WHAT DO YOU SUGGEST"
+    gaster "RESET"
+    papyrus "??!!!"
+    gaster "I'M SORRY PAPYRUS"
+    $ resets = resets + 1
+    jump day1
         
 
 return

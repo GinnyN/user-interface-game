@@ -164,11 +164,13 @@ label school:
         linear 5 xpos -0.1
     pause(0.8)
     show undyneImg gym happy at fade:
+        ypos 1
         xpos 0
     undyne "Today was a long one, those kids!"
     show undyneImg gym mildSurprise
     show sansImg hoddie angry flip at fade:
         xpos 0.6
+        ypos 0.205
     sans "i should say the same"
     show undyneImg gym yelling
     undyne "SANS?!"
@@ -214,11 +216,34 @@ label school:
     sans "toriel!"
 
 #Outside School 
-    "Sans and Undyne goes where Toriel and Frisk are looking up to Papyrus, jumping over the ceilings"
+label outsideSchool:
+    scene day2 papyrusJump frame1 with dissolve
+    pause(0.5)
+    scene day2 papyrusJump frame2 with dissolve
+    pause(0.5)
+    scene day2 papyrusJump frame3 with dissolve
+    pause(0.5)
+    scene day2 papyrusJump frame4 with dissolve
+    pause(0.5)
+    scene day2 papyrusJump frame1 with dissolve
+    pause(0.5)
+    show torielImg teacher angry zorder 2 at fade:
+        xpos -0.1
+    show sansImg hoddie surprised zorder 3 at fade:
+        xpos 0.3
+        ypos 0.205
+    show undyneImg gym yelling zorder 4 at fade:
+        xpos 0.5
+    toriel "Papyrus! Come down inmediatly!"
     undyne "I'll catch him up..."
+    show sansImg hoddie angry
     sans "let's me try that"
+    show undyneImg gym mildSurprise flip
     undyne "?!"
-    frisk "Sign of Ok"
+    toriel "Good luck Sans"
+    hide sansImg
+    hide torielImg
+    hide undyneImg
     "Sans use a shortcut to appear in front of Papyrus"
     papyrus "SANS?"
     papyrus "IT'S THERE A SHORTCUT TO HERE?!"

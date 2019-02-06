@@ -45,6 +45,8 @@ label day1:
     menu:
         "Jump to the Building":
             jump jumpBuilding
+        "Ahh??!!" if resets > 0:
+            jump titleScreen
         #"Ask Sans about creating a Shortcut" if doors:
         #    jump shortcut
 
