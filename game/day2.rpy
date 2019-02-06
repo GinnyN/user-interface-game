@@ -161,10 +161,11 @@ label school:
     pause(1.5)
     scene school gym with dissolve:
         xpos 0
+        ypos 0.0
         linear 5 xpos -0.1
     pause(0.8)
     show undyneImg gym happy at fade:
-        ypos 1
+        ypos 0.1
         xpos 0
     undyne "Today was a long one, those kids!"
     show undyneImg gym mildSurprise
@@ -203,7 +204,6 @@ label school:
     sans "you don't feel ok with it"
     undyne "Despite I think those humans have it coming"
     show sansImg hoddie unsure flip
-    stop music
     sans "we need to find a way to solve this..."
     show undyneImg gym frustrated
     undyne "Before Papyrus does something REALLY crazy"
@@ -214,6 +214,7 @@ label school:
     toriel "WHAT ARE YOU DOING!?"
     show sansImg hoddie surprised
     sans "toriel!"
+    scene black with dissolve
 
 #Outside School 
 label outsideSchool:
@@ -234,6 +235,7 @@ label outsideSchool:
         ypos 0.205
     show undyneImg gym yelling zorder 4 at fade:
         xpos 0.5
+        ypos 0.1
     toriel "Papyrus! Come down inmediatly!"
     undyne "I'll catch him up..."
     show sansImg hoddie angry
