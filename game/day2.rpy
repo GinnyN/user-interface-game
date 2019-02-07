@@ -246,12 +246,27 @@ label outsideSchool:
     hide sansImg
     hide torielImg
     hide undyneImg
-    "Sans use a shortcut to appear in front of Papyrus"
+    scene day2 papyrusLanding frame1 with dissolve
+    pause(0.5)
+    scene day2 papyrusLanding frame2 with dissolve
+    pause(0.5)
+    scene day2 papyrusLanding frame3 with dissolve
+    pause(0.5)
+    show papyrusImg angry flip at fade:
+        xpos 0.5
+    show sansImg hoddie angry at fade:
+        xpos 0
+        ypos 0.205
     papyrus "SANS?"
     papyrus "IT'S THERE A SHORTCUT TO HERE?!"
     sans "what are you doing papyrus?"
 
 label loop1:
+    show papyrusImg angry flip at fade:
+        xpos 0.5
+    show sansImg hoddie angry at fade:
+        xpos 0
+        ypos 0.205
     menu:
         "This is for keep my greatness!":
             jump honor
@@ -263,7 +278,9 @@ label loop1:
 label honor:
     papyrus "THIS IS FOR MY OWN GREATNESS SANS!"
     sans "you don't have anything to prove to undyne, really"
+    show papyrusImg confused flip
     papyrus "WHO SAID ANYTHING ABOUT HER?!"
+    show papyrusImg angry flip
     papyrus "THIS IS FOR ME!"
     papyrus "I NEED TO GO BACK TO BE AS GREAT AS I CAN BE!"
     sans "papyrus, please.."
@@ -284,6 +301,7 @@ label plan:
     sans "what kind of plan now..."
     papyrus "I'LL CAPTURE THE REST OF THOSE TERRIBLE HUMANS"
     papyrus "AND I'LL DELIVER THEM TO THE HUMANS' AUTHORITIES!"
+    show papyrusImg proud flip
     papyrus "I'LL BE A HERO"
     papyrus "AND THE GOOD HUMANS WILL CONSIDER US ALLIES INSTEAD OF ENEMIES!"
     sans "......"

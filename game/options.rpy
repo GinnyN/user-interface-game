@@ -44,39 +44,39 @@ init -1 python hide:
         ## Color scheme: Mocha Latte
 
         ## The color of an idle widget face.
-        widget = "#4D3B29",
+        widget = "#000000",
 
         ## The color of a focused widget face.
-        widget_hover = "#996E45",
+        widget_hover = "#555555",
 
         ## The color of the text in a widget.
-        widget_text = "#B99D83",
+        widget_text = "#ffffff",
 
         ## The color of the text in a selected widget. (For
         ## example, the current value of a preference.)
         widget_selected = "#ffffff",
 
         ## The color of a disabled widget face.
-        disabled = "#614D3A",
+        disabled = "#cccccc",
 
         ## The color of disabled widget text.
-        disabled_text = "#80654D",
+        disabled_text = "#222222",
 
         ## The color of informational labels.
-        label = "#F1EBE5",
+        label = "#000000",
 
         ## The color of a frame containing widgets.
-        frame = "#926841",
+        frame = "#ffffff",
 
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#1A140E",
+        mm_root = "#000000",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        gm_root = "#1A140E",
+        gm_root = "#888888",
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.

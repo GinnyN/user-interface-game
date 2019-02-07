@@ -2,29 +2,40 @@
 
 #Papyrus
 #Battle Body
+image papyrusImg angry = "papyrus/angry.png"
+image papyrusImg angry flip = im.Flip("papyrus/angry.png", horizontal=True)
+image papyrusImg angry eyes = "papyrus/angry-glowing.png"
+
+image papyrusImg confused = "papyrus/confused.png"
+image papyrusImg confused flip = im.Flip("papyrus/confused.png", horizontal=True)
+
+image papyrusImg decisive = "papyrus/decisive.png"
+
 image papyrusImg explaining = "papyrus/explaining.png"
+image papyrusImg embarrased happy = "papyrus/embarrasedHappy.png"
+image papyrusImg embarrased happy flip = im.Flip("papyrus/embarrasedHappy.png", horizontal=True)
+
 image papyrusImg nervious = "papyrus/nervious.png"
 image papyrusImg nervious flip = im.Flip("papyrus/nervious.png", horizontal=True)
 image papyrusImg scared = "papyrus/scared.png"
 image papyrusImg scared flip = im.Flip("papyrus/scared.png", horizontal=True)
 image papyrusImg serious = "papyrus/serious.png"
 image papyrusImg screamingCall = "papyrus/screamingCall.png"
-image papyrusImg decisive = "papyrus/decisive.png"
 image papyrusImg surprised pointing = "papyrus/surprisedPointing.png"
 image papyrusImg surprised pointing flip = im.Flip("papyrus/surprisedPointing.png", horizontal=True)
 image papyrusImg surprised up = "papyrus/mildSupriseUp.png"
 image papyrusImg surprised happy ="papyrus/suprisedHappy.png"
 image papyrusImg surprised happy flip = im.Flip("papyrus/suprisedHappy.png", horizontal=True)
+
+image papyrusImg proud = "papyrus/proud.png"
+image papyrusImg proud flip = im.Flip("papyrus/proud.png", horizontal=True)
 image papyrusImg uhh = "papyrus/uhh.png"
 image papyrusImg uhh flip = im.Flip("papyrus/uhh.png", horizontal=True)
-image papyrusImg angry = "papyrus/angry.png"
-image papyrusImg angry eyes = "papyrus/angry-glowing.png"
 image papyrusImg worried = "papyrus/worried.png"
 image papyrusImg worried flip = im.Flip("papyrus/worried.png", horizontal=True)
 image papyrusImg solemn = "papyrus/solemn.png"
 image papyrusImg solemn flip = im.Flip("papyrus/solemn.png", horizontal=True)
-image papyrusImg embarrased happy = "papyrus/embarrasedHappy.png"
-image papyrusImg embarrased happy flip = im.Flip("papyrus/embarrasedHappy.png", horizontal=True)
+
 image papyrusImg happy = "papyrus/happy.png"
 image papyrusImg happy flip = im.Flip("papyrus/happy.png", horizontal=True)
 #Cool Dude
