@@ -17,6 +17,9 @@ image papyrusImg embarrased happy flip = im.Flip("papyrus/embarrasedHappy.png", 
 
 image papyrusImg nervious = "papyrus/nervious.png"
 image papyrusImg nervious flip = im.Flip("papyrus/nervious.png", horizontal=True)
+image papyrusImg neutral = "papyrus/neutral.png"
+image papyrusImg neutral flip = im.Flip("papyrus/neutral.png", horizontal=True)
+
 image papyrusImg scared = "papyrus/scared.png"
 image papyrusImg scared flip = im.Flip("papyrus/scared.png", horizontal=True)
 image papyrusImg serious = "papyrus/serious.png"
@@ -79,6 +82,10 @@ image sansImg hoddie unsure = im.FactorScale("sans/hoddie/unsure.png",0.8)
 image sansImg hoddie unsure flip = im.Flip(im.FactorScale("sans/hoddie/unsure.png",0.8), horizontal=True)
 image sansImg hoddie annoyed = im.FactorScale("sans/hoddie/annoyed.png",0.8)
 image sansImg hoddie annoyed flip = im.Flip(im.FactorScale("sans/hoddie/annoyed.png",0.8), horizontal=True)
+image sansImg hoddie neutral = im.FactorScale("sans/hoddie/neutral.png",0.8)
+image sansImg hoddie neutral flip = im.Flip(im.FactorScale("sans/hoddie/neutral.png",0.8), horizontal=True)
+image sansImg hoddie sideglance = im.FactorScale("sans/hoddie/sideglance.png", 0.8)
+
 
 #Undyne
 #Black Shirt
@@ -132,6 +139,7 @@ image torielImg pajamas happy = "toriel/pajamas/happy.png"
 image torielImg pajamas ejem = "toriel/pajamas/ejem.png"
 #Teacher
 image torielImg teacher angry ="toriel/teacher/angry.png"
+image torielImg teacher unsure = "toriel/teacher/unsure.png"
 
 #Alphys
 #Pajamas

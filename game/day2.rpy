@@ -194,6 +194,7 @@ label school:
     sans ".."
     undyne "I told him I didn't want him near to the kids today"
     show sansImg hoddie annoyed flip
+label outsideSchool:
     sans ".."
     undyne "He's just unstable after what happened yesterday and..."
     undyne "And even I have problems keeping cool with those kids"
@@ -217,7 +218,7 @@ label school:
     scene black with dissolve
 
 #Outside School 
-label outsideSchool:
+
     scene day2 papyrusJump frame1 with dissolve
     pause(0.5)
     scene day2 papyrusJump frame2 with dissolve
@@ -304,23 +305,45 @@ label plan:
     show papyrusImg proud flip
     papyrus "I'LL BE A HERO"
     papyrus "AND THE GOOD HUMANS WILL CONSIDER US ALLIES INSTEAD OF ENEMIES!"
+    stop music fadeout 6
+    show sansImg hoddie surprised
     sans "......"
+    show papyrusImg uhh flip
     papyrus "SANS?"
+    show sansImg hoddie neutral
     sans "that's actually a good idea"
+    show papyrusImg proud flip
     papyrus "OF COURSE IT IS"
+    show sansImg hoddie sideglance
     sans "but.."
     sans "but maybe it needs a bit more of.."
     sans "diplomacy"
+    show papyrusImg uhh flip
     papyrus "???"
+    show sansImg hoddie neutral
     sans "let's talk with toriel"
 
 #label planning:
+    scene black with dissolve
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
+    pause(1)
+    scene toriel house with dissolve
+    show torielImg teacher unsure zorder 2 at fade:
+        xpos 0
+    show papyrusImg neutral flip zorder 2 at fade:
+        xpos 0.6
+    show sansImg hoddie neutral flip zorder 3 at fade:
+        xpos 0.55
+        ypos 0.205
     toriel "It doesn't sound half bad"
+    show papyrusImg proud flip at fade
     papyrus "OF COURSE IT'S NOT BAD, IT'S MY IDEA"
     toriel "But Sans it's right, we need to have some diplomacy added to the idea"
+    show papyrusImg angry flip at fade
     papyrus "I DON'T DO WORDS. I DO ACTION"
     toriel "We know that my friend, I was thinking on doing it myself"
     papyrus "REALLY?"
+    show sansImg hoddie content flip at fade
     toriel "Of course"
     toriel "But I will need help"
     asgore "I'm sorry saying this but"

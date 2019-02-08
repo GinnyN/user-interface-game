@@ -1,2 +1,2 @@
 label start:
-    jump day1
+    jump outsideSchool
