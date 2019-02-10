@@ -1,15 +1,12 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Flip' <'FactorScale' <'Image' u'dog/dogaressaWorried.png'> 0.8 0.8 True> True False>:
-  File "game/day2.rpy", line 148, in script
-    dogamy "The world is backwards today!"
-IOError: Couldn't find file 'dog/dogaressaWorried.png'.
+While loading <'Image' u'asgore/shirt/explaining.png'>:
+IOError: Couldn't find file 'asgore/shirt/explaining.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day2.rpy", line 148, in script
-    dogamy "The world is backwards today!"
+  File "lib/windows-i686/day2.rpyc", line 354, in script
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
     renpy.exports.say(who, what, interact=self.interact)
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
@@ -70,19 +67,11 @@ Full traceback:
     im = cache.get(self)
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 200, in get
     surf = image.load()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 786, in load
-    child = cache.get(self.image)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 200, in get
-    surf = image.load()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 730, in load
-    surf = cache.get(self.image)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 200, in get
-    surf = image.load()
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 524, in load
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\loader.py", line 543, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'dog/dogaressaWorried.png'.
+IOError: Couldn't find file 'asgore/shirt/explaining.png'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029
