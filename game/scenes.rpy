@@ -1,5 +1,6 @@
 #background
 image black = Solid("#000000")
+image lights = "background/lights.png"
 
 #Cinematic Scenes
 #Day 1

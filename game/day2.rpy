@@ -452,9 +452,13 @@ label planning:
     show sansImg hoddie done flip at fade
     sans "today is not my day"
 
-label metattonsFashion:
+label mettatonsfashion:
+    scene black with dissolve
     metatton "Welcome! Gentlemen and Gentlebeauties"
     metatton "To today's Metatton's Fashion Emergency!"
+    scene toriel house
+    show lights at sparkles
+    pause(1)
     sans "just do this thing quickly"
     metatton "My oh My, our subject today has a temper"
     papyrus "BUT HE DOESN'T HAVE AN OPTION"

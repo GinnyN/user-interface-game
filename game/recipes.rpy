@@ -14,6 +14,16 @@ transform fade:
     on replaced:
         linear 0.2 alpha 0
 
+transform sparkles:
+    on show: 
+        xpos -1.0
+        ypos -1.0
+        rotate 0
+        alpha 1
+        linear 2 rotate 145 alpha 0
+        #linear 2 alpha 0
+
+
 #Count Variables
 define resets = 0
 define papyrusTraining = 0
