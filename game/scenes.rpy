@@ -1,6 +1,6 @@
 #background
 image black = Solid("#000000")
-image lights = "background/lights.png"
+image lights = im.FactorScale("background/lights.png",3.0)
 
 #Cinematic Scenes
 #Day 1

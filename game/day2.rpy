@@ -459,9 +459,17 @@ label mettatonsfashion:
     scene toriel house
     show lights at sparkles
     pause(1)
+    show sansImg hoddie done zorder 3 at fade:
+        xpos 0
+        ypos 0.205
+    show mettaton position zorder 3 at fade:
+        xpos 0.35
+        ypos 0.205
+    call mettatonSurprised
     sans "just do this thing quickly"
     metatton "My oh My, our subject today has a temper"
     papyrus "BUT HE DOESN'T HAVE AN OPTION"
+    hide lights
     metatton "Those are my favorite subjects!"
     metatton "Let's see for what you have to dress for!"
     toriel "Ah... ap..."
@@ -772,3 +780,8 @@ label alphysHome:
         alphys "I'm sorry Papyrus"
 
     jump day3
+
+label mettatonSurprised:
+    if mettatonModel == "v1":
+        show mettaton v1 surprised
+    return

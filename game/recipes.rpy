@@ -16,8 +16,8 @@ transform fade:
 
 transform sparkles:
     on show: 
-        xpos -1.0
-        ypos -1.0
+        xpos -1.5
+        ypos -1.5
         rotate 0
         alpha 1
         linear 2 rotate 145 alpha 0
@@ -27,6 +27,9 @@ transform sparkles:
 #Count Variables
 define resets = 0
 define papyrusTraining = 0
+
+#Define Mettaton Variable
+define mettatonModel = "v1"
 
 #Flag Variables
 define doors = False

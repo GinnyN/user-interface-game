@@ -170,6 +170,13 @@ image friskImg explaining = im.FactorScale("frisk/explaining.png", 0.7)
 image asgoreImg shirt explaining = "asgore/shirt/explain.png"
 image asgoreImg shirt embarrased = "asgore/shirt/embarrased.png"
 
+#Mettaton 
+image mettaton position = im.Alpha(im.FactorScale("undyne/gym/mildsurprise.png", 0), 1)
+## Vr1
+image mettaton v1 presenting = im.FactorScale("mettaton/ver1/presented.png",0.85)
+image mettaton v1 surprised = "mettaton/ver1/surprised.png"
+image mettaton v1 surprised flip = im.Flip("mettaton/ver1/surprised.png", horizontal=True)
+
 #Kid
 image kidImg listening = "kid/listening.png"
 image kidImg angry = "kid/angry.png"
