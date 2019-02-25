@@ -143,9 +143,14 @@ image torielImg pajamas happy = "toriel/pajamas/happy.png"
 image torielImg pajamas ejem = "toriel/pajamas/ejem.png"
 #Teacher
 image torielImg teacher angry ="toriel/teacher/angry.png"
+image torielImg teacher angry flip = im.Flip("toriel/teacher/angry.png", horizontal=True)
 image torielImg teacher unsure = "toriel/teacher/unsure.png"
+image torielImg teacher unsure flip = im.Flip("toriel/teacher/unsure.png", horizontal=True)
 image torielImg teacher neutral = "toriel/teacher/neutral.png"
+image torielImg teacher neutral flip = im.Flip("toriel/teacher/neutral.png", horizontal=True)
 image torielImg teacher happy = "toriel/teacher/happy.png"
+image torielImg teacher surprised = "toriel/teacher/surprised.png"
+image torielImg teacher surprised flip = im.Flip("toriel/teacher/surprised.png", horizontal=True)
 
 #Alphys
 #Pajamas
@@ -174,8 +179,11 @@ image asgoreImg shirt embarrased = "asgore/shirt/embarrased.png"
 image mettaton position = im.Alpha(im.FactorScale("undyne/gym/mildsurprise.png", 0), 1)
 ## Vr1
 image mettaton v1 presenting = im.FactorScale("mettaton/ver1/presented.png",0.85)
-image mettaton v1 surprised = "mettaton/ver1/surprised.png"
-image mettaton v1 surprised flip = im.Flip("mettaton/ver1/surprised.png", horizontal=True)
+image mettaton v1 presenting flip = im.Flip(im.FactorScale("mettaton/ver1/presented.png",0.85), horizontal=True)
+image mettaton v1 surprised = im.FactorScale("mettaton/ver1/surprised.png",0.85)
+image mettaton v1 surprised flip = im.Flip(im.FactorScale("mettaton/ver1/surprised.png",0.85), horizontal=True)
+image mettaton v1 delight = im.FactorScale("mettaton/ver1/delight.png",0.85)
+image mettaton v1 delight flip = im.Flip(im.FactorScale("mettaton/ver1/delight.png",0.85), horizontal=True)
 
 #Kid
 image kidImg listening = "kid/listening.png"

@@ -23,6 +23,11 @@ transform sparkles:
         linear 2 rotate 145 alpha 0
         #linear 2 alpha 0
 
+transform panningSuit:
+    on show:
+        xpos -0.5
+        linear 1 xpos 0 
+
 
 #Count Variables
 define resets = 0
