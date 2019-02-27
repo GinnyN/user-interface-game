@@ -19,6 +19,8 @@ image day2 papyrusLanding frame1 = "background/day2/papyruslanding-frame1.png"
 image day2 papyrusLanding frame2 = "background/day2/papyruslanding-frame2.png"
 image day2 papyrusLanding frame3 = "background/day2/papyruslanding-frame3.png"
 image day2 suit blue = "background/day2/blueSuit.png"
+image day2 suit red = "background/day2/redSuit.png"
+image day2 suit green = "background/day2/greenSuit.png"
 
 #Places Backgrounds
 image newerHome night = "background/newerHome/night.png"

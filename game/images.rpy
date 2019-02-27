@@ -10,6 +10,8 @@ image papyrusImg confused = "papyrus/confused.png"
 image papyrusImg confused flip = im.Flip("papyrus/confused.png", horizontal=True)
 
 image papyrusImg decisive = "papyrus/decisive.png"
+image papyrusImg delight = "papyrus/delight.png"
+image papyrusImg delight flip = im.Flip("papyrus/delight.png", horizontal=True)
 
 image papyrusImg explaining = "papyrus/explaining.png"
 image papyrusImg explaining flip = im.Flip("papyrus/explaining.png", horizontal= True)
@@ -25,6 +27,7 @@ image papyrusImg scared = "papyrus/scared.png"
 image papyrusImg scared flip = im.Flip("papyrus/scared.png", horizontal=True)
 image papyrusImg serious = "papyrus/serious.png"
 image papyrusImg screamingCall = "papyrus/screamingCall.png"
+image papyrusImg screamingCall flip = im.Flip("papyrus/screamingCall.png", horizontal=True)
 image papyrusImg surprised pointing = "papyrus/surprisedPointing.png"
 image papyrusImg surprised pointing flip = im.Flip("papyrus/surprisedPointing.png", horizontal=True)
 image papyrusImg surprised up = "papyrus/mildSupriseUp.png"
@@ -61,6 +64,7 @@ image papyrusImg coolDude grandiose = "papyrus/coolDude/grandiose.png"
 image papyrusImg coolDude grandiose flip = im.Flip("papyrus/coolDude/grandiose.png",horizontal=True)
 
 #Sans
+image sansImg position = im.Alpha(im.FactorScale("undyne/gym/mildsurprise.png", 0), 1)
 #Puffy Jacket
 image sansImg flustered = "sans/flustered.png"
 image sansImg flustered screaming = "sans/flusteredScreaming.png"
@@ -89,6 +93,12 @@ image sansImg hoddie sideglance = im.FactorScale("sans/hoddie/sideglance.png", 0
 image sansImg hoddie sideglance flip = im.Flip(im.FactorScale("sans/hoddie/sideglance.png", 0.8), horizontal=True)
 image sansImg hoddie done = im.FactorScale("sans/hoddie/done.png", 0.8)
 image sansImg hoddie done flip = im.Flip(im.FactorScale("sans/hoddie/done.png", 0.8), horizontal=True)
+#Blue Suit
+image sansImg suit blue stiff = im.FactorScale("sans/blueSuit/stiff.png", 0.8)
+#Red Suit
+image sansImg suit red stiff = im.FactorScale("sans/redSuit/stiff.png", 0.8)
+#Green Suit
+image sansImg suit green stiff = im.FactorScale("sans/greenSuit/stiff.png", 0.8)
 
 
 #Undyne

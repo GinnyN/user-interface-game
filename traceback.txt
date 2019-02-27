@@ -1,25 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: Parameter 'new_widget' is not known by ATL Transform.
+SyntaxError: invalid syntax (game/sans_suits.rpy, line 4)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/day2.rpyc", line 533, in script
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1275, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1376, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2062, in do_with
-    clear=clear)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2712, in interact_core
-    new_widget=layers_root)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 413, in __call__
-    raise Exception('Parameter %r is not known by ATL Transform.' % k)
-Exception: Parameter 'new_widget' is not known by ATL Transform.
+  File "lib/windows-i686/day2.rpyc", line 557, in script call
+  File "lib/windows-i686/sans_suits.rpyc", line 2, in script
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1656, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1724, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 576, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/sans_suits.rpy, line 4)
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

@@ -508,7 +508,7 @@ label mettatonsfashion:
 
 label loopSuit:
     menu:
-        "The White One":
+        "The Red One":
             jump bonestrousleSuit
         "The Blue One":
             jump megalovaniaSuit
@@ -516,17 +516,30 @@ label loopSuit:
             jump spearsSuit
 
 label bonestrousleSuit:
-    metatton "This is a great design by our greatest designer"
-    metatton "Combines a stylish white suit and a soft orange shirt with a wonderful red scarf"
-    metatton "Wonderful for feel confident in anything you do"
-    metatton "Even if you are terrible at it!"
-    sans ".."
-    sans "it doesn't feel half bad"
-    metatton "Let's see what the public is thinking!"
     $ suit = 1
+    scene day2 suit red with dissolve:
+        ypos -0.3
+        linear 7 ypos 0.0
+    metatton "This is a great design by our greatest designer"
+    metatton "Combines a stylish white suit with a wonderful red tie"
+    metatton "Great for big and special days"
+    metatton "In which you are going to be the star"
+    show mettaton position zorder 3 at fade:
+        xpos 0.35
+        ypos 0.205
+    call mettatonPresentingFlip
+    show sansImg position zorder 3 at fade:
+        xpos 0
+        ypos 0.205
+    call sansSuitStiff
+    sans ".."
+    sans "i cannot move my shoulders"
+    sans "even if i don't have any"
+    metatton "Let's see what the public is thinking!"
     jump publicAsk
 
 label megalovaniaSuit:
+    $ suit = 2
     scene day2 suit blue with dissolve:
         ypos -0.3
         linear 7 ypos 0.0
@@ -537,29 +550,44 @@ label megalovaniaSuit:
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
-    call mettatonPresenting
-    show sansImg hoddie done zorder 3 at fade:
+    call mettatonPresentingFlip
+    show sansImg position zorder 3 at fade:
         xpos 0
         ypos 0.205
+    call sansSuitStiff
     sans ".."
     sans "I don't have a body and anyway I can barely move"
     metatton "Let's see what the public is atching to say!"
-    $ suit = 2
     jump publicAsk
 
 label spearsSuit:
-    metatton "This is a incredible design by our greatest designer"
-    metatton "It has a wonderful green combination of suit and shirt"
-    metatton "So you feel strong"
-    metatton "And make everybody dreams true!"
-    sans "what's this thing?!"
-    metatton "Let's see what the public want to tell us!"
     $ suit = 3
+    scene day2 suit green with dissolve:
+        ypos -0.3
+        linear 7 ypos 0.0
+    metatton "This is a incredible design by our greatest designer"
+    metatton "It has a wonderful green combination of suit and shirt, with a purple tie"
+    metatton "Wonderful for those big days"
+    metatton "You need to be deckered with style!"
+    show mettaton position zorder 3 at fade:
+        xpos 0.35
+        ypos 0.205
+    call mettatonPresentingFlip
+    show sansImg position zorder 3 at fade:
+        xpos 0
+        ypos 0.205
+    call sansSuitStiff
+    sans "i cannot breathe"
+    sans "and i don't need to breathe"
+    call mettatonPresenting
+    metatton "Let's see what the public want to tell us!"
     jump publicAsk
 
 label publicAsk:
     menu:
         "Ask Asgore":
+            hide mettaton
+            hide sansImg
             if suit == 2:
                 asgore "It look very well on him"
                 asgore "That shirt has a nice color"
@@ -574,41 +602,49 @@ label publicAsk:
                 asgore "It has a good fit"
             $ alphysHot = 0
         "Ask Papyrus":
+            hide mettaton
+            hide sansImg
+            show papyrusImg surprised happy flip zorder 2 at fade:
+                xpos 0.3
             if suit == 1:
-                show papyrusImg surprised happy flip zorder 2 at fade:
-                    xpos 0.6
                 papyrus "METATTON IS SOOOO BISHONEN AND SEXY I'LL DIE!!"
+                show papyrusImg uhh flip
                 papyrus "I MEAN"
+                show papyrusImg screamingCall flip
                 papyrus "YOU LOOK GREAT SANS!"
+                show papyrusImg delight flip
                 toriel "Yes Papyrus"
                 toriel "Keep Supporting him"
                 sans "somebody forgot i'm here against my will"
                 papyrus "BUT I'M STILL SUPPORTING YOU!"
                 hide papyrusImg
             elif suit == 2:
-                show papyrusImg surprised happy flip zorder 2 at fade:
-                    xpos 0.6
                 papyrus "OHHH I CAN'T BELIEVE I'M SO CLOSE TO MY SEXY RECTANGLE IN HIS OWN SHOW!!!"
-                show papyrusImg scared flip at fade
+                show papyrusImg scared flip
                 papyrus "OH!"
+                show papyrusImg screamingCall flip
                 papyrus "IT REALLY SUITS YOU SANS!"
                 sans "papyrus don't"
+                show papyrusImg angry flip
                 papyrus "WHAT?!"
                 papyrus "I REALLY MEAN IT!"
                 hide papyrusImg
             elif suit == 3:
-                show papyrusImg surprised happy flip zorder 2 at fade:
-                    xpos 0.6
                 papyrus "I'M SO CLOSE I CAN SEE HIS BISHONEN EYES..."
+                show papyrusImg delight flip
                 papyrus "OH ME!"
+                show papyrusImg screamingCall flip
                 papyrus "IT HAS A GOOD FIT ON YOU SANS!"
                 toriel "I must agree"
+                show papyrusImg delight flip
                 papyrus "KEEP SUPPORTING SANS!"
                 sans "why?"
                 sans "whhhhyyyy?!"
                 hide papyrusImg
             $ alphysHot = 0
         "Ask Toriel":
+            hide mettaton
+            hide sansImg
             if suit == 1:
                 toriel "I think he looks very s..."
                 toriel "mmm"
@@ -619,8 +655,8 @@ label publicAsk:
                 toriel "mmm"
                 toriel "Dreamy in it"
                 toriel "!?"
-                frisk "smiles"
-                asgore "frowns"
+                frisk "XD"
+                asgore ":("
                 papyrus "TORIEL *DEFINITELY* APROVES SANS!"
             elif suit == 3:
                 toriel "I think he looks very p..."
@@ -629,6 +665,8 @@ label publicAsk:
                 papyrus "I DON'T KNOW WHAT SHE REALLY WAS GOING TO SAY BUT SHE APPROVES!"
             $ alphysHot = 0
         "Ask Undyne":
+            hide mettaton
+            hide sansImg
             if suit == 1:
                 undyne "I don't know anything about 'style'"
                 undyne "But I heard that white make you look fat!"
@@ -644,6 +682,8 @@ label publicAsk:
                 undyne "HIIII YAAAAAAA!"
             $ alphysHot = 0
         "Ask Alphys":
+            hide mettaton
+            hide sansImg
             if alphysHot == 0:
                 alphys "(Why am I feeling so turn on right now?)"
                 $ alphysHot = alphysHot + 1
@@ -664,6 +704,8 @@ label publicAsk:
                 papyrus "TO WHAT?!"
                 jump alphysTeasing
         "Ask Frisk":
+            hide mettaton
+            hide sansImg
             if suit == 1:
                 frisk "Questioning Expression"
                 toriel "Do you think?"
@@ -720,12 +762,12 @@ label undyneLab:
 
 label suitDecision:
     menu:
-        "Bonestrousle":
-            $ sansSuit = 1
-        "Megalovania":
-            $ sansSuit = 2
-        "Spears of Justice":
-            $ sansSuit = 3
+        "The Red One":
+            $ suit = 1
+        "The Blue One":
+            $ suit = 2
+        "The Green One":
+            $ suit = 3
 
     metatton "Excelent choice!"
     metatton "You look marvelous!"
