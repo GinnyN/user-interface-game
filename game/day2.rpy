@@ -556,7 +556,7 @@ label megalovaniaSuit:
         ypos 0.205
     call sansSuitStiff
     sans ".."
-    sans "I don't have a body and anyway I can barely move"
+    sans "i don't have a body and anyway i can barely move"
     metatton "Let's see what the public is atching to say!"
     jump publicAsk
 
@@ -584,23 +584,27 @@ label spearsSuit:
     jump publicAsk
 
 label publicAsk:
+    $ askUndyne = False
     menu:
         "Ask Asgore":
             hide mettaton
             hide sansImg
-            if suit == 2:
+            show asgoreImg shirt crossed flip zorder 3 at fade:
+                xpos 0.1
+            if suit == 1:
                 asgore "It look very well on him"
                 asgore "That shirt has a nice color"
                 asgore "Goes very well with his bones' color"
-            elif suit == 1:
-                asgore "The dark color suits him"
+            elif suit == 2:
+                asgore "The blue color suits him"
                 asgore "And that shirt..."
                 asgore "Goes very well with his eyes"
             elif suit == 3:
-                asgore "The Green combination is very pleasant"
+                asgore "The green purple combination is very pleasant"
                 asgore "That shirt combines very well"
                 asgore "It has a good fit"
             $ alphysHot = 0
+            hide asgoreImg
         "Ask Papyrus":
             hide mettaton
             hide sansImg
@@ -617,7 +621,6 @@ label publicAsk:
                 toriel "Keep Supporting him"
                 sans "somebody forgot i'm here against my will"
                 papyrus "BUT I'M STILL SUPPORTING YOU!"
-                hide papyrusImg
             elif suit == 2:
                 papyrus "OHHH I CAN'T BELIEVE I'M SO CLOSE TO MY SEXY RECTANGLE IN HIS OWN SHOW!!!"
                 show papyrusImg scared flip
@@ -628,7 +631,6 @@ label publicAsk:
                 show papyrusImg angry flip
                 papyrus "WHAT?!"
                 papyrus "I REALLY MEAN IT!"
-                hide papyrusImg
             elif suit == 3:
                 papyrus "I'M SO CLOSE I CAN SEE HIS BISHONEN EYES..."
                 show papyrusImg delight flip
@@ -640,46 +642,60 @@ label publicAsk:
                 papyrus "KEEP SUPPORTING SANS!"
                 sans "why?"
                 sans "whhhhyyyy?!"
-                hide papyrusImg
+            hide papyrusImg
             $ alphysHot = 0
         "Ask Toriel":
             hide mettaton
             hide sansImg
+            show torielImg teacher neutral flip zorder 2 at fade:
+                xpos 0.2
             if suit == 1:
                 toriel "I think he looks very s..."
+                show torielImg teacher unsure flip
                 toriel "mmm"
+                show torielImg teacher neutral flip
                 toriel "Confident in it"
                 papyrus "TORIEL APROVES SANS!"
             elif suit == 2:
                 toriel "I think he looks very s..."
+                show torielImg teacher unsure flip
                 toriel "mmm"
+                show torielImg teacher neutral flip
                 toriel "Dreamy in it"
+                show torielImg teacher surprised flip
                 toriel "!?"
                 frisk "XD"
                 asgore ":("
                 papyrus "TORIEL *DEFINITELY* APROVES SANS!"
             elif suit == 3:
                 toriel "I think he looks very p..."
+                show torielImg teacher unsure flip
                 toriel "mmm"
+                show torielImg teacher neutral flip
                 toriel "comfortable in it"
                 papyrus "I DON'T KNOW WHAT SHE REALLY WAS GOING TO SAY BUT SHE APPROVES!"
+            hide torielImg
             $ alphysHot = 0
         "Ask Undyne":
             hide mettaton
             hide sansImg
+            $ askUndyne = True
             if suit == 1:
-                undyne "I don't know anything about 'style'"
-                undyne "But I heard that white make you look fat!"
-                undyne "And you are already fat!"
-                undyne "Imagine yourself even fatter!"
+                undyne "Uh?"
+                undyne "Me?"
+                undyne "Why me?"
+                undyne "Do you really want me??"
             elif suit == 2:
-                undyne "That opening is for your 'hair chest'"
-                undyne "Just imagine everybody thinking what are you thinking wearing something for that!"
-                undyne "Yes! It's funny!"
+                undyne "Ahhh..."
+                undyne "What..."
+                undyne "Wait.."
+                undyne "what can I sa..."
             elif suit == 3:
-                undyne "That tie is from those weird monster horse riding movies!"
-                undyne "You need to make the accent~!"
-                undyne "HIIII YAAAAAAA!"
+                undyne "Wait..."
+                undyne "No, no..."
+                undyne "Ah.."
+                undyne "I know"
+                undyne "I KNOW!!"
             $ alphysHot = 0
         "Ask Alphys":
             hide mettaton
@@ -720,6 +736,8 @@ label publicAsk:
             $ alphysHot = 0
 
     metatton "Are we ready to make a decision?"
+    if askUndyne:
+        undyne "Hey! Wait! Let me f..."
 
     menu:
         "Yes":

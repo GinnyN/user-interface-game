@@ -184,6 +184,9 @@ image friskImg explaining = im.FactorScale("frisk/explaining.png", 0.7)
 #Asgore
 image asgoreImg shirt explaining = "asgore/shirt/explain.png"
 image asgoreImg shirt embarrased = "asgore/shirt/embarrased.png"
+image asgoreImg shirt crossed = "asgore/shirt/crossed.png"
+image asgoreImg shirt crossed flip = im.Flip("asgore/shirt/crossed.png", horizontal=True)
+
 
 #Mettaton 
 image mettaton position = im.Alpha(im.FactorScale("undyne/gym/mildsurprise.png", 0), 1)
