@@ -28,3 +28,18 @@ label mettatonDelightFlip:
     if mettatonModel == "v1":
         show mettaton v1 delight flip
     return
+
+label mettatonThinking:
+    if mettatonModel == "v1":
+        show mettaton v1 thinking
+    return
+
+label mettatonComplicit:
+    if mettatonModel == "v1":
+        show mettaton v1 complicit
+    return
+    
+label mettatonComplicitFlip:
+    if mettatonModel == "v1":
+        show mettaton v1 complicit flip
+    return

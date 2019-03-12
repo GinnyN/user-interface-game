@@ -137,10 +137,7 @@ label schoolPapyrusRun:
     pause(1)
     show sansImg hoddie content flip at fade:
         xpos 0.6 ypos 0.205
-    if torielKnows:
-        sans "but how toriel did.."
-    else:
-        sans "time to..."
+    sans "time to..."
     show sansImg hoddie surprised flip at fade
     sans "papyrus?!"
     hide sansImg
@@ -680,6 +677,9 @@ label publicAsk:
             hide mettaton
             hide sansImg
             $ askUndyne = True
+            show undyneImg mild surprise flip zorder 1 at fade:
+                xpos 0.4
+                ypos 0.1
             if suit == 1:
                 undyne "Uh?"
                 undyne "Me?"
@@ -688,51 +688,83 @@ label publicAsk:
             elif suit == 2:
                 undyne "Ahhh..."
                 undyne "What..."
+                show undyneImg thinking flip
                 undyne "Wait.."
                 undyne "what can I sa..."
             elif suit == 3:
                 undyne "Wait..."
+                show undyneImg thinking flip
                 undyne "No, no..."
+                show undyneImg mild surprise flip
                 undyne "Ah.."
+                show undyneImg thinking flip
                 undyne "I know"
                 undyne "I KNOW!!"
+            hide undyneImg
             $ alphysHot = 0
         "Ask Alphys":
             hide mettaton
             hide sansImg
             if alphysHot == 0:
+                show alphysImg casual confused mild flip zorder 3 at fade:
+                    xpos 0.2
+                    ypos -0.2
                 alphys "(Why am I feeling so turn on right now?)"
                 $ alphysHot = alphysHot + 1
             elif alphysHot == 1:
+                show alphysImg casual confused flip zorder 3 at fade:
+                    xpos 0.2
+                    ypos -0.2
                 alphys "(He's just a gross fat skeleton)"
                 alphys "(Who's also very smart)"
                 $ alphysHot = alphysHot + 1
             else:
+                show alphysImg casual realizing flip zorder 3 at fade:
+                    xpos 0.2
+                    ypos -0.2
                 alphys "(OH NO, I forgot I always get turn on by people on suits)"
                 alphys "(Everybody look always so great on suits)"
+                show mettaton position zorder 3 at fade:
+                    xpos -0.1
+                    ypos 0.205
+                call mettatonThinking
                 metatton "Mmm..."
                 metatton "Darlings, I am noticing a disturbance in the force..."
+                show undyneImg mild surprise flip zorder 1 at fade:
+                    xpos 0.5
+                    ypos 0.1
                 undyne "Oh wait"
                 undyne "I know!"
+                show undyneImg laugh flip
                 undyne "Hey! Metatton! Can we?!"
+                call mettatonDelight
                 metatton "Oh, Please! Be my guest!"
-                undyne "Let's go Papyrus"
-                papyrus "TO WHAT?!"
                 jump alphysTeasing
+            hide alphysImg
         "Ask Frisk":
             hide mettaton
             hide sansImg
             if suit == 1:
-                frisk "Questioning Expression"
+                show friskImg unsure flip zorder 3 at fade:
+                    xpos 0.5
+                    ypos 0.13
+                frisk "..."
                 toriel "Do you think?"
                 toriel "mmm...."
             elif suit == 2:
-                frisk "Aproving Expression"
+                show friskImg affirmation flip zorder 3 at fade:
+                    xpos 0.5
+                    ypos 0.13
+                frisk "..."
                 papyrus "ONE VOTE FOR THE BLUE ONE!"
             elif suit == 3:
+                show friskImg angry mild flip zorder 3 at fade:
+                    xpos 0.5
+                    ypos 0.13
                 frisk "Desaproving expression"
                 undyne "Come on Frisk!"
                 undyne "Help me out on this!"
+            hide friskImg
             $ alphysHot = 0
 
     metatton "Are we ready to make a decision?"
@@ -747,18 +779,33 @@ label publicAsk:
             metatton "Let's see other suits then!"
             jump loopSuit
 
-label alphysTeasing:
-    "Papyrus and Undyne appear dressed with suits too"
-    papyrus "THIS IS A GOOD SUIT INDEED"
+label alphysTeasing: 
+    scene day2 suit undyne with dissolve:
+        ypos -0.3
+        linear 7 ypos 0.0
     undyne "What do you think Alphys?"
+    show alphysImg casual realizing flip zorder 3 at fade:
+        xpos 0.2
+        ypos -0.2
     alphys "..."
     alphys "..."
     alphys "..."
     alphys "..."
     toriel "I'll take Frisk out of here"
     undyne "I just love when Alphys get so passionate about something..."
-    "Alphys pass out"
+    stop music
+    pause(0.1)
+    scene toriel house with vpunch
+    play sound "music/fx/thump.wav"
+    pause(1)
+    show undyneImg mild surprise zorder 1 at fade:
+        xpos 0.1
+        ypos 0.1
     undyne "ALPHYS"
+    show mettaton position zorder 3 at fade:
+        xpos 0.35
+        ypos 0.205
+    call mettatonSurprisedFlip
     metatton "Oh no"
     metatton "Her levels of "
     extend "'passion' were too high!"
@@ -770,15 +817,25 @@ label alphysTeasing:
             jump papyrusLab
 
 label undyneLab:
+    show undyneImg happy at fade
     undyne "I'll better take her back home!"
+    call mettatonComplicitFlip
     metatton "Take the suit as well"
+    show undyneImg mild surprise
     undyne "?!"
     metatton "But don't tell her it was my idea"
-    "Undyne gives a knowing look. Then retires."
+    show undyneImg happy at fade
+    pause(1.5)
+    hide undyneImg
+    call mettatonPresenting
     metatton "Well, we better jump to the decision then!"
+    hide mettaton
     $ undyneThere = False
 
 label suitDecision:
+    stop music
+    scene black with dissolve
+    metatton "And the winner is..."
     menu:
         "The Red One":
             $ suit = 1
@@ -786,15 +843,30 @@ label suitDecision:
             $ suit = 2
         "The Green One":
             $ suit = 3
-
+    scene toriel house with dissolve
+    show mettaton position zorder 3 at fade:
+        xpos 0.35
+        ypos 0.205
+    call mettatonPresentingFlip    
+    show sansImg position zorder 3 at fade:
+        xpos 0
+        ypos 0.205
+    call sansSuitStiff
     metatton "Excelent choice!"
     metatton "You look marvelous!"
+    hide mettaton
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1    
+    show papyrusImg surprised happy flip zorder 2 at fade:
+        xpos 0.3
     papyrus "THIS WAS AMAZING!"
+    call sansSuitBored
     if undyneThere:
         undyne "And wholefully innecesary"
+        show papyrusImg delight flip
         papyrus "BUT SANS LOOK VERY COOL!"
     else:
-        sans "And kind of tacky"
+        sans "and kind of tacky"
+        show papyrusImg delight flip
         papyrus "BUT YOU LOOK VERY COOL SANS!"
     toriel "And you have a new suit which we needed"
     sans "the things i do for my brother"
@@ -803,7 +875,6 @@ label suitDecision:
     sans "don't tell me that"
     asgore "Ahhh..."
     asgore "Brotherly love"
-    metatton "I think I need to go and hug Nastablook right now"
 
     "Asgore talks with Papyrus and Undyne (If she's there)"
 
@@ -852,7 +923,7 @@ label alphysHome:
     alphys "..."
     alphys "..."
     alphys "If you say so"
-    if pen and not program and not penAtSans:
+    if pen and not program:
         papyrus "DR. ALPHYS, I KNOW YOU ARE BUSY"
         papyrus "BUT I HAVE A PROBLEM ONLY YOU CAN SOLVE"
         alphys "What do you mean?"
@@ -878,7 +949,7 @@ label alphysHome:
     papyrus "DREAM OF TINY UNDYNES BEEN AWESOME"
     alphys "PAPYRUS!"
 
-    if pen and not program and not penAtSans:
+    if pen and not program:
         alphys "I'm sorry Papyrus"
 
     jump day3

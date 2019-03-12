@@ -6,3 +6,12 @@ label sansSuitStiff:
     else:
         show sansImg suit green stiff
     return
+
+label sansSuitBored:
+    if suit == 1:
+        show sansImg suit red bored
+    elif suit == 2:
+        show sansImg suit blue bored
+    else:
+        show sansImg suit green bored
+    return
