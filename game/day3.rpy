@@ -1,6 +1,6 @@
 label day3:
     $ fromDay = 3
-    jump freeMorning
+    call freeMorning
 
 label forest:
     scene skelebroHouse outside with dissolve

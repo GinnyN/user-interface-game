@@ -36,6 +36,7 @@ define papyrusTraining = 0
 #Define Mettaton Variable
 define mettatonModel = "v1"
 define askUndyne = False
+define undyneThere = True
 
 #Flag Variables
 define doors = False

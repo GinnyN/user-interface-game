@@ -96,12 +96,15 @@ image sansImg hoddie done flip = im.Flip(im.FactorScale("sans/hoddie/done.png", 
 #Blue Suit
 image sansImg suit blue stiff = im.FactorScale("sans/blueSuit/stiff.png", 0.8)
 image sansImg suit blue bored = im.FactorScale("sans/blueSuit/bored.png", 0.8)
+image sansImg suit blue sarcastic = im.FactorScale("sans/blueSuit/sarcastic.png", 0.8)
 #Red Suit
 image sansImg suit red stiff = im.FactorScale("sans/redSuit/stiff.png", 0.8)
-image sansImg suit red bored = im.FactorScale("sans/blueSuit/bored.png", 0.8)
+image sansImg suit red bored = im.FactorScale("sans/redSuit/bored.png", 0.8)
+image sansImg suit red sarcastic = im.FactorScale("sans/redSuit/sarcastic.png", 0.8)
 #Green Suit
 image sansImg suit green stiff = im.FactorScale("sans/greenSuit/stiff.png", 0.8)
-image sansImg suit green bored = im.FactorScale("sans/blueSuit/bored.png", 0.8)
+image sansImg suit green bored = im.FactorScale("sans/greenSuit/bored.png", 0.8)
+image sansImg suit green sarcastic = im.FactorScale("sans/greenSuit/sarcastic.png", 0.8)
 
 
 #Undyne
@@ -117,8 +120,8 @@ image undyneImg troll flip = im.Flip("undyne/troll.png", horizontal=True)
 image undyneImg explaining = "undyne/explaining.png"
 image undyneImg explaining flip = im.Flip("undyne/explaining.png", horizontal=True)
 image undyneImg looking up = "undyne/looking-up.png"
-image undyneImg bored = "undyne/bored.png"
-image undyneImg bored flip = im.Flip("undyne/bored.png", horizontal=True)
+image undyneImg bored = im.FactorScale("undyne/bored.png", 0.75)
+image undyneImg bored flip = im.FactorScale(im.Flip("undyne/bored.png", horizontal=True), 0.75)
 image undyneImg bored explaining = "undyne/boredExplaining.png"
 image undyneImg bored explaining flip = im.Flip("undyne/boredExplaining.png", horizontal=True)
 image undyneImg laugh = im.FactorScale("undyne/laugh.png", 0.75)
@@ -166,6 +169,7 @@ image torielImg teacher unsure flip = im.Flip("toriel/teacher/unsure.png", horiz
 image torielImg teacher neutral = "toriel/teacher/neutral.png"
 image torielImg teacher neutral flip = im.Flip("toriel/teacher/neutral.png", horizontal=True)
 image torielImg teacher happy = "toriel/teacher/happy.png"
+image torielImg teacher happy flip = im.Flip("toriel/teacher/happy.png", horizontal=True)
 image torielImg teacher surprised = "toriel/teacher/surprised.png"
 image torielImg teacher surprised flip = im.Flip("toriel/teacher/surprised.png", horizontal=True)
 

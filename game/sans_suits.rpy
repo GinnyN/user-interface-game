@@ -15,3 +15,12 @@ label sansSuitBored:
     else:
         show sansImg suit green bored
     return
+
+label sansSuitSarcastic:
+    if suit == 1:
+        show sansImg suit red sarcastic
+    elif suit == 2:
+        show sansImg suit blue sarcastic
+    else:
+        show sansImg suit green sarcastic
+    return

@@ -861,15 +861,23 @@ label suitDecision:
     papyrus "THIS WAS AMAZING!"
     call sansSuitBored
     if undyneThere:
+        show undyneImg bored flip zorder 3 at fade:
+            xpos 0.5
+            ypos 0.1
         undyne "And wholefully innecesary"
         show papyrusImg delight flip
         papyrus "BUT SANS LOOK VERY COOL!"
+        hide undyneImg
     else:
         sans "and kind of tacky"
         show papyrusImg delight flip
         papyrus "BUT YOU LOOK VERY COOL SANS!"
+    show torielImg teacher happy flip zorder 3 at fade:
+        xpos 0.5
     toriel "And you have a new suit which we needed"
+    call sansSuitSarcastic
     sans "the things i do for my brother"
+    hide torielImg
     papyrus "AHHH..."
     papyrus "YOU ARE ADORABLE"
     sans "don't tell me that"
