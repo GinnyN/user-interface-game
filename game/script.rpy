@@ -1,2 +1,3 @@
 label start:
-    jump suitDecision
+    #$ undyneThere = False
+    jump alphysTeasing

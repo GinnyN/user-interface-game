@@ -106,7 +106,6 @@ image sansImg suit green stiff = im.FactorScale("sans/greenSuit/stiff.png", 0.8)
 image sansImg suit green bored = im.FactorScale("sans/greenSuit/bored.png", 0.8)
 image sansImg suit green sarcastic = im.FactorScale("sans/greenSuit/sarcastic.png", 0.8)
 
-
 #Undyne
 #Black Shirt
 image undyneImg angry = im.FactorScale("undyne/angry.png",0.75)
@@ -132,6 +131,11 @@ image undyneImg thinking = im.FactorScale("undyne/thinking.png", 0.75)
 image undyneImg thinking flip = im.Flip(im.FactorScale("undyne/thinking.png", 0.75), horizontal=True)
 image undyneImg worried = "undyne/worried.png"
 image undyneImg worried flip = im.Flip("undyne/worried.png", horizontal=True)
+image undyneImg neutral = im.FactorScale("undyne/neutral.png", 0.75)
+image undyneImg neutral flip = im.Flip(im.FactorScale("undyne/neutral.png", 0.75), horizontal=True)
+image undyneImg motivated = im.FactorScale("undyne/motivated.png", 0.75)
+image undyneImg motivated flip = im.Flip(im.FactorScale("undyne/motivated.png", 0.75), horizontal=True)
+
 #Black Shirt Holding Frisk
 image undyneImg frisk happy = "undyne/frisk/happy.png"
 image undyneImg frisk happy flip = im.Flip("undyne/frisk/happy.png", horizontal=True)
@@ -206,9 +210,12 @@ image friskImg affirmation flip = im.Flip(im.FactorScale("frisk/affirmation.png"
 
 #Asgore
 image asgoreImg shirt explaining = "asgore/shirt/explain.png"
+image asgoreImg shirt explaining flip = im.Flip("asgore/shirt/explain.png", horizontal=True)
 image asgoreImg shirt embarrased = "asgore/shirt/embarrased.png"
 image asgoreImg shirt crossed = "asgore/shirt/crossed.png"
 image asgoreImg shirt crossed flip = im.Flip("asgore/shirt/crossed.png", horizontal=True)
+image asgoreImg shirt serious = "asgore/shirt/serious.png"
+image asgoreImg shirt serious flip = im.Flip("asgore/shirt/serious.png", horizontal=True)
 
 
 #Mettaton 

@@ -881,17 +881,34 @@ label suitDecision:
     papyrus "AHHH..."
     papyrus "YOU ARE ADORABLE"
     sans "don't tell me that"
+    hide sansImg
+    hide papyrusImg
+    show asgoreImg shirt crossed flip zorder 1 at fade:
+        xpos 0.3
+        ypos -0.15
+    show torielImg teacher neutral flip zorder 3 at fade:
+        xpos 0
     asgore "Ahhh..."
     asgore "Brotherly love"
+    hide torielImg
 
-    "Asgore talks with Papyrus and Undyne (If she's there)"
-
+    
+    show asgoreImg shirt serious flip
+    show papyrusImg neutral zorder 2 at fade:
+        xpos 0
+    if undyneThere:
+        show undyneImg neutral zorder 3 at fade:
+            xpos 0
+            ypos 0.1
     asgore "Tomorrow we will start searching in the woods"
     asgore "Hopefully we're going to end this problem this week"
     if undyneThere:
+        show papyrusImg angry
+        show undyneImg motivated
         "* YES SIR!"
     else:
-        papyrus "YES SIR!"
+        papyrus "YES SIR"
+        show asgoreImg shirt explaining flip
         asgore "Papyrus, please tell Undyne about this tomorrow, ok?"
         papyrus "YES SIR"
 
