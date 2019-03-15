@@ -1,3 +1,3 @@
 label start:
     #$ undyneThere = False
-    jump papyrusLab
+    jump day3

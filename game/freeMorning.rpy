@@ -1,7 +1,10 @@
 label freeMorning:
-    
+    scene skelebroHouse outside with dissolve
+    show papyrusImg coolDude happy zorder 0 at fade:
+        xpos 0
     papyrus "LOOKIE THAT!"
     papyrus "I HAVE FREE THE MORNING!"
+    show papyrusImg coolDude thinking
     papyrus "WHAT SHALL I DO?"
 
     menu:
