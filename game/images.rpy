@@ -18,6 +18,9 @@ image papyrusImg explaining flip = im.Flip("papyrus/explaining.png", horizontal=
 image papyrusImg embarrased happy = "papyrus/embarrasedHappy.png"
 image papyrusImg embarrased happy flip = im.Flip("papyrus/embarrasedHappy.png", horizontal=True)
 
+image papyrusImg me = "papyrus/me.png"
+image papyrusImg me flip = im.Flip("papyrus/me.png", horizontal=True)
+
 image papyrusImg nervious = "papyrus/nervious.png"
 image papyrusImg nervious flip = im.Flip("papyrus/nervious.png", horizontal=True)
 image papyrusImg neutral = "papyrus/neutral.png"
@@ -110,6 +113,15 @@ image sansImg suit green sarcastic = im.FactorScale("sans/greenSuit/sarcastic.pn
 #Black Shirt
 image undyneImg angry = im.FactorScale("undyne/angry.png",0.75)
 image undyneImg angry flip = im.FactorScale(im.Flip("undyne/angry.png", horizontal=True), 0.75)
+
+image undyneImg bored = im.FactorScale("undyne/bored.png", 0.75)
+image undyneImg bored flip = im.FactorScale(im.Flip("undyne/bored.png", horizontal=True), 0.75)
+image undyneImg bored explaining = "undyne/boredExplaining.png"
+image undyneImg bored explaining flip = im.Flip("undyne/boredExplaining.png", horizontal=True)
+
+image undyneImg frustrated = im.FactorScale("undyne/frustrated.png", 0.75)
+image undyneImg frustrated flip = im.FactorScale(im.Flip("undyne/frustrated.png", horizontal=True), 0.75)
+
 image undyneImg happy = im.FactorScale("undyne/happy.png",0.75)
 image undyneImg happy flip = im.FactorScale(im.Flip("undyne/happy.png", horizontal=True), 0.75)
 image undyneImg serious = "undyne/serious.png"
@@ -119,22 +131,23 @@ image undyneImg troll flip = im.Flip("undyne/troll.png", horizontal=True)
 image undyneImg explaining = "undyne/explaining.png"
 image undyneImg explaining flip = im.Flip("undyne/explaining.png", horizontal=True)
 image undyneImg looking up = "undyne/looking-up.png"
-image undyneImg bored = im.FactorScale("undyne/bored.png", 0.75)
-image undyneImg bored flip = im.FactorScale(im.Flip("undyne/bored.png", horizontal=True), 0.75)
-image undyneImg bored explaining = "undyne/boredExplaining.png"
-image undyneImg bored explaining flip = im.Flip("undyne/boredExplaining.png", horizontal=True)
 image undyneImg laugh = im.FactorScale("undyne/laugh.png", 0.75)
 image undyneImg laugh flip = im.FactorScale(im.Flip("undyne/laugh.png", horizontal=True),0.75)
+
+
 image undyneImg mild surprise = im.FactorScale("undyne/mildSurprise.png", 0.75)
 image undyneImg mild surprise flip = im.Flip(im.FactorScale("undyne/mildSurprise.png", 0.75), horizontal=True)
+image undyneImg motivated = im.FactorScale("undyne/motivated.png", 0.75)
+image undyneImg motivated flip = im.Flip(im.FactorScale("undyne/motivated.png", 0.75), horizontal=True)
+
+image undyneImg neutral = im.FactorScale("undyne/neutral.png", 0.75)
+image undyneImg neutral flip = im.Flip(im.FactorScale("undyne/neutral.png", 0.75), horizontal=True)
+
 image undyneImg thinking = im.FactorScale("undyne/thinking.png", 0.75)
 image undyneImg thinking flip = im.Flip(im.FactorScale("undyne/thinking.png", 0.75), horizontal=True)
 image undyneImg worried = "undyne/worried.png"
 image undyneImg worried flip = im.Flip("undyne/worried.png", horizontal=True)
-image undyneImg neutral = im.FactorScale("undyne/neutral.png", 0.75)
-image undyneImg neutral flip = im.Flip(im.FactorScale("undyne/neutral.png", 0.75), horizontal=True)
-image undyneImg motivated = im.FactorScale("undyne/motivated.png", 0.75)
-image undyneImg motivated flip = im.Flip(im.FactorScale("undyne/motivated.png", 0.75), horizontal=True)
+
 
 #Black Shirt Holding Frisk
 image undyneImg frisk happy = "undyne/frisk/happy.png"
@@ -194,6 +207,10 @@ image alphysImg casual realizing = "alphys/casual/realizing.png"
 image alphysImg casual realizing flip = im.Flip("alphys/casual/realizing.png", horizontal=True)
 image alphysImg casual confused mild = "alphys/casual/mildConfused.png"
 image alphysImg casual confused mild flip = im.Flip("alphys/casual/mildConfused.png", horizontal=True)
+image alphysImg casual tired = "alphys/casual/tired.png"
+image alphysImg casual tired flip = im.Flip("alphys/casual/tired.png", horizontal=True)
+image alphysImg casual nostalgic = "alphys/casual/nostalgic.png"
+image alphysImg casual nostalgic flip = im.Flip("alphys/casual/nostalgic.png", horizontal=True)
 
 #Frisk
 image friskImg worried = "frisk/worried.png"

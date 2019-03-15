@@ -1,3 +1,3 @@
 label start:
     #$ undyneThere = False
-    jump alphysTeasing
+    jump papyrusLab

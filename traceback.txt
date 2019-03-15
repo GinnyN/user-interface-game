@@ -1,18 +1,17 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: Could not find return label (u'/Users/xcontreras/ownCloud/User Interface/user-interface-game/game/freeMorning.rpy', 1468078708, 69).
+Exception: Could not find return label (u'C:\\Users\\satel\\Desktop\\user-interface-game/game/day2.rpy', 1548552746, 424).
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/day3.rpyc", line 3, in script call
   File "lib/windows-i686/00start.rpyc", line 107, in script
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1376, in execute
     next_node(renpy.game.context().lookup_return(pop=True))
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\execution.py", line 552, in lookup_return
     raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'/Users/xcontreras/ownCloud/User Interface/user-interface-game/game/freeMorning.rpy', 1468078708, 69).
+Exception: Could not find return label (u'C:\\Users\\satel\\Desktop\\user-interface-game/game/day2.rpy', 1548552746, 424).
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

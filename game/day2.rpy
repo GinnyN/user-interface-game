@@ -916,37 +916,63 @@ label suitDecision:
 
 label papyrusLab:
     $ sansSuit = 2
+    show papyrusImg me zorder 0 at fade:
+        xpos -0.2
     papyrus "I'LL TAKE HER BACK HOME"
+    hide mettaton
+    show papyrusImg delight
+    show undyneImg bored flip:
+        xpos 0.4
     undyne "Papyrus please"
     papyrus "SHE MUST BE OVERWHELMED WITH SO MUCH COOLNESS IN SUITS"
+    show papyrusImg proud
     papyrus "AND, EVEN IF I'M THE COOLEST, SHE DOESN'T HAVE A CRUSH ON ME"
+    show papyrusImg delight
+    show undyneImg frustrated flip
     undyne "Ngaaa..."
+    show undyneImg neutral flip
     undyne "Ok"
 
 label alphysHome:
-    "Papyrus get Alphys home"
+    scene undyneAlphysHouse inside with dissolve
+    play music "music/33 Quiet Water.mp3" fadein 1 fadeout 1 
+    show papyrusImg neutral zorder 0 at fade:
+        xpos -0.2
+    show alphysImg casual tired zorder 3 at fade:
+        xpos 0.2
+        ypos -0.2
     alphys "Thanks Papyrus"
     papyrus "IT'S OK, MY PLEASURE"
     alphys "I'm such a mess..."
     alphys "Undyne must be so embarrased..."
+    show papyrusImg delight
     papyrus "SHE ACTUALLY LOVES WHEN YOU DO THIS"
+    show papyrusImg neutral
     papyrus "BUT I THOUGHT YOU ALREADY KNEW THAT"
+    show alphysImg casual tired flip
     alphys "Yes..."
     alphys "I just cannot believe it myself"
     papyrus "WE CAN ADD THAT 'UNDYNE LOVES ME FOR HOW I'M' TO OUR TRAINING EVERY WEDNESDAY AND FRIDAY"
     alphys "No, we'll not going to do that"
     papyrus "EVERYBODY BELIEVE YOU ARE AMAZING DR. ALPHYS"
     papyrus "IF YOU NEED SOMEONE TO REMIND YOU, APART OF UNDYNE, JUST GIVE A CALL"
+    show alphysImg casual nostalgic flip
     alphys "Aw... Papyrus..."
+    show alphysImg casual tired flip
     alphys "..."
+    show alphysImg casual nostalgic flip
     alphys "Undyne is right, you are way too nice..."
+    show papyrusImg uhh
     papyrus "?"
     papyrus "I JUST DO WHAT I THINK IS THE CORRECT THING TO DO"
     papyrus "THAT'S NOT BEEN NICE"
+    show papyrusImg neutral
     papyrus "IT'S BEEN CONSEQUENT"
     alphys "Well..."
+    show alphysImg casual tired flip
     alphys "..."
     alphys "..."
+    show alphysImg casual nostalgic flip
     alphys "If you say so"
     if pen and not program:
         papyrus "DR. ALPHYS, I KNOW YOU ARE BUSY"
@@ -970,8 +996,11 @@ label alphysHome:
         papyrus "JUST KEEP THE THING A SECRET, PLEASE"
         alphys "Will do."
 
+    show papyrusImg me
     papyrus "GOOD NIGHT DR ALPHYS"
+    hide papyrusImg
     papyrus "DREAM OF TINY UNDYNES BEEN AWESOME"
+    show alphysImg casual laugh
     alphys "PAPYRUS!"
 
     if pen and not program:
