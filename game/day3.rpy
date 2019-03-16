@@ -1,5 +1,4 @@
 label day3:
-    $ fromDay = 3
     call freeMorning
 
 label forest:

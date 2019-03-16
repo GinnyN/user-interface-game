@@ -1,4 +1,5 @@
 label freeMorning:
+    stop music
     scene skelebroHouse outside with dissolve
     show papyrusImg coolDude happy zorder 0 at fade:
         xpos 0
@@ -9,6 +10,7 @@ label freeMorning:
 
     menu:
         "Go help Toriel at the School" if not helpedToriel:
+            show papyrusImg coolDude happy 
             papyrus "LET'S SEE IF TORIEL HAVE SOMETHING TO DO!"
             papyrus "THEY ARE STILL MOVING THINGS FROM THE UNDERGROUND AFTER ALL"
             $ helpedToriel = True

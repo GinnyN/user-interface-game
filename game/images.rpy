@@ -65,6 +65,8 @@ image papyrusImg coolDude screaming = "papyrus/coolDude/screaming.png"
 image papyrusImg coolDude screaming flip = im.Flip("papyrus/coolDude/screaming.png", horizontal=True)
 image papyrusImg coolDude speakless = "papyrus/coolDude/speakless.png"
 image papyrusImg coolDude speakless flip = im.Flip("papyrus/coolDude/speakless.png", horizontal=True)
+image papyrusImg coolDude surprised happy = "papyrus/coolDude/surprisedHappy.png"
+image papyrusImg coolDude surprised happy flip = im.Flip("papyrus/coolDude/surprisedHappy.png", horizontal=True)
 image papyrusImg coolDude sorry = "papyrus/coolDude/sorry.png"
 image papyrusImg coolDude sorry flip = im.Flip("papyrus/coolDude/sorry.png", horizontal=True)
 image papyrusImg coolDude grandiose = "papyrus/coolDude/grandiose.png"
@@ -193,6 +195,8 @@ image torielImg teacher happy = "toriel/teacher/happy.png"
 image torielImg teacher happy flip = im.Flip("toriel/teacher/happy.png", horizontal=True)
 image torielImg teacher surprised = "toriel/teacher/surprised.png"
 image torielImg teacher surprised flip = im.Flip("toriel/teacher/surprised.png", horizontal=True)
+image torielImg teacher worried = "toriel/teacher/worried.png"
+image torielImg teacher worried flip = im.Flip("toriel/teacher/worried.png", horizontal=True)
 
 #Alphys
 #Pajamas

@@ -1,24 +1,44 @@
 label torielSchool:
+    play music "music/12 Home.mp3" fadein 1
+    scene school outside with dissolve:
+        ypos -0.3
+    show torielImg teacher neutral flip zorder 2 at fade:
+        xpos 0.4
     toriel "Papyrus!"
+    show papyrusImg coolDude happy zorder 0 at fade:
+        xpos 0
     papyrus "I CAME TO SEE IF YOU NEED HELP ON SOMETHING!"
+    show torielImg teacher unsure flip
     toriel "I don't know if I have something for you today Papyrus"
+    show torielImg teacher neutral
     toriel "The kids are running around the forest now"
+    show torielImg teacher neutral flip
     toriel "Maybe you can help us with the parts of the laboratory"
+    show papyrusImg coolDude thinking
     papyrus "FROM THE LAB?"
     papyrus "MAYBE YOU SHOULD CALL SANS INSTEAD"
     papyrus "HE LOVES SCIENCE AFTER ALL!"
+    show torielImg teacher happy flip
     toriel "It's just moving things around"
+    show torielImg teacher neutral flip
     toriel "Alphys is sorting the aparatus right now"
     toriel "She needs some muscle"
     toriel "And Undyne is with the kids right now"
+    show papyrusImg coolDude explaining
     papyrus "BUT I DON'T HAVE A MUSCLE"
+    show torielImg teacher unsure flip
     toriel "..."
     toriel "Oh!"
+    show torielImg teacher neutral flip
     toriel "Don't worry, your bones are going to be a perfect replacement"
+    show papyrusImg coolDude surprised happy
     papyrus "REALLY?!"
     papyrus "THEN THE GREAT PAPYRUS IS GOING TO HELP"
+    hide papyrusImg
     papyrus "DOOOOCCCCTOOOOOORRRRR ALLLLLLLPHHYYYYYYSSSSSS!!!!!!"
+    show torielImg teacher worried flip
     toriel "I'll better go to check as well"
+    hide torielImg
 
 ##School Basement
 
