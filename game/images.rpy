@@ -49,12 +49,18 @@ image papyrusImg worried flip = im.Flip("papyrus/worried.png", horizontal=True)
 image papyrusImg happy = "papyrus/happy.png"
 image papyrusImg happy flip = im.Flip("papyrus/happy.png", horizontal=True)
 #Cool Dude
+image papyrusImg coolDude angry = "papyrus/coolDude/angry.png"
+image papyrusImg coolDude angry flip = im.Flip("papyrus/coolDude/angry.png", horizontal=True)
 image papyrusImg coolDude cocky = "papyrus/coolDude/cocky.png"
 image papyrusImg coolDude cocky flip = im.Flip("papyrus/coolDude/cocky.png", horizontal=True)
 image papyrusImg coolDude surprised = "papyrus/coolDude/scared.png"
 image papyrusImg coolDude surprised flip = im.Flip("papyrus/coolDude/scared.png", horizontal=True)
 image papyrusImg coolDude annoyed = "papyrus/coolDude/annoyed.png"
 image papyrusImg coolDude annoyed flip = im.Flip("papyrus/coolDude/annoyed.png", horizontal=True)
+image papyrusImg coolDude delight = "papyrus/coolDude/delight.png"
+image papyrusImg coolDude delight flip = im.Flip("papyrus/coolDude/delight.png", horizontal=True)
+image papyrusImg coolDude enough = "papyrus/coolDude/enough.png"
+image papyrusImg coolDude enough flip = im.Flip("papyrus/coolDude/enough.png", horizontal=True)
 image papyrusImg coolDude explaining = "papyrus/coolDude/explaining.png"
 image papyrusImg coolDude explaining flip = im.Flip("papyrus/coolDude/explaining.png", horizontal=True)
 image papyrusImg coolDude happy = "papyrus/coolDude/happy.png"
@@ -187,6 +193,8 @@ image torielImg pajamas ejem = "toriel/pajamas/ejem.png"
 #Teacher
 image torielImg teacher angry ="toriel/teacher/angry.png"
 image torielImg teacher angry flip = im.Flip("toriel/teacher/angry.png", horizontal=True)
+image torielImg teacher explaining = "toriel/teacher/explaining.png"
+image torielImg teacher explaining flip = im.Flip("toriel/teacher/explaining.png", horizontal=True)
 image torielImg teacher unsure = "toriel/teacher/unsure.png"
 image torielImg teacher unsure flip = im.Flip("toriel/teacher/unsure.png", horizontal=True)
 image torielImg teacher neutral = "toriel/teacher/neutral.png"
@@ -211,6 +219,8 @@ image alphysImg casual laugh = "alphys/casual/joking.png"
 image alphysImg casual explaining = "alphys/casual/explaining.png"
 image alphysImg casual confused = "alphys/casual/confused.png"
 image alphysImg casual confused flip = im.Flip("alphys/casual/confused.png", horizontal=True)
+image alphysImg casual dismissive = "alphys/casual/dismissive.png"
+image alphysImg casual dismissive flip = im.Flip("alphys/casual/dismissive.png", horizontal=True)
 image alphysImg casual realizing = "alphys/casual/realizing.png"
 image alphysImg casual realizing flip = im.Flip("alphys/casual/realizing.png", horizontal=True)
 image alphysImg casual confused mild = "alphys/casual/mildConfused.png"
@@ -219,6 +229,8 @@ image alphysImg casual tired = "alphys/casual/tired.png"
 image alphysImg casual tired flip = im.Flip("alphys/casual/tired.png", horizontal=True)
 image alphysImg casual nostalgic = "alphys/casual/nostalgic.png"
 image alphysImg casual nostalgic flip = im.Flip("alphys/casual/nostalgic.png", horizontal=True)
+image alphysImg casual noWords = "alphys/casual/noWords.png"
+image alphysImg casual noWords flip = im.Flip("alphys/casual/noWords.png", horizontal=True)
 
 #Frisk
 image friskImg worried = "frisk/worried.png"

@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-The label visitFrisk is defined twice, at
-  File "lib/windows-i686/freeMorning.rpyc", line 47 and
-  File "lib/windows-i686/freeMorning/visit-frisk.rpyc", line 1.
+File "game/freeMorning/visit-toriel.rpy", line 55: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    xpos -0.2
+    ^
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029
