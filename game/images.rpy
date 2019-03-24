@@ -75,6 +75,8 @@ image papyrusImg coolDude surprised happy = "papyrus/coolDude/surprisedHappy.png
 image papyrusImg coolDude surprised happy flip = im.Flip("papyrus/coolDude/surprisedHappy.png", horizontal=True)
 image papyrusImg coolDude sorry = "papyrus/coolDude/sorry.png"
 image papyrusImg coolDude sorry flip = im.Flip("papyrus/coolDude/sorry.png", horizontal=True)
+image papyrusImg coolDude offended = "papyrus/coolDude/offended.png"
+image papyrusImg coolDude offended flip = im.Flip("papyrus/coolDude/offended.png", horizontal=True)
 image papyrusImg coolDude grandiose = "papyrus/coolDude/grandiose.png"
 image papyrusImg coolDude grandiose flip = im.Flip("papyrus/coolDude/grandiose.png",horizontal=True)
 
@@ -246,9 +248,11 @@ image friskImg affirmation = im.FactorScale("frisk/affirmation.png", 0.7)
 image friskImg affirmation flip = im.Flip(im.FactorScale("frisk/affirmation.png", 0.7), horizontal=True)
 
 #Asgore
+#Shirt
 image asgoreImg shirt explaining = "asgore/shirt/explain.png"
 image asgoreImg shirt explaining flip = im.Flip("asgore/shirt/explain.png", horizontal=True)
 image asgoreImg shirt embarrased = "asgore/shirt/embarrased.png"
+image asgoreImg shirt embarrased flip = im.Flip("asgore/shirt/embarrased.png", horizontal=True)
 image asgoreImg shirt crossed = "asgore/shirt/crossed.png"
 image asgoreImg shirt crossed flip = im.Flip("asgore/shirt/crossed.png", horizontal=True)
 image asgoreImg shirt serious = "asgore/shirt/serious.png"
@@ -299,6 +303,10 @@ image goon3 flip = im.Flip("randomgoon3.png", horizontal=True)
 #Grillsby
 image grillsby neutral = im.FactorScale("grillsby.png",0.8)
 image grillsby neutral flip = im.Flip(im.FactorScale("grillsby.png",0.8), horizontal=True)
+
+#Muffet
+image muffet neutral = im.FactorScale("muffet.png",0.8)
+image muffet neutral flip = im.Flip(im.FactorScale("muffet.png",0.8), horizontal=True)
 
 #Dogamy
 image dogamy neutral = im.FactorScale("dog/dogamyNeutral.png",0.8)

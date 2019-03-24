@@ -126,26 +126,23 @@ label torielSchool:
     "Text" "{font=fonts/NewAster.ttf} I'LL ANALYSE THAT BETTER IN THE MORNING.{/font}"
     show papyrusImg coolDude enough
     papyrus "I THINK I JUST READ QUITE ENOUGH"
-    menu:
-        "Go out":
-            return
-        "Keep Reading" if resets > 0 and not papersPapyrusCreation:
-            show papyrusImg coolDude thinking
-            papyrus "..."
-            "Text" "{font=fonts/NewAster.ttf} I SPOKE TO SANS ABOUT THAT IDEA THIS MORNING.{/font}"
-            show papyrusImg coolDude angry
-            stop music
-            papyrus "I KNEW IT"
-            "Text" "{font=fonts/NewAster.ttf} HE SEEMS STOKED. I CAN HARDLY BLAME HIM.{/font}"
-            "Text" "{font=fonts/NewAster.ttf} I DO NOT HAVE A BROTHER MYSELF, BUT BEEN ALWAYS WITH AN OLD SKELETON LIKE ME SHOULD NOT BE SOMETHING A YOUNG SKELETON LIKE HIM MUST FIND EXCITING.{/font}" 
-            "Text" "{font=fonts/NewAster.ttf} I ALSO ASKED IF HE HAD A GOOD NAME FOR HIM.{/font}"
-            "Text" "{font=fonts/NewAster.ttf} HE TOOK ABOUT 2 SECONDS TO FLOOD ME WITH SUGGESTIONS.{/font}"
-            "Text" "{font=fonts/NewAster.ttf} BUT I THINK WE GOT A GREAT ONE.{/font}"
-            show papyrusImg coolDude thinking
-            papyrus "..."
-            papyrus "I NEED TO TALK ABOUT THIS WITH SANS"
-            show papyrusImg coolDude explaining
-            papyrus "BUT WHEN?"
-            $ papersPapyrusCreation = True
+    if resets > 0 and not papersPapyrusCreation:
+        show papyrusImg coolDude thinking
+        papyrus "..."
+        "Text" "{font=fonts/NewAster.ttf} I SPOKE TO SANS ABOUT THAT IDEA THIS MORNING.{/font}"
+        show papyrusImg coolDude angry
+        stop music
+        papyrus "I KNEW IT"
+        "Text" "{font=fonts/NewAster.ttf} HE SEEMS STOKED. I CAN HARDLY BLAME HIM.{/font}"
+        "Text" "{font=fonts/NewAster.ttf} I DO NOT HAVE A BROTHER MYSELF, BUT I IMAGINE BEEN ALWAYS WITH AN OLD SKELETON LIKE ME SHOULD NOT BE SOMETHING A YOUNG SKELETON LIKE HIM MUST FIND EXCITING.{/font}" 
+        "Text" "{font=fonts/NewAster.ttf} I ALSO ASKED IF HE HAD A GOOD NAME FOR HIM.{/font}"
+        "Text" "{font=fonts/NewAster.ttf} HE TOOK ABOUT 2 SECONDS TO FLOOD ME WITH SUGGESTIONS.{/font}"
+        "Text" "{font=fonts/NewAster.ttf} BUT I THINK WE GOT A GREAT ONE.{/font}"
+        show papyrusImg coolDude thinking
+        papyrus "..."
+        papyrus "I NEED TO TALK ABOUT THIS WITH SANS"
+        show papyrusImg coolDude explaining
+        papyrus "BUT WHEN?"
+        $ papersPapyrusCreation = True
     
 return

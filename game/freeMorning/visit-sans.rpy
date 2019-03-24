@@ -59,27 +59,50 @@ label checkSans:
     else:
         papyrus "HE'S GETTING BETTER THANKS TO TORIEL"
         papyrus "BUT HE'S STILL SLACKING OFF WAY TOO OFTEN!"
-        "*change scene*"
+        scene elevator outside with dissolve:
+            ypos -0.2
+        show papyrusImg coolDude offended flip at fade:
+            xpos -0.1
+        play music "music/15 sans.mp3" fadein 1
         papyrus "SANS IS NO WHERE TO BE FOUND"
         papyrus "HE'S LUCKY THERE'S NO MONSTERS WANTING TO GO TO HIGH SNOWDIN"
+        show papyrusImg coolDude explaining flip
         papyrus "BUT HE SHOULD BE HERE!"
+        show sansImg hoddie neutral flip at fade:
+            xpos 0.5
+            ypos 0.205
         sans "sup' bro?"
+        show papyrusImg coolDude angry
         papyrus "SANS!"
         papyrus "WHERE HAVE YOU BEEN?"
         sans "just walking"
+        show papyrusImg coolDude offended
         papyrus "WALKING TO GRILLSBY'S I BET"
+        show sansImg hoddie content flip
         sans "no"
         sans "just walking"
+        show sansImg hoddie neutral flip
         sans "the forest is very nice this time of the day"
+        show papyrusImg coolDude angry
         papyrus "YOU DON'T FOOL ME"
         papyrus "YOU WERE DOING SOMETHING LAZY I'M SURE!"
+        show sansImg hoddie sideglance flip
         sans "i was technically slacking off though"
+        show papyrusImg coolDude thinking
+        stop music
         papyrus "BUT THAT KIND OF SLACKING OFF..."
         papyrus "..."
+        show sansImg hoddie neutral flip
         sans "what?"
+        show papyrusImg coolDude delight
+        play music "music/17 Snowy.mp3" fadein 1
         papyrus "I DO THAT AS WELL"
+        show sansImg hoddie surprised flip
         sans "you? slacking off?"
         papyrus "IT'S JUST"
+        scene freeMorning sans resetZero panoramica with dissolve:
+            ypos -0.35
+            linear 10 ypos 0.0
         papyrus "THE TREES ARE GREEN"
         papyrus "THE SKY IS BLUE"
         papyrus "THE AIR IS CLEAN"
@@ -89,13 +112,22 @@ label checkSans:
         papyrus "MAYBE IS PART OF THE REASON OF WHY YOU ARE GETTING LESS LAZY"
         sans "?!"
         sans "it seems i'm losing my edge"
+        show papyrusImg coolDude offended  at fade:
+            xpos -0.1
         papyrus "MAYBE YOU SHOULD USE YOUR ACTUAL FREE TIME TO DO THAT THOUGH"
+        show sansImg hoddie content flip  at fade:
+            xpos 0.5
+            ypos 0.205
         sans "don't worry"
         sans "i have that machine over there i did"
+        show sansImg hoddie neutral flip
         sans "it tell me when someone is close"
-        papyrus "AND YOU ARE GETTING RESPONSIBLE!"
+        show papyrusImg coolDude delight
         papyrus "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        show sansImg hoddie done flip
         sans "i'm totally losing my edge"
+        hide papyrusImg
         papyrus "TOOOOORRRRRIIIIIIIIEEEEEEEEEEEEEELLLLLLLLLLLL!!!!!!!!!!!!!!!"
+        stop music
 return
   

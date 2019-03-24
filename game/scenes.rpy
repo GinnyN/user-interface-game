@@ -22,6 +22,8 @@ image day2 suit blue = "background/day2/blueSuit.png"
 image day2 suit red = "background/day2/redSuit.png"
 image day2 suit green = "background/day2/greenSuit.png"
 image day2 suit undyne ="background/day2/undyneSuit.png"
+#Free morning
+image freeMorning sans resetZero panoramica = "background/freeMorning/sans-reset-zero-panoramica.png"
 
 #Places Backgrounds
 image newerHome night = "background/newerHome/night.png"
@@ -32,3 +34,5 @@ image school outside = "background/school.png"
 image school gym = "background/schoolGym.png"
 image school basement = "background/schoolBasement.png"
 image undyneAlphysHouse inside = "background/undyneAlphysHouse.png"
+image muffetBakery inside = "background/muffetBakery.png"
+image elevator outside = "background/elevatorOutside.png"

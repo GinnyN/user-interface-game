@@ -1,17 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: Could not find return label (u'C:\\Users\\satel\\Desktop\\user-interface-game/game/day2.rpy', 1548552746, 424).
+  File "game/freeMorning/visit-sans.rpy", line 112, in <module>
+    show papyrusImg coolDude offended  at fadeIn:
+NameError: name 'fadeIn' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/00start.rpyc", line 107, in script
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1376, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\execution.py", line 552, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'C:\\Users\\satel\\Desktop\\user-interface-game/game/day2.rpy', 1548552746, 424).
+  File "lib/windows-i686/day3.rpyc", line 2, in script call
+  File "lib/windows-i686/freeMorning.rpyc", line 29, in script call
+  File "lib/windows-i686/freeMorning/visit-sans.rpyc", line 112, in script
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1075, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1036, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1725, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1719, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/freeMorning/visit-sans.rpy", line 112, in <module>
+    show papyrusImg coolDude offended  at fadeIn:
+NameError: name 'fadeIn' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029
