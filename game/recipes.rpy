@@ -65,5 +65,13 @@ define visitUndyne = False
 define visitAlphys = False
 define visitFrisk = False
 
+label resetVariables:
+    $ helpedToriel = False
+    $ metAsgore = False
+    $ visitSans = False
+    $ visitUndyne = False
+    $ visitAlphys = False
+    $ visitFrisk = False
+
 #Define Day Alternatives
 define day2 = False
