@@ -43,7 +43,7 @@ label day1:
     undyne "We have to rescue Frisk!"
 
     menu:
-        "Jump to the Building":
+        "Jump to the Building" if resets !== 1:
             jump jumpBuilding
         "Ahh??!!" if resets > 0:
             jump titleScreen
