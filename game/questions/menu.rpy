@@ -19,6 +19,8 @@ label questionsMenu:
             call demographics
         "Wait, King Fluffybuns?" if politicalGeography > 0:
             call gasterGerson
+        "Skeleton During the Great War" if gasterPast > 0:
+            call gasterWar
         "Skeleton Duties" if gasterPast > 0:
             call gasterDuties
         "4th Wall Breaking Stuff":
