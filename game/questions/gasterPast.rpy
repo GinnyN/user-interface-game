@@ -39,3 +39,51 @@ label gasterDuties:
   if gasterPast < 2:
     $ gasterPast = gasterPast + 1
   return
+  
+label gasterWar:
+  papyrus "WERE YOU ALIVE DURING THE GREAT WAR?"
+  gaster "THE ONE AGAINST HUMANS?"
+  gaster "YES, YES I WAS"
+  papyrus "THEN YOU MUST BE REALLY OLD"
+  gaster "I'M QUITE OLD TECHNICALLY"
+  gaster "I'M NOT AS OLD THE HAMMER OF JUSTICE"
+  gaster "OR THE KING OR QUEEN FOR THAT MATTER"
+  gaster "BUT I WAS CREATED DURING THE WAR"
+  papyrus "YOU KEEP SAYING CREATED"
+  gaster "BUT... MY DE..."
+  gaster "OF COURSE, OF COURSE, YOU MUST HAVE FORGOT ABOUT THAT AS WELL"
+  gaster "SINCE, LIKE I HAVE ALREADY TOLD YOU, I CREATED YOU"
+  papyrus "THEN..."
+  gaster "I WAS CREATED DURING THE HEAT OF THE WAR, TO BE PART OF THE SKELETON UNITS"
+  gaster "I WAS CONSIDERED DEFECTIVE AND SENT TO THE BACKLINES TO HELP IN ANYTHING I COULD"
+  gaster "AND IT WASN'T UNTIL THE MONSTERS GOT TRAPPED ON THE UNDERGROUND I COULD BE..."
+  gaster "USEFUL, IN A SENSE"
+  if gasterPast < 2:
+    $ gasterPast = gasterPast + 1
+  return
+
+label gasterCreation:
+  papyrus "SO..."
+  papyrus "HOW YOU GO ON TO CREATE SKELETONS?"
+  gaster "COME AGAIN?"
+  papyrus "YOU KNOW..."
+  papyrus "USSUALLY YOU NEED TWO..."
+  papyrus "AND THE BEES AND THE FLOWERS AND..."
+  gaster "DO YOU MEAN SEX?"
+  gaster "NO, NO, NO, NO, THAT'S GROSS, NOOOOO"
+  papyrus "SO YOU DON'T NEED A SKELETON PARTNER TO CREATE A SMALLER SKELETON?"
+  gaster "WHERE DID YOU..."
+  gaster "..."
+  gaster "OF COURSE, OF COURSE..."
+  gaster "WELL... YOU USE MAGIC"
+  papyrus "WE USE MAGIC FOR EVERYTHING, WE'RE MONSTERS"
+  papyrus "WE USE MAGIC EVEN FOR S.."
+  gaster "I KNOW I KNOW"
+  gaster "AND, IN THE NAME OF THE DELTARUNE, IT IS THE GROSSEST SPELL I HAVE EVER HAD THE DISPLEASURE TO LEARN ABOUT"
+  papyrus "THAT'S PROBABLY THE FIRST TIME I HEARD THAT SAYING, YOU REALLY ARE OLD!"
+  papyrus "AND REALLY CRANKY"
+  gaster "I'M FINE"
+  gaster "I´M COMPLETELY FINE"
+  if gasterPast < 3:
+    $ gasterPast = gasterPast + 1
+  return
