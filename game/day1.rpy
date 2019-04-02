@@ -512,7 +512,21 @@ label endOfDay1:
             gaster "AFTER WHAT HAPPENED WITH..."
             gaster "THE CURRENT ROYAL SCIENTIST LAST EXPERIMENTS..."
             gaster "I DON'T FEEL, WELL, COMFORTABLE IN ASKING YOU TO GATHER MORE OF IT"
-            gaster "SO, WE CAN USE WHAT THE WEKUFE HAVE ALREADY GATHERED "
+            gaster "SO, WE CAN USE WHAT THE WEKUFE HAVE ALREADY GATHERED"
+            papyrus "I SEE"
+            gaster "THE THING IS..."
+            gaster "I CAN ONLY SET YOU, AND ME, BACK IN TIME TO THAT EXACT MOMENT"
+            gaster "WHEN YOU, SANS AND YOUR FRIEND WERE TO STORM THAT FORTRESS"
+            papyrus "THAT'S A TERRIBLE TIME FOR SOMETHING LIKE THIS..."
+            gaster "I KNOW..."
+            gaster "BUT WE'LL HAVE TO WORK WITH THAT, IF WE WANT TO USE THAT DETERMINATION"
+            gaster "WE CAN TRY UNTIL WE MADE IT"
+            gaster "OR WE DECIDE WE CAN'T"
+            gaster "IT'S UP TO US NOW"
+            papyrus "WE'LL FIND A WAY! I'M SURE OF IT!"
+            gaster "I NEEDED TO HEAR THAT..."
+        
+    call questionsEnd   
         
 
 jump day2
