@@ -16,7 +16,8 @@ label wallBreakingStuff:
     gaster "SHE DIDN'T LOOK AT IT"
     papyrus "SHE'S WORST THAN SANS!"
     gaster "I KNOW..."
-    $ wallBreakingStuff = wallBreakingStuff + 1 
+    if wallBreakingStuff < 1:
+        $ wallBreakingStuff = wallBreakingStuff + 1 
     return
 
 label moreWallBreakingStuff:
@@ -30,5 +31,6 @@ label moreWallBreakingStuff:
     papyrus "OHHHHHHHHHHHHHHHH"
     gaster "SHE FOUND THAT QUITE CLEVER"
     papyrus "I SEE..."
-    $ wallBreakingStuff = wallBreakingStuff + 1 
+    if wallBreakingStuff < 2:
+        $ wallBreakingStuff = wallBreakingStuff + 1 
     return
