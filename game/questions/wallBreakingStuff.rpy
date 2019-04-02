@@ -22,7 +22,7 @@ label wallBreakingStuff:
 label moreWallBreakingStuff:
     papyrus "OK, I HAVE ANOTHER 4TH WALL BREAKING ONE"
     gaster "SHOOT"
-    papyrus "THEN WHY DO YOU TALK IN NEW ASTER THEN?"
+    papyrus "WHY DO YOU TALK IN NEW ASTER THEN?"
     gaster "IT'S JUST A THEORY"
     gaster "YOU KNOW, SINCE I'M CALLED 'W.D. GASTER'"
     gaster "SO THAT CAN MEAN"
