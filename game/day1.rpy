@@ -1,5 +1,5 @@
 label day1:
-    $ helpedToriel = False
+    call resetVariables
     scene day1 scene1 with dissolve:
         yalign 0.1
         linear 5 yalign 0.7
@@ -493,6 +493,28 @@ label torielsAdvice:
     show papyrusImg embarrased happy flip at fade
     papyrus "THANKS TORIEL"
     stop music fadeout 1
-    jump day2
+
+label endOfDay1:
+    if resets > 1:
+        if resets == 1:
+            papyrus "CAN YOU EXPLAIN WHAT'S GOING ON?!"
+            papyrus "WHY AM I..."
+            papyrus "BACK..."
+            papyrus "HERE..."
+            gaster "THIS IS THE RESET I WAS TALKING ABOUT MY DEAR PAPYRUS"
+            gaster "THIS IS PART OF THE POWERS OF DETERMINATION"
+            gaster "WHEN YOU HAVE ENOUGH OF IT, OF COURSE"
+            papyrus "SOO..."
+            papyrus "YOU CAN DO THIS BECAUSE THOSE TANKS FILLED WITH DETERMINATION"
+            gaster "EXACTLY"
+            papyrus "DO YOU THINK WE COULD USE THOSE DETERMINATION FILLED TANKS TO GET YOU OUT?"
+            papyrus "THAT'S THE IDEA?"
+            gaster "AFTER WHAT HAPPENED WITH..."
+            gaster "THE CURRENT ROYAL SCIENTIST LAST EXPERIMENTS..."
+            gaster "I DON'T FEEL, WELL, COMFORTABLE IN ASKING YOU TO GATHER MORE OF IT"
+            gaster "SO, WE CAN USE WHAT THE WEKUFE HAVE ALREADY GATHERED "
+        
+
+jump day2
 
 return

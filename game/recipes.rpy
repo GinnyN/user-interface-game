@@ -72,6 +72,7 @@ label resetVariables:
     $ visitUndyne = False
     $ visitAlphys = False
     $ visitFrisk = False
+    return
 
 #Define Day Alternatives
 define day2 = False

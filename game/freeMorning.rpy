@@ -30,6 +30,7 @@ label freeMorning:
 
         "Go check with Undyne" if not visitUndyne:
             papyrus "I SHOULD CHECK OUT WITH UNDYNE"
+            show papyrusImg coolDude delight
             papyrus "I HAVE A SURPRISE FOR HER AND I DON'T WANT TO FORGET!"
             $ visitUndyne = True
             call visitUndyne
