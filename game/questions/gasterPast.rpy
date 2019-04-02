@@ -4,7 +4,7 @@ label gasterGerson:
   papyrus "THAT'S JUST GERSON, HE HAD A SHOP AT WATERFALL AND UNDYNE LOVED TO HEAR SOME WAR STORIES FROM HIM"
   papyrus "I JUST HEARD HIM CALLING HIM LIKE THAT ONCE AND..."
   papyrus "KIND OF JUST STUCK"
-  gaster "IS GERSON STILL ALIVE?"
+  gaster "IS THE HAMMER OF JUSTICE STILL ALIVE?"
   gaster "OH, I REMEMBER HIM SELLING THOSE AWFUL APPLE CRABS"
   gaster "HE NEVER LIKED ME"
   gaster "I GUESS IS BECAUSE FOR BEEN A SKELETON I WAS KIND OF USELESS"
@@ -18,5 +18,24 @@ label gasterGerson:
   gaster "SO..."
   gaster "BOTH, I GUESS..."
   if gasterPast < 1:
+    $ gasterPast = gasterPast + 1
+  return
+
+label gasterDuties:
+  papyrus "DID YOU SAID SOMETHING ABOUT FAILING TO FULLFILL DUTIES?"
+  gaster "YES, I DO REMEMBER SAYING THAT"
+  papyrus "WHY ARE YOU SAYING THAT?"
+  papyrus "BECAUSE, I'M GUESSING THIS NEED REPEATING"
+  papyrus "YOU SAID YOU DESIGNED THE CORE"
+  gaster "I'M REALLY GOOD AT THE THEORY OF MAGIC AND SCIENCE"
+  gaster "ACTUALLY APPLY IT, NOT THAT MUCH"
+  papyrus "OH"
+  gaster "ON PEACE, IS IT NOT SO BAD"
+  gaster "BUT YOU DON'T CREATE SKELETONS ON PEACE TIME"
+  gaster "AND I WAS PULL OUT FROM THE SKELETONS UNIT AT THE HEAT OF THE WAR"
+  gaster "CONSIDERING I SURVIVED SOMEHOW"
+  gaster "I HAVE NO IDEA IF THAT IS A GOOD THING OR NOT"
+  papyrus "..."
+  if gasterPast < 2:
     $ gasterPast = gasterPast + 1
   return
