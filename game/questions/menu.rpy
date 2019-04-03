@@ -17,6 +17,8 @@ label questionsMenu:
             call politicalGeography2
         "Higher Snowdin" if politicalGeography > 1:
             call geoSnowdin
+        "A Mystery" if politicalGeography > 2:
+            call aMystery
         #"Demography" if politicalGeography > 0:
         #    call demographics
         "Wait, King Fluffybuns?" if politicalGeography > 0:
