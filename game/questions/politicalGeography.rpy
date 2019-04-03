@@ -51,3 +51,32 @@ label politicalGeography2:
     if politicalGeography == 1:
         $ politicalGeography = politicalGeography + 1
     return 
+
+label geoSnowdin:
+    gaster "THOSE FURRY MONSTERS REALLY LIKE THE COLD, DO THEY?"
+    papyrus "SOME OF THEM"
+    papyrus "IT'S WAY BETTER THAN A TON OF LAVA ANYHOW"
+    gaster "BUT WITH TEMPERATE FORESTS FINALLY AT OUR DISPOSAL"
+    papyrus "YES, SOME OF THEM REALLY LIKE THE COLD"
+    papyrus "GOT USED TO IT I GUESS"
+    gaster "BUT HIGHER SNOWDIN IS REALLY UP THERE"
+    papyrus "WE MADE AN ELEVATOR"
+    papyrus "WE MADE ELEVATORS FOR EVERYTHING!"
+    gaster "I GUESS I JUST DON'T GET IT"
+    papyrus "YOU DON'T HAVE TO"
+    gaster "POINT TAKEN"
+    gaster "WHO WORKS ON THOSE ELEVATORS ANYWAY?"
+    gaster "I DO REMEMBER LEAVING AN AUTOMATED SYSTEM BUT MY DOCUMENTATION DID NOT SURVIVE ME BEEN FORGOTTEN I BELIEVE"
+    papyrus "DR. ALPHYS KIND OF LOOKED AFTER THAT IN THE UNDERGROUND"
+    papyrus "BUT SINCE SHE WAS BARREN OF DOING SCIENCE FOR THE TIME BEING"
+    papyrus "FRISK AND I NOMINATED SANS"
+    papyrus "AND OF COURSE THE KING SAID YES"
+    gaster "WHY DID HE?"
+    papyrus "OH!"
+    papyrus "THAT'S EASY"
+    papyrus "IT'S A MYSTERY"
+    gaster "OHHHH"
+    gaster "A MYSTERY!"
+    if politicalGeography == 2:
+        $ politicalGeography = politicalGeography + 1
+    return
