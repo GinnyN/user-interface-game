@@ -17,6 +17,8 @@ label questionsMenu:
             call politicalGeography2
         "Higher Snowdin" if politicalGeography > 1:
             call geoSnowdin
+        "Papers with Weird Symbols only I can read" if papersPapyrusCreation && politicalGeography > 2:
+            call foundSomePapers
         "A Mystery" if politicalGeography > 2:
             call aMystery
         #"Demography" if politicalGeography > 0:
