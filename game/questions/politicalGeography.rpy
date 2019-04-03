@@ -80,3 +80,10 @@ label geoSnowdin:
     if politicalGeography == 2:
         $ politicalGeography = politicalGeography + 1
     return
+
+label aMystery:
+    papyrus "DO YOU KNOW ABOUT THE MYSTERY?"
+    gaster "YES, YES, I DO KNOW ABOUT THE MYSTERY"
+    gaster "WE SHOULDN'T BE TALKING ABOUT THAT AND YOU KNOW IT"
+    papyrus "YES, THAT'S RIGHT, I'M SORRY"
+    return
