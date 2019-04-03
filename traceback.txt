@@ -1,27 +1,21 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/freeMorning/visit-sans.rpy", line 112, in <module>
-    show papyrusImg coolDude offended  at fadeIn:
-NameError: name 'fadeIn' is not defined
+SyntaxError: invalid syntax (game/day1.rpy, line 46)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/day3.rpyc", line 2, in script call
-  File "lib/windows-i686/freeMorning.rpyc", line 29, in script call
-  File "lib/windows-i686/freeMorning/visit-sans.rpyc", line 112, in script
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1075, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1036, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1725, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1719, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/freeMorning/visit-sans.rpy", line 112, in <module>
-    show papyrusImg coolDude offended  at fadeIn:
-NameError: name 'fadeIn' is not defined
+  File "lib/windows-i686/day1.rpyc", line 45, in script
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1459, in execute
+    choice = renpy.exports.menu(choices, self.set)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 823, in menu
+    if renpy.python.py_eval(condition) ]
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1724, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 576, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/day1.rpy, line 46)
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

@@ -1,3 +1,3 @@
 label start:
-    #$ undyneThere = False
-    jump day3
+    $ resets = 1
+    jump day1

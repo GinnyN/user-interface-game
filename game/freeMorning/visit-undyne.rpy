@@ -18,6 +18,7 @@ label visitUndyne:
     undyne "And Alphys likes humans"
     undyne "I wanted to surprise her but..."
     undyne "It's useless"
+    show papyrusImg coolDude checkThis
     papyrus "NOT IF YOUR FAVORITE SKELETON JUST HAPPEN TO"
     undyne "You found it?!"
     show papyrusImg coolDude thinking
@@ -40,15 +41,18 @@ label visitUndyne:
     undyne "There's things about humans which are weeeiiiirrrddddd"
     papyrus "YEAH"
     undyne "But from where did you get the human money?"
+    show papyrusImg coolDude happy
     papyrus "HALLOWEEN DELIVERY"
     undyne "What?!"
     show papyrusImg coolDude explaining
     papyrus "YOU KNOW, THAT WEIRD FESTIVITY THEY HAVE IN WHICH THEY CELEBRATE US"
     undyne "Alphys explain me once what about that thing"
     undyne "But 'candy' still feels too flimsy"
+    show papyrusImg coolDude delight
     papyrus "WELL, JUST HAPPENS THAT HUMANS DOESN'T MIND HAVE THEIR THINGS DELIVERED BY A SKELETON AROUND THAT TIME"
     undyne "Papyrus... I..."
     undyne "I don't know what to say"
+    show papyrusImg coolDude hangOn
     papyrus "JUST KEEP IT QUIET"
     papyrus "ALPHYS SHALL NEVER KNOW I WAS THE ONE WHO FOUND IT"
     undyne "Are you sure?"

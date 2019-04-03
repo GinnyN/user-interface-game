@@ -9,7 +9,9 @@ label titleScreen:
     menu:
         "Jump End of the Day":
             gaster "VERY WELL"
+            jump endOfDay1
         "Continue Forward":
             gaster "I'LL WAIT TO TALK WITH YOU AT THE END OF THE DAY"
             gaster "GOOD LUCK"
+            jump jumpBuilding
 return

@@ -67,7 +67,7 @@ label gasterCreation:
   papyrus "HOW YOU GO ON TO CREATE SKELETONS?"
   gaster "COME AGAIN?"
   papyrus "YOU KNOW..."
-  papyrus "USSUALLY YOU NEED TWO..."
+  papyrus "USUALLY YOU NEED TWO PEOPLE WHO LOVE EACHOTHER VERY MUCH..."
   papyrus "AND THE BEES AND THE FLOWERS AND..."
   gaster "DO YOU MEAN SEX?"
   gaster "NO, NO, NO, NO, THAT'S GROSS, NOOOOO"
@@ -75,7 +75,8 @@ label gasterCreation:
   gaster "WHERE DID YOU..."
   gaster "..."
   gaster "OF COURSE, OF COURSE..."
-  gaster "WELL... YOU USE MAGIC"
+  gaster "WELL..."
+  gaster "YOU USE MAGIC"
   papyrus "WE USE MAGIC FOR EVERYTHING, WE'RE MONSTERS"
   papyrus "WE USE MAGIC EVEN FOR S.."
   gaster "I KNOW I KNOW"
@@ -84,6 +85,6 @@ label gasterCreation:
   papyrus "AND REALLY CRANKY"
   gaster "I'M FINE"
   gaster "I´M COMPLETELY FINE"
-  if gasterPast < 3:
+  if gasterPast < 2:
     $ gasterPast = gasterPast + 1
   return

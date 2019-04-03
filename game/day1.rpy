@@ -43,7 +43,7 @@ label day1:
     undyne "We have to rescue Frisk!"
 
     menu:
-        "Jump to the Building" if resets !== 1:
+        "Jump to the Building" if resets != 1:
             jump jumpBuilding
         "Ahh??!!" if resets > 0:
             jump titleScreen
@@ -495,7 +495,7 @@ label torielsAdvice:
     stop music fadeout 1
 
 label endOfDay1:
-    if resets > 1:
+    if resets > 0:
         if resets == 1:
             papyrus "CAN YOU EXPLAIN WHAT'S GOING ON?!"
             papyrus "WHY AM I..."
