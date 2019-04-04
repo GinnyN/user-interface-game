@@ -85,7 +85,7 @@ label gasterCreation:
   papyrus "AND REALLY CRANKY"
   gaster "I'M FINE"
   gaster "I´M COMPLETELY FINE"
-  if gasterPast < 2:
+  if gasterPast == 2:
     $ gasterPast = gasterPast + 1
   return
 

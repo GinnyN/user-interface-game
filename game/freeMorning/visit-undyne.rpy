@@ -2,30 +2,40 @@ label visitUndyne:
     scene school gym with dissolve
     show papyrusImg coolDude me at fade:
         xpos -0.1
+    show undyneImg gym mildSurprise at fade:
+        ypos 0.1
+        xpos 0.5
     papyrus "UNDYNE!"
+    show undyneImg gym yelling flip
     undyne "PAPYRUS! What are you doing here?!"
     show papyrusImg coolDude thinking
     papyrus "I THOUGHT YOU WERE IN YOUR FREE TIME"
     undyne "I am"
+    show undyneImg gym shy flip
     undyne "I'm just kind of nervious"
     papyrus "I NOTICED THAT"
     undyne "It not just..."
     undyne "You know..."
     undyne "But also..."
+    show undyneImg gym yelling flip
     undyne "That stupid human tradition"
     show papyrusImg coolDude careful
     papyrus "YES, I HEARD ABOUT THAT"
+    show undyneImg gym shy flip
     undyne "And Alphys likes humans"
     undyne "I wanted to surprise her but..."
+    show undyneImg gym shy
     undyne "It's useless"
     show papyrusImg coolDude checkThis
     papyrus "NOT IF YOUR FAVORITE SKELETON JUST HAPPEN TO"
+    show undyneImg gym impressed flip
     undyne "You found it?!"
     show papyrusImg coolDude thinking
     papyrus "..."
     show papyrusImg coolDude delight
     papyrus "YES"
     papyrus "YES I DID"
+    show undyneImg gym surprisedHappy flip
     undyne "NO WAY"
     show papyrusImg coolDude surprised happy
     papyrus "YES WAY!"
@@ -37,8 +47,10 @@ label visitUndyne:
     papyrus "AND I'M LIKE"
     show papyrusImg coolDude explaining
     papyrus "WHO MAKES THINGS OUT OF MONEY?"
+    show undyneImg gym frustrated flip
     undyne "I don't know"
     undyne "There's things about humans which are weeeiiiirrrddddd"
+    show papyrusImg coolDude thinking
     papyrus "YEAH"
     undyne "But from where did you get the human money?"
     show papyrusImg coolDude happy

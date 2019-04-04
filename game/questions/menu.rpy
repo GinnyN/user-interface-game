@@ -19,7 +19,7 @@ label questionsMenu:
             call geoSnowdin
         "Lower Snowdin" if politicalGeography > 2:
             call elevatorSnowdin
-        "Papers with Weird Symbols only I can read" if papersPapyrusCreation && politicalGeography > 2:
+        "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
             call foundSomePapers
         "A Mystery" if politicalGeography > 2:
             call aMystery
@@ -33,6 +33,8 @@ label questionsMenu:
             call gasterDuties
         "The Talk" if gasterPast > 1:
             call gasterCreation
+        "Adridged History of the Skeleton Kind" if gasterPast > 2:
+            call skeletonKind
         "4th Wall Breaking Stuff":
             call wallBreakingStuff
         "More 4th Wall Breaking Stuff" if wallBreakingStuff > 0:
