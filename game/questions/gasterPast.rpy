@@ -115,13 +115,13 @@ label skeletonKind:
   gaster "ESPECIALLY WHEN YOU NEED SOLDIERS IN A HURRY"
   papyrus "THAT WASN'T AN ANSWER TO MY QUESTION"
   gaster "YOU NEED TO START SINCE THE BEGINNING MY DEAR PAPYRUS"
-  if gasterPast < 3:
+  if gasterPast == 3:
     $ gasterPast = gasterPast + 1
   
   return
 
 label superSoldiers:
-  papyrus "ARE YOU SAYING THAT SKELETONS WERE LIKE THE SUPER SOLDIERS OF MONSTER KIND?
+  papyrus "ARE YOU SAYING THAT SKELETONS WERE LIKE THE SUPER SOLDIERS OF MONSTER KIND?"
   gaster "NO... WE WEREN..."
   gaster "..."
   gaster "NOW YOU ARE SAYING THAT IT MAKE SENSE..."
@@ -144,6 +144,6 @@ label superSoldiers:
   papyrus "I DIDN'T HAVE A CHILDHOOD?"
   gaster "WHY DO YOU SOUND SO DISTRESSED, I DON'T GET IT"
   papyrus "AAAHHHHH!!!!"
-  if gasterPast < 4:
+  if gasterPast == 4:
     $ gasterPast = gasterPast + 1
   return

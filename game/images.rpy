@@ -182,6 +182,7 @@ image undyneImg frisk confused flip = im.Flip("undyne/frisk/confused.png", horiz
 #Gym Teacher
 image undyneImg gym sarcastic = im.FactorScale("undyne/gym/sarcastic.png", 0.75)
 image undyneImg gym bored = im.FactorScale("undyne/gym/bored.png", 0.75)
+image undyneImg gym bored flip = im.Flip( im.FactorScale("undyne/gym/bored.png", 0.75), horizontal=True)
 image undyneImg gym impressed = im.FactorScale("undyne/gym/impressed.png", 0.75)
 image undyneImg gym impressed flip = im.Flip(im.FactorScale("undyne/gym/impressed.png", 0.75), horizontal=True)
 image undyneImg gym yelling = im.FactorScale("undyne/gym/yelling.png", 0.75)
@@ -193,6 +194,8 @@ image undyneImg gym shy flip = im.Flip(im.FactorScale("undyne/gym/shy.png", 0.75
 image undyneImg gym happy = im.FactorScale("undyne/gym/happy.png", 0.75)
 image undyneImg gym mildSurprise = im.FactorScale("undyne/gym/mildsurprise.png", 0.75)
 image undyneImg gym mildSurprise flip = im.Flip(im.FactorScale("undyne/gym/mildsurprise.png", 0.75), horizontal=True)
+image undyneImg gym thinking = im.FactorScale("undyne/gym/thinking.png", 0.75)
+image undyneImg gym thinking flip = im.Flip(im.FactorScale("undyne/gym/thinking.png", 0.75), horizontal=True)
 image undyneImg gym surprisedHappy = im.FactorScale("undyne/gym/surprisedHappy.png", 0.75)
 image undyneImg gym surprisedHappy flip = im.Flip(im.FactorScale("undyne/gym/surprisedHappy.png", 0.75), horizontal=True)
 

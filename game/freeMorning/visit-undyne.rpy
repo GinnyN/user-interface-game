@@ -1,5 +1,6 @@
 label visitUndyne:
-    scene school gym with dissolve
+    scene school gym with dissolve:
+        xpos 0.1
     show papyrusImg coolDude me at fade:
         xpos -0.1
     show undyneImg gym mildSurprise at fade:
@@ -52,12 +53,15 @@ label visitUndyne:
     undyne "There's things about humans which are weeeiiiirrrddddd"
     show papyrusImg coolDude thinking
     papyrus "YEAH"
+    show undyneImg gym bored flip
     undyne "But from where did you get the human money?"
     show papyrusImg coolDude happy
     papyrus "HALLOWEEN DELIVERY"
+    show undyneImg gym mildSurprise flip
     undyne "What?!"
     show papyrusImg coolDude explaining
     papyrus "YOU KNOW, THAT WEIRD FESTIVITY THEY HAVE IN WHICH THEY CELEBRATE US"
+    show undyneImg gym thinking flip
     undyne "Alphys explain me once what about that thing"
     undyne "But 'candy' still feels too flimsy"
     show papyrusImg coolDude delight
@@ -67,14 +71,17 @@ label visitUndyne:
     show papyrusImg coolDude hangOn
     papyrus "JUST KEEP IT QUIET"
     papyrus "ALPHYS SHALL NEVER KNOW I WAS THE ONE WHO FOUND IT"
+    show undyneImg gym mildSurprise flip
     undyne "Are you sure?"
     papyrus "YES"
     papyrus "JUST ASK HER WHEN YOU THINK THE TIME IS RIGHT"
+    show undyneImg gym thinking flip
     undyne "You are getting weirdly wise Papyrus"
     undyne "But Frisk is going to be the ring bearer"
     show papyrusImg coolDude careful
     papyrus "THE WHAT NOW?"
     undyne "You didn't know?"
+    show undyneImg gym frustrated flip
     undyne "The humans weddings are super complicated with tons of parts"
     undyne "And I'm sure Alphys will want a full scale human style wedding"
     undyne "AAARRRRrrrrRRGGGggHHHHHhhhhhh"
@@ -83,11 +90,15 @@ label visitUndyne:
     papyrus "I'M GOING TO BE ONE OF THE SPOUSES BEST FRIEND!"
     show papyrusImg coolDude delight
     papyrus "THAT'S A COOL THING TO BE IN A WEDDING!"
+    show undyneImg gym thinking flip
     undyne "You are way too nice Papyrus"
     show papyrusImg coolDude thinking
     papyrus "YOU SAY THAT LIKE IS A BAD THING"
+    show undyneImg gym bored flip
     undyne "Well, I'm going to wait a couple of months"
+    show undyneImg gym bored
     undyne "I have been studying this thing of the human wedding"
+    show undyneImg gym thinking flip
     undyne "And I still can't wrap up my head around this concept of the 'best man'"
     papyrus "SOUNDS LIKE A KIND OF FISH"
     undyne "Yeah..."

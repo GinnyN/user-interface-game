@@ -2,16 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/questions/menu.rpy", line 3: expected ':' not found.
-    label questionsMenu
-                       ^
-
-File "game/questions/menu.rpy", line 9: expected ':' not found.
-    label questionsMenu
-                       ^
-
-File "game/questions/menu.rpy", line 30: expected ':' not found.
-    label questionsRepeat
-                         ^
+File "game/questions/menu.rpy", line 17: expected 'label_name' not found.
+    call 
+        ^
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

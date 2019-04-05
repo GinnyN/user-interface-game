@@ -11,6 +11,10 @@ label questionsRepeat:
 
 label questionsMenu:
     menu:
+        "Those Weird Monsters I found":
+            call monstersForest
+        "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
+            call programmingTheory
         "Political Geography": 
             call politicalGeography
         "Political Geography 2" if politicalGeography > 0:
@@ -35,9 +39,13 @@ label questionsMenu:
             call gasterCreation
         "Adridged History of the Skeleton Kind" if gasterPast > 2:
             call skeletonKind
+        "Skeleton Creation" if gasterPast > 3:
+            call superSoldiers
         "4th Wall Breaking Stuff":
             call wallBreakingStuff
         "More 4th Wall Breaking Stuff" if wallBreakingStuff > 0:
             call moreWallBreakingStuff
+        "4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
+            call wallBreakingStuff2
     jump questionsRepeat
     return
