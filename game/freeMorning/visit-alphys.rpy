@@ -3,22 +3,32 @@ label visitAlphys:
     play music "music/33 Quiet Water.mp3" fadein 1 fadeout 1 
     show papyrusImg coolDude me flip at fade:
         xpos 0.4
+    show alphysImg casual realizing flip zorder 3 at fade:
+        xpos -0.15
+        ypos -0.2
     papyrus "DR ALPHYS!"
     show papyrusImg coolDude delight flip
+    show alphysImg casual nostalgic
     alphys "Papyrus!"
     alphys "What"
+    show alphysImg casual nostalgic flip
     alphys "eh.."
     alphys "ehhh..."
     show papyrusImg coolDude happy flip
+    show alphysImg casual nostalgic
     papyrus "YOU SAID SOMETHING IN OUR LAST TRAINING ABOUT AN IMPORTANT WORK OF YOURS"
     show papyrusImg coolDude checkThis flip
     papyrus "I CAME TO CHECK IF YOU NEEDED SOME MORAL SUPPORT"
+    show alphysImg casual confused mild
     alphys "ahhh..."
     papyrus "I´M YOUR PERSONAL TRAINER AFTER ALL"
+    show alphysImg casual dismissive flip
     alphys "Now I need some quiet"
+    show alphysImg casual confused mild
     papyrus "YOU MEAN WHITE NOISE"
     show papyrusImg coolDude happy flip
     papyrus "OR ELSE YOU'LL END UP WATCHING THE NEW SEASON OF MEW MEW"
+    show alphysImg casual dismissive
     alphys "Come on Papyrus"
     alphys "The first chapter was promising"
     alphys "But for the moment is as good as the second season"
@@ -27,25 +37,32 @@ label visitAlphys:
     alphys "And they are trying to fix it"
     alphys "I don't see how that is fixing it"
     alphys "They should try another aproach if they want to keep the franchise alive"
+    show alphysImg casual noWords
     alphys "But the 1st season is a classic already"
     alphys "They can't fix that"
     show papyrusImg coolDude thinking flip
     papyrus "ISN'T THE MANGA STILL GOING?"
+    show alphysImg casual dismissive
     alphys "Yes, yes"
     alphys "But that a manga based on the 1st season"
     alphys "Mew Mew is an original animation"
+    show alphysImg casual noWords
     alphys "It's not very good"
+    show alphysImg casual dismissive
     alphys "But at least is better than this 2nd and 3rd season trash"
     show papyrusImg coolDude happy flip
     papyrus "I SEE YOU HAVEN'T LOST IT!"
     papyrus "UNDYNE IS ALWAYS TELLING ME ABOUT HOW YOU RANT ABOUT WHEN THEY SEE AN EPISODE OF THE NEW SEASON"
+    show alphysImg casual tired
     alphys "Yeah, she loves see me suffer and complain"
     show papyrusImg coolDude thinking flip
     papyrus "SHE DESCRIBE IT AS 'PASSIONATE AND FOCUSED'"
+    show alphysImg casual confused mild
     alphys "Why we always end up talking about how much Undyne loves me?"
     show papyrusImg coolDude explaining flip
     papyrus "I DON'T KNOW"
     papyrus "YOU STILL SEEMS HAVE SOME ISSUES WHEN IS ABOUT LIKING ANIME"
+    show alphysImg casual tired
     alphys "You know"
     alphys "I lied so much some times I feel I don't deserve Undyne's love"
     show papyrusImg coolDude thinking flip
@@ -53,10 +70,13 @@ label visitAlphys:
     show papyrusImg coolDude explaining flip
     papyrus "MAYBE YOU JUST NEED MORE TIME TO UNDERSTAND UNDYNE LOVES YOU FOR HOW YOU ARE"
     alphys "Maybe..."
+    show alphysImg casual explaining
     alphys "Well..."
+    show alphysImg casual explaining flip
     alphys "I'd better get back to programming"
     show papyrusImg coolDude thinking flip
     papyrus "PROGRAMMING?"
+    show alphysImg casual explaining
     alphys "Yes..."
     alphys "It's something very difficult, and you need time and effort to understand them"
     show papyrusImg coolDude happy flip
@@ -64,7 +84,9 @@ label visitAlphys:
     papyrus "OR COOKING SPAGUETTI!"
     show papyrusImg coolDude checkThis flip
     papyrus "YOU NEED TIME AND EFFORT TO UNDERTAND IT AND GET GOOD AT IT!"
+    show alphysImg casual confused mild
     alphys "Something like that"
+    show alphysImg casual explaining
     alphys "But in programming you tell the computer what to do"
     show papyrusImg coolDude surprised happy flip
     papyrus "REALLY?"
@@ -73,13 +95,17 @@ label visitAlphys:
     alphys "Because the computer doesn't understand normal language"
     show papyrusImg coolDude thinking flip
     papyrus "WHAT KIND OF THINGS YOU CAN TELL TO THE COMPUTER"
+    show alphysImg casual confused mild
     alphys "For a very simplificated example"
     alphys "You can tell them that..."
+    show alphysImg casual explaining
     alphys "That table is an object which can contain some other objects like cups"
     show papyrusImg coolDude explaining flip
     papyrus "SO THE OBJECT TABLE ATRIBUTTE IS CONTAIN OTHER OBJECTS?"
+    show alphysImg casual confused
     alphys "Yes..."
     alphys "..."
+    show alphysImg casual nostalgic
     alphys "Papyrus.."
     alphys "What's a float?"
     show papyrusImg coolDude thinking flip
@@ -95,7 +121,9 @@ label visitAlphys:
     alphys "And a stack?"
     show papyrusImg coolDude thinking flip
     papyrus "A DATA STRUCTURE OF OBJECTS IN WHICH CAN ONLY ACCESS THE LAST ONE AT A TIME"
+    show alphysImg casual confused
     alphys "Papyrus"
+    show alphysImg casual nostalgic
     alphys "Since when you know Programming Theory and Data Structures?"
     papyrus "SINCE YOU SAID TABLE"
     show papyrusImg coolDude explaining flip
