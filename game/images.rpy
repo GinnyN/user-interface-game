@@ -196,6 +196,8 @@ image undyneImg gym mildSurprise = im.FactorScale("undyne/gym/mildsurprise.png",
 image undyneImg gym mildSurprise flip = im.Flip(im.FactorScale("undyne/gym/mildsurprise.png", 0.75), horizontal=True)
 image undyneImg gym thinking = im.FactorScale("undyne/gym/thinking.png", 0.75)
 image undyneImg gym thinking flip = im.Flip(im.FactorScale("undyne/gym/thinking.png", 0.75), horizontal=True)
+image undyneImg gym speachless = im.FactorScale("undyne/gym/speachless.png", 0.75)
+image undyneImg gym speachless flip = im.Flip(im.FactorScale("undyne/gym/speachless.png", 0.75), horizontal=True)
 image undyneImg gym surprisedHappy = im.FactorScale("undyne/gym/surprisedHappy.png", 0.75)
 image undyneImg gym surprisedHappy flip = im.Flip(im.FactorScale("undyne/gym/surprisedHappy.png", 0.75), horizontal=True)
 

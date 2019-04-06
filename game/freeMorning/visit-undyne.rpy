@@ -1,6 +1,6 @@
 label visitUndyne:
     scene school gym with dissolve:
-        xpos 0.1
+        xpos 0.0
     show papyrusImg coolDude me at fade:
         xpos -0.1
     show undyneImg gym mildSurprise at fade:
@@ -66,6 +66,7 @@ label visitUndyne:
     undyne "But 'candy' still feels too flimsy"
     show papyrusImg coolDude delight
     papyrus "WELL, JUST HAPPENS THAT HUMANS DOESN'T MIND HAVE THEIR THINGS DELIVERED BY A SKELETON AROUND THAT TIME"
+    show undyneImg gym speachless flip
     undyne "Papyrus... I..."
     undyne "I don't know what to say"
     show papyrusImg coolDude hangOn
@@ -77,6 +78,7 @@ label visitUndyne:
     papyrus "JUST ASK HER WHEN YOU THINK THE TIME IS RIGHT"
     show undyneImg gym thinking flip
     undyne "You are getting weirdly wise Papyrus"
+    show undyneImg gym yelling flip
     undyne "But Frisk is going to be the ring bearer"
     show papyrusImg coolDude careful
     papyrus "THE WHAT NOW?"
@@ -84,6 +86,7 @@ label visitUndyne:
     show undyneImg gym frustrated flip
     undyne "The humans weddings are super complicated with tons of parts"
     undyne "And I'm sure Alphys will want a full scale human style wedding"
+    show undyneImg gym yelling flip
     undyne "AAARRRRrrrrRRGGGggHHHHHhhhhhh"
     show papyrusImg coolDude explaining
     papyrus "WELL"
