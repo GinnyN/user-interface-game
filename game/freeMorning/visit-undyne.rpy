@@ -1,4 +1,5 @@
 label visitUndyne:
+    play music "music/12 Home.mp3" fadein 1
     scene school gym with dissolve:
         xpos 0.0
     show papyrusImg coolDude me at fade:
@@ -106,6 +107,7 @@ label visitUndyne:
     papyrus "SOUNDS LIKE A KIND OF FISH"
     undyne "Yeah..."
     undyne "Maybe I should ask Onion-san"
+    stop music
     $ visitUndyne = True
     
 return

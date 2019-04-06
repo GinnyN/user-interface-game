@@ -35,10 +35,13 @@ label freeMorning:
             $ visitUndyne = True
             call visitUndyne
         
-        "Go visit Alphys at the New Lab" if not visitAlphys:
-            papyrus "I HEARD DR ALPHYS IS WORKING ON SOMETHING NEW"
+        "Go visit Alphys" if not visitAlphys:
+            papyrus "DR ALPHYS SAID SHE WAS WORKING ON SOMETHING IMPORTANT"
+            show papyrusImg coolDude delight
             papyrus "MAYBE IS A NEW KIND OF PUZZLE!"
+            show papyrusImg coolDude thinking
             papyrus "OK, MAYBE NOT"
+            show papyrusImg coolDude delight
             papyrus "BUT SHOULD BE INTERESTING!"
             $ visitAlphys = True
             call visitAlphys
