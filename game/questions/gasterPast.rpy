@@ -169,4 +169,6 @@ label noChildhood:
   gaster "BUT I GOT SOME OF THEM INTERESTED IN SCIENCE, THAT WAS, SOMETHING HELPFUL"
   papyrus "OH!"
   papyrus "..."
+  if gasterPast == 5:
+    $ gasterPast = gasterPast + 1
   return
