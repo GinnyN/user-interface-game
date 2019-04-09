@@ -29,10 +29,13 @@ image papyrusImg neutral flip = im.Flip("papyrus/neutral.png", horizontal=True)
 image papyrusImg scared = "papyrus/scared.png"
 image papyrusImg scared flip = im.Flip("papyrus/scared.png", horizontal=True)
 image papyrusImg serious = "papyrus/serious.png"
+image papyrusImg serious flip = im.Flip("papyrus/serious.png", horizontal=True)
 image papyrusImg screamingCall = "papyrus/screamingCall.png"
 image papyrusImg screamingCall flip = im.Flip("papyrus/screamingCall.png", horizontal=True)
 image papyrusImg solemn = "papyrus/solemn.png"
 image papyrusImg solemn flip = im.Flip("papyrus/solemn.png", horizontal=True)
+image papyrusImg surprised  ="papyrus/surprised.png"
+image papyrusImg surprised flip = im.Flip("papyrus/surprised.png", horizontal=True)
 image papyrusImg surprised pointing = "papyrus/surprisedPointing.png"
 image papyrusImg surprised pointing flip = im.Flip("papyrus/surprisedPointing.png", horizontal=True)
 image papyrusImg surprised up = "papyrus/mildSupriseUp.png"
@@ -266,6 +269,8 @@ image friskImg angry mild = im.FactorScale("frisk/angry.png", 0.7)
 image friskImg angry mild flip = im.Flip(im.FactorScale("frisk/angry.png", 0.7), horizontal=True)
 image friskImg affirmation = im.FactorScale("frisk/affirmation.png", 0.7)
 image friskImg affirmation flip = im.Flip(im.FactorScale("frisk/affirmation.png", 0.7), horizontal=True)
+image friskImg happy = im.FactorScale("frisk/happy.png", 0.7)
+image friskImg happy flip = im.Flip(im.FactorScale("frisk/happy.png", 0.7), horizontal=True)
 
 #Asgore
 #Shirt

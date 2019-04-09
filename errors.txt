@@ -2,8 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/questions/menu.rpy", line 17: expected 'label_name' not found.
-    call 
-        ^
+File "game/images.rpy", line 32: is not terminated with a newline. (Check strings and parenthesis.)
+    image papyrusImg serious flip = im.Flip("papyrus/serious.png"
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

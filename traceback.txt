@@ -1,22 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-SyntaxError: invalid syntax (game/questions/menu.rpy, line 22)
+Exception: Could not find return label (u'C:\\Users\\satel\\Desktop\\user-interface-game/game/freeMorning/visit-frisk.rpy', 1552439024, 7).
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/day1.rpyc", line 529, in script call
-  File "lib/windows-i686/questions/menu.rpyc", line 13, in script
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1459, in execute
-    choice = renpy.exports.menu(choices, self.set)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 823, in menu
-    if renpy.python.py_eval(condition) ]
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1724, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 576, in py_compile
-    raise e
-SyntaxError: invalid syntax (game/questions/menu.rpy, line 22)
+  File "lib/windows-i686/day3.rpyc", line 2, in script call
+  File "lib/windows-i686/freeMorning.rpyc", line 55, in script call
+  File "lib/windows-i686/00start.rpyc", line 107, in script
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1376, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\execution.py", line 552, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\satel\\Desktop\\user-interface-game/game/freeMorning/visit-frisk.rpy', 1552439024, 7).
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

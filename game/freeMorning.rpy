@@ -49,6 +49,7 @@ label freeMorning:
         "Go check how Frisk is doing" if not visitFrisk:
             papyrus "FRISK IS NOT GOING TO SCHOOL"
             papyrus "POOR HUMAN IS RESTING AFTER EVERYTHING JUST HAPPENED"
+            show papyrusImg coolDude delight
             papyrus "MAYBE WE CAN DO THAT TOGETHER!"
             $ visitFrisk = True
             call visitFrisk
