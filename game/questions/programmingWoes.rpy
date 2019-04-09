@@ -64,7 +64,23 @@ label theoryBehind:
     gaster "I DON'T KNOW HOW HE DOES IT, I HAVE A GOOD THEORY"
     papyrus "OK"
     papyrus "HOW DO YOU THINK SANS DOES THE 'SHORTCUT' SPELL?"
-    
+    gaster "I REALLY BELIEVE THAT YOU CAN FIGURE OUT ALONE"
+    gaster "BUT I'LL GIVE YOU A TIP"
+    gaster "IT HAS SOMETHING TO DO WITH OBJECT ORIENTED PROGRAMMING"
+    papyrus "HE ADDS A TELEPORTATION FUNCTION TO EVERY SINGLE OBJECT?"
+    papyrus "NO, NO..."
+    papyrus "HE CHANGED THE PROTOTYPE OF THE OBJECT OBJECT!"
+    gaster "I KNOW IT'S ABSOLUTLY BONKERS BUT I'M PRETTY SURE IS THAT"
+    papyrus "AND HE'S DOES THAT ON EXECUTION TIME SOMEHOW?"
+    gaster "I KNOW"
+    papyrus "OH MY GOD"
+    papyrus "HE'S AWESOME!"
+    gaster "WELL, THAT'S NOT NEWS"
+    papyrus "AND YOU SAID I WAS BETTER AT THAT THAN HIM?"
+    gaster "OF COURSE"
+    papyrus "AAAAHHHHHHH!!!!!"
+    if programmingWoes2 == 3:
+      $ programmingWoes2 = programmingWoes2 + 1
     return
 
 label foundSomePapers:
