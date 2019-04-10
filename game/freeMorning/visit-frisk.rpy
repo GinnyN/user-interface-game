@@ -58,6 +58,13 @@ label visitFrisk:
         frisk "..."
         hide papyrusImg
         hide friskImg
+        scene freeMorning frisk resetZero background with dissolve:
+            ypos 0.0
+            xpos -0.2
+            linear 20 ypos -0.4 xpos 0.0
+        show freeMorningF frisk resetZero foreground zorder 3 at fade:
+            ypos 0.0
+            xpos 0.0
         papyrus "ISN'T IT WEIRD?"
         frisk "?!"
         papyrus "WE'RE ALL OUT"

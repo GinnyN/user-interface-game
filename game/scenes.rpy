@@ -27,6 +27,8 @@ image freeMorning sans resetZero panoramica = "background/freeMorning/sans-reset
 image freeMorning frisk resetZero scene1 = "background/freeMorning/frisk-zero-scene1.png"
 image freeMorning frisk resetZero scene2 = "background/freeMorning/frisk-zero-scene2.png"
 image freeMorning frisk resetZero scene3 = "background/freeMorning/frisk-zero-scene3.png"
+image freeMorningF frisk resetZero foreground = "background/freeMorning/frisk-zero-foreground.png"
+image freeMorning frisk resetZero background = "background/freeMorning/frisk-zero-background.png"
 
 #Places Backgrounds
 image newerHome night = "background/newerHome/night.png"
