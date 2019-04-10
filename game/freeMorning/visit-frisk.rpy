@@ -40,6 +40,7 @@ label visitFrisk:
         show papyrusImg proud flip
         papyrus "I'LL BRING THEM TO YOU THEN!"
         hide papyrusImg
+        play sound "music/fx/steps.wav"
         frisk ".."
         show papyrusImg me flip:
             xpos 0.4
