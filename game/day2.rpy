@@ -1006,4 +1006,8 @@ label alphysHome:
     if pen and not program:
         alphys "I'm sorry Papyrus"
 
+label endOfDay2:
+    if resets > 1:
+        call questionsEnd
+    
     jump day3
