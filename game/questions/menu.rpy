@@ -11,6 +11,8 @@ label questionsRepeat:
 
 label questionsMenu:
     menu:
+        "This is a time loop, right?":
+            call decisions
         "Those Weird Monsters I found":
             call monstersForest
         "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
@@ -47,5 +49,9 @@ label questionsMenu:
             call moreWallBreakingStuff
         "4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
             call wallBreakingStuff2
+        "Nothing Else":
+            papyrus "NOTHING I CAN THINK OF RIGHT NOW"
+            gaster "VERY WELL"
+            return
     jump questionsRepeat
     return
