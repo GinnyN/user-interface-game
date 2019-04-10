@@ -496,6 +496,8 @@ label torielsAdvice:
 
 label endOfDay1:
     if resets > 0:
+        papyrus "GASTER!"
+        papyrus "ARE YOU THERE?!"
         if resets == 1:
             papyrus "CAN YOU EXPLAIN WHAT'S GOING ON?!"
             papyrus "WHY AM I..."
@@ -527,7 +529,8 @@ label endOfDay1:
             gaster "I NEEDED TO HEAR THAT..."
         
     call questionsEnd   
-        
+    gaster "JUST REMEMBER WE CAN TALK AGAIN AFTER THE END OF A DAY IF YOU HAVE ANY QUESTIONS"
+    papyrus "I'LL REMEMBER THAT"
 
 jump day2
 
