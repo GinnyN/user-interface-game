@@ -450,8 +450,11 @@ label backNewerHome:
     papyrus "THOSE KIDS ARE MORE IMPORTANT"
     undyne "Heh..."
     undyne "You right..."
-
-    jump day4
+    
+    label endOfDay3:
+        if resets > 1:
+            call questionsEnd
+        jump day4
 return
 
 
