@@ -49,6 +49,7 @@ define penAtSans = False
 define program = False
 define papersPapyrusCreation = False
 define readStats = False
+define firstTry = True
 
 #Flag variables which have to be reset
 define whoRescueMauricio = False
@@ -72,6 +73,7 @@ label resetVariables:
     $ visitUndyne = False
     $ visitAlphys = False
     $ visitFrisk = False
+    $ whoRescueMauricio = False
     return
 
 #Define Day Alternatives
