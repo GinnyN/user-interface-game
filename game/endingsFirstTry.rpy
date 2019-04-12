@@ -70,13 +70,70 @@ label endingsFirstTry:
 label endingMenuFirstTry: 
     menu:
         "Of Course!":
+            $ firstTry = False
             jump startEndingGasterFirstTry
         "I have 2nd thoughts":
             jump resetOrEndingFirstTry
 
-label resetOrEnding:
+label startEndingGasterFirstTry:
+    papyrus "OF COURSE!"
+    papyrus "LET'S DO THIS!"
+    gaster "smiles"
+    papyrus "I PRESS ENTER!"
+    gaster "AND NOW WE..."
+    "fades to white"
+    "shows Gaster back to normal, AKA, not half melting. He's as tall as papyrus, with a black suit and a white turtle neck"
+    "he still has the cracks in his skull, cannot emote in one of his eyes and has missing the ring finger in both of his hands"
+    gaster "IT WORKED"
+    gaster "IT WORKED PAPYRUS!"
+    gaster "..."
+    gaster "PAPYRUS!"
+    "shows Papyrus how Gaster was at the beginning. Half melted, somewhat deformed, but still with his smile plastered in his face"
+    papyrus "I THINK THERE'S SOMETHING WE DIDN'T ACCOUNT FOR"
+    gaster "OH... NO..."
+    papyrus "IF YOU ASK ME..."
+    papyrus "I THINK WE NEED TO LEARN MORE..." 
+    papyrus "ABOUT..." 
+    papyrus "WHAT..." 
+    papyrus "IS BEYOND..." 
+    papyrus "THE DARKNESS..."
+    gaster "THERE'S NOTHING WE CAN COMPREHEND FROM THERE"
+    papyrus "I REFUSE THAT STATEMENT!"
+    gaster "IT DOESN'T HAVE TO BE YOU"
+    "*steps*"
+    gaster "THE SYSTEM SAYS THERE'S SOME DETERMINATION LEFT"
+    gaster "WE CAN RESET TO TRY AGAIN!"
+    papyrus "THAT'S NOT AN OPTION WE CAN TAKE"
+    gaster "I KNOW..."
+    gaster "BUT PLEASE, SHOW THEM THE MENU..."
+    gaster "THEY MIGHT WANT TO TRY"
+    menu:
+        "Reset":
+            gaster "OH, THANKS YOU!"
+            gaster "WE WILL TALK IN THE PAST, MY DEAR PAPYRUS..."
+            papyrus "..."
+            $ resets = resets + 1
+            jump day1
+        "Continue":
+            gaster "NO..."
+            papyrus "DO NOT WORRY ABOUT ME!"
+            papyrus "YOU..." 
+            papyrus "WILL..." 
+            papyrus "FIND..." 
+            papyrus "A..."
+            gaster "WHAT IF I DON'T?"
+            gaster "WHAT IF I DIE AND YOU ARE STILL TRAPPED IN THE DARKNESS!?"
+            papyrus "I KNOW YOU'LL DO YOUR BEST..."
+            gaster "WHAT IS IT NOT GOOD ENOUGH?!"
+            papyrus "..."
+            papyrus "YOU WORRY TOO MUCH"
+            papyrus "I'M NOT OK WITH THIS"
+            papyrus "BUT I CAN HANDLE IT"
+            papyrus "I WILL HANDLE IT!"
+    
+label resetOrEndingFirstTry:
     
 label startEndingPapyrusFirstTry:
             
-return
-  return 
+
+return 
