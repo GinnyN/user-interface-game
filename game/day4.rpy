@@ -134,7 +134,10 @@ label day4:
         sans "and why papyrus?"
         sans "argh!"
         $ pendrive = True
-    
+        
+    if pendrive and firstTry:
+         jump endingFirstTry
+        
     if resets == 0:
         papyrus "I HAVE THIS TINGLING SENSATION THAT THEY WILL NOT ALLOW ME TO JOIN WHATEVER THEY WANT TO DO TODAY"
         papyrus "EVEN IF I WAS RIGHT YESTERDAY, THEY HAVE A POINT"
@@ -336,6 +339,4 @@ label cont2:
     gaster "I'M SORRY PAPYRUS"
     $ resets = resets + 1
     jump day1
-        
-
 return
