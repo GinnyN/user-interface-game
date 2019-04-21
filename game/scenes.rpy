@@ -22,6 +22,9 @@ image day2 suit blue = "background/day2/blueSuit.png"
 image day2 suit red = "background/day2/redSuit.png"
 image day2 suit green = "background/day2/greenSuit.png"
 image day2 suit undyne ="background/day2/undyneSuit.png"
+#Day 3
+image day3F intro foreground = "background/day3/intro-foreground.png"
+image day3 intro background = "background/day3/intro-background.png"
 #Free morning
 image freeMorning sans resetZero panoramica = "background/freeMorning/sans-reset-zero-panoramica.png"
 image freeMorning frisk resetZero scene1 = "background/freeMorning/frisk-zero-scene1.png"

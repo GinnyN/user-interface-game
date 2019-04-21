@@ -3,27 +3,50 @@ label day3:
 
 label forest:
     scene skelebroHouse outside with dissolve
-    papyrus "WELL, THAT WAS FUN"
+    show papyrusImg neutral zorder 0 at fade:
+        xpos 0
+    papyrus "EVERYTHING HAS BEEN ACCOUNTED FOR"
+    show papyrusImg serious
     papyrus "AND NOW, DIRECTLY TO THE CASTLE!"
-    "WHOOOSHH"
+    hide papyrusImg
     papyrus "THE KING AND UNDYNE ARE WAITING FOR ME"
     papyrus "TODAY IS THE DAY WE TRAP THOSE AWFUL PEOPLE!"
+    if resets < 1:
+        pause (0.5)
+        "???" "{font=fonts/NewAster.ttf} ... {/font}"
+        "???" "{font=fonts/NewAster.ttf} DE... {/font}"
+        "???" "{font=fonts/NewAster.ttf} PA... {/font}"
+        "???" "{font=fonts/NewAster.ttf} US... {/font}"
+        "???" "{font=fonts/NewAster.ttf} ... {/font}"
 
 # label newHome:
+    scene day3 intro background with dissolve:
+        ypos 0.0
+        linear 10 ypos -1.0
+    show day3F intro foreground at fade:
+        ypos 0.0
+        linear 7 ypos -1.1
+    play music "music/33 Quiet Water.mp3" fadein 1 fadeout 1 
+    pause (1.0)
     asgore "Remember that we need to just trap them"
     asgore "We don't need them neither maimed or dead"
     undyne "But also we need to remember to be as scary as we can"
     undyne "If those humans suddenly discover they can produce more determination than us"
     papyrus "WE'RE DOOMED!"
     undyne "Exactly"
+    show papyrusImg neutral zorder 0 at fade:
+        xpos 0.5
     asgore "I don't think you will have that problem"
     asgore "You are plenty scary yourself"
+    show papyrusImg neutral flip
     undyne "Pfff"
     undyne "Yeah, says the guy with the horns and the trident!"
     asgore "Maybe you have a point there"
+    show papyrusImg angry
     papyrus "WE'RE READY!"
     papyrus "LET'S DO THIS!!!"
-    "Papyrus leaves"
+    hide papyrusImg
+    play sound "music/fx/steps.wav"
     asgore "Between you and me"
     asgore "I think he's the scariest"
     undyne "MMmmm"
