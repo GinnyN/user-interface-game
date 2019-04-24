@@ -203,6 +203,11 @@ image undyneImg gym speachless = im.FactorScale("undyne/gym/speachless.png", 0.7
 image undyneImg gym speachless flip = im.Flip(im.FactorScale("undyne/gym/speachless.png", 0.75), horizontal=True)
 image undyneImg gym surprisedHappy = im.FactorScale("undyne/gym/surprisedHappy.png", 0.75)
 image undyneImg gym surprisedHappy flip = im.Flip(im.FactorScale("undyne/gym/surprisedHappy.png", 0.75), horizontal=True)
+#Armor
+image undyneImg armor cocky = im.FactorScale("undyne/armor/cocky.png", 0.75)
+image undyneImg armor cocky flip = im.Flip(im.FactorScale("undyne/armor/cocky.png", 0.75), horizontal=True)
+image undyneImg armor smile = im.FactorScale("undyne/armor/smile.png", 0.75)
+image undyneImg armor smile flip = im.Flip(im.FactorScale("undyne/armor/smile.png", 0.75), horizontal=True)
 
 #Toriel
 #Pajamas

@@ -34,15 +34,17 @@ label forest:
     undyne "If those humans suddenly discover they can produce more determination than us"
     papyrus "WE'RE DOOMED!"
     undyne "Exactly"
-    show papyrusImg neutral zorder 0 at fade:
-        xpos 0.5
     asgore "I don't think you will have that problem"
     asgore "You are plenty scary yourself"
-    show papyrusImg neutral flip
+    show undyneImg armor cocky zorder 1 at fade:
+        xpos -0.1
+        ypos 0.1
     undyne "Pfff"
     undyne "Yeah, says the guy with the horns and the trident!"
+    show undyneImg armor smile
     asgore "Maybe you have a point there"
-    show papyrusImg angry
+    show papyrusImg angry  zorder 0 at fade:
+        xpos 0.5
     papyrus "WE'RE READY!"
     papyrus "LET'S DO THIS!!!"
     hide papyrusImg
