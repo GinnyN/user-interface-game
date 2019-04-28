@@ -25,6 +25,8 @@ image day2 suit undyne ="background/day2/undyneSuit.png"
 #Day 3
 image day3F intro foreground = "background/day3/intro-foreground.png"
 image day3 intro background = "background/day3/intro-background.png"
+image day3F fortress foreground = "background/day3/fortress-foreground.png"
+image day3 fortress background = "background/day3/fortress-background.png"
 #Free morning
 image freeMorning sans resetZero panoramica = "background/freeMorning/sans-reset-zero-panoramica.png"
 image freeMorning frisk resetZero scene1 = "background/freeMorning/frisk-zero-scene1.png"
@@ -45,3 +47,4 @@ image undyneAlphysHouse inside = "background/undyneAlphysHouse.png"
 image muffetBakery inside = "background/muffetBakery.png"
 image elevator outside = "background/elevatorOutside.png"
 image forest = "background/forest.png"
+image fortress inside = "background/fortressInside.png"

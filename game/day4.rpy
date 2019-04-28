@@ -133,9 +133,9 @@ label day4:
         sans "but how?"
         sans "and why papyrus?"
         sans "argh!"
-        $ pendrive = True
+        $ pen = True
         
-    if pendrive and firstTry:
+    if pen and firstTry:
          jump endingFirstTry
         
     if resets == 0:

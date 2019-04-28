@@ -78,6 +78,8 @@ image asgoreImg shirt crossed flip = im.Flip("asgore/shirt/crossed.png", horizon
 image asgoreImg shirt serious = "asgore/shirt/serious.png"
 image asgoreImg shirt serious flip = im.Flip("asgore/shirt/serious.png", horizontal=True)
 #Armor
+image asgoreImg armor awe = "asgore/armor/awe.png"
+image asgoreImg armor awe flip = im.Flip("asgore/armor/awe.png", horizontal=True)
 image asgoreImg armor joking = "asgore/armor/joking.png"
 image asgoreImg armor joking flip = im.Flip("asgore/armor/joking.png", horizontal=True)
 image asgoreImg armor surprised = "asgore/armor/surprised.png"

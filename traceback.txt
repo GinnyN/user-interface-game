@@ -1,41 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-IOError: Couldn't find file '16 Nyeh Heh Heh!.mp3'.
+  File "game/day4.rpy", line 138, in <module>
+    if pendrive and firstTry:
+NameError: name 'pendrive' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/day3.rpyc", line 2, in script call
-  File "lib/windows-i686/freeMorning.rpyc", line 55, in script call
-  File "lib/windows-i686/freeMorning/visit-frisk.rpyc", line 18, in script
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
-    who(what, interact=interact)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 876, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 715, in do_display
-    **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 507, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2791, in interact_core
-    renpy.audio.audio.interact()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 930, in interact
-    periodic()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 864, in periodic
-    c.periodic()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 403, in periodic
-    topf = load(self.file_prefix + filename + self.file_suffix)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 67, in load
-    rv = renpy.loader.load(fn)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\loader.py", line 543, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file '16 Nyeh Heh Heh!.mp3'.
+  File "lib/windows-i686/day4.rpyc", line 138, in script
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1656, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1725, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1719, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/day4.rpy", line 138, in <module>
+    if pendrive and firstTry:
+NameError: name 'pendrive' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

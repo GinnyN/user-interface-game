@@ -60,6 +60,7 @@ label forest:
     asgore "Between you and me"
     asgore "I think he's the scariest"
     undyne "MMmmm"
+    stop music
 
 #Outside Forest
     scene forest with dissolve
@@ -74,7 +75,7 @@ label forest:
     papyrus "*SNIFF SNIFF*"
     show papyrusImg curious zorder 0 at fade:
         xpos 0.0
-    papyrus "WHAT?!"
+    papyrus "OH?!"
     hide papyrusImg
     show cuero zorder 0 at fade:
         xpos 0.2
@@ -82,6 +83,7 @@ label forest:
         xpos 0.5
     "Monster 1" "* Did you said the place was around here"
     "Monster 2" "* Yes! After what happened two days ago the..."
+    play music "music/16 Nyeh Heh Heh!.mp3" fadein(1)
     show papyrusImg me zorder 0 at fade:
         xpos -0.2
     show cuero flip zorder 0 at fade:
@@ -105,13 +107,21 @@ label forest:
     show cuero flip:
         xpos 0.5
     papyrus "GREAT!"
+    show papyrusImg explainingPointing flip
+    show coo
     papyrus "I ALREADY CHECKED OUT THAT AREA AND I'M GOING TO CHECK OUT THERE"
+    show papyrusImg explainingPointing
+    show coo flip
     papyrus "YOU CAN GO THAT WAY AND CHECK THERE"
+    show papyrusImg proud
     papyrus "I'LL GIVE YOU A HEAD START!"
     "Monster 1" "* Yes.. yes..."
     "Monster 2" "* We're going to check out there"
     "Monster 1" "* Thanks..."
     hide papyrusImg
+    stop music
+    show coo:
+        xpos 0.1
     "Monster 1" "* He's talking about the king of all monsters?"
     "Monster 2" "* He likes humans" 
     "Monster 2" "* He basically adopted one too!"
@@ -125,40 +135,79 @@ label forest:
 label leaveThemAlone:
     $ whoRescueMauricio = True
     "Monster 1" "* Let´s move"
+    hide coo
+    hide cuero
+    show papyrusImg neutral zorder 0 at fade:
+        xpos 0.1
     papyrus "HOPEFULLY THOSE TWO ARE GOING TO BE OK"
+    hide papyrusImg
     papyrus "SNIFF, SNIFF.."
-    papyrus "LET'S FOLLOW THE SCENT"
-    "Papyrus follow the scent until he found an abandoned castle"
+    show papyrusImg curious flip zorder 0 at fade:
+        xpos 0.1
+    papyrus "LET'S FOLLOW THE SCENT!"
+    scene day3 fortress background with dissolve:
+        xpos 0.0
+        linear 10 xpos -0.1
+    show day3F fortress foreground at fade
     papyrus "ANOTHER OF THIS HUMAN BUILDINGS"
     papyrus "I'D BETTER TELL UNDYNE AND THE KING"
-    asgore "This must be one of the buildings of the monster during the war"
+    scene black with dissolve
+    pause(0.1)
+    play music "music/83 Here We Are.mp3" fadein 1
+    scene fortress inside with dissolve
+    show asgoreImg armor awe at fade:
+        ypos -0.15
+    show undyneImg armor surprised at fade:
+        ypos 0.1
+    show papyrusImg curious zorder 0 at fade:
+        xpos 0.4
+    asgore "This must be one of the buildings of the monsters during the war"
     asgore "The humans must have found it and restore it"
     papyrus "WOWIE"
     papyrus "A PIECE OF MONSTERS' HISTORY!"
-    undyne "Let's better check inside before any human appears"
+    show undyneImg armor cocky
+    undyne "Let's better check before any human appears"
     undyne "For their own sake"
+    hide papyrusImg
+    show undyneImg armor surprised
+    show asgoreImg armor surprised
     papyrus "HEEEEYYYY!!!! KIDNAPPEEEEERRRRRRSSSSSS!!!"
+    hide undyneImg
     undyne "Stop doing that Papyrus!"
     papyrus "I'M SORRY"
+    show asgoreImg armor joking
     asgore "Calm down everyone"
     asgore "Let's keep moving"
+    hide undyneImg
+    hide asgoreImg
+    show papyrusImg curious flip zorder 0 at fade:
+        xpos 0.4
     papyrus "UH?"
     papyrus "WHAT'S THAT?"
+    hide papyrusImg
     papyrus "HEY! YOU!"
     "Human Kid" "* AAAHHGGG"
     "Human Kid" "* A MONSTER!"
+    show papyrusImg proud flip zorder 0 at fade:
+        xpos 0.4
     papyrus "YES, A MONSTER!"
     papyrus "WHO CAME TO SAVE YOU FROM THE EVIL..."
     "Human Kid" "* Monsters?"
+    show papyrusImg uhh flip
     papyrus "COME AGAIN?"
-    "Human Kid" "* A black one, kind of furry with horns"
+    "Human Kid" "* A Purple one, like a snake..."
+    show papyrusImg uhh
     papyrus "..."
+    show papyrusImg proud flip
     papyrus "COME ON HUMAN, I'LL TAKE YOU OUT OF HERE"
     "Human Kid" "* But... my brother..."
+    show papyrusImg uhh flip
     papyrus "IS HE HERE?"
     "Human Kid" "* I don't know"
+    show papyrusImg proud flip
     papyrus "I'LL LEAVE YOU WITH A GOOD FRIEND OF MINE"
     papyrus "SHE LOVES KIDS"
+    hide papyrusImg
     papyrus "I'LL SEARCH FOR YOUR BROTHER AFTER THAT"
     
     alphys "Toriel is not here! She's with Sans at the humans'"
@@ -176,23 +225,6 @@ label leaveThemAlone:
     "Monster 1" "ARGH!"
     "Monster 2" "The Skeleton!"
     papyrus "HEY YOU!"
-    
-    $ time = resets + papyrusTraining
-    $ timer_range = resets + papyrusTraining
-    $ timer_jump = 'papyrusAttackAsgore'
-
-    if time > 1:
-        show screen countdown
-
-        menu:
-            "Try to convince them peacefully":
-                hide screen countdown
-                jump convincePeacefully
-
-    else:
-        jump areYouKidnappingHumanKids
-
-label areYouKidnappingHumanKids:
     papyrus "ARE YOU KIDNAPPING HUMAN KIDS????"
     "Monster 1" "..."
     "Monster 2" "run"
@@ -214,11 +246,23 @@ label areYouKidnappingHumanKids:
     jump backNewerHome
 
 label helpthemout:
+    play music "music/16 Nyeh Heh Heh!.mp3" fadein(1)
     $ whoRescueMauricio = False
+    show papyrusImg explaining zorder 0 at fade:
+        xpos -0.2
     papyrus "NOW I THINK ABOUT IT"
+    show cuero flip zorder 0 at fade:
+        xpos 0.2
+    show coo flip zorder 0 at fade:
+        xpos 0.5
     "Monster 1 and 2" "* AAAHHHH!!!"
     papyrus "I'LL BETTER GO WITH YOU GUYS'"
+    hide papyrusImg
     papyrus "NOBODY KNOWS WHAT COULD HAPPEN IF I LEAVE YOU ALONE IN A PLACE THIS DANGEROUS!"
+    show cuero zorder 0 at fade:
+        xpos 0.1
+    show coo flip zorder 0 at fade:
+        xpos 0.4
     "Monster 1" "* (We need to get rid of him)"
     "Monster 2" "* (Yes, but how?)"
     "* Papyrus ends alone hanging from his pants from a tree in a cliff"

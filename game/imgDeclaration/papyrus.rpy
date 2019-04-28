@@ -16,10 +16,12 @@ image papyrusImg delight flip = im.Flip("papyrus/delight.png", horizontal=True)
 image papyrusImg dissapointed = "papyrus/dissapointed.png"
 image papyrusImg dissapointed flip = im.Flip("papyrus/dissapointed.png", horizontal=True)
 
-image papyrusImg explaining = "papyrus/explaining.png"
-image papyrusImg explaining flip = im.Flip("papyrus/explaining.png", horizontal= True)
 image papyrusImg embarrased happy = "papyrus/embarrasedHappy.png"
 image papyrusImg embarrased happy flip = im.Flip("papyrus/embarrasedHappy.png", horizontal=True)
+image papyrusImg explaining = "papyrus/explaining.png"
+image papyrusImg explaining flip = im.Flip("papyrus/explaining.png", horizontal= True)
+image papyrusImg explainingPointing = "papyrus/explainingPointing.png"
+image papyrusImg explainingPointing flip = im.Flip("papyrus/explainingPointing.png", horizontal= True)
 
 image papyrusImg me = "papyrus/me.png"
 image papyrusImg me flip = im.Flip("papyrus/me.png", horizontal=True)
