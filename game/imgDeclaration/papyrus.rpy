@@ -39,6 +39,8 @@ image papyrusImg screamingCall = "papyrus/screamingCall.png"
 image papyrusImg screamingCall flip = im.Flip("papyrus/screamingCall.png", horizontal=True)
 image papyrusImg solemn = "papyrus/solemn.png"
 image papyrusImg solemn flip = im.Flip("papyrus/solemn.png", horizontal=True)
+image papyrusImg sorry = "papyrus/sorry.png"
+image papyrusImg sorry flip = im.Flip("papyrus/sorry.png", horizontal=True)
 image papyrusImg surprised  ="papyrus/surprised.png"
 image papyrusImg surprised flip = im.Flip("papyrus/surprised.png", horizontal=True)
 image papyrusImg surprised pointing = "papyrus/surprisedPointing.png"

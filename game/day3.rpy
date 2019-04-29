@@ -22,11 +22,11 @@ label forest:
 # label newHome:
     scene day3 intro background with dissolve:
         ypos 0.0
-        linear 10 ypos -1.0
+        linear 13 ypos -1.0
     show day3F intro foreground at fade:
         ypos 0.0
-        linear 7 ypos -1.1
-    play music "music/33 Quiet Water.mp3" fadein 1 fadeout 1 
+        linear 9 ypos -1.1
+    play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
     pause (1.0)
     asgore "Remember that we need to just trap them"
     asgore "We don't need them neither maimed or dead"
@@ -60,7 +60,6 @@ label forest:
     asgore "Between you and me"
     asgore "I think he's the scariest"
     undyne "MMmmm"
-    stop music
 
 #Outside Forest
     scene forest with dissolve
@@ -83,6 +82,7 @@ label forest:
         xpos 0.5
     "Monster 1" "* Did you said the place was around here"
     "Monster 2" "* Yes! After what happened two days ago the..."
+    stop music fadeout 1.0
     play music "music/16 Nyeh Heh Heh!.mp3" fadein(1)
     show papyrusImg me zorder 0 at fade:
         xpos -0.2
@@ -100,11 +100,11 @@ label forest:
     papyrus "I DIDN'T KNEW THE KING AND UNDYNE RECLUTED MORE MONSTERS TO HELP OUT!"
     show cuero
     "Monster 1" "* Uhhh..."
-    show coo flip:
+    show coo flip at fade:
         xpos 0.4
     "Monster 2" "* Yes... we..."
     "Monster 2" "* are helping out"
-    show cuero flip:
+    show cuero flip at fade:
         xpos 0.5
     papyrus "GREAT!"
     show papyrusImg explainingPointing flip
@@ -119,8 +119,8 @@ label forest:
     "Monster 2" "* We're going to check out there"
     "Monster 1" "* Thanks..."
     hide papyrusImg
-    stop music
-    show coo:
+    stop music fadeout 0.1
+    show coo at fade:
         xpos 0.1
     "Monster 1" "* He's talking about the king of all monsters?"
     "Monster 2" "* He likes humans" 
@@ -133,10 +133,12 @@ label forest:
             jump leaveThemAlone
 
 label leaveThemAlone:
+    play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
     $ whoRescueMauricio = True
     "Monster 1" "* Let´s move"
     hide coo
     hide cuero
+    pause(0.5)
     show papyrusImg neutral zorder 0 at fade:
         xpos 0.1
     papyrus "HOPEFULLY THOSE TWO ARE GOING TO BE OK"
@@ -152,8 +154,8 @@ label leaveThemAlone:
     papyrus "ANOTHER OF THIS HUMAN BUILDINGS"
     papyrus "I'D BETTER TELL UNDYNE AND THE KING"
     scene black with dissolve
-    pause(0.1)
     play music "music/83 Here We Are.mp3" fadein 1
+    pause(1)
     scene fortress inside with dissolve
     show asgoreImg armor awe at fade:
         ypos -0.15
@@ -174,12 +176,19 @@ label leaveThemAlone:
     papyrus "HEEEEYYYY!!!! KIDNAPPEEEEERRRRRRSSSSSS!!!"
     hide undyneImg
     undyne "Stop doing that Papyrus!"
+    show undyneImg armor angry flip at fade:
+        ypos 0.1
+        xpos 0.4
+    show papyrusImg sorry zorder 0 at fade:
+        xpos -0.1
     papyrus "I'M SORRY"
     show asgoreImg armor joking
     asgore "Calm down everyone"
     asgore "Let's keep moving"
     hide undyneImg
     hide asgoreImg
+    hide papyrusImg
+    pause(0.8)
     show papyrusImg curious flip zorder 0 at fade:
         xpos 0.4
     papyrus "UH?"
@@ -209,11 +218,14 @@ label leaveThemAlone:
     papyrus "SHE LOVES KIDS"
     hide papyrusImg
     papyrus "I'LL SEARCH FOR YOUR BROTHER AFTER THAT"
-    
+    scene black with dissolve
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
+    pause(1)
+    scene toriel house with dissolve
     alphys "Toriel is not here! She's with Sans at the humans'"
     papyrus "YOU RIGHT!"
     papyrus "THEN WE'LL HAVE TO TAKE CARE OF THE HUMAN"
-    metatton "Sorry I'm asking, but did you tell Undyne and the King about this?"
+    alphys "Sorry I'm asking, but did you tell Undyne and the King about this?"
     papyrus "OOOPPPSSS"
     papyrus "I'D BETTER BE GOING!"
     frisk "Don't worry, you'll be fine"

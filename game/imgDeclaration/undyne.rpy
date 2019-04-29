@@ -68,6 +68,8 @@ image undyneImg gym speachless flip = im.Flip(im.FactorScale("undyne/gym/speachl
 image undyneImg gym surprisedHappy = im.FactorScale("undyne/gym/surprisedHappy.png", 0.75)
 image undyneImg gym surprisedHappy flip = im.Flip(im.FactorScale("undyne/gym/surprisedHappy.png", 0.75), horizontal=True)
 #Armor
+image undyneImg armor angry = im.FactorScale("undyne/armor/angry.png", 0.75)
+image undyneImg armor angry flip = im.Flip(im.FactorScale("undyne/armor/angry.png", 0.75), horizontal=True)
 image undyneImg armor cocky = im.FactorScale("undyne/armor/cocky.png", 0.75)
 image undyneImg armor cocky flip = im.Flip(im.FactorScale("undyne/armor/cocky.png", 0.75), horizontal=True)
 image undyneImg armor smile = im.FactorScale("undyne/armor/smile.png", 0.75)
