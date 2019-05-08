@@ -1,5 +1,5 @@
 label start:
     #$ resets = 1
-    #$ papersPapyrusCreation = True
-    #$ papyrusKnowsProgramming = True
-    jump forest
+    $ papersPapyrusCreation = True
+    $ papyrusKnowsProgramming = True
+    jump helpthemout

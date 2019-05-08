@@ -84,6 +84,8 @@ image asgoreImg armor joking = "asgore/armor/joking.png"
 image asgoreImg armor joking flip = im.Flip("asgore/armor/joking.png", horizontal=True)
 image asgoreImg armor surprised = "asgore/armor/surprised.png"
 image asgoreImg armor surprised flip = im.Flip("asgore/armor/surprised.png", horizontal=True)
+image asgoreImg armor menacing = "asgore/armor/menacing.png"
+image asgoreImg armor menacing flip = im.Flip("asgore/armor/menacing.png", horizontal=True)
 
 
 #Mettaton 

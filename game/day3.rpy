@@ -193,8 +193,15 @@ label leaveThemAlone:
         xpos 0.4
     papyrus "UH?"
     papyrus "WHAT'S THAT?"
+    stop music fadeout 1
     hide papyrusImg
-    papyrus "HEY! YOU!"
+    scene day3 fortress findMauricio frame1 with dissolve
+    pause(0.5)
+    scene day3 fortress findMauricio frame2 with dissolve
+    pause(0.5)
+    show papyrusImg worried flip at fade:
+        xpos 0.5
+    papyrus "HEY... YOU..."
     "Human Kid" "* AAAHHGGG"
     "Human Kid" "* A MONSTER!"
     show papyrusImg proud flip zorder 0 at fade:
@@ -222,38 +229,74 @@ label leaveThemAlone:
     play music "music/05 Ruins.mp3" fadein 1 fadeout 1
     pause(1)
     scene toriel house with dissolve
+    show alphysImg casual noWords zorder 3 at fade:
+        xpos -0.15
+        ypos -0.2
     alphys "Toriel is not here! She's with Sans at the humans'"
+    show papyrusImg surprised flip at fade:
+        xpos 0.4 
+    show alphysImg casual nostalgic
     papyrus "YOU RIGHT!"
+    show papyrusImg surprised happy flip
     papyrus "THEN WE'LL HAVE TO TAKE CARE OF THE HUMAN"
     alphys "Sorry I'm asking, but did you tell Undyne and the King about this?"
+    show papyrusImg surprised flip
     papyrus "OOOPPPSSS"
+    hide papyrusImg
+    show alphysImg casual nostalgic zorder 3 at fade:
+        xpos 0.4
+        ypos -0.2
     papyrus "I'D BETTER BE GOING!"
     frisk "Don't worry, you'll be fine"
     frisk "They are my friends"
-    
+    scene black with dissolve
+    stop music fadeout 1
+    pause(1)
+    scene fortress inside with dissolve
+    show papyrusImg screamingCall at fade:
+        xpos 0.4
     papyrus "UNDYNE!"
     papyrus "YOUR MAJESTY!"
+    show papyrusImg confused flip
     papyrus "WHERE'S EVERYBODY?"
+    show coo at fade:
+        xpos -0.3
+    show cuero at fade:
+        xpos -0.1
     "Monster 1" "ARGH!"
+    show coo at fade:
+        xpos -0.2
+    show cuero at fade:
+        xpos -0.3
     "Monster 2" "The Skeleton!"
+    show papyrusImg angry flip
     papyrus "HEY YOU!"
     papyrus "ARE YOU KIDNAPPING HUMAN KIDS????"
     "Monster 1" "..."
+    hide cuero
+    hide coo
+    show papyrusImg surprised flip
     "Monster 2" "run"
+    hide papyrusImg
+    play music "music/24 Bonetrousle.mp3" fadeout 1
     papyrus "HEY YOU! WAIT!"
-    "Papyrus run to the ceiling following one of the monsters"
+    show day3 fortress persue frame1 with dissolve
     papyrus "EXPLAIN TO ME WHAT ARE YOU DOING?!"
     papyrus "THERE WAS A HUMAN CHILD HERE AND THEY WASN'T HAPPY"
-    "Monster 1" "NO, YOU ARE THE ONE WHO DON'T GET IT!"
-    "Monster 1" "HUMANS ARE EVIL!"
-    papyrus "SO YOU ARE COOPERATING WITH EVIL HUMANS FOR WHAT?"
-    papyrus "NOT ALL HUMANS ARE EVIL, LIKE MONSTERS"
-    papyrus "BUT ALL HUMANS ARE REDEEMABLE, LIKE MONSTERS TOO"
-    "Monster 1" "You don't get it"
-    papyrus "WHAT I HAVE TO GET I'M SO TIRED OF THAT"
-    "Monster 1 jumps from the ceiling to the floor"
-    papyrus "WAIT, WHAT RE YOU DOING?!"
+    "Monster 1" "NO, I WILL NOT TELL YOU!"
+    show day3 fortress persue frame2 with dissolve
+    "Monster 1" "YOU WILL NEVER UNDERSTAND!"
+    papyrus "WHAT I HAVE TO UNDERSTAND I'M SO TIRED OF THAT"
+    show day3 fortress persue frame3 with dissolve
+    pause(2)
+    show papyrusImg surprised zorder 2 at fade:
+        xpos 0.4
+    papyrus "WAIT, WHERE DID THEY GO?!"
+    stop music
+    show asgoreImg armor menacing zorder 1 at fade:
+        xpos 0.0
     asgore "That's also my question"
+    show papyrusImg scared
     papyrus "!?"
     jump backNewerHome
 
@@ -277,7 +320,9 @@ label helpthemout:
         xpos 0.4
     "Monster 1" "* (We need to get rid of him)"
     "Monster 2" "* (Yes, but how?)"
-    "* Papyrus ends alone hanging from his pants from a tree in a cliff"
+    scene day3 forest hanging with dissolve:
+        ypos 0.0
+        linear 10 ypos -0.7
     papyrus "HOW I LET THIS HAPPENING?"
     papyrus "WELL, AT LEAST THEY PROMISE ME THEY WILL FIND SOME HELP"
     papyrus "BUT IT'S GETTING LATE ALREADY"
