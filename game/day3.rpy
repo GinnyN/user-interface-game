@@ -62,6 +62,7 @@ label forest:
     undyne "MMmmm"
 
 #Outside Forest
+label temp:
     scene forest with dissolve
     show papyrusImg confused  zorder 0 at fade:
         xpos 0.0
@@ -320,27 +321,60 @@ label helpthemout:
         xpos 0.4
     "Monster 1" "* (We need to get rid of him)"
     "Monster 2" "* (Yes, but how?)"
+    "* MMMMMmmmmm"
+    hide cuero
+    hide coo
+    stop music
+    scene black with dissolve
+    pause(1)
+    play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
     scene day3 forest hanging with dissolve:
         ypos 0.0
         linear 10 ypos -0.7
-    papyrus "HOW I LET THIS HAPPENING?"
+    pause(1.0)
+    papyrus "HOW I LET THIS HAPPEN?"
     papyrus "WELL, AT LEAST THEY PROMISE ME THEY WILL FIND SOME HELP"
     papyrus "BUT IT'S GETTING LATE ALREADY"
     papyrus "MMM..."
-    "* Papyrus calls a bone and throw it to the cliff, letting a big giantic bone grow from there. He grabs it when it's growing and eventually reach the top of the cliff safe"
+    scene day3 forest pickup frame1 with dissolve
+    pause(1)
+    scene day3 forest pickup frame2 with dissolve
+    pause(1)
+    scene day3 forest pickup frame3 with hpunch
+    pause(1)
+    scene day3 forest pickup frame4 with dissolve
+    pause(1)
+    scene day3 forest pickup frame5 with dissolve
+    pause(1)
+    scene day3 forest pickup frame6 with dissolve
+    pause(1)
     papyrus "THE GREAT PAPYRUS HAS DONE IT AGAIN!"
     papyrus "NOW I NEED TO FIND THOSE MONSTERS"
     papyrus "THEY MUST BE WORRIED SICK I FELL INTO THIS PLACE"
-    "* Papyrus decides to go and check for the monsters he found. He search a lot everywhere and doesn't find them still"
+    scene forest with dissolve
+    show papyrusImg screamingCall at fade:
+        xpos 0.1
     papyrus "HELLOOOOO???"
     papyrus "WHERE ARE YOU GUYS???"
+    show papyrusImg worried
     papyrus "MMM...."
     papyrus "HOPEFULLY THEY ARE ALRIGHT"
-    "* The two monsters pass near Papyrus running and one of them is holding a human child"
+    scene day3 forest action frame1 with dissolve
+    pause(1)
+    play music "music/24 Bonetrousle.mp3" fadeout 1 fadein 1
+    papyrus "!?"
+    scene day3 forest action frame2 with dissolve
+    pause(1)
+    scene day3 forest action frame3 with dissolve
+    pause(1)
     papyrus "A HUMAN?!"
     papyrus "ARE THEY KIDNAPPING A HUMAN CHILD!?"
     papyrus "NOT ON THE WITNESS OF THE GREAT PAPYRUS!"
-    "Papyrus kicks the floor and make a bone appear in front of the monster not carrying the child, letting the other escape"
+    scene day3 forest stop frame1 with dissolve
+    pause(0.2)
+    play sound "music/fx/thump.wav"
+    scene day3 forest stop frame2 with hpunch
+    pause(0.5)
     papyrus "WRONG MONSTER!"
     papyrus "BUT I CAN STILL FIX THIS!"
     "Papyrus tries again, but it's interrupted by one of Undyne's Spears"
@@ -367,29 +401,10 @@ label helpthemout:
     papyrus "I NEED TO SAVE THAT CHILD!!"
     asgore "And you need to calm down Papyrus"
     asgore "False accusations go nowhere here"
-    papyrus "THOSE AREN'T FALSE"
-
-    $ time = resets + papyrusTraining
-    $ timer_range = resets + papyrusTraining
-    $ timer_jump = 'papyrusAttackAsgore'
-
-    if time > 1:
-        show screen countdown
-
-        menu:
-            "Sucker Punch":
-                hide screen countdown
-                jump papyrusSuckerPunch
-
-    else:
-        jump papyrusAttackAsgore
-
-label papyrusAttackAsgore:
-    papyrus "I CHALLENGE YOU TO A DUEL!"
-    papyrus "IF I WIN YOU HAVE TO BELIEVE ME!"
-    asgore "That's not how trust works Papyrus"
-    asgore "But if it's the only way I can bring you back to Newer Home"
-    papyrus "WHAT ARE YOU..."
+    asgore "Let's go home"
+    stop music
+    scene black with dissolve
+    papyrus "THOSE AREN'T... FALSE..."           
     jump backNewerHome
 
 label backNewerHome:
