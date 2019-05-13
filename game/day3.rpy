@@ -377,38 +377,69 @@ label helpthemout:
     pause(0.5)
     papyrus "WRONG MONSTER!"
     papyrus "BUT I CAN STILL FIX THIS!"
-    "Papyrus tries again, but it's interrupted by one of Undyne's Spears"
+    scene day3 forest stop frame1 with dissolve
+    play sound "music/fx/spears.wav"
+    pause(0.2)
+    play sound "music/fx/explosion.wav"
+    pause(0.2)
+    scene day3 forest spear frame1 with vpunch
+    pause(0.5)
     papyrus "UNDYNE?!"
     papyrus "WHAT ARE YOU DOING?!"
+    show papyrusImg surprised at fade:
+        xpos -0.1
     papyrus "THEY ARE ESCAPING!!!"
+    show undyneImg armor angry flip at fade:
+        ypos 0.1
+        xpos 0.4
     undyne "WHAT ARE YOU DOING YOU IDIOT?!"
     undyne "These monsters has nothing to do with anything!!!!"
+    show papyrusImg worried
     papyrus "UNDYNE PLEASE!"
     papyrus "THEY ARE CARRYING A SCARED HUMAN CHILD"
     papyrus "AND THEY ARE RUNNING AWAY FROM US"
     undyne "Because they are smart and trying to get away from the evil humans!"
     papyrus "BUT UNDYNE!"
     papyrus "I'M SURE THE CHILD IS NOT AGREEING WITH THIS!"
+    show papyrusImg surprised flip
     papyrus "OH GOD!"
+    hide papyrusImg
     papyrus "THE CHILD!"
+    show undyneImg armor angry flip at fade:
+        ypos 0.1
+        xpos 0.0
     undyne "Papyrus wait!"
-    "Papyrus run thru the forest while Undyne is trying to catch up with her armor not cooperating"
+    show undyneImg armor surprised flip
     undyne "This stupid bonehead is getting away somehow!"
+    show asgoreImg armor menacing flip zorder 1 at fade:
+        xpos 0.2
     asgore "Leave this to me"
+    hide asgoreImg
     undyne "But..."
-    "Asgore shoots one of his tridents and traps Papyrus inside them, unable to move"
+    play sound "music/fx/spears.wav"
+    pause(1)
+    scene  day3 forest trident frame1 with hpunch
+    play sound "music/fx/explosion.wav"
+    pause(0.2)
+    scene  day3 forest trident frame2 with vpunch
+    stop music    
+    play sound "music/fx/thump.wav"
+    pause(0.2)
     papyrus "YOUR MAJESTY! PLEASE!"
     papyrus "I NEED TO SAVE THAT CHILD!!"
     asgore "And you need to calm down Papyrus"
     asgore "False accusations go nowhere here"
     asgore "Let's go home"
-    stop music
     scene black with dissolve
-    papyrus "THOSE AREN'T... FALSE..."           
+    pause(1.0)
+    papyrus "THOSE AREN'T..."
+    extend " FALSE..."           
     jump backNewerHome
 
 label backNewerHome:
-    "Back to Newer Home, Sans and Toriel are formally dressed just back from the meeting with the human autorities"
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
+    pause(1)
+    scene toriel house with dissolve
     sans "what just happened?"
     sans "we were at the middle of an meeting"
     toriel "Hopefully they are already captured the humans"
