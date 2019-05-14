@@ -1,23 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day3.rpy", line 334, in <module>
-    scene day3 forest pickup frame3 with shake
-NameError: name 'shake' is not defined
+  File "game/imgDeclaration/sans_suits.rpy", line 30, in <module>
+    if suit == 1:
+NameError: name 'suit' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/day3.rpyc", line 334, in script
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1271, in execute
-    paired = renpy.python.py_eval(self.paired)
+  File "lib/windows-i686/day3.rpyc", line 448, in script call
+  File "lib/windows-i686/imgDeclaration/sans_suits.rpyc", line 30, in script
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1656, in execute
+    if renpy.python.py_eval(condition):
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1725, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1719, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/day3.rpy", line 334, in <module>
-    scene day3 forest pickup frame3 with shake
-NameError: name 'shake' is not defined
+  File "game/imgDeclaration/sans_suits.rpy", line 30, in <module>
+    if suit == 1:
+NameError: name 'suit' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

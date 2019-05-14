@@ -1,5 +1,3 @@
-
-
 #Sans
 image sansImg position = im.Alpha(im.FactorScale("undyne/gym/mildsurprise.png", 0), 1)
 #Puffy Jacket
@@ -34,11 +32,17 @@ image sansImg hoddie done flip = im.Flip(im.FactorScale("sans/hoddie/done.png", 
 image sansImg suit blue stiff = im.FactorScale("sans/blueSuit/stiff.png", 0.8)
 image sansImg suit blue bored = im.FactorScale("sans/blueSuit/bored.png", 0.8)
 image sansImg suit blue sarcastic = im.FactorScale("sans/blueSuit/sarcastic.png", 0.8)
+image sansImg suit blue annoyed = im.FactorScale("sans/blueSuit/annoyed.png", 0.8)
+image sansImg suit blue surprised = im.FactorScale("sans/blueSuit/surprised.png", 0.8)
 #Red Suit
 image sansImg suit red stiff = im.FactorScale("sans/redSuit/stiff.png", 0.8)
 image sansImg suit red bored = im.FactorScale("sans/redSuit/bored.png", 0.8)
 image sansImg suit red sarcastic = im.FactorScale("sans/redSuit/sarcastic.png", 0.8)
+image sansImg suit red annoyed = im.FactorScale("sans/redSuit/annoyed.png", 0.8)
+image sansImg suit red surprised = im.FactorScale("sans/redSuit/surprised.png", 0.8)
 #Green Suit
 image sansImg suit green stiff = im.FactorScale("sans/greenSuit/stiff.png", 0.8)
 image sansImg suit green bored = im.FactorScale("sans/greenSuit/bored.png", 0.8)
 image sansImg suit green sarcastic = im.FactorScale("sans/greenSuit/sarcastic.png", 0.8)
+image sansImg suit green annoyed = im.FactorScale("sans/greenSuit/annoyed.png", 0.8)
+image sansImg suit green surprised = im.FactorScale("sans/greenSuit/surprised.png", 0.8)

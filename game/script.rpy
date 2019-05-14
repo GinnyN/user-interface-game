@@ -2,4 +2,5 @@ label start:
     #$ resets = 1
     $ papersPapyrusCreation = True
     $ papyrusKnowsProgramming = True
-    jump temp
+    $ suit = 3
+    jump backNewerHome

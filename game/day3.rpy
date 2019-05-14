@@ -440,40 +440,83 @@ label backNewerHome:
     play music "music/05 Ruins.mp3" fadein 1 fadeout 1
     pause(1)
     scene toriel house with dissolve
+    show torielImg position zorder 2 at fade:
+        xpos -0.1
+    show sansImg position zorder 4 at fade:
+        xpos 0.15
+        ypos 0.205
+    call sansSuitAnnoyed
+    call torielSuitWorried
     sans "what just happened?"
     sans "we were at the middle of an meeting"
     toriel "Hopefully they are already captured the humans"
+    show undyneImg armor serious flip zorder 3 at fade:
+        ypos 0.1
+        xpos 0.3
     undyne "Not really"
-    "Asgore is carrying Papyrus upside down"
+    show undyneImg armor serious zorder 3 at fade:
+        ypos 0.1
+        xpos 0.1
+    show asgoreImg armor menacing flip zorder 1 at fade:
+        xpos 0.2
+    show papyrusImg sorry upsidedown zorder 2 at fade:
+        xpos 0.5
+    call sansSuitSurprised
     papyrus "..."
-    "Pfff!"
+    hide papyrusImg
+    hide asgoreImg
+    play sound "music/fx/thump.wav"
     sans "papyrus?"
-    sans "What just happened?"
+    sans "what just happened?"
+    hide torielImg
+    show undyneImg armor serious flip zorder 3 at fade:
+        ypos 0.1
+        xpos 0.3
     undyne "We found by cheer luck some monsters in the forest"
     undyne "And Papyrus started to attack them with no reason at all"
+    show papyrusImg worried flip zorder 2 at fade:
+        xpos 0.5
     papyrus "UNDYNE!"
+    show undyneImg armor serious
     papyrus "I TOLD YOU THE REASON!"
+    show undyneImg armor angry
+    show papyrusImg scared flip
+    call sansSuitBored
     undyne "PAPYRUS SHUT UP"
+    show undyneImg armor serious
+    show papyrusImg worried
     undyne "THIS IS GETTING WAY OUT OF HAND"
+    show undyneImg armor surprised flip
     toriel "UNDYNE"
+    show undyneImg armor serious flip
     toriel "What do you think you are doing?"
     undyne "It's just..."
+    show undyneImg armor serious
     undyne "grrrr...."
+    show undyneImg armor serious flip
     undyne "argh"
-    sans "What the matter, uh?"
+    call sansSuitSarcastic
+    sans "what the matter, uh?"
     undyne "Those monsters did nothing"
     asgore "..."
+    show undyneImg armor angry flip
     undyne "And he is attacking them"
+    show undyneImg armor serious flip
     undyne "This is exactly what I..."
+    show undyneImg armor serious
     undyne "grrr...."
+    show undyneImg armor serious flip
     sans "exactly you what?"
+    show undyneImg armor serious
     sans "come on, say it!"
+    show undyneImg armor serious flip
     undyne "You don't get it"
-    sans "i'll tell you what i`m getting then"
-    sans "so maybe you"
+    dtSans "I'll tell you what I`m getting then"
+    dtSans "So maybe you"
+    hide papyrusImg
+    play sound "music/fx/steps.wav"
     papyrus "EVERYBODY JUST STOP!"
     papyrus "I CAN`T TAKE THIS ANYMORE!"
-    "Papyrus ran away"
     asgore "Oh no"
     sans "bro..."
     toriel "Now you did it"

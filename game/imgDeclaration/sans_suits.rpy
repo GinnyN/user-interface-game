@@ -24,3 +24,22 @@ label sansSuitSarcastic:
     else:
         show sansImg suit green sarcastic
     return
+
+
+label sansSuitAnnoyed:
+    if suit == 1:
+        show sansImg suit red annoyed
+    elif suit == 2:
+        show sansImg suit blue annoyed
+    else:
+        show sansImg suit green annoyed
+    return
+
+label sansSuitSurprised:
+    if suit == 1:
+        show sansImg suit red surprised
+    elif suit == 2:
+        show sansImg suit blue surprised
+    else:
+        show sansImg suit green surprised
+    return
