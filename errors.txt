@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-The label sansSuitAnnoyed is defined twice, at
-  File "lib/windows-i686/imgDeclaration/sans_suits.rpyc", line 29 and
-  File "lib/windows-i686/imgDeclaration/sans_suits.rpyc", line 38.
+File "game/day3.rpy", line 599: play requires a file
+    play music 
+               ^
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

@@ -513,10 +513,12 @@ label backNewerHome:
     undyne "You don't get it"
     dtSans "I'll tell you what I`m getting then"
     dtSans "So maybe you"
+    stop music fadeout(1)
     hide papyrusImg
     play sound "music/fx/steps.wav"
     papyrus "EVERYBODY JUST STOP!"
     papyrus "I CAN`T TAKE THIS ANYMORE!"
+    play sound "music/fx/thump.wav"
     asgore "Oh no"
     sans "bro..."
     toriel "Now you did it"
@@ -579,7 +581,9 @@ label backNewerHome:
     frisk "To"
 
     " Cuts to Toriel telling Sans and Asgore what`s just happened "
-
+    
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
+    scene toriel house with dissolve
     sans "mount anemi"
     sans "that name is kind of weird"
     asgore "It's near from here"
@@ -594,15 +598,16 @@ label backNewerHome:
     sans "wait did you texted alphys?"
     toriel "Yes, I just..."
     toriel "Oh uh"
-
     " You can hear Undyne screaming out of screen "
-
+    
+    play music "music/46 Spear of Justice.mp3" fadein 1
+    scene toriel house with hpunch
     undyne "AAAAHHHHHHHHHRRRRGGGGGGGGGGG!!!!!"
     undyne "PAPYRUS!!"
     undyne "AT LEAST WAIT UNTIL TOMORROW DAMMIT!!!!"
     asgore "We should go at once"
     sans "Yes, yes"
-
+    stop music fadeout(1)
     "After a moment in Mount Anemi"
 
     papyrus "WHERE DID THEY SAID THEIR SIBLING WERE?"
@@ -640,7 +645,8 @@ label backNewerHome:
     undyne "!?"
 
     "Undyne end ups trapped in a booby trap on the floor"
-
+    
+    play music "music/15 sans.mp3" fadein 1
     undyne "SANS!"
     undyne "I KNOW THIS IS YOU!"
     sans "i totally forgot about practical jokes"
@@ -655,7 +661,7 @@ label backNewerHome:
     asgore "It`s just..."
     asgore "Pffff"
     undyne "GET ME OUT GET ME OUT GET ME OUT!"
-
+    stop music fadeout(1)
     "Meanwhile, Papyrus and Frisk are still searching"
 
     papyrus "OH LOOK FRISK!"
