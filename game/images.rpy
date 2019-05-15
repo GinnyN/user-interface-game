@@ -25,7 +25,7 @@ image alphysImg casual noWords = "alphys/casual/noWords.png"
 image alphysImg casual noWords flip = im.Flip("alphys/casual/noWords.png", horizontal=True)
 
 #Frisk
-image friskImg worried = "frisk/worried.png"
+image friskImg worried = im.FactorScale("frisk/worried.png", 0.7)
 image friskImg papyrus = "frisk/papyrus.png"
 image friskImg ilu = "frisk/ilu.png"
 image friskImg ilu flip = im.Flip("frisk/ilu.png", horizontal=True)

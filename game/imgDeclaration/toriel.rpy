@@ -28,9 +28,21 @@ image torielImg teacher worried flip = im.Flip("toriel/teacher/worried.png", hor
 #Blue
 image torielImg blue worried = "toriel/blue/worried.png"
 image torielImg blue worried flip = im.Flip("toriel/blue/worried.png", horizontal=True)
+image torielImg blue surprised = "toriel/blue/surprised.png"
+image torielImg blue surprised flip = im.Flip("toriel/blue/surprised.png", horizontal=True)
+image torielImg blue angry = "toriel/blue/angry.png"
+image torielImg blue angry flip = im.Flip("toriel/blue/angry.png", horizontal=True)
 #Red
 image torielImg red worried = "toriel/red/worried.png"
 image torielImg red worried flip = im.Flip("toriel/red/worried.png", horizontal=True)
+image torielImg red surprised = "toriel/red/surprised.png"
+image torielImg red surprised flip = im.Flip("toriel/red/surprised.png", horizontal=True)
+image torielImg red angry = "toriel/red/angry.png"
+image torielImg red angry flip = im.Flip("toriel/red/angry.png", horizontal=True)
 #Green
 image torielImg green worried = "toriel/green/worried.png"
 image torielImg green worried flip = im.Flip("toriel/green/worried.png", horizontal=True)
+image torielImg green surprised = "toriel/green/surprised.png"
+image torielImg green surprised flip = im.Flip("toriel/green/surprised.png", horizontal=True)
+image torielImg green angry = "toriel/green/angry.png"
+image torielImg green angry flip = im.Flip("toriel/green/angry.png", horizontal=True)

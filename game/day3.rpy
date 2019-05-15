@@ -448,7 +448,7 @@ label backNewerHome:
     call sansSuitAnnoyed
     call torielSuitWorried
     sans "what just happened?"
-    sans "we were at the middle of an meeting"
+    sans "we were at the middle of a meeting"
     toriel "Hopefully they are already captured the humans"
     show undyneImg armor serious flip zorder 3 at fade:
         ypos 0.1
@@ -462,6 +462,7 @@ label backNewerHome:
     show papyrusImg sorry upsidedown zorder 2 at fade:
         xpos 0.5
     call sansSuitSurprised
+    call torielSuitSuprised
     papyrus "..."
     hide papyrusImg
     hide asgoreImg
@@ -487,6 +488,9 @@ label backNewerHome:
     show papyrusImg worried
     undyne "THIS IS GETTING WAY OUT OF HAND"
     show undyneImg armor surprised flip
+    show torielImg position zorder 2 at fade:
+        xpos -0.1
+    call torielSuitAngry
     toriel "UNDYNE"
     show undyneImg armor serious flip
     toriel "What do you think you are doing?"
@@ -508,6 +512,7 @@ label backNewerHome:
     show undyneImg armor serious flip
     sans "exactly you what?"
     show undyneImg armor serious
+    call sansSuitAnnoyed
     sans "come on, say it!"
     show undyneImg armor serious flip
     undyne "You don't get it"
@@ -516,23 +521,42 @@ label backNewerHome:
     stop music fadeout(1)
     hide papyrusImg
     play sound "music/fx/steps.wav"
+    call sansSuitSurprised
+    call torielSuitSuprised
+    show undyneImg armor surprised
     papyrus "EVERYBODY JUST STOP!"
     papyrus "I CAN`T TAKE THIS ANYMORE!"
     play sound "music/fx/thump.wav"
+    call torielSuitWorried
+    call sansSuitWorried
+    show undyneImg armor serious
+    show asgoreImg armor awe zorder 1 at fade:
+        xpos 0.3
     asgore "Oh no"
     sans "bro..."
-    toriel "Now you did it"
     asgore "I'm scared about the same thing, though"
+    call sansSuitAnnoyed
     sans "what?"
+    show asgoreImg armor awe flip
     asgore "Not in the way of he will go out of control again"
+    call sansSuitWorried
     asgore "But in a way he will start to look too hard trying to fix that mistake"
     undyne "He always tries too hard..."
     undyne "..."
+    show undyneImg armor worried
     undyne "And I always thought he will die at the hands to a powerful enemy if I teach him to fight"
     sans "..."
     toriel "Everybody is stressed out, specially him"
     toriel "I think the best we can do is just rest and tomorrow study his accusations"
     toriel "Let`s give him the benefit of the doubt this time"
+    scene toriel house with dissolve
+    show friskImg worried zorder 3 at fade:
+        xpos 0.1
+        ypos 0.2
+    pause(1)
+    hide friskImg
+    pause(0.5)
+    scene black with dissolve
 
     "Papyrus is under a tree near to his house."
 

@@ -43,3 +43,12 @@ label sansSuitSurprised:
     else:
         show sansImg suit green surprised
     return
+
+label sansSuitWorried:
+    if suit == 1:
+        show sansImg suit red worried
+    elif suit == 2:
+        show sansImg suit blue worried
+    else:
+        show sansImg suit green worried
+    return
