@@ -437,6 +437,7 @@ label helpthemout:
     jump backNewerHome
 
 label backNewerHome:
+    scene black with dissolve
     play music "music/05 Ruins.mp3" fadein 1 fadeout 1
     pause(1)
     scene toriel house with dissolve
