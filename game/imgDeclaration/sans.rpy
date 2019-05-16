@@ -1,13 +1,18 @@
 #Sans
 image sansImg position = im.Alpha(im.FactorScale("undyne/gym/mildsurprise.png", 0), 1)
 #Puffy Jacket
+image sansImg angry = im.FactorScale("sans/angry.png",0.8)
+image sansImg angry flip = im.Flip(im.FactorScale("sans/angry.png",0.8), horizontal=True)
 image sansImg flustered = "sans/flustered.png"
 image sansImg flustered screaming = "sans/flusteredScreaming.png"
-image sansImg serious = "sans/serious.png"
+image sansImg serious = im.FactorScale("sans/serious.png",0.8)
+image sansImg serious flip = im.Flip(im.FactorScale("sans/serious.png",0.8), horizontal=True)
 image sansImg cocky = "sans/cocky.png"
 image sansImg cocky eyes = "sans/cockyEyes.png"
-image sansImg surprised = "sans/surprised.png"
-image sansImg surprised flip = im.Flip("sans/surprised.png", horizontal=True)
+image sansImg surprised = im.FactorScale("sans/surprised.png",0.8)
+image sansImg surprised flip = im.Flip(im.FactorScale("sans/surprised.png",0.8), horizontal=True)
+image sansImg unsure = im.FactorScale("sans/unsure.png",0.8)
+image sansImg unsure flip = im.Flip(im.FactorScale("sans/unsure.png",0.8), horizontal=True)
 image sansImg serious looking up = "sans/seriousLookingUp.png"
 #Hoddie
 image sansImg hoddie worried = "sans/hoddie/worried.png"

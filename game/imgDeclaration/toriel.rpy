@@ -2,7 +2,10 @@
 image torielImg position = im.Alpha(im.FactorScale("undyne/gym/mildsurprise.png", 0), 1)
 #Pajamas
 image torielImg pajamas worried surprised = "toriel/pajamas/surprised.png"
+image torielImg pajamas surprised = "toriel/pajamas/surprised.png"
+image torielImg pajamas surprised flip = im.Flip("toriel/pajamas/surprised.png", horizontal=True)
 image torielImg pajamas worried = "toriel/pajamas/worried.png"
+image torielImg pajamas worried flip = im.Flip("toriel/pajamas/worried.png", horizontal=True)
 image torielImg pajamas angry = "toriel/pajamas/angry.png"
 image torielImg pajamas strong = "toriel/pajamas/strong.png"
 image torielImg pajamas solemn = "toriel/pajamas/solemn.png"

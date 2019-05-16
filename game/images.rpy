@@ -58,6 +58,9 @@ image asgoreImg armor surprised = "asgore/armor/surprised.png"
 image asgoreImg armor surprised flip = im.Flip("asgore/armor/surprised.png", horizontal=True)
 image asgoreImg armor menacing = "asgore/armor/menacing.png"
 image asgoreImg armor menacing flip = im.Flip("asgore/armor/menacing.png", horizontal=True)
+#Cape 
+image asgoreImg cape neutral = "asgore/cape/neutral.png"
+image asgoreImg cape neutral flip = im.Flip("asgore/cape/neutral.png", horizontal=True)
 
 
 #Mettaton 

@@ -47,6 +47,8 @@ image day3 forest stop frame2 = "background/day3/forest-stop-frame-2.png"
 image day3 forest spear frame1 = "background/day3/forest-spear-frame-1.png"
 image day3 forest trident frame1 = "background/day3/forest-trident-frame-1.png"
 image day3 forest trident frame2 = "background/day3/forest-trident-frame-2.png"
+image day3F nightview foreground = "background/day3/nightview-foreground.png"
+image day3 nightview background = "background/day3/nightview-background.png"
 #Free morning
 image freeMorning sans resetZero panoramica = "background/freeMorning/sans-reset-zero-panoramica.png"
 image freeMorning frisk resetZero scene1 = "background/freeMorning/frisk-zero-scene1.png"

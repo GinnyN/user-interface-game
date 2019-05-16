@@ -62,7 +62,6 @@ label forest:
     undyne "MMmmm"
 
 #Outside Forest
-label temp:
     scene forest with dissolve
     show papyrusImg confused  zorder 0 at fade:
         xpos 0.0
@@ -557,10 +556,13 @@ label backNewerHome:
     pause(1)
     hide friskImg
     pause(0.5)
+label temp:
     scene black with dissolve
-
-    "Papyrus is under a tree near to his house."
-
+    play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
+    scene day3 nightview background with dissolve:
+        ypos 0.0
+        linear 20 ypos -0.5
+    show day3F nightview foreground at fade
     papyrus "BEEN GREAT IS GETTING MORE DIFFICULT AT THE TIME GOES ON"
     papyrus "I HAVE TO STILL WORK ON IT"
     papyrus "but..."
@@ -572,12 +574,16 @@ label backNewerHome:
     papyrus "BUT NOW I HAVE TO WORK IN THE HOW"
     papyrus "HOW?"
     papyrus "MMMMMMMMMMMM"
+    show friskImg worried zorder 3 at fade:
+        xpos 0.1
+        ypos 0.2
     papyrus "UH? FRISK?"
     frisk "Hi"
     papyrus "WHAT'S THE MATTER?"
     if whoRescueMauricio:
         frisk "Do you remember the kid you saved?"
         papyrus "OH RIGHT"
+        show friskImg affirmation
         frisk "They`re name is Mauricio"
         frisk "They told me they remembered where their sibling is hidden"  
     else:
@@ -586,42 +592,71 @@ label backNewerHome:
         papyrus "OK, GO ON"
         frisk "They said they were kidnapped by some humans and then given to some..."
         papyrus "MONSTERS??"
+        show friskImg unsure
         frisk "Yes, how to..."
         papyrus "I FOUND THEM IN THE WOODS"
+        show friskImg affirmation
         frisk "Well, they said their sibling were also kidnapped"
         frisk "And that maybe they remember where their sibling is"
+    show papyrusImg delight flip zorder 2 at fade:
+        xpos 0.3
     papyrus "REALLY??"
     papyrus "WOWIE!"
     papyrus "WE SHOULD GO AT ONCE!"
+    show friskImg unsure
     frisk "Are you sure?"
     papyrus "YES!"
+    hide friskImg
     frisk "Let's me send a text to my mom first"
+    show papyrusImg explainingPointing flip
     papyrus "YES YES, YOU SHOULD TELL TORIEL"
+    show papyrusImg neutral flip
     papyrus "DONE?"
+    show friskImg happy zorder 3 at fade:
+        xpos 0.1
+        ypos 0.2
     frisk "Done"
+    show papyrusImg delight flip
     papyrus "OK!"
+    play sound "music/fx/steps.wav"
+    hide papyrusImg
     papyrus "TO"
     papyrus "..."
+    play sound "music/fx/steps.wav"
+    show papyrusImg uhh flip zorder 2 at fade:
+        xpos 0.3
     papyrus "TO WHERE?"
+    show friskImg affirmation
     frisk "To"
-
-    " Cuts to Toriel telling Sans and Asgore what`s just happened "
-    
-    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
+    stop music    
     scene toriel house with dissolve
+    show sansImg unsure flip zorder 3 at fade:
+        xpos 0.3
+        ypos 0.205
+    show torielImg pajamas worried zorder 1 at fade
+    show asgoreImg cape neutral flip zorder 2 at fade:
+        xpos 0.3
+        ypos -0.15
     sans "mount anemi"
     sans "that name is kind of weird"
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
     asgore "It's near from here"
     asgore "I`ll call U..."
     asgore "I`ll go myself to see what`s going on"
+    show sansImg angry
     sans "what are you implying?"
+    show sansImg unsure
     asgore "Just that I don`t want for them to get any trouble"
     toriel "That mount is barely on the humans` maps"
     toriel "I texted Alphys about it"
+    show sansImg unsure flip
     sans "then is a perfect place for humans doing illegal things"
+    show sansImg serious
     sans "ok, let`s go..."
+    show sansImg surprised flip
     sans "wait did you texted alphys?"
     toriel "Yes, I just..."
+    show torielImg pajamas surprised
     toriel "Oh uh"
     " You can hear Undyne screaming out of screen "
     

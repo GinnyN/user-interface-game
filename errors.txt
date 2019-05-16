@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/day3.rpy", line 599: play requires a file
-    play music 
-               ^
+The label temp is defined twice, at
+  File "lib/windows-i686/day3.rpyc", line 65 and
+  File "lib/windows-i686/day3.rpyc", line 560.
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029
