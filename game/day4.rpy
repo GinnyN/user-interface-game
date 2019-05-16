@@ -136,7 +136,7 @@ label day4:
         $ pen = True
         
     if pen and firstTry:
-         jump endingFirstTry
+         jump endingsFirstTry
         
     if resets == 0:
         papyrus "I HAVE THIS TINGLING SENSATION THAT THEY WILL NOT ALLOW ME TO JOIN WHATEVER THEY WANT TO DO TODAY"
@@ -320,6 +320,7 @@ label cont2:
     papyrus "!???"
     gaster "VERY WELL..."
     gaster "THERE IN THE COMPUTER ARE LEFT BLUPRINTS AND READINGS"
+    $ pen = True
     gaster "I PUT THEM IN A PENDRIVE, RIGHT HERE"
     gaster "SINCE I TOUCHED IT, IT SHOULD SURVIVE TIME AND SPACE"
     gaster "WITH THIS INFORMATION, YOU SHOULD BE ABLE TO FORMULATE SOMETHING TO HELP ME"

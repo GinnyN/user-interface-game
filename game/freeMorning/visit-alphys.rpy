@@ -30,26 +30,26 @@ label visitAlphys:
     papyrus "OR ELSE YOU'LL END UP WATCHING THE NEW SEASON OF MEW MEW"
     show alphysImg casual dismissive
     alphys "Come on Papyrus"
-    alphys "The first chapter was promising"
-    alphys "But for the moment is as good as the second season"
-    alphys "Which means is trash"
-    alphys "While they admitted the second season ruined Mew Mew story arc"
-    alphys "And they are trying to fix it"
-    alphys "I don't see how that is fixing it"
-    alphys "They should try another aproach if they want to keep the franchise alive"
+    alphys "The first chapter was promising    {nw}"
+    alphys "{fast}But for the moment is as good as the second season    {nw}"
+    alphys "{fast}Which means is trash    {nw}"
+    alphys "{fast}While they admitted the second season ruined Mew Mew story arc   {nw}"
+    alphys "{fast}And they are trying to fix it    {nw}"
+    alphys "{fast}I don't see how that is fixing it    {nw}"
+    alphys "{fast}They should try another aproach if they want to keep the franchise alive    {nw}"
     show alphysImg casual noWords
-    alphys "But the 1st season is a classic already"
-    alphys "They can't fix that"
+    alphys "{fast}But the 1st season is a classic already     {nw}"
+    alphys "{fast}They can't fix that    {nw}"
     show papyrusImg coolDude thinking flip
     papyrus "ISN'T THE MANGA STILL GOING?"
     show alphysImg casual dismissive
     alphys "Yes, yes"
-    alphys "But that a manga based on the 1st season"
-    alphys "Mew Mew is an original animation"
+    alphys "But that a manga based on the 1st season     {nw}"
+    alphys "{fast}Mew Mew is an original animation     {nw}"
     show alphysImg casual noWords
-    alphys "It's not very good"
+    alphys "{fast}It's not very good    {nw}"
     show alphysImg casual dismissive
-    alphys "But at least is better than this 2nd and 3rd season trash"
+    alphys "{fast}But at least is better than this 2nd and 3rd season trash     {nw}"
     show papyrusImg coolDude happy flip
     papyrus "I SEE YOU HAVEN'T LOST IT!"
     papyrus "UNDYNE IS ALWAYS TELLING ME ABOUT HOW YOU RANT ABOUT WHEN THEY SEE AN EPISODE OF THE NEW SEASON"

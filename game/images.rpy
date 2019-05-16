@@ -9,6 +9,7 @@ image alphysImg pajamas explaining flip = im.Flip("alphys/pajamas/explaining.png
 #Casual
 image alphysImg casual laugh = "alphys/casual/joking.png"
 image alphysImg casual explaining = "alphys/casual/explaining.png"
+image alphysImg casual explaining flip = im.Flip("alphys/casual/explaining.png", horizontal=True)
 image alphysImg casual confused = "alphys/casual/confused.png"
 image alphysImg casual confused flip = im.Flip("alphys/casual/confused.png", horizontal=True)
 image alphysImg casual dismissive = "alphys/casual/dismissive.png"
@@ -61,6 +62,10 @@ image asgoreImg armor menacing flip = im.Flip("asgore/armor/menacing.png", horiz
 #Cape 
 image asgoreImg cape neutral = "asgore/cape/neutral.png"
 image asgoreImg cape neutral flip = im.Flip("asgore/cape/neutral.png", horizontal=True)
+image asgoreImg cape surprised = "asgore/cape/surprised.png"
+image asgoreImg cape surprised flip = im.Flip("asgore/cape/surprised.png", horizontal=True)
+image asgoreImg cape worried = "asgore/cape/worried.png"
+image asgoreImg cape worried flip = im.Flip("asgore/cape/worried.png", horizontal=True)
 
 
 #Mettaton 

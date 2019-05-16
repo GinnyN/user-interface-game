@@ -448,6 +448,7 @@ label planning:
     alphys "Well... Metatton can help with that"
     show sansImg hoddie done flip at fade
     sans "today is not my day"
+    stop music fadeout(1)
 
 label mettatonsfashion:
     scene black with dissolve
@@ -975,6 +976,7 @@ label alphysHome:
     show alphysImg casual nostalgic flip
     alphys "If you say so"
     if pen and not program:
+        $ penAtAlphys = True
         papyrus "DR. ALPHYS, I KNOW YOU ARE BUSY"
         papyrus "BUT I HAVE A PROBLEM ONLY YOU CAN SOLVE"
         alphys "What do you mean?"
@@ -985,7 +987,7 @@ label alphysHome:
         papyrus "TRUST ME"
         alphys "Ok..."
         papyrus "SOMEONE IS TRAPPED THERE"
-        papyrus "IT BECAME PURE DETERMINATION ONCE"
+        papyrus "IT BECAME ONE WITH EVERYTHING ONCE"
         papyrus "BUT WITH THIS MACHINE IS GETTING THEIR ORIGINAL FORM BACK"
         papyrus "BUT THE PROCESS IS NOT COMPLETE"
         papyrus "CAN YOU SEE IF THERE'S A WAY TO COMPLETE THE PROCESS?"
@@ -1004,10 +1006,11 @@ label alphysHome:
     alphys "PAPYRUS!"
 
     if pen and not program:
+        pause(1)
         alphys "I'm sorry Papyrus"
 
 label endOfDay2:
-    if resets > 1:
+    if resets > 0:
         call questionsEnd
     
     jump day3

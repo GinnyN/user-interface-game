@@ -642,10 +642,12 @@ label temp:
     play music "music/05 Ruins.mp3" fadein 1 fadeout 1
     asgore "It's near from here"
     asgore "I`ll call U..."
+    show asgoreImg cape worried flip
     asgore "I`ll go myself to see what`s going on"
     show sansImg angry
     sans "what are you implying?"
     show sansImg unsure
+    show asgoreImg cape neutral flip
     asgore "Just that I don`t want for them to get any trouble"
     toriel "That mount is barely on the humans` maps"
     toriel "I texted Alphys about it"
@@ -657,18 +659,25 @@ label temp:
     sans "wait did you texted alphys?"
     toriel "Yes, I just..."
     show torielImg pajamas surprised
+    show asgoreImg cape surprised flip
     toriel "Oh uh"
-    " You can hear Undyne screaming out of screen "
-    
     play music "music/46 Spear of Justice.mp3" fadein 1
     scene toriel house with hpunch
     undyne "AAAAHHHHHHHHHRRRRGGGGGGGGGGG!!!!!"
     undyne "PAPYRUS!!"
     undyne "AT LEAST WAIT UNTIL TOMORROW DAMMIT!!!!"
+    show sansImg surprised  zorder 3 at fade:
+        xpos 0.3
+        ypos 0.205
+    show asgoreImg cape surprised zorder 2 at fade:
+        xpos 0.3
+        ypos -0.15
     asgore "We should go at once"
+    hide asgoreImg
+    hide sansImg
     sans "Yes, yes"
     stop music fadeout(1)
-    "After a moment in Mount Anemi"
+    scene black with dissolve
 
     papyrus "WHERE DID THEY SAID THEIR SIBLING WERE?"
     frisk "In a cave near to where the snow started"
@@ -697,12 +706,15 @@ label temp:
 
     sans "done"
 
-    "Sans hides. Undyne appears "
+    
+    play music "music/46 Spear of Justice.mp3" fadein 1
 
     undyne "ARGH!"
     undyne "Not Frisk too!!!"
     undyne "PA..."
+    stop music fadeout(1)
     undyne "!?"
+    play sound "music/fx/thump.wav"
 
     "Undyne end ups trapped in a booby trap on the floor"
     
@@ -728,21 +740,21 @@ label temp:
     frisk "A giant hole on the floor!"
     papyrus "LET`S SEE THERE"
     papyrus "HEEEYYYY!!!"
-    "Kid 1" "It`s another monster!"
-    "Kid 2" "Hide! Hide!"
+    "Kid 1" "* It`s another monster!"
+    "Kid 2" "* Hide! Hide!"
     frisk "It`s ok! Papyrus is my friend!"
-    "Kid 3" "A human?"
-    "Kid 1" "It`s a kid like us!"
-    "Kid 2" "They came to rescue us?"
+    "Kid 3" "* A human?"
+    "Kid 1" "* It`s a kid like us!"
+    "Kid 2" "* They came to rescue us?"
     papyrus "YES"
     frisk "We came in the name of Mauricio!"
-    "Kid 3" "That`s my brother"
-    "Kid 3" "Is he alright?"
+    "Kid 3" "* That`s my brother"
+    "Kid 3" "* Is he alright?"
     papyrus "HE`S FINE!"
     papyrus "NOW WE NEED TO GET YOU GUYS OUT OF THERE!"
 
     "Back with Undyne, Sans and Asgore"
-
+    play music "music/15 sans.mp3" fadein 1
     asgore "This is a very good trap Sans"
     sans "i actually surprised myself"
     undyne "ARGH! I got out!"
@@ -768,7 +780,7 @@ label temp:
     papyrus "THOSE KIDS ARE MORE IMPORTANT"
     undyne "Heh..."
     undyne "You right..."
-    
+    stop music fadeout(1)
     label endOfDay3:
         if resets > 1:
             call questionsEnd

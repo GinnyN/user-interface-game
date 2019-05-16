@@ -1,3 +1,7 @@
+#Preferences
+
+default preferences.text_cps = 50
+
 #RECIPES
 screen countdown:
     timer 0.01 repeat True action If(time > 0, true=SetVariable('time', time - 0.01), false=[Hide('countdown'), Jump(timer_jump)])
