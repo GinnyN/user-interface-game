@@ -1,6 +1,8 @@
 
 #Papyrus
 #Battle Body
+image papyrusImg annoyed = "papyrus/annoyed.png"
+image papyrusImg annoyed flip = im.Flip("papyrus/annoyed.png", horizontal=True)
 image papyrusImg angry = "papyrus/angry.png"
 image papyrusImg angry flip = im.Flip("papyrus/angry.png", horizontal=True)
 image papyrusImg angry eyes = "papyrus/angry-glowing.png"
@@ -60,6 +62,10 @@ image papyrusImg worried flip = im.Flip("papyrus/worried.png", horizontal=True)
 
 image papyrusImg happy = "papyrus/happy.png"
 image papyrusImg happy flip = im.Flip("papyrus/happy.png", horizontal=True)
+#Scarfless
+image papyrusImg scarfless happy = "papyrus/scarfless/happy.png"
+image papyrusImg scarfless happy flip = im.Flip("papyrus/scarfless/happy.png", horizontal=True)
+
 #Cool Dude
 image papyrusImg coolDude angry = "papyrus/coolDude/angry.png"
 image papyrusImg coolDude angry flip = im.Flip("papyrus/coolDude/angry.png", horizontal=True)

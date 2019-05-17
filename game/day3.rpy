@@ -556,7 +556,6 @@ label backNewerHome:
     pause(1)
     hide friskImg
     pause(0.5)
-label temp:
     scene black with dissolve
     play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
     scene day3 nightview background with dissolve:
@@ -678,49 +677,86 @@ label temp:
     sans "Yes, yes"
     stop music fadeout(1)
     scene black with dissolve
-
+    pause(1)
+    play music "music/17 Snowy.mp3" fadein(1) fadeout(1)
+    scene mountAnemi with dissolve:
+        ypos 0.0
+        linear 25 ypos -0.4
+    pause(1)
+    show papyrusImg annoyed zorder 2 at fade:
+        xpos -0.1
+    show friskImg unsure zorder 3 at fade:
+        xpos 0.1
+        ypos 0.2
     papyrus "WHERE DID THEY SAID THEIR SIBLING WERE?"
     frisk "In a cave near to where the snow started"
     papyrus "THIS IS CHILLIER THAN HIGH SNOWDIN"
     papyrus "ARE YOU OK FRISK?"
+    show friskImg scared
     frisk "..."
+    show papyrusImg explaining
     papyrus "HA! I KNEW IT!"
+    show papyrusImg neutral
     papyrus "COME ON FRISK, I DON'T HAVE SKIN, I'LL BE OK!"
     papyrus "TAKE MY SCARF"
+    show papyrusImg scarfless happy
+    show friskImg scarf flip
     frisk "But"
-    frisk "But it's part of your battle body..."
+    extend " it's part of your battle body..."
+    show friskImg scarf
     papyrus "WHAT`S A BATTLE BODY GOOD FOR IF IT CAN`T HELP MY FRIENDS?"
-    papyrus "WHAT?"
-    frisk "Nothing, let`s keep moving"
+    show friskImg scarf flip zorder 3 at fade:
+        xpos 0.4
+        ypos 0.2
+    pause(2) 
+    hide friskImg
+    frisk "Let`s keep moving"
+    hide papyrusImg
     papyrus "YES!"
-
-    "Papyrus and Frisk move into the mountain, while Sans appears just behind them"
-
+    pause(1)
+    show sansImg surprised  zorder 3 at fade:
+        xpos 0.3
+        ypos 0.205
     sans "they seem to be fine"
+    show sansImg unsure
     sans "mmmm"
-    sans "i think we`ll be better to follow them and see where this goes"
+    sans "i think we`ll be better follow them and see where this goes"
+    show sansImg unsure flip
     sans "but this just leave me with"
     sans "mmm"
-
-    "Sans moves 3 steps to the left and them points to the ground"
-
+    hide sansImg
+    pause(0.8)
+    show sansImg happy flip zorder 3 at fade:
+        xpos 0.6
+        ypos 0.205
     sans "done"
-
-    
+    hide sansImg
+    pause(0.5)
     play music "music/46 Spear of Justice.mp3" fadein 1
-
+    pause(1)
+    show undyneImg armor angry zorder 3 at fade:
+        ypos 0.1
+        xpos 0.0
     undyne "ARGH!"
     undyne "Not Frisk too!!!"
+    show undyneImg armor angry zorder 3 at fade:
+        ypos 0.1
+        xpos 0.3
     undyne "PA..."
     stop music fadeout(1)
+    show undyneImg armor surprised
     undyne "!?"
+    hide undyneImg
     play sound "music/fx/thump.wav"
 
-    "Undyne end ups trapped in a booby trap on the floor"
+    pause(1)
     
     play music "music/15 sans.mp3" fadein 1
     undyne "SANS!"
     undyne "I KNOW THIS IS YOU!"
+    show sansImg happy flip zorder 3 at fade:
+        xpos 0.6
+        ypos 0.205
     sans "i totally forgot about practical jokes"
     sans "i should do this more often"
     sans "ppfff"

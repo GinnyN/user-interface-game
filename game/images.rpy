@@ -39,6 +39,10 @@ image friskImg affirmation = im.FactorScale("frisk/affirmation.png", 0.7)
 image friskImg affirmation flip = im.Flip(im.FactorScale("frisk/affirmation.png", 0.7), horizontal=True)
 image friskImg happy = im.FactorScale("frisk/happy.png", 0.7)
 image friskImg happy flip = im.Flip(im.FactorScale("frisk/happy.png", 0.7), horizontal=True)
+image friskImg scared = im.FactorScale("frisk/scared.png", 0.7)
+image friskImg scared flip = im.Flip(im.FactorScale("frisk/scared.png", 0.7), horizontal=True)
+image friskImg scarf = im.FactorScale("frisk/scarf.png", 0.7)
+image friskImg scarf flip = im.Flip(im.FactorScale("frisk/scarf.png", 0.7), horizontal=True)
 
 #Asgore
 #Shirt
