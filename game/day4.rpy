@@ -1,36 +1,33 @@
 label day4:
+    scene black with dissolve
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
+    pause(1)
+    scene toriel house with dissolve
+    show torielImg teacher worried zorder 2 at fade:
+        xpos 0.0
+    show alphysImg casual explaining flip zorder 3 at fade:
+        xpos 0.2
+        ypos -0.2
     toriel "Did you find anything about those human traffickers?"
     alphys "Everything we found is in the cloud, we just need to send them to the humans`s authorities"
+    show torielImg teacher neutral
     toriel "Good"
     alphys "What are we going to do with those monsters the kids are saying they brought them?"
+    show torielImg teacher unsure
     toriel "That`s complicated"
+    show torielImg teacher worried
     toriel "We started this trying to avoid what Papyrus did affect our relationship with the humans"
     toriel "But now more monsters are involved"
     toriel "And we have no idea what those monsters want to do with those poor kids"
-    if whoRescueMauricio:
-        alphys "Papyrus said he found one of those monsters"
-        alphys "They were all 'Humans are evil' and stuff"
-        alphys "But doesn`t tell us too much"
-        alphys "I mean, Undyne is not very keen of humans either"
-        alphys "But at least she tries to give them a chance"
-        toriel "I have this suspicion that they aren`t from our underground"
-        alphys "What? There`s more than one cave?"
-        toriel "Before the war, monsters were many more than now"
-        toriel "But, when they trap us, they trap us all in one cave"
-        toriel "At the beginning was the pain I focused on, but after years and years of been trapped"
-        toriel "I started to wonder, since I was sure we were many more during the war"
-        alphys "How all of us end up here?"
-        toriel "I can be wrong and the deaths by the humans in the war were way more than I feel"
-        toriel "But all the monsters loves Frisk"
-        toriel "Right?"
-        alphys "That a good question..."
     sans "hi"
+    show torielImg teacher neutral
     toriel "Oh, Sans!"
     toriel "Did you finish what I asked you?"
     alphys "You asked him something?"
     sans "she asked me to figure out if there some weird buildings in mount ameni"
     sans "i found something"
     sans "and i had to run away for my life"
+    show torielImg teacher worried
     toriel "Oh Sans"
     sans "i`m ok. they just saw me"
     sans "they`re probably going to check for those kids they had in the cave"
@@ -40,9 +37,11 @@ label day4:
     alphys "Yes..."
     alphys "They will be certainly angry if they find we already rescue those kids"
     toriel "One part of me wants to talk with those monsters and give them a chance"
+    show torielImg teacher angry
     toriel "Another wants to roast them for make those poor kids suffer like that"
     alphys "OK, ok, I got it"
     sans "hehehehehehe..."
+    show torielImg teacher worried
     toriel "Maybe we should just capture them and work on rehabilitation"
     toriel "We can`t have them still capturing kids just because"
     sans "it must be a reason"
@@ -50,6 +49,7 @@ label day4:
     sans "i`m just saying that they must need so many kids for some sort of weird plan"
     alphys "And you think that because..."
     sans "just a hunch"
+    show torielImg teacher worried
     toriel "Then we will just have to storm the place"
     toriel "It`s the quicker way to end with all this situation"
     toriel "I`ll call Asgore"
@@ -139,6 +139,12 @@ label day4:
          jump endingsFirstTry
         
     if resets == 0:
+        stop music
+        scene black with dissolve
+        pause(1)
+        scene skelebroHouse outside with dissolve
+        show papyrusImg coolDude happy zorder 0 at fade:
+            xpos 0
         papyrus "I HAVE THIS TINGLING SENSATION THAT THEY WILL NOT ALLOW ME TO JOIN WHATEVER THEY WANT TO DO TODAY"
         papyrus "EVEN IF I WAS RIGHT YESTERDAY, THEY HAVE A POINT"
         papyrus "A REALLY SMALL POINT, BUT STILL"
@@ -151,16 +157,16 @@ label day4:
         papyrus "AHHHHHH????!!!!"
         papyrus "FROM WHERE THIS IS COMING FROM..."
         "The scene changes from the skelehouse to a mystery place with myst"
-        "???" "{font=fonts/NewAster.ttf} MY... BO... CO... HE... CLO...{/font}"
+        "???" "{font=fonts/NewAster.ttf} {cps=*0.2} MY... BO... CO... HE... CLO...{/cps}{/font}"
         papyrus "A VOICE!"
         papyrus "DO YOU NEED HELP?!"
         papyrus "WHERE DO I GO?!"
-        "???" "{font=fonts/NewAster.ttf} HE... THIS... YYYY {/font}"
+        "???" "{font=fonts/NewAster.ttf}{cps=*0.2} HE... THIS... YYYY {/cps}{/font}"
         papyrus "THAT WAY?"
         papyrus "JUST WAIT MISTER! I'M COMING FOR YOU!"
         "* Walking sounds... Papyrus is getting closer *"
         papyrus "MISTER! CAN YOU TELL ME IF I'M CLOSE!?"
-        "???" "{font=fonts/NewAster.ttf} THAT WAY MY... YES.. YOU ARE... CLOSER... {/font}"
+        "???" "{font=fonts/NewAster.ttf} {cps=*0.5}THAT WAY MY... YES.. YOU ARE... CLOSER... {/cps}{/font}"
         papyrus "GOOD TO KNOW!"
         papyrus "HELP ON THE WAY!"
         "* The mist become a lab with a computer and two giant tanks. Papyrus is really surprised *"

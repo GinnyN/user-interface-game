@@ -3,4 +3,4 @@ label start:
     $ papersPapyrusCreation = True
     $ papyrusKnowsProgramming = True
     $ suit = 2
-    jump temp
+    jump day4

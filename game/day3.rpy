@@ -759,21 +759,44 @@ label backNewerHome:
         ypos 0.205
     sans "i totally forgot about practical jokes"
     sans "i should do this more often"
+    show sansImg laughing flip
     sans "ppfff"
     undyne "You..."
+    show asgoreImg cape neutral zorder 2 at fade:
+        xpos -0.3
+        ypos -0.15
     asgore "What`s going..."
+    show asgoreImg cape laughing
     asgore "ppfff"
     undyne "Asgore..."
     undyne "Not you too.."
+    show asgoreImg cape worried
     asgore "I`m sorry Undyne..."
     asgore "It`s just..."
+    show asgoreImg cape laughing
     asgore "Pffff"
     undyne "GET ME OUT GET ME OUT GET ME OUT!"
     stop music fadeout(1)
-    "Meanwhile, Papyrus and Frisk are still searching"
-
-    papyrus "OH LOOK FRISK!"
+    hide asgoreImg
+    hide sansImg
+    scene black with dissolve
+    pause(1)
+    play music "music/17 Snowy.mp3" fadein(1) fadeout(1)
+    scene mountAnemi with dissolve:
+        ypos -0.4
+    show papyrusImg scarfless unsure zorder 2 at fade:
+        xpos -0.1
+    show friskImg scarf zorder 3 at fade:
+        xpos 0.1
+        ypos 0.2
+    frisk "LOOK!"
     frisk "A giant hole on the floor!"
+    hide papyrusImg
+    hide friskImg
+    scene day3 kids cave with dissolve:
+        xpos -0.2
+        ypos 0.0
+        linear 24 xpos 0.0 ypos -0.2
     papyrus "LET`S SEE THERE"
     papyrus "HEEEYYYY!!!"
     "Kid 1" "* It`s another monster!"
@@ -788,37 +811,61 @@ label backNewerHome:
     "Kid 3" "* Is he alright?"
     papyrus "HE`S FINE!"
     papyrus "NOW WE NEED TO GET YOU GUYS OUT OF THERE!"
-
-    "Back with Undyne, Sans and Asgore"
-    play music "music/15 sans.mp3" fadein 1
+    scene black with dissolve
+    pause(1)
+    play music "music/15 sans.mp3" fadein(1) fadeout(1)
+    scene mountAnemi with dissolve:
+        ypos -0.4
+    show sansImg laughing zorder 3 at fade:
+        xpos 0.2
+        ypos 0.205
+    show asgoreImg cape laughing zorder 1 at fade:
+        xpos -0.3
+        ypos -0.15
     asgore "This is a very good trap Sans"
     sans "i actually surprised myself"
+    show undyneImg armor angry zorder 2 at fade:
+        ypos 0.1
+        xpos 0.3
     undyne "ARGH! I got out!"
+    show undyneImg armor angry flip
     undyne "I`ll talk with you later punk!"
+    show sansImg happy
+    show asgoreImg cape neutral
     sans "look at me i`m so scared"
+    show undyneImg armor angry
     undyne "Now I will"
-
-    "Papyrus appears, dressed only with his pants"
-
+    show papyrusImg topless angry flip zorder 1 at fade:
+        xpos 0.5
     papyrus "WHAT ARE YOU DOING HERE PLAYING IN THE DIRT?"
+    show undyneImg armor surprised
+    show sansImg surprised
+    show asgoreImg cape surprised
     undyne "ARGH! PAPYRUS!"
     undyne "How you..."
     papyrus "CAN WE LEAVE THIS FOR LATER?"
+    show papyrusImg topless angry
     papyrus "FRISK AND I FOUND 5 KIDNAPPED KIDS IN A CAVE"
+    show papyrusImg topless angry flip
     papyrus "THEY ARE FREEZING AND I`M RUNNING OUT OF CLOTHES"
     asgore "Five?!"
-    "Asgore goes out"
+    hide asgoreImg
+    show sansImg happy
     sans "well, i got my jacket"
-    "Sans goes out"
+    hide sansImg
+    show undyneImg armor sorry
     undyne "Papyrus... I..."
     papyrus "I TOLD YOU, WE BETTER LEAVE THIS FOR LATER"
     papyrus "I`M FINE"
+    hide papyrusImg
     papyrus "THOSE KIDS ARE MORE IMPORTANT"
+    show undyneImg armor smile
     undyne "Heh..."
+    hide undyneImg
     undyne "You right..."
     stop music fadeout(1)
     label endOfDay3:
-        if resets > 1:
+        if resets > 0:
             call questionsEnd
         jump day4
 return

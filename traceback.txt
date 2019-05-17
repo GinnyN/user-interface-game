@@ -1,22 +1,76 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/day4.rpy", line 139, in script
-    jump endingFirstTry
-ScriptError: could not find label 'endingFirstTry'.
+While processing text tag {cps=*1/2} in u'{font=fonts/NewAster.ttf} {cps=*1/2} MY... BO... CO... HE... CLO...{/cps}{/font}'.:
+  File "game/day4.rpy", line 145, in script
+    "???" "{font=fonts/NewAster.ttf} {cps=*1/2} MY... BO... CO... HE... CLO...{/cps}{/font}"
+  File "renpy/common/00library.rpy", line 295, in say
+    who(what, interact=interact, *args, **kwargs)
+ValueError: invalid literal for float(): 1/2
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day4.rpy", line 139, in script
-    jump endingFirstTry
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 1678, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\script.py", line 886, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'endingFirstTry'.
+  File "game/day4.rpy", line 145, in script
+    "???" "{font=fonts/NewAster.ttf} {cps=*1/2} MY... BO... CO... HE... CLO...{/cps}{/font}"
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 694, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\exports.py", line 1320, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 295, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 1127, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2690, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 3174, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2086, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 516, in renpy.display.render.render_screen
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\screen.py", line 669, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 1124, in render
+    st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 925, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 1989, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 590, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 1157, in segment
+    ts.cps *= float(value[1:])
+ValueError: invalid literal for float(): 1/2
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 UserInterface 0.0
-Thu May 16 13:11:12 2019
+Fri May 17 13:29:25 2019

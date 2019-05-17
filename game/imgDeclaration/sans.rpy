@@ -11,6 +11,8 @@ image sansImg cocky = "sans/cocky.png"
 image sansImg cocky eyes = "sans/cockyEyes.png"
 image sansImg happy = im.FactorScale("sans/happy.png",0.8)
 image sansImg happy flip = im.Flip(im.FactorScale("sans/happy.png",0.8), horizontal=True)
+image sansImg laughing = im.FactorScale("sans/laughing.png",0.8)
+image sansImg laughing flip = im.Flip(im.FactorScale("sans/laughing.png",0.8), horizontal=True)
 image sansImg surprised = im.FactorScale("sans/surprised.png",0.8)
 image sansImg surprised flip = im.Flip(im.FactorScale("sans/surprised.png",0.8), horizontal=True)
 image sansImg unsure = im.FactorScale("sans/unsure.png",0.8)

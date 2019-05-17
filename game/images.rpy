@@ -24,6 +24,8 @@ image alphysImg casual nostalgic = "alphys/casual/nostalgic.png"
 image alphysImg casual nostalgic flip = im.Flip("alphys/casual/nostalgic.png", horizontal=True)
 image alphysImg casual noWords = "alphys/casual/noWords.png"
 image alphysImg casual noWords flip = im.Flip("alphys/casual/noWords.png", horizontal=True)
+image alphysImg casual neutral = "alphys/casual/neutral.png"
+image alphysImg casual neutral flip = im.Flip("alphys/casual/neutral.png", horizontal=True)
 
 #Frisk
 image friskImg worried = im.FactorScale("frisk/worried.png", 0.7)
@@ -66,6 +68,8 @@ image asgoreImg armor menacing flip = im.Flip("asgore/armor/menacing.png", horiz
 #Cape 
 image asgoreImg cape neutral = "asgore/cape/neutral.png"
 image asgoreImg cape neutral flip = im.Flip("asgore/cape/neutral.png", horizontal=True)
+image asgoreImg cape laughing = "asgore/cape/laughing.png"
+image asgoreImg cape laughing flip = im.Flip("asgore/cape/laughing.png", horizontal=True)
 image asgoreImg cape surprised = "asgore/cape/surprised.png"
 image asgoreImg cape surprised flip = im.Flip("asgore/cape/surprised.png", horizontal=True)
 image asgoreImg cape worried = "asgore/cape/worried.png"
