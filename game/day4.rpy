@@ -5,13 +5,14 @@ label day4:
     scene toriel house with dissolve
     show torielImg teacher worried zorder 2 at fade:
         xpos 0.0
-    show alphysImg casual explaining flip zorder 3 at fade:
-        xpos 0.2
+    show alphysImg casual neutral flip zorder 3 at fade:
+        xpos 0.3
         ypos -0.2
     toriel "Did you find anything about those human traffickers?"
-    alphys "Everything we found is in the cloud, we just need to send them to the humans`s authorities"
+    alphys "Everything we found is in the cloud, we just need to send them to the humans` authorities"
     show torielImg teacher neutral
     toriel "Good"
+    show alphysImg casual nostalgic flip
     alphys "What are we going to do with those monsters the kids are saying they brought them?"
     show torielImg teacher unsure
     toriel "That`s complicated"
@@ -20,14 +21,20 @@ label day4:
     toriel "But now more monsters are involved"
     toriel "And we have no idea what those monsters want to do with those poor kids"
     sans "hi"
+    show alphysImg casual neutral zorder 3 at fade:
+        xpos 0.1
+        ypos -0.2
     show torielImg teacher neutral
     toriel "Oh, Sans!"
     toriel "Did you finish what I asked you?"
+    show alphysImg casual neutral flip
     alphys "You asked him something?"
+    show alphysImg casual neutral
     sans "she asked me to figure out if there some weird buildings in mount ameni"
     sans "i found something"
     sans "and i had to run away for my life"
     show torielImg teacher worried
+    show alphysImg casual tired
     toriel "Oh Sans"
     sans "i`m ok. they just saw me"
     sans "they`re probably going to check for those kids they had in the cave"
@@ -39,6 +46,7 @@ label day4:
     toriel "One part of me wants to talk with those monsters and give them a chance"
     show torielImg teacher angry
     toriel "Another wants to roast them for make those poor kids suffer like that"
+    show alphysImg casual nostalgic flip
     alphys "OK, ok, I got it"
     sans "hehehehehehe..."
     show torielImg teacher worried
@@ -47,6 +55,7 @@ label day4:
     sans "it must be a reason"
     sans "i`m not saying that justify it"
     sans "i`m just saying that they must need so many kids for some sort of weird plan"
+    show alphysImg casual neutral
     alphys "And you think that because..."
     sans "just a hunch"
     show torielImg teacher worried
@@ -139,7 +148,7 @@ label day4:
          jump endingsFirstTry
         
     if resets == 0:
-        stop music
+        stop music fadeout(1)
         scene black with dissolve
         pause(1)
         scene skelebroHouse outside with dissolve
