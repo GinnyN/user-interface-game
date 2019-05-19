@@ -913,7 +913,7 @@ label suitDecision:
         asgore "Papyrus, please tell Undyne about this tomorrow, ok?"
         papyrus "YES SIR"
 
-    jump day3
+    jump endOfDay2
 
 label papyrusLab:
     $ sansSuit = 2

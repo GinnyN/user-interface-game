@@ -80,8 +80,8 @@ image papyrusImg coolDude checkThis = "papyrus/coolDude/checkThis.png"
 image papyrusImg coolDude checkThis flip = im.Flip("papyrus/coolDude/checkThis.png", horizontal=True)
 image papyrusImg coolDude cocky = "papyrus/coolDude/cocky.png"
 image papyrusImg coolDude cocky flip = im.Flip("papyrus/coolDude/cocky.png", horizontal=True)
-image papyrusImg coolDude surprised = "papyrus/coolDude/scared.png"
-image papyrusImg coolDude surprised flip = im.Flip("papyrus/coolDude/scared.png", horizontal=True)
+image papyrusImg coolDude surprised = "papyrus/coolDude/surprised.png"
+image papyrusImg coolDude surprised flip = im.Flip("papyrus/coolDude/surprised.png", horizontal=True)
 image papyrusImg coolDude annoyed = "papyrus/coolDude/annoyed.png"
 image papyrusImg coolDude annoyed flip = im.Flip("papyrus/coolDude/annoyed.png", horizontal=True)
 image papyrusImg coolDude delight = "papyrus/coolDude/delight.png"

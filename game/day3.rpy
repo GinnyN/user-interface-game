@@ -824,6 +824,7 @@ label backNewerHome:
         ypos -0.15
     asgore "This is a very good trap Sans"
     sans "i actually surprised myself"
+    play sound "music/fx/riseup.wav"
     show undyneImg armor angry zorder 2 at fade:
         ypos 0.1
         xpos 0.3

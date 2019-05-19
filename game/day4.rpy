@@ -20,6 +20,9 @@ label day4:
     toriel "We started this trying to avoid what Papyrus did affect our relationship with the humans"
     toriel "But now more monsters are involved"
     toriel "And we have no idea what those monsters want to do with those poor kids"
+    show sansImg hoddie neutral flip zorder 3 at fade:
+        xpos 0.6
+        ypos 0.205
     sans "hi"
     show alphysImg casual neutral zorder 3 at fade:
         xpos 0.1
@@ -32,14 +35,18 @@ label day4:
     show alphysImg casual neutral
     sans "she asked me to figure out if there some weird buildings in mount ameni"
     sans "i found something"
+    show sansImg hoddie unsure flip
     sans "and i had to run away for my life"
     show torielImg teacher worried
     show alphysImg casual tired
     toriel "Oh Sans"
+    show sansImg hoddie neutral flip
     sans "i`m ok. they just saw me"
     sans "they`re probably going to check for those kids they had in the cave"
+    show sansImg hoddie annoyed flip
     sans "i`m the worst spy you could find, been honest"
     toriel "What we`re going to do now?"
+    show sansImg hoddie neutral flip
     sans "beats me"
     alphys "Yes..."
     alphys "They will be certainly angry if they find we already rescue those kids"
@@ -47,11 +54,13 @@ label day4:
     show torielImg teacher angry
     toriel "Another wants to roast them for make those poor kids suffer like that"
     show alphysImg casual nostalgic flip
+    show sansImg hoddie sideglance flip
     alphys "OK, ok, I got it"
     sans "hehehehehehe..."
     show torielImg teacher worried
     toriel "Maybe we should just capture them and work on rehabilitation"
     toriel "We can`t have them still capturing kids just because"
+    show sansImg hoddie neutral flip
     sans "it must be a reason"
     sans "i`m not saying that justify it"
     sans "i`m just saying that they must need so many kids for some sort of weird plan"
@@ -152,7 +161,7 @@ label day4:
         scene black with dissolve
         pause(1)
         scene skelebroHouse outside with dissolve
-        show papyrusImg coolDude happy zorder 0 at fade:
+        show papyrusImg coolDude thinking zorder 0 at fade:
             xpos 0
         papyrus "I HAVE THIS TINGLING SENSATION THAT THEY WILL NOT ALLOW ME TO JOIN WHATEVER THEY WANT TO DO TODAY"
         papyrus "EVEN IF I WAS RIGHT YESTERDAY, THEY HAVE A POINT"
@@ -160,38 +169,64 @@ label day4:
         papyrus "..."
         papyrus "SOMETIMES I WONDER IF THEY HAVE MEETINGS WHICH I DON'T GET INVITED..."
         papyrus "OR THE INVITATION WAS LOST IN THE MAIL???"
+        show papyrusImg coolDude explaining
         papyrus "I ALWAYS SEEM TO MISS SOME CRUCIAL INFORMATION OR SOMETHING"
-        "woooooooooooooooo"
+        play music "music/47 Ooo.mp3" fadein 1
+        pause(1)
+        show papyrusImg coolDude surprised
         papyrus "?!"
         papyrus "AHHHHHH????!!!!"
         papyrus "FROM WHERE THIS IS COMING FROM..."
-        "The scene changes from the skelehouse to a mystery place with myst"
+        scene mistColor with dissolve
+        show mist zorder 0 at fade
         "???" "{font=fonts/NewAster.ttf} {cps=*0.2} MY... BO... CO... HE... CLO...{/cps}{/font}"
+        show papyrusImg coolDude surprised zorder 1 at fade:
+            xpos 0
         papyrus "A VOICE!"
         papyrus "DO YOU NEED HELP?!"
         papyrus "WHERE DO I GO?!"
         "???" "{font=fonts/NewAster.ttf}{cps=*0.2} HE... THIS... YYYY {/cps}{/font}"
         papyrus "THAT WAY?"
-        papyrus "JUST WAIT MISTER! I'M COMING FOR YOU!"
-        "* Walking sounds... Papyrus is getting closer *"
+        papyrus "JUST WAIT MISTER! I'M COMING FOR YOU!"      
+        hide papyrusImg
+        play sound "music/fx/steps.wav"
+        pause(1)
+        show papyrusImg coolDude thinking zorder 1 at fade:
+            xpos 0
         papyrus "MISTER! CAN YOU TELL ME IF I'M CLOSE!?"
         "???" "{font=fonts/NewAster.ttf} {cps=*0.5}THAT WAY MY... YES.. YOU ARE... CLOSER... {/cps}{/font}"
+        show papyrusImg coolDude delight
         papyrus "GOOD TO KNOW!"
+        hide papyrusImg
+        play sound "music/fx/steps.wav"
         papyrus "HELP ON THE WAY!"
-        "* The mist become a lab with a computer and two giant tanks. Papyrus is really surprised *"
+        scene wekufeLab with dissolve:
+            ypos 0.0
+            linear 20 ypos -0.3
+        pause(1.0)
+        show papyrusImg coolDude surprised zorder 1 at fade:
+            xpos 0
         papyrus "WOWIE..."
         papyrus "WHAT IS THIS?!"
         "???" "{font=fonts/NewAster.ttf}PAPYRUS! MY DEAR BOY! YOU MADE IT!{/font}"
         papyrus "?!"
-        "* The scene now points to Gaster, somewhat bigger, half melted, but still his eyes, mouth and cracks visible *"
+        scene day4 gaster with dissolve:
+            ypos -0.5
+            linear 5 ypos 0.0
+        pause(3.0)
         papyrus "AN ANALGAMATE?!"
         "???" "{font=fonts/NewAster.ttf} AH? NO NO MY DEAR PAPYRUS... {/font}"
         "???" "{font=fonts/NewAster.ttf} DON'T YOU REMEMBER ME? {/font}"
         "???" "{font=fonts/NewAster.ttf} I'M YOUR OLD FRIEND AND FORMER BOSS IN THE ROYAL LABORATORY {/font}"
         gaster "W.D. GASTER"
-        "* Gaster's theme kicks in, pause for a 1.5 secs before doing anything*"
-        "* stop music* "
+        stop music fadeout(1)
+        play music "music/gaster theme.MP3" fadein 1
+        pause(5)
+        show papyrusImg coolDude thinking zorder 1 at fade:
+            xpos -0.1
         papyrus "WHO ARE YOU AGAIN?"
+        stop music
+        play sound "music/fx/thump.wav"
         gaster "YOU DEFINITELY DO NOT REMEMBER ME..."
         papyrus "SHOULD I?"
         gaster "YES, YES, YOU SHOULD"
@@ -199,37 +234,48 @@ label day4:
         gaster "I INJECTED ENOUGH DETERMINATION IN YOU AND SANS FOR BOTH TO SURVIVE WITH YOUR MEMORIES INTACT"
         gaster "IT SEEMS YOUR LEVELS WEREN'T HIGH ENOUGH"
         gaster "WHICH I FOUND HIGHLY SUSPICIOUS"
+        show papyrusImg coolDude careful
         papyrus "I DON'T FOLLOW"
+        show papyrusImg coolDude thinking
         papyrus "CAN YOU START FROM WAAAAYYY BEFORE THAT"
         gaster "WELL, SINCE WE HAVE A PROBLEM WITH HACKING, I MUST START FROM THE BEGINNING THEN"
         gaster "EHEM!"
-        "* Gaster's theme finally kicks in *"
+        play music "music/gaster theme.MP3" fadein 1
+        scene wekufeLab with dissolve
+        show papyrusImg coolDude thinking zorder 1 at fade:
+            xpos -0.1
         gaster "MY NAME IS W.D. GASTER"
         gaster "AND I WAS THE OLD ROYAL SCIENTIST BEFORE THE CURRENT ONE"
         gaster "BETWEEN MY ACCOMPLISHES ARE THE CORE AND THE DT EXTRACTOR"
+        show papyrusImg coolDude surprised happy
         papyrus "THE CORE???!!"
         papyrus "DID YOU BUILD THE CORE?!!"
         gaster "I DESIGN IT"
         gaster "THE CONSTRUCTION DUTIES WENT TO DIFFERENT VERY TALENTED PEOPLE, MOST OF THEM FIRE ELEMENTALS"
+        show papyrusImg coolDude delight
         papyrus "WOWIE!"
         gaster "WHERE WAS I?"
         gaster "OF COURSE"
+        show papyrusImg coolDude neutral
         gaster "BETWEEN MY DUTIES WAS TRYING TO FIND A WAY TO SHATTER THE BARRIER WHICH KEPT US UNDERGROUND"
         gaster "BUT MY STUDIES FOUND IT WAS IMPOSSIBLE UNLESS A MONSTER ABSORB ENOUGH HUMANS SOULS IN THE PROCESS"
         gaster "THAT WASN'T GOOD ENOUGH FOR THE QUEEN I'M AFRAID"
         gaster "SO I KEPT SEARCHING..."
         gaster "WE EVEN WENT BACK TO WAR..."
         gaster "BUT EVENTUALLY I COULD FIGURE OUT A WAY TO OBTAIN DETERMINATION FROM BEYOND THE REALITY, WHERE EVERYTHING IS SHROUDED IN DARKNESS"
+        show papyrusImg coolDude thinking
         papyrus "BEYOND..."
         papyrus "REALITY?"
         gaster "AT LEAST THAT WAS THE HYPOTESIS, SO WE TRIED OUT SEVERAL EXPERIMENTS"
         gaster "WE FORGOT THEM ALMOST IMMEDIATLY"
         gaster "UNTIL ONE OF MY ASSISTANTS DECIDED TO INJECT HIMSELF WITH DETERMINATION"
+        show papyrusImg coolDude careful
         papyrus "THEY... "
         papyrus "MELTED AWAY TOO?"
         gaster "NO"
         gaster "SORRY, BUT THIS WAS COMMON KNOWLEDGE IN THE OLD MONSTER SCIENTIFIC COMMUNITY"
         gaster "I GUESS WE BEEN SO SECRETIVE ABOUT IT WAS THE REASON FOR THAT TRAGEDY..."
+        show papyrusImg coolDude thinking
         papyrus "YOU KNEW ABOUT THE MONSTER BODIES MELTING WHEN THEY HAVE TOO MANY DETERMINATION?"
         gaster "THE MONSTER SCIENTIFIC COMMUNITY KNEW THAT FOR CENTURIES"
         gaster "BUT WE NEVER WROTE IT DOWN, AS WAS CONSIDERED TABOO, AND WAS REDISCOVERED AGAIN AND AGAIN"
@@ -240,14 +286,17 @@ label day4:
         gaster "TO FIGURE OUT WHICH WAS BEYOND THE PORTAL WE CREATED"
         gaster "MY ASSISTANTS WERE INJECTED WITH ENOUGH DETERMINATION TO REMEMBER ME, BUT NOT MELT"
         gaster "AND THEN I JUMPED INTO THE PORTAL"
+        show papyrusImg coolDude scared
         papyrus "WHAT HAPPENED?"
         papyrus "WHAT HAPPENED!?"
         gaster "I BECAME ONE WITH EVERYTHING"
+        show papyrusImg coolDude thinking
         papyrus "WHAT?"
         gaster "I BECAME ONE WITH THE COMPLETE REALITY, WHICH HAS IT'S OWN BATTLE TO KEEP EXISTING"
         gaster "BUT"
         gaster "SOMEHOW I WAS ABLE TO SEE ONE SINGLE SPACE OF TIME, TRHU THE EYES OF A SINGLE LIVING BEING"
         gaster "A FALLEN HUMAN"
+        show papyrusImg coolDude realizing
         papyrus "FRISK?"
         papyrus "YOU MEAN FRISK?!"
         gaster "THAT WAS THEIR NAME?"
@@ -284,7 +333,7 @@ label day4:
         gaster "SO, THEY HAVE ABANDONED THIS PLACE AND WILL TRY TO START SOMEWHERE ELSE ANEW"
         gaster "BUT THEIR EXPERIMENT ALSO HAD AN INTERESTING SIDE EFFECT"
         gaster "SO MANY DETERMINATION STORED IN JUST ONE PLACE WILL OBVIOUSLY AFFECT THE FABRIC OF REALITY"
-        gaster "BUT, LUCKY FOR US, IT'S ONLY AFFECTED ONE THING OF IT"
+        gaster "BUT, LUCKY FOR US, ONLY AFFECTED ONE THING OF IT"
         papyrus "YOU"
         papyrus "YOU WANT HELP TO ESCAPE THE FABRIC OF REALITY"
         gaster "AS PERSPECTIVE AS USUAL"

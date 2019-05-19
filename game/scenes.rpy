@@ -1,5 +1,6 @@
 #background
 image black = Solid("#000000")
+image mistColor = Solid("#3f575f")
 image lights = im.FactorScale("background/lights.png",3.0)
 
 #Cinematic Scenes
@@ -50,6 +51,8 @@ image day3 forest trident frame2 = "background/day3/forest-trident-frame-2.png"
 image day3F nightview foreground = "background/day3/nightview-foreground.png"
 image day3 nightview background = "background/day3/nightview-background.png"
 image day3 kids cave = "background/day3/kids-in-cave.png"
+#Day 4
+image day4 gaster = "background/day4/gaster.png"
 #Free morning
 image freeMorning sans resetZero panoramica = "background/freeMorning/sans-reset-zero-panoramica.png"
 image freeMorning frisk resetZero scene1 = "background/freeMorning/frisk-zero-scene1.png"
@@ -72,3 +75,11 @@ image elevator outside = "background/elevatorOutside.png"
 image forest = "background/forest.png"
 image fortress inside = "background/fortressInside.png"
 image mountAnemi = "background/mountAnemi.png"
+image wekufeLab = "background/wekufeLab.png"
+image mist:
+    contains:
+        alpha 0.2
+        HBox("background/mist.png")
+        linear 5 alpha 1.0
+        linear 5 alpha 0.2
+        repeat
