@@ -96,6 +96,8 @@ image papyrusImg coolDude happy = "papyrus/coolDude/happy.png"
 image papyrusImg coolDude happy flip = im.Flip("papyrus/coolDude/happy.png", horizontal=True)
 image papyrusImg coolDude me = "papyrus/coolDude/me.png"
 image papyrusImg coolDude me flip = im.Flip("papyrus/coolDude/me.png", horizontal=True)
+image papyrusImg coolDude neutral = "papyrus/coolDude/neutral.png"
+image papyrusImg coolDude neutral flip = im.Flip("papyrus/coolDude/neutral.png",horizontal=True)
 image papyrusImg coolDude thinking = "papyrus/coolDude/thinking.png"
 image papyrusImg coolDude thinking flip = im.Flip("papyrus/coolDude/thinking.png", horizontal=True)
 image papyrusImg coolDude screaming = "papyrus/coolDude/screaming.png"
@@ -110,3 +112,5 @@ image papyrusImg coolDude offended = "papyrus/coolDude/offended.png"
 image papyrusImg coolDude offended flip = im.Flip("papyrus/coolDude/offended.png", horizontal=True)
 image papyrusImg coolDude grandiose = "papyrus/coolDude/grandiose.png"
 image papyrusImg coolDude grandiose flip = im.Flip("papyrus/coolDude/grandiose.png",horizontal=True)
+image papyrusImg coolDude realizing = "papyrus/coolDude/realizing.png"
+image papyrusImg coolDude realizing flip = im.Flip("papyrus/coolDude/realizing.png",horizontal=True)
