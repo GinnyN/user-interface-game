@@ -256,7 +256,7 @@ label day4:
             xpos 0.4
         gaster "MY NAME IS W.D. GASTER"
         gaster "AND I WAS THE OLD ROYAL SCIENTIST BEFORE THE CURRENT ONE"
-        gaster "BETWEEN MY ACCOMPLISHES ARE THE CORE AND THE DT EXTRACTOR"
+        gaster "BETWEEN MY ACCOMPLISHMENT ARE THE CORE AND THE DT EXTRACTOR"
         show papyrusImg coolDude surprised happy
         papyrus "THE CORE???!!"
         papyrus "DID YOU BUILD THE CORE?!!"
@@ -273,21 +273,28 @@ label day4:
         show gaster trapped neutral flip
         gaster "BETWEEN MY DUTIES WAS TRYING TO FIND A WAY TO SHATTER THE BARRIER WHICH KEPT US UNDERGROUND"
         gaster "BUT MY STUDIES FOUND IT WAS IMPOSSIBLE UNLESS A MONSTER ABSORB ENOUGH HUMANS SOULS IN THE PROCESS"
+        show gaster trapped sorry flip
         gaster "THAT WASN'T GOOD ENOUGH FOR THE QUEEN I'M AFRAID"
+        show gaster trapped neutral flip
         gaster "SO I KEPT SEARCHING..."
+        show gaster trapped sorry flip
         gaster "WE EVEN WENT BACK TO WAR..."
+        show gaster trapped proud flip
         gaster "BUT EVENTUALLY I COULD FIGURE OUT A WAY TO OBTAIN DETERMINATION FROM BEYOND THE REALITY, WHERE EVERYTHING IS SHROUDED IN DARKNESS"
         show papyrusImg coolDude thinking
         papyrus "BEYOND..."
         papyrus "REALITY?"
+        show gaster trapped explain flip
         gaster "AT LEAST THAT WAS THE HYPOTESIS, SO WE TRIED OUT SEVERAL EXPERIMENTS"
+        show gaster trapped sorry flip
         gaster "WE FORGOT THEM ALMOST IMMEDIATLY"
+        show gaster trapped explain flip
         gaster "UNTIL ONE OF MY ASSISTANTS DECIDED TO INJECT HIMSELF WITH DETERMINATION"
         show papyrusImg coolDude careful
         papyrus "THEY... "
         papyrus "MELTED AWAY TOO?"
-        gaster "NO"
         show gaster trapped dissapointed flip
+        gaster "NO"
         gaster "SORRY, BUT THIS WAS COMMON KNOWLEDGE IN THE OLD MONSTER SCIENTIFIC COMMUNITY"
         gaster "I GUESS WE BEEN SO SECRETIVE ABOUT IT WAS THE REASON FOR THAT TRAGEDY..."
         show papyrusImg coolDude thinking
@@ -302,16 +309,20 @@ label day4:
         show gaster trapped neutral flip
         gaster "THANKS TO HIM WE WERE ABLE TO DISCOVER THAT, WITH ENOUGH DETERMINATION, WE COULD REMEMBER WHAT WE WERE DOING"
         gaster "EVENTUALLY I WANTED TO MAKE A BREAK THROUGH"
+        show gaster trapped explain flip
         gaster "TO FIGURE OUT WHICH WAS BEYOND THE PORTAL WE CREATED"
         gaster "MY ASSISTANTS WERE INJECTED WITH ENOUGH DETERMINATION TO REMEMBER ME, BUT NOT MELT"
         gaster "AND THEN I JUMPED INTO THE PORTAL"
         show papyrusImg coolDude scared
         papyrus "WHAT HAPPENED?"
         papyrus "WHAT HAPPENED!?"
+        show gaster trapped sorry flip
         gaster "I BECAME ONE WITH EVERYTHING"
         show papyrusImg coolDude thinking
         papyrus "WHAT?"
+        show gaster trapped descisive flip
         gaster "I BECAME ONE WITH THE COMPLETE REALITY, WHICH HAS IT'S OWN BATTLE TO KEEP EXISTING"
+        show gaster trapped explain flip
         gaster "BUT"
         gaster "SOMEHOW I WAS ABLE TO SEE ONE SINGLE SPACE OF TIME, TRHU THE EYES OF A SINGLE LIVING BEING"
         gaster "A FALLEN HUMAN"
@@ -322,71 +333,113 @@ label day4:
         gaster "THAT WAS THEIR NAME?"
         gaster "HOW ODD"
         gaster "IT REMIND ME A BIT OF THE FALLEN PRINCE"
+        show gaster trapped explain flip
         gaster "IN ANY CASE"
+        show gaster trapped neutral flip
         gaster "I WAS NOT ABLE TO SPEAK TO THEM, OR UNDERSTAND THEM, BUT TO SHOW THEM SIMPLIFIED WAYS TO INTERACT AND UNDERSTAND HOW WE AS MONSTERS WORK"
         gaster "AFTER THAT, I TRIED MY BEST"
         gaster "NOT ALWAYS WORKED"
+        show papyrusImg coolDude explaining
         papyrus "WHAT ARE YOU SAYING?"
         papyrus "THEY SAVED US!"
+        show papyrusImg coolDude delight
         papyrus "AND YOU HELPED!"
+        show gaster trapped angry flip
         gaster "I DIDN'T"
+        show papyrusImg coolDude realizing
         gaster "SINCE I CAN'T WATCH OUTSIDE THAT SPACE OF TIME"
-        gaster "I HAVE SEEN THE SAME STORY REPEATED AGAIN AND AGAIN"
+        gaster "I HAVE SEEN THE SAME STORY REPEATED GAIN AND AGAIN"
         gaster "SOMETIMES THEY DIE EVEN BEFORE GETTING OUT OF THE RUINS"
+        show gaster trapped sorry flip
         gaster "OTHER..."
-        gaster "I HAVE SEEN FRIENDS BEEN KILLED FOR STAND WITH THEIR IDEALS"
+        gaster "I HAVE SEEN FRIENDS BEEN KILLED FOR STAND WITH THEIR IDEALS"  
+        show papyrusImg coolDude explaining
         papyrus "DON'T BE SILLY!"
+        show papyrusImg coolDude delight
         papyrus "FRISK IS MY BEST FRIEND"
         papyrus "THEY WILL NEVER DO SOMETHING LIKE THAT"
+        show gaster trapped sorry
+        gaster "..."
+        show gaster trapped sorry flip
         gaster "I UNDERSTAND"
         gaster "SORRY FOR SUGGEST OTHERWISE"
+        show papyrusImg coolDude thinking
         papyrus "WELL... THEN WHY ARE YOU HERE?"
         papyrus "YOU SAID YOU CANNOT SEE BEYOND THAT TIME SPACE, AND NOT AWAY FROM FRISK'S PERSPECTIVE"
+        show papyrusImg coolDude explaining
         papyrus "THEN WHY WE CAN TALK?"
+        show gaster trapped explain
         gaster "THIS MACHINE, IS THE PROBLEM"
+        show papyrusImg coolDude thinking
         papyrus "THOSE ARE..."
         papyrus "A COMPUTER.."
         papyrus "WITH TANKS"
-        gaster "THE MONSTERS WHICH DEVELOPED THIS HORRIFING CREATURE DECIDED THEY JUST NEEDED TO COLLECT ENOUGH DETERMINATION TO INJECT IN THEIR LEADER"
-        gaster "A BOSS MONSTER THEY CALLED ELWEKUFE"
+        gaster "THE CREATURES WHICH DEVELOPED THIS HORRIFING CREATURE DECIDED THEY JUST NEEDED TO COLLECT ENOUGH DETERMINATION TO INJECT IN THEIR LEADER"
+        show gaster trapped dissapointed flip
+        gaster "A POWERFUL BEING THEY CALLED ELWEKUFE"
+        show gaster trapped explain
         gaster "SADLY FOR THEM, THEIR FIRST TEST RUNS FAILED MISERABLY, AND NOW THEY HAVE DISCOVERED THAT THE OWNERS OF THIS LAND, OUR KINGDOM, ARE IN THEIR TOES"
         gaster "SO, THEY HAVE ABANDONED THIS PLACE AND WILL TRY TO START SOMEWHERE ELSE ANEW"
+        show gaster trapped proud
         gaster "BUT THEIR EXPERIMENT ALSO HAD AN INTERESTING SIDE EFFECT"
+        show gaster trapped explain flip
         gaster "SO MANY DETERMINATION STORED IN JUST ONE PLACE WILL OBVIOUSLY AFFECT THE FABRIC OF REALITY"
         gaster "BUT, LUCKY FOR US, ONLY AFFECTED ONE THING OF IT"
+        show papyrusImg coolDude realizing
         papyrus "YOU"
         papyrus "YOU WANT HELP TO ESCAPE THE FABRIC OF REALITY"
+        show gaster trapped proud flip
         gaster "AS PERSPECTIVE AS USUAL"
+        show papyrusImg coolDude thinking
         papyrus "THEN, WHY DID YOU CALLED ME?"
+        show papyrusImg coolDude explaining
         papyrus "WOULDN'T DR. ALPHYS OR EVEN SANS BEEN MORE QUALIFIED THAN ME TO HELP YOU?"
+        show gaster trapped descisive flip
         gaster "BUT"
         gaster "PAPYRUS, MY DEAR..."
+        show gaster trapped descisive
         gaster "..."
+        show gaster trapped descisive flip
         gaster "I SEE"
         gaster "YOU FORGOT ABOUT ME"
+        show gaster trapped dissapointed flip
         gaster "AND SINCE I TAUGHT YOU EVERYTHING YOU KNEW ABOUT MONSTER SCIENCE, YOU HAVE FORGOT ABOUT THAT AS WELL"
+        show papyrusImg coolDude thinking
         papyrus "I KNEW ABOUT SCIENCE?"
+        show gaster trapped angry flip
         gaster "MY DEAR..."
         gaster "OF COURSE YOU KNEW!"
         gaster "IT WASN'T FOR YOU WE HAD NEVER FIGURE OUT HOW TO REMEMBER ANYTHING A..."
+        show gaster trapped angry
         gaster "..."
+        show gaster trapped explain flip
         gaster "IT DOESN'T MATTER"
+        show gaster trapped neutral flip
         gaster "IN ANY CASE YOU WERE THE ONLY ONE WHO HEARD THE PLEA I JUST SENT TO EVERYBODY"
+        show gaster trapped angry flip
         gaster "MEANING THAT EVEN IF YOU DON'T FEEL QUALIFIED ENOUGH"
+        show papyrusImg coolDude careful
         papyrus "PLEASE DON'T SAY IT"
+        show gaster trapped explain flip
         gaster "YOU ARE THE ONLY ONE WHO CAN HELP ME"
         papyrus "OH NO..."
+        show gaster trapped neutral flip
         gaster "SO, PAPYRUS..."
         gaster "WILL YOU HELP ME ESCAPE THE FABRIC OF REALITY?"
+        papyrus "..."
         
         menu:
             "Of Course!":
                 jump cont1
 label cont1:
+    show papyrusImg coolDude delight
     papyrus "OF COURSE I WILL HELP YOU!"
+    show gaster trapped angry flip
     gaster "WHY IT HAS 1 OPTION?"
+    show papyrusImg coolDude thinking
     papyrus "???"
     gaster "YOU SHOULD... NO... MUST HAVE THE OPTION TO SAY NO"
+    show gaster trapped descisive flip
     gaster "AGAIN!"
     gaster "TWO OPTIONS!"
     menu:
@@ -395,33 +448,52 @@ label cont1:
         "Of Course!":
             jump cont2
 label cont2:
+    show gaster trapped angry flip
     gaster "WHY THE TWO OPTIONS ARE THE SAME???!!!"
+    show papyrusImg coolDude explaining
     papyrus "WHY WILL I NOT HELP YOU?"
     papyrus "EVERYTHING YOU SAID IS SUSPICIOUS, BUT NOBODY DESERVE TO LIVE LIKE THAT FOR THIS LONG"
+    show papyrusImg coolDude delight
     papyrus "AND IF YOU TURN OUT TO BE A BAD GUY, WE WILL STOP YOU"
+    show papyrusImg coolDude neutral
     papyrus "IT'S NOT MY FIRST RODEO ON SOMETHING LIKE THIS"
+    show gaster trapped neutral
     gaster "OF COURSE, I FORGOT ABOUT THE YOUNG PRINCE"
+    show papyrusImg coolDude thinking
     papyrus "!???"
+    show gaster trapped neutral flip
     gaster "VERY WELL..."
     gaster "THERE IN THE COMPUTER ARE LEFT BLUPRINTS AND READINGS"
     $ pen = True
     gaster "I PUT THEM IN A PENDRIVE, RIGHT HERE"
+    show papyrusImg coolDude neutral
     gaster "SINCE I TOUCHED IT, IT SHOULD SURVIVE TIME AND SPACE"
     gaster "WITH THIS INFORMATION, YOU SHOULD BE ABLE TO FORMULATE SOMETHING TO HELP ME"
     papyrus "I'M GOING TO EXPLAIN THIS TO EVERYBODY"
+    show papyrusImg coolDude delight
     papyrus "I HAVE LITTLE PROOF, BUT THE BLUPRINT MUST BE ENOUGH FOR THEM TO BELIEVE ME!"
+    show gaster trapped dissapointed flip
     gaster "MY DEAR PAPYRUS..."
     gaster "IT'S THERE SOMETHING ELSE I MUST TELL YOU"
+    show gaster trapped dissapointed
+    show papyrusImg coolDude scared
     gaster "THE COMPUTER IS GOING TO SELF DESTRUCT TODAY"
     gaster "AND THAT MEANS YOU WOULDN'T BE ABLE TO HELP ME WITHOUT ALL THIS DETERMINATION"
+    show papyrusImg coolDude realizing
     papyrus "HAVE YOU"
+    show gaster trapped explain flip
     gaster "OF COURSE"
     gaster "I WOULDN'T CALLED YOU BEFORE EVEN TRYING"
     papyrus "THEN..."
     papyrus "WHAT DO YOU SUGGEST"
+    show gaster trapped descisive flip
     gaster "RESET"
+    show papyrusImg coolDude scared
     papyrus "??!!!"
+    show gaster trapped dissapointed
     gaster "I'M SORRY PAPYRUS"
     $ resets = resets + 1
+    scene black with dissolve
+    pause(2)
     jump day1
 return

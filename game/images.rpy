@@ -153,11 +153,17 @@ image gaster trapped angry = "gaster/trapped/angry.png"
 image gaster trapped angry flip = im.Flip("gaster/trapped/angry.png", horizontal=True)
 image gaster trapped ehem = "gaster/trapped/ehem.png"
 image gaster trapped ehem flip = im.Flip("gaster/trapped/ehem.png", horizontal=True)
+image gaster trapped descisive = "gaster/trapped/descisive.png"
+image gaster trapped descisive flip = im.Flip("gaster/trapped/descisive.png", horizontal=True)
 image gaster trapped dissapointed = "gaster/trapped/dissapointed.png"
 image gaster trapped dissapointed flip = im.Flip("gaster/trapped/dissapointed.png", horizontal=True)
+image gaster trapped explain = "gaster/trapped/explain.png"
+image gaster trapped explain flip = im.Flip("gaster/trapped/explain.png", horizontal=True)
 image gaster trapped neutral = "gaster/trapped/neutral.png"
 image gaster trapped neutral flip = im.Flip("gaster/trapped/neutral.png", horizontal=True)
 image gaster trapped ok = "gaster/trapped/ok.png"
 image gaster trapped ok flip = im.Flip("gaster/trapped/ok.png", horizontal=True)
 image gaster trapped proud = "gaster/trapped/proud.png"
 image gaster trapped proud flip = im.Flip("gaster/trapped/proud.png", horizontal=True)
+image gaster trapped sorry = "gaster/trapped/sorry.png"
+image gaster trapped sorry flip = im.Flip("gaster/trapped/sorry.png", horizontal=True)
