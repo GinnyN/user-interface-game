@@ -158,6 +158,7 @@ label day4:
         
     if resets == 0:
         stop music fadeout(1)
+    label temp:
         scene black with dissolve
         pause(1)
         scene skelebroHouse outside with dissolve
@@ -204,6 +205,7 @@ label day4:
             ypos 0.0
             linear 20 ypos -0.3
         pause(1.0)
+        stop music fadeout(1)
         show papyrusImg coolDude surprised zorder 1 at fade:
             xpos 0
         papyrus "WOWIE..."
@@ -228,35 +230,47 @@ label day4:
         stop music
         play sound "music/fx/thump.wav"
         gaster "YOU DEFINITELY DO NOT REMEMBER ME..."
+        show gaster trapped dissapointed flip zorder 1 at fade:
+            xpos 0.4
         papyrus "SHOULD I?"
+        show gaster trapped angry flip
         gaster "YES, YES, YOU SHOULD"
         gaster "BEFORE I DISSAPEARED"
         gaster "I INJECTED ENOUGH DETERMINATION IN YOU AND SANS FOR BOTH TO SURVIVE WITH YOUR MEMORIES INTACT"
+        show gaster trapped dissapointed flip
         gaster "IT SEEMS YOUR LEVELS WEREN'T HIGH ENOUGH"
         gaster "WHICH I FOUND HIGHLY SUSPICIOUS"
         show papyrusImg coolDude careful
         papyrus "I DON'T FOLLOW"
         show papyrusImg coolDude thinking
         papyrus "CAN YOU START FROM WAAAAYYY BEFORE THAT"
-        gaster "WELL, SINCE WE HAVE A PROBLEM WITH HACKING, I MUST START FROM THE BEGINNING THEN"
+        show gaster trapped ok flip
+        gaster "WELL, SINCE WE HAVE A PROBLEM WITH MEMORY LOSS, I MUST START FROM THE BEGINNING THEN"
+        show gaster trapped ehem flip
         gaster "EHEM!"
         play music "music/gaster theme.MP3" fadein 1
         scene wekufeLab with dissolve
         show papyrusImg coolDude thinking zorder 1 at fade:
             xpos -0.1
+        show gaster trapped neutral flip zorder 1 at fade:
+            xpos 0.4
         gaster "MY NAME IS W.D. GASTER"
         gaster "AND I WAS THE OLD ROYAL SCIENTIST BEFORE THE CURRENT ONE"
         gaster "BETWEEN MY ACCOMPLISHES ARE THE CORE AND THE DT EXTRACTOR"
         show papyrusImg coolDude surprised happy
         papyrus "THE CORE???!!"
         papyrus "DID YOU BUILD THE CORE?!!"
+        show gaster trapped proud flip
         gaster "I DESIGN IT"
         gaster "THE CONSTRUCTION DUTIES WENT TO DIFFERENT VERY TALENTED PEOPLE, MOST OF THEM FIRE ELEMENTALS"
         show papyrusImg coolDude delight
         papyrus "WOWIE!"
+        show gaster trapped dissapointed flip
         gaster "WHERE WAS I?"
+        show gaster trapped proud flip
         gaster "OF COURSE"
         show papyrusImg coolDude neutral
+        show gaster trapped neutral flip
         gaster "BETWEEN MY DUTIES WAS TRYING TO FIND A WAY TO SHATTER THE BARRIER WHICH KEPT US UNDERGROUND"
         gaster "BUT MY STUDIES FOUND IT WAS IMPOSSIBLE UNLESS A MONSTER ABSORB ENOUGH HUMANS SOULS IN THE PROCESS"
         gaster "THAT WASN'T GOOD ENOUGH FOR THE QUEEN I'M AFRAID"
@@ -273,14 +287,19 @@ label day4:
         papyrus "THEY... "
         papyrus "MELTED AWAY TOO?"
         gaster "NO"
+        show gaster trapped dissapointed flip
         gaster "SORRY, BUT THIS WAS COMMON KNOWLEDGE IN THE OLD MONSTER SCIENTIFIC COMMUNITY"
         gaster "I GUESS WE BEEN SO SECRETIVE ABOUT IT WAS THE REASON FOR THAT TRAGEDY..."
         show papyrusImg coolDude thinking
         papyrus "YOU KNEW ABOUT THE MONSTER BODIES MELTING WHEN THEY HAVE TOO MANY DETERMINATION?"
+        show gaster trapped angry flip
         gaster "THE MONSTER SCIENTIFIC COMMUNITY KNEW THAT FOR CENTURIES"
+        show gaster trapped dissapointed flip
         gaster "BUT WE NEVER WROTE IT DOWN, AS WAS CONSIDERED TABOO, AND WAS REDISCOVERED AGAIN AND AGAIN"
+        show gaster trapped dissapointed
         gaster "I WROTE IT DOWN, ACTUALLY..."
-        gaster "BUT... JUST REMEMBER THAT..."
+        gaster "..."
+        show gaster trapped neutral flip
         gaster "THANKS TO HIM WE WERE ABLE TO DISCOVER THAT, WITH ENOUGH DETERMINATION, WE COULD REMEMBER WHAT WE WERE DOING"
         gaster "EVENTUALLY I WANTED TO MAKE A BREAK THROUGH"
         gaster "TO FIGURE OUT WHICH WAS BEYOND THE PORTAL WE CREATED"
@@ -299,6 +318,7 @@ label day4:
         show papyrusImg coolDude realizing
         papyrus "FRISK?"
         papyrus "YOU MEAN FRISK?!"
+        show gaster trapped dissapointed flip
         gaster "THAT WAS THEIR NAME?"
         gaster "HOW ODD"
         gaster "IT REMIND ME A BIT OF THE FALLEN PRINCE"

@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-The label temp is defined twice, at
-  File "lib/windows-i686/day3.rpyc", line 65 and
-  File "lib/windows-i686/day3.rpyc", line 560.
+File "game/day4.rpy", line 159: if statement expects a non-empty block.
+    if resets == 0:
+                   ^
 
-Ren'Py Version: Ren'Py 6.99.12.2.2029
+Ren'Py Version: Ren'Py 7.2.2.491
+Mon May 20 16:39:05 2019
