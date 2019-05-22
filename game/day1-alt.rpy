@@ -5,6 +5,8 @@ label titleScreen:
     show papyrusImg surprised
     papyrus "WHAATT???"
     play sound "music/fx/lawAndOrder.wav"
+    scene day1Alt title
+    pause(0.5)
     return
 #    papyrus "WHAT IS THIS?"
 #    gaster "I CAN JUMP YOU OVER THE END OF THE DAY IN WHICH I WILL EXPLAIN WHAT JUST HAPPENED"

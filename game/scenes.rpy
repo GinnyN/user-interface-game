@@ -11,6 +11,7 @@ image day1 scene3 = "background/day1/scene3.png"
 image day1 scene4 = "background/day1/scene4.png"
 image day1 scene5 = "background/day1/scene5.png"
 image day1 scene6 = "background/day1/scene6.png"
+image day1Alt title = "../gui/main_menu.png"
 #Day 2
 image day2 papyrusJump frame1 = "background/day2/papyrusjump-frame1.png"
 image day2 papyrusJump frame2 = "background/day2/papyrusjump-frame2.png"
