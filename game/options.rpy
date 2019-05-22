@@ -30,6 +30,9 @@ init -1 python hide:
     config.name = "UserInterface"
     config.version = "0.0"
 
+    
+    config.window_icon = "gui/icon.ico"
+
     #########################################
     # Themes
 
@@ -71,12 +74,12 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#000000",
+        mm_root = "gui/main_menu.png",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        gm_root = "#888888",
+        gm_root = "#000000",
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.

@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/day4.rpy", line 159: if statement expects a non-empty block.
-    if resets == 0:
-                   ^
+File "game/options.rpy", line 34: invalid syntax
+    define config.window_icon = "gui/window_icon.png"
+                 ^
+    
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Mon May 20 16:39:05 2019
+Tue May 21 21:19:46 2019

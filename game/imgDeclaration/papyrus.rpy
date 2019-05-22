@@ -28,8 +28,8 @@ image papyrusImg explainingPointing flip = im.Flip("papyrus/explainingPointing.p
 image papyrusImg me = "papyrus/me.png"
 image papyrusImg me flip = im.Flip("papyrus/me.png", horizontal=True)
 
-image papyrusImg nervious = "papyrus/nervious.png"
-image papyrusImg nervious flip = im.Flip("papyrus/nervious.png", horizontal=True)
+image papyrusImg nervious = "papyrus/sorry.png"
+image papyrusImg nervious flip = im.Flip("papyrus/sorry.png", horizontal=True)
 image papyrusImg neutral = "papyrus/neutral.png"
 image papyrusImg neutral flip = im.Flip("papyrus/neutral.png", horizontal=True)
 

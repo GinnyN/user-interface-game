@@ -158,7 +158,6 @@ label day4:
         
     if resets == 0:
         stop music fadeout(1)
-    label temp:
         scene black with dissolve
         pause(1)
         scene skelebroHouse outside with dissolve

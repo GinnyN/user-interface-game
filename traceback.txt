@@ -1,65 +1,71 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/scenes.rpy:79
-  File "game/day4.rpy", line 181, in script
-    "???" "{font=fonts/NewAster.ttf} {cps=*0.2} MY... BO... CO... HE... CLO...{/cps}{/font}"
-  File "renpy/common/00library.rpy", line 295, in say
-    who(what, interact=interact, *args, **kwargs)
-NameError: name 'hbox' is not defined
+While running game code:
+  File "renpy/common/00start.rpy", line 198, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 442, in script
+    $ __gl_test()
+  File "renpy/common/00start.rpy", line 198, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 442, in script
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 442, in <module>
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 359, in _m1_00gltest__gl_test
+    _gl_performance_test()
+  File "renpy/common/00gltest.rpy", line 384, in _gl_performance_test
+    ui.interact(suppress_underlay=True, suppress_overlay=True)
+Exception: Could not load image u'gui/icon.ico': error('Unsupported ICO bitmap format',)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day4.rpy", line 181, in script
-    "???" "{font=fonts/NewAster.ttf} {cps=*0.2} MY... BO... CO... HE... CLO...{/cps}{/font}"
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 694, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1320, in say
-    renpy.store.say(who, what, *args, **kwargs)
-  File "renpy/common/00library.rpy", line 295, in say
-    who(what, interact=interact, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 1127, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 842, in do_display
-    **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 591, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\bootstrap.py", line 313, in bootstrap
+    renpy.main.main()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\main.py", line 525, in main
+    run(restart)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\main.py", line 139, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\execution.py", line 892, in run_context
+    context.run()
+  File "renpy/common/00start.rpy", line 198, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 442, in script
+    $ __gl_test()
+  File "renpy/common/00start.rpy", line 198, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 442, in script
+    $ __gl_test()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 900, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00gltest.rpy", line 442, in <module>
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 359, in _m1_00gltest__gl_test
+    _gl_performance_test()
+  File "renpy/common/00gltest.rpy", line 384, in _gl_performance_test
+    ui.interact(suppress_underlay=True, suppress_overlay=True)
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ui.py", line 289, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2690, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3074, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 534, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 534, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 534, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 534, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 534, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 534, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 534, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 524, in visit_all
-    for d in self.visit():
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 577, in visit
-    block = self.compile()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 484, in compile
-    block = self.atl.compile(self.context)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 679, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 892, in compile
-    child = ctx.eval(expr)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 246, in eval
-    return eval(expr, renpy.store.__dict__, self.context)  # @UndefinedVariable
-  File "<string>", line 1, in <module>
-NameError: name 'hbox' is not defined
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2653, in interact
+    self.start()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 1800, in start
+    self.set_mode()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2038, in set_mode
+    if draw.set_mode(virtual_size, physical_size, fullscreen):
+  File "gldraw.pyx", line 207, in renpy.gl.gldraw.GLDraw.set_mode
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 1833, in post_init
+    self.set_icon()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 1865, in set_icon
+    icon,
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\scale.py", line 64, in image_load_unscaled
+    rv = pgrender.load_image_unscaled(f, hint)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\pgrender.py", line 162, in load_image
+    raise Exception("Could not load image {!r}: {!r}".format(filename, e))
+Exception: Could not load image u'gui/icon.ico': error('Unsupported ICO bitmap format',)
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 UserInterface 0.0
-Sat May 18 15:22:35 2019
+Tue May 21 21:43:55 2019

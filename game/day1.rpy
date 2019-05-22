@@ -2,7 +2,7 @@ label day1:
     call resetVariables
     scene day1 scene1 with dissolve:
         yalign 0.1
-        linear 5 yalign 0.7
+        linear 10 yalign 0.7
 
     play music "music/83 Here We Are.mp3" fadein 1
     pause(1.0)
@@ -24,9 +24,10 @@ label day1:
     undyne "SAY THAT TO TORIEL!"
     show papyrusImg nervious
     undyne "This is basically her fault!"
-    sans "this is nobody's fault. we should instead focusing in our mission."
+    sans "this is nobody's fault"
+    sans "we should instead think in our problem."
     show sansImg flustered
-    show undyneImg troll flip
+    show undyneImg laugh flip
     undyne "And since when you speak your mind this way?"
     show papyrusImg explaining
     papyrus "YOU WERE BAD MOUTHING HIS GIRLFRIEND"
@@ -45,7 +46,7 @@ label day1:
     menu:
         "Jump to the Building" if resets != 1:
             jump jumpBuilding
-        "Ahh??!!" if resets > 0:
+        "Ahh??!!" if resets == 1:
             jump titleScreen
         #"Ask Sans about creating a Shortcut" if doors:
         #    jump shortcut
