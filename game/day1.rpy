@@ -7,19 +7,18 @@ label day1:
     play music "music/83 Here We Are.mp3" fadein 1
     pause(1.0)
     show papyrusImg serious zorder 0 at fade:
-        xalign 0.1 yalign 1.1
+        xalign 0.0 ypos 0.0
     papyrus "ARE YOU SURE THIS IS THE PLACE SANS?"
     show sansImg serious zorder 2 at fade:
-        xalign 0.3 yalign 1.1 # moveinleft:
+        xalign 0.3 ypos 0.0
     sans "yes, this must be."
     show undyneImg angry zorder 1 at fade:
-        xalign 0.5 yalign 1.1 #, hideRight(0.5,1.1) # moveinleft:
+        xpos 0.4 ypos -0.2
     undyne "humans! How they dare!"
     undyne "We offered our hospitality and this is how they paid us?!"
     show papyrusImg explaining
     papyrus "REMEMBER UNDYNE THAT NOT ALL THE HUMANS..."
-    show undyneImg angry flip at fade:
-        xalign 0.8 yalign 1.1
+    show undyneImg angry flip
     show papyrusImg scared
     undyne "SAY THAT TO TORIEL!"
     show papyrusImg nervious
@@ -32,7 +31,7 @@ label day1:
     show papyrusImg explaining
     papyrus "YOU WERE BAD MOUTHING HIS GIRLFRIEND"
     show papyrusImg scared
-    show sansImg flustered screaming
+    show sansImg screaming
     sans "SHE'S NOT MY GIRLFRIEND"
     show sansImg serious
     show papyrusImg nervious
@@ -52,12 +51,12 @@ label day1:
         #    jump shortcut
 
 label jumpBuilding:
-    show papyrusImg decisive at fade:
+    show papyrusImg angry at fade:
         xalign 0.4
     undyne "We're going in!"
+    hide undyneImg
     papyrus "WAIT FOR US FRISK!"
     hide papyrusImg
-    hide undyneImg
     sans "you go that way"
     sans "i'll use a shortcut"
     hide sansImg
@@ -74,12 +73,12 @@ label insideBuilding:
         xalign 0.05 yalign 1.1
     papyrus "FRISK!?"
     show undyneImg explaining zorder 1 at fade:
-        xalign 0.3 yalign 1.1
+        xpos 0.3
     show papyrusImg scared
     undyne "shhh..."
     show papyrusImg nervious
     show undyneImg explaining flip zorder 1 at fade:
-        xalign 0.3 yalign 1.1
+        xalign 0.3
     undyne "shut up Papyrus"
     undyne "They can hear us"
     undyne "And this are humans what we're talking about"
@@ -100,7 +99,7 @@ label bossOffice:
         yalign 1.0 xalign 0
     "Random Goon" "* BOSS! BOSS!"
     show goon2 flip zorder 3 at fade:
-        yalign 1.0 xalign 0.8
+        yalign 1.0 xalign 0.9
     "Boss" "* What is happening?"
     "Random Goon" "* Monsters! They are attacking us!"
     "Boss" "* What?!"
@@ -108,19 +107,19 @@ label bossOffice:
         yalign 1.0 xalign 1.0
     "Random Goon 2" "* I heard they use magic to attack directly to our souls!"
     "Random Goon" "* What are we going to do?"
-    show sansImg cocky zorder 3 at fade:
-        yalign 1.0 xalign 0.2
+    show sansImg cocky zorder 5 at fade:
+        yalign 1.0 xalign 0.0
     sans "return the kid of course."
     show goon1 flip zorder 0 at fade:
-        yalign 1.0 xalign 0.7
+        yalign 1.0 xalign 1.3
     "Boss" "* Who are you?"
     sans "a monster."
     sans "and that kid you just kidnapped is my friend."
     sans "and also those other guys friend."
     sans "you better return them or else..."
-    show sansImg cocky eyes zorder 3 at fade
+    show sansImg cockyEyes
     sans "{font=fonts/DTM-Sans.otf}You are going to have a bad time{/font}"
-    show sansImg cocky zorder 3 at fade
+    show sansImg cocky
     "Boss" "And what you can do that can hurt us?!"
     stop music fadeout 0.5
     pause(0.5)
@@ -129,10 +128,10 @@ label bossOffice:
     play sound "music/fx/explosion.wav"
     pause(0.5)
     play music "music/46 Spear of Justice.mp3" fadein 1
-    show undyneImg angry zorder 1 at fade:
-        xalign 0.3 yalign 1.0
-    show papyrusImg decisive zorder 0 at fade:
-        yalign 1.0 xalign 0.0
+    show undyneImg angry zorder 4 at fade:
+        xpos 0.3
+    show papyrusImg angry zorder 0 at fade:
+        yalign 1.0 xalign -0.2
     undyne "I'll throw a flurry of spears which will cut your soul in 1000 pieces!"
     undyne "And then I'll make sphagetti sauce with it!"
     papyrus "YOU BETTER TELL US WHERE'S FRISK!"
@@ -141,7 +140,7 @@ label bossOffice:
     undyne "TO MAKE A DELICIOUS SPHAGETTI SAUCE WITH YOUR REMAINS!"
     show papyrusImg uhh
     papyrus "..."
-    show papyrusImg decisive
+    show papyrusImg angry
     papyrus "AND I'LL HELP!"
     show goon3 flip zorder 2 at fade:
         yalign 1.0 xalign 1.1
@@ -154,7 +153,7 @@ label bossOffice:
     pause(0.5)
     show goon2 flip zorder 3 at fade:
         yalign 1.0 xalign 0.8
-    show sansImg serious looking up at fade
+    show sansImg surprised at fade
     show papyrusImg surprised up at fade
     show undyneImg looking up at fade
     "Boss" "* Too late monsters"
@@ -167,23 +166,7 @@ label bossOffice:
     show undyneImg angry at fade
     undyne "Leave it to me!"
     hide undyneImg
-
-    $ time = resets + papyrusTraining
-    $ timer_range = resets + papyrusTraining
-    $ timer_jump = 'papyrusAngry'
-
-    if time > 1:
-        show screen countdown
-
-        menu:
-            "Calm Down":
-                hide screen countdown
-                jump papyrusCalmedDown
-
-    else:
-        jump papyrusAngry
-
-label papyrusAngry:
+    pause(0.5)
     papyrus "DO YOU SELL YOUR OWN SPECIES!?!"
     show sansImg surprised zorder 3 at fade
     sans "papyrus?"
@@ -225,10 +208,10 @@ label papyrusAngry:
         xalign 0.6 yalign 1.0
     show undyneImg frisk confused flip zorder 2 at fade:
         xalign 0.9 yalign 1.0
-    sans "run."
+    sans "he told me to run"
     undyne "What are you doing Papyrus?"
     frisk "!!!"
-    sans "{font=fonts/DTM-Sans.otf}I don't think he knows...{/font}"
+    dtSans "I don't think he knows.."
     hide sansImg
     hide undyneImg
     scene day1 scene6 with dissolve
@@ -265,7 +248,7 @@ label papyrusAngry:
     alphys "It's illegal right now, but that doesn't stop some humans to try out"
     alphys "It's pretty sad indeed"
     show friskImg worried zorder 5 at fade:
-        xalign 0.2 yalign 1.0
+        xalign -0.2 yalign 1.0
     toriel "My poor child, I'm sorry you had to go thru this mess"
     show undyneImg bored flip zorder 1 at fade:
         xalign 0.8 yalign 1.0
@@ -335,7 +318,7 @@ label papyrusAngry:
     play music "music/12 Home.mp3" fadein 1 fadeout 1
     pause(1.0)
     show papyrusImg worried flip zorder 5 at fade:
-        yalign 1.0 xalign 0.8
+        yalign 1.0 xalign 1.0
     papyrus "MISS TORIEL"
     show torielImg pajamas embarrased at fade
     toriel "You don't have to call me that"
@@ -409,7 +392,7 @@ label thanks:
     show papyrusImg nervious flip at fade
     papyrus "YES, YES..."
     show papyrusImg happy flip at fade
-    papyrus "AND HE'S NOT GOING THAT MUCH TO GRILLBY'S TO DRINK"
+    papyrus "AND HE'S NOT GOING THAT MUCH TO GRILLBY'S TO SLACK OFF"
     papyrus "NOW I'M HAVE TO GO AND PICK HIM UP TWO TIMES A WEEK INSTEAD OF EVERYDAY"
     show papyrusImg solemn flip at fade
     papyrus "IT'S ALL THANKS TO YOU"
@@ -428,34 +411,34 @@ label thanks:
     papyrus "THANKS FOR BEEN THAT OTHER FRIEND"
     show torielImg pajamas happy at fade
     toriel "It's a pleasure"
-    if resets < 3 and resets > 1:
-        show torielImg worried at fade
-        toriel "..."
-        show papyrusImg worried flip at fade
-        papyrus "..."
-    elif resets < 5 and resets > 3:
-        show torielImg worried at fade
-        toriel "..."
-        toriel "I don't know why..."
-        toriel "But you and Sans remind me of someone"
-        show papyrusImg surprised happy flip at fade
-        papyrus "IS IT HIS NAME W.D. GASTER?"
-        toriel "I'm not sure"
-        toriel "..."
-    elif resets > 5:
-        toriel "Also..."
-        toriel "I want to ask"
-        toriel "Are you and Sans related to a scientist named"
-        papyrus "W.D. GASTER?"
-        toriel "Yes, him"
-        toriel "I suddenly remember him"
-        toriel "He had the same kind of accent as you and Sans"
-        papyrus "HE WAS SANS' FRIEND"
-        papyrus "I NEVER MET HIM MYSELF"
-        toriel "Oh.."
-        toriel "Thanks Papyrus"
-        toriel "..."
-        $ torielknows = True
+    #if resets < 3 and resets > 1:
+    #    show torielImg worried at fade
+    #    toriel "..."
+    #    show papyrusImg worried flip at fade
+    #    papyrus "..."
+    #elif resets < 5 and resets > 3:
+    #    show torielImg worried at fade
+    #    toriel "..."
+    #    toriel "I don't know why..."
+    #    toriel "But you and Sans remind me of someone"
+    #    show papyrusImg surprised happy flip at fade
+    #    papyrus "IS IT HIS NAME W.D. GASTER?"
+    #    toriel "I'm not sure"
+    #    toriel "..."
+    #elif resets > 5:
+    #    toriel "Also..."
+    #    toriel "I want to ask"
+    #    toriel "Are you and Sans related to a scientist named"
+    #    papyrus "W.D. GASTER?"
+    #    toriel "Yes, him"
+    #    toriel "I suddenly remember him"
+    #    toriel "He had the same kind of accent as you and Sans"
+    #    papyrus "HE WAS SANS' FRIEND"
+    #    papyrus "I NEVER MET HIM MYSELF"
+    #    toriel "Oh.."
+    #    toriel "Thanks Papyrus"
+    #    toriel "..."
+    #    $ torielknows = True
     jump torielsAdvice
 
 label beQuiet:
@@ -529,9 +512,9 @@ label endOfDay1:
             papyrus "WE'LL FIND A WAY! I'M SURE OF IT!"
             gaster "I NEEDED TO HEAR THAT..."
         
-    call questionsEnd   
-    gaster "JUST REMEMBER WE CAN TALK AGAIN AFTER THE END OF A DAY IF YOU HAVE ANY QUESTIONS"
-    papyrus "I'LL REMEMBER THAT"
+        call questionsEnd   
+        gaster "JUST REMEMBER WE CAN TALK AGAIN AFTER THE END OF A DAY IF YOU HAVE ANY QUESTIONS"
+        papyrus "I'LL REMEMBER THAT"
 
 jump day2
 

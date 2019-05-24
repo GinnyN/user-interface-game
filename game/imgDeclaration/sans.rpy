@@ -1,60 +1,63 @@
 #Sans
-image sansImg position = im.Alpha(im.FactorScale("undyne/gym/mildsurprise.png", 0), 1)
+image sansImg position = im.Alpha("undyne/gym/mildsurprise.png", 0)
 #Puffy Jacket
-image sansImg angry = im.FactorScale("sans/angry.png",0.8)
-image sansImg angry flip = im.Flip(im.FactorScale("sans/angry.png",0.8), horizontal=True)
+image sansImg angry = "sans/angry.png"
+image sansImg angry flip = im.Flip("sans/angry.png", horizontal=True)
 image sansImg flustered = "sans/flustered.png"
-image sansImg flustered screaming = "sans/flusteredScreaming.png"
-image sansImg serious = im.FactorScale("sans/serious.png",0.8)
-image sansImg serious flip = im.Flip(im.FactorScale("sans/serious.png",0.8), horizontal=True)
+image sansImg flustered flip = im.Flip("sans/flustered.png", horizontal=True)
+image sansImg serious = "sans/serious.png"
+image sansImg serious flip = im.Flip("sans/serious.png", horizontal=True)
 image sansImg cocky = "sans/cocky.png"
-image sansImg cocky eyes = "sans/cockyEyes.png"
-image sansImg happy = im.FactorScale("sans/happy.png",0.8)
-image sansImg happy flip = im.Flip(im.FactorScale("sans/happy.png",0.8), horizontal=True)
-image sansImg laughing = im.FactorScale("sans/laughing.png",0.8)
-image sansImg laughing flip = im.Flip(im.FactorScale("sans/laughing.png",0.8), horizontal=True)
-image sansImg surprised = im.FactorScale("sans/surprised.png",0.8)
-image sansImg surprised flip = im.Flip(im.FactorScale("sans/surprised.png",0.8), horizontal=True)
-image sansImg unsure = im.FactorScale("sans/unsure.png",0.8)
-image sansImg unsure flip = im.Flip(im.FactorScale("sans/unsure.png",0.8), horizontal=True)
-image sansImg serious looking up = "sans/seriousLookingUp.png"
+image sansImg cocky flip = im.Flip("sans/cocky.png", horizontal=True)
+image sansImg cockyEyes = "sans/cockyEyes.png"
+image sansImg cockyEyes flip = im.Flip("sans/cockyEyes.png", horizontal=True)
+image sansImg happy = "sans/happy.png"
+image sansImg happy flip = im.Flip("sans/happy.png", horizontal=True)
+image sansImg laughing = "sans/laughing.png"
+image sansImg laughing flip = im.Flip("sans/laughing.png", horizontal=True)
+image sansImg screaming = "sans/screaming.png"
+image sansImg screaming flip = im.Flip("sans/screaming.png", horizontal=True)
+image sansImg surprised = "sans/surprised.png"
+image sansImg surprised flip = im.Flip("sans/surprised.png", horizontal=True)
+image sansImg unsure = "sans/unsure.png"
+image sansImg unsure flip = im.Flip("sans/unsure.png", horizontal=True)
 #Hoddie
 image sansImg hoddie worried = "sans/hoddie/worried.png"
 image sansImg hoddie worried flip = im.Flip("sans/hoddie/worried.png", horizontal=True)
-image sansImg hoddie content = im.FactorScale("sans/hoddie/content.png",0.8)
-image sansImg hoddie content flip = im.Flip(im.FactorScale("sans/hoddie/content.png",0.8), horizontal=True)
-image sansImg hoddie surprised = im.FactorScale("sans/hoddie/surprised.png",0.8)
-image sansImg hoddie surprised flip = im.Flip(im.FactorScale("sans/hoddie/surprised.png",0.8), horizontal=True)
-image sansImg hoddie angry = im.FactorScale("sans/hoddie/angry.png",0.8)
-image sansImg hoddie angry flip = im.Flip(im.FactorScale("sans/hoddie/angry.png",0.8), horizontal=True)
-image sansImg hoddie unsure = im.FactorScale("sans/hoddie/unsure.png",0.8)
-image sansImg hoddie unsure flip = im.Flip(im.FactorScale("sans/hoddie/unsure.png",0.8), horizontal=True)
-image sansImg hoddie annoyed = im.FactorScale("sans/hoddie/annoyed.png",0.8)
-image sansImg hoddie annoyed flip = im.Flip(im.FactorScale("sans/hoddie/annoyed.png",0.8), horizontal=True)
-image sansImg hoddie neutral = im.FactorScale("sans/hoddie/neutral.png",0.8)
-image sansImg hoddie neutral flip = im.Flip(im.FactorScale("sans/hoddie/neutral.png",0.8), horizontal=True)
-image sansImg hoddie sideglance = im.FactorScale("sans/hoddie/sideglance.png", 0.8)
-image sansImg hoddie sideglance flip = im.Flip(im.FactorScale("sans/hoddie/sideglance.png", 0.8), horizontal=True)
-image sansImg hoddie done = im.FactorScale("sans/hoddie/done.png", 0.8)
-image sansImg hoddie done flip = im.Flip(im.FactorScale("sans/hoddie/done.png", 0.8), horizontal=True)
+image sansImg hoddie content = "sans/hoddie/content.png"
+image sansImg hoddie content flip = im.Flip("sans/hoddie/content.png", horizontal=True)
+image sansImg hoddie surprised = "sans/hoddie/surprised.png"
+image sansImg hoddie surprised flip = im.Flip("sans/hoddie/surprised.png", horizontal=True)
+image sansImg hoddie angry = "sans/hoddie/angry.png"
+image sansImg hoddie angry flip = im.Flip("sans/hoddie/angry.png", horizontal=True)
+image sansImg hoddie unsure = "sans/hoddie/unsure.png"
+image sansImg hoddie unsure flip = im.Flip("sans/hoddie/unsure.png", horizontal=True)
+image sansImg hoddie annoyed = "sans/hoddie/annoyed.png"
+image sansImg hoddie annoyed flip = im.Flip("sans/hoddie/annoyed.png", horizontal=True)
+image sansImg hoddie neutral = "sans/hoddie/neutral.png"
+image sansImg hoddie neutral flip = im.Flip("sans/hoddie/neutral.png", horizontal=True)
+image sansImg hoddie sideglance = "sans/hoddie/sideglance.png"
+image sansImg hoddie sideglance flip = im.Flip("sans/hoddie/sideglance.png", horizontal=True)
+image sansImg hoddie done = "sans/hoddie/done.png"
+image sansImg hoddie done flip = im.Flip("sans/hoddie/done.png", horizontal=True)
 #Blue Suit
-image sansImg suit blue stiff = im.FactorScale("sans/blueSuit/stiff.png", 0.8)
-image sansImg suit blue bored = im.FactorScale("sans/blueSuit/bored.png", 0.8)
-image sansImg suit blue sarcastic = im.FactorScale("sans/blueSuit/sarcastic.png", 0.8)
-image sansImg suit blue annoyed = im.FactorScale("sans/blueSuit/annoyed.png", 0.8)
-image sansImg suit blue surprised = im.FactorScale("sans/blueSuit/surprised.png", 0.8)
-image sansImg suit blue worried = im.FactorScale("sans/blueSuit/worried.png", 0.8)
+image sansImg suit blue stiff = "sans/blueSuit/stiff.png"
+image sansImg suit blue bored = "sans/blueSuit/bored.png"
+image sansImg suit blue sarcastic = "sans/blueSuit/sarcastic.png"
+image sansImg suit blue annoyed = "sans/blueSuit/annoyed.png"
+image sansImg suit blue surprised = "sans/blueSuit/surprised.png"
+image sansImg suit blue worried = "sans/blueSuit/worried.png"
 #Red Suit
-image sansImg suit red stiff = im.FactorScale("sans/redSuit/stiff.png", 0.8)
-image sansImg suit red bored = im.FactorScale("sans/redSuit/bored.png", 0.8)
-image sansImg suit red sarcastic = im.FactorScale("sans/redSuit/sarcastic.png", 0.8)
-image sansImg suit red annoyed = im.FactorScale("sans/redSuit/annoyed.png", 0.8)
-image sansImg suit red surprised = im.FactorScale("sans/redSuit/surprised.png", 0.8)
-image sansImg suit red worried = im.FactorScale("sans/redSuit/worried.png", 0.8)
+image sansImg suit red stiff = "sans/redSuit/stiff.png"
+image sansImg suit red bored = "sans/redSuit/bored.png"
+image sansImg suit red sarcastic = "sans/redSuit/sarcastic.png"
+image sansImg suit red annoyed = "sans/redSuit/annoyed.png"
+image sansImg suit red surprised = "sans/redSuit/surprised.png"
+image sansImg suit red worried = "sans/redSuit/worried.png"
 #Green Suit
-image sansImg suit green stiff = im.FactorScale("sans/greenSuit/stiff.png", 0.8)
-image sansImg suit green bored = im.FactorScale("sans/greenSuit/bored.png", 0.8)
-image sansImg suit green sarcastic = im.FactorScale("sans/greenSuit/sarcastic.png", 0.8)
-image sansImg suit green annoyed = im.FactorScale("sans/greenSuit/annoyed.png", 0.8)
-image sansImg suit green surprised = im.FactorScale("sans/greenSuit/surprised.png", 0.8)
-image sansImg suit green worried = im.FactorScale("sans/greenSuit/worried.png", 0.8)
+image sansImg suit green stiff = "sans/greenSuit/stiff.png"
+image sansImg suit green bored = "sans/greenSuit/bored.png"
+image sansImg suit green sarcastic = "sans/greenSuit/sarcastic.png"
+image sansImg suit green annoyed = "sans/greenSuit/annoyed.png"
+image sansImg suit green surprised = "sans/greenSuit/surprised.png"
+image sansImg suit green worried = "sans/greenSuit/worried.png"

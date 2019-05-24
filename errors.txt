@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 34: invalid syntax
-    define config.window_icon = "gui/window_icon.png"
-                 ^
-    
+File "game/imgDeclaration/sans.rpy", line 2: unexpected EOF while parsing
+    im.Alpha("undyne/gym/mildsurprise.png", 0), 1)
+                                                  ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Tue May 21 21:19:46 2019
+Thu May 23 20:39:50 2019

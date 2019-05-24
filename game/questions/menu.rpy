@@ -17,6 +17,8 @@ label questionsMenu:
             call monstersForest
         "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
             call programmingTheory
+        "Maybe I can do something with this programming thing" if programmingWoes2 > 0:
+            call programmingMagicTheory
         "Political Geography": 
             call politicalGeography
         "Political Geography 2" if politicalGeography > 0:

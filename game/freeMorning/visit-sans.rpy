@@ -70,7 +70,7 @@ label checkSans:
         papyrus "BUT HE SHOULD BE HERE!"
         show sansImg hoddie neutral flip at fade:
             xpos 0.5
-            ypos 0.205
+            ypos -0.05
         sans "sup' bro?"
         show papyrusImg coolDude angry
         papyrus "SANS!"
@@ -99,6 +99,7 @@ label checkSans:
         papyrus "I DO THAT AS WELL"
         show sansImg hoddie surprised flip
         sans "you? slacking off?"
+        scene black with dissolve
         papyrus "IT'S JUST"
         scene freeMorning sans resetZero panoramica with dissolve:
             ypos -0.35
@@ -117,7 +118,7 @@ label checkSans:
         papyrus "MAYBE YOU SHOULD USE YOUR ACTUAL FREE TIME TO DO THAT THOUGH"
         show sansImg hoddie content flip  at fade:
             xpos 0.5
-            ypos 0.205
+            ypos -0.05
         sans "don't worry"
         sans "i have that machine over there i did"
         show sansImg hoddie neutral flip

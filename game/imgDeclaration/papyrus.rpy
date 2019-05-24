@@ -12,7 +12,6 @@ image papyrusImg confused flip = im.Flip("papyrus/confused.png", horizontal=True
 image papyrusImg curious = "papyrus/curious.png"
 image papyrusImg curious flip = im.Flip("papyrus/curious.png", horizontal=True)
 
-image papyrusImg decisive = "papyrus/decisive.png"
 image papyrusImg delight = "papyrus/delight.png"
 image papyrusImg delight flip = im.Flip("papyrus/delight.png", horizontal=True)
 image papyrusImg dissapointed = "papyrus/dissapointed.png"

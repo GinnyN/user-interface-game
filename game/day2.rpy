@@ -86,7 +86,7 @@ label schoolPapyrusRun:
     pause(1.0)
     scene grillsbys inside with dissolve
     show grillsby neutral zorder 1 at fade:
-        xalign 0.1 yalign 1.1 
+        xalign 0.1 ypos 0.0 
     grillsby "..."
     show papyrusImg coolDude sorry flip zorder 0 at fade:
         xalign 1.0 yalign 1.2
@@ -109,7 +109,7 @@ label schoolPapyrusRun:
     hide grillsby
     hide papyrusImg
     show grillsby neutral flip zorder 3 at fade:
-        xpos 0.1 ypos 0.2
+        xpos 0.1
     show dogamy neutral flip zorder 2 at fade:
         xpos 0.3 ypos 0.25
     show dogaressa neutral flip zorder 1 at fade:
@@ -136,13 +136,13 @@ label schoolPapyrusRun:
     play sound "music/fx/thump.wav"
     pause(1)
     show sansImg hoddie content flip at fade:
-        xpos 0.6 ypos 0.205
+        xpos 0.6 ypos 0.05
     sans "time to..."
     show sansImg hoddie surprised flip at fade
     sans "papyrus?!"
     hide sansImg
     show grillsby neutral flip zorder 3 at fade:
-        xpos 0.1 ypos 0.2
+        xpos 0.1
     show dogamy surprised  flip zorder 2 at fade:
         xpos 0.3 ypos 0.25
     show dogaressa worried flip zorder 1 at fade:
@@ -162,13 +162,13 @@ label school:
         linear 5 xpos -0.1
     pause(0.8)
     show undyneImg gym happy at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0
     undyne "Today was a long one, those kids!"
     show undyneImg gym mildSurprise
     show sansImg hoddie angry flip at fade:
         xpos 0.6
-        ypos 0.205
+        ypos 0.05
     sans "i should say the same"
     show undyneImg gym yelling
     undyne "SANS?!"
@@ -229,10 +229,10 @@ label outsideSchool:
         xpos -0.1
     show sansImg hoddie surprised zorder 3 at fade:
         xpos 0.3
-        ypos 0.205
+        ypos 0.05
     show undyneImg gym yelling zorder 4 at fade:
         xpos 0.5
-        ypos 0.1
+        ypos -0.2
     toriel "Papyrus! Come down inmediatly!"
     undyne "I'll catch him up..."
     show sansImg hoddie angry
@@ -253,7 +253,7 @@ label outsideSchool:
         xpos 0.5
     show sansImg hoddie angry at fade:
         xpos 0
-        ypos 0.205
+        ypos -0.05
     papyrus "SANS?"
     papyrus "IT'S THERE A SHORTCUT TO HERE?!"
     sans "what are you doing papyrus?"
@@ -263,7 +263,7 @@ label loop1:
         xpos 0.5
     show sansImg hoddie angry at fade:
         xpos 0
-        ypos 0.205
+        ypos -0.05
     menu:
         "This is for keep my greatness!":
             jump honor
@@ -330,7 +330,7 @@ label planning:
         xpos 0.6
     show sansImg hoddie neutral flip zorder 3 at fade:
         xpos 0.55
-        ypos 0.205
+        ypos -0.05
     toriel "It doesn't sound half bad"
     show papyrusImg proud flip at fade
     papyrus "OF COURSE IT'S NOT BAD, IT'S MY IDEA"
@@ -362,8 +362,8 @@ label planning:
     toriel "I sadly agree"
     hide asgoreImg at fade
     show undyneImg laugh zorder 1 at fade:
-        xpos 0.2
-        ypos 0.1
+        xpos 0.0
+        ypos -0.2
     undyne "Hey, and why don't you go with Sans"
     show sansImg hoddie surprised flip at fade
     show torielImg teacher unsure at fade
@@ -420,7 +420,7 @@ label planning:
     hide papyrusImg at fade
     show undyneImg angry flip zorder 2 at fade:
         xpos 0.5
-        ypos 0.1
+        ypos -0.2
     undyne "That's a good question"
     undyne "I'll not sat here waiting for you to tell me to crush those bastards"
     show sansImg hoddie angry at fade
@@ -459,7 +459,7 @@ label mettatonsfashion:
     play music "music/49 It's Showtime!.mp3" fadein 1 fadeout 1
     show sansImg hoddie done zorder 3 at fade:
         xpos 0
-        ypos 0.205
+        ypos -0.05
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
@@ -528,7 +528,7 @@ label bonestrousleSuit:
     call mettatonPresentingFlip
     show sansImg position zorder 3 at fade:
         xpos 0
-        ypos 0.205
+        ypos -0.05
     call sansSuitStiff
     sans ".."
     sans "i cannot move my shoulders"
@@ -551,7 +551,7 @@ label megalovaniaSuit:
     call mettatonPresentingFlip
     show sansImg position zorder 3 at fade:
         xpos 0
-        ypos 0.205
+        ypos -0.05
     call sansSuitStiff
     sans ".."
     sans "i don't have a body and anyway i can barely move"
@@ -573,7 +573,7 @@ label spearsSuit:
     call mettatonPresentingFlip
     show sansImg position zorder 3 at fade:
         xpos 0
-        ypos 0.205
+        ypos -0.05
     call sansSuitStiff
     sans "i cannot breathe"
     sans "and i don't need to breathe"
@@ -679,8 +679,8 @@ label publicAsk:
             hide sansImg
             $ askUndyne = True
             show undyneImg mild surprise flip zorder 1 at fade:
-                xpos 0.4
-                ypos 0.1
+                xpos 0.3
+                ypos -0.2
             if suit == 1:
                 undyne "Uh?"
                 undyne "Me?"
@@ -732,8 +732,8 @@ label publicAsk:
                 metatton "Mmm..."
                 metatton "Darlings, I am noticing a disturbance in the force..."
                 show undyneImg mild surprise flip zorder 1 at fade:
-                    xpos 0.5
-                    ypos 0.1
+                    xpos 0.4
+                    ypos -0.2
                 undyne "Oh wait"
                 undyne "I know!"
                 show undyneImg laugh flip
@@ -801,7 +801,7 @@ label alphysTeasing:
     pause(1)
     show undyneImg mild surprise zorder 1 at fade:
         xpos 0.1
-        ypos 0.1
+        ypos -0.2
     undyne "ALPHYS"
     show mettaton position zorder 3 at fade:
         xpos 0.35
@@ -851,7 +851,7 @@ label suitDecision:
     call mettatonPresentingFlip    
     show sansImg position zorder 3 at fade:
         xpos 0
-        ypos 0.205
+        ypos -0.05
     call sansSuitStiff
     metatton "Excelent choice!"
     metatton "You look marvelous!"

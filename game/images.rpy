@@ -118,28 +118,28 @@ image goon2 flip = im.Flip("randomgoon2.png", horizontal=True)
 image goon3 flip = im.Flip("randomgoon3.png", horizontal=True)
 
 #Grillsby
-image grillsby neutral = im.FactorScale("grillsby.png",0.8)
-image grillsby neutral flip = im.Flip(im.FactorScale("grillsby.png",0.8), horizontal=True)
+image grillsby neutral = "grillsby.png"
+image grillsby neutral flip = im.Flip("grillsby.png", horizontal=True)
 
 #Muffet
-image muffet neutral = im.FactorScale("muffet.png",0.8)
-image muffet neutral flip = im.Flip(im.FactorScale("muffet.png",0.8), horizontal=True)
+image muffet neutral = "muffet.png"
+image muffet neutral flip = im.Flip("muffet.png", horizontal=True)
 
 #Dogamy
-image dogamy neutral = im.FactorScale("dog/dogamyNeutral.png",0.8)
-image dogamy neutral flip = im.Flip(im.FactorScale("dog/dogamyNeutral.png",0.8), horizontal=True)
-image dogamy surprised = im.FactorScale("dog/dogamySurprised.png",0.8)
-image dogamy surprised flip = im.Flip(im.FactorScale("dog/dogamySurprised.png",0.8), horizontal=True)
-image dogamy worried = im.FactorScale("dog/dogamyWorried.png", 0.8)
-image dogamy worried flip = im.Flip(im.FactorScale("dog/dogamyWorried.png", 0.8), horizontal=True)
+image dogamy neutral = "dog/dogamyNeutral.png"
+image dogamy neutral flip = im.Flip("dog/dogamyNeutral.png", horizontal=True)
+image dogamy surprised = "dog/dogamySurprised.png"
+image dogamy surprised flip = im.Flip("dog/dogamySurprised.png", horizontal=True)
+image dogamy worried = "dog/dogamyWorried.png"
+image dogamy worried flip = im.Flip("dog/dogamyWorried.png", horizontal=True)
 
 #Dogaressa
-image dogaressa neutral = im.FactorScale("dog/dogaressaNeutral.png", 0.8)
-image dogaressa neutral flip = im.Flip(im.FactorScale("dog/dogaressaNeutral.png", 0.8), horizontal=True)
-image dogaressa surprised = im.FactorScale("dog/dogaressaSurprised.png", 0.8)
-image dogaressa surprised flip = im.Flip(im.FactorScale("dog/dogaressaSurprised.png", 0.8), horizontal=True)
-image dogaressa worried = im.FactorScale("dog/dogaressaWorried.png", 0.8)
-image dogaressa worried flip = im.Flip(im.FactorScale("dog/dogaressaWorried.png", 0.8), horizontal=True)
+image dogaressa neutral = "dog/dogaressaNeutral.png"
+image dogaressa neutral flip = im.Flip("dog/dogaressaNeutral.png", horizontal=True)
+image dogaressa surprised = "dog/dogaressaSurprised.png"
+image dogaressa surprised flip = im.Flip("dog/dogaressaSurprised.png", horizontal=True)
+image dogaressa worried = "dog/dogaressaWorried.png"
+image dogaressa worried flip = im.Flip("dog/dogaressaWorried.png", horizontal=True)
 
 #Wekufe
 image cuero = "cuero.png"

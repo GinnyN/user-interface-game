@@ -22,7 +22,7 @@ label day4:
     toriel "And we have no idea what those monsters want to do with those poor kids"
     show sansImg hoddie neutral flip zorder 3 at fade:
         xpos 0.6
-        ypos 0.205
+        ypos -0.05
     sans "hi"
     show alphysImg casual neutral zorder 3 at fade:
         xpos 0.1
@@ -223,14 +223,15 @@ label day4:
         stop music fadeout(1)
         play music "music/gaster theme.MP3" fadein 1
         pause(5)
-        show papyrusImg coolDude thinking zorder 1 at fade:
-            xpos -0.1
         papyrus "WHO ARE YOU AGAIN?"
         stop music
+        scene wekufeLab with hpunch
         play sound "music/fx/thump.wav"
         gaster "YOU DEFINITELY DO NOT REMEMBER ME..."
         show gaster trapped dissapointed flip zorder 1 at fade:
             xpos 0.4
+        show papyrusImg coolDude thinking zorder 1 at fade:
+            xpos -0.1
         papyrus "SHOULD I?"
         show gaster trapped angry flip
         gaster "YES, YES, YOU SHOULD"
@@ -248,7 +249,6 @@ label day4:
         show gaster trapped ehem flip
         gaster "EHEM!"
         play music "music/gaster theme.MP3" fadein 1
-        scene wekufeLab with dissolve
         show papyrusImg coolDude thinking zorder 1 at fade:
             xpos -0.1
         show gaster trapped neutral flip zorder 1 at fade:

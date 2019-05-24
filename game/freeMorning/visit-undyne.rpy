@@ -5,7 +5,7 @@ label visitUndyne:
     show papyrusImg coolDude me at fade:
         xpos -0.1
     show undyneImg gym mildSurprise at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.5
     papyrus "UNDYNE!"
     show undyneImg gym yelling flip

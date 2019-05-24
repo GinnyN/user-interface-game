@@ -23,7 +23,7 @@ label programmingTheory:
     gaster "I WAS SO PROUD"
     gaster "I REMEMBER I GOT KICK OUT OF THE CASTLE ONCE BECAUSE I WAS GUSHING TOO MUCH"
     papyrus "..."
-    if programmingWoes2 == 1:
+    if programmingWoes2 == 0:
       $ programmingWoes2 = programmingWoes2 + 1
     return
 
@@ -55,7 +55,7 @@ label programmingMagicTheory:
     gaster "I HAD YOU PROGRAMMING IN PAIRS"
     gaster "ALMOST ALWAYS WAS EXTREMELY PRODUCTIVE, AND, IF IT WASN'T"
     gaster "AT LEAST IT WAS FUN TO WATCH"
-    if programmingWoes2 == 2:
+    if programmingWoes2 == 1:
       $ programmingWoes2 = programmingWoes2 + 1
     return
     
@@ -79,7 +79,7 @@ label theoryBehind:
     papyrus "AND YOU SAID I WAS BETTER AT THAT THAN HIM?"
     gaster "OF COURSE"
     papyrus "AAAAHHHHHHH!!!!!"
-    if programmingWoes2 == 3:
+    if programmingWoes2 == 2:
       $ programmingWoes2 = programmingWoes2 + 1
     return
 

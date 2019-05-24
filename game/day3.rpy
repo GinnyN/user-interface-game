@@ -35,15 +35,15 @@ label forest:
     papyrus "WE'RE DOOMED!"
     undyne "Exactly"
     show asgoreImg armor joking zorder 1 at fade:
-        xpos 0
+        xpos 0.1
         ypos -0.15
     asgore "I don't think you will have that problem"
     asgore "You are plenty scary yourself"
-    show papyrusImg neutral flip  zorder 0 at fade:
+    show papyrusImg neutral flip  zorder 1 at fade:
         xpos 0.5
     show undyneImg armor cocky zorder 1 at fade:
         xpos -0.1
-        ypos 0.1
+        ypos -0.2
     undyne "Pfff"
     undyne "Yeah, says the guy with the horns and the trident!"
     show undyneImg armor smile
@@ -160,7 +160,8 @@ label leaveThemAlone:
     show asgoreImg armor awe at fade:
         ypos -0.15
     show undyneImg armor surprised at fade:
-        ypos 0.1
+        ypos -0.2
+        xpos -0.1
     show papyrusImg curious zorder 0 at fade:
         xpos 0.4
     asgore "This must be one of the buildings of the monsters during the war"
@@ -177,7 +178,7 @@ label leaveThemAlone:
     hide undyneImg
     undyne "Stop doing that Papyrus!"
     show undyneImg armor angry flip at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.4
     show papyrusImg sorry zorder 0 at fade:
         xpos -0.1
@@ -389,7 +390,7 @@ label helpthemout:
         xpos -0.1
     papyrus "THEY ARE ESCAPING!!!"
     show undyneImg armor angry flip at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.4
     undyne "WHAT ARE YOU DOING YOU IDIOT?!"
     undyne "These monsters has nothing to do with anything!!!!"
@@ -405,7 +406,7 @@ label helpthemout:
     hide papyrusImg
     papyrus "THE CHILD!"
     show undyneImg armor angry flip at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.0
     undyne "Papyrus wait!"
     show undyneImg armor surprised flip
@@ -444,18 +445,18 @@ label backNewerHome:
         xpos -0.1
     show sansImg position zorder 4 at fade:
         xpos 0.15
-        ypos 0.205
+        ypos -0.05
     call sansSuitAnnoyed
     call torielSuitWorried
     sans "what just happened?"
     sans "we were at the middle of a meeting"
     toriel "Hopefully they are already captured the humans"
     show undyneImg armor serious flip zorder 3 at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.3
     undyne "Not really"
     show undyneImg armor serious zorder 3 at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.1
     show asgoreImg armor menacing flip zorder 1 at fade:
         xpos 0.2
@@ -471,7 +472,7 @@ label backNewerHome:
     sans "what just happened?"
     hide torielImg
     show undyneImg armor serious flip zorder 3 at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.3
     undyne "We found by cheer luck some monsters in the forest"
     undyne "And Papyrus started to attack them with no reason at all"
@@ -631,7 +632,7 @@ label backNewerHome:
     scene toriel house with dissolve
     show sansImg unsure flip zorder 3 at fade:
         xpos 0.3
-        ypos 0.205
+        ypos -0.05
     show torielImg pajamas worried zorder 1 at fade
     show asgoreImg cape neutral flip zorder 2 at fade:
         xpos 0.3
@@ -667,7 +668,7 @@ label backNewerHome:
     undyne "AT LEAST WAIT UNTIL TOMORROW DAMMIT!!!!"
     show sansImg surprised  zorder 3 at fade:
         xpos 0.3
-        ypos 0.205
+        ypos -0.05
     show asgoreImg cape surprised zorder 2 at fade:
         xpos 0.3
         ypos -0.15
@@ -716,7 +717,7 @@ label backNewerHome:
     pause(1)
     show sansImg surprised  zorder 3 at fade:
         xpos 0.3
-        ypos 0.205
+        ypos -0.05
     sans "they seem to be fine"
     show sansImg unsure
     sans "mmmm"
@@ -728,19 +729,19 @@ label backNewerHome:
     pause(0.8)
     show sansImg happy flip zorder 3 at fade:
         xpos 0.6
-        ypos 0.205
+        ypos -0.05
     sans "done"
     hide sansImg
     pause(0.5)
     play music "music/46 Spear of Justice.mp3" fadein 1
     pause(1)
     show undyneImg armor angry zorder 3 at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.0
     undyne "ARGH!"
     undyne "Not Frisk too!!!"
     show undyneImg armor angry zorder 3 at fade:
-        ypos 0.1
+        ypos -0.2
         xpos 0.3
     undyne "PA..."
     stop music fadeout(1)
@@ -756,7 +757,7 @@ label backNewerHome:
     undyne "I KNOW THIS IS YOU!"
     show sansImg happy flip zorder 3 at fade:
         xpos 0.6
-        ypos 0.205
+        ypos -0.05
     sans "i totally forgot about practical jokes"
     sans "i should do this more often"
     show sansImg laughing flip
@@ -816,10 +817,10 @@ label backNewerHome:
     play music "music/15 sans.mp3" fadein(1) fadeout(1)
     scene mountAnemi with dissolve:
         ypos -0.4
-    show sansImg laughing zorder 3 at fade:
+    show sansImg happy zorder 3 at fade:
         xpos 0.2
-        ypos 0.205
-    show asgoreImg cape laughing zorder 1 at fade:
+        ypos -0.05
+    show asgoreImg cape neutral zorder 1 at fade:
         xpos -0.3
         ypos -0.15
     asgore "This is a very good trap Sans"
@@ -829,7 +830,8 @@ label backNewerHome:
         ypos 0.1
         xpos 0.3
     undyne "ARGH! I got out!"
-    show undyneImg armor angry flip
+    show undyneImg armor angry flip:
+        ypos -0.2
     undyne "I`ll talk with you later punk!"
     show sansImg happy
     show asgoreImg cape neutral
