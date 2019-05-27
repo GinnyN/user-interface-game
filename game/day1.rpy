@@ -120,7 +120,7 @@ label bossOffice:
     show sansImg cockyEyes
     sans "{font=fonts/DTM-Sans.otf}You are going to have a bad time{/font}"
     show sansImg cocky
-    "Boss" "And what you can do that can hurt us?!"
+    "Boss" "* And what you can do that can hurt us?!"
     stop music fadeout 0.5
     pause(0.5)
     play sound "music/fx/spears.wav"
@@ -147,7 +147,7 @@ label bossOffice:
     hide goon1
     show goon2 flip zorder 3 at fade:
         xpos 1.3
-    "AAhhhh!!"
+    "* AAhhhh!!"
     play sound "music/fx/carstarting.wav"
     pause(0.5)
     show goon2 flip zorder 3 at fade:
@@ -217,7 +217,7 @@ label bossOffice:
     stop music fadeout 1
     pause(1.5)
     play sound "music/fx/soulShatter.wav"
-    scene black with dissolve
+    scene mistColor with dissolve
     pause(1)
     show papyrusImg uhh flip at fade:
         yalign 1.0 xalign 0.7
@@ -227,9 +227,7 @@ label bossOffice:
     hide papyrusImg
 
 #label reunionRoomDay1:
-    scene newerHome night with dissolve:
-        xalign 0.3
-        linear 5 xalign 0.8
+    scene black with dissolve
     play music "music/05 Ruins.mp3" fadein 1 fadeout 1
     pause(1)
     scene toriel house with dissolve
@@ -253,14 +251,14 @@ label bossOffice:
     undyne "At least those were evil humans"
     show torielImg pajamas angry at fade
     toriel "Undyne! Please!"
-    show undyneImg bored explaining flip at fade
+    show undyneImg explaining flip
     undyne "I'm saying that what Papyrus did they have it coming!"
     show undyneImg bored flip at fade
     undyne "Nobody goes and sell my friend to anyone!"
     toriel "That's still too much Undyne"
     toriel "It's not even allowed on our rules"
     show alphysImg pajamas explaining flip at fade
-    alphys "Well... we don't have a rule about commercialisation of slaves"
+    alphys "Well... we don't have a rule about commercialization of slaves"
     show alphysImg pajamas sad flip at fade
     undyne "And if it's were me"
     show undyneImg laugh flip at fade
@@ -283,7 +281,6 @@ label bossOffice:
     undyne "Whoa"
     show undyneImg laugh flip at fade
     undyne "And he's the guy who likes to use those socks"
-    show undyneImg troll flip at fade
     toriel "Tell him I want to talk with him"
     sans "are you sure?"
     toriel "Alone"
