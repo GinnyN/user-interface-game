@@ -65,9 +65,10 @@ label forest:
     scene forest with dissolve
     show papyrusImg confused  zorder 0 at fade:
         xpos 0.0
-    papyrus "I'M PRETTY SURE MY DOG LIKE NOSE CAN GUIDE US LIKE THE LAST TIME"
+    papyrus "I'M PRETTY SURE MY DOG LIKE NOSE CAN GUIDE US"
     show papyrusImg dissapointed
     papyrus "BUT THEY DECIDED TO SEPARATE TO COVER MORE AREA"
+    papyrus "AS USUAL"
     show papyrusImg proud
     papyrus "WELL, THEY WILL BE SURPRISED WHEN I FIND THE PLACE WHERE THE REST OF THOSE EVIL BEINGS ARE FIRST!"
     hide papyrusImg
