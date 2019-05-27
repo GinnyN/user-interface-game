@@ -32,6 +32,8 @@ image undyneImg motivated flip = im.Flip("undyne/motivated.png", horizontal=True
 image undyneImg neutral = "undyne/neutral.png"
 image undyneImg neutral flip = im.Flip("undyne/neutral.png", horizontal=True)
 
+image undyneImg surprised = "undyne/surprised.png"
+image undyneImg surprised flip = im.Flip("undyne/surprised.png", horizontal=True)
 image undyneImg thinking = "undyne/thinking.png"
 image undyneImg thinking flip = im.Flip("undyne/thinking.png", horizontal=True)
 image undyneImg worried = "undyne/worried.png"

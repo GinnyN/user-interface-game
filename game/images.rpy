@@ -29,6 +29,7 @@ image alphysImg casual neutral flip = im.Flip("alphys/casual/neutral.png", horiz
 
 #Frisk
 image friskImg worried = im.FactorScale("frisk/worried.png", 0.7)
+image friskImg worried flip = im.Flip(im.FactorScale("frisk/worried.png", 0.7), horizontal=True)
 image friskImg papyrus = "frisk/papyrus.png"
 image friskImg ilu = "frisk/ilu.png"
 image friskImg ilu flip = im.Flip("frisk/ilu.png", horizontal=True)
@@ -43,6 +44,8 @@ image friskImg happy = im.FactorScale("frisk/happy.png", 0.7)
 image friskImg happy flip = im.Flip(im.FactorScale("frisk/happy.png", 0.7), horizontal=True)
 image friskImg scared = im.FactorScale("frisk/scared.png", 0.7)
 image friskImg scared flip = im.Flip(im.FactorScale("frisk/scared.png", 0.7), horizontal=True)
+image friskImg surprised = im.FactorScale("frisk/surprised.png", 0.7)
+image friskImg surprised flip = im.Flip(im.FactorScale("frisk/surprised.png", 0.7), horizontal=True)
 image friskImg scarf = im.FactorScale("frisk/scarf.png", 0.7)
 image friskImg scarf flip = im.Flip(im.FactorScale("frisk/scarf.png", 0.7), horizontal=True)
 
