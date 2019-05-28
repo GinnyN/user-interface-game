@@ -290,7 +290,7 @@ label bossOffice:
         xalign 1.0 yalign 1.0
     alphys "Hopefully everything is going to be alright"
     hide alphysImg
-    show friskImg ilu flip zorder 3 at fade:
+    show friskImg worried flip zorder 3 at fade:
         xalign 1.0 yalign 1.0
     frisk "Good luck"
     hide friskImg
@@ -302,11 +302,8 @@ label bossOffice:
     toriel "Please call Asgore"
     show undyneImg mild surprise flip at fade
     undyne "Are you sure?"
-    toriel "For much I dislike him, he's still the king"
-    show torielImg pajamas solemn at fade
-    toriel "And probably you cannot see it yet, but this can cause big problems"
-    show torielImg pajamas worried at fade
-    toriel "At least we have to let him know"
+    toriel "Probably you cannot see it yet, but this can cause big problems"
+    toriel "We have to at least let him know"
     undyne "Ok"
     hide undyneImg
     stop music fadeout 1
@@ -344,21 +341,16 @@ label tryToExplain:
     papyrus "AND THEN..."
     show papyrusImg scared flip at fade
     papyrus "I WHISPERED! I NEVER DO THAT!"
-    show papyrusImg surprised pointing flip at fade
     papyrus "AND THEN I DID THE MOST AMAZING ATTACK EVER"
     show papyrusImg worried flip at fade
     papyrus "BUT I COULDN'T CONTROL IT"
-    show torielImg pajamas embarrased at fade
+    show torielImg pajamas worried at fade
     toriel "You were angry Papyrus"
     toriel "A kind of primal anger when someone you love was in danger"
     papyrus "BUT FRISK WAS IN DANGER BEFORE THAT"
     toriel "They were also doing something unspeakeable"
-    show torielImg pajamas solemn at fade
     toriel "I would felt anger too"
-    show papyrusImg surprised happy flip at fade
-    papyrus "REALLY?!"
-    show torielImg pajamas compasionate at fade
-    show papyrusImg worried flip at fade
+    papyrus "REALLY?"
     toriel "But"
     toriel "We need to control our emotions Papyrus"
     toriel "After all"
@@ -368,44 +360,44 @@ label tryToExplain:
     jump torielsAdvice
 
 label thanks:
-    show papyrusImg solemn flip at fade
+    show papyrusImg worried flip at fade
     papyrus "BEFORE EVERYTHING"
     show torielImg worried at fade
     toriel "?"
-    show papyrusImg worried flip at fade
     papyrus "I WANT TO THANKS YOU WITH WHAT ARE YOU DOING WITH SANS"
     toriel "What are you talking about?"
     papyrus "HE'S GETTING SO MUCH BETTER FROM HIS..."
     papyrus "'LAZINESS'"
-    show torielImg pajamas compasionate at fade
+    show torielImg pajamas happy at fade
     toriel "Oh, Papyrus"
-    show papyrusImg solemn flip at fade
+    show papyrusImg sorry flip at fade
     papyrus "AND IT'S ALL THANKS TO YOU"
-    show papyrusImg happy flip at fade
     papyrus "HE WAS TRYING TO DO THAT SUGARY QUICHES A BIT MORE"
     toriel "Pies"
-    show papyrusImg nervious flip at fade
+    show papyrusImg sorry at fade
     papyrus "YES, YES..."
-    show papyrusImg happy flip at fade
+    show papyrusImg sorry flip at fade
     papyrus "AND HE'S NOT GOING THAT MUCH TO GRILLBY'S TO SLACK OFF"
     papyrus "NOW I'M HAVE TO GO AND PICK HIM UP TWO TIMES A WEEK INSTEAD OF EVERYDAY"
-    show papyrusImg solemn flip at fade
+    show papyrusImg neutral flip at fade
     papyrus "IT'S ALL THANKS TO YOU"
     toriel "Please Papyrus"
     papyrus "YOU HAVE BEEN A BETTER FRIEND TO HIM THAN I EVER WAS"
     show papyrusImg nervious flip at fade
     papyrus "IT'S KIND OF EMBARRASING HAVING TO ADMIT THAT I WASN'T THAT GREAT ON THAT"
-    show papyrusImg worried flip at fade
     toriel "Papyrus"
     toriel "Sans always talk very highly of you"
     toriel "On how you still had hope on him"
     toriel "Even if he didn't have"
     toriel "So, maybe he needed two friends who believed that"
     papyrus "THEN"
-    show papyrusImg embarrased happy flip at fade
+    show papyrusImg delight flip at fade
     papyrus "THANKS FOR BEEN THAT OTHER FRIEND"
     show torielImg pajamas happy at fade
     toriel "It's a pleasure"
+    "..."
+    "..."
+    "..."
     #if resets < 3 and resets > 1:
     #    show torielImg worried at fade
     #    toriel "..."
@@ -443,16 +435,16 @@ label beQuiet:
     toriel "..."
 
 label torielsAdvice:
-    show papyrusImg worried flip at fade
+    show papyrusImg sorry flip at fade
     show torielImg pajamas ejem at fade
     toriel "Ejem!"
     show torielImg pajamas compasionate at fade
     toriel "Do you understand what you did?"
-    show torielImg pajamas worried at fade
     papyrus "YES MA'AM"
     toriel "Despite there's so many years since the war"
     toriel "Some humans still fear us"
     toriel "And they will use any excuse they can find to antagonize us"
+    show papyrusImg dissapointed flip at fade
     papyrus "I JUST GAVE THEM AN EXCUSE"
     toriel "Exactly"
     toriel "I'm going to talk with Asgore about this in a moment"
@@ -469,7 +461,7 @@ label torielsAdvice:
     toriel "We will find a way to make this not escalate too high"
     show torielImg pajamas happy at fade
     toriel "Together"
-    show papyrusImg embarrased happy flip at fade
+    show papyrusImg sorry flip at fade
     papyrus "THANKS TORIEL"
     stop music fadeout 1
 

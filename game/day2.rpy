@@ -3,6 +3,8 @@ label day2:
     #    jump alternative
 
 label schoolPapyrusRun:
+    scene black with dissolve
+    pause(1.0)
     scene skelebroHouse outside with dissolve
     pause 0.5
     show studentImg dog gossiping flip zorder 3 at fade:

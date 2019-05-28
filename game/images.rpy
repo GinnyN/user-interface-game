@@ -30,9 +30,6 @@ image alphysImg casual neutral flip = im.Flip("alphys/casual/neutral.png", horiz
 #Frisk
 image friskImg worried = im.FactorScale("frisk/worried.png", 0.7)
 image friskImg worried flip = im.Flip(im.FactorScale("frisk/worried.png", 0.7), horizontal=True)
-image friskImg papyrus = "frisk/papyrus.png"
-image friskImg ilu = "frisk/ilu.png"
-image friskImg ilu flip = im.Flip("frisk/ilu.png", horizontal=True)
 image friskImg explaining = im.FactorScale("frisk/explaining.png", 0.7)
 image friskImg unsure = im.FactorScale("frisk/unsure.png", 0.7)
 image friskImg unsure flip = im.Flip(im.FactorScale("frisk/unsure.png", 0.7), horizontal=True)

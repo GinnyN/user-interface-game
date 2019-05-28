@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Flip' <'Image' u'undyne/boredExplaining.png'> True False>:
-  File "game/day1.rpy", line 255, in script
-    undyne "I'm saying that what Papyrus did they have it coming!"
-IOError: Couldn't find file 'undyne/boredExplaining.png'.
+While loading <'Flip' <'Image' u'papyrus/happy.png'> True False>:
+  File "game/day1.rpy", line 375, in script
+    show torielImg pajamas embarrased at fade
+IOError: Couldn't find file 'papyrus/happy.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day1.rpy", line 255, in script
-    undyne "I'm saying that what Papyrus did they have it coming!"
+  File "game/day1.rpy", line 375, in script
+    show torielImg pajamas embarrased at fade
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 694, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\exports.py", line 1322, in say
@@ -62,9 +62,9 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\loader.py", line 576, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'undyne/boredExplaining.png'.
+IOError: Couldn't find file 'papyrus/happy.png'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 UserInterface 0.0
-Mon May 27 14:47:22 2019
+Tue May 28 15:40:57 2019
