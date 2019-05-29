@@ -226,7 +226,7 @@ label bossOffice:
     stop music fadeout 1
     hide papyrusImg
 
-#label reunionRoomDay1:
+label reunionRoomDay1:
     scene black with dissolve
     play music "music/05 Ruins.mp3" fadein 1 fadeout 1
     pause(1)
@@ -304,6 +304,7 @@ label bossOffice:
     undyne "Are you sure?"
     toriel "Probably you cannot see it yet, but this can cause big problems"
     toriel "We have to at least let him know"
+    show undyneImg serious flip
     undyne "Ok"
     hide undyneImg
     stop music fadeout 1

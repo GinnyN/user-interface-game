@@ -7,9 +7,9 @@ label schoolPapyrusRun:
     pause(1.0)
     scene skelebroHouse outside with dissolve
     pause 0.5
-    show studentImg dog gossiping flip zorder 3 at fade:
+    show studentImg dog gossiping flip zorder 2 at fade:
         xalign 0.7 yalign 1.0
-    show kidImg listening zorder 0 at fade:
+    show kidImg listening zorder 3 at fade:
         xalign 0.3 yalign 1.0
     "Student" "* Did you heard that?"
     "Student" "* The teacher said we'll not meet with Papyrus today!"
@@ -29,13 +29,13 @@ label schoolPapyrusRun:
     papyrus "DON'T STOP MOVING!"
     papyrus "YOU DON'T WANNA ANGER YOUR TEACHER!"
     show undyneImg gym sarcastic at fade:
-        xalign 0.2 yalign 1.0
+        xalign 0.0 yalign 1.0
     undyne "And what's Toriel told you!?"
-    show papyrusImg coolDude surprised flip at fade
+    show papyrusImg coolDude scared flip at fade
     show studentImg dog surprised flip at fade:
-        xalign 0.8 yalign 1.0
+        xalign 1.0 yalign 1.0
     show kidImg scared flip at fade:
-        xalign 0.6 yalign 1.0
+        xalign 1.2 yalign 1.0
     "* UNDYNE!"
     show studentImg dog scared flip
     show kidImg hiding flip
