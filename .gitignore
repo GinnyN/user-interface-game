@@ -3,3 +3,4 @@ game/cache/*
 game/saves/*
 *.rpyc
 *.bak
+log.txt

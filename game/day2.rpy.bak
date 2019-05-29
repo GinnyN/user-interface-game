@@ -467,16 +467,16 @@ label mettatonsfashion:
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
-    call mettatonPresenting from _call_mettatonPresenting
+    call mettatonPresenting
     pause(1)
     sans "just do this thing quickly"
-    call mettatonSurprisedFlip from _call_mettatonSurprisedFlip
+    call mettatonSurprisedFlip
     metatton "My oh My, our subject today has a temper"
     undyne "BUT HE DOESN'T HAVE AN OPTION"
     hide lights
-    call mettatonDelightFlip from _call_mettatonDelightFlip
+    call mettatonDelightFlip
     metatton "Those are my favorite subjects!"
-    call mettatonPresenting from _call_mettatonPresenting_1
+    call mettatonPresenting
     metatton "Let's see for what you have to dress for!"
     hide mettaton
     hide sansImg
@@ -503,7 +503,7 @@ label mettatonsfashion:
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
-    call mettatonPresenting from _call_mettatonPresenting_2
+    call mettatonPresenting
     metatton "Well Darlings, let's present the first of all options!"
     $ alphysHot = 0
     $ undyneThere = True
@@ -529,11 +529,11 @@ label bonestrousleSuit:
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
-    call mettatonPresentingFlip from _call_mettatonPresentingFlip
+    call mettatonPresentingFlip
     show sansImg position zorder 3 at fade:
         xpos 0
         ypos -0.05
-    call sansSuitStiff from _call_sansSuitStiff
+    call sansSuitStiff
     sans ".."
     sans "i cannot move my shoulders"
     sans "even if i don't have any"
@@ -552,11 +552,11 @@ label megalovaniaSuit:
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
-    call mettatonPresentingFlip from _call_mettatonPresentingFlip_1
+    call mettatonPresentingFlip
     show sansImg position zorder 3 at fade:
         xpos 0
         ypos -0.05
-    call sansSuitStiff from _call_sansSuitStiff_1
+    call sansSuitStiff
     sans ".."
     sans "i don't have a body and anyway i can barely move"
     metatton "Let's see what the public is atching to say!"
@@ -574,14 +574,14 @@ label spearsSuit:
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
-    call mettatonPresentingFlip from _call_mettatonPresentingFlip_2
+    call mettatonPresentingFlip
     show sansImg position zorder 3 at fade:
         xpos 0
         ypos -0.05
-    call sansSuitStiff from _call_sansSuitStiff_2
+    call sansSuitStiff
     sans "i cannot breathe"
     sans "and i don't need to breathe"
-    call mettatonPresenting from _call_mettatonPresenting_3
+    call mettatonPresenting
     metatton "Let's see what the public want to tell us!"
     jump publicAsk
 
@@ -732,7 +732,7 @@ label publicAsk:
                 show mettaton position zorder 3 at fade:
                     xpos -0.1
                     ypos 0.205
-                call mettatonThinking from _call_mettatonThinking
+                call mettatonThinking
                 metatton "Mmm..."
                 metatton "Darlings, I am noticing a disturbance in the force..."
                 show undyneImg mild surprise flip zorder 1 at fade:
@@ -742,7 +742,7 @@ label publicAsk:
                 undyne "I know!"
                 show undyneImg laugh flip
                 undyne "Hey! Metatton! Can we?!"
-                call mettatonDelight from _call_mettatonDelight
+                call mettatonDelight
                 metatton "Oh, Please! Be my guest!"
                 jump alphysTeasing
             hide alphysImg
@@ -810,7 +810,7 @@ label alphysTeasing:
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
-    call mettatonSurprisedFlip from _call_mettatonSurprisedFlip_1
+    call mettatonSurprisedFlip
     metatton "Oh no"
     metatton "Her levels of "
     extend "'passion' were too high!"
@@ -824,7 +824,7 @@ label alphysTeasing:
 label undyneLab:
     show undyneImg happy at fade
     undyne "I'll better take her back home!"
-    call mettatonComplicitFlip from _call_mettatonComplicitFlip
+    call mettatonComplicitFlip
     metatton "Take the suit as well"
     show undyneImg mild surprise
     undyne "?!"
@@ -832,7 +832,7 @@ label undyneLab:
     show undyneImg happy at fade
     pause(1.5)
     hide undyneImg
-    call mettatonPresenting from _call_mettatonPresenting_4
+    call mettatonPresenting
     metatton "Well, we better jump to the decision then!"
     hide mettaton
     $ undyneThere = False
@@ -852,11 +852,11 @@ label suitDecision:
     show mettaton position zorder 3 at fade:
         xpos 0.35
         ypos 0.205
-    call mettatonPresentingFlip from _call_mettatonPresentingFlip_3    
+    call mettatonPresentingFlip    
     show sansImg position zorder 3 at fade:
         xpos 0
         ypos -0.05
-    call sansSuitStiff from _call_sansSuitStiff_3
+    call sansSuitStiff
     metatton "Excelent choice!"
     metatton "You look marvelous!"
     hide mettaton
@@ -864,7 +864,7 @@ label suitDecision:
     show papyrusImg surprised happy flip zorder 2 at fade:
         xpos 0.3
     papyrus "THIS WAS AMAZING!"
-    call sansSuitBored from _call_sansSuitBored_1
+    call sansSuitBored
     if undyneThere:
         show undyneImg bored flip zorder 3 at fade:
             xpos 0.5
@@ -880,7 +880,7 @@ label suitDecision:
     show torielImg teacher happy flip zorder 3 at fade:
         xpos 0.5
     toriel "And you have a new suit which we needed"
-    call sansSuitSarcastic from _call_sansSuitSarcastic_1
+    call sansSuitSarcastic
     sans "the things i do for my brother"
     hide torielImg
     papyrus "AHHH..."
@@ -1015,6 +1015,6 @@ label alphysHome:
 
 label endOfDay2:
     if resets > 0:
-        call questionsEnd from _call_questionsEnd_2
+        call questionsEnd
     
     jump day3
