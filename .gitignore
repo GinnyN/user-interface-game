@@ -2,3 +2,4 @@ tmp/*
 game/cache/*
 game/saves/*
 *.rpyc
+*.bak
