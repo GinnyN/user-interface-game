@@ -51,7 +51,7 @@ label politicalGeographyTree:
         "A Mystery" if politicalGeography > 2:
             call aMystery from _call_aMystery
         "Return":
-            jump questionsMenu
+            call questionsMenu
     return
 
 label gasterPastTree:
@@ -67,7 +67,7 @@ label gasterPastTree:
         "Skeleton Creation" if gasterPast > 3:
             call superSoldiers from _call_superSoldiers
         "Return":
-            jump questionsMenu
+            call questionsMenu
     return
         
 label fourthWallTree:
@@ -79,7 +79,7 @@ label fourthWallTree:
         "4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
             call wallBreakingStuff2 from _call_wallBreakingStuff2
         "Return":
-            jump questionsMenu
+            call questionsMenu
     return 
 
 
