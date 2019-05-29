@@ -1,15 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'undyne/gym/sarcastic.png'>:
-  File "game/day2.rpy", line 41, in script
-    show studentImg dog scared flip
-IOError: Couldn't find file 'undyne/gym/sarcastic.png'.
+While loading <'Flip' <'Image' u'student/sorry.png'> True False>:
+  File "game/day1.rpy", line 503, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/day2.rpy", line 20, in script
+    monsterKid "Papyrus never miss his morning run!"
+IOError: Couldn't find file 'student/sorry.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day2.rpy", line 41, in script
-    show studentImg dog scared flip
+  File "game/day1.rpy", line 503, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/day2.rpy", line 20, in script
+    monsterKid "Papyrus never miss his morning run!"
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 694, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\exports.py", line 1322, in say
@@ -44,8 +48,6 @@ Full traceback:
   File "render.pyx", line 244, in renpy.display.render.render
   File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
   File "render.pyx", line 244, in renpy.display.render.render
-  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 244, in renpy.display.render.render
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\image.py", line 500, in render
     return wrap_render(self.target, width, height, st, at)
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\image.py", line 306, in wrap_render
@@ -56,13 +58,17 @@ Full traceback:
     return cache.get(self, render=True)
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\im.py", line 266, in get
     surf = image.load()
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\im.py", line 916, in load
+    child = cache.get(self.image)
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\im.py", line 625, in load
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\loader.py", line 576, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'undyne/gym/sarcastic.png'.
+IOError: Couldn't find file 'student/sorry.png'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
-UserInterface 0.0
-Wed May 29 11:58:57 2019
+UserInterface 0.1.0
+Wed May 29 14:28:10 2019
