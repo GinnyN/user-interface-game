@@ -1,5 +1,5 @@
 label day1:
-    call resetVariables from _call_resetVariables
+    call resetVariables
     scene day1 scene1 with dissolve:
         yalign 0.1
         linear 10 yalign 0.7
@@ -500,7 +500,7 @@ label endOfDay1:
             papyrus "WE'LL FIND A WAY! I'M SURE OF IT!"
             gaster "I NEEDED TO HEAR THAT..."
         
-        call questionsEnd from _call_questionsEnd   
+        call questionsEnd   
         gaster "JUST REMEMBER WE CAN TALK AGAIN AFTER THE END OF A DAY IF YOU HAVE ANY QUESTIONS"
         papyrus "I'LL REMEMBER THAT"
 

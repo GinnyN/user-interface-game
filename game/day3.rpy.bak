@@ -1,5 +1,5 @@
 label day3:
-    call freeMorning from _call_freeMorning
+    call freeMorning
 
 label forest:
     scene skelebroHouse outside with dissolve
@@ -447,8 +447,8 @@ label backNewerHome:
     show sansImg position zorder 4 at fade:
         xpos 0.15
         ypos -0.05
-    call sansSuitAnnoyed from _call_sansSuitAnnoyed
-    call torielSuitWorried from _call_torielSuitWorried
+    call sansSuitAnnoyed
+    call torielSuitWorried
     sans "what just happened?"
     sans "we were at the middle of a meeting"
     toriel "Hopefully they are already captured the humans"
@@ -463,8 +463,8 @@ label backNewerHome:
         xpos 0.2
     show papyrusImg sorry upsidedown zorder 2 at fade:
         xpos 0.5
-    call sansSuitSurprised from _call_sansSuitSurprised
-    call torielSuitSuprised from _call_torielSuitSuprised
+    call sansSuitSurprised
+    call torielSuitSuprised
     papyrus "..."
     hide papyrusImg
     hide asgoreImg
@@ -484,7 +484,7 @@ label backNewerHome:
     papyrus "I TOLD YOU THE REASON!"
     show undyneImg armor angry
     show papyrusImg scared flip
-    call sansSuitBored from _call_sansSuitBored
+    call sansSuitBored
     undyne "PAPYRUS SHUT UP"
     show undyneImg armor serious
     show papyrusImg worried
@@ -492,7 +492,7 @@ label backNewerHome:
     show undyneImg armor surprised flip
     show torielImg position zorder 2 at fade:
         xpos -0.1
-    call torielSuitAngry from _call_torielSuitAngry
+    call torielSuitAngry
     toriel "UNDYNE"
     show undyneImg armor serious flip
     toriel "What do you think you are doing?"
@@ -501,7 +501,7 @@ label backNewerHome:
     undyne "grrrr...."
     show undyneImg armor serious flip
     undyne "argh"
-    call sansSuitSarcastic from _call_sansSuitSarcastic
+    call sansSuitSarcastic
     sans "what the matter, uh?"
     undyne "Those monsters did nothing"
     asgore "..."
@@ -514,7 +514,7 @@ label backNewerHome:
     show undyneImg armor serious flip
     sans "exactly you what?"
     show undyneImg armor serious
-    call sansSuitAnnoyed from _call_sansSuitAnnoyed_1
+    call sansSuitAnnoyed
     sans "come on, say it!"
     show undyneImg armor serious flip
     undyne "You don't get it"
@@ -523,25 +523,25 @@ label backNewerHome:
     stop music fadeout(1)
     hide papyrusImg
     play sound "music/fx/steps.wav"
-    call sansSuitSurprised from _call_sansSuitSurprised_1
-    call torielSuitSuprised from _call_torielSuitSuprised_1
+    call sansSuitSurprised
+    call torielSuitSuprised
     show undyneImg armor surprised
     papyrus "EVERYBODY JUST STOP!"
     papyrus "I CAN`T TAKE THIS ANYMORE!"
     play sound "music/fx/thump.wav"
-    call torielSuitWorried from _call_torielSuitWorried_1
-    call sansSuitWorried from _call_sansSuitWorried
+    call torielSuitWorried
+    call sansSuitWorried
     show undyneImg armor serious
     show asgoreImg armor awe zorder 1 at fade:
         xpos 0.3
     asgore "Oh no"
     sans "bro..."
     asgore "I'm scared about the same thing, though"
-    call sansSuitAnnoyed from _call_sansSuitAnnoyed_2
+    call sansSuitAnnoyed
     sans "what?"
     show asgoreImg armor awe flip
     asgore "Not in the way of he will go out of control again"
-    call sansSuitWorried from _call_sansSuitWorried_1
+    call sansSuitWorried
     asgore "But in a way he will start to look too hard trying to fix that mistake"
     undyne "He always tries too hard..."
     undyne "..."
@@ -870,7 +870,7 @@ label backNewerHome:
     stop music fadeout(1)
     label endOfDay3:
         if resets > 0:
-            call questionsEnd from _call_questionsEnd_1
+            call questionsEnd
         jump day4
 return
 

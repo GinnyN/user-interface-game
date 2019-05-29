@@ -6,17 +6,16 @@ label titleScreen:
     papyrus "WHAATT???"
     play sound "music/fx/lawAndOrder.wav"
     scene day1Alt title
-    pause(0.5)
-    return
-#    papyrus "WHAT IS THIS?"
-#    gaster "I CAN JUMP YOU OVER THE END OF THE DAY IN WHICH I WILL EXPLAIN WHAT JUST HAPPENED"
-#    gaster "PLEASE SELECT THE IF YOU WANT THAT TO HAPPEN"
-#    menu:
-#        "Jump End of the Day":
-#            gaster "VERY WELL"
-#            jump endOfDay1
-#        "Continue Forward":
-#            gaster "I'LL WAIT TO TALK WITH YOU AT THE END OF THE DAY"
-#            gaster "GOOD LUCK"
-#            jump jumpBuilding
-#return
+    pause(3)
+    papyrus "WHAT IS THIS?"
+    gaster "I CAN JUMP YOU OVER THE END OF THE DAY IN WHICH I WILL EXPLAIN WHAT JUST HAPPENED"
+    gaster "PLEASE SELECT THE IF YOU WANT THAT TO HAPPEN"
+    menu:
+        "Jump End of the Day":
+            gaster "VERY WELL"
+            jump endOfDay1
+        "Continue Forward":
+            gaster "I'LL WAIT TO TALK WITH YOU AT THE END OF THE DAY"
+            gaster "GOOD LUCK"
+            jump jumpBuilding
+return
