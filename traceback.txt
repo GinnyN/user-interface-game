@@ -1,44 +1,44 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Flip' <'Image' u'student/surprised.png'> True False>:
-  File "game/day2.rpy", line 39, in script
-    "* UNDYNE!"
-IOError: Couldn't find file 'student/surprised.png'.
+While loading <'Image' u'undyne/gym/sarcastic.png'>:
+  File "game/day2.rpy", line 41, in script
+    show studentImg dog scared flip
+IOError: Couldn't find file 'undyne/gym/sarcastic.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day2.rpy", line 39, in script
-    "* UNDYNE!"
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 694, in execute
+  File "game/day2.rpy", line 41, in script
+    show studentImg dog scared flip
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 694, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1322, in say
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\exports.py", line 1322, in say
     who(what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 1127, in __call__
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 1127, in __call__
     self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 842, in do_display
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 842, in do_display
     **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 591, in display_say
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 591, in display_say
     rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ui.py", line 289, in interact
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ui.py", line 289, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2690, in interact
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2690, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3174, in interact_core
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 3174, in interact_core
     self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2086, in draw_screen
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2086, in draw_screen
     renpy.config.screen_height,
   File "render.pyx", line 516, in renpy.display.render.render_screen
   File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 151, in renpy.display.render.render
   File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 151, in renpy.display.render.render
   File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 151, in renpy.display.render.render
   File "render.pyx", line 244, in renpy.display.render.render
@@ -46,27 +46,23 @@ Full traceback:
   File "render.pyx", line 244, in renpy.display.render.render
   File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
   File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\image.py", line 500, in render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\image.py", line 500, in render
     return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\image.py", line 306, in wrap_render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\image.py", line 306, in wrap_render
     rend = render(child, w, h, st, at)
   File "render.pyx", line 151, in renpy.display.render.render
   File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 580, in render
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\im.py", line 580, in render
     return cache.get(self, render=True)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 266, in get
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\im.py", line 266, in get
     surf = image.load()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 916, in load
-    child = cache.get(self.image)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 266, in get
-    surf = image.load()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 625, in load
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\im.py", line 625, in load
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\loader.py", line 576, in load
+  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\loader.py", line 576, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'student/surprised.png'.
+IOError: Couldn't find file 'undyne/gym/sarcastic.png'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 UserInterface 0.0
-Tue May 28 23:25:28 2019
+Wed May 29 11:58:57 2019
