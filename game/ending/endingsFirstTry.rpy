@@ -176,12 +176,58 @@ label startEndingGasterFirstTry:
             dtSans "..."
             gaster "SANS... MY DEAR BOY..."
             gaster "LET'S GO BACK"
-            gaster "WE HAVE A LOT TO THINK AND CRY BEFORE EVERYTHING"
+            gaster "WE HAVE A LOT TO THINK AND CRY BEFORE ANYTHING"
             
     
 label resetOrEndingFirstTry:
-    
-label startEndingPapyrusFirstTry:
-            
-
+    papyrus "WHY IS THAT OPTION THERE?"
+    gaster "DO YOU NOT HAVE 2ND THOUGHTS?"
+    papyrus "I MEAN..."
+    papyrus "I SHOULD TRUST EVERYTHING IS GOING TO BE ALRIGHT"
+    papyrus "RIGHT?"
+    gaster "I DON'T KNOW"
+    papyrus "HOW YOU DO IT?"
+    gaster "I ALWAYS HAVE 2ND THOUGHTS"
+    gaster "I MOSTLY IGNORE THEM OR ELSE I WILL GET NOTHING DONE"
+    papyrus "SO..."
+    papyrus "IT SEEMS WE CANNOT TRUST ANY OF OUR METAPHORICAL GUTS"
+    gaster "I KNOW IT JUST GOING TO DEPEND ON WHAT IS BEYOND OUR COMPREHENSION"
+    papyrus "YOU MEAN"
+    gaster "EXACTLY"
+    gaster "THEY ARE ALL POWERFULL AND ALL CURIOUS AFTER ALL"
+    menu:
+        "Reset":
+            papyrus "THEY WANT TO STILL POKE AROUND?"
+            gaster "I SHALL NOT DELAY THIS ANY MORE"
+            $ resetWithoutMeaning = True
+            $ resets = resets + 1
+            jump day1
+        "Use the Program Anyway":
+            papyrus "I DO NOT UNDERSTAND"
+            gaster "NEITHER DO I BUT OK"
+            gaster "FIRE THE PROGRAM AWAY!"
+            jump startEndingGasterFirstTry
+        "Do not use the Program":
+            papyrus "..."
+            papyrus "..."
+            papyrus "..."
+            papyrus "..."
+            papyrus "..."
+            papyrus "..."
+            papyrus "WHO'S STOPING ME?"
+            gaster "PAPYRUS?"
+            gaster "WHAT ARE YOU DOING?"
+            papyrus "I'M GOING TO FIRE THE PROGRAM!"
+            gaster "THERE'S NO NEED PAPYRUS.."
+            papyrus "SCREW THEIR CURIOSITY!"
+            papyrus "I WILL NOT LET THEM KNOW WHAT'S GOING TO HAPPEN IF I CAN MANAGE IT"
+            papyrus "NOW I HAVE THE POWER TO CHANGE SOMETHING FOR THE BETTER"
+            papyrus "I WILL NOT LET AN ENTITLED"
+            papyrus "BEING..." 
+            papyrus "BEYOND..." 
+            papyrus "THAT TO TOY WITH US!"
+            gaster "I GUESS THERE'S NO WAY TO STOP YOU NOW"
+            pause(1)
+            gaster "FIRE THE PROGRAM AWAY!"
+            jump startEndingGasterFirstTry
 return 

@@ -7,7 +7,12 @@ label freeMorning:
     papyrus "I HAVE FREE THE MORNING!"
     show papyrusImg coolDude thinking
     papyrus "WHAT SHALL I DO?"
+    
+    call displayMenuFreeMorning
 
+    return
+
+label displayMenuFreeMorning:
     menu:
         "Go help Toriel at the School" if not helpedToriel:
             show papyrusImg coolDude happy 
@@ -36,15 +41,29 @@ label freeMorning:
             call visitUndyne from _call_visitUndyne
         
         "Go visit Alphys" if not visitAlphys:
-            papyrus "DR ALPHYS SAID SHE WAS WORKING ON SOMETHING IMPORTANT"
-            show papyrusImg coolDude delight
-            papyrus "MAYBE IS A NEW KIND OF PUZZLE!"
-            show papyrusImg coolDude thinking
-            papyrus "OK, MAYBE NOT"
-            show papyrusImg coolDude delight
-            papyrus "BUT SHOULD BE INTERESTING!"
-            $ visitAlphys = True
-            call visitAlphys from _call_visitAlphys
+            if penAtAlphys:
+                papyrus "I LEFT THE IMPORTANT MISSION TO DR ALPHYS LAST NIGHT"
+                papyrus "I DON'T KNOW IF I CAN VISIT HER, I MIGHT BOTHER HER"
+                gaster "SHE MIGHT HAVE INSPIRATION ON DOING IT AND THEN WORK IN A HURRY FOR 3 HOURS STRAIGHT"
+                papyrus "YOU MEAN SHE MIGHT NEED SOME REFRESTMENTS FOR AVOID DEHYDRATION?"
+                gaster "I DON'T THINK SO"
+                gaster "SHE LOOKED MORE LIKE THE NOCTURNAL TYPE"
+                papyrus "YOU RIGHT"
+                papyrus "SHE PROBABLY HAD ALREADY DONE ALL THE WORK"
+                papyrus "AND SHE'S SLEEPING RIGHT NOW"
+                gaster "I'LL RECOMEND VISIT SOMEONE ELSE"
+                papyrus "THAT'S A GOOD IDEA"
+                call displayMenuFreeMorning
+            else:
+                papyrus "DR ALPHYS SAID SHE WAS WORKING ON SOMETHING IMPORTANT"
+                show papyrusImg coolDude delight
+                papyrus "MAYBE IS A NEW KIND OF PUZZLE!"
+                show papyrusImg coolDude thinking
+                papyrus "OK, MAYBE NOT"
+                show papyrusImg coolDude delight
+                papyrus "BUT SHOULD BE INTERESTING!"
+                $ visitAlphys = True
+                call visitAlphys from _call_visitAlphys
         
         "Go check how Frisk is doing" if not visitFrisk:
             papyrus "FRISK IS NOT GOING TO SCHOOL"

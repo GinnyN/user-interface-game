@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/imgDeclaration/sans.rpy", line 2: unexpected EOF while parsing
-    im.Alpha("undyne/gym/mildsurprise.png", 0), 1)
-                                                  ^
+File "game/ending/endingsFirstTry.rpy", line 205: choice menuitem expects a non-empty block.
+    "Continue":
+               ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Thu May 23 20:39:50 2019
+Wed May 29 15:49:26 2019
