@@ -15,12 +15,10 @@ label questionsMenu:
             call decisions from _call_decisions
         "Those Weird Monsters I found":
             call monstersForest from _call_monstersForest
-        "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
-            call programmingTheory from _call_programmingTheory
-        "Maybe I can do something with this programming thing" if programmingWoes2 > 0:
-            call programmingMagicTheory from _call_programmingMagicTheory
         "Political Geography":
             call politicalGeographyTree
+        "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
+            call programmingTree
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
             call foundSomePapers from _call_foundSomePapers
         #"Demography" if politicalGeography > 0:
@@ -36,6 +34,16 @@ label questionsMenu:
             gaster "VERY WELL"
             return
     jump questionsRepeat
+    return
+
+label programmingTree:
+    menu:   
+        "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
+            call programmingTheory from _call_programmingTheory
+        "Maybe I can do something with this programming thing" if programmingWoes2 > 0:
+            call programmingMagicTheory from _call_programmingMagicTheory
+        "Return":
+            call questionsMenu
     return
 
 label politicalGeographyTree:

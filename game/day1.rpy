@@ -44,6 +44,8 @@ label day1:
 
     menu:
         "Jump to the Building" if resets != 1:
+            show papyrusImg angry at fade:
+                xalign 0.4
             jump jumpBuilding
         "Ahh??!!" if resets == 1:
             jump titleScreen
@@ -51,8 +53,6 @@ label day1:
         #    jump shortcut
 
 label jumpBuilding:
-    show papyrusImg angry at fade:
-        xalign 0.4
     undyne "We're going in!"
     hide undyneImg
     papyrus "WAIT FOR US FRISK!"

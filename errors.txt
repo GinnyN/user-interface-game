@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/ending/endingsFirstTry.rpy", line 205: choice menuitem expects a non-empty block.
-    "Continue":
-               ^
+File "game/questions/menu.rpy", line 47: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Wed May 29 15:49:26 2019
+Wed May 29 16:55:08 2019
