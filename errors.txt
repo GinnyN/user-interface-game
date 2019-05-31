@@ -2,13 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/day1.rpy", line 46: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
+File "game/day4.rpy", line 156: if statement expects a non-empty block.
+    if resets == 0:
+                   ^
 
-File "game/day1.rpy", line 50: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
+File "game/day4.rpy", line 158: expected statement.
+    elif pen and firstTry:
+                         ^
+
+File "game/day4.rpy", line 160: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Fri May 31 00:00:59 2019
+Fri May 31 09:18:49 2019

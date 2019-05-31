@@ -129,7 +129,6 @@ label checkSans:
         papyrus "BUT HE SHOULD BE HERE!"
         show sansImg hoddie neutral flip at fade:
             xpos 0.5
-            ypos -0.05
         sans "sup' bro?"
         show papyrusImg coolDude angry
         papyrus "SANS!"
@@ -177,7 +176,6 @@ label checkSans:
         papyrus "MAYBE YOU SHOULD USE YOUR ACTUAL FREE TIME TO DO THAT THOUGH"
         show sansImg hoddie content flip  at fade:
             xpos 0.5
-            ypos -0.05
         sans "don't worry"
         sans "i have that machine over there i did"
         show sansImg hoddie neutral flip
