@@ -1,18 +1,20 @@
 label questionsEnd:
     gaster "THEN, MY DEAR PAPYRUS, THERE'S SOMETHING YOU WANT TO TALK WITH ME?"
-    jump questionsMenu
+    call questionsMenu
     return
 
 label questionsRepeat:
     gaster "WELL THEN"
     gaster "SOMETHING ELSE ARE YOU CURIOUS ABOUT?"
-    jump questionsMenu
+    call questionsMenu
     return
 
 label questionsMenu:
     menu:
         "This is a time loop, right?":
             call decisions from _call_decisions
+        "What do I do with this Storage Unit?":
+            call pendriveTree
         "Those Weird Monsters I found":
             call monstersForest from _call_monstersForest
         "Political Geography":
@@ -33,7 +35,19 @@ label questionsMenu:
             papyrus "NOTHING I CAN THINK OF RIGHT NOW"
             gaster "VERY WELL"
             return
-    jump questionsRepeat
+    call questionsRepeat
+    return
+
+label pendriveTree:
+    menu:
+        "What do I do with this Storage Unit?":
+            call pendriveBrainStorm
+        "What about your brother?" if pendriveTree > 0:
+            call pendriveSans
+        "Can you tell me what the problem with your brother?" if pendriveTreeSans > 0:
+            call pendriveSansTwo
+        "Return":
+            call questionsMenu
     return
 
 label programmingTree:

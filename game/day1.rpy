@@ -42,15 +42,20 @@ label day1:
     show undyneImg angry
     undyne "We have to rescue Frisk!"
 
-    menu:
-        "Jump to the Building" if resets != 1:
-            show papyrusImg angry at fade:
-                xalign 0.4
-            jump jumpBuilding
-        "Ahh??!!" if resets == 1:
-            jump titleScreen
-        #"Ask Sans about creating a Shortcut" if doors:
-        #    jump shortcut
+    if papyrusMourn:
+        menu:
+            "Jump to the Building":
+                papyrus "..."
+    else:        
+        menu:
+            "Jump to the Building" if resets != 1:
+                show papyrusImg angry at fade:
+                    xalign 0.4
+                jump jumpBuilding
+            "Ahh??!!" if resets == 1:
+                jump titleScreen
+            #"Ask Sans about creating a Shortcut" if doors:
+            #    jump shortcut
 
 label jumpBuilding:
     undyne "We're going in!"

@@ -5,3 +5,5 @@ define programmingWoes = 0
 define programmingWoes2 = 0
 define wekufeTree = 0
 define howToTree = 0
+define pendriveTree = 0
+define pendriveTreeSans = 0

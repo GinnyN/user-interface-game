@@ -867,8 +867,8 @@ label suitDecision:
     call sansSuitBored from _call_sansSuitBored_1
     if undyneThere:
         show undyneImg bored flip zorder 3 at fade:
-            xpos 0.5
-            ypos 0.1
+            xpos 0.4
+            ypos -0.2
         undyne "And wholefully innecesary"
         show papyrusImg delight flip
         papyrus "BUT SANS LOOK VERY COOL!"
@@ -903,8 +903,8 @@ label suitDecision:
         xpos 0
     if undyneThere:
         show undyneImg neutral zorder 3 at fade:
-            xpos 0
-            ypos 0.1
+            xpos -0.1
+            ypos -0.2
     asgore "Tomorrow we will start searching in the woods"
     asgore "Hopefully we're going to end this problem this week"
     if undyneThere:

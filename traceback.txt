@@ -1,64 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 415, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 415, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 415, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 434, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "game/day1.rpy", line 503, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 17, in script call
+    call pendriveTree
+  File "game/questions/menu.rpy", line 42, in script
+    menu:
+  File "game/questions/menu.rpy", line 47, in <module>
+    "Can you tell me what the problem with your brother?" if pendriveSansTree > 0:
+NameError: name 'pendriveSansTree' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\bootstrap.py", line 313, in bootstrap
-    renpy.main.main()
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\main.py", line 427, in main
-    if renpy.parser.report_parse_errors():
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\parser.py", line 2821, in report_parse_errors
-    renpy.display.error.report_parse_errors(full_text, error_fn)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\error.py", line 187, in report_parse_errors
-    error_fn=error_fn,
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\game.py", line 281, in invoke_in_new_context
-    return callable(*args, **kwargs)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\error.py", line 45, in call_exception_screen
-    return renpy.ui.interact(mouse="screen", type="screen", suppress_overlay=True, suppress_underlay=True)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2690, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 3146, in interact_core
-    renpy.exports.reload_script()
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\exports.py", line 1748, in reload_script
-    renpy.game.call_in_new_context("_save_reload_game")
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\game.py", line 332, in call_in_new_context
-    return renpy.execution.run_context(False)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\execution.py", line 892, in run_context
-    context.run()
-  File "renpy/common/00keymap.rpy", line 415, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 415, in script
-    python hide:
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 900, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00keymap.rpy", line 415, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 434, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\loadsave.py", line 398, in save
-    roots = renpy.game.log.freeze(None)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1827, in freeze
-    self.complete(False)
-  File "C:\Users\xcontrer\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1457, in complete
-    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "game/day1.rpy", line 503, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 17, in script call
+    call pendriveTree
+  File "game/questions/menu.rpy", line 42, in script
+    menu:
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1609, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 943, in menu
+    condition = renpy.python.py_eval(condition)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1961, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1954, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/questions/menu.rpy", line 47, in <module>
+    "Can you tell me what the problem with your brother?" if pendriveSansTree > 0:
+NameError: name 'pendriveSansTree' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
- 
-Wed May 29 15:52:33 2019
+UserInterface 0.1.0
+Thu May 30 14:04:39 2019

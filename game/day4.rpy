@@ -155,6 +155,12 @@ label day4:
         
     if pen and firstTry:
          jump endingsFirstTry
+    else:
+        gaster "THIS IS THE FINAL DAY"
+        gaster "PAPYRUS, I'M GOING TO RESET THE TIMELINE"
+        gaster "PLEASE BE CAREFUL"
+        $ resets += 1
+        jump day1
         
     if resets == 0:
         stop music fadeout(1)
