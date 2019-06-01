@@ -45,7 +45,7 @@ label day1:
     if papyrusMourn:
         menu:
             "Jump to the Building":
-                papyrus "..."
+                jump papyrusGasterConversation
     else:        
         menu:
             "Jump to the Building" if resets != 1:

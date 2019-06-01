@@ -1015,6 +1015,7 @@ label alphysHome:
 
 label endOfDay2:
     if resets > 0:
+        
         call questionsEnd from _call_questionsEnd_2
     
     jump day3
