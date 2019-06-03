@@ -43,17 +43,21 @@ label day1:
     undyne "We have to rescue Frisk!"
 
     if papyrusMourn:
+        $ papyrusMourn = False
         menu:
             "Jump to the Building":
                 jump papyrusGasterConversation
+    elif resets == 1:
+        menu: 
+            "Ahh??!!" :
+                jump titleScreen
     else:        
         menu:
             "Jump to the Building" if resets != 1:
                 show papyrusImg angry at fade:
                     xalign 0.4
                 jump jumpBuilding
-            "Ahh??!!" if resets == 1:
-                jump titleScreen
+            
             #"Ask Sans about creating a Shortcut" if doors:
             #    jump shortcut
 
