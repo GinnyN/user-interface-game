@@ -126,12 +126,11 @@ label torielSchool:
     "Text" "{font=fonts/NewAster.ttf} I'LL ANALYSE THAT BETTER IN THE MORNING.{/font}"
     show papyrusImg coolDude enough
     papyrus "I THINK I JUST READ QUITE ENOUGH"
-    if resets > 0 and not papersPapyrusCreation:
+    if resets > 0:
         show papyrusImg coolDude thinking
         papyrus "..."
         "Text" "{font=fonts/NewAster.ttf} I SPOKE TO SANS ABOUT THAT IDEA THIS MORNING.{/font}"
         show papyrusImg coolDude angry
-        stop music
         papyrus "I KNEW IT"
         "Text" "{font=fonts/NewAster.ttf} HE SEEMS STOKED. I CAN HARDLY BLAME HIM.{/font}"
         "Text" "{font=fonts/NewAster.ttf} I DO NOT HAVE A BROTHER MYSELF, BUT I IMAGINE BEEN ALWAYS WITH AN OLD SKELETON LIKE ME SHOULD NOT BE SOMETHING A YOUNG SKELETON LIKE HIM MUST FIND EXCITING.{/font}" 
@@ -140,9 +139,9 @@ label torielSchool:
         "Text" "{font=fonts/NewAster.ttf} BUT I THINK WE GOT A GREAT ONE.{/font}"
         show papyrusImg coolDude thinking
         papyrus "..."
-        papyrus "I NEED TO TALK ABOUT THIS WITH SANS"
+        papyrus "I WONDER WHAT SANS WOULD THINK ABOUT THIS"
         show papyrusImg coolDude explaining
-        papyrus "BUT WHEN?"
+        papyrus "BUT I THINK I'M GOING TO ASK GASTER FIRST ABOUT THIS"
         $ papersPapyrusCreation = True
     
 return

@@ -46,12 +46,11 @@ define suit = 1
 #Flag Variables
 define doors = False
 define idea = False
-define torielKnows = False
-define asgoreKnows = False
 define pen = False
 define penAtAlphys = False
 define tryWithSans = False
 define papyrusMourn = False
+define tryWithAlphys = False
 define program = False
 define papersPapyrusCreation = False
 define readStats = False
@@ -83,4 +82,4 @@ label resetVariables:
     return
 
 #Define Day Alternatives
-define day2 = False
+define day = 1

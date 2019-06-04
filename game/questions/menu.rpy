@@ -15,14 +15,14 @@ label questionsMenu:
             call decisions from _call_decisions
         "What do I do with this Storage Unit?":
             call pendriveTree
-        "Those Weird Monsters I found":
-            call monstersForest from _call_monstersForest
+        #"Those Weird Monsters I found":
+        #    call monstersForest from _call_monstersForest
         "Political Geography":
             call politicalGeographyTree
-        "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
-            call programmingTree
+        #"I know something I really didn't knew I knew" if papyrusKnowsProgramming:
+        #    call programmingTree
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
-            call foundSomePapers from _call_foundSomePapers
+            call sansPapyrusPast
         #"Demography" if politicalGeography > 0:
         #    call demographics
         "Wait, King Fluffybuns?" if politicalGeography > 0:
@@ -35,8 +35,17 @@ label questionsMenu:
             papyrus "NOTHING I CAN THINK OF RIGHT NOW"
             gaster "VERY WELL"
             return
-    call questionsRepeat
+    call questionsMenu
     return
+
+label sansPapyrusPast:
+    menu:
+        "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
+            call foundSomePapers from _call_foundSomePapers
+        "Return":
+            return
+    return 
+
 
 label pendriveTree:
     menu:
@@ -46,8 +55,14 @@ label pendriveTree:
             call pendriveSans
         "Can you tell me what the problem with your brother?" if pendriveTreeSans > 0:
             call pendriveSansTwo
+        "What about the Royal Scientist?" if pendriveTree > 0:
+            call pendriveAlphys
+        "Are you ok?" if pendriveTreeAlphys > 0:
+            call pendriveAreYouOk
+        "What is Alphys doing now anyways?" if pendriveTreeAlphys > 1:
+            call pendriveAlphysThree
         "Return":
-            call questionsMenu
+            return
     return
 
 label programmingTree:
@@ -56,8 +71,10 @@ label programmingTree:
             call programmingTheory from _call_programmingTheory
         "Maybe I can do something with this programming thing" if programmingWoes2 > 0:
             call programmingMagicTheory from _call_programmingMagicTheory
+        "Then, how do Sans do it?" if programmingWoes2 > 1:
+            call theoryBehind
         "Return":
-            call questionsMenu
+            return
     return
 
 label politicalGeographyTree:
@@ -73,7 +90,7 @@ label politicalGeographyTree:
         "A Mystery" if politicalGeography > 2:
             call aMystery from _call_aMystery
         "Return":
-            call questionsMenu
+            return
     return
 
 label gasterPastTree:
@@ -88,8 +105,10 @@ label gasterPastTree:
             call skeletonKind from _call_skeletonKind
         "Skeleton Creation" if gasterPast > 3:
             call superSoldiers from _call_superSoldiers
+        "I WAS NEVER A CHILD?!" if gasterPast > 4:
+            call noChildhood
         "Return":
-            call questionsMenu
+            return
     return
         
 label fourthWallTree:
@@ -101,7 +120,7 @@ label fourthWallTree:
         "4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
             call wallBreakingStuff2 from _call_wallBreakingStuff2
         "Return":
-            call questionsMenu
+            return
     return 
 
 

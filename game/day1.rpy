@@ -8,7 +8,7 @@ label day1:
     pause(1.0)
     show papyrusImg serious zorder 0 at fade:
         xalign 0.0 ypos 0.0
-    papyrus "ARE YOU SURE THIS IS THE PLACE SANS?"
+    papyrus "I'M SURE THIS IS THE PLACE SANS"
     show sansImg serious zorder 2 at fade:
         xalign 0.3 ypos 0.0
     sans "yes, this must be."

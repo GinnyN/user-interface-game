@@ -7,3 +7,5 @@ define wekufeTree = 0
 define howToTree = 0
 define pendriveTree = 0
 define pendriveTreeSans = 0
+define pendriveTreeAlphys = 0
+define sansPapyrusPast = 0

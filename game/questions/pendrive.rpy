@@ -64,3 +64,78 @@ label pendriveSansTwo:
         $ tryWithSans = True
         $ pendriveTreeSans += 1
     return
+
+label pendriveAlphys:
+    gaster "WHAT'S ABOUT THE ROYAL SCIENTIST?"
+    papyrus "WHO?"
+    gaster "THE ROYAL SCIENTIST"
+    gaster "YOUR FRIEND"
+    gaster "THE SPOUSE OF YOUR OTHER FRIEND"
+    gaster "THE FRIEND WHO SANS MET BEFORE YOU"
+    papyrus "AH YOU MEANT DR ALPHYS!"
+    papyrus "SHE'S NOT THE ROYAL SCIENTIST ANYMORE"
+    gaster "WHAT? WHY?"
+    gaster "THIS MAKES NO SENSE, EVERYBODY HAS AN ACCIDENT"
+    gaster "YOU CANNOT GO AND DO SOMETHING LIKE THAT TO A PROMISING CAREER!"
+    gaster "I'M GOING TO COMPLAIN TO THE KING ABOUT THIS! I..."
+    gaster "I CANNOT GO AND COMPLAIN ABOUT THIS"
+    papyrus "DO YOU NEED A MOMENT?"
+    gaster "NO..."
+    gaster "I..."
+    gaster "I AM FINE"
+    if pendriveTreeAlphys < 1:
+        $ pendriveTreeAlphys += 1
+    return
+
+label pendriveAreYouOk:
+    papyrus "ARE YOU SURE YOU ARE OK?"
+    gaster "IT'S "
+    extend "THAT "
+    extend "FEELING"
+    gaster "YOU KNOW THE ONE"
+    gaster "THE ONE WHEN YOU REALIZE YOU WANT TO HELP SOMEONE BUT YOU ARE COMPLETELY USELESS TO DO IT"
+    papyrus "DO YOU REALLY THINK DR ALPHYS IS GOOD AT SCIENCE?"
+    gaster "YES"
+    gaster "OF COURSE"
+    gaster "VERY, VERY TALENTED INDEED"
+    gaster "SHE BASICALLY REDISCOVERED GOOD CHUNK OF THE THEORY OF DETERMINATION AFTER I..."
+    gaster "SCREW EVERYTHING UP"
+    papyrus "WOWIE!"
+    gaster "I MUST HAVE SOME SORT OF ADMIRATION FOR A WORK LIKE THAT, NO MATTER HOW ACTUALLY..."
+    gaster "FINISHED"
+    papyrus "I GUESS IT WOULD NOT BEEN THAT TERRIBLE IF SHE HAD INFORMED WHAT HAPPENED WHEN ACTUALLY HAPPENED"
+    gaster "THAT'S WHAT I'M SAYING"
+    gaster "PLUS, SHE WAS EXPERIMENTING WITH DYING MONSTERS"
+    gaster "WHAT THEY WERE EVEN EXPECTING TO HAPPEN?"
+    papyrus "NOW YOU ARE SAYING THAT I KINDA SEE TORIEL'S POINT"
+    gaster "IT WAS HER?"
+    gaster "..."
+    gaster "OF COURSE IT WAS HER"
+    if pendriveTreeAlphys < 2:
+        $ pendriveTreeAlphys += 1
+    return
+
+label pendriveAlphysThree:
+    gaster "IN WHAT THEY ARE WASTING HER TALENTS ANYWAY?"
+    papyrus "WHO?"
+    gaster "YOUR FRIEND"
+    gaster "THE ONE WHO DID THE EXPERIMENTS"
+    papyrus "DR ALPHYS?"
+    papyrus "SHE'S WORKING AS AN ARCHIVIST UNDER TORIEL!"
+    gaster "OF COURSE IT HAS TO BE THE QUEEN"
+    papyrus "DR ALPHYS ALWAYS TELLS ME THAT IS DIFFICULT FOR HER TO LEARN THE NEW CRAFT, BUT TORIEL HAS TOLD ME SHE'S GREAT IT AND SHE'S DOING A GREAT JOB"
+    gaster "OH"
+    papyrus "DR ALPHYS IS SO GOOD AT GETTING INFORMATION THAT TORIEL IS ALWAYS ASKING HER ABOUT DIFFERENT STUFF, INCLUDING A LOT OF HUMANS RELATED THINGS"
+    papyrus "APPARENTLY, THE IDEA IS, IF TORIEL IS UNAVAILABLE, DR ALPHYS CAN PERFECTLY REPLACE HER"
+    papyrus "I THINK IT SUITS HER"
+    gaster "LOOK AT THAT"
+    gaster "SO, YOU THINK SHE CAN HELP US"
+    papyrus "DO I THINK THAT?"
+    papyrus "OF COURSE I THINK THAT!"
+    papyrus "I HAVE NO WAY TO KNOW THIS BUT I'M SURE THIS GOING TO BE REALLY EASY FOR HER"
+    papyrus "SHE'S THAT AWESOME"
+    gaster "GO AHEAD MY DEAR PAPYRUS"
+    if pendriveTreeAlphys < 3:
+        $ pendriveTreeAlphys += 1
+        $ tryWithAlphys = True
+    return
