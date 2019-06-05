@@ -1,48 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day1-alt.rpy", line 50, in script
-    gaster "WE CAN TALK ABOUT IF YOU LIKE"
-IndexError: list index out of range
+  File "game/day2.rpy", line 982, in script
+    if pen and tryWithAlphys && not program:
+SyntaxError: invalid syntax (game/day2.rpy, line 982)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day1-alt.rpy", line 50, in script
-    gaster "WE CAN TALK ABOUT IF YOU LIKE"
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 694, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1322, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 1127, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 842, in do_display
-    **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 591, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2690, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3110, in interact_core
-    renpy.audio.audio.interact()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 1066, in interact
-    periodic()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 1019, in periodic
-    six.reraise(exc[0], exc[1], exc[2])
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 997, in periodic_thread_main
-    periodic_pass()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 938, in periodic_pass
-    c.periodic()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 460, in periodic
-    want_pause = self.context.pause or global_pause
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\audio\audio.py", line 269, in get_context
-    mcd = renpy.game.context().music
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\game.py", line 245, in context
-    return contexts[index]
-IndexError: list index out of range
+  File "game/day2.rpy", line 982, in script
+    if pen and tryWithAlphys && not program:
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1807, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1959, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 690, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/day2.rpy, line 982)
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 UserInterface 0.1.0
-Sat Jun 01 13:51:59 2019
+Tue Jun 04 16:35:21 2019

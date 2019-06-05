@@ -38,7 +38,7 @@ label schoolPapyrusRun:
         xalign 1.0 yalign 1.0
     show kidImg scared flip at fade:
         xalign 1.2 yalign 1.0
-    "* UNDYNE!"
+    papyrus "UNDYNE!"
     show studentImg dog scared flip
     show kidImg hiding flip
     show papyrusImg coolDude annoyed flip at fade
@@ -979,10 +979,12 @@ label alphysHome:
     alphys "..."
     show alphysImg casual nostalgic flip
     alphys "If you say so"
-    if pen and not program:
+    if pen and tryWithAlphys and not program:
         $ penAtAlphys = True
         papyrus "DR. ALPHYS, I KNOW YOU ARE BUSY"
         papyrus "BUT I HAVE A PROBLEM ONLY YOU CAN SOLVE"
+        alphys "Me?"
+        alphys "Me?"
         alphys "What do you mean?"
         papyrus "I HAVE HERE THE BLUEPRINTS OF A DETERMINATION ABSORBING MACHINE"
         alphys "How you..."
@@ -990,13 +992,18 @@ label alphysHome:
         papyrus "JUST..."
         papyrus "TRUST ME"
         alphys "Ok..."
-        papyrus "SOMEONE IS TRAPPED THERE"
+        papyrus "SOMEONE IS TRAPPED BEYOND..."
+        papyrus "..."
+        alphys "Beyond..."
+        extend "the darkness?"
+        papyrus "YES!"
         papyrus "IT BECAME ONE WITH EVERYTHING ONCE"
         papyrus "BUT WITH THIS MACHINE IS GETTING THEIR ORIGINAL FORM BACK"
         papyrus "BUT THE PROCESS IS NOT COMPLETE"
         papyrus "CAN YOU SEE IF THERE'S A WAY TO COMPLETE THE PROCESS?"
         alphys "With just the bluprints?"
         papyrus "I DON'T HAVE MORE WITH ME, I'M..."
+        alphys "..."
         alphys "It's going to be a piece of cake"
         papyrus "THANKS!"
         papyrus "JUST KEEP THE THING A SECRET, PLEASE"
@@ -1009,7 +1016,7 @@ label alphysHome:
     show alphysImg casual laugh
     alphys "PAPYRUS!"
 
-    if pen and not program:
+    if pen and tryWithAlphys and not program:
         pause(1)
         alphys "I'm sorry Papyrus"
 

@@ -177,6 +177,7 @@ label startEndingGasterFirstTry:
             gaster "SANS... MY DEAR BOY..."
             gaster "LET'S GO BACK"
             gaster "WE HAVE A LOT TO THINK AND CRY BEFORE ANYTHING"
+            jump neutralEndingGaster
             
     
 label resetOrEndingFirstTry:

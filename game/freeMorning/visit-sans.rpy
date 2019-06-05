@@ -26,7 +26,7 @@ label checkSans:
         sans "catch the stick, catch the stick"
         papyrus "OH! A STICK!"
         "Sans throws the stick and Papyrus leave the papers behind so he can catch them"
-        sans "sometimes i'm glad i used some atributes of a dog"
+        sans "sometimes i'm glad he's kind of a dog"
         papyrus "CURSES! HE GOT ME!"
         papyrus "BUT THIS IS NOT DONE YET!"
         papyrus "HOMEWORK GRABING ATTACK!!!"
@@ -45,7 +45,7 @@ label checkSans:
         sans "...."
         sans "w. d. gaster is our dad"
         papyrus "HE NEVER TOLD ME THAT"
-        sans "he doesn't like the term, because he created us in regeneration tubes"
+        sans "he doesn't like the term, because he doesn't like parents"
         sans "those probable are notes from he decided to create either of us"
         papyrus "BUT WHY NOBODY ELSE REMEMBER HIM?"
         sans "you shouldn´t remember him, only me"
@@ -56,6 +56,7 @@ label checkSans:
         sans "but how he knows anything about gaster?"
         sans "something weird is happening"
         $ gasterPapyrusSansDad = True
+        $ papersPapyrusCreation = False
     elif tryWithSans:
         papyrus "I HAVE TO TRY GET HIM TO HELP US"
         papyrus "I KNOW THIS IS USELESS, BUT I PROMISE THIS TO GASTER!"
