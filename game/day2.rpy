@@ -1,4 +1,6 @@
 label day2:
+    
+    $ day = 2
     #$ if day2:
     #    jump alternative
 

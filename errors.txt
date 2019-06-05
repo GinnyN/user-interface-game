@@ -2,9 +2,18 @@
 errors listed below, and try again.
 
 
+<<<<<<< Updated upstream
 File "game/day1.rpy", line 52: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
     "Ahh??!!" 
               ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
 Sun Jun 02 21:47:33 2019
+=======
+The label foundSomePapers is defined twice, at
+  File "game/questions/programmingWoes.rpy", line 86 and
+  File "game/questions/sansPapyrusPast.rpyc", line 1.
+
+Ren'Py Version: Ren'Py 7.2.2.491
+Tue Jun 04 23:21:07 2019
+>>>>>>> Stashed changes

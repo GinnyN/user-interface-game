@@ -55,13 +55,6 @@ label displayMenuFreeMorning:
                 papyrus "THAT'S A GOOD IDEA"
                 call displayMenuFreeMorning
             else:
-                papyrus "DR ALPHYS SAID SHE WAS WORKING ON SOMETHING IMPORTANT"
-                show papyrusImg coolDude delight
-                papyrus "MAYBE IS A NEW KIND OF PUZZLE!"
-                show papyrusImg coolDude thinking
-                papyrus "OK, MAYBE NOT"
-                show papyrusImg coolDude delight
-                papyrus "BUT SHOULD BE INTERESTING!"
                 $ visitAlphys = True
                 call visitAlphys from _call_visitAlphys
         
