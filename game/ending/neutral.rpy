@@ -110,7 +110,7 @@ label neutralEndingGaster:
     narrator "YOU DID WHAT YOU COULD"
     narrator "AND THAT'S MORE THAN FINE"
     nvl clear
-    narrator "THANKS YOU"
+    narrator "THANK YOU"
     nvl clear
     ""
     return
