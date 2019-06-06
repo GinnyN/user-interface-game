@@ -35,6 +35,16 @@ label questionsMenu:
             papyrus "NOTHING I CAN THINK OF RIGHT NOW"
             gaster "VERY WELL"
             return
+        "Reset" if resetFromQuestionMenu:
+            gaster "ARE YOU SURE YOU WANT TO RESET?"
+            menu: 
+                "Yes":
+                    gaster "WELL THEN"
+                    $ resets += 1
+                    jump day1
+                "No":
+                    gaster "VERY WELL"
+                    gaster "BE CAREFUL WITH CLICKING NEXT TIME"
     call questionsMenu
     return
 
@@ -61,6 +71,8 @@ label pendriveTree:
             call pendriveAreYouOk
         "What is Alphys doing now anyways?" if pendriveTreeAlphys > 1:
             call pendriveAlphysThree
+        "Did Alphys said she needs more time?" if alphysFailStateBoleean and pendriveTreeAlphys > 2:
+            call pendriveAlphysFailState
         "Return":
             return
     return

@@ -139,3 +139,44 @@ label pendriveAlphysThree:
         $ pendriveTreeAlphys += 1
         $ tryWithAlphys = True
     return
+
+label pendriveAlphysFailState:
+    papyrus "DID SHE SAID SHE NEEDS MORE TIME?"
+    gaster "WHAT I DID UNDERSTAND FROM WHAT SHE SAID"
+    gaster "APPARENTLY THE DAY YOU GAVE HER THE FILES WAS NOT IDEAL TO WORK IN A PROGRAM TO ACCELERATE THIS PROCESS"
+    papyrus "SO, THEN, WHAT WE GOING TO DO?"
+    gaster "YOU HAVE TO FIND A MOMENT DURING DAY 2 OF THE LOOP TO GIVE THE FILES TO HER"
+    papyrus "BUT..."
+    papyrus "I'M ALWAYS SUPER DISTRACTED DURING THE 2ND DAY"
+    papyrus "I EVEN GET KINDA DRUNK FOR A MOMENT AND THAT SO NOT ME"
+    papyrus "IN WHICH MOMENT I CAN DO IT?"
+    gaster "I'M NOT SURE ABOUT THAT PAPYRUS"
+    gaster "I'M SURE MUST BE SIMPLE WAY TO SOLVE THIS PUZZLE, BUT IT'S MUST BE ON THE SECOND DAY"
+    gaster "MONSTERS ARE A FICKLE BUNCH"
+    gaster "EVEN IF YOU GIVE HER THIS DURING DAY 2, THERE'S NOT GUARANTEE IS GOING TO WORK"
+    papyrus "WOWZIE"
+    if day == 1:
+        papyrus "WHAT ABOUT IF I GO NOW?"
+        gaster "LET'S ME CHECK"
+        pause(2.0)
+        gaster "THEY ARE SLEEPING"
+        papyrus "UNDYNE IS GOING TO SENT MY HEAD IN A BOX TO SANS IF I GO NOW"
+        gaster "AFTER WHAT HAPPENED TODAY?"
+        papyrus "YES!"
+        gaster "IF YOU SAY SO"
+    papyrus "..."
+    papyrus "OK, BUT IF I FAIL DURING THE 2ND DAY?"
+    papyrus "I WILL NEED TO LIVE THE NEXT 2 DAYS BEFORE TRYING AGAIN?"
+    gaster "I CANNOT SENT YOU BACK TO ANY MOMENT EXCEPT WHEN YOU WERE ABOUT TO SAVE YOUR FRIEND, BUT"
+    papyrus "BUT?"
+    gaster "I CAN TRIGGER IT AT ANY MOMENT ACTUALLY..."
+    papyrus "YOU COULD HAVE DONE THAT SINCE THE BEGINNING"
+    gaster "OF COURSE..."
+    papyrus "WELL, YES, THIS IS THE FIRST TIME WE HAVE A TIME CONSTRAIN TO THE PLAN..."
+    papyrus "JUST PUT THEM ON THE OPTIONS"
+    $ resetFromQuestionMenu = True
+    gaster "DONE"
+    papyrus "THANK YOU!"
+    if pendriveTreeAlphys < 4:
+        $ pendriveTreeAlphys += 1
+    return

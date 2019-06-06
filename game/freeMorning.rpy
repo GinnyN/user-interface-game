@@ -51,7 +51,7 @@ label displayMenuFreeMorning:
                 papyrus "YOU RIGHT"
                 papyrus "SHE PROBABLY HAD ALREADY DONE ALL THE WORK"
                 papyrus "AND SHE'S SLEEPING RIGHT NOW"
-                gaster "I'LL RECOMEND VISIT SOMEONE ELSE"
+                gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
                 papyrus "THAT'S A GOOD IDEA"
                 call displayMenuFreeMorning
             else:

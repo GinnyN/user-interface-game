@@ -1,24 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day2.rpy", line 982, in script
-    if pen and tryWithAlphys && not program:
-SyntaxError: invalid syntax (game/day2.rpy, line 982)
+  File "game/day4.rpy", line 77, in script call
+    call alphysTalksToSans
+  File "game/day1.rpy", line 513, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 3, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 13, in script
+    menu:
+  File "game/questions/menu.rpy", line 38, in <module>
+    "Reset" if resetFromQuestionMenu:
+NameError: name 'resetFromQuestionMenu' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day2.rpy", line 982, in script
-    if pen and tryWithAlphys && not program:
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1807, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1959, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 690, in py_compile
-    raise e
-SyntaxError: invalid syntax (game/day2.rpy, line 982)
+  File "game/day4.rpy", line 77, in script call
+    call alphysTalksToSans
+  File "game/day1.rpy", line 513, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 3, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 13, in script
+    menu:
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1609, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 943, in menu
+    condition = renpy.python.py_eval(condition)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1961, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1954, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/questions/menu.rpy", line 38, in <module>
+    "Reset" if resetFromQuestionMenu:
+NameError: name 'resetFromQuestionMenu' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 UserInterface 0.1.0
-Tue Jun 04 16:35:21 2019
+Wed Jun 05 23:43:27 2019

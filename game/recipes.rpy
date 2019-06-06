@@ -51,6 +51,8 @@ define penAtAlphys = False
 define tryWithSans = False
 define papyrusMourn = False
 define tryWithAlphys = False
+define alphysFailState = False
+define alphysFailStateBoleean = False
 define program = False
 define papersPapyrusCreation = False
 define readStats = False
@@ -62,6 +64,7 @@ define whoRescueMauricio = False
 #Gaster's Dialogue Tree
 define gasterPapyrusSansDad = False
 define papyrusKnowsProgramming = False
+define resetFromQuestionMenu = False
 
 #Free Mornings
 define helpedToriel = False
@@ -72,6 +75,7 @@ define visitAlphys = False
 define visitFrisk = False
 
 label resetVariables:
+    $ day = 1
     $ helpedToriel = False
     $ metAsgore = False
     $ visitSans = False
@@ -79,6 +83,8 @@ label resetVariables:
     $ visitAlphys = False
     $ visitFrisk = False
     $ whoRescueMauricio = False
+    $ alphysFailState = False
+    $ penAtAlphys = False
     return
 
 #Define Day Alternatives
