@@ -3,12 +3,6 @@ label questionsEnd:
     call questionsMenu
     return
 
-label questionsRepeat:
-    gaster "WELL THEN"
-    gaster "SOMETHING ELSE ARE YOU CURIOUS ABOUT?"
-    call questionsMenu
-    return
-
 label questionsMenu:
     menu:
         "This is a time loop, right?":
@@ -52,6 +46,8 @@ label sansPapyrusPast:
     menu:
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
             call foundSomePapers from _call_foundSomePapers
+        "Why did you created us?" if sansPapyrusPast > 0:
+            call sansWantsABrother
         "Return":
             return
     return 
