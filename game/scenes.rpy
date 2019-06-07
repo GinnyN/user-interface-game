@@ -1,6 +1,6 @@
 #background
-image black = Solid("#000000")
-image mistColor = Solid("#3f575f")
+image black = "#000000"
+image mistColor = "#3f575f"
 image lights = im.FactorScale("background/lights.png",3.0)
 
 #Cinematic Scenes

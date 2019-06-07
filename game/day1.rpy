@@ -74,6 +74,7 @@ label jumpBuilding:
     pause(0.4)
 
 label insideBuilding:
+    scene black with dissolve
     scene day1 scene2 with dissolve:
         xalign 0.0
         linear 5 xalign 0.7

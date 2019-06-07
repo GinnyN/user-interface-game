@@ -16,4 +16,4 @@ define dogamy = Character("Dogamy", color="#8888FF", what_prefix="* ")
 define dogaressa = Character("Dogaressa", color="#FF8888", what_prefix="* (", what_suffix=")")
 define muffet = Character("Muffet", color="#FF6666", what_prefix="* ")
 
-define narrator = Character(' ', kind=nvl, color="#ffffff")
+#define narrator = Character(' ', kind=nvl, color="#ffffff")
