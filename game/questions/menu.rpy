@@ -1,4 +1,10 @@
 label questionsEnd:
+    scene forest with dissolve
+    show papyrusImg neutral at fade:
+        xpos -0.1
+    show gaster trapped neutral flip at fade:
+        xpos 0.4
+    play music "music/gaster theme.MP3" fadein 1
     gaster "THEN, MY DEAR PAPYRUS, THERE'S SOMETHING YOU WANT TO TALK WITH ME?"
     call questionsMenu
     return
@@ -26,8 +32,13 @@ label questionsMenu:
         "4th Wall Breaking Stuff":
             call fourthWallTree
         "Nothing Else":
+            show papyrusImg uhh
             papyrus "NOTHING I CAN THINK OF RIGHT NOW"
+            show gaster trapped sorry flip 
             gaster "VERY WELL"
+            show gaster trapped neutral flip 
+            gaster "GOOD NIGHT MY DEAR PAPYRUS"
+            stop music
             return
         "Reset" if resetFromQuestionMenu:
             gaster "ARE YOU SURE YOU WANT TO RESET?"

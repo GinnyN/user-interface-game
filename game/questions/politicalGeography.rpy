@@ -1,4 +1,5 @@
 label politicalGeography:
+    show papyrusImg neutral
     papyrus "THERE'S SOMETHING YOU WANT TO KNOW?"
     gaster "OH!"
     gaster "WELL..."

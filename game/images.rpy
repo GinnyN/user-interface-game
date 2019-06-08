@@ -159,6 +159,8 @@ image gaster trapped dissapointed = "gaster/trapped/dissapointed.png"
 image gaster trapped dissapointed flip = im.Flip("gaster/trapped/dissapointed.png", horizontal=True)
 image gaster trapped explain = "gaster/trapped/explain.png"
 image gaster trapped explain flip = im.Flip("gaster/trapped/explain.png", horizontal=True)
+image gaster trapped maybe = "gaster/trapped/maybe.png"
+image gaster trapped maybe flip = im.Flip("gaster/trapped/maybe.png", horizontal=True)
 image gaster trapped neutral = "gaster/trapped/neutral.png"
 image gaster trapped neutral flip = im.Flip("gaster/trapped/neutral.png", horizontal=True)
 image gaster trapped ok = "gaster/trapped/ok.png"

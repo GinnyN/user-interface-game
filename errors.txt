@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 351: keyword argument u'xpos' appears more than once in a hbox statement.
-    xpos 0.1
-        ^
+File "game/questions/pendrive.rpy", line 137: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    papyrus "ARE YOU SURE YOU ARE OK?"
+    ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Fri Jun 07 16:53:56 2019
+Fri Jun 07 22:27:47 2019

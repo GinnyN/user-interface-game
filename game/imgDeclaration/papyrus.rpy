@@ -25,6 +25,8 @@ image papyrusImg nervious = "papyrus/sorry.png"
 image papyrusImg nervious flip = im.Flip("papyrus/sorry.png", horizontal=True)
 image papyrusImg neutral = "papyrus/neutral.png"
 image papyrusImg neutral flip = im.Flip("papyrus/neutral.png", horizontal=True)
+image papyrusImg nope = "papyrus/nope.png"
+image papyrusImg nope flip = im.Flip("papyrus/nope.png", horizontal=True)
 image papyrusImg scared = "papyrus/scared.png"
 image papyrusImg scared flip = im.Flip("papyrus/scared.png", horizontal=True)
 image papyrusImg serious = "papyrus/serious.png"
