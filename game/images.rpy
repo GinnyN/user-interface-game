@@ -169,3 +169,5 @@ image gaster trapped proud = "gaster/trapped/proud.png"
 image gaster trapped proud flip = im.Flip("gaster/trapped/proud.png", horizontal=True)
 image gaster trapped sorry = "gaster/trapped/sorry.png"
 image gaster trapped sorry flip = im.Flip("gaster/trapped/sorry.png", horizontal=True)
+image gaster trapped oh = "gaster/trapped/oh.png"
+image gaster trapped oh flip = im.Flip("gaster/trapped/oh.png", horizontal=True)

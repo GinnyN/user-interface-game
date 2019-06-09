@@ -1,36 +1,109 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 415, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 415, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 434, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "game/day1.rpy", line 534, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 59, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 59, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 59, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 59, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 23, in script call
+    call pendriveTree
+  File "game/questions/menu.rpy", line 84, in script call
+    call pendriveAreYouOk
+  File "game/questions/wallBreakingStuff.rpy", line 63, in script
+    wdGaster "THIS IS A TEST TO SEE IF I CAN REALLY DO IT"
+FreetypeError: 38: invalid charmap handle
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00keymap.rpy", line 415, in script
-    python hide:
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 900, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00keymap.rpy", line 415, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 434, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\loadsave.py", line 398, in save
-    roots = renpy.game.log.freeze(None)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1827, in freeze
-    self.complete(False)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1457, in complete
-    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "game/day1.rpy", line 534, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 59, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 59, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 59, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 59, in script call
+    call questionsMenu
+  File "game/questions/menu.rpy", line 23, in script call
+    call pendriveTree
+  File "game/questions/menu.rpy", line 84, in script call
+    call pendriveAreYouOk
+  File "game/questions/wallBreakingStuff.rpy", line 63, in script
+    wdGaster "THIS IS A TEST TO SEE IF I CAN REALLY DO IT"
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 694, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1322, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 1127, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2690, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3174, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2086, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 516, in renpy.display.render.render_screen
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 669, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 1124, in render
+    st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\text.py", line 1989, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\text.py", line 619, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\text.py", line 242, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\font.py", line 695, in get_font
+    face = load_face(fn)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\font.py", line 638, in load_face
+    rv = ftfont.FTFace(font_file, index, orig_fn)  # @UndefinedVariable
+  File "ftfont.pyx", line 187, in renpy.text.ftfont.FTFace.__init__
+FreetypeError: 38: invalid charmap handle
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
- 
-Fri Jun 07 16:54:31 2019
+User Interface 0.2
+Sat Jun 08 09:55:03 2019

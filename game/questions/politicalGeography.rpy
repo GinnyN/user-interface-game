@@ -1,21 +1,34 @@
 label politicalGeography:
     show papyrusImg neutral
     papyrus "THERE'S SOMETHING YOU WANT TO KNOW?"
+    show gaster trapped oh flip
     gaster "OH!"
     gaster "WELL..."
+    show gaster trapped dissapointed flip
     gaster "I'M QUITE CONFUSED ABOUT THE CURRENT..."
     gaster "MAKE UP OF THE KINGDOM..."
+    show gaster trapped dissapointed
     gaster "I HAVEN'T SEEN ANYTHING BEYOND THE SUNRISE WHEN THE MONSTERS GOT OUT..."
+    show gaster trapped dissapointed flip
+    show papyrusImg delight
     papyrus "OH, OK!"
+    show papyrusImg explainingPointing
+    show gaster trapped neutral flip
     papyrus "THIS IS MOUNT EBOTT"
     papyrus "BEYOND THE MOUNTAIN THERE'S A HUMAN CITY"
+    show papyrusImg confused
     papyrus "AND APARENTLY THEIR... MAYOR WAS THE OWNER OF THE LAND..."
+    show papyrusImg neutral
     papyrus "AND THEN KING FLUFFYBUNS BROUGHT THE LAND FROM THEM"
     papyrus "WITH THE GOLD OF THE KINGDOM"
+    show papyrusImg delight
     papyrus "SO NOW WE LIVE IN THE NEW KINGDOM OF MONSTERS"
+    show gaster trapped neutral flip
     gaster "LET ME GUESS"
     gaster "THAT'S EXACTLY THE NAME OF THE KINGDOM"
+    show papyrusImg uhh
     papyrus "YESS???"
+    show gaster trapped dissapointed flip
     gaster "I REALLY DON'T KNOW IF THAT'S GOOD OR BAD ABOUT THE KING TO BE HONEST"
     if politicalGeography == 0:
         $ politicalGeography = politicalGeography + 1
