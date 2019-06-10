@@ -131,6 +131,8 @@ label gasterPastTree:
             call superSoldiers from _call_superSoldiers
         "I WAS NEVER A CHILD?!" if gasterPast > 4:
             call noChildhood
+        "Skeleton Disco Wave" if sansPapyrusPast > 2:
+            call skeletonWave
         "Return":
             return
     return
