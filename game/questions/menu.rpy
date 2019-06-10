@@ -2,15 +2,14 @@ label questionsEnd:
     stop music fadeout 1
     scene black with dissolve
     pause(1.0)
+    play music "music/another him.MP3" fadein 1
     scene mistColor with dissolve
-    pause(0.3)
     show mist at fade
+    pause(1.0)
     show papyrusImg neutral at fade:
         xpos -0.1
     show gaster trapped neutral flip at fade:
         xpos 0.4
-    $ renpy.music.set_volume(0.2)
-    play music "music/another him.MP3" fadein 1
     gaster "THEN, MY DEAR PAPYRUS, THERE'S SOMETHING YOU WANT TO TALK WITH ME?"
     call questionsMenu
     return

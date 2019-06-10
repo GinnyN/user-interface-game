@@ -5,6 +5,8 @@ image papyrusImg annoyed = "papyrus/annoyed.png"
 image papyrusImg annoyed flip = im.Flip("papyrus/annoyed.png", horizontal=True)
 image papyrusImg angry = "papyrus/angry.png"
 image papyrusImg angry flip = im.Flip("papyrus/angry.png", horizontal=True)
+image papyrusImg checkThis = "papyrus/checkThis.png"
+image papyrusImg checkThis flip = im.Flip("papyrus/checkThis.png", horizontal=True)
 image papyrusImg confused = "papyrus/confused.png"
 image papyrusImg confused flip = im.Flip("papyrus/confused.png", horizontal=True)
 image papyrusImg curious = "papyrus/curious.png"

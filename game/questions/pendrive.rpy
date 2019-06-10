@@ -119,9 +119,12 @@ label pendriveAlphys:
     show gaster trapped angry flip
     gaster "YOU CANNOT GO AND DO SOMETHING LIKE THAT TO A PROMISING CAREER!"
     hide gaster
+    play sound "music/fx/steps.wav"
     gaster "I'M GOING TO COMPLAIN TO THE KING ABOUT THIS! I..."
     show gaster trapped dissapointed flip at fade:
         xpos 0.4
+    play sound "music/fx/steps.wav"
+    pause(0.5)
     gaster "I CANNOT GO AND COMPLAIN ABOUT THIS"
     show papyrusImg worried
     papyrus "DO YOU NEED A MOMENT?"
