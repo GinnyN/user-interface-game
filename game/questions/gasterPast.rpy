@@ -258,4 +258,5 @@ label noChildhood:
   play music "music/another him.MP3" fadein 1
   if gasterPast == 6:
     $ gasterPast = gasterPast + 1
+  return
   
