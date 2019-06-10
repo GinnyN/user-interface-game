@@ -255,6 +255,7 @@ label noChildhood:
   gaster "I'M SURE NEITHER SANS OR THE KING KNOWS ABOUT IT"
   papyrus "THEN WE NEVER HAD THIS CONVERSATION"
   gaster "GOOD"
+  play music "music/another him.MP3" fadein 1
   if gasterPast == 6:
     $ gasterPast = gasterPast + 1
   
