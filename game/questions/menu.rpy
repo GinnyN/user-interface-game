@@ -64,6 +64,8 @@ label sansPapyrusPast:
             call foundSomePapers from _call_foundSomePapers
         "Why did you created us?" if sansPapyrusPast > 0:
             call sansWantsABrother
+        "Skeleton Disco Wave" if sansPapyrusPast == 2:
+            call skeletonWave
         "Return":
             return
     return 
@@ -131,8 +133,6 @@ label gasterPastTree:
             call superSoldiers from _call_superSoldiers
         "I WAS NEVER A CHILD?!" if gasterPast > 4:
             call noChildhood
-        "Skeleton Disco Wave" if sansPapyrusPast > 2 and gasterPast == 6:
-            call skeletonWave
         "Return":
             return
     return

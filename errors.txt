@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/questions/menu.rpy", line 12: expected statement.
-    renpy.music.set_volume(0.7)
-                               ^
+File "game/questions/gasterPast.rpy", line 212: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sat Jun 08 09:45:16 2019
+Mon Jun 10 20:41:52 2019

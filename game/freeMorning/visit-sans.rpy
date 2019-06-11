@@ -1,5 +1,5 @@
 label checkSans:
-    if papersPapyrusCreation == True:
+    if False:# papersPapyrusCreation == True:
         papyrus "SANS IS NOT HERE"
         papyrus "WHY?!"
         papyrus "I GUESS HE WILL APPEAR TO MAKE JOKES AT MY EXPENSE IN ANY SECOND"
@@ -191,6 +191,7 @@ label checkSans:
 return
 
 label papyrusAskSans:
+    $ tryWithSans = False
     papyrus "OK..."
     papyrus "I BETTER DO THIS..."
     papyrus "HERE I GO..."
@@ -201,7 +202,7 @@ label papyrusAskSans:
     papyrus "OH..."
     papyrus "LET'S ME GET YOU SOME FOR YOU"
     papyrus "DO YOU WANT MILK?"
-    sans "oh sure. bring me milk"
+    sans "oh sure. milk is fine"
     "*Papyrus goes away*"
     gaster "CAN YOU HEAR ME MY DEAR SANS?"
     pause(1.0)
