@@ -126,21 +126,30 @@ label gasterCreation:
   return
 
 label skeletonKind:
+  show papyrusImg uhh
   papyrus "OK"
   papyrus "AHH..."
   papyrus "IF YOU DON'T CREATE SKELETONS LIKE THE OTHER MONSTERS..."
+  show papyrusImg annoyed
   papyrus "HOW... YOU DO IT... THEN???"
+  show gaster trapped sad flip
   gaster "THE HISTORY OF US THE SKELETON KIND IS QUITE INTERESTING"
   gaster "WE ACTUALLY ARE A WEIRD KIND OF FAILED EXPERIMENT"
+  show gaster trapped maybe flip
   gaster "THAT AT THE END WAS QUITE USEFUL ANYWAY"
   papyrus "WHAT."
+  show gaster trapped neutral flip
   gaster "THE NAME OF THE MONSTER ACREDITED WITH THE ORIGINAL SPELL WAS LOST TO THE ANNALS OF TIME BUT"
   gaster "THE LEGEND SAYS THEY WERE INSPIRED BY THE HUMAN REMAINS FOUND IN AN ABANDONED HUMAN PRISON LONG TIME AGO"
   papyrus "WAIT."
   gaster "THE ORIGINAL IDEA IT SEEMS TO BE THAT, IF YOU CREATE A MONSTER USING HUMAN REMAINS"
   gaster "WILL HAVE THE MAGIC CAPABILITIES OF A MONSTER AND THE PHYSICAL STRENGTH OF A HUMAN"
+  show papyrusImg surprised
   papyrus "HUMANS HAVE SKELETONS INSIDE THAT FLESHY BODY OF THEM?!"
+  show gaster trapped oh flip
   gaster "I KNOW, CRAZY"
+  show papyrusImg neutral
+  show gaster trapped neutral flip
   gaster "THE SPELL WAS REFINED DURING THE YEARS AND NOW YOU DON'T NEED HUMANS REMAINS TO CREATE SKELETONS"
   gaster "JUST THE SPELL"
   gaster "THE ACTUAL PROBLEM WITH A SKELETON WAS, WHILE OUR MAGIC CAPABILITIES ARE EQUAL OR MAYBE EVEN BETTER THAN ANOHTER KIND OF MONSTER IN AVERAGE"
@@ -149,7 +158,9 @@ label skeletonKind:
   gaster "SO, WHILE THE EXPERIMENT COULD BE CONSIDERED A FAILURE"
   gaster "WE TURN OUT TO BE QUITE USEFUL ANYWAY AND WORTH KEEPING AROUND"
   gaster "ESPECIALLY WHEN YOU NEED SOLDIERS IN A HURRY"
+  show papyrusImg annoyed
   papyrus "THAT WASN'T AN ANSWER TO MY QUESTION"
+  show gaster trapped ok flip
   gaster "YOU NEED TO START SINCE THE BEGINNING MY DEAR PAPYRUS"
   if gasterPast == 3:
     $ gasterPast = gasterPast + 1
@@ -157,41 +168,65 @@ label skeletonKind:
   return
 
 label superSoldiers:
+  show papyrusImg annoyed
   papyrus "ARE YOU SAYING THAT SKELETONS WERE LIKE THE SUPER SOLDIERS OF MONSTER KIND?"
+  show gaster trapped oh flip
   gaster "NO... WE WEREN..."
   gaster "..."
+  show gaster trapped dissapointed flip
   gaster "NOW YOU ARE SAYING THAT IT MAKE SENSE..."
+  show gaster trapped sad flip
   gaster "BUT, THE SPELL DOES NOT CREATE CONSISTENT RESULTS, AND SKELETONS ARE AS VARIED AS ANY OTHER MONSTER KIND"
+  show gaster trapped neutral flip
   gaster "WHEN THE FIRST SKELETONS WERE CREATED, THEY LEARNED HOW TO DO THE SPELL AND STARTED TO BE A NORMAL PART OF THE MAKEUP OF OUR PEOPLE"
+  show gaster trapped angry flip
   gaster "AND, UNLIKE THE GROSSEST SPELL IN EXISTENCE"
+  show papyrusImg delight
   papyrus "I HEARD IS KINDA FUN"
   gaster "DON'T... EVEN... THINK ABOUT IT..."
   gaster "..."
+  show gaster trapped dissapointed flip
   gaster "WHERE WAS I?"
+  show papyrusImg neutral
   papyrus "YOU WERE SAYING THAT THE SPELL TO CREATE SKELETONS WAS BETTER THAN SEX"
+  show gaster trapped explain flip
   gaster "OF COURSE IT IS! DON'T EVEN MENTION IT!"
+  show gaster trapped sad flip
   gaster "1- IT'S NOT GROSS"
   gaster "2- IT'S ONLY NEEDS 1 MONSTER"
+  show gaster trapped maybe flip
   gaster "(WHILE I HAVE TO CONCEDE IT'S NEEDS A POWERFUL AND EDUCATED ONE)"
+  show gaster trapped sad flip
   gaster "AND 3- IT DOESN'T CREATE A USELESS SMALL MONSTER YOU HAVE TO KEEP EDUCATING UNTIL THEY BECOME USEFUL"
+  show gaster trapped proud flip
   gaster "BUT A FULLY INDEPENDENT AND FUNCTIONAL ADULT SKELETON" 
+  show papyrusImg surprised
   papyrus "WAIT, I NEVER WAS A CHILD?"
+  show gaster trapped oh flip
   gaster "WHAT ARE YOU TALKING ABOUT?"
+  show papyrusImg surprised flip
   papyrus "I DIDN'T HAVE A CHILDHOOD?"
   gaster "WHY DO YOU SOUND SO DISTRESSED, I DON'T GET IT"
+  show papyrusImg surprised
   papyrus "AAAHHHHH!!!!"
   if gasterPast == 4:
     $ gasterPast = gasterPast + 1
   return
 
 label noChildhood:
+  show papyrusImg surprised
   papyrus "WAS I NEVER BEEN A CHILD?!"
+  show gaster trapped oh flip
   gaster "I STILL DON'T SEE THE PROBLEM..."
   papyrus "HOW THAT IS NOT A PROBLEM?"
+  show gaster trapped angry flip
   gaster "BEEN A KID IS THE WORST"
+  show papyrusImg annoyed
   papyrus "AH?"
   gaster "YOU ARE BORN, BEEN ABLE TO DO ABSOLUTLY NOTHING AND THE ONLY THING YOU CAN DO IS TRUST IN WHOEVER DECIDED TO TAKE CARE OF YOU"
+  show gaster trapped sad flip
   gaster "IF THEY ARE GOOD PEOPLE AND BEEN ABLE TO DEAL WITH THEIR OWN PROBLEMS WITH ENOUGH STABILITY, YOU'RE FINE"
+  show gaster trapped angry flip
   gaster "THEY FAIL IN ANY OF THOSE CATEGORIES AND YOUR LIFE BECOMES A LIVING HELL UNTIL YOU GET OUT"
   gaster "AND ANYWAY YOU HAVE TO LEARN TO LIVE WITH THE SCARS OF THEIR MISTAKES!"
   papyrus "THAT'S A STRONG OPINION"
@@ -199,10 +234,12 @@ label noChildhood:
   gaster "'HOW YOU DARE TO DO THIS TO ME I'M YOUR MOTHER/FATHER/PARENTAL FIGURE'"
   gaster "AND I'M LIKE"
   gaster "'I WANT TO PUNCH YOU IN THE FACE!'"
+  show papyrusImg nope
   papyrus "HOW MANY PARENTS DID YOU PUNCH IN THE FACE?"
   gaster "NONE"
   gaster "I WOULD MAKE THE LIFE OF THOSE KIDS WAY WORSE"
-  gaster "BUT I GOT SOME OF THEM INTERESTED IN SCIENCE, THAT WAS, SOMETHING HELPFUL"
+  gaster "BUT YOU GUYS GOT SOME OF THEM INTERESTED IN SCIENCE, THAT WAS, SOMETHING HELPFUL"
+  show papyrusImg annoyed
   papyrus "OH!"
   papyrus "..."
   if gasterPast == 5:

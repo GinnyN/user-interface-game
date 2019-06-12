@@ -116,45 +116,67 @@ label sansWantsABrother:
   return
 
 label skeletonWave:
+  show papyrusImg uhh
   papyrus "THEN WE ARE LIKE, THE 2ND WAVE OF SKELETONS?"
+  show gaster trapped maybe flip
   gaster "IF YOU MEAN WE ARE THE SKELETONS CREATED AFTER THE EXTINCTION OF THE 1ST TRIBE, THEN YOU ARE CORRECT"
+  show papyrusImg surprised happy
   papyrus "THEN WE SHOULD USE AFROS AND ELEPHANT PANTS!"
+  show gaster trapped angry flip
   gaster "HAVE YOU BEEN WATCHING HUMAN MEDIA?"
+  show papyrusImg delight
   papyrus "OF COURSE!"
+  show papyrusImg confused
   papyrus "I MEAN, I LOVE MY SEXY RECTANGLE, BUT HE CAN PRODUCE CERTAIN AMOUNT OF CONTENT IN A YEAR..."
+  show gaster trapped dissapointed flip
   gaster "I WILL NOT ASK ANY FURTHER"
   gaster "..."
+  show gaster trapped neutral flip
   gaster "WHILE I'M CURIOUS OF WHY YOU AREN'T THAT PERTURBED OVER THE FACT THAT HUMANS DESTROYED ALL OF THE ORIGINAL SKELETONS"
+  show papyrusImg neutral
   papyrus "WE WERE ALWAYS TOLD THE HUMANS DECIMATED THE MONSTERS"
   papyrus "I ASSUMED SOMETHING AMONG THOSE LINES HAPPENED WHEN YOU SAID 'SKELETON TRIBE'"
   papyrus "THE MONSTERS HAVE NOT ORGANIZED IN SPECIES TRIBES IN CENTURIES I BELIEVE"
   papyrus "AND FRISK AND I CONFIRMED WE WERE THE ONLY SKELETONS AROUND"
   gaster "VERY WELL"
+  show gaster trapped sad flip
   gaster "AS INSIGHTFUL AS USUAL"
   papyrus "WHAT I'M WONDERING THOUGH, IF YOU HAVE EVER MET ANOTHER SKELETON APART OF SANS AND ME"
   gaster "I..."
   gaster "HAVEN'T"
+  show gaster trapped neutral flip
   gaster "HOW DID YOU THOUGHT OF THAT?"
   papyrus "I ASSUMED YOU WANTED TO CREATE A SKELETON OF ANOTHER GENDER BECAUSE YOU WANTED TO MEET AN SKELETON OF ANOTHER GENDER"
   papyrus "PLUS, YOU ALWAYS SAID YOU WERE CREATED AFTER THE TRIBE WAS NO MORE FOR BEEN PART OF A NEW UNIT IN THE WAR"
+  show papyrusImg explainingPointing
   papyrus "MEANING THAT ALL THE SKELETON CREATED WENT TO FIGHT, EXCEPT YOU"
   gaster "AHHH..."
   gaster "VERY WELL"
+  show papyrusImg surprised happy
   papyrus "BUT NOW I THINK ABOUT IT, MAYBE YOU FAIL IN CREATING A GIRL SKELETON BECAUSE YOU NEVER MET A GIRL SKELETON"
+  show gaster trapped dissapointed flip
   gaster "I DON'T THINK SO..."
   gaster "IT MIGHT HELP THOUGH"
+  show papyrusImg delight
   papyrus "WE SHOULD ASK SOMEBODY TO HELP INTO CREATE A GIRL SKELETON!"
+  show gaster trapped oh flip
   gaster "NO PAPYRUS, NO"
   papyrus "I KNOW!"
   papyrus "WE SHOULD ASK TORIEL!"
   gaster "WHAT?!"
   papyrus "MAYBE SHE CAN HELP US IN CREATE A LITTLE SISTER!"
+  show gaster trapped angry flip
   gaster "PAPYRUS, PLEASE!"
+  show gaster trapped sad flip
   gaster "1. ..."
   gaster "..."
+  show gaster trapped maybe flip
   gaster "I HAD ALREADY EXPLAIN YOU THAT"
+  show gaster trapped sad flip
   gaster "AND 2. IF TORIEL WERE TO CREATE A FEMALE SKELETON, SHE WOULD NOT BE YOUR 'LITTLE SISTER'"
   gaster "SHE WOULD BE YOUR AUNT"
+  show papyrusImg nope
+  show gaster trapped oh flip
   stop music
   pause(3.0)
   papyrus "I THINK YOU SHOULDN'T HAVE SAID THAT"

@@ -46,6 +46,8 @@ label questionsMenu:
             stop music
             return
         "Reset" if resetFromQuestionMenu:
+            show papyrusImg annoyed
+            show gaster trapped neutral flip
             gaster "ARE YOU SURE YOU WANT TO RESET?"
             menu: 
                 "Yes":
@@ -143,8 +145,8 @@ label fourthWallTree:
             call wallBreakingStuff from _call_wallBreakingStuff
         "More 4th Wall Breaking Stuff" if wallBreakingStuff > 0:
             call moreWallBreakingStuff from _call_moreWallBreakingStuff
-        "4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
-            call wallBreakingStuff2 from _call_wallBreakingStuff2
+        #"4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
+        #    call wallBreakingStuff2 from _call_wallBreakingStuff2
         "Return":
             return
     return 
