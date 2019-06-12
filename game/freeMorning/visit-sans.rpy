@@ -59,8 +59,10 @@ label checkSans:
         $ papersPapyrusCreation = False
     elif tryWithSans:
         papyrus "I HAVE TO TRY GET HIM TO HELP US"
+        show papyrusImg coolDude grandiose
         papyrus "I KNOW THIS IS USELESS, BUT I PROMISE THIS TO GASTER!"
         gaster "YES, YOU PROMISED THIS TO ME"
+        show papyrusImg coolDude angry
         papyrus "SHUT UP!"
         papyrus "I'M TRYING TO MENTALIZE WHAT I HAVE TO DO!"
         if penAtAlphys:
@@ -192,10 +194,14 @@ return
 
 label papyrusAskSans:
     $ tryWithSans = False
+    show papyrusImg coolDude realizing
     papyrus "OK..."
     papyrus "I BETTER DO THIS..."
     papyrus "HERE I GO..."
+    show sansImg hoddie surprised flip at fade:
+        xpos 0.4
     sans "papyrus?"
+    show papyrusImg coolDude scared
     papyrus "SANS WHAT ARE YOU DOING HERE"
     sans "..."
     sans "i came for a drink"

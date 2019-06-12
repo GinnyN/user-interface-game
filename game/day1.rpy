@@ -1,6 +1,8 @@
 label day1:
     $ day = 1
     call resetVariables from _call_resetVariables
+    scene black with dissolve
+    pause(1.0)
     scene day1 scene1 with dissolve:
         yalign 0.1
         linear 10 yalign 0.7
