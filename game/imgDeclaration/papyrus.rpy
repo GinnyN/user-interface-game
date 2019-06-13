@@ -106,3 +106,5 @@ image papyrusImg coolDude grandiose = "papyrus/coolDude/grandiose.png"
 image papyrusImg coolDude grandiose flip = im.Flip("papyrus/coolDude/grandiose.png",horizontal=True)
 image papyrusImg coolDude realizing = "papyrus/coolDude/realizing.png"
 image papyrusImg coolDude realizing flip = im.Flip("papyrus/coolDude/realizing.png",horizontal=True)
+image papyrusImg coolDude uhh = "papyrus/coolDude/uhh.png"
+image papyrusImg coolDude uhh flip = im.Flip("papyrus/coolDude/uhh.png",horizontal=True)

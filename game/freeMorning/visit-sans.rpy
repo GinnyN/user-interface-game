@@ -204,36 +204,57 @@ label papyrusAskSans:
     show papyrusImg coolDude scared
     papyrus "SANS WHAT ARE YOU DOING HERE"
     sans "..."
+    show sansImg hoddie sideglance flip
     sans "i came for a drink"
+    show papyrusImg coolDude neutral
     papyrus "OH..."
+    hide papyrusImg
     papyrus "LET'S ME GET YOU SOME FOR YOU"
+    show papyrusImg coolDude neutral at fade:
+        xpos -0.3
     papyrus "DO YOU WANT MILK?"
+    show sansImg hoddie content flip
     sans "oh sure. milk is fine"
-    "*Papyrus goes away*"
+    hide papyrusImg
+    pause(0.5)
     gaster "CAN YOU HEAR ME MY DEAR SANS?"
     pause(1.0)
     gaster "NO, DOESN'T SEEM LIKE IT"
-    "Papyrus came back"
+    show papyrusImg coolDude uhh at fade:
+        xpos 0.0
     papyrus "SO... SANS..."
+    show sansImg hoddie neutral flip
     sans "mm??"
     papyrus "HAVE YOU HEAR ABOUT W.D. GASTER?"
-    "Sans get the dring half way his throat"
+    hide sansImg
+    sans "cough! "
+    extend "cough! "
+    extend "cough!"
     gaster "HOW IS HE DOING THAT?"
     gaster "HE DOESN'T HAVE A NECK!"
+    show papyrusImg coolDude annoyed flip
     papyrus "SHHHHHHH....."
+    show papyrusImg coolDude uhh
+    show sansImg hoddie worried flip at fade:
+        xpos 0.4
     sans "are you..."
     sans "talking with him?"
     sans "right now?"
     papyrus "YES... YES I AM"
     sans "what is he telling you?"
     gaster "HE'S TRYING TO PROVE YOU?"
+    show papyrusImg coolDude uhh flip
     papyrus "MORE LIKE HE'S TRYING TO CHECK OUT IF I'M ACTUALLY SAYING THE TRUTH"
     gaster "TELL HIM THAT I SAY HE SHOULDN'T BE DOING THIS AND JUST GETTING TO THE POINT"
+    show papyrusImg coolDude uhh
     papyrus "HE'S ANGRY BECAUSE YOU ARE MAKING TOO MANY QUESTIONS"
     papyrus "BUT"
     papyrus "I MEAN"
+    show papyrusImg coolDude explaining
     papyrus "FLOWEY HAPPENED"
+    show papyrusImg coolDude careful
     papyrus "SO"
+    show papyrusImg coolDude uhh
     papyrus "I GUESS IS NOT OUT OF THE EQUATION"
     sans "that doesn't tell me anything"
     papyrus "WHAT IS TELLING ME IS"
