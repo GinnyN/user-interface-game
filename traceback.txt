@@ -1,109 +1,56 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/day1.rpy", line 534, in script call
-    call questionsEnd from _call_questionsEnd
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 59, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 59, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 59, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 59, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 23, in script call
-    call pendriveTree
-  File "game/questions/menu.rpy", line 84, in script call
-    call pendriveAreYouOk
-  File "game/questions/wallBreakingStuff.rpy", line 63, in script
-    wdGaster "THIS IS A TEST TO SEE IF I CAN REALLY DO IT"
-FreetypeError: 38: invalid charmap handle
+Compiling ATL code at game/freeMorning/visit-sans.rpy:297
+  File "game/day3.rpy", line 3, in script call
+    call freeMorning from _call_freeMorning
+  File "game/freeMorning.rpy", line 11, in script call
+    call displayMenuFreeMorning
+  File "game/freeMorning.rpy", line 34, in script call
+    call checkSans from _call_checkSans
+  File "game/freeMorning/visit-sans.rpy", line 120, in script call
+    call papyrusAskSans
+  File "game/freeMorning/visit-sans.rpy", line 294, in script
+    scene tryWithSans jumpOver with dissolve:
+Exception: Expression u'1.0' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day1.rpy", line 534, in script call
-    call questionsEnd from _call_questionsEnd
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 59, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 59, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 59, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 59, in script call
-    call questionsMenu
-  File "game/questions/menu.rpy", line 23, in script call
-    call pendriveTree
-  File "game/questions/menu.rpy", line 84, in script call
-    call pendriveAreYouOk
-  File "game/questions/wallBreakingStuff.rpy", line 63, in script
-    wdGaster "THIS IS A TEST TO SEE IF I CAN REALLY DO IT"
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 694, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1322, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 1127, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 842, in do_display
-    **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 591, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2690, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3174, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2086, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 516, in renpy.display.render.render_screen
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 669, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 1124, in render
-    st, at)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\text.py", line 1989, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\text.py", line 619, in __init__
-    glyphs = ts.glyphs(s, self)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\text.py", line 242, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\font.py", line 695, in get_font
-    face = load_face(fn)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\text\font.py", line 638, in load_face
-    rv = ftfont.FTFace(font_file, index, orig_fn)  # @UndefinedVariable
-  File "ftfont.pyx", line 187, in renpy.text.ftfont.FTFace.__init__
-FreetypeError: 38: invalid charmap handle
+  File "game/day3.rpy", line 3, in script call
+    call freeMorning from _call_freeMorning
+  File "game/freeMorning.rpy", line 11, in script call
+    call displayMenuFreeMorning
+  File "game/freeMorning.rpy", line 34, in script call
+    call checkSans from _call_checkSans
+  File "game/freeMorning/visit-sans.rpy", line 120, in script call
+    call papyrusAskSans
+  File "game/freeMorning/visit-sans.rpy", line 294, in script
+    scene tryWithSans jumpOver with dissolve:
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1260, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1139, in show_imspec
+    atl=atl)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 717, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 1071, in add
+    thing._show()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\transform.py", line 1051, in _show
+    super(ATLTransform, self)._show()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\transform.py", line 1017, in _show
+    self.update_state()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\transform.py", line 1039, in update_state
+    fr = self.execute(self, self.st, self.at)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 516, in execute
+    block = self.compile()
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 484, in compile
+    block = self.atl.compile(self.context)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 679, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\atl.py", line 947, in compile
+    raise Exception("Expression %r is not an ATL transform, and so cannot be included in an ATL interpolation." % expr)
+Exception: Expression u'1.0' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 User Interface 0.2
-Sat Jun 08 09:55:03 2019
+Sat Jun 15 16:29:33 2019

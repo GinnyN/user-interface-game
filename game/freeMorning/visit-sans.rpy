@@ -205,6 +205,7 @@ label papyrusAskSans:
     papyrus "SANS WHAT ARE YOU DOING HERE"
     sans "..."
     show sansImg hoddie sideglance flip
+    play music "music/15 sans.mp3" fadein 1
     sans "i came for a drink"
     show papyrusImg coolDude neutral
     papyrus "OH..."
@@ -256,33 +257,73 @@ label papyrusAskSans:
     papyrus "SO"
     show papyrusImg coolDude uhh
     papyrus "I GUESS IS NOT OUT OF THE EQUATION"
+    show sansImg hoddie annoyed flip
     sans "that doesn't tell me anything"
     papyrus "WHAT IS TELLING ME IS"
+    show sansImg hoddie surprised flip
     papyrus "YOU REMEMBER HIM"
     papyrus "WHY I DIDN'T?"
-    "*Sans runs away*"
+    hide sansImg
+    stop music fadeout(1)
+    pause(1.0)
+    play music "music/16 Nyeh Heh Heh!.mp3" fadein(1)
+    show papyrusImg coolDude angry
     papyrus "SANS!"
-    "*Sans appear in the forest, after using a shortcut*"
+    scene forest with dissolve
+    show sansImg hoddie surprised at fade:
+        xpos 0.6
     sans "what is happening... i don't"
     gaster "THIS IS GETTING WAY MORE COMPLICATED THAN IT SHOULD"
+    show sansImg hoddie surprised flip
     papyrus "SAAAAANNNNNSSSSSSSSS!!!!!!!!"
+    hide sansImg
     sans "!!!"
-    "* Papyrus appears, but Sans uses shortcut inmediatly "
+    show papyrusImg coolDude angry at fade:
+        xpos 0.1
     papyrus "ARGH!"
-    "* Sans appears at the school next to Toriel *"
+    scene school outside with dissolve:
+        ypos -0.3
+    show torielImg teacher neutral flip at fade:
+        xpos 0.3
+    show sansImg hoddie surprised flip at fade:
+        xpos 0.0
     toriel "Oh, Sans!"
+    show sansImg hoddie surprised
     toriel "Shouldn't you been at the elevator offices right now?"
     toriel "Papyrus is not going to like this"
-    "* Papyrus shadows appear in the sky when he jumped trying to catch Sans at the school *"
+    scene tryWithSans jumpOver with dissolve:
+        xpos 0.0
+        ypos -1.0
+        linear 1 ypos 0.0
+    pause(0.5)
+    show torielImg teacher neutral at fade:
+        xpos 0.3
+    show sansImg hoddie surprised at fade:
+        xpos 0.0
     toriel "Yes, he didn't like it"
-    "* Sans uses shortcut again. Papyrus appears next to Toriel, fuming *"
+    hide sansImg
+    pause(0.5)
+    show torielImg teacher angry flip at fade:
+        xpos 0.3
+    show papyrusImg coolDude angry flip at fade:
+        xpos -0.1
     toriel "Papyrus?"
     toriel "What is happening?"
     papyrus "SAAAANS!!!"
-    "* Papyrus dissapears. Toriel looks concerned, realizing what could happen *"
+    hide papyrusImg
+    show torielImg teacher worried flip
+    pause(2.0)
     toriel "I need to stop them!"
-    "* Sans is back to the Skelehouse. Papyrus appears next to him *"
+    scene skelebroHouse outside with dissolve
+    show sansImg hoddie surprised at fade:
+        xpos 0.4
+    pause(1.0)
+    show papyrusImg coolDude angry at fade:
+        xpos 0.0
+    show sansImg hoddie surprised flip at fade:
+        xpos 0.5
     sans "papyrus..."
+    stop music fadeout(1)
     papyrus "SANS, LOOK"
     papyrus "I HAVE WAY MORE STAMINA THAN YOU WILL EVER HAVE"
     papyrus "SO PLEASE HELP ME"
@@ -290,24 +331,39 @@ label papyrusAskSans:
     sans "how..."
     sans "how are you talking to him"
     papyrus "THERE SOME BEINGS KIDNAPPING HUMAN KIDS TO EXTRACT THEIR DETERMINATION"
-    papyrus "THE SAME ONES WHO KIDNAPPED FRISK TWO DAYS AGO"
+    papyrus "THE SAME ONES WHO KIDNAPPED FRISK SOME DAYS AGO"
     papyrus "THAT DETERMINATION CAUSED AN ANOMALY"
     sans "that..."
     dtSans "make sense"
     papyrus "GASTER TOLD ME HE MADE SURE YOU AND ME WILL REMEMBER HIM AFTER THE EXPERIMENT WHICH TRAPPED HIM"
     papyrus "BUT IT SEEMS ONLY YOU DID!"
     papyrus "WHY?"
+    show sansImg hoddie surprised
     sans "it was an accident"
     sans "you didn't have enough determination inyected"
+    show sansImg hoddie surprised flip
     sans "when we realized it was too late"
+    show papyrusImg coolDude uhh
     papyrus "OK..."
     papyrus "THEN... WHY YOU DIDN'T TOLD ME WHEN I FORGOT EVERYTHING!?"
+    show sansImg hoddie surprised
     sans "i..."
     sans "i..."
+    show papyrusImg coolDude angry
     papyrus "WHY?!"
     dtSans "I..."
-    "* Sans inflict himself 1 damage point for the anguish he's suffering trying to explain this. He has 1 hp. He dies. *"
+    scene tryWithSans sansShattering frame1 with dissolve
+    pause(0.25)
+    play sound "music/fx/soulShatter.wav"
+    scene tryWithSans sansShattering frame2 with dissolve
+    pause(0.25)
+    scene tryWithSans sansShattering frame3 with dissolve
+    hide sansImg
+    show papyrusImg coolDude realizing at fade:
+        xpos 0.4
     papyrus "SANS?"
+    show gaster trapped sorry at fade:
+        xpos 0.1
     gaster "NO..."
     papyrus "HOW?!"
     gaster "THE PAIN OF HAVING TO EXPLAIN YOU WAS TOO GREAT..."
@@ -315,30 +371,41 @@ label papyrusAskSans:
     papyrus "NO..."
     papyrus "I..."
     gaster "NO... YOU DIDN'T"
+    show papyrusImg coolDude realizing flip
     papyrus "I KILLED HIM"
+    show gaster trapped angry
     gaster "PAPYRUS PLEASE"
     gaster "WE CAN STILL RESET THE TIMELINE"
+    show papyrusImg coolDude realizing
     papyrus "NO"
     gaster "WHAT?"
     papyrus "I'M SORRY GASTER, BUT I CANNOT MAKE THE LIFE OF MY BROTHER THAT MEANINGLESS"
     gaster "WHAT ARE YOU TALKING ABOUT?"
     papyrus "IF WE RESET THE TIMELINE EVERY SINGLE TIME I DAMAGE PEOPLE, THEIR LIFE BECOME TRIVIAL"
     papyrus "I DON'T WANT TO THEIR LIFE TO BE TRIVIAL"
+    show papyrusImg coolDude angry flip
     papyrus "I HAVE TO PAY FOR MY ACTIONS!"
     gaster "NO, NO"
     gaster "I WILL NOT"
     toriel "Papyrus!"
+    hide gaster
+    show papyrusImg coolDude realizing
     pause(1.0)
+    show torielImg teacher worried at fade:
+        xpos 0.1
     toriel "Where's Sans?"
     toriel "Why..."
     toriel "Why are ashes in your clothes?"
     papyrus "TORIEL..."
+    show papyrusImg coolDude realizing flip
     papyrus "I..."
     gaster "I'M SORRY PAPYRUS"
     gaster "I UNDERSTAND WHAT ARE YOU FEELING BUT"
     gaster "IF I CAN AVOID A WORLD IN WHICH ONE OF MY CHILDREN IS DEAD"
     gaster "I WILL"
+    show papyrusImg coolDude angry flip
     papyrus "NO"
+    show papyrusImg coolDude angry
     papyrus "GASTER WAI"
     $ resets += 1
     $ papyrusMourn = True
