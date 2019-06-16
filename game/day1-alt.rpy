@@ -20,9 +20,14 @@ label titleScreen:
             jump insideBuilding
 
 label papyrusGasterConversation:
+    stop music fadeout(1)
+    show papyrusImg dissapointed
     papyrus "..."
+    show sansImg surprised flip:
+        xpos 0.5
     sans "ah?"
     sans "papyrus?"
+    show undyneImg angry flip
     undyne "WHAT HAPPENING"
     undyne "Papyrus! react!"
     undyne "WE HAVE TO SAVE FRISK!"
@@ -32,23 +37,52 @@ label papyrusGasterConversation:
     gaster "GO" 
     gaster "SAVE THEM"
     gaster "I KNOW IS IMPORTANT FOR YOU"
-    "*Papyrus jumps to the other side of the castle. Sans and Undyne are confused"
+    hide papyrusImg
+    play sound "music/fx/steps.wav"
+    show undyneImg worried
+    show sansImg surprised
     undyne "Is he?"
     sans "i don't think so..."
-    "*Papyrus comes back with Frisk. He leave them with Sans and Undyne. Then he runs away*"
+    show undyneImg worried flip
+    show sansImg surprised flip
+    show papyrusImg dissapointed flip at fade:
+        xpos 0.0
+    show friskImg worried at fade:
+        xpos -0.1
+        ypos 0.15
     sans "papyrus?"
+    hide papyrusImg
+    show friskImg worried flip
+    play sound "music/fx/steps.wav"
     undyne "Are you ok Frisk?"
     undyne "Let's go home"
     sans "i'll go to pick up papyrus"
     undyne "Sure"
     undyne "Tell him not been this cryptic next time"
     undyne "He's scaring me"
-    "* Scene changes to the elevator. Where Papyrus has finally stopped running *"
+    play sound "music/fx/steps.wav"
+    scene skelebroHouse outside with dissolve
+    pause(1.0)
+    play sound "music/fx/steps.wav"
+    scene forest with dissolve
+    pause(1.0)
+    play sound "music/fx/steps.wav"
+    scene elevator outside with dissolve
+    pause(1.0)
+    show gaster trapped sorry flip at fade:
+        xpos 0.4
+    show papyrusImg worried at fade:
+        xpos -0.1
     gaster "NOW YOU HAVE PLACES TO GO"
     papyrus "I'M... JUST..."
     gaster "I UNDERSTAND"
     gaster "WE CAN TALK ABOUT IF YOU LIKE"
-    "* Papyrus and Gaster sit to watch the city lights *"
+    scene black with dissolve
+    pause(0.5)
+    play music "music/94 Respite.mp3" fadein(1)
+    scene tryWithSans lookingTheDistance with dissolve:
+        ypos -0.9
+        linear 20 ypos -0.2
     papyrus "I SUPPOSE YOU ARE NOT GOING TO APOLOGIZE"
     gaster "I DO NOT FEEL SORRY, SO I WILL NOT"
     papyrus "THAT'S FINE"

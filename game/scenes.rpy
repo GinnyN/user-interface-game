@@ -66,6 +66,7 @@ image tryWithSans jumpOver = "background/tryWithSans/papyrusOverSchool.png"
 image tryWithSans sansShattering frame1 = "background/tryWithSans/sansShattering-frame1.png"
 image tryWithSans sansShattering frame2 = "background/tryWithSans/sansShattering-frame2.png"
 image tryWithSans sansShattering frame3 = "background/tryWithSans/sansShattering-frame3.png"
+image tryWithSans lookingTheDistance = "background/tryWithSans/watchingTheDistance.png"
 
 #Places Backgrounds
 image newerHome night = "background/newerHome/night.png"
