@@ -42,16 +42,19 @@ label displayMenuFreeMorning:
         
         "Go visit Alphys" if not visitAlphys:
             if penAtAlphys:
+                show papyrusImg coolDude thinking
                 papyrus "I LEFT THE IMPORTANT MISSION TO DR ALPHYS LAST NIGHT"
                 papyrus "I DON'T KNOW IF I CAN VISIT HER, I MIGHT BOTHER HER"
                 gaster "SHE MIGHT HAVE INSPIRATION ON DOING IT AND THEN WORK IN A HURRY FOR 3 HOURS STRAIGHT"
                 papyrus "YOU MEAN SHE MIGHT NEED SOME REFRESTMENTS FOR AVOID DEHYDRATION?"
                 gaster "I DON'T THINK SO"
                 gaster "SHE LOOKED MORE LIKE THE NOCTURNAL TYPE"
+                show papyrusImg coolDude explaining
                 papyrus "YOU RIGHT"
                 papyrus "SHE PROBABLY HAD ALREADY DONE ALL THE WORK"
                 papyrus "AND SHE'S SLEEPING RIGHT NOW"
                 gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
+                show papyrusImg coolDude delight
                 papyrus "THAT'S A GOOD IDEA"
                 call displayMenuFreeMorning
             else:
