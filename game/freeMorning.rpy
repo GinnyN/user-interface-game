@@ -66,4 +66,4 @@ label displayMenuFreeMorning:
             $ visitFrisk = True
             call visitFrisk from _call_visitFrisk
 
-return
+    return
