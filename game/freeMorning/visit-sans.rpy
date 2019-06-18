@@ -99,7 +99,7 @@ label checkSans:
             sans "..."
             sans "why i have this feeling that he isn't?"
             scene forest with dissolve
-            play music "music/16 Nyeh Heh Heh!.mp3" fadein(1)
+            play music "music/15 sans.mp3" fadein(1)
             show papyrusImg coolDude explaining flip at fade:
                 xpos 0.4
             papyrus "WHY AM I RUNNING AWAY FROM SANS THIS HAS NO SENSE!"
