@@ -983,32 +983,49 @@ label alphysHome:
     alphys "If you say so"
     if pen and tryWithAlphys and not program:
         $ penAtAlphys = True
+        show papyrusImg neutral flip
+        pause(1.0)
+        show papyrusImg sorry
         papyrus "DR. ALPHYS, I KNOW YOU ARE BUSY"
         papyrus "BUT I HAVE A PROBLEM ONLY YOU CAN SOLVE"
         alphys "Me?"
         alphys "Me?"
         alphys "What do you mean?"
+        show papyrusImg worried
         papyrus "I HAVE HERE THE BLUEPRINTS OF A DETERMINATION ABSORBING MACHINE"
+        show alphysImg casual confused flip
         alphys "How you..."
         papyrus "I CANNOT TELL YOU THAT"
         papyrus "JUST..."
         papyrus "TRUST ME"
+        show alphysImg casual nostalgic flip
         alphys "Ok..."
         papyrus "SOMEONE IS TRAPPED BEYOND..."
         papyrus "..."
+        show alphysImg casual nostalgic
         alphys "Beyond..."
+        show alphysImg casual nostalgic flip
         extend "the darkness?"
+        show papyrusImg delight
         papyrus "YES!"
+        show papyrusImg explainingPointing
         papyrus "IT BECAME ONE WITH EVERYTHING ONCE"
         papyrus "BUT WITH THIS MACHINE IS GETTING THEIR ORIGINAL FORM BACK"
         papyrus "BUT THE PROCESS IS NOT COMPLETE"
+        show papyrusImg worried
         papyrus "CAN YOU SEE IF THERE'S A WAY TO COMPLETE THE PROCESS?"
         alphys "With just the bluprints?"
         papyrus "I DON'T HAVE MORE WITH ME, I'M..."
         alphys "..."
+        show alphysImg casual nostalgic
+        alphys "..."
+        show alphysImg casual explaining flip
         alphys "It's going to be a piece of cake"
+        show papyrusImg delight
         papyrus "THANKS!"
+        show papyrusImg worried
         papyrus "JUST KEEP THE THING A SECRET, PLEASE"
+        show alphysImg casual nostalgic flip
         alphys "Will do."
 
     show papyrusImg me
@@ -1019,7 +1036,9 @@ label alphysHome:
     alphys "PAPYRUS!"
 
     if pen and tryWithAlphys and not program:
+        show alphysImg casual neutral
         pause(1)
+        show alphysImg casual tired
         alphys "I'm sorry Papyrus"
 
 label endOfDay2:
