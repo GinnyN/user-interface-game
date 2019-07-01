@@ -1,45 +1,71 @@
  label alphysTalksToSans:
-    "Toriel goes out"
+    hide torielImg
     alphys "Sans, I need to talk with you about something"
+    show sansImg hoddie surprised flip
     sans "really?"
     alphys "Yes, it`s something important..."
-    "Cut to Papyrus near to their house at Lower Snowdin"
-    papyrus "I WONDER IF ALPHYS GOT ANYTHING DONE"
+    stop music fadeout(1)
+    scene black with dissolve
+    pause(0.5)
+    play music "music/22 Snowdin Town.mp3" fadein 1
+    pause(1)
+    scene skelebroHouse outside with dissolve
+    show papyrusImg uhh flip at fade with dissolve:
+        xpos -0.1
+    papyrus "I WONDER IF DR ALPHYS GOT ANYTHING DONE"
     papyrus "TODAY IT`S THE LAST DAY, I NEED THAT PROGRAM"
+    show sansImg hoddie angry flip at fade with dissolve:
+        xpos 0.3
     sans "hello bro"
-    papyrus "SANS! WHERE HAVE YOU BEEN?"
+    show papyrusImg scared
+    papyrus "SANS!" 
+    show papyrusImg sorry
+    papyrus "WHERE HAVE YOU BEEN?"
     sans "i was talking with alphys and she told me something very..."
     sans "very"
     sans "interesting"
     papyrus "OH"
+    show papyrusImg surprised
     papyrus "AHHHHHHHHH"
     sans "i know you are unable to do things quietly"
     sans "so i think is better to explain what`s going on"
+    show papyrusImg annoyed
     papyrus "I CAN`T"
     papyrus "YOU WILL NOT BELIEVE ME!"
+    show alphysImg casual angry flip at fade with dissolve:
+        xpos 0.5
+        ypos -0.2
     alphys "It`s a complex machine"
     alphys "but your story about this being trapped somewhere in the universe, is even more intriging"
     papyrus "I KNOW IT'S WEIRD"
     papyrus "BUT I KINDA CANNOT TELL YOU"
+    show papyrusImg annoyed flip
     papyrus "SO I WILL NOT CONTINUE"
+    show sansImg hoddie worried flip
     sans "come on bro"
     sans "don´t make this more difficult than it should be"
+    show papyrusImg sorry
     papyrus "YOU WILL KNOW EVERYTHING ONCE I FINISH WITH THIS, I PROMISE!"
     alphys "Do you?"
     if alphysFailState:
-        alphys "Then I will not start progress unless you tell us what's going on!"
+        alphys "Then I will not start progress unless you tell us what's going on!"     
+        show papyrusImg surprised
         papyrus "YOU HAVE NOT DID ANYTHING?"
         alphys "Of course not!"
         alphys "I need to know where did you get all of this!"
+        show alphysImg casual confused flip
         alphys "Plus I was busy and I didn't have any time?"
+        show papyrusImg dissapointed
         papyrus "THIS IS NOT GOOD"
         gaster "INDEED MY DEAR PAPYRUS"
         gaster "TODAY IS THE LAST DAY, WE CANNOT WAIT ANY LONGER"
         papyrus "I KNOW"
+        show sansImg hoddie surprised flip
         sans "to whom are you speaking to?"
         papyrus "GASTER"
         dtSans "Gaster?"
         alphys "Who?"
+        show papyrusImg annoyed
         papyrus "BUT IT DOESN'T MATTER IF I TELL YOU, WE WILL HAVE TO RESET ANYWAYS"
         gaster "THAT'S CORRECT"
         gaster "WE'RE GOING TO HAVE TO DISCUSS IT AT THE END OF THE FIRST DAY"
@@ -56,18 +82,28 @@
         papyrus "I..."
         papyrus "I..."
         sans "..."
+        show sansImg hoddie worried flip
         sans "papyrus..."
         sans "you has been very suspicious lately"
         sans "are you"
         extend " traveling in time?"
+        show papyrusImg surprised
+        show alphysImg casual confused flip
         alphys "Hey!"
         alphys "What are you talking about?"
         gaster "THE ANSWER WILL BE YES,  MY DEAR SANS"
+        show sansImg hoddie surprised flip
+        show alphysImg casual noWords flip
+        show papyrusImg sorry
         sans "!?"
         alphys "But, who's...'"
         gaster "BUT THE HUMANS HAVE AN ESPECIFIC TERM FOR THIS KIND OF TRAVEL"
+        show sansImg hoddie surprised
         gaster "THEY CALL IT 'GROUNDHOG DAY LOOP'"
+        show sansImg hoddie surprised flip
+        show alphysImg casual noWords
         gaster "AFTER A MOVIE, I'LL BET"
+        show papyrusImg curious
         papyrus "!!!!!!!"
         papyrus "HOMEWORK GRABING ATTACK!!!"
         "And Papyrus grabs the pendrive from Alphys hands, like a dog"

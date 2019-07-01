@@ -81,6 +81,8 @@ label day4:
     elif program and firstTry:
         jump endingsFirstTry
     else:
+        scene black with dissolve
+        pause(1.0)
         gaster "THIS IS THE FINAL DAY"
         gaster "PAPYRUS, I'M GOING TO RESET THE TIMELINE"
         gaster "PLEASE BE CAREFUL"

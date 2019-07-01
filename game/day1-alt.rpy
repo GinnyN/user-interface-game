@@ -61,10 +61,10 @@ label papyrusGasterConversation:
     undyne "Tell him not been this cryptic next time"
     undyne "He's scaring me"
     play sound "music/fx/steps.wav"
-    scene skelebroHouse outside with dissolve
+    scene forest with dissolve
     pause(1.0)
     play sound "music/fx/steps.wav"
-    scene forest with dissolve
+    scene skelebroHouse outside with dissolve
     pause(1.0)
     play sound "music/fx/steps.wav"
     scene elevator outside with dissolve
