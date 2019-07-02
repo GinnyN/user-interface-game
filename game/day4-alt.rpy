@@ -106,20 +106,30 @@
         show papyrusImg curious
         papyrus "!!!!!!!"
         papyrus "HOMEWORK GRABING ATTACK!!!"
-        "And Papyrus grabs the pendrive from Alphys hands, like a dog"
+        scene day4 homeworkAttack with vpunch
         alphys "What?!"
-        "Papyrus run away"
+        play sound "music/fx/steps.wav"
+        show alphysImg casual noWords at fade with dissolve:
+            xpos 0.1
+            ypos -0.2
         alphys "Do you know who was that voice?"
+        show sansImg hoddie angry at fade with dissolve:
+            xpos 0.0
         sans "yes"
         sans "..."
         sans "but i can't tell you"
+        show alphysImg casual angry flip
         alphys "Ok, what´s going on with you skeletons and your secrets?"
         sans "this is the main reason i don´t like to involve anyone else"
-        "Sans goes away"
+        hide sansImg
+        play sound "music/fx/steps.wav"
+        show alphysImg casual angry
         alphys "But..."
+        show alphysImg casual angry flip
         alphys "but..."
+        hide alphysImg
         alphys "I DESERVE AN EXPLANATION"
-        "Cuts to Papyrus more in the forest"
+        scene forest with dissolve
         papyrus "HOW ARE YOU DOING THAT?"
         gaster "IT SEEMS, MY DEAR PAPYRUS, THAT I CAN PROJECT MY VOICE DURING THIS DAY TO THE REST OF THE WORLD"
         gaster "I SHOULD NOT DO THAT AGAIN, UNLESS THERE'S AN SPECIFIC NEED"
