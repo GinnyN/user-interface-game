@@ -14,6 +14,7 @@
         xpos -0.1
     papyrus "I WONDER IF DR ALPHYS GOT ANYTHING DONE"
     papyrus "TODAY IT`S THE LAST DAY, I NEED THAT PROGRAM"
+    play music "music/15 sans.mp3" fadein(1)
     show sansImg hoddie angry flip at fade with dissolve:
         xpos 0.3
     sans "hello bro"
@@ -50,6 +51,7 @@
     if alphysFailState:
         alphys "Then I will not start progress unless you tell us what's going on!"     
         show papyrusImg surprised
+        stop music
         papyrus "YOU HAVE NOT DID ANYTHING?"
         alphys "Of course not!"
         alphys "I need to know where did you get all of this!"
@@ -91,6 +93,7 @@
         show alphysImg casual confused flip
         alphys "Hey!"
         alphys "What are you talking about?"
+        play music "music/24 Bonetrousle.mp3" fadeout 1
         gaster "THE ANSWER WILL BE YES,  MY DEAR SANS"
         show sansImg hoddie surprised flip
         show alphysImg casual noWords flip
@@ -129,20 +132,33 @@
         alphys "but..."
         hide alphysImg
         alphys "I DESERVE AN EXPLANATION"
+        stop music fadeout(1.0)
+        scene black with dissolve
+        pause(1.0)
+        play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
         scene forest with dissolve
+        show papyrusImg annoyed at fade with dissolve:
+            xpos 0.1
         papyrus "HOW ARE YOU DOING THAT?"
         gaster "IT SEEMS, MY DEAR PAPYRUS, THAT I CAN PROJECT MY VOICE DURING THIS DAY TO THE REST OF THE WORLD"
         gaster "I SHOULD NOT DO THAT AGAIN, UNLESS THERE'S AN SPECIFIC NEED"
+        show papyrusImg delight
         papyrus "BUT I HAVE THE PENDRIVE"
         papyrus "THIS SHOULD RETURN YOUR BODY TO YOUR NATURAL STATE"
         gaster "ARE YOU SURE MY DEAR BOY?"
+        show papyrusImg serious
         papyrus "OF COURSE!"
+        show papyrusImg delight
         papyrus "DR ALPHYS IS THE SMARTEST MONSTER OF NEWER HOME"
+        show papyrusImg checkThis
         papyrus "I´M PRETTY SURE SHE COULD MADE IT WHILE WATCHING THE LAST EPISODE OF KISSY CUTIE MEW MEW AND HAVING ONE HAND TIED TO HER BACK"
         gaster "I DON'T KNOW WHAT ARE YOU TALKING ABOUT, BUT I TRUST YOU"
         gaster "MOVE POST HASTE! SO WE SHALL END THIS NIGHTMARE ONCE AND FOR ALL!"
+        hide papyrusImg
         papyrus "YES SIR!"
-        "Papyrus ran away. Sans appears just behind him"
+        pause(1.0)
+        show sansImg hoddie angry at fade with dissolve:
+            xpos 0.3
         if gasterPapyrusSansDad:
             sans "i knew it"
             sans "but how papyrus is in the middle of all of this"
@@ -152,6 +168,7 @@
             sans "but how?"
             sans "and why papyrus?"
             sans "argh!"
+        hide sansImg
         $ program = True
         $ tryWithAlphys = False
     return

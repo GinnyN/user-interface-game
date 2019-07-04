@@ -1,76 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Flip' <'Image' u'sans/hoddie/surprised.png'> True False>:
-  File "game/day4.rpy", line 77, in script call
-    call alphysTalksToSans
-  File "game/day4-alt.rpy", line 5, in script
-    sans "really?"
-IOError: Couldn't find file 'sans/hoddie/surprised.png'.
+While running game code:
+  File "game/ending/endingsFirstTry.rpy", line 63, in script
+    show sansImg hoddie worried at face with dissolve:
+  File "game/ending/endingsFirstTry.rpy", line 63, in <module>
+    show sansImg hoddie worried at face with dissolve:
+NameError: name 'face' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day4.rpy", line 77, in script call
-    call alphysTalksToSans
-  File "game/day4-alt.rpy", line 5, in script
-    sans "really?"
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 694, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\exports.py", line 1322, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 1127, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 842, in do_display
-    **display_args)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\character.py", line 591, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2690, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3174, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2086, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 516, in renpy.display.render.render_screen
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\image.py", line 500, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\image.py", line 306, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 580, in render
-    return cache.get(self, render=True)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 266, in get
-    surf = image.load()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 916, in load
-    child = cache.get(self.image)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 266, in get
-    surf = image.load()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\display\im.py", line 625, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\loader.py", line 576, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'sans/hoddie/surprised.png'.
+  File "game/ending/endingsFirstTry.rpy", line 63, in script
+    show sansImg hoddie worried at face with dissolve:
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1169, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1128, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1961, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1954, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/ending/endingsFirstTry.rpy", line 63, in <module>
+    show sansImg hoddie worried at face with dissolve:
+NameError: name 'face' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 User Interface 0.2
-Thu Jun 27 22:59:52 2019
+Wed Jul 03 22:33:28 2019

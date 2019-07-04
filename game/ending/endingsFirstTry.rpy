@@ -1,68 +1,120 @@
 label endingsFirstTry:
+    stop music fadeout(1.0)
+    scene black with dissolve
+    pause(1.0)
+    play music "music/47 Ooo.mp3" fadein 1
+    scene wekufeLab with dissolve
+    show papyrusImg annoyed flip at fade with dissolve:
+        xpos 0.4
     papyrus "ARE THE WEKUFES GONE?"
+    show gaster trapped oh at fade with dissolve:
+        xpos -0.1
     gaster "YES, THEY ARE"
     gaster "I CANNOT FIND ANY, MOST PROBABLY THEY ARE GONE"
+    show papyrusImg delight
     papyrus "IT'S TIME TO SET THIS ON!"
-    "*Papyrus puts the pendrive in the Computer and fire it off*"
+    hide papyrusImg
+    pause(1.0)
+    show papyrusImg explainingPointing at fade with dissolve:
+        xpos 0.4
     papyrus "IT'S GOING TO TAKE A COUPLE OF MINUTES TO LOAD"
+    show papyrusImg delight flip
     papyrus "ARE YOU EXCITED?!"
     gaster "I CANNOT SHAKE THIS FEELING WE ARE FORGETING SOMETHING"
+    show papyrusImg worried flip
     papyrus "DO YOU WANT TO STOP THE PROCESS?"
+    show gaster trapped explain
     gaster "NO, NO"
+    show gaster trapped oh
     gaster "I MIGHT BE JUST PARANOID"
+    show papyrusImg delight flip
     papyrus "WHAT DO YOU THINK IS GOING TO HAPPEN WHEN YOU COME BACK?"
     papyrus "PEOPLE WILL REMEMBER YOU, LIKE YOU WERE NEVER GONE?"
     papyrus "I'LL REMEMBER EVERYTHING ABOUT SCIENCE?"
     gaster "I'LL BLOW UP IN MILLIONS OF SMALL PIECES AND I'LL COVER ALL THE BUILDINGS OF THE NEW MONSTERS KINGDOM IN A WHITE POWDER?"
+    show papyrusImg annoyed flip
     papyrus "GASTER!"
+    show gaster trapped sorry
     gaster "IT'S BETWEEN THE REALM OF POSSIBILITY"
     papyrus "NOW I'M FINISHING DEALING WITH SANS'S LAZINESS, I'LL HAVE TO DEAL WITH YOUR NEGATIVENESS?"
+    show gaster trapped oh
     gaster "IS IT THAT A WORD?"
     gaster "..."
+    show gaster trapped maybe
     gaster "WELL, I TOLD YOU, I'M A BIT PARANOID AT TIMES"
     papyrus "NYEH.."
+    show papyrusImg delight flip
     papyrus "I CANNOT WAIT FOR THAT!"
+    show gaster trapped happy
     gaster "MY DEAR PAPYRUS..."
     sans "this is the lab i told you about"
+    show papyrusImg scared flip
+    show gaster trapped oh flip
     papyrus "SANS?"
     gaster "LET'S ME SEE..."
-    "* Scene changes to Sans and Frisk walking on the corridor of the Wekufes lab *"
+    scene day4 sansFriskWekufeLab with dissolve:
+        ypos 0.0
+        linear 10 ypos -0.95
+    pause(1)
+    show friskImg worried at fade with dissolve:
+        xpos 0.3
+        ypos 0.15
     frisk "You sure they are here..."
+    show sansImg hoddie worried at fade with dissolve:
+        xpos 0.1
     sans "i'm not sure if papyrus is with someone"
     sans "i just know papyrus came here"
     sans "and that i know that voice..."
+    show friskImg worried flip
     frisk "Someone you knew from before?"
     sans "a... friend..."
     frisk "Is it their name..."
     frisk "Gaster?"
+    show sansImg hoddie surprised
     sans "how do you know that?"
     frisk "I found a monster"
     frisk "In greyscale"
     frisk "Who commented me about it"
     sans "oh..."
+    show friskImg worried
     frisk "I think it was a malfunction..."
+    show sansImg hoddie worried
     sans "on reality?"
     frisk "..."
+    show friskImg worried flip
     frisk "Yeah..."
     sans "well.."
     sans "we better found them"
     sans "papyrus has been very weird lately"
     frisk "Did you noticed?"
+    show sansImg hoddie sideglance
     sans "ehh..."
     sans "i thought it was just him been him"
     sans "he always does weird stuff..."
+    hide friskImg
     frisk "I don't think so.."
+    show sansImg hoddie surprised
     sans "wait..."
+    hide sansImg
     sans "frisk..."
-    "* Scene goes back to Gaster and Papyrus *"
+    scene wekufeLab with dissolve
+    show papyrusImg annoyed flip at fade with dissolve:
+        xpos 0.4
+    show gaster trapped oh at fade with dissolve:
+        xpos -0.1
     gaster "THEY ARE SANS AND THE FALLEN HUMAN"
     papyrus "THEIR NAME IS FRISK"
+    show papyrusImg uhh flip
     papyrus "WAIT"
     papyrus "WHY AM I GETTING UPSET AT YOU CALLING FRISK FALLEN HUMAN?"
+    show papyrusImg annoyed flip
     papyrus "AND WHY DO YOU NOT CALL THEM BY THEIR NAME?"
+    show gaster trapped happy
     gaster "YOU ARE ALREADY GETTING SOME OF YOUR MEMORY BACK"
     gaster "IT'S NOT CONVENIENT FOR ME, BUT MEMORY IS MEMORY"
+    show papyrusImg delight
     papyrus "IT HAS FINISHED LOADING!"
+    show gaster trapped oh
     gaster "WE MUST DECIDE IF WE CONTINUE"
     gaster "DO WE?"
     jump endingMenuFirstTry
