@@ -122,25 +122,35 @@ label endingsFirstTry:
 label endingMenuFirstTry: 
     menu:
         "Of Course!":
-            $ firstTry = False
             jump startEndingGasterFirstTry
         "I have 2nd thoughts":
             jump resetOrEndingFirstTry
 
 label startEndingGasterFirstTry:
+    $ firstTry = False
+    show papyrusImg delight flip
     papyrus "OF COURSE!"
     papyrus "LET'S DO THIS!"
-    gaster "smiles"
+    stop music fadeout(1)
+    show gaster trapped happy
+    show papyrusImg delight
     papyrus "I PRESS ENTER!"
     gaster "AND NOW WE..."
-    "fades to white"
-    "shows Gaster back to normal, AKA, not half melting. He's as tall as papyrus, with a black suit and a white turtle neck"
-    "he still has the cracks in his skull, cannot emote in one of his eyes and has missing the ring finger in both of his hands"
+    scene white with dissolve
+    play sound "music/fx/iau.wav"
+    pause(2)
+    scene day4 gasterFree with dissolve:
+        ypos -1.0
+        linear 1 ypos -0.3
     gaster "IT WORKED"
     gaster "IT WORKED PAPYRUS!"
     gaster "..."
     gaster "PAPYRUS!"
-    "shows Papyrus how Gaster was at the beginning. Half melted, somewhat deformed, but still with his smile plastered in his face"
+    play music "music/94 Respite.mp3" fadein(5)
+    scene day4 papyrusTrapped with dissolve:
+        ypos -0.8
+        linear 10 ypos -0.1
+    pause(1)
     papyrus "I THINK THERE'S SOMETHING WE DIDN'T ACCOUNT FOR"
     gaster "OH... NO..."
     papyrus "IF YOU ASK ME..."
@@ -233,14 +243,19 @@ label startEndingGasterFirstTry:
             
     
 label resetOrEndingFirstTry:
+    show papyrusImg annoyed flip
     papyrus "WHY IS THAT OPTION THERE?"
     gaster "DO YOU NOT HAVE 2ND THOUGHTS?"
     papyrus "I MEAN..."
+    show papyrusImg confused flip
     papyrus "I SHOULD TRUST EVERYTHING IS GOING TO BE ALRIGHT"
+    show papyrusImg annoyed flip
     papyrus "RIGHT?"
     gaster "I DON'T KNOW"
     papyrus "HOW YOU DO IT?"
+    show gaster trapped maybe
     gaster "I ALWAYS HAVE 2ND THOUGHTS"
+    show gaster trapped oh
     gaster "I MOSTLY IGNORE THEM OR ELSE I WILL GET NOTHING DONE"
     papyrus "SO..."
     papyrus "IT SEEMS WE CANNOT TRUST ANY OF OUR METAPHORICAL GUTS"
@@ -251,13 +266,17 @@ label resetOrEndingFirstTry:
     menu:
         "Reset":
             papyrus "THEY WANT TO STILL POKE AROUND?"
+            show gaster trapped sorry
             gaster "I SHALL NOT DELAY THIS ANY MORE"
             $ resetWithoutMeaning = True
             $ resets = resets + 1
             jump day1
         "Use the Program Anyway":
+            show papyrusImg dissapointed flip
             papyrus "I DO NOT UNDERSTAND"
+            show gaster trapped maybe
             gaster "NEITHER DO I BUT OK"
+            show gaster trapped explain
             gaster "FIRE THE PROGRAM AWAY!"
             jump startEndingGasterFirstTry
         "Do not use the Program":
@@ -267,20 +286,27 @@ label resetOrEndingFirstTry:
             papyrus "..."
             papyrus "..."
             papyrus "..."
+            show papyrusImg angry
             papyrus "WHO'S STOPING ME?"
+            show gaster trapped angry
             gaster "PAPYRUS?"
             gaster "WHAT ARE YOU DOING?"
             papyrus "I'M GOING TO FIRE THE PROGRAM!"
+            show gaster trapped sorry
             gaster "THERE'S NO NEED PAPYRUS.."
+            show papyrusImg angry flip
             papyrus "SCREW THEIR CURIOSITY!"
             papyrus "I WILL NOT LET THEM KNOW WHAT'S GOING TO HAPPEN IF I CAN MANAGE IT"
             papyrus "NOW I HAVE THE POWER TO CHANGE SOMETHING FOR THE BETTER"
             papyrus "I WILL NOT LET AN ENTITLED"
             papyrus "BEING..." 
+            show papyrusImg uhh flip
             papyrus "BEYOND..." 
+            show papyrusImg angry flip
             papyrus "THAT TO TOY WITH US!"
             gaster "I GUESS THERE'S NO WAY TO STOP YOU NOW"
             pause(1)
+            show gaster trapped explain
             gaster "FIRE THE PROGRAM AWAY!"
             jump startEndingGasterFirstTry
 return 
