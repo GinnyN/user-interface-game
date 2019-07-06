@@ -142,9 +142,13 @@ label startEndingGasterFirstTry:
     scene day4 gasterFree with dissolve:
         ypos -1.0
         linear 1 ypos -0.3
+    pause(2)
     gaster "IT WORKED"
+    show gaster free happy at fade with dissolve:
+        xpos -0.1
     gaster "IT WORKED PAPYRUS!"
     gaster "..."
+    show gaster free surprised
     gaster "PAPYRUS!"
     play music "music/94 Respite.mp3" fadein(5)
     scene day4 papyrusTrapped with dissolve:
@@ -152,6 +156,8 @@ label startEndingGasterFirstTry:
         linear 10 ypos -0.1
     pause(1)
     papyrus "I THINK THERE'S SOMETHING WE DIDN'T ACCOUNT FOR"
+    show gaster free worried at fade with dissolve:
+        xpos -0.1
     gaster "OH... NO..."
     papyrus "IF YOU ASK ME..."
     papyrus "I THINK WE NEED TO LEARN MORE..." 
@@ -162,15 +168,20 @@ label startEndingGasterFirstTry:
     gaster "THERE'S NOTHING WE CAN COMPREHEND FROM THERE"
     papyrus "I REFUSE THAT STATEMENT!"
     gaster "IT DOESN'T HAVE TO BE YOU"
-    "*steps*"
+    hide gaster
+    pause(1)
     gaster "THE SYSTEM SAYS THERE'S SOME DETERMINATION LEFT"
+    show gaster free happy at fade with dissolve:
+        xpos -0.1
     gaster "WE CAN RESET TO TRY AGAIN!"
     papyrus "THAT'S NOT AN OPTION WE CAN TAKE"
+    show gaster free worried
     gaster "I KNOW..."
     gaster "BUT PLEASE, SHOW THEM THE MENU..."
     gaster "THEY MIGHT WANT TO TRY"
     menu:
         "Reset":
+            show gaster free happy
             gaster "OH, THANKS YOU!"
             gaster "WE WILL TALK IN THE PAST, MY DEAR PAPYRUS..."
             papyrus "..."
@@ -183,6 +194,7 @@ label startEndingGasterFirstTry:
             papyrus "WILL..." 
             papyrus "FIND..." 
             papyrus "A..."
+            show gaster free angry
             gaster "WHAT IF I DON'T?"
             gaster "WHAT IF I DIE AND YOU ARE STILL TRAPPED IN THE DARKNESS!?"
             papyrus "I KNOW YOU'LL DO YOUR BEST..."
@@ -193,10 +205,12 @@ label startEndingGasterFirstTry:
             papyrus "BUT I..." 
             papyrus "CAN HANDLE IT"
             papyrus "I WILL HANDLE IT!"
+            show gaster free worried
             gaster "I KNOW YOU ARE STRONG PAPYRUS"
             gaster "WHAT I DON'T KNOW IF I AM AS STRONG AS YOU ARE"
             papyrus "YOU HAVE ALREADY DONE THIS!"
             papyrus "WHY ARE YOU ASKING?!"
+            show gaster free surprised
             frisk "Papyrus!?"
             " * Frisk and Sans appear in front of them. Frisk looks at Papyrus concerned and runs to him. Sans is paralyzed. *"
             frisk "What's happened to you?"

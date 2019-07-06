@@ -177,3 +177,12 @@ image gaster trapped sorry = "gaster/trapped/sorry.png"
 image gaster trapped sorry flip = im.Flip("gaster/trapped/sorry.png", horizontal=True)
 image gaster trapped sad = "gaster/trapped/sad.png"
 image gaster trapped sad flip = im.Flip("gaster/trapped/sad.png", horizontal=True)
+## Free
+image gaster free angry = "gaster/free/angry.png"
+image gaster free angry flip = im.Flip("gaster/free/angry.png", horizontal=True)
+image gaster free happy = "gaster/free/happy.png"
+image gaster free happy flip = im.Flip("gaster/free/happy.png", horizontal=True)
+image gaster free surprised = "gaster/free/surprised.png"
+image gaster free surprised flip = im.Flip("gaster/free/surprised.png", horizontal=True)
+image gaster free worried = "gaster/free/worried.png"
+image gaster free worried flip = im.Flip("gaster/free/worried.png", horizontal=True)
