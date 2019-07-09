@@ -150,7 +150,7 @@ label startEndingGasterFirstTry:
     gaster "..."
     show gaster free surprised
     gaster "PAPYRUS!"
-    play music "music/94 Respite.mp3" fadein(5)
+    play music "music/81 An Ending.mp3" fadein(5)
     scene day4 papyrusTrapped with dissolve:
         ypos -0.8
         linear 10 ypos -0.1
@@ -159,6 +159,8 @@ label startEndingGasterFirstTry:
     show gaster free worried at fade with dissolve:
         xpos -0.1
     gaster "OH... NO..."
+    show papyrusImg trapped sad flip at fade with dissolve:
+        xpos 0.4
     papyrus "IF YOU ASK ME..."
     papyrus "I THINK WE NEED TO LEARN MORE..." 
     papyrus "ABOUT..." 
@@ -166,6 +168,7 @@ label startEndingGasterFirstTry:
     papyrus "IS BEYOND..." 
     papyrus "THE DARKNESS..."
     gaster "THERE'S NOTHING WE CAN COMPREHEND FROM THERE"
+    show papyrusImg trapped angry flip
     papyrus "I REFUSE THAT STATEMENT!"
     gaster "IT DOESN'T HAVE TO BE YOU"
     hide gaster
@@ -174,6 +177,7 @@ label startEndingGasterFirstTry:
     show gaster free happy at fade with dissolve:
         xpos -0.1
     gaster "WE CAN RESET TO TRY AGAIN!"
+    show papyrusImg trapped sad flip
     papyrus "THAT'S NOT AN OPTION WE CAN TAKE"
     show gaster free worried
     gaster "I KNOW..."
@@ -184,21 +188,26 @@ label startEndingGasterFirstTry:
             show gaster free happy
             gaster "OH, THANKS YOU!"
             gaster "WE WILL TALK IN THE PAST, MY DEAR PAPYRUS..."
+            show papyrusImg trapped sad
             papyrus "..."
             $ resets = resets + 1
             jump day1
         "Continue":
             gaster "NO..."
+            show papyrusImg trapped happy flip
             papyrus "DO NOT WORRY ABOUT ME!"
             papyrus "YOU..." 
+            show papyrusImg trapped sad flip
             papyrus "WILL..." 
             papyrus "FIND..." 
             papyrus "A..."
             show gaster free angry
             gaster "WHAT IF I DON'T?"
             gaster "WHAT IF I DIE AND YOU ARE STILL TRAPPED IN THE DARKNESS!?"
+            show papyrusImg trapped happy flip
             papyrus "I KNOW YOU'LL DO YOUR BEST..."
             gaster "WHAT IS IT NOT GOOD ENOUGH?!"
+            show papyrusImg trapped sad flip
             papyrus "..."
             papyrus "YOU WORRY TOO MUCH"
             papyrus "I'M NOT OK WITH THIS"
@@ -208,30 +217,55 @@ label startEndingGasterFirstTry:
             show gaster free worried
             gaster "I KNOW YOU ARE STRONG PAPYRUS"
             gaster "WHAT I DON'T KNOW IF I AM AS STRONG AS YOU ARE"
+            show papyrusImg trapped angry flip
             papyrus "YOU HAVE ALREADY DONE THIS!"
             papyrus "WHY ARE YOU ASKING?!"
             show gaster free surprised
+            show papyrusImg trapped happy flip
             frisk "Papyrus!?"
-            " * Frisk and Sans appear in front of them. Frisk looks at Papyrus concerned and runs to him. Sans is paralyzed. *"
+            scene day4 sansFriskFindPapyrusGaster with dissolve:
+                xpos 0.0
+                linear 20 xpos -0.25
+            pause(2.0)
             frisk "What's happened to you?"
+            show friskImg angry mild flip zorder 5 at fade with dissolve:
+                xpos 0.4
+                ypos 0.15
             frisk "What you did to him!?"
+            show papyrusImg trapped sad flip zorder 3 at fade with dissolve:
+                xpos 0.4
             papyrus "HE WAS TRAPPED IN THE DARKNESS"
+            show friskImg worried
             papyrus "WE GOT HIM..."
             papyrus "OUT.."
+            show gaster free worried zorder 2 at fade with dissolve:
+                xpos -0.1
             gaster "BUT IT SEEMS IT NEEDS A MONSTER FOR SOME REASON"
+            show friskImg worried flip
             gaster "SO, PAPYRUS HAS TOOK MY PLACE"
             gaster "BY ACCIDENT"
+            show sansImg hoddie surprised flip zorder 4 at fade with dissolve:
+                xpos 0.2
             dtSans "That's why you are here?"
+            show sansImg hoddie surprised
             dtSans "That what you were doing?"
             papyrus "YES, I DIDN'T TELL YOU..."
             papyrus "I THOUGHT WOULD BE..."
+            show papyrusImg trapped sad
             papyrus "USELESS..."
             papyrus "I GUESS..."
+            show papyrusImg trapped sad flip
             gaster "THE LOOP WAS TOO SHORT"
+            show sansImg hoddie surprised flip
             gaster "IT WASN'T FEASIBLE"
-            sans "But... at least..."
+            sans "but... at least..."
             papyrus "NOT FOR LONG"
             papyrus "FRISK!"
+            hide gaster
+            hide sansImg
+            show friskImg worried zorder 5 at fade with dissolve:
+                xpos 0.0
+                ypos 0.15
             papyrus "PLEASE TAKE CARE OF THIS BONEHEADS"
             frisk "Why are you saying that?"
             gaster "THE COMPUTER!"
@@ -240,19 +274,34 @@ label startEndingGasterFirstTry:
             papyrus "AND TAKE THE W.D. IN A TRIP BEFORE ANYTHING"
             papyrus "HE NEEDS TO SEE THE SURFACE BEFORE LOCKING HIMSELF IN A LAB"
             frisk "Sure"
+            show friskImg happy
             frisk "And then we will get you out of there, right?"
+            show papyrusImg trapped happy flip
             papyrus "EXACTLY"
             papyrus "YOU ALWAYS GET..."
-            "* Papyrus dissapear out of thin air*"
+            play sound "music/fx/iau.wav"
+            hide papyrusImg with pixellate
+            show friskImg surprised
             frisk "What happened?"
+            show gaster free worried zorder 3 at fade with dissolve:
+                xpos 0.2
             gaster "THE COMPUTER WAS PROGRAMMED TO FRY ITSELF"
             gaster "WITHOUT THIS COMPUTER, THERE'S NO WAY WE CAN COMMUNICATE WITH PAPYRUS ANY LONGER"
+            show sansImg hoddie worried zorder 4 at fade with dissolve:
+                xpos 0.5
             dtSans "That... means..."
             dtSans "..."
             dtSans "..."
+            show gaster free compassionate
             gaster "SANS... MY DEAR BOY..."
             gaster "LET'S GO BACK"
+            hide gaster
+            hide sansImg
+            show friskImg worried flip
             gaster "WE HAVE A LOT TO THINK AND CRY BEFORE ANYTHING"
+            hide friskImg
+            stop music fadeout(2.0)
+            pause(2.0)
             jump neutralEndingGaster
             
     

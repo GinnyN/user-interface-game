@@ -59,6 +59,7 @@ image day4 homeworkAttack = "background/day4/homeworkAttack.png"
 image day4 sansFriskWekufeLab = "background/day4/sansFriskWekufeLab.png"
 image day4 gasterFree = "background/day4/gasterFree.png"
 image day4 papyrusTrapped = "background/day4/papyrusTrapped.png"
+image day4 sansFriskFindPapyrusGaster = "background/day4/sansFriskFindPapyrusGaster.png"
 #Free morning
 image freeMorning sans resetZero panoramica = "background/freeMorning/sans-reset-zero-panoramica.png"
 image freeMorning frisk resetZero scene1 = "background/freeMorning/frisk-zero-scene1.png"

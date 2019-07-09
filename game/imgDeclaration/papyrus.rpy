@@ -64,6 +64,13 @@ image papyrusImg scarfless unsure flip = im.Flip("papyrus/scarfless/unsure.png",
 #Topless 
 image papyrusImg topless angry = "papyrus/topless/angry.png"
 image papyrusImg topless angry flip = im.Flip("papyrus/topless/angry.png", horizontal=True)
+#Trapped
+image papyrusImg trapped angry = "papyrus/trapped/angry.png"
+image papyrusImg trapped angry flip = im.Flip("papyrus/trapped/angry.png", horizontal=True)
+image papyrusImg trapped happy = "papyrus/trapped/happy.png"
+image papyrusImg trapped happy flip = im.Flip("papyrus/trapped/happy.png", horizontal=True)
+image papyrusImg trapped sad = "papyrus/trapped/sad.png"
+image papyrusImg trapped sad flip = im.Flip("papyrus/trapped/sad.png", horizontal=True)
 
 #Cool Dude
 image papyrusImg coolDude angry = "papyrus/coolDude/angry.png"

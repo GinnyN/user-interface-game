@@ -180,6 +180,8 @@ image gaster trapped sad flip = im.Flip("gaster/trapped/sad.png", horizontal=Tru
 ## Free
 image gaster free angry = "gaster/free/angry.png"
 image gaster free angry flip = im.Flip("gaster/free/angry.png", horizontal=True)
+image gaster free compassionate = "gaster/free/compassionate.png"
+image gaster free compassionate flip = im.Flip("gaster/free/compassionate.png", horizontal=True)
 image gaster free happy = "gaster/free/happy.png"
 image gaster free happy flip = im.Flip("gaster/free/happy.png", horizontal=True)
 image gaster free surprised = "gaster/free/surprised.png"
