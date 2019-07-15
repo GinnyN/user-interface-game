@@ -38,6 +38,8 @@ image sansImg hoddie neutral = "sans/hoddie/neutral.png"
 image sansImg hoddie neutral flip = im.Flip("sans/hoddie/neutral.png", horizontal=True)
 image sansImg hoddie sideglance = "sans/hoddie/sideglance.png"
 image sansImg hoddie sideglance flip = im.Flip("sans/hoddie/sideglance.png", horizontal=True)
+image sansImg hoddie tired = "sans/hoddie/tired.png"
+image sansImg hoddie tired flip = im.Flip("sans/hoddie/tired.png", horizontal=True)
 image sansImg hoddie done = "sans/hoddie/done.png"
 image sansImg hoddie done flip = im.Flip("sans/hoddie/done.png", horizontal=True)
 #Blue Suit

@@ -91,6 +91,8 @@ image forest = "background/forest.png"
 image fortress inside = "background/fortressInside.png"
 image mountAnemi = "background/mountAnemi.png"
 image wekufeLab = "background/wekufeLab.png"
+image skelebrosHouse inside floor2nd = "background/skelebrosHouseInside2ndFloor.png"
+image skelebrosHouse inside kitchen = "background/skelebrosHouseInsideKitchen.png"
 image mist:
     contains:
         alpha 0.2
