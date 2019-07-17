@@ -53,7 +53,7 @@ label neutralEndingGaster:
     hide sansImg
     sans "just let me take a pill for this headache and i will help you"
     show friskImg angry mild flip
-    frisk "I cannot get Gaster out of the basement!"
+    frisk "I cannot get Gaster out of the lab!"
     show sansImg hoddie tired zorder 4 at fade with dissolve:
         xpos 0.0
     sans "nobody can help you with that"
@@ -81,13 +81,14 @@ label neutralEndingGaster:
     sans "but he's not going to do that"
     sans "you are papyrus best friend, he knows that"
     show friskImg angry mild flip
-    frisk "How I get him out of the basement?"
+    frisk "How I get him out of the lab?"
     show sansImg hoddie sideglance
     sans "i know i will never convince you it's impossible but at least let me finish my pie"
     scene black with dissolve
     pause(1)
-    "* Inside the Basement, Gaster was at the desk, papers and blueprints everywhere with him reading very carefully*"
-    "* Sans and Frisk go in *"
+    scene gasterNeutral lab frame1 with dissolve
+    pause(1)
+    scene gasterNeutral lab frame2 with dissolve
     gaster "HOW YOU.."
     gaster "..."
     gaster "YOU TOOK A SHORTCUT"

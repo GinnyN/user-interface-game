@@ -75,6 +75,9 @@ image tryWithSans sansShattering frame3 = "background/tryWithSans/sansShattering
 image tryWithSans lookingTheDistance frame1 = "background/tryWithSans/watchingTheDistance.png"
 image tryWithSans lookingTheDistance frame2 = "background/tryWithSans/watchingTheDistance-frame2.png"
 image tryWithSans lookingTheDistance frame3 = "background/tryWithSans/watchingTheDistance-frame3.png"
+#Ending Gaster Neutral
+image gasterNeutral lab frame1 = "background/neutralGaster/lab-frame1.png"
+image gasterNeutral lab frame2 = "background/neutralGaster/lab-frame2.png"
 
 #Places Backgrounds
 image newerHome night = "background/newerHome/night.png"
