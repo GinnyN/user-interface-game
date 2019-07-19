@@ -1,4 +1,5 @@
 label day1:
+    $ resets += 1
     $ day = 1
     call resetVariables from _call_resetVariables
     scene black with dissolve

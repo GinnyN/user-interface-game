@@ -190,7 +190,7 @@ label startEndingGasterFirstTry:
             gaster "WE WILL TALK IN THE PAST, MY DEAR PAPYRUS..."
             show papyrusImg trapped sad
             papyrus "..."
-            $ resets = resets + 1
+            $ firstTry = True
             jump day1
         "Continue":
             gaster "NO..."
@@ -332,7 +332,6 @@ label resetOrEndingFirstTry:
             show gaster trapped sorry
             gaster "I SHALL NOT DELAY THIS ANY MORE"
             $ resetWithoutMeaning = True
-            $ resets = resets + 1
             jump day1
         "Use the Program Anyway":
             show papyrusImg dissapointed flip

@@ -74,7 +74,6 @@
         gaster "GOOD LUCK"
         alphys "But who..."
         $ alphysFailStateBoleean = True
-        $ resets += 1
         jump day1
     else:
         alphys "Here! I have the pendrive with the program right here"
@@ -171,4 +170,5 @@
         hide sansImg
         $ program = True
         $ tryWithAlphys = False
+        jump endingsFirstTry
     return

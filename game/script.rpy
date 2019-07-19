@@ -1,7 +1,7 @@
 ﻿# The game starts here.
 
 label start:
-    $ resets = 0
+    $ resets = -1
     
     jump day1
 

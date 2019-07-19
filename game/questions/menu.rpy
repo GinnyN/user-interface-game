@@ -52,7 +52,6 @@ label questionsMenu:
             menu: 
                 "Yes":
                     gaster "WELL THEN"
-                    $ resets += 1
                     jump day1
                 "No":
                     gaster "VERY WELL"

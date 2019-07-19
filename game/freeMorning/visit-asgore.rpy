@@ -3,7 +3,7 @@ label groceryShopping:
     scene muffetBakery inside with dissolve
     show muffet neutral zorder 2 at fade:
         xpos 0
-        ypos 0.2
+        ypos 0.0
     show papyrusImg coolDude offended flip zorder 1 at fade:
         xpos 0.3
     papyrus "YES, EVERYTHING IS SO EXPENSIVE"

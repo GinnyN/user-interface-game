@@ -431,7 +431,6 @@ label papyrusAskSans:
     papyrus "NO"
     show papyrusImg coolDude angry
     papyrus "GASTER WAI"
-    $ resets += 1
     $ papyrusMourn = True
     jump day1
     return

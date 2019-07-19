@@ -74,7 +74,7 @@ label day4:
     toriel "I`ll call Asgore"
 
     if penAtAlphys:
-        call alphysTalksToSans
+        jump alphysTalksToSans
         
     if resets == 0:
         jump meetingGaster
@@ -86,7 +86,6 @@ label day4:
         gaster "THIS IS THE FINAL DAY"
         gaster "PAPYRUS, I'M GOING TO RESET THE TIMELINE"
         gaster "PLEASE BE CAREFUL"
-        $ resets += 1
         jump day1
 
 label meetingGaster:
@@ -425,7 +424,6 @@ label cont2:
     papyrus "??!!!"
     show gaster trapped dissapointed
     gaster "I'M SORRY PAPYRUS"
-    $ resets = resets + 1
     scene black with dissolve
     pause(2)
     jump day1
