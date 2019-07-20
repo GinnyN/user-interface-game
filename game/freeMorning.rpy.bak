@@ -8,7 +8,7 @@ label freeMorning:
     show papyrusImg coolDude thinking
     papyrus "WHAT SHALL I DO?"
     
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning
+    call displayMenuFreeMorning
 
     return
 
@@ -56,7 +56,7 @@ label displayMenuFreeMorning:
                 gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
                 show papyrusImg coolDude delight
                 papyrus "THAT'S A GOOD IDEA"
-                call displayMenuFreeMorning from _call_displayMenuFreeMorning_1
+                call displayMenuFreeMorning
             else:
                 $ visitAlphys = True
                 call visitAlphys from _call_visitAlphys

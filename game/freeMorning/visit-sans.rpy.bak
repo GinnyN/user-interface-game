@@ -141,7 +141,7 @@ label checkSans:
             stop music fadeout(1.0)
             return
         else:
-            call papyrusAskSans from _call_papyrusAskSans
+            call papyrusAskSans
     else:
         papyrus "HE'S GETTING BETTER THANKS TO TORIEL"
         papyrus "BUT HE'S STILL SLACKING OFF WAY TOO OFTEN!"

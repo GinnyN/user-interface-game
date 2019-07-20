@@ -11,7 +11,7 @@ label questionsEnd:
     show gaster trapped neutral flip at fade:
         xpos 0.4
     gaster "THEN, MY DEAR PAPYRUS, THERE'S SOMETHING YOU WANT TO TALK WITH ME?"
-    call questionsMenu
+    call questionsMenu from _call_questionsMenu
     return
 
 label questionsMenu:
@@ -19,23 +19,23 @@ label questionsMenu:
         "This is a time loop, right?":
             call decisions from _call_decisions
         "What do I do with this Storage Unit?":
-            call pendriveTree
+            call pendriveTree from _call_pendriveTree
         #"Those Weird Monsters I found":
         #    call monstersForest from _call_monstersForest
         "Political Geography":
-            call politicalGeographyTree
+            call politicalGeographyTree from _call_politicalGeographyTree
         #"I know something I really didn't knew I knew" if papyrusKnowsProgramming:
         #    call programmingTree
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
-            call sansPapyrusPast
+            call sansPapyrusPast from _call_sansPapyrusPast
         #"Demography" if politicalGeography > 0:
         #    call demographics
         "Wait, King Fluffybuns?" if politicalGeography > 0:
             call gasterGerson from _call_gasterGerson
         "Skeleton During the Great War" if gasterPast > 0:
-            call gasterPastTree
+            call gasterPastTree from _call_gasterPastTree
         "4th Wall Breaking Stuff":
-            call fourthWallTree
+            call fourthWallTree from _call_fourthWallTree
         "Nothing Else":
             show papyrusImg uhh
             papyrus "NOTHING I CAN THINK OF RIGHT NOW"
@@ -56,7 +56,7 @@ label questionsMenu:
                 "No":
                     gaster "VERY WELL"
                     gaster "BE CAREFUL WITH CLICKING NEXT TIME"
-    call questionsMenu
+    call questionsMenu from _call_questionsMenu_1
     return
 
 label sansPapyrusPast:
@@ -64,9 +64,9 @@ label sansPapyrusPast:
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
             call foundSomePapers from _call_foundSomePapers
         "Why did you created us?" if sansPapyrusPast > 0:
-            call sansWantsABrother
+            call sansWantsABrother from _call_sansWantsABrother
         "Skeleton Disco Wave" if sansPapyrusPast == 2:
-            call skeletonWave
+            call skeletonWave from _call_skeletonWave
         "Return":
             return
     return 
@@ -75,19 +75,19 @@ label sansPapyrusPast:
 label pendriveTree:
     menu:
         "What do I do with this Storage Unit?":
-            call pendriveBrainStorm
+            call pendriveBrainStorm from _call_pendriveBrainStorm
         "What about your brother?" if pendriveTree > 0:
-            call pendriveSans
+            call pendriveSans from _call_pendriveSans
         "Can you tell me what the problem with your brother?" if pendriveTreeSans > 0:
-            call pendriveSansTwo
+            call pendriveSansTwo from _call_pendriveSansTwo
         "What about the Royal Scientist?" if pendriveTree > 0:
-            call pendriveAlphys
+            call pendriveAlphys from _call_pendriveAlphys
         "Are you ok?" if pendriveTreeAlphys > 0:
-            call pendriveAreYouOk
+            call pendriveAreYouOk from _call_pendriveAreYouOk
         "What is Alphys doing now anyways?" if pendriveTreeAlphys > 1:
-            call pendriveAlphysThree
+            call pendriveAlphysThree from _call_pendriveAlphysThree
         "Did Alphys said she needs more time?" if alphysFailStateBoleean and pendriveTreeAlphys > 2:
-            call pendriveAlphysFailState
+            call pendriveAlphysFailState from _call_pendriveAlphysFailState
         "Return":
             return
     return
@@ -99,7 +99,7 @@ label programmingTree:
         "Maybe I can do something with this programming thing" if programmingWoes2 > 0:
             call programmingMagicTheory from _call_programmingMagicTheory
         "Then, how do Sans do it?" if programmingWoes2 > 1:
-            call theoryBehind
+            call theoryBehind from _call_theoryBehind
         "Return":
             return
     return
@@ -133,7 +133,7 @@ label gasterPastTree:
         "Skeleton Creation" if gasterPast > 3:
             call superSoldiers from _call_superSoldiers
         "I WAS NEVER A CHILD?!" if gasterPast > 4:
-            call noChildhood
+            call noChildhood from _call_noChildhood
         "Return":
             return
     return
