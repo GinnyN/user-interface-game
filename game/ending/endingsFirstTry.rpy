@@ -190,7 +190,6 @@ label startEndingGasterFirstTry:
             gaster "WE WILL TALK IN THE PAST, MY DEAR PAPYRUS..."
             show papyrusImg trapped sad
             papyrus "..."
-            $ firstTry = True
             jump day1
         "Continue":
             gaster "NO..."

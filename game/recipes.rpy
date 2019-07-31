@@ -57,6 +57,7 @@ define program = False
 define papersPapyrusCreation = False
 define readStats = False
 define firstTry = True
+define gasterInformPosition = False
 
 #Flag variables which have to be reset
 define whoRescueMauricio = False

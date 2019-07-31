@@ -189,7 +189,25 @@ label papyrusGasterConversation:
     gaster "WELL THEN"
     gaster "I'M GOING TO RESET"
     gaster "LET'S HOPE THE NEXT THING WE TRY IS GOING TO BE FRUITFUL"
-    $ resets += 1
+    $ gasterInformPosition = True
     jump day1
+
+label gasterInformThePosition:
+    papyrus "SOO..."
+    papyrus "SOOOOOOOOOOOO....."
+    gaster "ARGH!"
+    gaster "ALRIGHT, FINE, FINE..."
+    gaster "THERE'S A GARAGE AT THE OTHER SIDE OF THE FORTRESS"
+    gaster "YOU SHOULD KNOW THAT BY NOW"
+    papyrus "I ALWAYS FORGOT"
+    undyne "What are you doing Papyrus?"
+    papyrus "LET'S CHECKOUT THE OTHER SIDE OF THIS PLACE"
+    papyrus "MAYBE WE CAN FIND SOMETHING THERE"
+    undyne "Papyrus stop!"
+    undyne "Wait! WAIT!"
+    sans "what..."
+    sans "this..."
+    sans "mmm..."
+    gaster "INDEED MY DEAR SANS, INDEED"
 return
 

@@ -57,10 +57,11 @@ label day1:
                 jump titleScreen
     else:        
         menu:
-            "Jump to the Building" if resets != 1:
+            "Jump to the Building":
                 show papyrusImg angry at fade:
                     xalign 0.4
                 jump jumpBuilding
+            "Ask Gaster the Position" if gasterInformPosition:
             
             #"Ask Sans about creating a Shortcut" if doors:
             #    jump shortcut
