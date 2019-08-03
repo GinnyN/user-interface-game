@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/ending/neutral.rpy", line 190, in script
-    $ quit()
-  File "game/ending/neutral.rpy", line 190, in <module>
-    $ quit()
-NameError: name 'quit' is not defined
+  File "game/day1.rpy", line 47, in script call
+    call endofDay1
+  File "game/day1.rpy", line 47, in script call
+    call endofDay1
+ScriptError: could not find label 'endofDay1'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/ending/neutral.rpy", line 190, in script
-    $ quit()
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 900, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/ending/neutral.rpy", line 190, in <module>
-    $ quit()
-NameError: name 'quit' is not defined
+  File "game/day1.rpy", line 47, in script call
+    call endofDay1
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1422, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/day1.rpy", line 47, in script call
+    call endofDay1
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\script.py", line 886, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'endofDay1'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 User Interface 0.2
-Thu Jul 18 23:05:03 2019
+Sat Aug 03 11:22:36 2019

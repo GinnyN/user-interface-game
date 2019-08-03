@@ -2,8 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/day1-alt.rpy", line 71: is not terminated with a newline. (Check strings and parenthesis.)
-        pause(2.0
+The label jumpBuilding is defined twice, at
+  File "game/day1/jump-to-fortress.rpy", line 2 and
+  File "game/day1/normal_path.rpyc", line 2.
+
+The label insideBuilding is defined twice, at
+  File "game/day1/jump-to-fortress.rpy", line 13 and
+  File "game/day1/normal_path.rpyc", line 13.
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sat Jun 15 22:57:20 2019
+Sat Aug 03 11:20:55 2019
