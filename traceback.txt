@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day1.rpy", line 47, in script call
-    call endofDay1
-  File "game/day1.rpy", line 47, in script call
-    call endofDay1
-ScriptError: could not find label 'endofDay1'.
+  File "game/day2.rpy", line 31, in script call
+    call finishPlan
+  File "game/day2.rpy", line 31, in script call
+    call finishPlan
+ScriptError: could not find label 'finishPlan'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day1.rpy", line 47, in script call
-    call endofDay1
+  File "game/day2.rpy", line 31, in script call
+    call finishPlan
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1422, in execute
     rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/day1.rpy", line 47, in script call
-    call endofDay1
+  File "game/day2.rpy", line 31, in script call
+    call finishPlan
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\script.py", line 886, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'endofDay1'.
+ScriptError: could not find label 'finishPlan'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 User Interface 0.2
-Sat Aug 03 11:22:36 2019
+Sun Aug 04 12:10:01 2019

@@ -70,5 +70,6 @@ label papyrusLab:
     undyne "Ngaaa..."
     show undyneImg neutral flip
     undyne "Ok"
+    jump alphysHomeCall
 return
 

@@ -2,13 +2,65 @@
 errors listed below, and try again.
 
 
-The label jumpBuilding is defined twice, at
-  File "game/day1/jump-to-fortress.rpy", line 2 and
-  File "game/day1/normal_path.rpyc", line 2.
+The label alphysTeasing is defined twice, at
+  File "game/fashionShow/alphysTeasing.rpy", line 1 and
+  File "game/fashionShow/main.rpy", line 282.
 
-The label insideBuilding is defined twice, at
-  File "game/day1/jump-to-fortress.rpy", line 13 and
-  File "game/day1/normal_path.rpyc", line 13.
+The label _call_mettatonSurprisedFlip_1 is defined twice, at
+  File "game/fashionShow/alphysTeasing.rpy", line 27 and
+  File "game/fashionShow/main.rpy", line 308.
+
+The label bonestrousleSuit is defined twice, at
+  File "game/fashionShow/main.rpy", line 18 and
+  File "game/fashionShow/presentation.rpy", line 57.
+
+The label _call_mettatonPresentingFlip is defined twice, at
+  File "game/fashionShow/main.rpy", line 29 and
+  File "game/fashionShow/presentation.rpy", line 68.
+
+The label _call_sansSuitStiff is defined twice, at
+  File "game/fashionShow/main.rpy", line 33 and
+  File "game/fashionShow/presentation.rpy", line 72.
+
+The label megalovaniaSuit is defined twice, at
+  File "game/fashionShow/main.rpy", line 40 and
+  File "game/fashionShow/presentation.rpy", line 79.
+
+The label _call_mettatonPresentingFlip_1 is defined twice, at
+  File "game/fashionShow/main.rpy", line 51 and
+  File "game/fashionShow/presentation.rpy", line 90.
+
+The label _call_sansSuitStiff_1 is defined twice, at
+  File "game/fashionShow/main.rpy", line 55 and
+  File "game/fashionShow/presentation.rpy", line 94.
+
+The label spearsSuit is defined twice, at
+  File "game/fashionShow/main.rpy", line 61 and
+  File "game/fashionShow/presentation.rpy", line 100.
+
+The label _call_mettatonPresentingFlip_2 is defined twice, at
+  File "game/fashionShow/main.rpy", line 72 and
+  File "game/fashionShow/presentation.rpy", line 111.
+
+The label _call_sansSuitStiff_2 is defined twice, at
+  File "game/fashionShow/main.rpy", line 76 and
+  File "game/fashionShow/presentation.rpy", line 115.
+
+The label _call_mettatonPresenting_3 is defined twice, at
+  File "game/fashionShow/main.rpy", line 79 and
+  File "game/fashionShow/presentation.rpy", line 118.
+
+The label publicAsk is defined twice, at
+  File "game/fashionShow/main.rpy", line 83 and
+  File "game/fashionShow/publicAsk.rpy", line 1.
+
+The label _call_mettatonThinking is defined twice, at
+  File "game/fashionShow/main.rpy", line 230 and
+  File "game/fashionShow/publicAsk.rpy", line 148.
+
+The label _call_mettatonDelight is defined twice, at
+  File "game/fashionShow/main.rpy", line 240 and
+  File "game/fashionShow/publicAsk.rpy", line 158.
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sat Aug 03 11:20:55 2019
+Sun Aug 04 12:04:40 2019
