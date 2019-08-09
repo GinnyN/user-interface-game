@@ -79,6 +79,10 @@ label papyrusGasterIncidentAverted:
     papyrus "WHY?"
     gaster "I TRIED"
     gaster "MY WORKING THEORY IS THE WEKUFES COINCIDENTLY GOT ENOUGH DETERMINATION STORED AT THAT MOMENT"
+    papyrus "HOW THEY GET THEIR DETERMINATION ANYWAYS?"
+    gaster "I DIDN'T CHECK OUT, BUT I IMAGINE THAT SIMILARY HOW YOUR FRIEND ALPHYS GOT THEM"
+    papyrus "..."
+    papyrus "THAT WERE ENOUGH QUESTIONS"
     return
     
 return
