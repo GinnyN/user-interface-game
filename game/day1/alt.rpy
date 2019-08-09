@@ -61,6 +61,24 @@ label gasterInformThePosition:
     sans "yes..."
     sans "we'll talk tomorrow about this"
     toriel "Good Night"
+    toriel "..."
+    toriel "Now I'm thinking, where's Papyrus?"
+    return
+
+label papyrusGasterIncidentAverted:
+    papyrus "I DIDN'T KILL ANYONE!"
+    gaster "THAT'S A GREAT THING TO ASPIRE TO, I GUESS"
+    papyrus "NOBODY GETS IN TROUBLE!"
+    papyrus "I'M SO HAPPY!"
+    gaster "THEY KIDNAPPED YOUR FRIEND ANYWAY, THOUGH"
+    papyrus "OH"
+    papyrus "OH..."
+    gaster "IT'S NOT YOUR FAULT AT LEAST"
+    papyrus "THAT'S NOT ENOUGH"
+    gaster "I TOLD YOU, WE CANNOT GO EVEN MORE IN THE PAST THAN THAT MOMENT"
+    papyrus "WHY?"
+    gaster "I TRIED"
+    gaster "MY WORKING THEORY IS THE WEKUFES COINCIDENTLY GOT ENOUGH DETERMINATION STORED AT THAT MOMENT"
     return
     
 return
