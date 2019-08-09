@@ -20,10 +20,15 @@ label day1:
                     xalign 0.4
                 jump normalPath
             "Ask Gaster the Position" if gasterInformPosition:
-                jump gasterInformThePosition         
+                call gasterInformThePosition
+                jump altPath
             
             #"Ask Sans about creating a Shortcut" if doors:
             #    jump shortcut
+
+label altPath:
+    call papyrusGasterIncidentAverted
+    call endOfDay1
 
 label normalPath:
     call jumpBuilding
@@ -45,8 +50,6 @@ label normalPath:
 
     call torielsAdvice
     call endOfDay1
-
-
-jump day2
+    jump day2
 
 return
