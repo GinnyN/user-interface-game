@@ -52,4 +52,8 @@ label normalPath:
     call endOfDay1
     jump day2
 
+label endOfDay1Trigger:
+    call endOfDay1
+    jump day2
+
 return

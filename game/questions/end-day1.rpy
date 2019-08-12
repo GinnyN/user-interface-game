@@ -1,11 +1,11 @@
 label endOfDay1:
     if resets > 0:
-        scene forest with dissolve
-        show papyrusImg screamingCall at fade:
-            xpos -0.1
-        papyrus "GASTER!"
-        papyrus "ARE YOU THERE?!"
-        if resets == 1:
+        if resets == 1:    
+            scene forest with dissolve
+            show papyrusImg screamingCall at fade:
+                xpos -0.1
+            papyrus "GASTER!"
+            papyrus "ARE YOU THERE?!"
             show papyrusImg annoyed
             papyrus "CAN YOU EXPLAIN WHAT'S GOING ON?!"
             show papyrusImg worried
