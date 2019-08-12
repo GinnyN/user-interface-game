@@ -70,3 +70,26 @@ label displayMenuFreeMorning:
             call visitFrisk from _call_visitFrisk
 
     return
+    
+
+label displayMenuFreeAfternoon:
+    menu:
+        "Toriel Afternoon" if not helpedToriel:
+            "Toriel Afternoon Selected"
+
+        "Asgore Afternoon" if not metAsgore:
+            "Asgore Afternoon Selected"
+            
+        "Sans Afternoon" if not visitSans:
+            "Sans Afternoon Selected"
+
+        "Undyne Afternoon" if not visitUndyne:
+            "Undyne Afternoon Selected"
+        
+        "Alphys Afternoon" if not visitAlphys:
+            "Alphys Afternoon Selected"
+        
+        "Frisk Afternoon" if not visitFrisk:
+            "Frisk Afternoon Selected"
+
+    return
