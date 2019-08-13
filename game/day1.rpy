@@ -29,6 +29,7 @@ label day1:
 label altPath:
     call papyrusGasterIncidentAverted
     call endOfDay1
+    jump altDay2
 
 label normalPath:
     call jumpBuilding
