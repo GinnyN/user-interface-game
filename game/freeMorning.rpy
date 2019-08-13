@@ -75,7 +75,7 @@ label displayMenuFreeMorning:
 label displayMenuFreeAfternoon:
     menu:
         "Toriel Afternoon" if not helpedToriel:
-            "Toriel Afternoon Selected"
+            call afternoonToriel
 
         "Asgore Afternoon" if not metAsgore:
             "Asgore Afternoon Selected"
