@@ -11,4 +11,22 @@ label afternoonToriel
   papyrus "BUT DO NOT PEEK!"
   "* Papyrus leaves *"
   gaster "MY SWEET CHILD"
+  "* Scene changes to Toriel's house *"
+  toriel "Papyrus!"
+  toriel "Nice to meet you"
+  papyrus "HOW'S EVERYTHING GOING?"
+  papyrus "HOW'S FRISK HANDLING EVERYTHING?"
+  toriel "They are fine"
+  $ if day == 2:
+    toriel "They are sleeping after what happened yesterday"
+  $ else:
+    toriel "They are sleeping after what happened that day"
+  toriel "But I think they'll be fine"
+  papyrus "GREAT!"
+  papyrus "..."
+  papyrus "OH!"
+  papyrus "I NEED TO ASK YOU SOMETHING"
+  toriel "Oh?"
+  toriel "And what it could be?"
+  
 return
