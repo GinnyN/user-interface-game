@@ -245,3 +245,10 @@ label noChildhood:
   if gasterPast == 5:
     $ gasterPast = gasterPast + 1
   return
+
+label blankScienceEncyclopedia:
+  papyrus "THEY JUST FOUND IN THE LIBRARY A BLANK BOOK"
+  gaster "THAT MUST BE THE SCIENCE ENCYCLOPEDIA"
+  if gasterPast == 6:
+    $ gasterPast = gasterPast + 1
+  return 
