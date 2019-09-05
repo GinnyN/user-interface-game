@@ -134,6 +134,8 @@ label gasterPastTree:
             call superSoldiers from _call_superSoldiers
         "I WAS NEVER A CHILD?!" if gasterPast > 4:
             call noChildhood from _call_noChildhood
+        "Blank Science Encyclopedia" if gasterPast > 5 and gasterScienceEncyclopedia:
+            call blankScience
         "Return":
             return
     return
