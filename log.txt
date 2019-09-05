@@ -543,4 +543,10 @@ Texture testing:
 - 1024px textures work.
 - 2048px textures work.
 Total time until interface ready: 18883.237s
-- Target is 
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.017667 seconds.
+- Frame drawn at 0.028667 seconds.
+- Frame drawn at 0.060667 seconds.
+- Frame drawn at 0.080667 seconds.
+- 0.080667 seconds to render 5 frames.
