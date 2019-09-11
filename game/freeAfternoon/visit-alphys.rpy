@@ -19,4 +19,6 @@ label afternoonAlphys
   gaster "THEN IS NOT A GOOD PLAN BECAUSE YOU HAVE THAT PROBLEM"
   papyrus "..."
   papyrus "I GUESS..."
+  gaster "IF IT'S JUST 'JOG YOUR MEMORY', JUST GO TO THE LIBRARY AND READ SOME PROGRAMMING THEORY"
+  gaster "MAYBE ALSO SOME MAGIC THEORY"
 return
