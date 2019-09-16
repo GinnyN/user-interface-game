@@ -44,5 +44,13 @@ label afternoonAlphys
   "..."
   papyrus "SHE'S STILL SENDING STUFF"
   papyrus "OH NO..."
+  papyrus "OH NO"
+  papyrus "OH"
+  papyrus "..."
+  papyrus "..."
+  papyrus "..."
+  papyrus "........"
+  papyrus "............................................"
+  papyrus "I HAVE MADE A TERRIBLE MISTAKE"
   
 return
