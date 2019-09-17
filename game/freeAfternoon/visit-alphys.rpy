@@ -1,4 +1,4 @@
- label afternoonAlphys
+label afternoonAlphys
   if tryWithAlphys:
      call alphysAlt
   else:
@@ -56,4 +56,4 @@
     papyrus "............................................"
     papyrus "I HAVE MADE A TERRIBLE MISTAKE"
 
-  return
+ return
