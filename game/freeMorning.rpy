@@ -76,20 +76,43 @@ label displayMenuFreeAfternoon:
     menu:
         "Toriel Afternoon" if not helpedToriel:
             call afternoonToriel
+            $ helpedToriel = True
 
         "Asgore Afternoon" if not metAsgore:
             "Asgore Afternoon Selected"
+            $ metAsgore = True
             
         "Sans Afternoon" if not visitSans:
-            "Sans Afternoon Selected"
+            call afternoonSans
+            $ visitSans = True
 
         "Undyne Afternoon" if not visitUndyne:
-            "Undyne Afternoon Selected"
+            call afternoonUndyne
+            $ visitUndyne = True
         
         "Alphys Afternoon" if not visitAlphys:
-            "Alphys Afternoon Selected"
+            if penAtAlphys:
+                show papyrusImg coolDude thinking
+                papyrus "I LEFT THE IMPORTANT MISSION TO DR ALPHYS LAST NIGHT"
+                papyrus "I DON'T KNOW IF I CAN VISIT HER, I MIGHT BOTHER HER"
+                gaster "SHE MIGHT HAVE INSPIRATION ON DOING IT AND THEN WORK IN A HURRY FOR 3 HOURS STRAIGHT"
+                papyrus "YOU MEAN SHE MIGHT NEED SOME REFRESTMENTS FOR AVOID DEHYDRATION?"
+                gaster "I DON'T THINK SO"
+                gaster "SHE LOOKED MORE LIKE THE NOCTURNAL TYPE"
+                show papyrusImg coolDude explaining
+                papyrus "YOU RIGHT"
+                papyrus "SHE PROBABLY HAD ALREADY DONE ALL THE WORK"
+                papyrus "AND SHE'S SLEEPING RIGHT NOW"
+                gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
+                show papyrusImg coolDude delight
+                papyrus "THAT'S A GOOD IDEA"
+                call displayMenuFreeAfternoon
+            else:
+                call afternoonAlphys
+                $ visitAlphys = True
         
         "Frisk Afternoon" if not visitFrisk:
+            $ visitFrisk = True
             "Frisk Afternoon Selected"
 
     return

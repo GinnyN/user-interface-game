@@ -1,4 +1,4 @@
-label afternoonToriel
+label afternoonToriel:
   papyrus "I WANT TO TALK TORIEL ABOUT SOMETHING..."
   papyrus "..."
   papyrus "HEY, GASTER... CAN YOU... NOT HEAR WHAT I WANT TO TALK WITH HER?"
@@ -17,9 +17,9 @@ label afternoonToriel
   papyrus "HOW'S EVERYTHING GOING?"
   papyrus "HOW'S FRISK HANDLING EVERYTHING?"
   toriel "They are fine"
-  $ if day == 2:
+  if day == 2:
     toriel "They are sleeping after what happened yesterday"
-  $ else:
+  else:
     toriel "They are sleeping after what happened that day"
   toriel "But I think they'll be fine"
   papyrus "GREAT!"
@@ -118,5 +118,5 @@ label afternoonToriel
   toriel "In any case, next week we're going to have a meeting in the library to see what we're going to do"
   toriel "I'm sorry Papyrus I don't have answers for your question"
   papyrus "IT'S OK"
-  $ gasterScienceEncyclopedia = true
+  $ gasterScienceEncyclopedia = True
 return

@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/day1.rpy", line 55: expected ':' not found.
-    label endOfDay1Trigger
-                          ^
+File "game/freeAfternoon/visit-toriel.rpy", line 21: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    toriel "They are sleeping after what happened yesterday"
+    ^
+
+File "game/freeAfternoon/visit-toriel.rpy", line 23: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    toriel "They are sleeping after what happened that day"
+    ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sun Aug 11 18:12:46 2019
+Sun Sep 22 16:59:22 2019
