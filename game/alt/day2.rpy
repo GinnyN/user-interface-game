@@ -21,4 +21,10 @@ label altDay3:
   papyrus "NOW..."
   papyrus "WHAT I SHOULD DO THIS MORNING?"
   call displayMenuFreeMorning
+  papyrus "DO YOU DO SOMETHING IN THE MORNINGS SINCE YOU ONLY TALK TO ME IN THE AFTERNOONS?"
+  gaster "THAT'S NOT TRUE AND YOU KNOW THAT"
+  papyrus "I'M PRETTY SURE YOU ARE NEVER THERE WHEN I DO MY MORNING ROUTINE"
+  gaster "YOU DO STUFF BEFORE 10 A.M.?"
+  papyrus "..."
+  papyrus "OK, LET 
 return
