@@ -13,4 +13,12 @@ label altDay2:
   gaster "..."
   papyrus "I CANNOT BELIEVE I'M EXPLAINING THIS TO *YOU*"
   call displayMenuFreeAfternoon
+
+label altDay3:
+  papyrus "GREAT!"
+  papyrus "I DID MY MORNING RUN"
+  papyrus "I GIVE SOME PETS IN THE FOREST"
+  papyrus "NOW..."
+  papyrus "WHAT I SHOULD DO THIS MORNING?"
+  call displayMenuFreeMorning
 return
