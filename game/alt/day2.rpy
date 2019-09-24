@@ -13,6 +13,7 @@ label altDay2:
   gaster "..."
   papyrus "I CANNOT BELIEVE I'M EXPLAINING THIS TO *YOU*"
   call displayMenuFreeAfternoon
+  call questionsEnd
 
 label altDay3:
   papyrus "GREAT!"
@@ -26,5 +27,9 @@ label altDay3:
   papyrus "I'M PRETTY SURE YOU ARE NEVER THERE WHEN I DO MY MORNING ROUTINE"
   gaster "YOU DO STUFF BEFORE 10 A.M.?"
   papyrus "..."
-  papyrus "OK, LET 
+  papyrus "OK, LET SEE WHAT CAN I DO THIS AFTERNOON"
+  call displayMenuFreeAfternoon
+  call questionsEnd
+
+  jump endingResolve
 return

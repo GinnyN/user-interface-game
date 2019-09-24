@@ -59,6 +59,7 @@ define readStats = False
 define firstTry = True
 define gasterInformPosition = False
 define gasterScienceEncyclopedia = True
+define endingSans = False
 
 #Flag variables which have to be reset
 define whoRescueMauricio = False
@@ -87,6 +88,7 @@ label resetVariables:
     $ whoRescueMauricio = False
     $ alphysFailState = False
     $ penAtAlphys = False
+    $ endingSans = False
     return
 
 #Define Day Alternatives

@@ -39,7 +39,7 @@ label alphysHome:
     alphys "..."
     show alphysImg casual nostalgic flip
     alphys "If you say so"
-    if pen and tryWithAlphys and not program:
+    if tryWithAlphys:
         $ penAtAlphys = True
         show papyrusImg neutral flip
         pause(1.0)

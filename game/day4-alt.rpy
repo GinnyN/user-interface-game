@@ -1,9 +1,12 @@
- label alphysTalksToSans:
+label alphysTalksToSans:
     hide torielImg
     alphys "Sans, I need to talk with you about something"
     show sansImg hoddie surprised flip
     sans "really?"
     alphys "Yes, it`s something important..."
+
+label getPenFromAlphys:
+    $ penAtAlphys = False
     stop music fadeout(1)
     scene black with dissolve
     pause(0.5)
@@ -76,99 +79,102 @@
         $ alphysFailStateBoleean = True
         jump day1
     else:
-        alphys "Here! I have the pendrive with the program right here"
-        alphys "But I will not give it to you until you explain yourself"
-        papyrus "!?"
-        papyrus "DR ALPHYS, PLEASE"
-        papyrus "I..."
-        papyrus "I..."
-        sans "..."
-        show sansImg hoddie worried flip
-        sans "papyrus..."
-        sans "you has been very suspicious lately"
-        sans "are you"
-        extend " traveling in time?"
-        show papyrusImg surprised
-        show alphysImg casual confused flip
-        alphys "Hey!"
-        alphys "What are you talking about?"
-        play music "music/24 Bonetrousle.mp3" fadeout 1
-        gaster "THE ANSWER WILL BE YES,  MY DEAR SANS"
-        show sansImg hoddie surprised flip
-        show alphysImg casual noWords flip
-        show papyrusImg sorry
-        sans "!?"
-        alphys "But, who's...'"
-        gaster "BUT THE HUMANS HAVE AN ESPECIFIC TERM FOR THIS KIND OF TRAVEL"
-        show sansImg hoddie surprised
-        gaster "THEY CALL IT 'GROUNDHOG DAY LOOP'"
-        show sansImg hoddie surprised flip
-        show alphysImg casual noWords
-        gaster "AFTER A MOVIE, I'LL BET"
-        show papyrusImg curious
-        papyrus "!!!!!!!"
-        papyrus "HOMEWORK GRABING ATTACK!!!"
-        scene day4 homeworkAttack with vpunch
-        alphys "What?!"
-        play sound "music/fx/steps.wav"
-        show alphysImg casual noWords at fade with dissolve:
-            xpos 0.1
-            ypos -0.2
-        alphys "Do you know who was that voice?"
-        show sansImg hoddie angry at fade with dissolve:
-            xpos 0.0
-        sans "yes"
-        sans "..."
-        sans "but i can't tell you"
-        show alphysImg casual angry flip
-        alphys "Ok, what´s going on with you skeletons and your secrets?"
-        sans "this is the main reason i don´t like to involve anyone else"
-        hide sansImg
-        play sound "music/fx/steps.wav"
-        show alphysImg casual angry
-        alphys "But..."
-        show alphysImg casual angry flip
-        alphys "but..."
-        hide alphysImg
-        alphys "I DESERVE AN EXPLANATION"
-        stop music fadeout(1.0)
-        scene black with dissolve
-        pause(1.0)
-        play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
-        scene forest with dissolve
-        show papyrusImg annoyed at fade with dissolve:
-            xpos 0.1
-        papyrus "HOW ARE YOU DOING THAT?"
-        gaster "IT SEEMS, MY DEAR PAPYRUS, THAT I CAN PROJECT MY VOICE DURING THIS DAY TO THE REST OF THE WORLD"
-        gaster "I SHOULD NOT DO THAT AGAIN, UNLESS THERE'S AN SPECIFIC NEED"
-        show papyrusImg delight
-        papyrus "BUT I HAVE THE PENDRIVE"
-        papyrus "THIS SHOULD RETURN YOUR BODY TO YOUR NATURAL STATE"
-        gaster "ARE YOU SURE MY DEAR BOY?"
-        show papyrusImg serious
-        papyrus "OF COURSE!"
-        show papyrusImg delight
-        papyrus "DR ALPHYS IS THE SMARTEST MONSTER OF NEWER HOME"
-        show papyrusImg checkThis
-        papyrus "I´M PRETTY SURE SHE COULD MADE IT WHILE WATCHING THE LAST EPISODE OF KISSY CUTIE MEW MEW AND HAVING ONE HAND TIED TO HER BACK"
-        gaster "I DON'T KNOW WHAT ARE YOU TALKING ABOUT, BUT I TRUST YOU"
-        gaster "MOVE POST HASTE! SO WE SHALL END THIS NIGHTMARE ONCE AND FOR ALL!"
-        hide papyrusImg
-        papyrus "YES SIR!"
-        pause(1.0)
-        show sansImg hoddie angry at fade with dissolve:
-            xpos 0.3
-        if gasterPapyrusSansDad:
-            sans "i knew it"
-            sans "but how papyrus is in the middle of all of this"
-            sans "i'd better figure out"
+        if firstTry:
+            alphys "Here! I have the pendrive with the program right here"
+            alphys "But I will not give it to you until you explain yourself"
+            papyrus "!?"
+            papyrus "DR ALPHYS, PLEASE"
+            papyrus "I..."
+            papyrus "I..."
+            sans "..."
+            show sansImg hoddie worried flip
+            sans "papyrus..."
+            sans "you has been very suspicious lately"
+            sans "are you"
+            extend " traveling in time?"
+            show papyrusImg surprised
+            show alphysImg casual confused flip
+            alphys "Hey!"
+            alphys "What are you talking about?"
+            play music "music/24 Bonetrousle.mp3" fadeout 1
+            gaster "THE ANSWER WILL BE YES,  MY DEAR SANS"
+            show sansImg hoddie surprised flip
+            show alphysImg casual noWords flip
+            show papyrusImg sorry
+            sans "!?"
+            alphys "But, who's...'"
+            gaster "BUT THE HUMANS HAVE AN ESPECIFIC TERM FOR THIS KIND OF TRAVEL"
+            show sansImg hoddie surprised
+            gaster "THEY CALL IT 'GROUNDHOG DAY LOOP'"
+            show sansImg hoddie surprised flip
+            show alphysImg casual noWords
+            gaster "AFTER A MOVIE, I'LL BET"
+            show papyrusImg curious
+            papyrus "!!!!!!!"
+            papyrus "HOMEWORK GRABING ATTACK!!!"
+            scene day4 homeworkAttack with vpunch
+            alphys "What?!"
+            play sound "music/fx/steps.wav"
+            show alphysImg casual noWords at fade with dissolve:
+                xpos 0.1
+                ypos -0.2
+            alphys "Do you know who was that voice?"
+            show sansImg hoddie angry at fade with dissolve:
+                xpos 0.0
+            sans "yes"
+            sans "..."
+            sans "but i can't tell you"
+            show alphysImg casual angry flip
+            alphys "Ok, what´s going on with you skeletons and your secrets?"
+            sans "this is the main reason i don´t like to involve anyone else"
+            hide sansImg
+            play sound "music/fx/steps.wav"
+            show alphysImg casual angry
+            alphys "But..."
+            show alphysImg casual angry flip
+            alphys "but..."
+            hide alphysImg
+            alphys "I DESERVE AN EXPLANATION"
+            stop music fadeout(1.0)
+            scene black with dissolve
+            pause(1.0)
+            play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
+            scene forest with dissolve
+            show papyrusImg annoyed at fade with dissolve:
+                xpos 0.1
+            papyrus "HOW ARE YOU DOING THAT?"
+            gaster "IT SEEMS, MY DEAR PAPYRUS, THAT I CAN PROJECT MY VOICE DURING THIS DAY TO THE REST OF THE WORLD"
+            gaster "I SHOULD NOT DO THAT AGAIN, UNLESS THERE'S AN SPECIFIC NEED"
+            show papyrusImg delight
+            papyrus "BUT I HAVE THE PENDRIVE"
+            papyrus "THIS SHOULD RETURN YOUR BODY TO YOUR NATURAL STATE"
+            gaster "ARE YOU SURE MY DEAR BOY?"
+            show papyrusImg serious
+            papyrus "OF COURSE!"
+            show papyrusImg delight
+            papyrus "DR ALPHYS IS THE SMARTEST MONSTER OF NEWER HOME"
+            show papyrusImg checkThis
+            papyrus "I´M PRETTY SURE SHE COULD MADE IT WHILE WATCHING THE LAST EPISODE OF KISSY CUTIE MEW MEW AND HAVING ONE HAND TIED TO HER BACK"
+            gaster "I DON'T KNOW WHAT ARE YOU TALKING ABOUT, BUT I TRUST YOU"
+            gaster "MOVE POST HASTE! SO WE SHALL END THIS NIGHTMARE ONCE AND FOR ALL!"
+            hide papyrusImg
+            papyrus "YES SIR!"
+            pause(1.0)
+            show sansImg hoddie angry at fade with dissolve:
+                xpos 0.3
+            if gasterPapyrusSansDad:
+                sans "i knew it"
+                sans "but how papyrus is in the middle of all of this"
+                sans "i'd better figure out"
+            else:
+                sans "that ham was definitely his"
+                sans "but how?"
+                sans "and why papyrus?"
+                sans "argh!"
+            hide sansImg
+            $ program = True
+            $ tryWithAlphys = False
         else:
-            sans "that ham was definitely his"
-            sans "but how?"
-            sans "and why papyrus?"
-            sans "argh!"
-        hide sansImg
-        $ program = True
-        $ tryWithAlphys = False
-        jump endingsFirstTry
+            "Alphys explain she doesnt know how to read the code"
+        jump endingResolve
     return

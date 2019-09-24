@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/alt/day2.rpy", line 17: expected ':' not found.
-    label altDay3;
-                 ^
+File "game/day4-alt.rpy", line 8: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sun Sep 22 23:15:12 2019
+Mon Sep 23 21:33:19 2019

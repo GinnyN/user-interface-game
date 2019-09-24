@@ -1,26 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/recipes.rpy", line 61, in script
-    define gasterScienceEncyclopedia = true
-  File "game/recipes.rpy", line 61, in <module>
-    define gasterScienceEncyclopedia = true
-NameError: name 'true' is not defined
+  File "game/day3.rpy", line 3, in script call
+    call freeMorning from _call_freeMorning
+  File "game/freeMorning.rpy", line 11, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning
+  File "game/freeMorning.rpy", line 34, in script call
+    call checkSans from _call_checkSans
+  File "game/freeMorning/visit-sans.rpy", line 61, in script call
+    call freeSansAlt
+  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
+    call papyrusAskSans from _call_papyrusAskSans
+  File "game/ending/endingResolve.rpy", line 3, in script
+    jump getPenFromAlphys
+ScriptError: could not find label 'getPenFromAlphys'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/recipes.rpy", line 61, in script
-    define gasterScienceEncyclopedia = true
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 2029, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\python.py", line 1954, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/recipes.rpy", line 61, in <module>
-    define gasterScienceEncyclopedia = true
-NameError: name 'true' is not defined
+  File "game/day3.rpy", line 3, in script call
+    call freeMorning from _call_freeMorning
+  File "game/freeMorning.rpy", line 11, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning
+  File "game/freeMorning.rpy", line 34, in script call
+    call checkSans from _call_checkSans
+  File "game/freeMorning/visit-sans.rpy", line 61, in script call
+    call freeSansAlt
+  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
+    call papyrusAskSans from _call_papyrusAskSans
+  File "game/ending/endingResolve.rpy", line 3, in script
+    jump getPenFromAlphys
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1678, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\script.py", line 886, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'getPenFromAlphys'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 User Interface 0.2
-Sun Sep 22 17:00:08 2019
+Mon Sep 23 21:32:57 2019

@@ -17,7 +17,7 @@ label titleScreen:
         "Continue Forward":
             gaster "I'LL WAIT TO TALK WITH YOU AT THE END OF THE DAY"
             gaster "GOOD LUCK"
-            jump insideBuilding
+            jump normalPath
 
 
 label gasterInformThePosition:
