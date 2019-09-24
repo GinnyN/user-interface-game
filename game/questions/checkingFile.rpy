@@ -28,4 +28,9 @@ label fileAlphysTryAgain:
   papyrus "ARE YOU SAYING THIS IS IMPOSSIBLE?"
   gaster "NO"
   gaster "JUST, DON'T EXPECT MUCH"
+  papyrus "WHY NOT?"
+  gaster "..."
+  gaster "I JUST DON'T WANNA SEE YOUR DISSAPOINTED SAD FACE"
+  papyrus "THIS IS MY DISSAPOINTED ANGRY FACE"
+  gaster "..."
 return
