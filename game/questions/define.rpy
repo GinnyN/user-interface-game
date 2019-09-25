@@ -9,3 +9,4 @@ define pendriveTree = 0
 define pendriveTreeSans = 0
 define pendriveTreeAlphys = 0
 define sansPapyrusPast = 0
+define program2ndChance = 0

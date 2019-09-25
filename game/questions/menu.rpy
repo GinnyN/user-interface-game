@@ -34,6 +34,8 @@ label questionsMenu:
             call gasterGerson from _call_gasterGerson
         "Skeleton During the Great War" if gasterPast > 0:
             call gasterPastTree from _call_gasterPastTree
+        "Something is wrong with the program" if not firstTry:
+            call programAgainTree
         "4th Wall Breaking Stuff":
             call fourthWallTree from _call_fourthWallTree
         "Nothing Else":
@@ -57,6 +59,16 @@ label questionsMenu:
                     gaster "VERY WELL"
                     gaster "BE CAREFUL WITH CLICKING NEXT TIME"
     call questionsMenu from _call_questionsMenu_1
+    return
+
+label programAgainTree:
+    menu:
+        "Something is wrong with the program":
+            call fileAlphysTryAgain
+        "But why I cannot do it!?" if program2ndChance > 0:
+            call papyrusWantsToTry
+        "Back":
+            return
     return
 
 label sansPapyrusPast:

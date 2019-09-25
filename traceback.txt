@@ -1,42 +1,50 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day3.rpy", line 3, in script call
-    call freeMorning from _call_freeMorning
-  File "game/freeMorning.rpy", line 11, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning
-  File "game/freeMorning.rpy", line 34, in script call
-    call checkSans from _call_checkSans
-  File "game/freeMorning/visit-sans.rpy", line 61, in script call
-    call freeSansAlt
-  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
-    call papyrusAskSans from _call_papyrusAskSans
-  File "game/ending/endingResolve.rpy", line 3, in script
-    jump getPenFromAlphys
-ScriptError: could not find label 'getPenFromAlphys'.
+  File "game/day1.rpy", line 57, in script call
+    call endOfDay1
+  File "game/questions/end-day1.rpy", line 55, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/questions/menu.rpy", line 38, in script call
+    call penAtAlphys
+  File "game/day1.rpy", line 57, in script call
+    call endOfDay1
+  File "game/questions/end-day1.rpy", line 55, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/questions/menu.rpy", line 38, in script call
+    call penAtAlphys
+ScriptError: could not find label 'penAtAlphys'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day3.rpy", line 3, in script call
-    call freeMorning from _call_freeMorning
-  File "game/freeMorning.rpy", line 11, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning
-  File "game/freeMorning.rpy", line 34, in script call
-    call checkSans from _call_checkSans
-  File "game/freeMorning/visit-sans.rpy", line 61, in script call
-    call freeSansAlt
-  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
-    call papyrusAskSans from _call_papyrusAskSans
-  File "game/ending/endingResolve.rpy", line 3, in script
-    jump getPenFromAlphys
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1678, in execute
-    rv = renpy.game.script.lookup(target)
+  File "game/day1.rpy", line 57, in script call
+    call endOfDay1
+  File "game/questions/end-day1.rpy", line 55, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/questions/menu.rpy", line 38, in script call
+    call penAtAlphys
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1422, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/day1.rpy", line 57, in script call
+    call endOfDay1
+  File "game/questions/end-day1.rpy", line 55, in script call
+    call questionsEnd from _call_questionsEnd
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/questions/menu.rpy", line 38, in script call
+    call penAtAlphys
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\script.py", line 886, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'getPenFromAlphys'.
+ScriptError: could not find label 'penAtAlphys'.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 User Interface 0.2
-Mon Sep 23 21:32:57 2019
+Tue Sep 24 22:19:06 2019

@@ -33,4 +33,35 @@ label fileAlphysTryAgain:
   gaster "I JUST DON'T WANNA SEE YOUR DISSAPOINTED SAD FACE"
   papyrus "THIS IS MY DISSAPOINTED ANGRY FACE"
   gaster "..."
+  if program2ndChance < 1:
+      $ program2ndChance = program2ndChance + 1
+return
+
+label papyrusWantsToTry:
+  papyrus "BUT WHY I CAN'T DO IT?!"
+  gaster "I DIDN'T SAY THAT"
+  papyrus "YOU * SAID * THAT!"
+  gaster "..."
+  gaster "OK, I CANNOT PROVE THIS"
+  gaster "BUT"
+  gaster "I THINK THERE'S A GOOD REASON WE'RE ALWAYS ON AUTOMATIC PILOT IN EVERY SINGLE RESET"
+  papyrus "OH"
+  papyrus "I KINDA SEE NOW"
+  gaster "IT DOESN'T SEEM TO ME WE ARE LEARNING THAT MUCH WITH ALL THOSE REPEATS"
+  papyrus "IT'S LIKE MY BRAIN KNOWS YESTERDAY WAS YESTERDAY"
+  papyrus "AND JUST DO THE SAME ALL THE TIME"
+  gaster "THAT! THAT."
+  gaster "EXACTLY"
+  papyrus "UNLESS SOMETHING DRASTIC HAPPENS"
+  gaster "..."
+  gaster "YES"
+  papyrus "AND IF I JUST REPEAT THIS AND STUDY A LOT?"
+  gaster "I DON'T THINK IS GOING TO WORK"
+  papyrus "WHY?"
+  gaster "..."
+  papyrus "I ALWAYS FORGET WERE FRISK IS KEPT WHEN WE GO RESCUE THEM"
+  gaster "EXACTLY"
+  papyrus "AAAAAAHHHHHH"
+  if program2ndChance < 2:
+      $ program2ndChance = program2ndChance + 1
 return
