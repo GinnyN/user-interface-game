@@ -111,8 +111,8 @@ label displayMenuFreeAfternoon:
                 call afternoonAlphys
                 $ visitAlphys = True
         
-        "Frisk Afternoon" if not visitFrisk:
+        "Let's checkout how Frisk is doing" if not visitFrisk:
             $ visitFrisk = True
-            "Frisk Afternoon Selected"
+            call visitFrisk
 
     return
