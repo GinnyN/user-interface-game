@@ -175,6 +175,29 @@ label getPenFromAlphys:
             $ program = True
             $ tryWithAlphys = False
         else:
-            "Alphys explain she doesnt know how to read the code"
+            alphys "Then I will not start progress unless you tell us what's going on!"
+            papyrus "WHAT?"
+            papyrus "BUT HALF OF THE PROGRESS IS ALREADY DONE!"
+            alphys "Well, yes, that code is mine"
+            alphys "Somehow..."
+            alphys "But I still cannot figure out what the variables 'undyne' do"
+            alphys "I think is going to be easier if I do everything again"
+            sans "wait, do you call your variables after your crushes?"
+            alphys "Why, you don't?"
+            sans "i mean, if i never wanna understand what i did, yes, i might"
+            alphys "It's... it's just..."
+            alphys "I'm not good at variables names... so... I just use the first word it comes in my mind"
+            "..."
+            papyrus "AW.... THAT'S ADORABLE..."
+            sans "yes... it's adorable..."
+            "..."
+            alphys "Ok, I'll use a thesaurus next time"
+            papyrus "WELL, AT LEAST I TRIED"
+            papyrus "I'M OUT!"
+            "Papyrus leaves"
+            sans "wait... wait... papyrus where you going?"
+            "Sans leaves"
+            alphys "Nah, I'm not going to do that"
+            $ endingSans = True
         jump endingResolve
     return

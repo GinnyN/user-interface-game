@@ -65,3 +65,27 @@ label papyrusWantsToTry:
   if program2ndChance < 2:
       $ program2ndChance = program2ndChance + 1
 return
+
+label changeOfPlans:
+  papyrus "WHAT ABOUT IF I ASK HER?"
+  gaster "THE ROYAL SCIENTIST YOU SAID?"
+  gaster "I MEAN, SHE DID IT IN A DIFFERENT VERSION OF THIS TIMELINE"
+  gaster "MEANING SHE MIGHT KNOW WHAT SHE WROTE IN THE LAST TIMELINE"
+  gaster "BUT AT THE SAME TIME READING CODE WHICH IS YOURS BUT NOT REMEMBER WHEN OR WHY YOU DID IT"
+  gaster "OR EVEN IF SHE REMEMBERS ANYWAY FOR SOME REASON"
+  gaster "DOES NOT GUARANTEE THAT SHE MIGHT KNOW WHAT TO DO"
+  gaster "MY EXPERIENCE SEEING YOU AND SANS WORK ACTUALLY TELL ME THE OPPOSITE OF THAT"
+  papyrus "SO, YOU ARE SAYING WE SHOULD TRY!"
+  gaster "I DON'T THINK I SAID THAT"
+  papyrus "YOU ARE SAYING YOU DON'T KNOW"
+  papyrus "SO?"
+  papyrus "WE SHOULD TRY!"
+  papyrus "BECAUSE WE DON'T KNOW!"
+  gaster "..."
+  gaster "I..."
+  gaster "I GUESS YOU CAN SAY THAT"
+  papyrus "YAAYYYYY"
+  if program2ndChance < 3:
+      $ program2ndChance = program2ndChance + 1
+  $ tryWithAlphys = True
+return

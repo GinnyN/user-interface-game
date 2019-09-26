@@ -67,6 +67,8 @@ label programAgainTree:
             call fileAlphysTryAgain
         "But why I cannot do it!?" if program2ndChance > 0:
             call papyrusWantsToTry
+        "Change of Plans!" if program2ndChance > 1:
+            call changeOfPlans
         "Back":
             return
     return

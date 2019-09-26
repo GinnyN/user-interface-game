@@ -66,6 +66,7 @@ label gasterInformThePosition:
     return
 
 label papyrusGasterIncidentAverted:
+    $ altRoute = True
     papyrus "I DIDN'T KILL ANYONE!"
     gaster "THAT'S A GREAT THING TO ASPIRE TO, I GUESS"
     papyrus "NOBODY GETS IN TROUBLE!"

@@ -60,6 +60,7 @@ define firstTry = True
 define gasterInformPosition = False
 define gasterScienceEncyclopedia = True
 define endingSans = False
+define altRoute = False
 
 #Flag variables which have to be reset
 define whoRescueMauricio = False
@@ -89,7 +90,10 @@ label resetVariables:
     $ alphysFailState = False
     $ penAtAlphys = False
     $ endingSans = False
+    $ altRoute = False
     return
 
 #Define Day Alternatives
 define day = 1
+define endingGaster = False
+define endingPapyrus = False
