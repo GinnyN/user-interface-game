@@ -40,7 +40,7 @@ label displayMenuFreeMorning:
             $ visitUndyne = True
             call visitUndyne from _call_visitUndyne
         
-        "Go visit Alphys" if not visitAlphys:
+        "Go visit Dr. Alphys" if not visitAlphys:
             if penAtAlphys:
                 show papyrusImg coolDude thinking
                 papyrus "I LEFT THE IMPORTANT MISSION TO DR ALPHYS LAST NIGHT"
@@ -74,7 +74,7 @@ label displayMenuFreeMorning:
 
 label displayMenuFreeAfternoon:
     menu:
-        "Toriel Afternoon" if not helpedToriel:
+        "I have a question for Toriel" if not helpedToriel:
             call afternoonToriel
             $ helpedToriel = True
 
@@ -82,15 +82,15 @@ label displayMenuFreeAfternoon:
             "Asgore Afternoon Selected"
             $ metAsgore = True
             
-        "Sans Afternoon" if not visitSans:
+        "Maybe Sans needs something" if not visitSans:
             call afternoonSans
             $ visitSans = True
 
-        "Undyne Afternoon" if not visitUndyne:
+        "Maybe I should check with Undyne" if not visitUndyne:
             call afternoonUndyne
             $ visitUndyne = True
         
-        "Alphys Afternoon" if not visitAlphys:
+        "I want to visit Dr. Alphys..." if not visitAlphys:
             if penAtAlphys:
                 show papyrusImg coolDude thinking
                 papyrus "I LEFT THE IMPORTANT MISSION TO DR ALPHYS LAST NIGHT"
@@ -112,6 +112,10 @@ label displayMenuFreeAfternoon:
                 $ visitAlphys = True
         
         "Let's checkout how Frisk is doing" if not visitFrisk:
+            papyrus "FRISK IS NOT GOING TO SCHOOL"
+            papyrus "POOR HUMAN IS RESTING AFTER EVERYTHING JUST HAPPENED"
+            show papyrusImg coolDude delight
+            papyrus "MAYBE WE CAN DO THAT TOGETHER!"
             $ visitFrisk = True
             call visitFrisk
 
