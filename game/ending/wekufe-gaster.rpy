@@ -23,7 +23,7 @@ label wekufeEndingGaster:
   frisk "Do you remember him, right?"
   sans "who?"
   frisk "Papyrus!"
-  frisk "I was trying to call you, but it's not in my contacts anymore"
+  frisk "I was trying to call him, but it's not in my contacts anymore"
   frisk "I asked my mom, and she said she doesn't know any Papyrus"
   sans "what?"
   sans "but..."
@@ -43,4 +43,8 @@ label wekufeEndingGaster:
   "* Sans hangs the phone *"
   frisk "Sans?"
   sans "how they know about the old bones?"
+  sans "this makes no sense... unless..."
+  frisk "What it's happening Sans?"
+  "* Coo appears next to them with a letter *"
+  
 return
