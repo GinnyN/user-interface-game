@@ -79,7 +79,7 @@ label displayMenuFreeAfternoon:
             $ helpedToriel = True
 
         "Asgore Afternoon" if not metAsgore:
-            "Asgore Afternoon Selected"
+            call afternoonAsgore
             $ metAsgore = True
             
         "Maybe Sans needs something" if not visitSans:
