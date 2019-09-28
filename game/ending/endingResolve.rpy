@@ -66,7 +66,7 @@ label endingCase:
         if endingSans:
             jump neutralEndingGaster
         else:
-            "Wekufe Gaster Ending"
+            jump wekufeEndingGaster
     else:
         if altRoute:
             "Papyrus Neutral Ending"

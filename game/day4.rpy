@@ -78,8 +78,12 @@ label day4:
         
     if resets == 0:
         jump meetingGaster
-    elif program and firstTry:
+    
+    if program and firstTry:
         jump endingsFirstTry
+    
+    if not firstTry:
+        jump endingResolve
     else:
         scene black with dissolve
         pause(1.0)

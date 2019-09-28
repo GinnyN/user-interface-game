@@ -1,50 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day1.rpy", line 57, in script call
-    call endOfDay1
-  File "game/questions/end-day1.rpy", line 55, in script call
-    call questionsEnd from _call_questionsEnd
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 38, in script call
-    call penAtAlphys
-  File "game/day1.rpy", line 57, in script call
-    call endOfDay1
-  File "game/questions/end-day1.rpy", line 55, in script call
-    call questionsEnd from _call_questionsEnd
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 38, in script call
-    call penAtAlphys
-ScriptError: could not find label 'penAtAlphys'.
+  File "game/day1.rpy", line 5, in script call
+    call introDay1
+  File "game/ending/wekufe-gaster.rpy", line 57, in script
+    text "MY DEAR SANS:"
+Exception: Sayer 'text' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day1.rpy", line 57, in script call
-    call endOfDay1
-  File "game/questions/end-day1.rpy", line 55, in script call
-    call questionsEnd from _call_questionsEnd
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 38, in script call
-    call penAtAlphys
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 1422, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/day1.rpy", line 57, in script call
-    call endOfDay1
-  File "game/questions/end-day1.rpy", line 55, in script call
-    call questionsEnd from _call_questionsEnd
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 38, in script call
-    call penAtAlphys
-  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\script.py", line 886, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'penAtAlphys'.
+  File "game/day1.rpy", line 5, in script call
+    call introDay1
+  File "game/ending/wekufe-gaster.rpy", line 57, in script
+    text "MY DEAR SANS:"
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 664, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 564, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'text' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 User Interface 0.2
-Tue Sep 24 22:19:06 2019
+Fri Sep 27 23:32:02 2019

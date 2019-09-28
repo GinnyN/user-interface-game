@@ -1,4 +1,4 @@
-label afternoonAsgore
+label afternoonAsgore:
     papyrus "I WANNA TALK WITH THE KING ABOUT..."
     papyrus "STUFF"
     gaster "DO YOU TALK WITH THE KING?"
@@ -15,7 +15,7 @@ label afternoonAsgore
     papyrus "SO, WELL, DON'T PEEK"
     "* Papyrus leaves *"
     gaster "OH, MY SWEET SUMMER CHILD..."
-    gaster "YOU'RE WAY TO MUCH LIKE ME...
+    gaster "YOU'RE WAY TO MUCH LIKE ME..."
     "* Papyrus appears at the front of the School, were he assumes the king must be *"
     papyrus "YOUR MAJESTY?"
     asgore "I'm going down right now"
