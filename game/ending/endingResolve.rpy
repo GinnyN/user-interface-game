@@ -2,6 +2,7 @@ label endingResolve:
     if penAtAlphys:
         jump getPenFromAlphys
     elif firstTry:
+        $ renpy.retain_after_load()
         jump endingsFirstTry
     else:
         gaster "THIS IS THE LAST DAY WE HAVE BEFORE GOING BACK"
@@ -12,6 +13,7 @@ label endingResolve:
                 papyrus "LET'S TRY THIS TIME"
                 papyrus "I REALLY DON'T KNOW IF THIS GOING TO WORK, BUT I WANNA SEE"
                 gaster "VERY WELL"
+                $ renpy.retain_after_load()
                 jump endingCase
             "No, let's go back":
                 papyrus "I'M NOT SURE"
@@ -54,9 +56,10 @@ label endingCase:
     papyrus "I WILL..."
     menu: 
         "I WILL BELIEVE IN YOU!":
-            $ endingGaster = True
+            $ persistent.endingGaster = True
         "I WILL BELIEVE IN MYSELF!":
-            $ endingPapyrus = True  
+            $ persistent.endingPapyrus = True  
+    $ renpy.save_persistent()
     papyrus "I HOPE YOU CAN FORGIVE ME"
     gaster "I'M NOT SURE I WILL"
     gaster "BUT I'LL SEE YOU AGAIN"

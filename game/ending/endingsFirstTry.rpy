@@ -192,6 +192,8 @@ label startEndingGasterFirstTry:
             papyrus "..."
             jump day1
         "Continue":
+            $ persistent.endingGaster = True
+            $ renpy.save_persistent()
             gaster "NO..."
             show papyrusImg trapped happy flip
             papyrus "DO NOT WORRY ABOUT ME!"
