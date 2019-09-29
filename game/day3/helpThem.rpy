@@ -8,7 +8,7 @@ label helpthemout:
         xpos 0.2
     show coo flip zorder 0 at fade:
         xpos 0.5
-    "Monster 1 and 2" "* AAAHHHH!!!"
+    "* AAAHHHH!!!"
     papyrus "I'LL BETTER GO WITH YOU GUYS'"
     hide papyrusImg
     papyrus "NOBODY KNOWS WHAT COULD HAPPEN IF I LEAVE YOU ALONE IN A PLACE THIS DANGEROUS!"
@@ -16,8 +16,8 @@ label helpthemout:
         xpos 0.1
     show coo flip zorder 0 at fade:
         xpos 0.4
-    "Monster 1" "* (We need to get rid of him)"
-    "Monster 2" "* (Yes, but how?)"
+    cuero "(We need to get rid of him)"
+    coo "(Yes, but how?)"
     "* MMMMMmmmmm"
     hide cuero
     hide coo

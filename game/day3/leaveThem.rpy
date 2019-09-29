@@ -2,7 +2,7 @@
 label leaveThemAlone:
     play music "music/33 Quiet Water.mp3" fadein(1) fadeout(1) 
     $ whoRescueMauricio = True
-    "Monster 1" "* Let´s move"
+    cuero "Let´s move"
     hide coo
     hide cuero
     pause(0.5)

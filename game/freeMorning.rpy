@@ -38,6 +38,7 @@ label displayMenuFreeMorning:
             show papyrusImg coolDude delight
             papyrus "I HAVE A SURPRISE FOR HER AND I DON'T WANT TO FORGET!"
             $ visitUndyne = True
+            $ giveRingToUndyne = True
             call visitUndyne from _call_visitUndyne
         
         "Go visit Dr. Alphys" if not visitAlphys:
@@ -78,7 +79,7 @@ label displayMenuFreeAfternoon:
             call afternoonToriel
             $ helpedToriel = True
 
-        "Asgore Afternoon" if not metAsgore:
+        "Maybe Asgore can help me with this" if not metAsgore:
             call afternoonAsgore
             $ metAsgore = True
             

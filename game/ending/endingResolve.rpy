@@ -74,5 +74,5 @@ label endingCase:
         if altRoute:
             "Papyrus Neutral Ending"
         else: 
-            "Papyrus Prison Ending"
+            jump prisonPapyrusEnding
 return

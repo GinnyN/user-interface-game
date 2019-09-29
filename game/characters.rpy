@@ -17,4 +17,12 @@ define dogamy = Character("Dogamy", color="#8888FF", what_prefix="* ")
 define dogaressa = Character("Dogaressa", color="#FF8888", what_prefix="* (", what_suffix=")")
 define muffet = Character("Muffet", color="#FF6666", what_prefix="* ")
 
+define cuero = Character("Monster 1", what_prefix="* ")
+define coo = Character("Monster 2", what_prefix="* ")
+
 define narrator = Character(' ', color="#ffffff")
+
+label changeWekufe:
+    $ cuero = Character("Cuero", what_prefix="* ")
+    $ coo = Character("Coo", what_prefix="* ")
+return 

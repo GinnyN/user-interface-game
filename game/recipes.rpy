@@ -61,6 +61,7 @@ define gasterInformPosition = False
 define gasterScienceEncyclopedia = True
 define endingSans = False
 define altRoute = False
+define giveRingToUndyne = False
 
 #Flag variables which have to be reset
 define whoRescueMauricio = False
@@ -91,6 +92,7 @@ label resetVariables:
     $ penAtAlphys = False
     $ endingSans = False
     $ altRoute = False
+    $ giveRingToUndyne = False
     return
 
 #Define Day Alternatives

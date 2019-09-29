@@ -78,8 +78,8 @@ label forest:
         xpos 0.2
     show coo flip zorder 0 at fade:
         xpos 0.5
-    "Monster 1" "* Did you said the place was around here"
-    "Monster 2" "* Yes! After what happened two days ago the..."
+    cuero "Did you said the place was around here"
+    coo "Yes! After what happened two days ago the..."
     stop music fadeout 1.0
     play music "music/16 Nyeh Heh Heh!.mp3" fadein(1)
     show papyrusImg me zorder 0 at fade:
@@ -93,15 +93,15 @@ label forest:
         xpos 0.2
     show coo flip zorder 0 at fade:
         xpos 0.5
-    "Monster 1" "* Ohh... Hey!"
+    cuero "Ohh... Hey!"
     show papyrusImg delight
     papyrus "I DIDN'T KNEW THE KING AND UNDYNE RECLUTED MORE MONSTERS TO HELP OUT!"
     show cuero
-    "Monster 1" "* Uhhh..."
+    cuero "Uhhh..."
     show coo flip at fade:
         xpos 0.4
-    "Monster 2" "* Yes... we..."
-    "Monster 2" "* are helping out"
+    coo "Yes... we..."
+    coo "are helping out"
     show cuero flip at fade:
         xpos 0.5
     papyrus "GREAT!"
@@ -113,15 +113,15 @@ label forest:
     papyrus "YOU CAN GO THAT WAY AND CHECK THERE"
     show papyrusImg proud
     papyrus "I'LL GIVE YOU A HEAD START!"
-    "Monster 1" "* Yes.. yes..."
-    "Monster 2" "* We're going to check out there"
-    "Monster 1" "* Thanks..."
+    cuero "Yes.. yes..."
+    coo "We're going to check out there"
+    cuero "Thanks..."
     hide papyrusImg
     stop music fadeout 0.1
     show coo at fade:
         xpos 0.1
-    "Monster 1" "* He's talking about the king of all monsters?"
-    "Monster 2" "* He likes humans" 
-    "Monster 2" "* He basically adopted one too!"
-    "Monster 1" "* We need to move quickly, before he realize anything"
+    cuero "He's talking about the king of all monsters?"
+    coo "He likes humans" 
+    coo "He basically adopted one too!"
+    cuero "We need to move quickly, before he realize anything"
     return
