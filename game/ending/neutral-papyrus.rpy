@@ -14,5 +14,17 @@ label neutralEndingPapyrus:
   undyne "No..."
   undyne "He has... something else to do"
   "* Scene changes to the Wekufes Lab *"
-  
+  alphys "This place is big..."
+  toriel "How did you found all of this?"
+  papyrus "I was... running..."
+  papyrus "Then I found this place"
+  papyrus "All the hills around here have, like, old monsters buildings"
+  papyrus "So I decided to explore... and I found this"
+  alphys "Why didn't you tell us sooner?"
+  papyrus "..."
+  papyrus "I literally found this yesterday"
+  alphys "Oh, I'm sorry!"
+  alphys "I got confused"
+  toriel "This is an old monsters building from the war"
+  sans "But this technology is humans'"
 return
