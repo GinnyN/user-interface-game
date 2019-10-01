@@ -1,3 +1,18 @@
 label neutralEndingPapyrus:
-
+  "* Scene changes to near the Skelebros house. Monster Kid and his Dog friend are waiting for Papyrus *"
+  kid "Where's he?"
+  "Student" "* Maybe the teacher finally found him"
+  kid "NO SENSE!"
+  kid "Something terrible must have happened"
+  "Student" "* He might be in trouble"
+  kid "He..."
+  kid "He might..."
+  undyne "Here you are"
+  undyne "Papyrus is not coming today"
+  undyne "He called to tell me"
+  kid "Is he in tr..."
+  undyne "No..."
+  undyne "He has... something else to do"
+  "* Scene changes to the Wekufes Lab *"
+  
 return
