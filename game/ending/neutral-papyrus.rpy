@@ -81,4 +81,13 @@ label neutralEndingPapyrus:
   papyrus "OF COURSE"
   papyrus "I'LL TELL YOU"
   "* Fade to Black *"
+  ""
+  "THIS IS ALL I CAN SHOW YOU"
+  "THE DETERMINATION IS RUNNING LOW, IS BASICALLY GONE BY NOW"
+  "I HOPE THIS HAS BEEN SUFFICIENT FOR YOU"
+  "BECAUSE I DON'T KNOW HOW WE CAN..."
+  "WELL"
+  "THIS IS ALL I CAN DO NOW"
+  "FAREWELL"
+  ""
 return
