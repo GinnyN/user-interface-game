@@ -27,4 +27,6 @@ label neutralEndingPapyrus:
   alphys "I got confused"
   toriel "This is an old monsters building from the war"
   sans "But this technology is humans'"
+  papyrus "IS IT?"
+  alphys "It looks like some of our stuff, mostly because most of them are scraps from human garbage"
 return
