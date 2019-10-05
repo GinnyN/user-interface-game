@@ -58,7 +58,7 @@ label checkSans:
         $ gasterPapyrusSansDad = True
         $ papersPapyrusCreation = False
     elif tryWithSans:
-        call freeSansAlt
+        call freeSansAlt from _call_freeSansAlt_1
     else:
         papyrus "HE'S GETTING BETTER THANKS TO TORIEL"
         papyrus "BUT HE'S STILL SLACKING OFF WAY TOO OFTEN!"

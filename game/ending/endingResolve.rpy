@@ -65,14 +65,14 @@ label endingCase:
     gaster "BUT I'LL SEE YOU AGAIN"
     "* Fade to white *"       
 
-    if endingGaster:   
+    if persistent.endingGaster:   
         if endingSans:
             jump neutralEndingGaster
         else:
             jump wekufeEndingGaster
     else:
         if altRoute:
-            "Papyrus Neutral Ending"
+            jump neutralEndingPapyrus
         else: 
             jump prisonPapyrusEnding
 return

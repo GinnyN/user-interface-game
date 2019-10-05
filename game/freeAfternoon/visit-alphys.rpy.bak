@@ -1,6 +1,6 @@
 label afternoonAlphys:
    if tryWithAlphys:
-      call alphysAlt from _call_alphysAlt
+      call alphysAlt
    else:
       papyrus "I WANT TO VISIT DR ALPHYS NOW..."
       gaster "YOU WANT VISIT HER?"

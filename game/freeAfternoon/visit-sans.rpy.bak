@@ -1,6 +1,6 @@
 label afternoonSans:
   if tryWithSans:
-        call freeSansAlt from _call_freeSansAlt
+        call freeSansAlt
   else:
     papyrus "I GUESS IS GOING TO BE A GOOD IDEA CHECKOUT IF SANS IS DOING OK"
     gaster "YOU GUESS?"

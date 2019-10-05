@@ -1,16 +1,16 @@
 label neutralEndingPapyrus:
   "* Scene changes to near the Skelebros house. Monster Kid and his Dog friend are waiting for Papyrus *"
-  kid "Where's he?"
+  monsterKid "Where's he?"
   "Student" "* Maybe the teacher finally found him"
-  kid "NO SENSE!"
-  kid "Something terrible must have happened"
+  monsterKid "NO SENSE!"
+  monsterKid "Something terrible must have happened"
   "Student" "* He might be in trouble"
-  kid "He..."
-  kid "He might..."
+  monsterKid "He..."
+  monsterKid "He might..."
   undyne "Here you are"
   undyne "Papyrus is not coming today"
   undyne "He called to tell me"
-  kid "Is he in tr..."
+  monsterKid "Is he in tr..."
   undyne "No..."
   undyne "He has... something else to do"
   "* Scene changes to the Wekufes Lab *"
@@ -26,7 +26,7 @@ label neutralEndingPapyrus:
   alphys "Oh, I'm sorry!"
   alphys "I got confused"
   toriel "This is an old monsters building from the war"
-  sans "But this technology is humans'"
+  sans "but this technology is humans'"
   papyrus "IS IT?"
   alphys "It looks like some of our stuff, mostly because most of them are scraps from human garbage"
   toriel "I'm assuming most of this... machines were made by humans..."
@@ -90,4 +90,8 @@ label neutralEndingPapyrus:
   "THIS IS ALL I CAN DO NOW"
   "FAREWELL"
   ""
+  stop music fadeout(1)
+  pause(1.5)
+  # $ renpy.set_return_stack([])
+  $ renpy.quit()
 return

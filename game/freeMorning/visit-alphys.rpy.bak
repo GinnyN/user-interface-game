@@ -1,6 +1,6 @@
 label visitAlphys:
     if tryWithAlphys:
-        call alphysAlt from _call_alphysAlt_1
+        call alphysAlt
     else:
         papyrus "DR ALPHYS SAID SHE WAS WORKING ON SOMETHING IMPORTANT"
         show papyrusImg coolDude delight

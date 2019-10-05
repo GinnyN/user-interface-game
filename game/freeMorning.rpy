@@ -76,19 +76,19 @@ label displayMenuFreeMorning:
 label displayMenuFreeAfternoon:
     menu:
         "I have a question for Toriel" if not helpedToriel:
-            call afternoonToriel
+            call afternoonToriel from _call_afternoonToriel
             $ helpedToriel = True
 
         "Maybe Asgore can help me with this" if not metAsgore:
-            call afternoonAsgore
+            call afternoonAsgore from _call_afternoonAsgore
             $ metAsgore = True
             
         "Maybe Sans needs something" if not visitSans:
-            call afternoonSans
+            call afternoonSans from _call_afternoonSans
             $ visitSans = True
 
         "Maybe I should check with Undyne" if not visitUndyne:
-            call afternoonUndyne
+            call afternoonUndyne from _call_afternoonUndyne
             $ visitUndyne = True
         
         "I want to visit Dr. Alphys..." if not visitAlphys:
@@ -107,9 +107,9 @@ label displayMenuFreeAfternoon:
                 gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
                 show papyrusImg coolDude delight
                 papyrus "THAT'S A GOOD IDEA"
-                call displayMenuFreeAfternoon
+                call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon
             else:
-                call afternoonAlphys
+                call afternoonAlphys from _call_afternoonAlphys
                 $ visitAlphys = True
         
         "Let's checkout how Frisk is doing" if not visitFrisk:
@@ -118,6 +118,6 @@ label displayMenuFreeAfternoon:
             show papyrusImg coolDude delight
             papyrus "MAYBE WE CAN DO THAT TOGETHER!"
             $ visitFrisk = True
-            call visitFrisk
+            call visitFrisk from _call_visitFrisk_1
 
     return

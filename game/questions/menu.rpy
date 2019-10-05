@@ -35,7 +35,7 @@ label questionsMenu:
         "Skeleton During the Great War" if gasterPast > 0:
             call gasterPastTree from _call_gasterPastTree
         "Something is wrong with the program" if not firstTry:
-            call programAgainTree
+            call programAgainTree from _call_programAgainTree
         "4th Wall Breaking Stuff":
             call fourthWallTree from _call_fourthWallTree
         "Nothing Else":
@@ -64,11 +64,11 @@ label questionsMenu:
 label programAgainTree:
     menu:
         "Something is wrong with the program":
-            call fileAlphysTryAgain
+            call fileAlphysTryAgain from _call_fileAlphysTryAgain
         "But why I cannot do it!?" if program2ndChance > 0:
-            call papyrusWantsToTry
+            call papyrusWantsToTry from _call_papyrusWantsToTry
         "Change of Plans!" if program2ndChance > 1:
-            call changeOfPlans
+            call changeOfPlans from _call_changeOfPlans
         "Back":
             return
     return
@@ -149,7 +149,7 @@ label gasterPastTree:
         "I WAS NEVER A CHILD?!" if gasterPast > 4:
             call noChildhood from _call_noChildhood
         "Blank Science Encyclopedia" if gasterPast > 5 and gasterScienceEncyclopedia:
-            call blankScience
+            call blankScienceEncyclopedia from _call_blankScienceEncyclopedia
         "Return":
             return
     return

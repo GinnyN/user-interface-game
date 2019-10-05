@@ -1,26 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day1.rpy", line 5, in script call
-    call introDay1
-  File "game/ending/wekufe-gaster.rpy", line 57, in script
-    text "MY DEAR SANS:"
-Exception: Sayer 'text' is not defined.
+  File "game/day2.rpy", line 30, in script call
+    call mettatonFashionShow
+  File "game/day3.rpy", line 3, in script call
+    call freeMorning from _call_freeMorning
+  File "game/freeMorning.rpy", line 11, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning
+  File "game/freeMorning.rpy", line 34, in script call
+    call checkSans from _call_checkSans
+  File "game/freeMorning/visit-sans.rpy", line 61, in script call
+    call freeSansAlt
+  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
+    call papyrusAskSans from _call_papyrusAskSans
+  File "game/ending/neutral-papyrus.rpy", line 3, in script
+    kid "Where's he?"
+Exception: Sayer 'kid' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day1.rpy", line 5, in script call
-    call introDay1
-  File "game/ending/wekufe-gaster.rpy", line 57, in script
-    text "MY DEAR SANS:"
+  File "game/day2.rpy", line 30, in script call
+    call mettatonFashionShow
+  File "game/day3.rpy", line 3, in script call
+    call freeMorning from _call_freeMorning
+  File "game/freeMorning.rpy", line 11, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning
+  File "game/freeMorning.rpy", line 34, in script call
+    call checkSans from _call_checkSans
+  File "game/freeMorning/visit-sans.rpy", line 61, in script call
+    call freeSansAlt
+  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
+    call papyrusAskSans from _call_papyrusAskSans
+  File "game/ending/neutral-papyrus.rpy", line 3, in script
+    kid "Where's he?"
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 664, in execute
     who = eval_who(self.who, self.who_fast)
   File "C:\Users\satel\Downloads\renpy-6.99.12.2-sdk\renpy\ast.py", line 564, in eval_who
     raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'text' is not defined.
+Exception: Sayer 'kid' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
 User Interface 0.2
-Fri Sep 27 23:32:02 2019
+Thu Oct 03 20:39:02 2019

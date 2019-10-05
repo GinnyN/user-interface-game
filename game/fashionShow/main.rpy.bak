@@ -1,21 +1,21 @@
 label mettatonFashionShow:
-    call presentation from _call_presentation
+    call presentation
 
     label loopSuit:
         menu:
             "The Red One":
                 $ suit = 1
-                call bonestrousleSuit from _call_bonestrousleSuit
+                call bonestrousleSuit
             "The Blue One":
                 $ suit = 2
-                call megalovaniaSuit from _call_megalovaniaSuit
+                call megalovaniaSuit
             "The Green One":
                 $ suit = 3
-                call spearsSuit from _call_spearsSuit
+                call spearsSuit
         
     jump publicAsk
 
     label suitDecisionCall:
-        call suitDecision from _call_suitDecision
+        call suitDecision
 
     return

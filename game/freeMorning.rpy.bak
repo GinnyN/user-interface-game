@@ -8,7 +8,7 @@ label freeMorning:
     show papyrusImg coolDude thinking
     papyrus "WHAT SHALL I DO?"
     
-    call displayMenuFreeMorning
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning
 
     return
 
@@ -38,9 +38,10 @@ label displayMenuFreeMorning:
             show papyrusImg coolDude delight
             papyrus "I HAVE A SURPRISE FOR HER AND I DON'T WANT TO FORGET!"
             $ visitUndyne = True
+            $ giveRingToUndyne = True
             call visitUndyne from _call_visitUndyne
         
-        "Go visit Alphys" if not visitAlphys:
+        "Go visit Dr. Alphys" if not visitAlphys:
             if penAtAlphys:
                 show papyrusImg coolDude thinking
                 papyrus "I LEFT THE IMPORTANT MISSION TO DR ALPHYS LAST NIGHT"
@@ -56,7 +57,7 @@ label displayMenuFreeMorning:
                 gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
                 show papyrusImg coolDude delight
                 papyrus "THAT'S A GOOD IDEA"
-                call displayMenuFreeMorning
+                call displayMenuFreeMorning from _call_displayMenuFreeMorning_1
             else:
                 $ visitAlphys = True
                 call visitAlphys from _call_visitAlphys
@@ -68,5 +69,55 @@ label displayMenuFreeMorning:
             papyrus "MAYBE WE CAN DO THAT TOGETHER!"
             $ visitFrisk = True
             call visitFrisk from _call_visitFrisk
+
+    return
+    
+
+label displayMenuFreeAfternoon:
+    menu:
+        "I have a question for Toriel" if not helpedToriel:
+            call afternoonToriel
+            $ helpedToriel = True
+
+        "Maybe Asgore can help me with this" if not metAsgore:
+            call afternoonAsgore
+            $ metAsgore = True
+            
+        "Maybe Sans needs something" if not visitSans:
+            call afternoonSans
+            $ visitSans = True
+
+        "Maybe I should check with Undyne" if not visitUndyne:
+            call afternoonUndyne
+            $ visitUndyne = True
+        
+        "I want to visit Dr. Alphys..." if not visitAlphys:
+            if penAtAlphys:
+                show papyrusImg coolDude thinking
+                papyrus "I LEFT THE IMPORTANT MISSION TO DR ALPHYS LAST NIGHT"
+                papyrus "I DON'T KNOW IF I CAN VISIT HER, I MIGHT BOTHER HER"
+                gaster "SHE MIGHT HAVE INSPIRATION ON DOING IT AND THEN WORK IN A HURRY FOR 3 HOURS STRAIGHT"
+                papyrus "YOU MEAN SHE MIGHT NEED SOME REFRESTMENTS FOR AVOID DEHYDRATION?"
+                gaster "I DON'T THINK SO"
+                gaster "SHE LOOKED MORE LIKE THE NOCTURNAL TYPE"
+                show papyrusImg coolDude explaining
+                papyrus "YOU RIGHT"
+                papyrus "SHE PROBABLY HAD ALREADY DONE ALL THE WORK"
+                papyrus "AND SHE'S SLEEPING RIGHT NOW"
+                gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
+                show papyrusImg coolDude delight
+                papyrus "THAT'S A GOOD IDEA"
+                call displayMenuFreeAfternoon
+            else:
+                call afternoonAlphys
+                $ visitAlphys = True
+        
+        "Let's checkout how Frisk is doing" if not visitFrisk:
+            papyrus "FRISK IS NOT GOING TO SCHOOL"
+            papyrus "POOR HUMAN IS RESTING AFTER EVERYTHING JUST HAPPENED"
+            show papyrusImg coolDude delight
+            papyrus "MAYBE WE CAN DO THAT TOGETHER!"
+            $ visitFrisk = True
+            call visitFrisk
 
     return
