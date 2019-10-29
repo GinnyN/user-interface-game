@@ -21,23 +21,43 @@ label titleScreen:
 
 
 label gasterInformThePosition:
+    stop music fadeout 1
+    show papyrusImg checkThis
     papyrus "SOO..."
+    show undyneImg mild surprise
+    show sansImg surprised
     papyrus "SOOOOOOOOOOOO....."
+    play music "music/15 sans.mp3" fadein 1
     gaster "ARGH!"
     gaster "ALRIGHT, FINE, FINE..."
+    show undyneImg mild surprise flip
+    show sansImg surprised flip
     gaster "THERE'S A GARAGE AT THE OTHER SIDE OF THE FORTRESS"
     gaster "YOU SHOULD KNOW THAT BY NOW"
+    show papyrusImg delight
     papyrus "I ALWAYS FORGOT"
+    show undyneImg explaining flip
     undyne "What are you doing Papyrus?"
+    show undyneImg mild surprise
+    show sansImg surprised
+    hide papyrusImg
     papyrus "LET'S CHECKOUT THE OTHER SIDE OF THIS PLACE"
     papyrus "MAYBE WE CAN FIND SOMETHING THERE"
+    hide undyneImg
     undyne "Papyrus stop!"
     undyne "Wait! WAIT!"
     sans "what..."
     sans "this..."
+    show sansImg unsure
     sans "mmm..."
+    hide sansImg
     gaster "INDEED MY DEAR SANS, INDEED"
-    "* The scene changes to Toriel house, with Undyne and Sans talking with Toriel *"
+    stop music fadeout 1
+    scene black with dissolve
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
+    pause(1)
+    scene toriel house with dissolve
+    pause(0.5)
     toriel "I just left Frisk sleeping in their bed"
     toriel "I'm thankful that you didn't have to do anything drastic to save them"
     undyne "It was lucky that Papyrus had the idea to search to that side"
