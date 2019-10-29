@@ -58,22 +58,29 @@ label gasterInformThePosition:
     pause(1)
     scene toriel house with dissolve
     pause(0.5)
+    show torielImg pajamas happy zorder 1 at fade:
+        xalign 0.1 yalign 1.0
     toriel "I just left Frisk sleeping in their bed"
     toriel "I'm thankful that you didn't have to do anything drastic to save them"
     undyne "It was lucky that Papyrus had the idea to search to that side"
+    show torielImg pajamas worried
     undyne "Very lucky..."
     sans "he's my brother, and he's very cool"
     undyne "I know, that's the only thing you talk about"
     "* Undyne leaves *"
     toriel "I guess you are saying there's nothing to worry about"
     sans "it might"
+    show torielImg pajamas compasionate
     toriel "it might?"
+    show torielImg pajamas embarrased
     toriel "isn't your brother like super cool?"
     sans "tori"
     toriel "What am I trying to say is, mostly, do not worry that much about it?"
+    show torielImg pajamas compasionate
     toriel "I... I know what is it worrying about your family, but... sometimes..."
     sans ".."
     sans "i'll see in a couple of days... i guess..."
+    show torielImg pajamas worried
     toriel "I'm way more worried about those humans who kidnapped Frisk"
     sans "we'll figure out what to do"
     sans ".."
@@ -82,11 +89,18 @@ label gasterInformThePosition:
     sans "we'll talk tomorrow about this"
     toriel "Good Night"
     toriel "..."
+    show torielImg pajamas doubt
     toriel "Now I'm thinking, where's Papyrus?"
     return
 
 label papyrusGasterIncidentAverted:
     $ altRoute = True
+    scene black with dissolve
+    pause(1.0)
+    play music "music/another him.MP3" fadein 1
+    scene mistColor with dissolve
+    show mist at fade
+    pause(1.0)
     papyrus "I DIDN'T KILL ANYONE!"
     gaster "THAT'S A GREAT THING TO ASPIRE TO, I GUESS"
     papyrus "NOBODY GETS IN TROUBLE!"

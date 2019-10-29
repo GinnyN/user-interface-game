@@ -5,6 +5,8 @@ image torielImg pajamas worried surprised = "toriel/pajamas/surprised.png"
 image torielImg pajamas surprised = "toriel/pajamas/surprised.png"
 image torielImg pajamas surprised flip = im.Flip("toriel/pajamas/surprised.png", horizontal=True)
 image torielImg pajamas worried = "toriel/pajamas/worried.png"
+image torielImg pajamas doubt flip = im.Flip("toriel/pajamas/doubt.png", horizontal=True)
+image torielImg pajamas doubt = "toriel/pajamas/doubt.png"
 image torielImg pajamas worried flip = im.Flip("toriel/pajamas/worried.png", horizontal=True)
 image torielImg pajamas angry = "toriel/pajamas/angry.png"
 image torielImg pajamas strong = "toriel/pajamas/strong.png"
