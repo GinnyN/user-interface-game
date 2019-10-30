@@ -88,6 +88,7 @@ label gasterInformThePosition:
     sans "yes..."
     sans "we'll talk tomorrow about this"
     toriel "Good Night"
+    show torielImg pajamas worried flip
     toriel "..."
     show torielImg pajamas doubt
     toriel "Now I'm thinking, where's Papyrus?"

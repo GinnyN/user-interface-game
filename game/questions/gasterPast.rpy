@@ -247,42 +247,59 @@ label noChildhood:
   return
 
 label blankScienceEncyclopedia:
+  show papyrusImg annoyed
   papyrus "THEY JUST FOUND IN THE LIBRARY A BLANK BOOK"
+  show gaster trapped sad
   gaster "THAT MUST BE THE SCIENCE ENCYCLOPEDIA"
   papyrus "SO, YOU WROTE IT"
+  show gaster trapped neutral flip
   gaster "EXACTLY"
   gaster "THAT WAS WHAT THE QUEEN ASKED ME TO DO, AFTER THE HAMMER OF JUSTICE SUGGESTED IT"
   gaster "ALL THAT INVESTIGATION WAS WHAT LEAD TO ME BECOMING ROYAL SCIENTIST"
+  show papyrusImg uhh
   papyrus "I SEE"
   papyrus "I FOUND THAT FUNNY THOUGH"
   papyrus "I REALLY DON'T KNOW WHY"
+  show gaster trapped sorry flip
   gaster "THIS JUST MAKES ME RESPONSIBLE OF WHAT HAPPENED DURING THE INVESTIGATION OF THE LAST ROYAL SCIENTIST"
   gaster "MY CARELESSNESS LEAD TO A HUGE TRAGEDY AND I CANNOT STRESS ENOUGH THAT"
   papyrus "IN A WAY MAKE ME WONDER HOW SHE KNOWS WHAT SHE KNOWS ABOUT SCIENCE"
+  show gaster trapped neutral flip
   gaster "I DIDN'T TEACH HER SCIENCE"
   gaster "IT COULD BE SOMEONE ELSE, MAYBE WHO LEARNT USING THE BOOKS"
   gaster "OR SHE TAUGHT HERSELF"
   gaster "AFTER ALL KNOWLEDGE IT'S NOT MINE"
+  show papyrusImg annoyed
   papyrus "SO, IT DOESN'T BUBBLE"
   gaster "YOU FORGOT BECAUSE I TAUGHT YOU AND THAT MEMORY IS RELATED TO ME"
   gaster "I DIDN'T TAUGHT HER, SO THAT MEMORY IS NOT RELATED TO ME"
+  show papyrusImg uhh
   papyrus "INTERESTING"
   papyrus "THEN MOST PROBABLY WAS DR. ALPHYS DIDN'T KNEW ANYTHING ABOUT DETERMINATION WHEN SHE STARTED HER EXPERIMENTS"
+  show gaster trapped sorry flip
   gaster "I HAVE DONE WORSE, I DON'T HAVE ANY MORAL GROUND"
   papyrus "THEN, IF SOMEONE TAUGHT HER, WHO COULD BE?"
+  show gaster trapped sad flip
   gaster "MY BET WOULD BE SANS"
+  show papyrusImg surprised
   papyrus "BUT SHE'S LIKE 3 YEARS OLDER THAN HIM"
+  show gaster trapped explain flip
   gaster "BUT SANS HAS BEEN AN ADULT FOR LONGER"
+  show papyrusImg dissapointed
   papyrus "RIGHT, WE SKELETONS CANNOT BE KIDS"
+  show gaster trapped maybe flip
   gaster "BUT ALSO CAN BE YOU"
+  show papyrusImg annoyed
   papyrus "UH?"
   papyrus "BUT WOULD KNOW THAT, RIGHT?"
+  show gaster trapped neutral flip
   gaster "THE BRAIN IS REALLY GOOD AT MAKING PATTERNS OUT OF NOTHING"
   gaster "MAYBE SHE REMEMBERING YOU OR SANS WAS TIED TO REMEMBERING ME"
   papyrus "SO, IS A TREE, AND THE ACTION JUST GO ONE LEVEL DEEP"
   papyrus "AND THE LEAVES GET LOOSE"
   gaster "EXACTLY"
   papyrus "..."
+  show gaster trapped maybe flip
   gaster "IN A WAY, THAT'S WHY WE HAVE DATA STRUCTURES"
   if gasterPast == 6:
     $ gasterPast = gasterPast + 1
