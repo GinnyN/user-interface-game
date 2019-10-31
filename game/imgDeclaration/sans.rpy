@@ -3,6 +3,8 @@ image sansImg position = im.Alpha("undyne/gym/mildsurprise.png", 0)
 #Puffy Jacket
 image sansImg angry = "sans/angry.png"
 image sansImg angry flip = im.Flip("sans/angry.png", horizontal=True)
+image sansImg bored = "sans/bored.png"
+image sansImg bored flip = im.Flip("sans/bored.png", horizontal=True)
 image sansImg flustered = "sans/flustered.png"
 image sansImg flustered flip = im.Flip("sans/flustered.png", horizontal=True)
 image sansImg serious = "sans/serious.png"

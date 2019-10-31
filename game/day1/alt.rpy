@@ -60,33 +60,46 @@ label gasterInformThePosition:
     pause(0.5)
     show torielImg pajamas happy zorder 1 at fade:
         xalign 0.1 yalign 1.0
+    show sansImg happy flip zorder 2 at fade:
+        xpos 0.4 ypos 0.0
+    show undyneImg neutral flip zorder 1 at fade:
+        xpos 0.3 ypos -0.2
     toriel "I just left Frisk sleeping in their bed"
     toriel "I'm thankful that you didn't have to do anything drastic to save them"
     undyne "It was lucky that Papyrus had the idea to search to that side"
     show torielImg pajamas worried
+    show undyneImg bored flip
+    show sansImg bored flip
     undyne "Very lucky..."
+    show sansImg happy
     sans "he's my brother, and he's very cool"
     undyne "I know, that's the only thing you talk about"
-    "* Undyne leaves *"
+    hide undyneImg
     toriel "I guess you are saying there's nothing to worry about"
+    show sansImg bored flip
     sans "it might"
     show torielImg pajamas compasionate
     toriel "it might?"
     show torielImg pajamas embarrased
     toriel "isn't your brother like super cool?"
+    show sansImg flustered flip
     sans "tori"
     toriel "What am I trying to say is, mostly, do not worry that much about it?"
     show torielImg pajamas compasionate
     toriel "I... I know what is it worrying about your family, but... sometimes..."
     sans ".."
+    show sansImg happy flip
     sans "i'll see in a couple of days... i guess..."
     show torielImg pajamas worried
     toriel "I'm way more worried about those humans who kidnapped Frisk"
     sans "we'll figure out what to do"
     sans ".."
     toriel "We need to rest"
+    show sansImg flustered flip
     sans "yes..."
+    show sansImg happy flip
     sans "we'll talk tomorrow about this"
+    hide sansImg
     toriel "Good Night"
     show torielImg pajamas worried flip
     toriel "..."
