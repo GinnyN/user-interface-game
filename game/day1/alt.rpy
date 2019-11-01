@@ -109,33 +109,55 @@ label gasterInformThePosition:
 
 label papyrusGasterIncidentAverted:
     $ altRoute = True
+    stop music fadeout 1
     scene black with dissolve
     pause(1.0)
     play music "music/another him.MP3" fadein 1
     scene mistColor with dissolve
     show mist at fade
     pause(1.0)
+    show papyrusImg delight at fade:
+        xpos -0.1
     papyrus "I DIDN'T KILL ANYONE!"
+    show gaster trapped sad flip at fade:
+        xpos 0.4
     gaster "THAT'S A GREAT THING TO ASPIRE TO, I GUESS"
+    show papyrusImg delight flip
     papyrus "NOBODY GETS IN TROUBLE!"
+    show papyrusImg delight
     papyrus "I'M SO HAPPY!"
+    show gaster trapped maybe flip
     gaster "THEY KIDNAPPED YOUR FRIEND ANYWAY, THOUGH"
+    stop music fadeout 1
+    pause(1)
+    show papyrusImg uhh
     papyrus "OH"
     papyrus "OH..."
+    play music "music/15 sans.mp3" fadein 1
+    show gaster neutral flip
     gaster "IT'S NOT YOUR FAULT AT LEAST"
+    show papyrusImg annoyed
     papyrus "THAT'S NOT ENOUGH"
     gaster "I TOLD YOU, WE CANNOT GO EVEN MORE IN THE PAST THAN THAT MOMENT"
+    show papyrusImg confused
     papyrus "WHY?"
+    show gaster trapped sad flip
     gaster "I TRIED"
+    show gaster neutral flip
     gaster "MY WORKING THEORY IS THE WEKUFES COINCIDENTLY GOT ENOUGH DETERMINATION STORED AT THAT MOMENT"
+    show papyrusImg annoyed
     papyrus "HOW THEY GET THEIR DETERMINATION ANYWAYS?"
     gaster "I DIDN'T CHECK OUT, BUT I IMAGINE IS SIMILAR TO HOW YOUR FRIEND THE EX-ROYAL SCIENTIST GOT THEM"
+    show papyrusImg uhh
     papyrus "..."
+    show papyrusImg annoyed
     papyrus "THAT WERE ENOUGH QUESTIONS"
     gaster "WELL, YOU ARE FREE TO DO ANYTHING YOU WANT THE NEXT TWO DAYS"
     gaster "I HOPE YOU USE THIS TIME WELL"
     papyrus "..."
+    show papyrusImg neutral
     papyrus "WELL, NOW THE QUESTIONS"
+    stop music fadeout 1
     return
     
 return
