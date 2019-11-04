@@ -1,11 +1,15 @@
 label fileAlphysTryAgain:
+  show papyrusImg confused
   papyrus "WHAT WE'RE GOING TO DO WITH THIS PROGRAM?"
   gaster "SOMETHING IS WEIRD ABOUT THAT, BUT I'M NOT ENOUGH GOOD A CODER TO FIGURE OUT WHAT"
+  show papyrusImg uhh
   papyrus "WHO'S THE BEST CODER YOU KNOW?"
   gaster "YOU"
+  show papyrusImg dissapointed
   papyrus "WE'RE DOOM"
   papyrus "WE'RE DOOMED, DOOMED, DOOOMED, DOOOOOOOOOMEEEDDDDDDD"
   gaster "BUT YOU ARE"
+  show papyrusImg confused
   papyrus "BUT I DON'T REMEMBER ANYTHING!"
   papyrus "I HAVE VAGUE RECOLECTIONS OF THEORY I GUESS"
   papyrus "BUT THIS IS A MYSTERY TO ME!"
