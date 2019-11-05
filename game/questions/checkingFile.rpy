@@ -11,14 +11,21 @@ label fileAlphysTryAgain:
   gaster "BUT YOU ARE"
   show papyrusImg confused
   papyrus "BUT I DON'T REMEMBER ANYTHING!"
+  show papyrusImg dissapointed
   papyrus "I HAVE VAGUE RECOLECTIONS OF THEORY I GUESS"
+  show papyrusImg confused
   papyrus "BUT THIS IS A MYSTERY TO ME!"
+  show papyrusImg uhh
   papyrus "..."
+  pause(2)
   gaster "PAPYRUS?"
+  show papyrusImg explainingPointing
   papyrus "MAYBE IF I READ THE CODE I WILL UNDERSTAND IT"
+  show papyrusImg delight
   papyrus "LIKE, EVERYTHING WOULD COME BACK TO MY BRAIN IF I SEE ACTUAL CODE"
   gaster "YOU MIGHT"
   gaster "BUT THAT DOESN'T MEAN THE CODE IS GOOD"
+  show papyrusImg annoyed
   papyrus "IT WORKS"
   gaster "I'M NOT TALKING ABOUT THAT"
   papyrus "HOW CAN I SAY THAT LOUDER?"
@@ -29,12 +36,14 @@ label fileAlphysTryAgain:
   gaster "THIS HAS NOTHING TO DO WITH THAT"
   gaster "IF YOUR FRIEND HAS NEVER WORKED WITH SOMEONE ELSE BEFORE SHE PROBABLY DOES NOT HAVE A STANDARD"
   gaster "AND NOT EVEN THAT COULD ASSURE YOU WE COULD BE ABLE TO READ THE CODE"
+  show papyrusImg uhh
   papyrus "ARE YOU SAYING THIS IS IMPOSSIBLE?"
   gaster "NO"
   gaster "JUST, DON'T EXPECT MUCH"
   papyrus "WHY NOT?"
   gaster "..."
   gaster "I JUST DON'T WANNA SEE YOUR DISSAPOINTED SAD FACE"
+  show papyrusImg serious
   papyrus "THIS IS MY DISSAPOINTED ANGRY FACE"
   gaster "..."
   if program2ndChance < 1:
