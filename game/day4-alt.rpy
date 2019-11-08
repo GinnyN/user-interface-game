@@ -7,7 +7,6 @@ label alphysTalksToSans:
 
 label getPenFromAlphys:
     $ penAtAlphys = False
-    $ tryWithAlphys = False
     stop music fadeout(1)
     scene black with dissolve
     pause(0.5)
@@ -176,6 +175,8 @@ label getPenFromAlphys:
             $ program = True
             $ tryWithAlphys = False
         else:
+            
+            $ tryWithAlphys = False
             alphys "Then I will not start progress unless you tell us what's going on!"
             papyrus "WHAT?"
             papyrus "BUT HALF OF THE PROGRESS IS ALREADY DONE!"
