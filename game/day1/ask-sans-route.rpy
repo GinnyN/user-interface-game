@@ -1,5 +1,4 @@
 label papyrusGasterConversation:
-    $ gasterInformPosition = True
     stop music fadeout(1)
     show papyrusImg dissapointed
     papyrus "..."

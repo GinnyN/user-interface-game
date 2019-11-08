@@ -128,6 +128,8 @@ label endingMenuFirstTry:
 
 label startEndingGasterFirstTry:
     $ firstTry = False
+    $ tryWithSans = False
+    $ tryWithAlphys = False
     show papyrusImg delight flip
     papyrus "OF COURSE!"
     papyrus "LET'S DO THIS!"
