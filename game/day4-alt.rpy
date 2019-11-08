@@ -7,6 +7,7 @@ label alphysTalksToSans:
 
 label getPenFromAlphys:
     $ penAtAlphys = False
+    $ tryWithAlphys = False
     stop music fadeout(1)
     scene black with dissolve
     pause(0.5)
