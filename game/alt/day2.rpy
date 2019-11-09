@@ -1,4 +1,5 @@
 label altDay2:
+  $ day = 2
   scene black with dissolve
   stop music
   pause(2)
@@ -33,6 +34,7 @@ label altDay2:
   call questionsEnd from _call_questionsEnd_3
 
 label altDay3:
+  $ day = 3
   scene black with dissolve
   stop music
   pause(2)

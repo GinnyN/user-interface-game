@@ -67,6 +67,8 @@ image freeMorning frisk resetZero scene2 = "background/freeMorning/frisk-zero-sc
 image freeMorning frisk resetZero scene3 = "background/freeMorning/frisk-zero-scene3.png"
 image freeMorningF frisk resetZero foreground = "background/freeMorning/frisk-zero-foreground.png"
 image freeMorning frisk resetZero background = "background/freeMorning/frisk-zero-background.png"
+#Free Afternoon
+image freeAfternoon toriel1  = "background/freeMorning/toriel-afternoon-1.png"
 #Try with Sans
 image tryWithSans jumpOver = "background/tryWithSans/papyrusOverSchool.png"
 image tryWithSans sansShattering frame1 = "background/tryWithSans/sansShattering-frame1.png"

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/freeAfternoon/visit-asgore.rpy", line 82: expected statement.
-    papyrusImg asgoreImg
-                        ^
+File "game/freeAfternoon/visit-toriel.rpy", line 23: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+      pause(0.5)"
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Nov 08 22:11:13 2019
+Sat Nov 09 08:53:42 2019

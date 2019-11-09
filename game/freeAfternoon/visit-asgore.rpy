@@ -100,6 +100,7 @@ label afternoonAsgore:
     hide papyrusImg
     play sound "music/fx/steps.wav"
     papyrus "NO WAIT!"
+    pause(1)
     scene forest with dissolve
     show asgoreImg shirt serious zorder 3 at fade:
         xpos 0.3
@@ -112,6 +113,7 @@ label afternoonAsgore:
     papyrus "YOU MAJESTY PLEASE"
     hide papyrusImg
     play sound "music/fx/steps.wav"
+    pause(1)
     scene skelebroHouse outside with dissolve
     show asgoreImg shirt serious zorder 3 at fade:
         xpos 0.3
@@ -124,6 +126,7 @@ label afternoonAsgore:
     papyrus "I KNOW I'M GREAT YOUR MAJESTY, BUT PLEASE STOP"
     hide papyrusImg
     play sound "music/fx/steps.wav"
+    pause(1)
     scene elevator outside with dissolve:
         ypos -0.2
     show asgoreImg shirt explaining zorder 0 at fade:
@@ -162,7 +165,7 @@ label afternoonAsgore:
     "..."
     show papyrusImg coolDude realizing flip
     papyrus "THAT WAS LESS TRAUMATIC THAN I THOUGHT IT WILL BE"
-    show sansImg hoddie worried flip
+    show sansImg hoddie surprised flip
     sans "what are you doing bro?"
     papyrus "I DON'T KNOW"
     hide papyrusImg
