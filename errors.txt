@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/day1/alt.rpy", line 141: stop requires a channel
-    stop menu fadeout 1
-        ^
+File "game/freeAfternoon/visit-asgore.rpy", line 82: expected statement.
+    papyrusImg asgoreImg
+                        ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Nov 01 09:59:14 2019
+Fri Nov 08 22:11:13 2019

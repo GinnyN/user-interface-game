@@ -50,6 +50,8 @@ image friskImg scarf flip = im.Flip(im.FactorScale("frisk/scarf.png", 0.7), hori
 
 #Asgore
 #Shirt
+image asgoreImg shirt doubt = "asgore/shirt/doubt.png"
+image asgoreImg shirt doubt flip = im.Flip("asgore/shirt/doubt.png", horizontal=True)
 image asgoreImg shirt explaining = "asgore/shirt/explain.png"
 image asgoreImg shirt explaining flip = im.Flip("asgore/shirt/explain.png", horizontal=True)
 image asgoreImg shirt embarrased = "asgore/shirt/embarrased.png"

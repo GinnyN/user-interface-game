@@ -41,9 +41,11 @@ label gasterInformThePosition:
     show undyneImg mild surprise
     show sansImg surprised
     hide papyrusImg
+    play sound "music/fx/steps.wav"
     papyrus "LET'S CHECKOUT THE OTHER SIDE OF THIS PLACE"
     papyrus "MAYBE WE CAN FIND SOMETHING THERE"
     hide undyneImg
+    play sound "music/fx/steps.wav"
     undyne "Papyrus stop!"
     undyne "Wait! WAIT!"
     sans "what..."
@@ -51,6 +53,7 @@ label gasterInformThePosition:
     show sansImg unsure
     sans "mmm..."
     hide sansImg
+    play sound "music/fx/steps.wav"
     gaster "INDEED MY DEAR SANS, INDEED"
     stop music fadeout 1
     scene black with dissolve

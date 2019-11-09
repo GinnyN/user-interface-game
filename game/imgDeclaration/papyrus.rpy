@@ -85,6 +85,8 @@ image papyrusImg coolDude annoyed = "papyrus/coolDude/annoyed.png"
 image papyrusImg coolDude annoyed flip = im.Flip("papyrus/coolDude/annoyed.png", horizontal=True)
 image papyrusImg coolDude delight = "papyrus/coolDude/delight.png"
 image papyrusImg coolDude delight flip = im.Flip("papyrus/coolDude/delight.png", horizontal=True)
+image papyrusImg coolDude desperate = "papyrus/coolDude/desperate.png"
+image papyrusImg coolDude desperate flip = im.Flip("papyrus/coolDude/desperate.png", horizontal=True)
 image papyrusImg coolDude enough = "papyrus/coolDude/enough.png"
 image papyrusImg coolDude enough flip = im.Flip("papyrus/coolDude/enough.png", horizontal=True)
 image papyrusImg coolDude explaining = "papyrus/coolDude/explaining.png"
