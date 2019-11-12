@@ -1,6 +1,5 @@
 label splashscreen:
     if persistent.endingGaster:
-        $ persistent.endingGaster = False
         "..."
         "........"
         "WHY ARE YOU HERE?"
@@ -24,8 +23,8 @@ label splashscreen:
         "I CAN'T..."
         "..."
         ""
+        $ persistent.endingGaster = False
     elif persistent.endingPapyrus:
-        $ persistent.endingPapyrus = False
         "OH"
         "..."
         "I SEE"
@@ -43,5 +42,6 @@ label splashscreen:
         "..."
         "I BEG YOU"
         ""
+        $ persistent.endingPapyrus = False
     $ renpy.save_persistent()
 return

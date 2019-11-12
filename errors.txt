@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/freeAfternoon/visit-toriel.rpy", line 23: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-      pause(0.5)"
+File "game/characters.rpy", line 104: unexpected unindent
+            except:  
+            ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Nov 09 08:53:42 2019
+Mon Nov 11 22:48:13 2019

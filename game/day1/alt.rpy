@@ -4,6 +4,7 @@ label titleScreen:
     papyrus "WAIT"
     show papyrusImg surprised
     papyrus "WHAATT???"
+    stop music
     play sound "music/fx/lawAndOrder.wav"
     scene day1Alt title
     pause(3)

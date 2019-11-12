@@ -140,7 +140,9 @@ label afternoonSans:
     papyrus "THE GREASE IS GETTING UNDER MY BONES"
     hide papyrusImg
     papyrus "THANKS FOR THE MILK!"
-    pause(1)
+    stop music fadeout 5
+    play sound "music/fx/steps.wav"
+    pause(5)
     show sansImg hoddie worried flip
     sans "i know why he keeps doing it, but i wish he could stop"
     grillsby "..."
