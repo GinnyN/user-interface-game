@@ -43,22 +43,22 @@ label insideBuilding:
     pause(0.5)
     show goon1 zorder 0 at fade:
         yalign 1.0 xalign 0
-    "Random Goon" "* BOSS! BOSS!"
+    invunche "* BOSS! BOSS!"
     show goon2 flip zorder 3 at fade:
         yalign 1.0 xalign 0.9
-    "Boss" "* What is happening?"
-    "Random Goon" "* Monsters! They are attacking us!"
-    "Boss" "* What?!"
+    trauco "* What is happening?"
+    invunche "* Monsters! They are attacking us!"
+    trauco "* What?!"
     show goon3 flip zorder 2 at fade:
         xpos 0.5
-    "Random Goon 2" "* I heard they use magic to attack directly to our souls!"
-    "Random Goon" "* What are we going to do?"
+    voladora "* I heard they use magic to attack directly to our souls!"
+    invunche "* What are we going to do?"
     show sansImg cocky zorder 5 at fade:
         yalign 1.0 xalign 0.0
     sans "return the kid of course."
     show goon1 flip zorder 0 at fade:
         yalign 1.0 xalign 1.3
-    "Boss" "* Who are you?"
+    trauco "* Who are you?"
     sans "a monster."
     sans "and that kid you just kidnapped is my friend."
     sans "and also those other guys friend."
@@ -66,7 +66,7 @@ label insideBuilding:
     show sansImg cockyEyes
     sans "{font=fonts/DTM-Sans.otf}You are going to have a bad time{/font}"
     show sansImg cocky
-    "Boss" "* And what you can do that can hurt us?!"
+    trauco "* And what you can do that can hurt us?!"
     stop music fadeout 0.5
     pause(0.5)
     play sound "music/fx/spears.wav"
@@ -101,8 +101,8 @@ label insideBuilding:
     show sansImg surprised at fade
     show papyrusImg surprised at fade
     show undyneImg surprised at fade
-    "Boss" "* Too late monsters"
-    "Boss" "* The kid has already been shipped to our clients"
+    trauco "* Too late monsters"
+    trauco "* The kid has already been shipped to our clients"
     show papyrusImg angry at fade
     papyrus "SHIPPED?"
     show sansImg serious

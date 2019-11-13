@@ -127,10 +127,16 @@ define muffet = Character("Muffet", color="#FF6666", what_prefix="* ", callback=
 
 define cuero = Character("Monster 1", what_prefix="* ", callback=default_voice)
 define coo = Character("Monster 2", what_prefix="* ", callback=default_voice)
+define invunche = Character("Random Goon", what_prefix="* ", callback=default_voice)
+define voladora = Character("Random Goon 2", what_prefix="* ", callback=default_voice)
+define trauco = Character("Boss", what_prefix="* ", callback=default_voice)
 
 define narrator = Character(' ', color="#ffffff", callback=narrator_voice)
 
 label changeWekufe:
-    $ cuero = Character("Cuero", what_prefix="* ")
-    $ coo = Character("Coo", what_prefix="* ")
+    $ cuero = Character("Cuero", what_prefix="* ", callback=default_voice)
+    $ coo = Character("Coo", what_prefix="* ", callback=default_voice)
+    $ invunche = Character("Invunche", what_prefix="* ", callback=default_voice)
+    $ voladora = Character("Voladora", what_prefix="* ", callback=default_voice)
+    $ trauco = Character("Trauco", what_prefix="* ", callback=default_voice)
 return 
