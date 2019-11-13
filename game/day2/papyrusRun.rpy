@@ -7,8 +7,8 @@ label schoolPapyrusRun:
         xalign 0.7 yalign 1.0
     show kidImg listening zorder 3 at fade:
         xalign 0.3 yalign 1.0
-    "Student" "* Did you heard that?"
-    "Student" "* The teacher said we'll not meet with Papyrus today!"
+    dogaim "* Did you heard that?"
+    dogaim "* The teacher said we'll not meet with Papyrus today!"
     show studentImg dog scared flip:
         xalign 0.8
     show kidImg angry at fade

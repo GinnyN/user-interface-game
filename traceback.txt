@@ -1,26 +1,66 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day3.rpy", line 12, in script call
-    call backNewerHome from _call_backNewerHome
-  File "game/day3/backHome.rpy", line 389, in script
-    sans "i actually surprised myself"
-TypeError: 'NoneType' object is not iterable
+  File "game/day2.rpy", line 40, in script call
+    call questionsEnd from _call_questionsEnd_2
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/day2.rpy", line 30, in script call
+    call mettatonFashionShow from _call_mettatonFashionShow
+  File "game/day2.rpy", line 30, in script call
+    call mettatonFashionShow from _call_mettatonFashionShow
+  File "game/alt/day2.rpy", line 33, in script call
+    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
+  File "game/freeMorning.rpy", line 87, in script call
+    call afternoonSans from _call_afternoonSans
+  File "game/freeAfternoon/visit-sans.rpy", line 3, in script call
+    call freeSansAlt from _call_freeSansAlt
+  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
+    call papyrusAskSans from _call_papyrusAskSans
+  File "game/alt/day2.rpy", line 63, in script call
+    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_2
+  File "game/freeMorning.rpy", line 91, in script call
+    call afternoonUndyne from _call_afternoonUndyne
+  File "game/freeAfternoon/visit-undyne.rpy", line 40, in script
+    undyne "I know you know how to drive"
+  File "game/freeAfternoon/visit-undyne.rpy", line 40, in <module>
+    undyne "I know you know how to drive"
+TypeError: set_volume() takes at least 1 argument (0 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day3.rpy", line 12, in script call
-    call backNewerHome from _call_backNewerHome
-  File "game/day3/backHome.rpy", line 389, in script
-    sans "i actually surprised myself"
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\exports.py", line 1340, in say
-    args, kwargs = renpy.config.say_arguments_callback(who, *args, **kwargs)
-TypeError: 'NoneType' object is not iterable
+  File "game/day2.rpy", line 40, in script call
+    call questionsEnd from _call_questionsEnd_2
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/day2.rpy", line 30, in script call
+    call mettatonFashionShow from _call_mettatonFashionShow
+  File "game/day2.rpy", line 30, in script call
+    call mettatonFashionShow from _call_mettatonFashionShow
+  File "game/alt/day2.rpy", line 33, in script call
+    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
+  File "game/freeMorning.rpy", line 87, in script call
+    call afternoonSans from _call_afternoonSans
+  File "game/freeAfternoon/visit-sans.rpy", line 3, in script call
+    call freeSansAlt from _call_freeSansAlt
+  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
+    call papyrusAskSans from _call_papyrusAskSans
+  File "game/alt/day2.rpy", line 63, in script call
+    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_2
+  File "game/freeMorning.rpy", line 91, in script call
+    call afternoonUndyne from _call_afternoonUndyne
+  File "game/freeAfternoon/visit-undyne.rpy", line 40, in script
+    undyne "I know you know how to drive"
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/freeAfternoon/visit-undyne.rpy", line 40, in <module>
+    undyne "I know you know how to drive"
+TypeError: set_volume() takes at least 1 argument (0 given)
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 User Interface 0.3
-Mon Nov 11 22:54:37 2019
+Tue Nov 12 22:50:06 2019

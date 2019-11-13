@@ -131,8 +131,8 @@ label afternoonToriel:
   show papyrusImg coolDude neutral
   toriel "You stay with Frisk, I'm going to the library"
   papyrus "OH, OF..."
-  scene toriel house with vpunch
   play sound "music/fx/thump.wav"
+  scene toriel house with vpunch
   show papyrusImg coolDude realizing zorder 1 at fade:
     xpos -0.1
   papyrus "SHE'S GONE"
@@ -191,4 +191,5 @@ label afternoonToriel:
   show papyrusImg coolDude neutral
   papyrus "IT'S OK"
   $ gasterScienceEncyclopedia = True
+  stop music fadeout 2
 return

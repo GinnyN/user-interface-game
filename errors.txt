@@ -2,10 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/characters.rpy", line 104: unexpected unindent
-            except:  
-            ^
+File "game/freeAfternoon/visit-undyne.rpy", line 34: invalid syntax
+    define pauseFlag = renpy.music.get_pause()
+                    ^
     
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Nov 11 22:48:13 2019
+Tue Nov 12 22:25:40 2019
