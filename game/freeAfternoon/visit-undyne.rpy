@@ -37,15 +37,20 @@ label afternoonUndyne:
     ypos -0.2
     xpos 0.0
   undyne "PAPYRUS"
+  show papyrusImg coolDude scared flip at fade:
+    xpos 0.4
   papyrus "WHAT?"
   undyne "I know you know how to drive"
+  show papyrusImg coolDude uhh flip
   papyrus "SORTA"
   $ renpy.music.set_volume(0.0)
   show undyneImg gym mildSurprise
   undyne "Sorta?"
+  show papyrusImg coolDude thinking flip
   papyrus "LIKE, I DRIVED THE CAR LIKE ONCE AND THEN I REALIZED THAT RUN AND JUMP IS MORE CONVENIENT FOR ME"
   show undyneImg gym speachless
   undyne "But you have a licence"
+  show papyrusImg coolDude happy flip
   papyrus "YES, I THINK I'M ONE OF THE 5 MONSTERS WITH A DRIVING LICENCE"
   show undyneImg gym surprisedHappy
   undyne "Great!"
@@ -53,6 +58,7 @@ label afternoonUndyne:
   show undyneImg gym impressed
   undyne "I need you to drive a bus with the kids"
   undyne "We're doing a school trip"
+  show papyrusImg coolDude uhh flip
   papyrus "I DON'T HAVE THAT KIND OF LICENCE"
   $ renpy.music.set_volume(0.0)
   show undyneImg gym mildSurprise
@@ -61,6 +67,7 @@ label afternoonUndyne:
   show undyneImg gym thinking
   undyne "You need a special licence to drive buses?!"
   undyne "But you know how to drive cars, isn't like... the same... but bigger?"
+  show papyrusImg coolDude thinking flip
   papyrus "I THINK YOU NEED TO CERTIFY YOU ARE BETTER AT IT..."
   show undyneImg gym thinking flip
   papyrus "I DON'T REMEMBER, BUT I THINK THERE'S A LICENCE FOR BUSES AND A LICENCE FOR BIG TRUCKS..."
@@ -71,10 +78,13 @@ label afternoonUndyne:
   show undyneImg gym thinking flip
   papyrus "AND I HAVE THE CAR LICENCE..."
   show undyneImg gym impressed
+  show papyrusImg coolDude scared flip
   undyne "WHY THIS HAVE TO BE SO COMPLICATED?!"
   show undyneImg gym thinking
   undyne "It's just a bigger car"
+  show papyrusImg coolDude thinking flip
   papyrus "WHY DO YOU NEED ME DRIVE A BUS?"
+  show undyneImg gym shy
   undyne "I.. "
   extend "don't... "
   extend "wanna... "
@@ -83,12 +93,16 @@ label afternoonUndyne:
   extend "driver..."
   undyne "After what happened to Frisk, I don't feel confortable with a human there"
   undyne "It's going to make the kids nervious"
+  show papyrusImg coolDude neutral flip
   papyrus "YES, THE KIDS"
+  show undyneImg gym speachless
   undyne "I thought in asking you because you always know a lot about something that interest you"
   papyrus "IN FACT, I THINK I'M THE ONLY MONSTER WITH A DRIVING LICENCE STILL LIVING IN THE KINGDOM"
+  show undyneImg gym impressed
   undyne "WHAT?!"
   papyrus "EVERYBODY ELSE GOT A DRIVER LICENCE SO THEY COULD TRAVEL AROUND THE WORLD"
   papyrus "I... DIDN'T"
+  show undyneImg gym yelling
   undyne "Papyrus"
   $ renpy.music.set_volume(1.0)
   undyne "You will have to get the Bus driver licence"
@@ -98,6 +112,7 @@ label afternoonUndyne:
   papyrus "WHILE I'M ACTUALLY MORE SURPRISED THAT THE SCHOOL HAS A BUS"
   $ renpy.music.set_volume(0.0)
   undyne "Ah...."
+  hide undyneImg
   undyne "AAAAHHHHHHHHHHHHHH"
   $ renpy.music.set_volume(1.0)
   gaster "WHAT EXACTLY IS HAPPENING?"
@@ -119,15 +134,22 @@ label afternoonUndyne:
   play sound "music/fx/thump.wav"
   pause(0.5)
   papyrus "AND THEY ALLOWED US TO GET OUR LICENCES FROM THEM"
+  show undyneImg gym impressed flip at fade:
+    ypos -0.2
+    xpos 0.4
   undyne "WHAT ARE YOU TALKING ABOUT!?"
   stop music
   papyrus "SORRY, SORRY, DID YOU SAY?"
+  show undyneImg gym thinking flip
   undyne "ARGH..."
   undyne "..."
   undyne "Are you saying that you need a bus to get the licence"
   papyrus "I NEED TO PROVE I KNOW HOW TO DRIVE A BUS TO GET THE LICENCE"
+  show undyneImg gym yelling flip
   undyne "BUT HOW YOU LEARN TO DRIVE A BUS IF YOU CANNOT DRIVE A BUS?!"
   papyrus "WELL..."
+  hide undyneImg
+  play sound "music/fx/steps.wav"
   undyne "ARGH!"
   undyne "EXPLAIN THAT TO ME NEXT WEEK!"
   undyne "Humans..."
