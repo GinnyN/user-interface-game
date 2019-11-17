@@ -97,34 +97,45 @@ label afternoonUndyne:
   papyrus "YES, THE KIDS"
   show undyneImg gym speachless
   undyne "I thought in asking you because you always know a lot about something that interest you"
+  show papyrusImg coolDude thinking flip
   papyrus "IN FACT, I THINK I'M THE ONLY MONSTER WITH A DRIVING LICENCE STILL LIVING IN THE KINGDOM"
   show undyneImg gym impressed
   undyne "WHAT?!"
   papyrus "EVERYBODY ELSE GOT A DRIVER LICENCE SO THEY COULD TRAVEL AROUND THE WORLD"
+  show papyrusImg coolDude uhh flip
   papyrus "I... DIDN'T"
   show undyneImg gym yelling
   undyne "Papyrus"
   $ renpy.music.set_volume(1.0)
   undyne "You will have to get the Bus driver licence"
   undyne "It's important"
+  show papyrusImg coolDude surprised happy flip
   papyrus "SERIOUSLY"
   papyrus "OF COURSE, THE GREAT PAPYRUS WILL DO HIS BEST!"
+  show papyrusImg coolDude thinking flip
   papyrus "WHILE I'M ACTUALLY MORE SURPRISED THAT THE SCHOOL HAS A BUS"
   $ renpy.music.set_volume(0.0)
   undyne "Ah...."
   hide undyneImg
   undyne "AAAAHHHHHHHHHHHHHH"
   $ renpy.music.set_volume(1.0)
+  show papyrusImg coolDude neutral
+  show gaster trapped oh at fade:
+    xpos -0.1
   gaster "WHAT EXACTLY IS HAPPENING?"
   play sound "music/fx/thump.wav"
   pause(0.5)
+  show papyrusImg coolDude thinking flip
   papyrus "I THINK UNDYNE BELIEVED THE DRIVER LICENCE CAME WITH THE VEHICLE"
   gaster "CAN YOU START SINCE THE BEGINNING?"
+  show papyrusImg coolDude realizing flip
   papyrus "OH, SORRY, I FORGOT"
   play sound "music/fx/thump.wav"
   pause(0.5)
+  show papyrusImg coolDude neutral flip
   papyrus "SO, HUMANS HAVE THIS MAGIC VEHICLE CALLED CAR"
   papyrus "WELL, IT'S NOT MAGIC, BUT USES HUMAN TECHNOLOGY"
+  show gaster trapped descisive
   gaster "I KNEW IT"
   play sound "music/fx/thump.wav"
   pause(0.5)
@@ -134,11 +145,15 @@ label afternoonUndyne:
   play sound "music/fx/thump.wav"
   pause(0.5)
   papyrus "AND THEY ALLOWED US TO GET OUR LICENCES FROM THEM"
+  hide gaster
+  show papyrusImg coolDude scared flip at fade:
+    xpos -0.1
   show undyneImg gym impressed flip at fade:
     ypos -0.2
     xpos 0.4
   undyne "WHAT ARE YOU TALKING ABOUT!?"
   stop music
+  show papyrusImg coolDude uhh
   papyrus "SORRY, SORRY, DID YOU SAY?"
   show undyneImg gym thinking flip
   undyne "ARGH..."
@@ -146,19 +161,28 @@ label afternoonUndyne:
   undyne "Are you saying that you need a bus to get the licence"
   papyrus "I NEED TO PROVE I KNOW HOW TO DRIVE A BUS TO GET THE LICENCE"
   show undyneImg gym yelling flip
+  show papyrusImg coolDude scared
   undyne "BUT HOW YOU LEARN TO DRIVE A BUS IF YOU CANNOT DRIVE A BUS?!"
+  show papyrusImg coolDude uhh
   papyrus "WELL..."
   hide undyneImg
   play sound "music/fx/steps.wav"
+  show papyrusImg coolDude scared
   undyne "ARGH!"
+  show papyrusImg coolDude uhh
   undyne "EXPLAIN THAT TO ME NEXT WEEK!"
   undyne "Humans..."
   undyne "They lie in their documentaries and now this"
   "..."
+  show gaster trapped happy at fade:
+    xpos 0.4
   gaster "I THINK I LIKE HER"
   "..."
+  show papyrusImg coolDude angry
   papyrus "YOU STAY AS FAR AWAY FROM HER AS POSSIBLE"
+  show gaster trapped sad flip
   gaster "I THINK YOU ARE UNDERSTIMATING HER"
+  show papyrusImg coolDude neutral
   papyrus "YOU HAVE A POINT ON THAT ONE"
   
 return
