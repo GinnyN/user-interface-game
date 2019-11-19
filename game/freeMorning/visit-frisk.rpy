@@ -44,7 +44,7 @@ label visitFrisk:
         hide papyrusImg
         play sound "music/fx/steps.wav"
         frisk ".."
-        show papyrusImg me flip:
+        show papyrusImg me flip at fade:
             xpos 0.4
         papyrus "BACK!"
         show papyrusImg proud flip
@@ -96,42 +96,73 @@ label visitFrisk:
         papyrus "AND CHOOSED THAT WITH MY OWN WILL!"
         stop music
     else:
+        show papyrusImg uhh flip
         papyrus "KIND.... OF...."
+        show papyrusImg annoyed flip
         papyrus "WHY ARE YOU ASKING ME THAT?"
+        show friskImg worried
         frisk "I..."
         frisk "..."
         frisk "A hunch maybe?"
         frisk "Flowey seems to know a lot about that..."
+        show papyrusImg surprised happy flip
         papyrus "FLOWEY?"
+        show papyrusImg delight flip
         papyrus "DID YOU MEET HIM?"
+        show friskImg surprised
         frisk "Do you..."
+        show friskImg unsure
         frisk "Right, you don't..."
+        show papyrusImg annoyed flip
         papyrus "I MEAN, HE TOLD ME ABOUT A HUMAN HE WAS TALKING WITH..."
+        show papyrusImg delight flip
         papyrus "BUT I NEVER ASSUMED IT WAS YOU..."
         frisk "Why?"
+        show friskImg surprised
+        show papyrusImg uhh flip
         papyrus "HE DESCRIBED THEM DIFFERENTLY"
+        show friskImg unsure
         frisk "..."
+        show papyrusImg annoyed flip
         papyrus "WHEN I MET YOU I TOLD HIM HE WAS WRONG, BUT ONCE HE TOLD ME THAT WASN'T WHAT HE WAS TALKING ABOUT"
         papyrus "I JUST ASSUMED HE WAS TALKING ABOUT ANOTHER HUMAN, BUT IN OUR SEARCHS FOR MONSTERS WHO MAYBE DIDN'T KNEW ABOUT THE BARRIER BREAKING WE CANNOT FIND THEM"
+        show papyrusImg delight flip
         papyrus "SO, I FIGURED, IT MIGHT BE SOMEONE ELSE"
         papyrus "LIKE, WHOEVER IS HELPING YOU TRAVELING IN TIME"
+        show friskImg surprised
         frisk "You knew that?"
+        show friskImg worried
+        show papyrusImg explainingPointing flip
         papyrus "SANS KNEW"
+        show papyrusImg neutral flip
         papyrus "AND DESPITE WHAT EVERYBODY BELIEVES, HE'S NOT THAT GOOD AT KEEPING SECRETS"
+        show papyrusImg uhh flip
         papyrus "AND..."
+        show papyrusImg confused flip
         papyrus "WELL, THE FIRST TIME I SAW YOU I FELT IT WASN'T THE FIRST TIME"
+        show papyrusImg delight flip
         papyrus "AND I FELT SO HAPPY TO SEE YOU"
+        show papyrusImg uhh flip
         papyrus "FOR SOME REASON"
+        show friskImg explaining
         frisk "I cannot 'travel in time' now"
+        show papyrusImg scared flip
         papyrus "YOU CAN'T?"
+        show friskImg angry mild
+        show papyrusImg uhh flip
         frisk "And who ever was doing that, I haven't heard them or feeling them in years"
         papyrus "WHAT DO YOU THINK IS GOING TO HAPPEN WHEN THEY COME BACK?"
+        show friskImg worried
         frisk "I hope they won't"
         frisk "They wasn't very nice"
+        show papyrusImg dissapointed flip
         papyrus "AWWW..."
         papyrus "BUT I WANT TO KNOW MY FRIEND BETTER..."
+        show friskImg surprised
         frisk "Friend?"
+        show papyrusImg delight flip
         papyrus "I MADE 2 FRIENDS AT ONCE, ISN'T THAT NEATO??"
+        show friskImg happy
         frisk "Papyrus..."
         papyrus "COME HERE!"
         papyrus "WE SKELETONS GIVE THE BEST HUGS!"
