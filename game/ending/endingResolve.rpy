@@ -5,6 +5,8 @@ label endingResolve:
         $ renpy.retain_after_load()
         jump endingsFirstTry
     else:
+        scene black with dissolve
+        pause(1.0)
         gaster "THIS IS THE LAST DAY WE HAVE BEFORE GOING BACK"
         gaster "DO YOU WANT TO TRY USING THE PROGRAM ANYWAY?"
         papyrus "WELL..."
@@ -23,6 +25,10 @@ label endingResolve:
 
 label endingCase:
     label endingWithSans:
+    stop music fadeout(1.0)
+    pause(1.0)
+    play music "music/47 Ooo.mp3" fadein 1
+    scene wekufeLab with dissolve
     gaster "I CANNOT FIND WEKUFES ANYWHERE"
     gaster "WE CAN WORK NOW"
     papyrus "GOOD"

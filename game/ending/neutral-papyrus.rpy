@@ -1,10 +1,10 @@
 label neutralEndingPapyrus:
   "* Scene changes to near the Skelebros house. Monster Kid and his Dog friend are waiting for Papyrus *"
   monsterKid "Where's he?"
-  "Student" "* Maybe the teacher finally found him"
+  dogaim "* Maybe the teacher finally found him"
   monsterKid "NO SENSE!"
   monsterKid "Something terrible must have happened"
-  "Student" "* He might be in trouble"
+  dogaim "* He might be in trouble"
   monsterKid "He..."
   monsterKid "He might..."
   undyne "Here you are"
