@@ -167,4 +167,5 @@ label visitFrisk:
         papyrus "COME HERE!"
         papyrus "WE SKELETONS GIVE THE BEST HUGS!"
         frisk "Yes... yes you do..."
+        stop music fadeout 5
     return

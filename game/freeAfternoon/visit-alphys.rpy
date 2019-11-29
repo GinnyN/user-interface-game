@@ -6,6 +6,7 @@ label afternoonAlphys:
       papyrus "I WANT TO VISIT DR ALPHYS NOW..."
       show gaster trapped oh flip at fade:
          xpos 0.4
+      play music "music/15 sans.mp3" fadein 1
       gaster "YOU WANT VISIT HER?"
       show papyrusImg coolDude explaining
       papyrus "WE HAVE THE MORNINGS FOR OUR TRAININGS, SO I HOPEFULLY ASSUME SHE BELIEVES I'M THERE BY MISTAKE"
@@ -84,5 +85,6 @@ label afternoonAlphys:
       papyrus "........"
       papyrus "............................................"
       show papyrusImg coolDude realizing
+      stop music
       papyrus "I HAVE MADE A TERRIBLE MISTAKE"
 return
