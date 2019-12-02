@@ -178,7 +178,9 @@ label getPenFromAlphys:
             
             $ tryWithAlphys = False
             alphys "Then I will not start progress unless you tell us what's going on!"
+            stop music fadeout 1
             papyrus "WHAT?"
+            play music "music/15 sans.mp3" fadein 1
             papyrus "BUT HALF OF THE PROGRESS IS ALREADY DONE!"
             alphys "Well, yes, that code is mine"
             alphys "Somehow..."

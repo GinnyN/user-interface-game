@@ -33,6 +33,7 @@ image alphysImg casual neutral flip = im.Flip("alphys/casual/neutral.png", horiz
 image friskImg worried = im.FactorScale("frisk/worried.png", 0.7)
 image friskImg worried flip = im.Flip(im.FactorScale("frisk/worried.png", 0.7), horizontal=True)
 image friskImg explaining = im.FactorScale("frisk/explaining.png", 0.7)
+image friskImg explaining flip  = im.Flip(im.FactorScale("frisk/explaining.png", 0.7), horizontal=True)
 image friskImg unsure = im.FactorScale("frisk/unsure.png", 0.7)
 image friskImg unsure flip = im.Flip(im.FactorScale("frisk/unsure.png", 0.7), horizontal=True)
 image friskImg angry mild = im.FactorScale("frisk/angry.png", 0.7)
@@ -188,6 +189,8 @@ image gaster free doubt = "gaster/free/doubt.png"
 image gaster free doubt flip = im.Flip("gaster/free/doubt.png", horizontal=True)
 image gaster free happy = "gaster/free/happy.png"
 image gaster free happy flip = im.Flip("gaster/free/happy.png", horizontal=True)
+image gaster free neutral = "gaster/free/neutral.png"
+image gaster free neutral flip = im.Flip("gaster/free/neutral.png", horizontal=True)
 image gaster free surprised = "gaster/free/surprised.png"
 image gaster free surprised flip = im.Flip("gaster/free/surprised.png", horizontal=True)
 image gaster free worried = "gaster/free/worried.png"
