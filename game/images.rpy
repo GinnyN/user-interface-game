@@ -10,6 +10,7 @@ image alphysImg pajamas explaining flip = im.Flip("alphys/pajamas/explaining.png
 image alphysImg casual angry = "alphys/casual/angry.png"
 image alphysImg casual angry flip = im.Flip("alphys/casual/angry.png", horizontal=True)
 image alphysImg casual laugh = "alphys/casual/joking.png"
+image alphysImg casual laugh flip = im.Flip("alphys/casual/joking.png", horizontal=True)
 image alphysImg casual explaining = "alphys/casual/explaining.png"
 image alphysImg casual explaining flip = im.Flip("alphys/casual/explaining.png", horizontal=True)
 image alphysImg casual confused = "alphys/casual/confused.png"

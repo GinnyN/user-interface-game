@@ -1,6 +1,6 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
+Compiling ATL code at game/ending/wekufe-gaster.rpy:5
   File "game/day2.rpy", line 40, in script call
     call questionsEnd from _call_questionsEnd_2
   File "game/questions/menu.rpy", line 14, in script call
@@ -17,15 +17,17 @@ While running game code:
     call freeSansAlt from _call_freeSansAlt
   File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
     call papyrusAskSans from _call_papyrusAskSans
-  File "game/alt/day2.rpy", line 63, in script call
-    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_2
-  File "game/freeMorning.rpy", line 91, in script call
-    call afternoonUndyne from _call_afternoonUndyne
-  File "game/freeAfternoon/visit-undyne.rpy", line 40, in script
-    undyne "I know you know how to drive"
-  File "game/freeAfternoon/visit-undyne.rpy", line 40, in <module>
-    undyne "I know you know how to drive"
-TypeError: set_volume() takes at least 1 argument (0 given)
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/ending/wekufe-gaster.rpy", line 3, in script
+    scene gasterWekufe frame1 with dissolve:
+Exception: Expression u'0.5' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -46,21 +48,41 @@ Full traceback:
     call freeSansAlt from _call_freeSansAlt
   File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
     call papyrusAskSans from _call_papyrusAskSans
-  File "game/alt/day2.rpy", line 63, in script call
-    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_2
-  File "game/freeMorning.rpy", line 91, in script call
-    call afternoonUndyne from _call_afternoonUndyne
-  File "game/freeAfternoon/visit-undyne.rpy", line 40, in script
-    undyne "I know you know how to drive"
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/freeAfternoon/visit-undyne.rpy", line 40, in <module>
-    undyne "I know you know how to drive"
-TypeError: set_volume() takes at least 1 argument (0 given)
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 14, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/ending/wekufe-gaster.rpy", line 3, in script
+    scene gasterWekufe frame1 with dissolve:
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 1274, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 1153, in show_imspec
+    atl=atl)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\exports.py", line 717, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 1078, in add
+    thing._show()
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\transform.py", line 1048, in _show
+    super(ATLTransform, self)._show()
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\transform.py", line 1014, in _show
+    self.update_state()
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\transform.py", line 1036, in update_state
+    fr = self.execute(self, self.st, self.at)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\atl.py", line 521, in execute
+    block = self.compile()
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\atl.py", line 489, in compile
+    block = self.atl.compile(self.context)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\atl.py", line 684, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\atl.py", line 952, in compile
+    raise Exception("Expression %r is not an ATL transform, and so cannot be included in an ATL interpolation." % expr)
+Exception: Expression u'0.5' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 User Interface 0.3
-Tue Nov 12 22:50:06 2019
+Mon Dec 02 21:31:30 2019

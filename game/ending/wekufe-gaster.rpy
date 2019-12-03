@@ -1,13 +1,15 @@
 label wekufeEndingGaster:
   play music "music/81 An Ending.mp3" fadein(5)
-  scene wekufeLab with dissolve
-  show gaster free neutral at fade with dissolve:
-    xpos 0.4
+  scene gasterWekufe frame1 with dissolve:
+    xpos 0.0
+    linear 10 xpos -0.1
   pause(3)
   show cuero at fade with dissolve:
     xpos -0.1
   cuero "You were the anomaly"
   cuero "And you used that monster to get out"
+  show gaster free neutral at fade with dissolve:
+    xpos 0.4
   gaster "THAT WASN'T INTENTIONAL"
   cuero "It is difficult for me to believe that"
   show cuero flip

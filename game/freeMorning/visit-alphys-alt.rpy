@@ -18,7 +18,7 @@ label alphysAlt:
   alphys "Ah!"
   show alphysImg casual nostalgic
   show papyrusImg coolDude delight flip
-  play music "music/33 Quiet Water.mp3" fadein 1 fadeout 1
+  play music "music/48 Alphys.mp3" fadein 1 fadeout 1
   alphys "Papyrus..."
   alphys "I'm sorry I'm such a mess..."
   alphys "It just..."
@@ -86,6 +86,8 @@ label alphysAlt:
   papyrus "THANK YOU VERY MUCH!"
   hide papyrusImg
   alphys "..."
+  stop music fadeout(3)
+  pause(2)
   show alphysImg casual tired
   alphys "I'm sorry Papyrus"
   $ penAtAlphys = True

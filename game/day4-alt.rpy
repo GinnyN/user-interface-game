@@ -178,30 +178,48 @@ label getPenFromAlphys:
             
             $ tryWithAlphys = False
             alphys "Then I will not start progress unless you tell us what's going on!"
-            stop music fadeout 1
+            stop music fadeout 1 
+            show papyrusImg surprised
             papyrus "WHAT?"
-            play music "music/15 sans.mp3" fadein 1
+            play music "music/48 Alphys.mp3" fadein 1
+            show papyrusImg confused
             papyrus "BUT HALF OF THE PROGRESS IS ALREADY DONE!"
             alphys "Well, yes, that code is mine"
+            show alphysImg casual confused flip
             alphys "Somehow..."
+            show alphysImg casual dismissive flip
             alphys "But I still cannot figure out what the variables 'undyne' do"
+            show papyrusImg dissapointed
             alphys "I think is going to be easier if I do everything again"
+            show sansImg hoddie surprised
             sans "wait, do you call your variables after your crushes?"
+            show alphysImg casual nostalgic flip
             alphys "Why, you don't?"
             sans "i mean, if i never wanna understand what i did, yes, i might"
             alphys "It's... it's just..."
             alphys "I'm not good at variables names... so... I just use the first word it comes in my mind"
             "..."
+            show papyrusImg delight
             papyrus "AW.... THAT'S ADORABLE..."
+            show sansImg hoddie done
             sans "yes... it's adorable..."
             "..."
+            show alphysImg casual angry flip
             alphys "Ok, I'll use a thesaurus next time"
+            show papyrusImg checkThis
             papyrus "WELL, AT LEAST I TRIED"
             papyrus "I'M OUT!"
-            "Papyrus leaves"
+            hide papyrusImg
+            play sound "music/fx/steps.wav"
+            pause(0.5)
+            show sansImg hoddie surprised flip
             sans "wait... wait... papyrus where you going?"
-            "Sans leaves"
+            hide sansImg
+            play sound "music/fx/steps.wav"
+            pause(4)
+            show alphysImg casual laugh flip
             alphys "Nah, I'm not going to do that"
             $ endingSans = True
+            stop music fadeout 3
         jump endingResolve
     return

@@ -49,7 +49,7 @@ label endingCase:
     gaster "AS FAR AS WE KNOW..."
     papyrus "SO, WE'RE..."
     gaster "..."
-    play music "music/94 Respite.mp3" fadein(1)
+    play music "music/94 Respite.mp3" fadein(5) fadeout(2)
     show gaster trapped oh
     papyrus "WE ARE"
     gaster "I DON'T KNOW..."
