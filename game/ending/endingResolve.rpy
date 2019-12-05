@@ -24,7 +24,6 @@ label endingResolve:
                 jump day1
 
 label endingCase:
-    label endingWithSans:
     stop music fadeout(1.0)
     pause(1.0)
     play music "music/47 Ooo.mp3" fadein 1

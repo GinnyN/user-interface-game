@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/freeAfternoon/visit-undyne.rpy", line 34: invalid syntax
-    define pauseFlag = renpy.music.get_pause()
-                    ^
-    
+File "game/ending/neutral-papyrus.rpy", line 41: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    xpos 0.5 ypos -0.2
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Nov 12 22:25:40 2019
+Tue Dec 03 21:50:15 2019
