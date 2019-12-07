@@ -82,6 +82,8 @@ image gasterNeutral lab frame1 = "background/neutralGaster/lab-frame1.png"
 image gasterNeutral lab frame2 = "background/neutralGaster/lab-frame2.png"
 #Ending Gaster Wekufe
 image gasterWekufe frame1 = "background/neutralGaster/gaster-wekufe.png"
+#Ending Papyrus Prison
+image papyrusPrison frame1 = "background/neutralGaster/prison-hug.png"
 
 #Places Backgrounds
 image newerHome night = "background/newerHome/night.png"

@@ -71,6 +71,9 @@ image papyrusImg trapped happy = "papyrus/trapped/happy.png"
 image papyrusImg trapped happy flip = im.Flip("papyrus/trapped/happy.png", horizontal=True)
 image papyrusImg trapped sad = "papyrus/trapped/sad.png"
 image papyrusImg trapped sad flip = im.Flip("papyrus/trapped/sad.png", horizontal=True)
+#Future 
+image papyrusImg future neutral = "papyrus/future/neutral.png"
+image papyrusImg future neutral flip = im.Flip("papyrus/future/neutral.png", horizontal=True)
 
 #Cool Dude
 image papyrusImg coolDude angry = "papyrus/coolDude/angry.png"

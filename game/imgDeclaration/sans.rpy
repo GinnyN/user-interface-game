@@ -65,3 +65,6 @@ image sansImg suit green sarcastic = "sans/greenSuit/sarcastic.png"
 image sansImg suit green annoyed = "sans/greenSuit/annoyed.png"
 image sansImg suit green surprised = "sans/greenSuit/surprised.png"
 image sansImg suit green worried = "sans/greenSuit/worried.png"
+#Future
+image sansImg future neutral = "sans/future/neutral.png"
+image sansImg future neutral flip = im.Flip("sans/future/neutral.png", horizontal=True)
