@@ -78,8 +78,10 @@ label endingCase:
     papyrus "I WILL..."
     menu: 
         "I WILL BELIEVE IN YOU!":
+            $ persistent.endingPapyrus = False
             $ persistent.endingGaster = True
         "I WILL BELIEVE IN MYSELF!":
+            $ persistent.endingGaster = False
             $ persistent.endingPapyrus = True  
     $ renpy.save_persistent()
     show papyrusImg sorry flip

@@ -103,6 +103,7 @@ image wekufeLab = "background/wekufeLab.png"
 image wekufeLab outside = "background/wekufeLabOutside.png"
 image skelebrosHouse inside floor2nd = "background/skelebrosHouseInside2ndFloor.png"
 image skelebrosHouse inside kitchen = "background/skelebrosHouseInsideKitchen.png"
+image skelebrosHouse papyrus room = "background/skeletonPapyrusRoom.png"
 image mist:
     contains:
         alpha 0.2

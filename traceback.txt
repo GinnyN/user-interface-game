@@ -1,6 +1,6 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/ending/wekufe-gaster.rpy:5
+While loading <'Image' u'background/skelebrosPapyrusRoom.png'>:
   File "game/day2.rpy", line 40, in script call
     call questionsEnd from _call_questionsEnd_2
   File "game/questions/menu.rpy", line 14, in script call
@@ -25,9 +25,9 @@ Compiling ATL code at game/ending/wekufe-gaster.rpy:5
     call questionsEnd from _call_questionsEnd_3
   File "game/questions/menu.rpy", line 14, in script call
     call questionsMenu from _call_questionsMenu
-  File "game/ending/wekufe-gaster.rpy", line 3, in script
-    scene gasterWekufe frame1 with dissolve:
-Exception: Expression u'0.5' is not an ATL transform, and so cannot be included in an ATL interpolation.
+  File "game/ending/prison-papyrus.rpy", line 85, in script
+    undyne "Alphys and I clean up this place 2 days ago"
+IOError: Couldn't find file 'background/skelebrosPapyrusRoom.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -56,33 +56,70 @@ Full traceback:
     call questionsEnd from _call_questionsEnd_3
   File "game/questions/menu.rpy", line 14, in script call
     call questionsMenu from _call_questionsMenu
-  File "game/ending/wekufe-gaster.rpy", line 3, in script
-    scene gasterWekufe frame1 with dissolve:
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 1274, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 1153, in show_imspec
-    atl=atl)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\exports.py", line 717, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 1078, in add
-    thing._show()
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\transform.py", line 1048, in _show
-    super(ATLTransform, self)._show()
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\transform.py", line 1014, in _show
-    self.update_state()
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\transform.py", line 1036, in update_state
-    fr = self.execute(self, self.st, self.at)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\atl.py", line 521, in execute
-    block = self.compile()
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\atl.py", line 489, in compile
-    block = self.atl.compile(self.context)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\atl.py", line 684, in compile
-    statements = [ i.compile(ctx) for i in self.statements ]
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\atl.py", line 952, in compile
-    raise Exception("Expression %r is not an ATL transform, and so cannot be included in an ATL interpolation." % expr)
-Exception: Expression u'0.5' is not an ATL transform, and so cannot be included in an ATL interpolation.
+  File "game/ending/prison-papyrus.rpy", line 85, in script
+    undyne "Alphys and I clean up this place 2 days ago"
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 3194, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 2094, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen\renpy.display.render.c:6805)
+    rv = render(root, width, height, st, st)
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\im.py", line 583, in render
+    return cache.get(self, render=True)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\im.py", line 628, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'background/skelebrosPapyrusRoom.png'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 User Interface 0.3
-Mon Dec 02 21:31:30 2019
+Sat Dec 07 23:07:15 2019

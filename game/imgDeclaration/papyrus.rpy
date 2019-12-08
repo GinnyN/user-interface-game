@@ -72,8 +72,18 @@ image papyrusImg trapped happy flip = im.Flip("papyrus/trapped/happy.png", horiz
 image papyrusImg trapped sad = "papyrus/trapped/sad.png"
 image papyrusImg trapped sad flip = im.Flip("papyrus/trapped/sad.png", horizontal=True)
 #Future 
+image papyrusImg future decisive = "papyrus/future/decisive.png"
+image papyrusImg future decisive flip = im.Flip("papyrus/future/decisive.png", horizontal=True)
+image papyrusImg future frustrated = "papyrus/future/frustrated.png"
+image papyrusImg future frustrated flip = im.Flip("papyrus/future/frustrated.png", horizontal=True)
 image papyrusImg future neutral = "papyrus/future/neutral.png"
 image papyrusImg future neutral flip = im.Flip("papyrus/future/neutral.png", horizontal=True)
+image papyrusImg future sad = "papyrus/future/sad.png"
+image papyrusImg future sad flip = im.Flip("papyrus/future/sad.png", horizontal=True)
+image papyrusImg future surprised = "papyrus/future/surprised.png"
+image papyrusImg future surprised flip = im.Flip("papyrus/future/surprised.png", horizontal=True)
+image papyrusImg future well = "papyrus/future/well.png"
+image papyrusImg future well flip = im.Flip("papyrus/future/well.png", horizontal=True)
 
 #Cool Dude
 image papyrusImg coolDude angry = "papyrus/coolDude/angry.png"

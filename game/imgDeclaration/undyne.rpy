@@ -67,3 +67,6 @@ image undyneImg armor sorry = "undyne/armor/sorry.png"
 image undyneImg armor sorry flip = im.Flip("undyne/armor/sorry.png", horizontal=True)
 image undyneImg armor worried = "undyne/armor/worried.png"
 image undyneImg armor worried flip = im.Flip("undyne/armor/worried.png", horizontal=True)
+#Future
+image undyneImg future neutral = "undyne/future/neutral.png"
+image undyneImg future neutral flip = im.Flip("undyne/future/neutral.png", horizontal=True)

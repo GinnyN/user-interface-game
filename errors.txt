@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ending/neutral-papyrus.rpy", line 41: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-    xpos 0.5 ypos -0.2
-    ^
+File "game/ending/prison-papyrus.rpy", line 120: end of line expected.
+    papyrus "WELL..."rfffffffffff5
+                     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Dec 03 21:50:15 2019
+Sat Dec 07 23:05:19 2019
