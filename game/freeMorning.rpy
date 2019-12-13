@@ -14,24 +14,34 @@ label freeMorning:
 
 label displayMenuFreeMorning:
     menu:
-        "Go help Toriel at the School" if not helpedToriel:
+        # Toriel
+        "Go help Toriel at the School" if not helpedToriel and not giveRingToUndyne:
             show papyrusImg coolDude happy 
             papyrus "LET'S SEE IF TORIEL HAVE SOMETHING TO DO!"
             papyrus "THEY ARE STILL MOVING THINGS FROM THE UNDERGROUND AFTER ALL"
             $ helpedToriel = True
             call torielSchool from _call_torielSchool
+        "Go help Toriel with something she needs" if not helpedToriel and giveRingToUndyne:
+            "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
+            $ helpedToriel = True
+            $ visitSans = True
 
-        "Go grocery shopping" if not metAsgore:
+        "Go grocery shopping" if not metAsgore and not giveRingToUndyne:
             papyrus "I'LL BETTER GO TO GET SOME GROCERIES"
             papyrus "MAYBE I CAN FIND SOME DISCOUNTS ON THE SPIDER BAKERY"
             papyrus "EVERYTHING IS ALWAYS SO EXPENSIVE"
             $ metAsgore = True
             call groceryShopping from _call_groceryShopping
-            
-        "Go check Sans" if not visitSans:
+        
+        # Sans
+        "Go check Sans" if not visitSans and not giveRingToUndyne:
             papyrus "MAYBE I SHOULD CHECK WHAT SANS IS DOING"
             $ visitSans = True
             call checkSans from _call_checkSans
+        "Sans is not at his work post, I know it!" if not visitSans and giveRingToUndyne:
+            "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
+            $ helpedToriel = True
+            $ visitSans = True
 
         "Go check with Undyne" if not visitUndyne:
             papyrus "I SHOULD CHECK OUT WITH UNDYNE"
@@ -59,10 +69,11 @@ label displayMenuFreeMorning:
                 papyrus "THAT'S A GOOD IDEA"
                 call displayMenuFreeMorning from _call_displayMenuFreeMorning_1
             else:
+                $ giveRingToUndyne = False
                 $ visitAlphys = True
                 call visitAlphys from _call_visitAlphys
         
-        "Go check how Frisk is doing" if not visitFrisk:
+        "Go check how Frisk is doing" if not visitFrisk and not giveRingToUndyne:
             papyrus "FRISK IS NOT GOING TO SCHOOL"
             papyrus "POOR HUMAN IS RESTING AFTER EVERYTHING JUST HAPPENED"
             show papyrusImg coolDude delight
@@ -75,19 +86,29 @@ label displayMenuFreeMorning:
 
 label displayMenuFreeAfternoon:
     menu:
-        "I have a question for Toriel" if not helpedToriel:
+        # Toriel
+        "I have a question fand Toriel" if not helpedToriel and not giveRingToUndyne:
             call afternoonToriel from _call_afternoonToriel
             $ helpedToriel = True
+        "Go help Toriel with something she needs" if not helpedToriel and giveRingToUndyne:
+            "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
+            $ helpedToriel = True
+            $ visitSans = True
 
-        "Maybe Asgore can help me with this" if not metAsgore:
+        "Maybe Asgore can help me with this" if not metAsgore and not giveRingToUndyne:
             call afternoonAsgore from _call_afternoonAsgore
             $ metAsgore = True
             
-        "Maybe Sans needs something" if not visitSans:
+        # Sans
+        "Maybe Sans needs something" if not visitSans and not giveRingToUndyne:
             call afternoonSans from _call_afternoonSans
             $ visitSans = True
+        "Sans is not at his work post, I know it!" if not visitSans and giveRingToUndyne:
+            "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
+            $ helpedToriel = True
+            $ visitSans = True
 
-        "Maybe I should check with Undyne" if not visitUndyne:
+        "Maybe I should check with Undyne" if not visitUndyne and not giveRingToUndyne:
             call afternoonUndyne from _call_afternoonUndyne
             $ visitUndyne = True
         
@@ -109,10 +130,11 @@ label displayMenuFreeAfternoon:
                 papyrus "THAT'S A GOOD IDEA"
                 call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon
             else:
+                $ giveRingToUndyne = False
                 call afternoonAlphys from _call_afternoonAlphys
                 $ visitAlphys = True
         
-        "Let's checkout how Frisk is doing" if not visitFrisk:
+        "Let's checkout how Frisk is doing" if not visitFrisk and not giveRingToUndyne:
             papyrus "FRISK IS NOT GOING TO SCHOOL"
             papyrus "POOR HUMAN IS RESTING AFTER EVERYTHING JUST HAPPENED"
             show papyrusImg coolDude delight

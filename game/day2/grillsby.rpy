@@ -2,7 +2,7 @@ label day2grillsby:
     scene black with dissolve
     play sound "music/fx/steps.wav"
     pause(1.0)
-    play music "music/15 sans.mp3" fadein 1
+    play music "music/15 sans.mp3" fadein 1 fadeout 1
     pause(1.0)
     scene grillsbys inside with dissolve
     show grillsby neutral zorder 1 at fade:

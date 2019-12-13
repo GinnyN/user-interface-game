@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ending/prison-papyrus.rpy", line 120: end of line expected.
-    papyrus "WELL..."rfffffffffff5
-                     ^
+File "game/freeMorning.rpy", line 24: reached end of line when expecting ':'.
+    "Go help Toriel with something she needs" if not helpedToriel and not giveRingToUndyne
+                                                                                          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Dec 07 23:05:19 2019
+Thu Dec 12 22:31:35 2019
