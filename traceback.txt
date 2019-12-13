@@ -1,125 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'background/skelebrosPapyrusRoom.png'>:
-  File "game/day2.rpy", line 40, in script call
-    call questionsEnd from _call_questionsEnd_2
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/day2.rpy", line 30, in script call
-    call mettatonFashionShow from _call_mettatonFashionShow
-  File "game/day2.rpy", line 30, in script call
-    call mettatonFashionShow from _call_mettatonFashionShow
-  File "game/alt/day2.rpy", line 33, in script call
-    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
-  File "game/freeMorning.rpy", line 87, in script call
-    call afternoonSans from _call_afternoonSans
-  File "game/freeAfternoon/visit-sans.rpy", line 3, in script call
-    call freeSansAlt from _call_freeSansAlt
-  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
-    call papyrusAskSans from _call_papyrusAskSans
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/ending/prison-papyrus.rpy", line 85, in script
-    undyne "Alphys and I clean up this place 2 days ago"
-IOError: Couldn't find file 'background/skelebrosPapyrusRoom.png'.
+After initialization, but before game start.
+  File "renpy/common/00start.rpy", line 82, in _init_language
+    renpy.change_language(language)
+  File "game/screens.rpy", line 145, in <module>
+    xanchor gui.name_xalig3
+AttributeError: 'StoreModule' object has no attribute 'name_xalig3'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day2.rpy", line 40, in script call
-    call questionsEnd from _call_questionsEnd_2
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/day2.rpy", line 30, in script call
-    call mettatonFashionShow from _call_mettatonFashionShow
-  File "game/day2.rpy", line 30, in script call
-    call mettatonFashionShow from _call_mettatonFashionShow
-  File "game/alt/day2.rpy", line 33, in script call
-    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
-  File "game/freeMorning.rpy", line 87, in script call
-    call afternoonSans from _call_afternoonSans
-  File "game/freeAfternoon/visit-sans.rpy", line 3, in script call
-    call freeSansAlt from _call_freeSansAlt
-  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
-    call papyrusAskSans from _call_papyrusAskSans
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 14, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/ending/prison-papyrus.rpy", line 85, in script
-    undyne "Alphys and I clean up this place 2 days ago"
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
-    **display_args)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\character.py", line 591, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 3194, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 2094, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen\renpy.display.render.c:6805)
-    rv = render(root, width, height, st, st)
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\image.py", line 500, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\image.py", line 306, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\im.py", line 583, in render
-    return cache.get(self, render=True)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\im.py", line 266, in get
-    surf = image.load()
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\display\im.py", line 628, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\loader.py", line 576, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'background/skelebrosPapyrusRoom.png'.
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\bootstrap.py", line 316, in bootstrap
+    renpy.main.main()
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\main.py", line 578, in main
+    run(restart)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\main.py", line 75, in run
+    renpy.translation.init_translation()
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\translation\__init__.py", line 558, in init_translation
+    renpy.store._init_language()  # @UndefinedVariable
+  File "renpy/common/00start.rpy", line 82, in _init_language
+    renpy.change_language(language)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\translation\__init__.py", line 638, in change_language
+    new_change_language(tl, language)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\translation\__init__.py", line 604, in new_change_language
+    i.apply()
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 2553, in apply
+    value = renpy.python.py_eval(expr)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 145, in <module>
+    xanchor gui.name_xalig3
+AttributeError: 'StoreModule' object has no attribute 'name_xalig3'
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
-User Interface 0.3
-Sat Dec 07 23:07:15 2019
+User Interface 0.3.1
+Thu Dec 12 21:29:53 2019
