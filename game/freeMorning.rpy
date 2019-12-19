@@ -26,12 +26,16 @@ label displayMenuFreeMorning:
             $ helpedToriel = True
             $ visitSans = True
 
+        # Asgore
         "Go grocery shopping" if not metAsgore and not giveRingToUndyne:
             papyrus "I'LL BETTER GO TO GET SOME GROCERIES"
             papyrus "MAYBE I CAN FIND SOME DISCOUNTS ON THE SPIDER BAKERY"
             papyrus "EVERYTHING IS ALWAYS SO EXPENSIVE"
             $ metAsgore = True
             call groceryShopping from _call_groceryShopping
+        "I never know where the King is in the mornings" if not metAsgore and giveRingToUndyne:
+            $ metAsgore = True
+            $ visitFrisk = True
         
         # Sans
         "Go check Sans" if not visitSans and not giveRingToUndyne:
@@ -80,6 +84,10 @@ label displayMenuFreeMorning:
             papyrus "MAYBE WE CAN DO THAT TOGETHER!"
             $ visitFrisk = True
             call visitFrisk from _call_visitFrisk
+
+        "I never know where the King is in the mornings" if not visitFrisk and giveRingToUndyne:
+            $ metAsgore = True
+            $ visitFrisk = True
 
     return
     

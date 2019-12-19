@@ -62,6 +62,7 @@ define gasterScienceEncyclopedia = False
 define endingSans = False
 define altRoute = False
 define giveRingToUndyne = False
+define weddingFrom = ""
 
 #Flag variables which have to be reset
 define whoRescueMauricio = False
@@ -93,6 +94,7 @@ label resetVariables:
     $ endingSans = False
     $ altRoute = False
     $ giveRingToUndyne = False
+    $ weddingFrom = ""
     return
 
 #Define Day Alternatives
