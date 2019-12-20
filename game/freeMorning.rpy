@@ -22,9 +22,12 @@ label displayMenuFreeMorning:
             $ helpedToriel = True
             call torielSchool from _call_torielSchool
         "Go help Toriel with something she needs" if not helpedToriel and giveRingToUndyne:
+            
             "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
             $ helpedToriel = True
             $ visitSans = True
+            $ weddingFrom = 'toriel'
+            call weddingTorielSans
 
         # Asgore
         "Go grocery shopping" if not metAsgore and not giveRingToUndyne:
@@ -46,6 +49,8 @@ label displayMenuFreeMorning:
             "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
             $ helpedToriel = True
             $ visitSans = True
+            $ weddingFrom = 'sans'
+            call weddingTorielSans
 
         "Go check with Undyne" if not visitUndyne:
             papyrus "I SHOULD CHECK OUT WITH UNDYNE"
@@ -85,7 +90,7 @@ label displayMenuFreeMorning:
             $ visitFrisk = True
             call visitFrisk from _call_visitFrisk
 
-        "I never know where the King is in the mornings" if not visitFrisk and giveRingToUndyne:
+        "Let's see where Frisk is" if not visitFrisk and giveRingToUndyne:
             $ metAsgore = True
             $ visitFrisk = True
 
@@ -102,6 +107,8 @@ label displayMenuFreeAfternoon:
             "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
             $ helpedToriel = True
             $ visitSans = True
+            $ weddingFrom = 'toriel'
+            call weddingTorielSans
 
         "Maybe Asgore can help me with this" if not metAsgore and not giveRingToUndyne:
             call afternoonAsgore from _call_afternoonAsgore
@@ -115,6 +122,8 @@ label displayMenuFreeAfternoon:
             "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
             $ helpedToriel = True
             $ visitSans = True
+            $ weddingFrom = 'sans'
+            call weddingTorielSans
 
         "Maybe I should check with Undyne" if not visitUndyne and not giveRingToUndyne:
             call afternoonUndyne from _call_afternoonUndyne

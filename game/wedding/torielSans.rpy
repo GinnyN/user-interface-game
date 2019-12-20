@@ -1,0 +1,20 @@
+label weddingTorielSans:
+    toriel "And..." 
+    toriel "that happened"
+    sans "ok..."
+    sans "and you need help in that because"
+    toriel "I'm not very good at writing speeches"
+    sans "i'm not going to even ask"
+    sans "so... ah..."
+    sans "it's there something... do you want to do..."
+    toriel "I don't know"
+    toriel "I just prepared a list with..."
+    toriel "suggestions..."
+    sans "..."
+    sans "we're totally doing this"
+    toriel "I'm glad"
+    toriel "Now"
+    $ if weddingFrom === 'sans':
+        papyrus "I KNEW YOU WERE SLA..."
+        papyrus "TORIEL?"
+return
