@@ -16,5 +16,31 @@ label weddingTorielSans:
     toriel "Now"
     $ if weddingFrom === 'sans':
         papyrus "I KNEW YOU WERE SLA..."
+        papyrus "..."
         papyrus "TORIEL?"
+    $ else:
+        papyrus "TORIEL!"
+        papyrus "AT THE SCHOOL THEY SAID YOU..."
+        papyrus "SANS?"
+    papyrus "I WASN'T INFORM OF THIS"
+    papyrus "..."
+    papyrus "I'M NOT SAYING THAT YOU HAVE TO TELL ME WHEN YOU HAVE A DATE"
+    sans "..."
+    sans "this is not a date"
+    papyrus "THIS IS THE TEXTBOOK DEFINITION OF A DATE, YOU CANNOT FOOL ME!"
+    papyrus "I READ THE MANUAL 10 TIMES BEFORE MY DATE WITH FRISK"
+    toriel "There's a manual?"
+    toriel "..."
+    toriel "No, no, Sans is going to help me with some... writing I have to do"
+    papyrus "IS THERE PUNS INVOLVED?"
+    papyrus "..."
+    sans "..."
+    papyrus "OF COURSE THERE PUNS INVOLVED"
+    sans "oh papyrus, cod you know us?"
+    papyrus "COD?"
+    toriel "That was *eely* bad"
+    sans "salmon had to say it"
+    papyrus "WHY THOSE ARE FISH PUNS?"
+
+    
 return
