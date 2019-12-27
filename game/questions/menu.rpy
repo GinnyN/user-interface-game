@@ -24,8 +24,8 @@ label questionsMenu:
         #    call monstersForest from _call_monstersForest
         "Political Geography":
             call politicalGeographyTree from _call_politicalGeographyTree
-        #"I know something I really didn't knew I knew" if papyrusKnowsProgramming:
-        #    call programmingTree
+        "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
+            call programmingTree
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
             call sansPapyrusPast from _call_sansPapyrusPast
         #"Demography" if politicalGeography > 0:
@@ -160,8 +160,8 @@ label fourthWallTree:
             call wallBreakingStuff from _call_wallBreakingStuff
         "More 4th Wall Breaking Stuff" if wallBreakingStuff > 0:
             call moreWallBreakingStuff from _call_moreWallBreakingStuff
-        #"4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
-        #    call wallBreakingStuff2 from _call_wallBreakingStuff2
+        "4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
+            call wallBreakingStuff2 from _call_wallBreakingStuff2
         "Return":
             return
     return 

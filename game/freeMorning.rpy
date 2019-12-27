@@ -44,7 +44,6 @@ label displayMenuFreeMorning:
             $ visitSans = True
             call checkSans from _call_checkSans
         "Sans is not at his work post, I know it!" if not visitSans and giveRingToUndyne:
-            "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'sans'
@@ -102,7 +101,6 @@ label displayMenuFreeAfternoon:
             call afternoonToriel from _call_afternoonToriel
             $ helpedToriel = True
         "Go help Toriel with something she needs" if not helpedToriel and giveRingToUndyne:
-            "Toriel and Sans are talking about who is going to marry Undyne and Alphys, since Asgore wants to escort Undyne to the altar"
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'toriel'
