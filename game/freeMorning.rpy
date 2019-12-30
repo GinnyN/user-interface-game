@@ -35,6 +35,8 @@ label displayMenuFreeMorning:
             $ metAsgore = True
             call groceryShopping from _call_groceryShopping
         "I never know where the King is in the mornings" if not metAsgore and giveRingToUndyne:
+            $ weddingFrom = 'asgore'
+            call weddingFriskAsgore
             $ metAsgore = True
             $ visitFrisk = True
         
@@ -79,6 +81,7 @@ label displayMenuFreeMorning:
                 $ visitAlphys = True
                 call visitAlphys from _call_visitAlphys
         
+        # Frisk
         "Go check how Frisk is doing" if not visitFrisk and not giveRingToUndyne:
             papyrus "FRISK IS NOT GOING TO SCHOOL"
             papyrus "POOR HUMAN IS RESTING AFTER EVERYTHING JUST HAPPENED"
@@ -86,10 +89,11 @@ label displayMenuFreeMorning:
             papyrus "MAYBE WE CAN DO THAT TOGETHER!"
             $ visitFrisk = True
             call visitFrisk from _call_visitFrisk
-
         "Let's see where Frisk is" if not visitFrisk and giveRingToUndyne:
             $ metAsgore = True
             $ visitFrisk = True
+            $ weddingFrom = 'frisk'
+            call weddingFriskAsgore
 
     return
     
@@ -106,9 +110,15 @@ label displayMenuFreeAfternoon:
             $ weddingFrom = 'toriel'
             call weddingTorielSans
 
+        # Asgore
         "Maybe Asgore can help me with this" if not metAsgore and not giveRingToUndyne:
             call afternoonAsgore from _call_afternoonAsgore
             $ metAsgore = True
+        "I think the king said something about my topiary I guess" if not metAsgore and giveRingToUndyne:
+            $ weddingFrom = 'asgore'
+            call weddingFriskAsgore
+            $ metAsgore = True
+            $ visitFrisk = True
             
         # Sans
         "Maybe Sans needs something" if not visitSans and not giveRingToUndyne:
@@ -146,6 +156,7 @@ label displayMenuFreeAfternoon:
                 call afternoonAlphys from _call_afternoonAlphys
                 $ visitAlphys = True
         
+        # Frisk
         "Let's checkout how Frisk is doing" if not visitFrisk and not giveRingToUndyne:
             papyrus "FRISK IS NOT GOING TO SCHOOL"
             papyrus "POOR HUMAN IS RESTING AFTER EVERYTHING JUST HAPPENED"
@@ -153,5 +164,10 @@ label displayMenuFreeAfternoon:
             papyrus "MAYBE WE CAN DO THAT TOGETHER!"
             $ visitFrisk = True
             call visitFrisk from _call_visitFrisk_1
+        "Let's see where Frisk is" if not visitFrisk and giveRingToUndyne:
+            $ metAsgore = True
+            $ visitFrisk = True
+            $ weddingFrom = 'frisk'
+            call weddingFriskAsgore
 
     return
