@@ -9,9 +9,12 @@ label weddingTorielSans:
         papyrus "BUT THIS ITCH..."
         papyrus "..."
         papyrus "I'D GO ANYWAY"
+        gaster "BE NICE WITH YOUR BROTHER!"
+        papyrus "I KNOW I KNOW"
     else:
         papyrus "MAYBE NOW I CAN ASK TORIEL A GOOD QUESTION"
-        papyrus "SINCE GASTER IS NOT AWAKE"
+        papyrus "SINCE GASTER IS {cps=0.5} NOT GOING TO HEAR! {/cps}"
+        gaster "..."
         papyrus "WELL, SHE SHOULDN'T REMEMBER ANYTHING..."
         papyrus "BUT I'M STILL NOT THAT CONVINCED"
         "* He leaves *"

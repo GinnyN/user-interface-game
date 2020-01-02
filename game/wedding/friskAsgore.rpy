@@ -1,4 +1,18 @@
 label weddingFriskAsgore
+    if weddingFrom == 'frisk':
+        papyrus "I'M GOING TO VISIT FRISK!"
+        papyrus "THE HUMAN HAD A DIFFICULT WEEK NOT MATTER HOW MUCH I TRIED NOT TO"
+        gaster "LIKE I SAID, I CANNOT MANAGE TO WHERE I CAN JUMP BACK IN TIME"
+        papyrus "I KNOW, I KNOW, RELAX"
+        papyrus "I JUST NEED TO UP MY GAME AS A SUPORTIVE FRIEND!"
+        papyrus "HERE WE GOOOO"
+        gaster "..."
+        gaster "WHAT KIND OF GAME IS THAT?!"
+    else: 
+        papyrus "HEY!"
+        papyrus "FRISK!"
+        papyrus "I'M SORRY IF I'M ASKING YOU..."
+        papyrus "OH, YOUR MAJESTY"
     asgore "You... you..."
     asgore "Has never gone to one of those?"
     frisk "No..."
@@ -59,4 +73,7 @@ label weddingFriskAsgore
     "* Runs away *"
     "* sound of glass breaking *"
     asgore "He... just... jumped out of the window?"
+    frisk "Yes, he does that sometimes..."
+    asgore "He has already learn the stylish exit"
+    asgpre "That's really impressive"
 return
