@@ -30,8 +30,9 @@ label afterAfternoon:
   extend "PROBLEM"
   papyrus "YEAH..."
   papyrus "MAYBE"
-  papyrus "I MUST BE OVER REACTING TO THINGS"
-  papyrus "TOMORROW MUST "
+  papyrus "TOMORROW MUST EVERYTHING COME BACK TO RELATIVE NORMALCY"
+  papyrus "I GUESS"
+  
   
 return 
 
