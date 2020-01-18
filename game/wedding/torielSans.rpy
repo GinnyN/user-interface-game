@@ -9,6 +9,7 @@ label weddingTorielSans:
         papyrus "BUT THIS ITCH..."
         papyrus "..."
         papyrus "I'D GO ANYWAY"
+        "* He leaves *"
         gaster "BE NICE WITH YOUR BROTHER!"
         papyrus "I KNOW I KNOW"
     else:

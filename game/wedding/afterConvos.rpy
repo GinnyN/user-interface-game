@@ -32,6 +32,14 @@ label afterAfternoon:
   papyrus "MAYBE"
   papyrus "TOMORROW MUST EVERYTHING COME BACK TO RELATIVE NORMALCY"
   papyrus "I GUESS"
+  gaster "YOU GUESS?"
+  papyrus "ALWAYS WHEN SOMEBODY SEND ME TO SLEEP, USUALLY EVERYTHING GET EXACTLY LIKE I SAID"
+  gaster "..."
+  gaster "GO SLEEP"
+  gaster "THIS IS NOT THAT IMPORTANT"
+  papyrus "WHAT?!"
+  "* Papyrus retires *"
+  papyrus "SUIT YOURSELF"
   
   
 return 
