@@ -9,7 +9,7 @@ label afterAfternoon:
   papyrus "YEAH"
   papyrus "I HAVE NEVER FOUND THE USEFULNESS BEHIND THAT BUT IT SEEMS SOMETHING FUN TO DO IF YOU CAN"
   gaster "IT SOUND LIKE THE WORST IDEA EVER"
-  gaster "ESTABLISHING FAMILY UNITS IS A WEIRD IDEA IN GENERAL, BUT THE HUMANS HAVE TO MADE IT WEIRDER"
+  gaster "ESTABLISHING FAMILY UNITS IS HARD IN GENERAL, BUT THE HUMANS HAVE TO MADE IT HARDER"
   papyrus "YES, I HAVE SOME HUMAN FRIENDS IN THEIR INTERNET NOT LIKING THE IDEA EITHER"
   gaster "DO YOU HAVE WHAT WITH HUMANS IN THEIR INTERNET?"
   papyrus "BUT THEY SHOULD NOT KNOW ABOUT THE WEDDING!"
@@ -40,10 +40,22 @@ label afterAfternoon:
   papyrus "WHAT?!"
   "* Papyrus retires *"
   papyrus "SUIT YOURSELF"
-  
-  
 return 
 
 label afterMorning:
   $ resetFromQuestionMenu = True
+  gaster "PAPYRUS?"
+  papyrus "WHAT IS HAPPENING?!!"
+  gaster "OH"
+  gaster "I STILL DON'T GET IT"
+  papyrus "IT'S THE WEDDING!"
+  gaster "WHAT'S THAT?"
+  papyrus "THE HUMAN CEREMONY FOR GETTING MARRIED"
+  gaster "WHY ARE YOU TALKING ABOUT THAT?"
+  papyrus "BECAUSE EVERYBODY SEEMS TO KNOW ABOUT THAT!"
+  gaster "ABOUT WHAT?"
+  papyrus "ABOUT THE WEDDING!"
+  gaster "WHAT'S THAT?"
+  papyrus "..."
+  papyrus "I'M NOT GOING TO REPEAT MYSELF"
 return 
