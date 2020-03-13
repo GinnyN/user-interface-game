@@ -43,5 +43,6 @@ label weddingFinal:
   mettaton "Ohhhhhhh..."
   mettaton "I need to spend more time with him"
   sans "i can arrange that"
-  
+  gaster "YOU WILL NOT ARRANGE ANYTHING..."
+  gaster "RIGHT YOU CANNOT HEAR ME"
 return
