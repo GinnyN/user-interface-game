@@ -23,8 +23,10 @@ label day1:
                 call gasterInformThePosition from _call_gasterInformThePosition
                 jump altPath
             
-            #"Ask Sans about creating a Shortcut" if doors:
-            #    jump shortcut
+            "Ask Sans about creating a Shortcut" if doors:
+                $ altPath = True
+                call shortcut
+                jump altPath
 
 label altPath:
     call papyrusGasterIncidentAverted from _call_papyrusGasterIncidentAverted

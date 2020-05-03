@@ -56,7 +56,8 @@ label displayMenuFreeMorning:
             show papyrusImg coolDude delight
             papyrus "I HAVE A SURPRISE FOR HER AND I DON'T WANT TO FORGET!"
             $ visitUndyne = True
-            $ giveRingToUndyne = True
+            if day < 3:
+                $ giveRingToUndyne = True
             call visitUndyne from _call_visitUndyne
         
         "Go visit Dr. Alphys" if not visitAlphys:
@@ -94,14 +95,17 @@ label displayMenuFreeMorning:
             $ visitFrisk = True
             $ weddingFrom = 'frisk'
             call weddingFriskAsgore
-
+    
+    if giveRingToUndyne and day == 3:
+        call afterMorning
+        call weddingFinal
     return
     
 
 label displayMenuFreeAfternoon:
     menu:
         # Toriel
-        "I have a question fand Toriel" if not helpedToriel and not giveRingToUndyne:
+        "I have a question for Toriel" if not helpedToriel and not giveRingToUndyne:
             call afternoonToriel from _call_afternoonToriel
             $ helpedToriel = True
         "Go help Toriel with something she needs" if not helpedToriel and giveRingToUndyne:
@@ -130,6 +134,7 @@ label displayMenuFreeAfternoon:
             $ weddingFrom = 'sans'
             call weddingTorielSans
 
+        # Undyne
         "Maybe I should check with Undyne" if not visitUndyne and not giveRingToUndyne:
             call afternoonUndyne from _call_afternoonUndyne
             $ visitUndyne = True
@@ -169,5 +174,6 @@ label displayMenuFreeAfternoon:
             $ visitFrisk = True
             $ weddingFrom = 'frisk'
             call weddingFriskAsgore
-
+    if giveRingToUndyne:
+        call afterAfternoon
     return

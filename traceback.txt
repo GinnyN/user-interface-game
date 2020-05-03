@@ -1,52 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day3.rpy", line 3, in script call
-    call freeMorning from _call_freeMorning
-  File "game/freeMorning.rpy", line 11, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning
-  File "game/freeMorning.rpy", line 47, in script call
-    call checkSans from _call_checkSans
-  File "game/freeMorning/visit-sans.rpy", line 61, in script call
-    call freeSansAlt from _call_freeSansAlt_1
-  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
-    call papyrusAskSans from _call_papyrusAskSans
-  File "game/alt/day2.rpy", line 33, in script call
-    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
-  File "game/freeMorning.rpy", line 111, in script call
-    call weddingTorielSans
-  File "game/wedding/torielSans.rpy", line 17, in script
-    if weddingFrom === 'sans':
-SyntaxError: invalid syntax (game/wedding/torielSans.rpy, line 17)
+  File "game/day2.rpy", line 30, in script call
+    call mettatonFashionShow from _call_mettatonFashionShow
+  File "game/ending/wedding-papyrus.rpy", line 38, in script
+    mettaton "What?!"
+Exception: Sayer 'mettaton' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day3.rpy", line 3, in script call
-    call freeMorning from _call_freeMorning
-  File "game/freeMorning.rpy", line 11, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning
-  File "game/freeMorning.rpy", line 47, in script call
-    call checkSans from _call_checkSans
-  File "game/freeMorning/visit-sans.rpy", line 61, in script call
-    call freeSansAlt from _call_freeSansAlt_1
-  File "game/freeMorning/visit-sans-alt.rpy", line 85, in script call
-    call papyrusAskSans from _call_papyrusAskSans
-  File "game/alt/day2.rpy", line 33, in script call
-    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
-  File "game/freeMorning.rpy", line 111, in script call
-    call weddingTorielSans
-  File "game/wedding/torielSans.rpy", line 17, in script
-    if weddingFrom === 'sans':
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\python.py", line 2057, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\python.py", line 692, in py_compile
-    raise e
-SyntaxError: invalid syntax (game/wedding/torielSans.rpy, line 17)
+  File "game/day2.rpy", line 30, in script call
+    call mettatonFashionShow from _call_mettatonFashionShow
+  File "game/ending/wedding-papyrus.rpy", line 38, in script
+    mettaton "What?!"
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 678, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 576, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'mettaton' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 User Interface 0.3.1
-Tue Dec 24 08:24:15 2019
+Sun May 03 17:50:07 2020

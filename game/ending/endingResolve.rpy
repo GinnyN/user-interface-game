@@ -1,10 +1,10 @@
 label endingResolve:
     if penAtAlphys:
         jump getPenFromAlphys
-    elif firstTry:
+    elif firstTry and program:
         $ renpy.retain_after_load()
         jump endingsFirstTry
-    else:
+    elif not firstTry:
         scene black with dissolve
         pause(1.0)
         gaster "THIS IS THE LAST DAY WE HAVE BEFORE GOING BACK"
@@ -22,6 +22,8 @@ label endingResolve:
                 papyrus "I GUESS THE SAFEST BET WOULD BE RESET"
                 gaster "YES, I DO AGREE"
                 jump day1
+    else:
+        jump endingNothing
 
 label endingCase:
     stop music fadeout(1.0)
@@ -94,14 +96,19 @@ label endingCase:
     play sound "music/fx/iau.wav"
     pause(2)     
 
-    if persistent.endingGaster:   
-        if endingSans:
+    if persistent.endingGaster:
+        if weddingEnding:
+            jump weddingGaster
+        elif endingSans:
             jump neutralEndingGaster
         else:
             jump wekufeEndingGaster
     else:
         if altRoute:
-            jump neutralEndingPapyrus
+            if weddingEnding:
+                jump weddingPapyrus
+            else: 
+                jump neutralEndingPapyrus
         else: 
             jump prisonPapyrusEnding
 return

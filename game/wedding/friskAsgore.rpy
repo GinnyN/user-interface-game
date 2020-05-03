@@ -1,4 +1,4 @@
-label weddingFriskAsgore
+label weddingFriskAsgore:
     if weddingFrom == 'frisk':
         papyrus "I'M GOING TO VISIT FRISK!"
         papyrus "THE HUMAN HAD A DIFFICULT WEEK NOT MATTER HOW MUCH I TRIED NOT TO"
@@ -85,6 +85,6 @@ label weddingFriskAsgore
     "* sound of glass breaking *"
     asgore "He... just... jumped out of the window?"
     frisk "Yes, he does that sometimes..."
-    asgore "He has already learn the stylish exit"
-    asgpre "That's really impressive"
+    asgore "He has already learnt the stylish exit"
+    asgore "That's really impressive"
 return

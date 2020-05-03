@@ -111,6 +111,48 @@ label gasterInformThePosition:
     toriel "Now I'm thinking, where's Papyrus?"
     return
 
+label shortcut:
+    papyrus "SOOO...."
+    papyrus "SANS..."
+    papyrus "WHAT'S ABOUT IF YOU USE THE SHORTCUT ON FRISK"
+    undyne "Whaaa???!!"
+    undyne "What are you talking about Papyrus?"
+    "* Sans thinking face *"
+    "* Sans dissapears *"
+    "* Sans comes back, with Frisk *"
+    papyrus "I KNEW YOU COULD DO IT, YOU SHOULD HEAR ME MORE IN THE FUTURE!"
+    papyrus "COME ON EVERYBODY, WE NEED TO GET OUT OF HERE"
+    undyne "This was a surprise, why you didn't say you could do this?!"
+    sans "ahh...."
+    undyne "I know you are not really into explaining your stuff"
+    undyne "But we got Frisk!"
+    undyne "Let's go back!"
+    "* Undyne go away *"
+    pause(2)
+    "* Sans and Frisk dissapears *"
+    "* Toriel's house *"
+    toriel "Frisk is sleeping in their bed now"
+    undyne "Good job Sans! That was a whole surprise!"
+    undyne "Good Papyrus remembered about it!"
+    sans "yeah..."
+    undyne "Something wrong"
+    sans "great, i forgot to be subtle"
+    undyne "He figure out how the spell you use all the time works, it's nothing terrible"
+    sans "it was like a trade secret of sorts..."
+    undyne "Papyrus is very good at learning random things, relax"
+    sans "..."
+    toriel "You don't seem too convinced"
+    sans "..."
+    toriel "Let that rest for a couple of days, after we had rest and decided what to do with this..."
+    toriel "kidnappers"
+    sans "..."
+    sans "fine"
+    undyne "Good!"
+    undyne "Now, let's go Pa..."
+    undyne "Papyrus?"
+    undyne "Where's Papyrus?"
+    return
+
 label papyrusGasterIncidentAverted:
     $ altRoute = True
     stop music fadeout 1

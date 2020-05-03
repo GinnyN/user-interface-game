@@ -79,6 +79,7 @@ label theoryBehind:
     papyrus "AND YOU SAID I WAS BETTER AT THAT THAN HIM?"
     gaster "OF COURSE"
     papyrus "AAAAHHHHHHH!!!!!"
+    $ doors = True
     if programmingWoes2 == 2:
       $ programmingWoes2 = programmingWoes2 + 1
     return

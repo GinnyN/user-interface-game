@@ -85,12 +85,15 @@ label day4:
     if not firstTry:
         jump endingResolve
     else:
-        scene black with dissolve
-        pause(1.0)
-        gaster "THIS IS THE FINAL DAY"
-        gaster "PAPYRUS, I'M GOING TO RESET THE TIMELINE"
-        gaster "PLEASE BE CAREFUL"
-        jump day1
+        jump endingNothing
+        
+label endingNothing:
+    scene black with dissolve
+    pause(1.0)
+    gaster "THIS IS THE FINAL DAY"
+    gaster "PAPYRUS, I'M GOING TO RESET THE TIMELINE"
+    gaster "PLEASE BE CAREFUL"
+    jump day1
 
 label meetingGaster:
     stop music fadeout(1)

@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/wedding/torielSans.rpy", line 18: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    papyrus "I KNEW YOU WERE SLA..."
-    ^
-
-File "game/wedding/torielSans.rpy", line 22: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    papyrus "TORIEL!"
-    ^
+File "game/wedding/friskAsgore.rpy", line 1: expected ':' not found.
+    label weddingFriskAsgore
+                            ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Dec 24 08:15:10 2019
+Sat Mar 28 12:28:06 2020

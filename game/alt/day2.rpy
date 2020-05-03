@@ -50,18 +50,18 @@ label altDay3:
   call displayMenuFreeMorning from _call_displayMenuFreeMorning_3
   scene black with dissolve
   stop music
-  pause(2)
-  scene skelebroHouse outside with dissolve
-  show papyrusImg coolDude uhh
-  papyrus "DO YOU DO SOMETHING IN THE MORNINGS SINCE YOU ONLY TALK TO ME IN THE AFTERNOONS?"
-  gaster "THAT'S NOT TRUE AND YOU KNOW THAT"
-  papyrus "I'M PRETTY SURE YOU ARE NEVER THERE WHEN I DO MY MORNING ROUTINE"
-  gaster "YOU DO STUFF BEFORE 10 A.M.?"
-  papyrus "..."
-  show papyrusImg coolDude neutral
-  papyrus "OK, LET SEE WHAT CAN I DO THIS AFTERNOON"
-  call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_2
-  call questionsEnd from _call_questionsEnd_4
-
+  if not weddingEnding:
+    pause(2)
+    scene skelebroHouse outside with dissolve
+    show papyrusImg coolDude uhh
+    papyrus "DO YOU DO SOMETHING IN THE MORNINGS SINCE YOU ONLY TALK TO ME IN THE AFTERNOONS?"
+    gaster "THAT'S NOT TRUE AND YOU KNOW THAT"
+    papyrus "I'M PRETTY SURE YOU ARE NEVER THERE WHEN I DO MY MORNING ROUTINE"
+    gaster "YOU DO STUFF BEFORE 10 A.M.?"
+    papyrus "..."
+    show papyrusImg coolDude neutral
+    papyrus "OK, LET SEE WHAT CAN I DO THIS AFTERNOON"
+    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_2
+    call questionsEnd from _call_questionsEnd_4
   jump endingResolve
 return
