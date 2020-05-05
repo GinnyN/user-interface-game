@@ -30,7 +30,7 @@ label day1:
 
 label altPath:
     call papyrusGasterIncidentAverted from _call_papyrusGasterIncidentAverted
-    call endOfDay1 from _call_endOfDay1
+    call questionsEndPast
     jump altDay2
 
 label normalPath:

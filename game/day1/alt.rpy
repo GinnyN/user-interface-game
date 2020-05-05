@@ -112,44 +112,96 @@ label gasterInformThePosition:
     return
 
 label shortcut:
+    show papyrusImg uhh
     papyrus "SOOO...."
+    show papyrusImg uhh flip
     papyrus "SANS..."
+    show papyrusImg uhh
+    stop music fadeout 1
     papyrus "WHAT'S ABOUT IF YOU USE THE SHORTCUT ON FRISK"
+    show undyneImg surprised
+    play music "music/15 sans.mp3" fadein 1
     undyne "Whaaa???!!"
+    show undyneImg explaining flip
     undyne "What are you talking about Papyrus?"
-    "* Sans thinking face *"
-    "* Sans dissapears *"
-    "* Sans comes back, with Frisk *"
+    show sansImg unsure
+    pause(1)
+    hide sansImg
+    pause(1)
+    show sansImg bored flip zorder 2 at fade:
+        xalign 0.3 ypos 0.0
+    show friskImg worried flip zorder 2 at fade:
+        xalign 1.0 ypos 0.15
+    pause(0.5)
+    show undyneImg surprised
+    show papyrusImg explainingPointing
     papyrus "I KNEW YOU COULD DO IT, YOU SHOULD HEAR ME MORE IN THE FUTURE!"
+    show undyneImg neutral flip
+    show papyrusImg delight
+    show sansImg bored
     papyrus "COME ON EVERYBODY, WE NEED TO GET OUT OF HERE"
+    hide papyrusImg
+    play sound "music/fx/steps.wav"
     undyne "This was a surprise, why you didn't say you could do this?!"
+    show sansImg flustered
     sans "ahh...."
+    show undyneImg happy flip
     undyne "I know you are not really into explaining your stuff"
     undyne "But we got Frisk!"
     undyne "Let's go back!"
-    "* Undyne go away *"
+    hide undyneImg
+    show sansImg unsure
     pause(2)
-    "* Sans and Frisk dissapears *"
-    "* Toriel's house *"
+    hide sansImg
+    hide friskImg
+    stop music fadeout 1
+    scene black with dissolve
+    play music "music/05 Ruins.mp3" fadein 1 fadeout 1
+    pause(1)
+    scene toriel house with dissolve
+    pause(0.5)
+    show torielImg pajamas happy zorder 1 at fade:
+        xalign 0.1 yalign 1.0
+    show sansImg happy flip zorder 2 at fade:
+        xpos 0.4 ypos 0.0
+    show undyneImg neutral flip zorder 1 at fade:
+        xpos 0.3 ypos -0.2
     toriel "Frisk is sleeping in their bed now"
+    show undyneImg happy flip
     undyne "Good job Sans! That was a whole surprise!"
     undyne "Good Papyrus remembered about it!"
+    show sansImg unsure flip
     sans "yeah..."
+    show undyneImg bored flip
+    show torielImg worried
     undyne "Something wrong"
+    show sansImg bored flip
     sans "great, i forgot to be subtle"
+    show undyneImg frustrated flip
     undyne "He figure out how the spell you use all the time works, it's nothing terrible"
+    show sansImg flustered flip
     sans "it was like a trade secret of sorts..."
+    show undyneImg happy flip
     undyne "Papyrus is very good at learning random things, relax"
     sans "..."
+    show undyneImg bored flip
     toriel "You don't seem too convinced"
+    show sansImg unsure flip
     sans "..."
+    show torielImg pajamas compasionate
     toriel "Let that rest for a couple of days, after we had rest and decided what to do with this..."
     toriel "kidnappers"
     sans "..."
+    show sansImg happy flip
     sans "fine"
+    show undyneImg happy flip
+    show torielImg pajamas happy
     undyne "Good!"
+    show undyneImg happy
     undyne "Now, let's go Pa..."
+    stop music
     undyne "Papyrus?"
+    show undyneImg worried flip
     undyne "Where's Papyrus?"
     return
 
@@ -201,9 +253,6 @@ label papyrusGasterIncidentAverted:
     gaster "WELL, YOU ARE FREE TO DO ANYTHING YOU WANT THE NEXT TWO DAYS"
     gaster "I HOPE YOU USE THIS TIME WELL"
     papyrus "..."
-    show papyrusImg neutral
-    papyrus "WELL, NOW THE QUESTIONS"
-    stop music fadeout 1
     return
     
 return

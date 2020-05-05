@@ -6,6 +6,7 @@ label questionsEnd:
     scene mistColor with dissolve
     show mist at fade
     pause(1.0)
+label questionsEndPast:
     show papyrusImg neutral at fade:
         xpos -0.1
     show gaster trapped neutral flip at fade:
