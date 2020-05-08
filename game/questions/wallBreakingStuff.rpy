@@ -51,20 +51,31 @@ label moreWallBreakingStuff:
     return
 
 label wallBreakingStuff2:
+    show papyrusImg uhh
     papyrus "I HAVE ANOTHER QUESTION THAT MAAAYYYBEEE I SHOULDN'T REALLY HAVE"
+    show gaster trapped dissapointed flip
     gaster "I DON'T UNDERSTAND WHY SHE WRITES THIS KIND OF STUFF"
+    show papyrusImg annoyed
     papyrus "WHY DO WE USE THE SAME TERMINOLOGY AS HUMANS FOR PROGRAMMING?"
+    show gaster trapped oh flip
     gaster "ARE YOU WORRIED I SAID YOU CREATED YOUR OWN VERSION OF MONGODB?"
+    show papyrusImg confused
     papyrus "I JUST FIND THAT KIND OF ABSURD!"
+    show gaster trapped sad flip
     gaster "WELL, THIS ARE COMPLEX DEFINITIONS AND, MAYBE, CREATE HER OWN WAY TO EXPLAIN THIS DEFINITIONS WAS NOT WORTH THE EFFORT"
     gaster "ESPECIALLY THE VISUAL NOVEL IS TECHNICALLY NOT ABOUT WORLD BUILDING OR PROGRAMMING ITSELF"
+    show papyrusImg serious
     papyrus "STILL IT MAKES NO SENSE"
     papyrus "ESPECIALLY WHEN THE AREAS OF INFORMATICS AND COMPUTER SCIENCE WERE BORN ON DIFFERENT PLACES"
     papyrus "AND BOTH WERE ABOUT DIFFERENT THINGS"
     papyrus "BUT FOR SOME REASON NOW ARE KINDA..."
+    show papyrusImg uhh
     papyrus "..."
+    show gaster trapped oh flip
     gaster "MY DEAR PAPYRUS?"
+    show papyrusImg dissapointed
     papyrus "I JUST REALIZED SHE'S WRITTING THIS TO BRAG"
+    show gaster trapped maybe flip
     gaster "THAT'S A GOOD EXPLANATION AS ANY"
     if wallBreakingStuff < 3:
         $ wallBreakingStuff = wallBreakingStuff + 1 
