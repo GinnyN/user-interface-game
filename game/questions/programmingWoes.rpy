@@ -96,24 +96,37 @@ label programmingMagicTheory:
     return
     
 label theoryBehind:
+    show papyrusImg uhh
     papyrus "HOW SANS DO THE 'SHORTCUT' SPELL?"
+    show gaster trapped sad flip
     gaster "I DON'T KNOW HOW HE DOES IT, I HAVE A GOOD THEORY"
+    show papyrusImg uhh flip
     papyrus "OK"
+    show papyrusImg neutral
     papyrus "HOW DO YOU THINK SANS DOES THE 'SHORTCUT' SPELL?"
+    show gaster trapped oh flip
     gaster "I REALLY BELIEVE THAT YOU CAN FIGURE OUT ALONE"
     gaster "BUT I'LL GIVE YOU A TIP"
     gaster "IT HAS SOMETHING TO DO WITH OBJECT ORIENTED PROGRAMMING"
+    show papyrusImg uhh
     papyrus "HE ADDS A TELEPORTATION FUNCTION TO EVERY SINGLE OBJECT?"
+    show papyrusImg uhh flip
     papyrus "NO, NO..."
+    show papyrusImg surprised happy
     papyrus "HE CHANGED THE PROTOTYPE OF THE OBJECT OBJECT!"
+    show gaster trapped happy flip
     gaster "I KNOW IT'S ABSOLUTLY BONKERS BUT I'M PRETTY SURE IS THAT"
     papyrus "AND HE'S DOES THAT ON EXECUTION TIME SOMEHOW?"
     gaster "I KNOW"
     papyrus "OH MY GOD"
     papyrus "HE'S AWESOME!"
+    show gaster trapped maybe flip
     gaster "WELL, THAT'S NOT NEWS"
+    show papyrusImg nope
     papyrus "AND YOU SAID I WAS BETTER AT THAT THAN HIM?"
+    show gaster trapped happy flip
     gaster "OF COURSE"
+    show papyrusImg surprised happy
     papyrus "AAAAHHHHHHH!!!!!"
     $ doors = True
     if programmingWoes2 == 2:
