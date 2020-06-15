@@ -1,26 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day2.rpy", line 30, in script call
-    call mettatonFashionShow from _call_mettatonFashionShow
-  File "game/ending/wedding-papyrus.rpy", line 38, in script
-    mettaton "What?!"
-Exception: Sayer 'mettaton' is not defined.
+  File "game/alt/day2.rpy", line 33, in script call
+    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
+  File "game/freeMorning.rpy", line 115, in script call
+    call weddingTorielSans
+  File "game/wedding/torielSans.rpy", line 28, in script
+    gaster "..."
+  File "game/characters.rpy", line 25, in gaster_voice
+    renpy.voice.play("music/voice/talk_gaster.wav", loop=True)
+AttributeError: 'module' object has no attribute 'voice'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day2.rpy", line 30, in script call
-    call mettatonFashionShow from _call_mettatonFashionShow
-  File "game/ending/wedding-papyrus.rpy", line 38, in script
-    mettaton "What?!"
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 678, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\satel\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 576, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'mettaton' is not defined.
+  File "game/alt/day2.rpy", line 33, in script call
+    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
+  File "game/freeMorning.rpy", line 115, in script call
+    call weddingTorielSans
+  File "game/wedding/torielSans.rpy", line 28, in script
+    gaster "..."
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Applications/renpy-7.3.5-sdk/renpy/exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 842, in do_display
+    **display_args)
+  File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 585, in display_say
+    c("show_done", interact=interact, type=type, **cb_args)
+  File "game/characters.rpy", line 25, in gaster_voice
+    renpy.voice.play("music/voice/talk_gaster.wav", loop=True)
+AttributeError: 'module' object has no attribute 'voice'
 
-Windows-8-6.2.9200
+Darwin-19.5.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 User Interface 0.3.1
-Sun May 03 17:50:07 2020
+Wed Jun 10 20:21:31 2020

@@ -95,6 +95,8 @@ image school gym = "background/schoolGym.png"
 image school basement = "background/schoolBasement.png"
 image undyneAlphysHouse inside = "background/undyneAlphysHouse.png"
 image muffetBakery inside = "background/muffetBakery.png"
+image muffetCafe = "background/muffetCafe.png"
+image skelebrosHouse papyrus room = "background/skeletonPapyrusRoom.png"
 image elevator outside = "background/elevatorOutside.png"
 image forest = "background/forest.png"
 image fortress inside = "background/fortressInside.png"
@@ -104,6 +106,7 @@ image wekufeLab outside = "background/wekufeLabOutside.png"
 image skelebrosHouse inside floor2nd = "background/skelebrosHouseInside2ndFloor.png"
 image skelebrosHouse inside kitchen = "background/skelebrosHouseInsideKitchen.png"
 image skelebrosHouse papyrus room = "background/skeletonPapyrusRoom.png"
+
 image mist:
     contains:
         alpha 0.2
