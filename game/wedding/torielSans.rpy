@@ -23,7 +23,7 @@ label weddingTorielSans:
         show papyrusImg coolDude thinking
         papyrus "MAYBE NOW I CAN ASK TORIEL A GOOD QUESTION"
         show papyrusImg coolDude careful
-        papyrus "SINCE GASTER IS {cps=3} NOT GOING TO HEAR! {/cps}"
+        papyrus "SINCE GASTER IS NOT GOING TO HEAR!"
         gaster "..."
         show papyrusImg coolDude uhh
         papyrus "WELL, SHE SHOULDN'T REMEMBER ANYTHING..."
@@ -78,14 +78,18 @@ label weddingTorielSans:
         show papyrusImg coolDude scared
         papyrus "TORIEL?"
     else:
+        show papyrusImg coolDude me zorder 0 at fade:
+            xpos -0.2
         papyrus "TORIEL!"
         papyrus "AT THE SCHOOL THEY SAID YOU..."
+        show papyrusImg coolDude scared
         papyrus "SANS?"
     show torielImg teacher neutral flip:
         xpos 0
     papyrus "I WASN'T INFORMED OF THIS"
     papyrus "..."
     show papyrusImg coolDude hangOn
+    show sansImg hoddie done flip
     papyrus "I'M NOT SAYING THAT YOU HAVE TO TELL ME WHEN YOU HAVE A DATE"
     sans "..."
     sans "this is not a date"
@@ -93,8 +97,10 @@ label weddingTorielSans:
     papyrus "THIS IS THE TEXTBOOK DEFINITION OF A DATE, YOU CANNOT FOOL ME!"
     show papyrusImg coolDude annoyed
     papyrus "I READ THE MANUAL 10 TIMES BEFORE MY DATE WITH FRISK"
+    show torielImg teacher unsure flip
     toriel "There's a manual?"
     toriel "..."
+    show torielImg teacher neutral flip
     toriel "No, no, Sans is going to help me with some... writing I have to do"
     show papyrusImg coolDude thinking
     papyrus "IS THERE PUNS INVOLVED?"
@@ -102,31 +108,49 @@ label weddingTorielSans:
     sans "..."
     show papyrusImg coolDude annoyed
     papyrus "OF COURSE THERE PUNS INVOLVED"
+    show sansImg hoddie content flip
     sans "oh papyrus, cod you know us?"
     show papyrusImg coolDude thinking
     papyrus "COD?"
+    show torielImg teacher happy zorder 2 at fade:
+        xpos 0.25
     toriel "That was *eely* bad"
+    show sansImg hoddie sideglance
     sans "salmon had to say it"
     show papyrusImg coolDude careful
     papyrus "WHY THOSE ARE FISH PUNS?"
+    show sansImg hoddie surprised flip
     sans "oh"
+    show sansImg hoddie content flip
     sans "well, we fermi use some science puns as well"
+    show torielImg teacher unsure
     toriel "You right!"
+    show torielImg teacher happy
     toriel "I *newton* prepare for that!"
     papyrus "WHY THOSE ARE SCIENCE AND FISH PUNS?"
+    show torielImg teacher unsure flip:
+        xpos 0
     toriel "Uh?"
+    show torielImg teacher worried flip
     toriel "You didn't knew?"
+    show sansImg hoddie neutral flip
     sans "i'm pretty sure undyne already told him"
     show papyrusImg coolDude thinking
     papyrus "ABOUT WHAT?"
+    show torielImg teacher neutral flip
     toriel "About the wedding"
     papyrus "WHICH WEDDING?"
+    show torielImg teacher worried zorder 2 at fade:
+        xpos 0.25
     toriel "He doesn't know about the wedding"
+    show sansImg hoddie content flip
     sans "i knew about her intentions because of him, i'm sure he knows"
     show papyrusImg coolDude careful
     papyrus "WHAT ARE YOU TALKING ABOUT?"
+    show torielImg teacher neutral flip:
+        xpos 0
     toriel "Asgore called me because he has been  reading about humans' weddings and he told me he needed help with the official part of it"
-    toriel "Because someone has to {cps=*0.2}deliver the bride{/cps} it seems"
+    toriel "Because someone has to 'deliver the bride' it seems"
     papyrus "..."
     show papyrusImg coolDude thinking
     papyrus "WHA..."
@@ -141,13 +165,21 @@ label weddingTorielSans:
     play sound "music/fx/steps.wav"
     pause(1)
     play sound "music/fx/glassbreak.wav"
+    show torielImg teacher surprised flip
+    show sansImg hoddie neutral flip
     pause(1)
     toriel "He jumped tru the window"
     sans "he always does that"
+    show torielImg teacher unsure flip
     toriel "Oh!"
+    show torielImg teacher neutral zorder 2 at fade:
+        xpos 0.25
     toriel "He has already mastered the art of the stylish exit"
     sans "yes"
     sans "he just has to do it not only when he's nervious"
+    show torielImg teacher neutral flip:
+        xpos 0
     toriel "He's cooler than you described"
+    show sansImg hoddie content flip
     sans "i know words aren't enough"
 return
