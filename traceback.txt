@@ -1,25 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
+While loading <'Flip' <'Image' u'asgore/shirt/happy.png'> True False>:
   File "game/alt/day2.rpy", line 33, in script call
     call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
-  File "game/freeMorning.rpy", line 115, in script call
-    call weddingTorielSans
-  File "game/wedding/torielSans.rpy", line 28, in script
-    gaster "..."
-  File "game/characters.rpy", line 25, in gaster_voice
-    renpy.voice.play("music/voice/talk_gaster.wav", loop=True)
-AttributeError: 'module' object has no attribute 'voice'
+  File "game/freeMorning.rpy", line 123, in script call
+    call weddingFriskAsgore
+  File "game/wedding/friskAsgore.rpy", line 114, in script
+    asgore "I'm going to need a copy"
+IOError: Couldn't find file 'asgore/shirt/happy.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/alt/day2.rpy", line 33, in script call
     call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
-  File "game/freeMorning.rpy", line 115, in script call
-    call weddingTorielSans
-  File "game/wedding/torielSans.rpy", line 28, in script
-    gaster "..."
+  File "game/freeMorning.rpy", line 123, in script call
+    call weddingFriskAsgore
+  File "game/wedding/friskAsgore.rpy", line 114, in script
+    asgore "I'm going to need a copy"
   File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "/Applications/renpy-7.3.5-sdk/renpy/exports.py", line 1345, in say
@@ -28,13 +26,67 @@ Full traceback:
     self.do_display(who, what, cb_args=self.cb_args, **display_args)
   File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 842, in do_display
     **display_args)
-  File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 585, in display_say
-    c("show_done", interact=interact, type=type, **cb_args)
-  File "game/characters.rpy", line 25, in gaster_voice
-    renpy.voice.play("music/voice/talk_gaster.wav", loop=True)
-AttributeError: 'module' object has no attribute 'voice'
+  File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Applications/renpy-7.3.5-sdk/renpy/ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/core.py", line 3194, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/core.py", line 2094, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen/renpy.display.render.c:6805)
+    rv = render(root, width, height, st, st)
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 583, in render
+    return cache.get(self, render=True)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 266, in get
+    surf = image.load()
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 919, in load
+    child = cache.get(self.image)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 266, in get
+    surf = image.load()
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 628, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/Applications/renpy-7.3.5-sdk/renpy/loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'asgore/shirt/happy.png'.
 
 Darwin-19.5.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 User Interface 0.3.1
-Wed Jun 10 20:21:31 2020
+Sun Jun 21 17:30:27 2020

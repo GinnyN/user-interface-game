@@ -1,5 +1,6 @@
 
 #Papyrus
+image papyrusImg position = im.Alpha("undyne/gym/mildsurprise.png", 0)
 #Battle Body
 image papyrusImg annoyed = "papyrus/annoyed.png"
 image papyrusImg annoyed flip = im.Flip("papyrus/annoyed.png", horizontal=True)
@@ -130,3 +131,113 @@ image papyrusImg coolDude realizing = "papyrus/coolDude/realizing.png"
 image papyrusImg coolDude realizing flip = im.Flip("papyrus/coolDude/realizing.png",horizontal=True)
 image papyrusImg coolDude uhh = "papyrus/coolDude/uhh.png"
 image papyrusImg coolDude uhh flip = im.Flip("papyrus/coolDude/uhh.png",horizontal=True)
+
+# With Variable weddingFrom
+
+label papyrusImgAngry:
+    if weddingFrom == 'frisk': 
+        show papyrusImg angry
+    else:
+        show papyrusImg coolDude angry
+    return
+
+label papyrusImgAngryFlip:
+    if weddingFrom == 'frisk': 
+        show papyrusImg angry flip
+    else:
+        show papyrusImg coolDude angry flip
+    return
+
+label papyrusImgUhh:
+    if weddingFrom == 'frisk': 
+        show papyrusImg uhh
+    else:
+        show papyrusImg coolDude uhh
+    return
+
+label papyrusImgUhhFlip:
+    if weddingFrom == 'frisk': 
+        show papyrusImg uhh flip
+    else:
+        show papyrusImg coolDude uhh flip
+    return
+
+label papyrusImgNeutral:
+    if weddingFrom == 'frisk': 
+        show papyrusImg neutral
+    else:
+        show papyrusImg coolDude neutral
+    return
+
+label papyrusImgNeutralFlip:
+    if weddingFrom == 'frisk': 
+        show papyrusImg neutral flip
+    else:
+        show papyrusImg coolDude neutral flip
+    return
+
+label papyrusImgDelight:
+    if weddingFrom == 'frisk': 
+        show papyrusImg delight
+    else:
+        show papyrusImg coolDude delight
+    return
+
+label papyrusImgDelightFlip:
+    if weddingFrom == 'frisk': 
+        show papyrusImg delight flip
+    else:
+        show papyrusImg coolDude delight flip
+    return
+
+label papyrusImgAnnoyed:
+    if weddingFrom == 'frisk':
+        show papyrusImg annoyed
+    else:
+        show papyrusImg coolDude offended
+    return
+
+label papyrusImgWorried:
+    if weddingFrom == 'frisk':
+        show papyrusImg worried
+    else:
+        show papyrusImg coolDude thinking
+    return
+
+label papyrusImgWorriedFlip:
+    if weddingFrom == 'frisk':
+        show papyrusImg worried flip
+    else:
+        show papyrusImg coolDude thinking flip
+    return
+
+
+label papyrusImgSurprised:
+    if weddingFrom == 'frisk':
+        show papyrusImg surprised
+    else:
+        show papyrusImg coolDude scared
+    return
+
+label papyrusImgSurprisedFlip:
+    if weddingFrom == 'frisk':
+        show papyrusImg surprised flip
+    else:
+        show papyrusImg coolDude scared flip
+    return
+
+
+
+label papyrusImgExplaining:
+    if weddingFrom == 'frisk':
+        show papyrusImg explaining
+    else:
+        show papyrusImg coolDude explaining
+    return
+
+label papyrusImgExplainingFlip:
+    if weddingFrom == 'frisk':
+        show papyrusImg explaining flip
+    else:
+        show papyrusImg coolDude explaining flip
+    return

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/questions/programmingWoes.rpy", line 82: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        gaster "ALMOST ALWAYS WAS EXTREMELY PRODUCTIVE, AND, IF IT WASN'TpyrusImg uhhLK
+File "game/wedding/afterConvos.rpy", line 76: expected end of line
+    stop music fadeOut(2)
+               ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri May 08 09:49:50 2020
+Tue Jun 23 19:37:23 2020
