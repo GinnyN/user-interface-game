@@ -197,6 +197,13 @@ label papyrusImgAnnoyed:
         show papyrusImg coolDude offended
     return
 
+label papyrusImgAnnoyedFlip:
+    if weddingFrom == 'frisk':
+        show papyrusImg annoyed flip
+    else:
+        show papyrusImg coolDude offended flip
+    return
+
 label papyrusImgWorried:
     if weddingFrom == 'frisk':
         show papyrusImg worried

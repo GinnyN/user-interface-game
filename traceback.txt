@@ -1,92 +1,56 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Flip' <'Image' u'asgore/shirt/happy.png'> True False>:
-  File "game/alt/day2.rpy", line 33, in script call
-    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
-  File "game/freeMorning.rpy", line 123, in script call
-    call weddingFriskAsgore
-  File "game/wedding/friskAsgore.rpy", line 114, in script
-    asgore "I'm going to need a copy"
-IOError: Couldn't find file 'asgore/shirt/happy.png'.
+While running game code:
+  File "game/alt/day2.rpy", line 50, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning_3
+  File "game/freeMorning.rpy", line 101, in script call
+    call weddingFinal
+  File "game/wedding/final.rpy", line 117, in script
+    pause(1)
+  File "renpy/common/000statements.rpy", line 414, in execute_pause
+    renpy.with_statement(Pause(delay))
+IOError: Couldn't find file 'music/34 Memory.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/alt/day2.rpy", line 33, in script call
-    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_1
-  File "game/freeMorning.rpy", line 123, in script call
-    call weddingFriskAsgore
-  File "game/wedding/friskAsgore.rpy", line 114, in script
-    asgore "I'm going to need a copy"
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Applications/renpy-7.3.5-sdk/renpy/exports.py", line 1345, in say
-    who(what, *args, **kwargs)
-  File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 1142, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 842, in do_display
-    **display_args)
-  File "/Applications/renpy-7.3.5-sdk/renpy/character.py", line 591, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Applications/renpy-7.3.5-sdk/renpy/ui.py", line 297, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "game/alt/day2.rpy", line 50, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning_3
+  File "game/freeMorning.rpy", line 101, in script call
+    call weddingFinal
+  File "game/wedding/final.rpy", line 117, in script
+    pause(1)
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1949, in execute
+    self.call("execute")
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1937, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "/Applications/renpy-7.3.5-sdk/renpy/statements.py", line 277, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 414, in execute_pause
+    renpy.with_statement(Pause(delay))
+  File "/Applications/renpy-7.3.5-sdk/renpy/exports.py", line 1601, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/core.py", line 2251, in do_with
+    clear=clear)
   File "/Applications/renpy-7.3.5-sdk/renpy/display/core.py", line 2702, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/core.py", line 3194, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/core.py", line 2094, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen/renpy.display.render.c:6805)
-    rv = render(root, width, height, st, st)
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/image.py", line 500, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/image.py", line 306, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen/renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 583, in render
-    return cache.get(self, render=True)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 266, in get
-    surf = image.load()
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 919, in load
-    child = cache.get(self.image)
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 266, in get
-    surf = image.load()
-  File "/Applications/renpy-7.3.5-sdk/renpy/display/im.py", line 628, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/Applications/renpy-7.3.5-sdk/renpy/display/core.py", line 3380, in interact_core
+    renpy.audio.audio.periodic()
+  File "/Applications/renpy-7.3.5-sdk/renpy/audio/audio.py", line 1060, in periodic
+    six.reraise(exc[0], exc[1], exc[2])
+  File "/Applications/renpy-7.3.5-sdk/renpy/audio/audio.py", line 1038, in periodic_thread_main
+    periodic_pass()
+  File "/Applications/renpy-7.3.5-sdk/renpy/audio/audio.py", line 979, in periodic_pass
+    c.periodic()
+  File "/Applications/renpy-7.3.5-sdk/renpy/audio/audio.py", line 457, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "/Applications/renpy-7.3.5-sdk/renpy/audio/audio.py", line 73, in load
+    rv = renpy.loader.load(fn)
   File "/Applications/renpy-7.3.5-sdk/renpy/loader.py", line 576, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'asgore/shirt/happy.png'.
+IOError: Couldn't find file 'music/34 Memory.mp3'.
 
 Darwin-19.5.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 User Interface 0.3.1
-Sun Jun 21 17:30:27 2020
+Wed Jun 24 18:29:49 2020
