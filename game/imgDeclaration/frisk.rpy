@@ -26,3 +26,7 @@ image friskImg future angry = im.FactorScale("frisk/future/angry.png", 0.7)
 image friskImg future angry flip = im.Flip(im.FactorScale("frisk/future/angry.png", 0.7), horizontal=True)
 image friskImg future dissapointed = im.FactorScale("frisk/future/dissapointed.png", 0.7)
 image friskImg future dissapointed flip = im.Flip(im.FactorScale("frisk/future/dissapointed.png", 0.7), horizontal=True)
+
+##Wedding 
+image friskImg wedding ohwell = im.FactorScale("frisk/wedding/ohwell.png", 0.7)
+image friskImg wedding ohwell flip = im.Flip(im.FactorScale("frisk/wedding/ohwell.png", 0.7), horizontal=True)

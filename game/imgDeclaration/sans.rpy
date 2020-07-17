@@ -70,3 +70,8 @@ image sansImg future careful = "sans/future/careful.png"
 image sansImg future careful flip = im.Flip("sans/future/careful.png", horizontal=True)
 image sansImg future neutral = "sans/future/neutral.png"
 image sansImg future neutral flip = im.Flip("sans/future/neutral.png", horizontal=True)
+#Wedding
+image sansImg wedding bored = "sans/wedding/bored.png"
+image sansImg wedding bored flip = im.Flip("sans/wedding/bored.png", horizontal=True)
+image sansImg wedding neutral = "sans/wedding/neutral.png"
+image sansImg wedding neutral flip = im.Flip("sans/wedding/neutral.png", horizontal=True)

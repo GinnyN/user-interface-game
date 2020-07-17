@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/wedding/afterConvos.rpy", line 76: expected end of line
-    stop music fadeOut(2)
-               ^
+File "game/ending/wedding-gaster.rpy", line 61: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    lineal 1 xpos 0.3
+             ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Jun 23 19:37:23 2020
+Sun Jul  5 18:10:17 2020

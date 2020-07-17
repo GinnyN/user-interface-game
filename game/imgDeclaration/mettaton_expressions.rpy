@@ -3,6 +3,11 @@ label mettatonSurprised:
         show mettaton v1 surprised
     return
 
+label mettatonWeddingSurprised:
+    if mettatonModel == "v1":
+        show mettaton v1 wedding surprised
+    return
+
 label mettatonPresenting:
     if mettatonModel == "v1":
         show mettaton v1 presenting
@@ -42,4 +47,24 @@ label mettatonComplicit:
 label mettatonComplicitFlip:
     if mettatonModel == "v1":
         show mettaton v1 complicit flip
+    return
+
+label mettatonQuestion:
+    if mettatonModel == "v1":
+        show mettaton v1 question
+    return
+    
+label mettatonQuestionFlip:
+    if mettatonModel == "v1":
+        show mettaton v1 question flip
+    return
+
+label mettatonCalamity:
+    if mettatonModel == "v1":
+        show mettaton v1 calamity
+    return
+    
+label mettatonCalamityFlip:
+    if mettatonModel == "v1":
+        show mettaton v1 calamity flip
     return

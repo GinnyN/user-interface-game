@@ -14,6 +14,8 @@ image papyrusImg curious = "papyrus/curious.png"
 image papyrusImg curious flip = im.Flip("papyrus/curious.png", horizontal=True)
 image papyrusImg delight = "papyrus/delight.png"
 image papyrusImg delight flip = im.Flip("papyrus/delight.png", horizontal=True)
+image papyrusImg desperate = "papyrus/desperate.png"
+image papyrusImg desperate flip = im.Flip("papyrus/desperate.png", horizontal=True)
 image papyrusImg dissapointed = "papyrus/dissapointed.png"
 image papyrusImg dissapointed flip = im.Flip("papyrus/dissapointed.png", horizontal=True)
 image papyrusImg embarrased happy = "papyrus/embarrasedHappy.png"
@@ -93,6 +95,8 @@ image papyrusImg coolDude careful = "papyrus/coolDude/careful.png"
 image papyrusImg coolDude careful flip = im.Flip("papyrus/coolDude/careful.png", horizontal=True)
 image papyrusImg coolDude checkThis = "papyrus/coolDude/checkThis.png"
 image papyrusImg coolDude checkThis flip = im.Flip("papyrus/coolDude/checkThis.png", horizontal=True)
+image papyrusImg coolDude curious = "papyrus/coolDude/curious.png"
+image papyrusImg coolDude curious flip = im.Flip("papyrus/coolDude/curious.png", horizontal=True)
 image papyrusImg coolDude surprised = "papyrus/coolDude/surprised.png"
 image papyrusImg coolDude surprised flip = im.Flip("papyrus/coolDude/surprised.png", horizontal=True)
 image papyrusImg coolDude annoyed = "papyrus/coolDude/annoyed.png"
@@ -132,90 +136,131 @@ image papyrusImg coolDude realizing flip = im.Flip("papyrus/coolDude/realizing.p
 image papyrusImg coolDude uhh = "papyrus/coolDude/uhh.png"
 image papyrusImg coolDude uhh flip = im.Flip("papyrus/coolDude/uhh.png",horizontal=True)
 
+#Wedding
+image papyrusImg wedding delight = "papyrus/wedding/delight.png"
+image papyrusImg wedding delight flip = im.Flip("papyrus/wedding/delight.png",horizontal=True)
+image papyrusImg wedding serious = "papyrus/wedding/serious.png"
+image papyrusImg wedding serious flip = im.Flip("papyrus/wedding/serious.png",horizontal=True)
+image papyrusImg wedding wait = "papyrus/wedding/wait.png"
+image papyrusImg wedding wait flip = im.Flip("papyrus/wedding/wait.png",horizontal=True)
+image papyrusImg wedding neutral = "papyrus/wedding/neutral.png"
+image papyrusImg wedding neutral flip = im.Flip("papyrus/wedding/neutral.png",horizontal=True)
+image papyrusImg wedding thinking = "papyrus/wedding/thinking.png"
+image papyrusImg wedding thinking flip = im.Flip("papyrus/wedding/thinking.png",horizontal=True)
+
+
 # With Variable weddingFrom
+
+label papyrusImgWhy:
+    if weddingFrom == 'frisk': 
+        show papyrusImg dissapointed at fade
+    else:
+        show papyrusImg coolDude realizing at fade
+    return
+
+label papyrusImgWhyFlip:
+    if weddingFrom == 'frisk': 
+        show papyrusImg dissapointed flip at fade
+    else:
+        show papyrusImg coolDude realizing flip at fade
+    return
 
 label papyrusImgAngry:
     if weddingFrom == 'frisk': 
-        show papyrusImg angry
+        show papyrusImg angry at fade
     else:
-        show papyrusImg coolDude angry
+        show papyrusImg coolDude angry at fade
     return
 
 label papyrusImgAngryFlip:
     if weddingFrom == 'frisk': 
-        show papyrusImg angry flip
+        show papyrusImg angry flip at fade
     else:
-        show papyrusImg coolDude angry flip
+        show papyrusImg coolDude angry flip at fade
+    return
+
+label papyrusImgCurious:
+    if weddingFrom == 'frisk': 
+        show papyrusImg curious at fade
+    else:
+        show papyrusImg coolDude curious at fade
+    return
+
+label papyrusImgCuriousFlip:
+    if weddingFrom == 'frisk': 
+        show papyrusImg curious flip at fade
+    else:
+        show papyrusImg coolDude curious flip at fade
     return
 
 label papyrusImgUhh:
     if weddingFrom == 'frisk': 
-        show papyrusImg uhh
+        show papyrusImg uhh at fade
     else:
-        show papyrusImg coolDude uhh
+        show papyrusImg coolDude uhh at fade
     return
 
 label papyrusImgUhhFlip:
     if weddingFrom == 'frisk': 
-        show papyrusImg uhh flip
+        show papyrusImg uhh flip at fade
     else:
-        show papyrusImg coolDude uhh flip
+        show papyrusImg coolDude uhh flip at fade
     return
 
 label papyrusImgNeutral:
     if weddingFrom == 'frisk': 
-        show papyrusImg neutral
+        show papyrusImg neutral at fade
     else:
-        show papyrusImg coolDude neutral
+        show papyrusImg coolDude neutral at fade
     return
 
 label papyrusImgNeutralFlip:
     if weddingFrom == 'frisk': 
-        show papyrusImg neutral flip
+        show papyrusImg neutral flip at fade
     else:
-        show papyrusImg coolDude neutral flip
+        show papyrusImg coolDude neutral flip at fade
     return
 
 label papyrusImgDelight:
     if weddingFrom == 'frisk': 
-        show papyrusImg delight
+        show papyrusImg delight at fade
     else:
-        show papyrusImg coolDude delight
+        show papyrusImg coolDude delight at fade
     return
 
 label papyrusImgDelightFlip:
     if weddingFrom == 'frisk': 
-        show papyrusImg delight flip
+        show papyrusImg delight flip at fade
     else:
-        show papyrusImg coolDude delight flip
+        show papyrusImg coolDude delight flip at fade
     return
 
 label papyrusImgAnnoyed:
     if weddingFrom == 'frisk':
-        show papyrusImg annoyed
+        show papyrusImg annoyed at fade
     else:
-        show papyrusImg coolDude offended
+        show papyrusImg coolDude offended at fade
     return
 
 label papyrusImgAnnoyedFlip:
     if weddingFrom == 'frisk':
-        show papyrusImg annoyed flip
+        show papyrusImg annoyed flip at fade
     else:
-        show papyrusImg coolDude offended flip
+        show papyrusImg coolDude offended flip at fade
     return
 
 label papyrusImgWorried:
     if weddingFrom == 'frisk':
-        show papyrusImg worried
+        show papyrusImg worried at fade
     else:
-        show papyrusImg coolDude thinking
+        show papyrusImg coolDude thinking at fade
     return
 
 label papyrusImgWorriedFlip:
     if weddingFrom == 'frisk':
-        show papyrusImg worried flip
+        show papyrusImg worried flip at fade
     else:
-        show papyrusImg coolDude thinking flip
+        show papyrusImg coolDude thinking flip at fade
     return
 
 
@@ -247,4 +292,32 @@ label papyrusImgExplainingFlip:
         show papyrusImg explaining flip
     else:
         show papyrusImg coolDude explaining flip
+    return
+
+label papyrusImgSerious:
+    if weddingFrom == 'frisk':
+        show papyrusImg serious
+    else:
+        show papyrusImg coolDude realizing
+    return
+
+label papyrusImgSeriousFlip:
+    if weddingFrom == 'frisk':
+        show papyrusImg serious flip
+    else:
+        show papyrusImg coolDude realizing flip
+    return
+
+label papyrusImgDesperate:
+    if weddingFrom == 'frisk':
+        show papyrusImg desperate
+    else:
+        show papyrusImg coolDude desperate
+    return
+
+label papyrusImgDesperateFlip:
+    if weddingFrom == 'frisk':
+        show papyrusImg desperate flip
+    else:
+        show papyrusImg coolDude desperate flip
     return

@@ -1,54 +1,54 @@
 label sansSuitStiff:
     if suit == 1:
-        show sansImg suit red stiff
+        show sansImg suit red stiff at fade
     elif suit == 2:
-        show sansImg suit blue stiff
+        show sansImg suit blue stiff at fade
     else:
-        show sansImg suit green stiff
+        show sansImg suit green stiff at fade
     return
 
 label sansSuitBored:
     if suit == 1:
-        show sansImg suit red bored
+        show sansImg suit red bored at fade
     elif suit == 2:
-        show sansImg suit blue bored
+        show sansImg suit blue bored at fade
     else:
-        show sansImg suit green bored
+        show sansImg suit green bored at fade
     return
 
 label sansSuitSarcastic:
     if suit == 1:
-        show sansImg suit red sarcastic
+        show sansImg suit red sarcastic at fade
     elif suit == 2:
-        show sansImg suit blue sarcastic
+        show sansImg suit blue sarcastic at fade
     else:
-        show sansImg suit green sarcastic
+        show sansImg suit green sarcastic at fade
     return
 
 
 label sansSuitAnnoyed:
     if suit == 1:
-        show sansImg suit red annoyed
+        show sansImg suit red annoyed at fade
     elif suit == 2:
-        show sansImg suit blue annoyed
+        show sansImg suit blue annoyed at fade
     else:
-        show sansImg suit green annoyed
+        show sansImg suit green annoyed at fade
     return
 
 label sansSuitSurprised:
     if suit == 1:
-        show sansImg suit red surprised
+        show sansImg suit red surprised at fade
     elif suit == 2:
-        show sansImg suit blue surprised
+        show sansImg suit blue surprised at fade
     else:
-        show sansImg suit green surprised
+        show sansImg suit green surprised at fade
     return
 
 label sansSuitWorried:
     if suit == 1:
-        show sansImg suit red worried
+        show sansImg suit red worried at fade
     elif suit == 2:
-        show sansImg suit blue worried
+        show sansImg suit blue worried at fade
     else:
-        show sansImg suit green worried
+        show sansImg suit green worried at fade
     return

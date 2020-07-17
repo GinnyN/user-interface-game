@@ -13,7 +13,7 @@ label afternoonUndyne:
   show undyneImg gym impressed flip at fade:
     ypos -0.2
     xpos 0.3
-  play music "music/46 Spear of Justice.mp3" fadein 1
+  play music "music/46 Spear of Justice.mp3"
   undyne "Papyrus! hey, come out punk!"
   show papyrusImg coolDude scared zorder 0 at fade:
     xpos -0.1
@@ -124,6 +124,7 @@ label afternoonUndyne:
     xpos -0.1
   gaster "WHAT EXACTLY IS HAPPENING?"
   play sound "music/fx/thump.wav"
+  "* THUMP! *"
   pause(0.5)
   show papyrusImg coolDude thinking flip
   papyrus "I THINK UNDYNE BELIEVED THE DRIVER LICENCE CAME WITH THE VEHICLE"
@@ -131,6 +132,7 @@ label afternoonUndyne:
   show papyrusImg coolDude realizing flip
   papyrus "OH, SORRY, I FORGOT"
   play sound "music/fx/thump.wav"
+  "* THUMP! *"
   pause(0.5)
   show papyrusImg coolDude neutral flip
   papyrus "SO, HUMANS HAVE THIS MAGIC VEHICLE CALLED CAR"
@@ -138,11 +140,13 @@ label afternoonUndyne:
   show gaster trapped descisive
   gaster "I KNEW IT"
   play sound "music/fx/thump.wav"
+  "* THUMP! *"
   pause(0.5)
   papyrus "AND THEY HAVE THIS LONG ROADS WHERE TO DRIVE THEM AND GO BETWEEN TOWNS"
   papyrus "BUT TO DRIVE ONE OF THOSE, YOU NEED TO HAVE A DRIVERS LICENCE"
   papyrus "THE NEW KINGDOM OF MONSTERS DOES NOT HAVE THAT LICENCE, BUT WE GOT AN AGREEMENT WITH THE HUMAN CITY NEARBY"
   play sound "music/fx/thump.wav"
+  "* THUMP! *"
   pause(0.5)
   papyrus "AND THEY ALLOWED US TO GET OUR LICENCES FROM THEM"
   hide gaster

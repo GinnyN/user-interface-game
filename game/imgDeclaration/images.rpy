@@ -17,6 +17,8 @@ image alphysImg casual confused = "alphys/casual/confused.png"
 image alphysImg casual confused flip = im.Flip("alphys/casual/confused.png", horizontal=True)
 image alphysImg casual dismissive = "alphys/casual/dismissive.png"
 image alphysImg casual dismissive flip = im.Flip("alphys/casual/dismissive.png", horizontal=True)
+image alphysImg casual happy = "alphys/casual/happy.png"
+image alphysImg casual happy flip = im.Flip("alphys/casual/happy.png", horizontal=True)
 image alphysImg casual realizing = "alphys/casual/realizing.png"
 image alphysImg casual realizing flip = im.Flip("alphys/casual/realizing.png", horizontal=True)
 image alphysImg casual confused mild = "alphys/casual/mildConfused.png"
@@ -29,6 +31,9 @@ image alphysImg casual noWords = "alphys/casual/noWords.png"
 image alphysImg casual noWords flip = im.Flip("alphys/casual/noWords.png", horizontal=True)
 image alphysImg casual neutral = "alphys/casual/neutral.png"
 image alphysImg casual neutral flip = im.Flip("alphys/casual/neutral.png", horizontal=True)
+#Wedding
+image alphysImg wedding sorry = "alphys/wedding/sorry.png"
+image alphysImg wedding sorry flip = im.Flip("alphys/wedding/sorry.png", horizontal=True)
 
 
 #Mettaton 
@@ -41,8 +46,15 @@ image mettaton v1 surprised flip = im.Flip(im.FactorScale("mettaton/ver1/surpris
 image mettaton v1 delight = im.FactorScale("mettaton/ver1/delight.png",0.85)
 image mettaton v1 delight flip = im.Flip(im.FactorScale("mettaton/ver1/delight.png",0.85), horizontal=True)
 image mettaton v1 thinking =  im.FactorScale("mettaton/ver1/thinking.png",0.85)
+image mettaton v1 thinking flip =  im.Flip(im.FactorScale("mettaton/ver1/thinking.png",0.85), horizontal=True)
 image mettaton v1 complicit =  im.FactorScale("mettaton/ver1/complicit.png",0.85)
 image mettaton v1 complicit flip =  im.Flip(im.FactorScale("mettaton/ver1/complicit.png",0.85), horizontal=True)
+image mettaton v1 question =  im.FactorScale("mettaton/ver1/question.png",0.85)
+image mettaton v1 question flip =  im.Flip(im.FactorScale("mettaton/ver1/question.png",0.85), horizontal=True)
+image mettaton v1 calamity =  im.FactorScale("mettaton/ver1/calamity.png",0.85)
+image mettaton v1 calamity flip =  im.Flip(im.FactorScale("mettaton/ver1/calamity.png",0.85), horizontal=True)
+image mettaton v1 wedding surprised =  im.FactorScale("mettaton/ver1/wedding/surprised.png",0.85)
+image mettaton v1 wedding surprised flip =  im.Flip(im.FactorScale("mettaton/ver1/wedding/surprised.png",0.85), horizontal=True)
 
 #Kid
 image kidImg listening = "kid/listening.png"

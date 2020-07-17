@@ -70,3 +70,10 @@ image undyneImg armor worried flip = im.Flip("undyne/armor/worried.png", horizon
 #Future
 image undyneImg future neutral = "undyne/future/neutral.png"
 image undyneImg future neutral flip = im.Flip("undyne/future/neutral.png", horizontal=True)
+#Wedding
+image undyneImg wedding bored = "undyne/wedding/bored.png"
+image undyneImg wedding bored flip = im.Flip("undyne/wedding/bored.png", horizontal=True)
+image undyneImg wedding happy = "undyne/wedding/happy.png"
+image undyneImg wedding happy flip = im.Flip("undyne/wedding/happy.png", horizontal=True)
+image undyneImg wedding laugh = "undyne/wedding/laugh.png"
+image undyneImg wedding laugh flip = im.Flip("undyne/wedding/laugh.png", horizontal=True)

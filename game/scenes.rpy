@@ -77,6 +77,9 @@ image tryWithSans sansShattering frame3 = "background/tryWithSans/sansShattering
 image tryWithSans lookingTheDistance frame1 = "background/tryWithSans/watchingTheDistance.png"
 image tryWithSans lookingTheDistance frame2 = "background/tryWithSans/watchingTheDistance-frame2.png"
 image tryWithSans lookingTheDistance frame3 = "background/tryWithSans/watchingTheDistance-frame3.png"
+#Wedding
+image alphysWatching coolDude = "background/wedding/alphysWatchingCool.png"
+image alphysWatching battleArmor = "background/wedding/alphysWatchingHero.png"
 #Ending Gaster Neutral
 image gasterNeutral lab frame1 = "background/neutralGaster/lab-frame1.png"
 image gasterNeutral lab frame2 = "background/neutralGaster/lab-frame2.png"
@@ -84,6 +87,11 @@ image gasterNeutral lab frame2 = "background/neutralGaster/lab-frame2.png"
 image gasterWekufe frame1 = "background/neutralGaster/gaster-wekufe.png"
 #Ending Papyrus Prison
 image papyrusPrison frame1 = "background/neutralGaster/prison-hug.png"
+
+#Ending Gaster Wedding
+image gasterWedding papyrusRoom = "background/weddingGaster/papyrusRoom.png"
+#Ending Papyrus Wedding
+image papyrusWedding weddingArch = "background/weddingPapyrus/weddingArch.png"
 
 #Places Backgrounds
 image newerHome night = "background/newerHome/night.png"
@@ -98,6 +106,7 @@ image muffetBakery inside = "background/muffetBakery.png"
 image muffetCafe = "background/muffetCafe.png"
 image skelebrosHouse papyrus room = "background/skeletonPapyrusRoom.png"
 image elevator outside = "background/elevatorOutside.png"
+image elevator oceanview = "background/oceanview.png"
 image forest = "background/forest.png"
 image fortress inside = "background/fortressInside.png"
 image mountAnemi = "background/mountAnemi.png"
