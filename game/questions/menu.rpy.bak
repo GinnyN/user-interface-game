@@ -6,6 +6,7 @@ label questionsEnd:
     scene mistColor with dissolve
     show mist at fade
     pause(1.0)
+label questionsEndPast:
     show papyrusImg neutral at fade:
         xpos -0.1
     show gaster trapped neutral flip at fade:
@@ -24,8 +25,8 @@ label questionsMenu:
         #    call monstersForest from _call_monstersForest
         "Political Geography":
             call politicalGeographyTree from _call_politicalGeographyTree
-        #"I know something I really didn't knew I knew" if papyrusKnowsProgramming:
-        #    call programmingTree
+        "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
+            call programmingTree
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
             call sansPapyrusPast from _call_sansPapyrusPast
         #"Demography" if politicalGeography > 0:
@@ -35,7 +36,7 @@ label questionsMenu:
         "Skeleton During the Great War" if gasterPast > 0:
             call gasterPastTree from _call_gasterPastTree
         "Something is wrong with the program" if not firstTry:
-            call programAgainTree
+            call programAgainTree from _call_programAgainTree
         "4th Wall Breaking Stuff":
             call fourthWallTree from _call_fourthWallTree
         "Nothing Else":
@@ -64,11 +65,11 @@ label questionsMenu:
 label programAgainTree:
     menu:
         "Something is wrong with the program":
-            call fileAlphysTryAgain
+            call fileAlphysTryAgain from _call_fileAlphysTryAgain
         "But why I cannot do it!?" if program2ndChance > 0:
-            call papyrusWantsToTry
+            call papyrusWantsToTry from _call_papyrusWantsToTry
         "Change of Plans!" if program2ndChance > 1:
-            call changeOfPlans
+            call changeOfPlans from _call_changeOfPlans
         "Back":
             return
     return
@@ -149,7 +150,7 @@ label gasterPastTree:
         "I WAS NEVER A CHILD?!" if gasterPast > 4:
             call noChildhood from _call_noChildhood
         "Blank Science Encyclopedia" if gasterPast > 5 and gasterScienceEncyclopedia:
-            call blankScienceEncyclopedia
+            call blankScienceEncyclopedia from _call_blankScienceEncyclopedia
         "Return":
             return
     return
@@ -160,8 +161,8 @@ label fourthWallTree:
             call wallBreakingStuff from _call_wallBreakingStuff
         "More 4th Wall Breaking Stuff" if wallBreakingStuff > 0:
             call moreWallBreakingStuff from _call_moreWallBreakingStuff
-        #"4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
-        #    call wallBreakingStuff2 from _call_wallBreakingStuff2
+        "4th Wall Breaking Stuff 2" if programmingWoes2 > 0:
+            call wallBreakingStuff2 from _call_wallBreakingStuff2
         "Return":
             return
     return 

@@ -26,7 +26,7 @@ label questionsMenu:
         "Political Geography":
             call politicalGeographyTree from _call_politicalGeographyTree
         "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
-            call programmingTree
+            call programmingTree from _call_programmingTree
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
             call sansPapyrusPast from _call_sansPapyrusPast
         #"Demography" if politicalGeography > 0:

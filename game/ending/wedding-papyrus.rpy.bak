@@ -85,7 +85,7 @@ label weddingPapyrus:
   hide undyneImg
   show mettaton position zorder 2 at fade:
     ypos 0.2
-  call mettatonWeddingSurprised from _call_mettatonWeddingSurprised
+  call mettatonWeddingSurprised
   metatton "What?!"
   metatton "Are you moving away?"
   metatton "Why?"

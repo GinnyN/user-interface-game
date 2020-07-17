@@ -25,12 +25,12 @@ label day1:
             
             "Ask Sans about creating a Shortcut" if doors:
                 $ altPath = True
-                call shortcut
+                call shortcut from _call_shortcut
                 jump altPath
 
 label altPath:
     call papyrusGasterIncidentAverted from _call_papyrusGasterIncidentAverted
-    call questionsEndPast
+    call questionsEndPast from _call_questionsEndPast
     jump altDay2
 
 label normalPath:

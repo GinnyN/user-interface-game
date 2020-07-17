@@ -88,15 +88,15 @@ label weddingFriskAsgore:
     asgore "Oh, howdy!"
     asgore "I'm here with Frisk because"
     asgore "I need to figure out some things and... well, I thought they could help me"
-    call papyrusImgDelight from _call_papyrusImgDelight
+    call papyrusImgDelight
     papyrus "OHHHHHH"
     papyrus "WHAT'S THAT?"
     papyrus "MAYBE I CAN HELP FRISK HELP YOU ABOUT THAT PROBLEM"
     show asgoreImg shirt embarrased flip
     asgore "You sure?"
-    call papyrusImgAnnoyed from _call_papyrusImgAnnoyed
+    call papyrusImgAnnoyed
     papyrus "YOUR MAJESTY PLEASE..."
-    call papyrusImgDelight from _call_papyrusImgDelight_1
+    call papyrusImgDelight
     papyrus "MORAL SUPPORT IS ALSO HELP"
     show asgoreImg shirt happy flip
     asgore "Oh, you right!"
@@ -106,7 +106,7 @@ label weddingFriskAsgore:
     asgore "Do you know what 'deliver the bride' is?"
     papyrus "..."
     papyrus "............"
-    call papyrusImgUhh from _call_papyrusImgUhh
+    call papyrusImgUhh
     show friskImg worried flip
     papyrus "YES?"
     asgore "You do?"
@@ -125,7 +125,7 @@ label weddingFriskAsgore:
     asgore "I'm going to need a copy"
     papyrus "..."
     asgore "Papyrus?"
-    call papyrusImgWorried from _call_papyrusImgWorried
+    call papyrusImgWorried
     papyrus "I'M SORRY YOUR MAJESTY BUT..."
     papyrus "WHY DO YOU NEED TO KNOW ABOUT WEDDINGS?"
     show asgoreImg shirt embarrased flip
@@ -134,7 +134,7 @@ label weddingFriskAsgore:
     frisk "..."
     show asgoreImg shirt explaining flip
     asgore "It's for her wedding with Alphys!"
-    call papyrusImgSurprised from _call_papyrusImgSurprised
+    call papyrusImgSurprised
     stop music
     papyrus "!"
     frisk "?"

@@ -25,7 +25,7 @@ label displayMenuFreeMorning:
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'toriel'
-            call weddingTorielSans
+            call weddingTorielSans from _call_weddingTorielSans
 
         # Asgore
         "Go grocery shopping" if not metAsgore and not giveRingToUndyne:
@@ -36,7 +36,7 @@ label displayMenuFreeMorning:
             call groceryShopping from _call_groceryShopping
         "I never know where the King is in the mornings" if not metAsgore and giveRingToUndyne:
             $ weddingFrom = 'asgore'
-            call weddingFriskAsgore
+            call weddingFriskAsgore from _call_weddingFriskAsgore
             $ metAsgore = True
             $ visitFrisk = True
         
@@ -49,7 +49,7 @@ label displayMenuFreeMorning:
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'sans'
-            call weddingTorielSans
+            call weddingTorielSans from _call_weddingTorielSans_1
 
         "Go check with Undyne" if not visitUndyne:
             papyrus "I SHOULD CHECK OUT WITH UNDYNE"
@@ -94,11 +94,11 @@ label displayMenuFreeMorning:
             $ metAsgore = True
             $ visitFrisk = True
             $ weddingFrom = 'frisk'
-            call weddingFriskAsgore
+            call weddingFriskAsgore from _call_weddingFriskAsgore_1
     
     if giveRingToUndyne and day == 3:
-        call afterMorning
-        call weddingFinal
+        call afterMorning from _call_afterMorning
+        call weddingFinal from _call_weddingFinal
     return
     
 
@@ -112,7 +112,7 @@ label displayMenuFreeAfternoon:
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'toriel'
-            call weddingTorielSans
+            call weddingTorielSans from _call_weddingTorielSans_2
 
         # Asgore
         "Maybe Asgore can help me with this" if not metAsgore and not giveRingToUndyne:
@@ -120,7 +120,7 @@ label displayMenuFreeAfternoon:
             $ metAsgore = True
         "I think the king said something about my topiary I guess" if not metAsgore and giveRingToUndyne:
             $ weddingFrom = 'asgore'
-            call weddingFriskAsgore
+            call weddingFriskAsgore from _call_weddingFriskAsgore_2
             $ metAsgore = True
             $ visitFrisk = True
             
@@ -132,7 +132,7 @@ label displayMenuFreeAfternoon:
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'sans'
-            call weddingTorielSans
+            call weddingTorielSans from _call_weddingTorielSans_3
 
         # Undyne
         "Maybe I should check with Undyne" if not visitUndyne and not giveRingToUndyne:
@@ -173,7 +173,7 @@ label displayMenuFreeAfternoon:
             $ metAsgore = True
             $ visitFrisk = True
             $ weddingFrom = 'frisk'
-            call weddingFriskAsgore
+            call weddingFriskAsgore from _call_weddingFriskAsgore_3
     if giveRingToUndyne:
-        call afterAfternoon
+        call afterAfternoon from _call_afterAfternoon
     return

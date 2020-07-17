@@ -9,41 +9,41 @@ label weddingFinal:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.3
-  call papyrusImgWorriedFlip from _call_papyrusImgWorriedFlip_2
+  call papyrusImgWorriedFlip
   papyrus "DR ALPHYS! DR ALPHYS!"
   show mettaton position zorder 2 at fade:
     ypos 0.2
-  call mettatonSurprised from _call_mettatonSurprised
+  call mettatonSurprised
   metatton "Oh!"
   metatton "Papyrus, what are you doing here?"
-  call papyrusImgSurprisedFlip from _call_papyrusImgSurprisedFlip_2
+  call papyrusImgSurprisedFlip
   papyrus "METTATON!!!"
-  call papyrusImgSurprised from _call_papyrusImgSurprised_1
+  call papyrusImgSurprised
   papyrus "OH."
   extend " MY."
   extend " GOD."
-  call papyrusImgDelight from _call_papyrusImgDelight_2
+  call papyrusImgDelight
   papyrus "HE KNOWS MY NAME!"
-  call papyrusImgSerious from _call_papyrusImgSerious
+  call papyrusImgSerious
   papyrus "IT'S NOT TIME FOR FANBOYISM PAPYRUS, GET SERIOUS"
-  call papyrusImgWorriedFlip from _call_papyrusImgWorriedFlip_3
+  call papyrusImgWorriedFlip
   papyrus "HAVE... YOU... .................... SEEN......"
-  call mettatonQuestion from _call_mettatonQuestion
+  call mettatonQuestion
   metatton "Alphys?" 
-  call mettatonThinking from _call_mettatonThinking_1
+  call mettatonThinking
   metatton "We have something to discuss before I start my tour"
   metatton "But she isn't here!"
-  call mettatonCalamity from _call_mettatonCalamity
+  call mettatonCalamity
   metatton "OH! The Calamity"
   papyrus "SO... YOU HAVE NO IDEA?"
-  call mettatonComplicit from _call_mettatonComplicit
+  call mettatonComplicit
   metatton "I have a theory where she might be"
-  call papyrusImgAngryFlip from _call_papyrusImgAngryFlip_6
+  call papyrusImgAngryFlip
   papyrus "THEN LET'S GO!"
   hide papyrusImg
   play sound "music/fx/steps.wav"
   pause(1)
-  call mettatonQuestion from _call_mettatonQuestion_1
+  call mettatonQuestion
   metatton "Did Frisk told me something about what to do on this cases?"
   play sound "music/fx/steps.wav"
   pause(1)
@@ -53,15 +53,15 @@ label weddingFinal:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.3
-  call papyrusImgWorriedFlip from _call_papyrusImgWorriedFlip_4
+  call papyrusImgWorriedFlip
   papyrus "WHERE DO YOU THINK SHE IS?"
-  call mettatonDelight from _call_mettatonDelight_1
+  call mettatonDelight
   metatton "Come with me"
   hide mettaton
   play sound "music/fx/steps.wav"
   pause(1)
   metatton "It's where Alphys always plans to have her wedding"
-  call papyrusImgSurprised from _call_papyrusImgSurprised_2
+  call papyrusImgSurprised
   papyrus "HER WEDDING WHAT?"
   hide papyrusImg
   papyrus "NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO NO"
@@ -82,23 +82,23 @@ label weddingFinal:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.1
-  call papyrusImgAngry from _call_papyrusImgAngry_1
+  call papyrusImgAngry
   papyrus "SANS!!"
   papyrus "WHAT ARE YOU DOING HERE?!"
   show sansImg hoddie done flip
   sans "..."
   sans "this is where i work?"
-  call papyrusImgSurprised from _call_papyrusImgSurprised_3
+  call papyrusImgSurprised
   papyrus "!!"
-  call papyrusImgDesperate from _call_papyrusImgDesperate
+  call papyrusImgDesperate
   papyrus "I'M SORRY!"
   papyrus "I'M... JUST..."
-  call papyrusImgWorried from _call_papyrusImgWorried_1
+  call papyrusImgWorried
   papyrus "SO NERVIOUS FOR SOME REASON"
   show sansImg hoddie neutral flip
   papyrus "I'M NOT THINKING STRAIGHT"
   gaster "THAT'S WHY I'M TELLING YOU NOT TO CONTINUE WITH THIS FOOLISHNESS"
-  call papyrusImgAnnoyed from _call_papyrusImgAnnoyed_1
+  call papyrusImgAnnoyed
   papyrus "YOU SHUT UP!"
   hide papyrusImg
   play sound "music/fx/steps.wav"
@@ -106,14 +106,14 @@ label weddingFinal:
   pause(1)
   show mettaton position zorder 2 at fade:
     ypos 0.2
-  call mettatonQuestion from _call_mettatonQuestion_2
+  call mettatonQuestion
   metatton "I do not believe Frisk told me about that"
   show sansImg hoddie neutral flip
   sans "oh, that?"
   sans "that's quite weird"
-  call mettatonDelight from _call_mettatonDelight_2
+  call mettatonDelight
   metatton "Ohhhhhhh..."
-  call mettatonComplicit from _call_mettatonComplicit_1
+  call mettatonComplicit
   metatton "I need to spend more time with him"
   show sansImg hoddie neutral
   sans "i can arrange that"
@@ -143,14 +143,14 @@ label weddingFinal:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.0
-  call papyrusImgCurious from _call_papyrusImgCurious
+  call papyrusImgCurious
   papyrus "WHOOOOOIEEEEEEE"
   papyrus "THE VIEW FROM HERE IS REALLY NICE!"
   show alphysImg casual nostalgic zorder 3 at fade:
     xpos 0.15
     ypos -0.2
   alphys "You can see the whole sea from here!"
-  call papyrusImgUhh from _call_papyrusImgUhh_1
+  call papyrusImgUhh
   papyrus "..."
   show alphysImg casual neutral
   alphys "I still remember the first time we saw it..."
@@ -158,19 +158,19 @@ label weddingFinal:
   papyrus "..."
   show alphysImg casual nostalgic
   alphys "And... I will have my wedding here! I..."
-  call papyrusImgSurprised from _call_papyrusImgSurprised_4
+  call papyrusImgSurprised
   papyrus "DO YOU KNOW ABOUT THE WEDDING RING?!"
   stop music
   pause(1)
   show alphysImg casual confused flip
   alphys "Wedding Ring?"
-  call papyrusImgUhh from _call_papyrusImgUhh_2
+  call papyrusImgUhh
   papyrus "AHH..."
   alphys "!!!"
   show alphysImg casual confused mild flip
   alphys "Undyne brought me a wedding ring?"
   papyrus "NOOOOO......"
-  call papyrusImgSurprised from _call_papyrusImgSurprised_5
+  call papyrusImgSurprised
   show alphysImg casual realizing
   play music "music/48 Alphys.mp3" fadein 1
   alphys "Undyne brought me a wedding ring!"
@@ -183,7 +183,7 @@ label weddingFinal:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.4
-  call papyrusImgWhy from _call_papyrusImgWhy
+  call papyrusImgWhy
   pause(4)
   show gaster trapped dissapointed at fade:
     xpos -0.1
@@ -192,7 +192,7 @@ label weddingFinal:
   gaster "YOU BLEW IT"
   papyrus "I BLEW IT!"
   gaster "YES, YOU DID THAT"
-  call papyrusImgUhhFlip from _call_papyrusImgUhhFlip_1
+  call papyrusImgUhhFlip
   papyrus "AND NOW WHAT WE WILL DO!?"
   hide gaster
   show sansImg hoddie sideglance zorder 6 at fade:
@@ -201,7 +201,7 @@ label weddingFinal:
   sans "uh..."
   show mettaton position zorder 2 at fade:
     ypos 0.2
-  call mettatonDelight from _call_mettatonDelight_3
+  call mettatonDelight
   show sansImg hoddie neutral flip
   metatton "Call the only monster who can fix this of course!"
   papyrus "UH?"
@@ -221,16 +221,16 @@ label weddingFinal:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.3
-  call papyrusImgDesperateFlip from _call_papyrusImgDesperateFlip
+  call papyrusImgDesperateFlip
   papyrus "I'M SORRY, I'M SOOOORRYYYY"
   hide papyrusImg
   show mettaton position zorder 2 at fade:
     ypos 0.2
     xpos 0.2
-  call mettatonQuestionFlip from _call_mettatonQuestionFlip
+  call mettatonQuestionFlip
   metatton "How to say this..."
   metatton "Papyrus just... well..."
-  call mettatonDelightFlip from _call_mettatonDelightFlip_1
+  call mettatonDelightFlip
   metatton "'Spoiled' Alphys with the surprise of the wedding"
   show undyneImg frustrated
   undyne "I still don't understand the order of all the things!"
@@ -246,14 +246,14 @@ label weddingFinal:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.3
-  call papyrusImgDesperateFlip from _call_papyrusImgDesperateFlip_1
+  call papyrusImgDesperateFlip
   undyne "Papyrus! Don't do this to me!"
   papyrus "I'M SOOOOO SOOOOOOORRRRRRRRYYYYYYYY"
   show undyneImg happy
   undyne "Ok, fine"
   hide undyneImg
   undyne "I get it, I get it"
-  call papyrusImgUhh from _call_papyrusImgUhh_3
+  call papyrusImgUhh
   papyrus "???"
   scene black with dissolve
   stop music fadeout 1
@@ -313,7 +313,7 @@ label weddingFinal:
     show papyrusImg position zorder 1 at fade:
       xpos 0.3
   pause(1)
-  call papyrusImgDelight from _call_papyrusImgDelight_3
+  call papyrusImgDelight
   show sansImg hoddie neutral zorder 6 at fade:
     xpos 0.4
     ypos 0.05
@@ -321,30 +321,30 @@ label weddingFinal:
   sans "yes, yes they are"
   show mettaton position zorder 2 at fade:
     ypos 0.2
-  call mettatonPresenting from _call_mettatonPresenting_5
+  call mettatonPresenting
   metatton "And we have to organize a wedding!"
   show lights at sparkles zorder 4
   play music "music/49 It's Showtime!.mp3"
-  call mettatonDelight from _call_mettatonDelight_4
+  call mettatonDelight
   metatton "Isn't that exciting!?"
-  call papyrusImgUhh from _call_papyrusImgUhh_4
+  call papyrusImgUhh
   papyrus "METTATON?"
   show sansImg hoddie neutral flip
   sans "right, right"
   sans "you must know a lot about weddings"
-  call mettatonSurprised from _call_mettatonSurprised_1
+  call mettatonSurprised
   metatton "Of course!"
   metatton "Who do you think am I?"
-  call papyrusImgSurprisedFlip from _call_papyrusImgSurprisedFlip_3
+  call papyrusImgSurprisedFlip
   papyrus "METTATON?"
   metatton "Exactly!"
-  call mettatonDelight from _call_mettatonDelight_5
+  call mettatonDelight
   metatton "And here the 2 best men are going to help make it glorious!"
   papyrus "WHO?!"
-  call mettatonSurprised from _call_mettatonSurprised_2
+  call mettatonSurprised
   metatton "You are Undyne's best friend!"
   papyrus "AM I?"
-  call mettatonPresenting from _call_mettatonPresenting_6
+  call mettatonPresenting
   metatton "Exactly my dear!"
   metatton "I got your contact, I got my contact in your phone, and as soon I'm back from my 3 weeks Mini tour..."
   papyrus "AAAAAAAAHHHHHHHHHHHHHHHHHHH"
@@ -353,14 +353,14 @@ label weddingFinal:
   pause(1)
   stop music
   play sound "music/fx/glassbreak.wav"
-  call mettatonSurprisedFlip from _call_mettatonSurprisedFlip_2
+  call mettatonSurprisedFlip
   pause(1)
   metatton "He jumped thru a window"
   sans "yes"
-  call mettatonComplicit from _call_mettatonComplicit_2
+  call mettatonComplicit
   metatton "Outside with no windows"
   sans "yes"
-  call mettatonCalamityFlip from _call_mettatonCalamityFlip
+  call mettatonCalamityFlip
   metatton "Oh my!"
   show sansImg hoddie content flip
   sans "i know he's too cool for words"
@@ -376,18 +376,18 @@ label weddingFinal:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.3
-  call papyrusImgAnnoyedFlip from _call_papyrusImgAnnoyedFlip_1
+  call papyrusImgAnnoyedFlip
   papyrus "ARE YOU SAYING IF I HAD STOOD QUIET, NOTHING WOULD HAVE HAPPENED?"
   gaster "YES, I'M SAYING THAT"
   gaster "..."
   show gaster trapped maybe
   gaster "LOOK, I'M NOT GOOD AT TRYING, I DON'T KNOW WHEN TO TRY"
-  call papyrusImgUhhFlip from _call_papyrusImgUhhFlip_2
+  call papyrusImgUhhFlip
   papyrus "BUT"
   papyrus "YOU * HAVE * TO TRY!"
   show gaster trapped oh
   gaster "BUT BY TRYING YOU MAKE IT WORSE"
-  call papyrusImgExplainingFlip from _call_papyrusImgExplainingFlip_2
+  call papyrusImgExplainingFlip
   papyrus "I NEED TO LEARN WHEN, NOT!"
   extend" TO TRY!"
   show gaster trapped sad

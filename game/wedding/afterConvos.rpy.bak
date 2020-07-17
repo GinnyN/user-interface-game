@@ -8,29 +8,29 @@ label afterAfternoon:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.3
-  call papyrusImgSurprisedFlip from _call_papyrusImgSurprisedFlip
+  call papyrusImgSurprisedFlip
   papyrus "WHAT WAS THAT?"
   show gaster trapped oh at fade:
     xpos -0.1
   gaster "WHAT WAS WHAT?"
-  call papyrusImgUhhFlip from _call_papyrusImgUhhFlip
+  call papyrusImgUhhFlip
   papyrus "THEY WERE TALKING ABOUT... WEDDINGS?"
   gaster "UH? WHAT'S THAT?"
-  call papyrusImgExplainingFlip from _call_papyrusImgExplainingFlip
+  call papyrusImgExplainingFlip
   papyrus "WEDDING"
   papyrus "A CEREMONY IN WHICH HUMANS GET MARRIED"
   gaster "THEY HAVE A CEREMONY FOR THAT?"
-  call papyrusImgDelightFlip from _call_papyrusImgDelightFlip
+  call papyrusImgDelightFlip
   papyrus "YEAH"
   papyrus "I HAVE NEVER FOUND THE USEFULNESS BEHIND THAT BUT IT SEEMS SOMETHING FUN TO DO IF YOU CAN"
   show gaster trapped dissapointed
   gaster "IT SOUND LIKE THE WORST IDEA EVER"
   gaster "ESTABLISHING FAMILY UNITS IS HARD IN GENERAL, BUT THE HUMANS HAVE TO MADE IT HARDER"
-  call papyrusImgNeutralFlip from _call_papyrusImgNeutralFlip
+  call papyrusImgNeutralFlip
   papyrus "YES, I HAVE SOME HUMAN FRIENDS IN THEIR INTERNET NOT LIKING THE IDEA EITHER"
   show gaster trapped angry
   gaster "DO YOU HAVE WHAT WITH HUMANS IN THEIR INTERNET?"
-  call papyrusImgAngryFlip from _call_papyrusImgAngryFlip
+  call papyrusImgAngryFlip
   papyrus "BUT THEY SHOULD NOT KNOW ABOUT THE WEDDING!"
   show gaster trapped oh
   gaster "WHICH WEDDING?"
@@ -38,22 +38,22 @@ label afterAfternoon:
   gaster "TO WHOM?"
   papyrus "TO EVERYBODY! EVEN ME!"
   gaster "THEN HOW TO DO YOU KNOW?"
-  call papyrusImgNeutralFlip from _call_papyrusImgNeutralFlip_1
+  call papyrusImgNeutralFlip
   papyrus "I PEAKED OVER UNDYNE DOING HER INVESTIGATION ABOUT WEDDINGS IN HER COMPUTER AND I ASKED HER"
   show gaster trapped dissapointed
   gaster "THAT ANSWER THAT QUESTION"
-  call papyrusImgAngry from _call_papyrusImgAngry
+  call papyrusImgAngry
   papyrus "BUT WHY EVERYBODY ELSE KNOWS???"
   show gaster trapped maybe
   gaster "MAYBE BECAUSE YOU ARE YELLING ABOUT IT IN THE MIDDLE OF THE FOREST TO NOTHING?"
-  call papyrusImgAngryFlip from _call_papyrusImgAngryFlip_1
+  call papyrusImgAngryFlip
   papyrus "IT'S THE FIRST TIME IN THIS LOOP I YELL YOU ABOUT IT!"
   papyrus "THAT DOESN'T COUNT!"
   show gaster trapped sorry
   gaster "PAPYRUS, MY BOY"
   gaster "SOMETHING SIMILAR MUST HAVE HAPPENED FOR YOUR FRIEND TO TELL THEM"
   gaster "I SUGGEST YOU STAY AWAY FROM THIS WHILE WE'RE WORKING ON SOLVING MY... "
-  call papyrusImgWorriedFlip from _call_papyrusImgWorriedFlip
+  call papyrusImgWorriedFlip
   extend "PROBLEM"
   papyrus "YEAH..."
   papyrus "MAYBE"
@@ -66,7 +66,7 @@ label afterAfternoon:
   show gaster trapped sad
   gaster "GO SLEEP"
   gaster "THIS IS NOT THAT IMPORTANT"
-  call papyrusImgAngryFlip from _call_papyrusImgAngryFlip_2
+  call papyrusImgAngryFlip
   show gaster trapped oh
   papyrus "WHAT?!"
   hide papyrusImg
@@ -95,38 +95,38 @@ label afterMorning:
   else:
     show papyrusImg position zorder 1 at fade:
       xpos 0.3
-  call papyrusImgSurprisedFlip from _call_papyrusImgSurprisedFlip_1
+  call papyrusImgSurprisedFlip
   papyrus "WHAT IS HAPPENING?!!"
   gaster "OH"
   show gaster trapped dissapointed
   gaster "I STILL DON'T GET IT"
-  call papyrusImgExplainingFlip from _call_papyrusImgExplainingFlip_1
+  call papyrusImgExplainingFlip
   papyrus "IT'S THE WEDDING!"
   show gaster trapped oh
   gaster "WHAT'S THAT?"
   papyrus "THE HUMAN CEREMONY FOR GETTING MARRIED"
   gaster "WHY ARE YOU TALKING ABOUT THAT?"
-  call papyrusImgAngryFlip from _call_papyrusImgAngryFlip_3
+  call papyrusImgAngryFlip
   papyrus "BECAUSE EVERYBODY SEEMS TO KNOW ABOUT THAT!"
   gaster "ABOUT WHAT?"
   papyrus "ABOUT THE WEDDING!"
   gaster "WHAT'S THAT?"
   papyrus "..."
-  call papyrusImgAnnoyedFlip from _call_papyrusImgAnnoyedFlip
+  call papyrusImgAnnoyedFlip
   papyrus "I'M NOT GOING TO REPEAT MYSELF"
   show gaster trapped dissapointed
   gaster "I STILL DON'T SEE THE PROBLEM"
   gaster "YOUR FRIENDS ARE ALREADY LIVING TOGETHER, THEN THEY ARE MARRIED"
   gaster "I DON'T SEE THE RELEVANCE FOR THAT HUMAN THING"
-  call papyrusImgAngryFlip from _call_papyrusImgAngryFlip_4
+  call papyrusImgAngryFlip
   papyrus "I'M NOT TALKING ABOUT THE RELEVANCE OF THE CEREMONY"
   papyrus "I'M TALKING ABOUT THE RELEVANCE OF EVERYBODY KNOWING ABOUT THAT WHEN IT SHOULD BE A SECRET!"
   show gaster trapped maybe
   gaster "WELL, I DON'T THINK YOUR FRIEND UNDYNE IS ABLE TO DO ANYTHING QUIETLY"
   papyrus "..."
-  call papyrusImgWorriedFlip from _call_papyrusImgWorriedFlip_1
+  call papyrusImgWorriedFlip
   papyrus "YES..."
-  call papyrusImgDelightFlip from _call_papyrusImgDelightFlip_1
+  call papyrusImgDelightFlip
   papyrus "BUT THAT'S PART OF WHY SHE'S AWESOME"
   show gaster trapped explain
   gaster "IF YOU HAVE SOME PROBLEMS WE COULD JUST RESTART THE WHOLE 3 DAYS"
@@ -136,7 +136,7 @@ label afterMorning:
   stop music fadeout 2
   pause(3)
   play music "music/46 Spear of Justice.mp3"
-  call papyrusImgAngryFlip from _call_papyrusImgAngryFlip_5
+  call papyrusImgAngryFlip
   papyrus "WHAT ARE YOU TALKING ABOUT? WE NEED TO SOLVE THIS!"
   show gaster trapped angry
   gaster "THERE'S NOTHING TO SOLVE AND NOTHING THAT DESERVE ACTUAL INTERVENTION"
