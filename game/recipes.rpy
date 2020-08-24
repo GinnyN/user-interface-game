@@ -62,6 +62,8 @@ define gasterScienceEncyclopedia = False
 define endingSans = False
 define altRoute = False
 define giveRingToUndyne = False
+define mettatonNumber = False
+define mettatonFreeMorning = False
 
 define weddingFrom = ""
 define weddingEnding = False
@@ -81,6 +83,7 @@ define visitSans = False
 define visitUndyne = False
 define visitAlphys = False
 define visitFrisk = False
+define metMettaton = False
 
 label resetVariables:
     $ day = 1
@@ -98,6 +101,7 @@ label resetVariables:
     $ giveRingToUndyne = False
     $ weddingFrom = ""
     $ weddingEnding = False
+    $ metMettaton = False
     return
 
 #Define Day Alternatives

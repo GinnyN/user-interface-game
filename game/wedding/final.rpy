@@ -348,6 +348,7 @@ label weddingFinal:
   metatton "Exactly my dear!"
   metatton "I got your contact, I got my contact in your phone, and as soon I'm back from my 3 weeks Mini tour..."
   papyrus "AAAAAAAAHHHHHHHHHHHHHHHHHHH"
+  $ mettatonNumber = True
   hide papyrusImg
   play sound "music/fx/steps.wav"
   pause(1)

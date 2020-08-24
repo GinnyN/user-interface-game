@@ -37,6 +37,8 @@ label questionsMenu:
             call gasterPastTree from _call_gasterPastTree
         "Something is wrong with the program" if not firstTry:
             call programAgainTree from _call_programAgainTree
+        "I have this number on my phone" if mettatonNumber:
+            call weirdNumber
         "4th Wall Breaking Stuff":
             call fourthWallTree from _call_fourthWallTree
         "Nothing Else":

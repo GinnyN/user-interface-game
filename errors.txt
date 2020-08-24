@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/ending/wedding-gaster.rpy", line 61: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    lineal 1 xpos 0.3
-             ^
+File "game/freeMorning.rpy", line 11: end of line expected.
+    jump displayMenuFreeMorning from _call_displayMenuFreeMorning
+                                ^
+
+File "game/freeMorning.rpy", line 79: end of line expected.
+    jump displayMenuFreeMorning from _call_displayMenuFreeMorning_1
+                                ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Jul  5 18:10:17 2020
+Sun Aug 23 16:15:34 2020

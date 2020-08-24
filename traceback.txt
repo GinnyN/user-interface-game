@@ -1,26 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/ending/wedding-papyrus.rpy", line 84, in script call
-    call mettatonWeddingSurprised
-  File "game/ending/wedding-papyrus.rpy", line 84, in script call
-    call mettatonWeddingSurprised
-ScriptError: could not find label 'mettatonWeddingSurprised'.
+  File "game/alt/day2.rpy", line 15, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
+  File "game/freeMorning.rpy", line 127, in script call
+    call displayMenuFreeMorning
+  File "game/freeMorning.rpy", line 130, in script call
+    if giveRingToUndyne and day == 3:
+  File "game/freeMorning/visit-mettaton.rpy", line 22, in script
+    mettaton "Papyrus?"
+Exception: Sayer 'mettaton' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/ending/wedding-papyrus.rpy", line 84, in script call
-    call mettatonWeddingSurprised
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1436, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/ending/wedding-papyrus.rpy", line 84, in script call
-    call mettatonWeddingSurprised
-  File "/Applications/renpy-7.3.5-sdk/renpy/script.py", line 898, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'mettatonWeddingSurprised'.
+  File "game/alt/day2.rpy", line 15, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
+  File "game/freeMorning.rpy", line 127, in script call
+    call displayMenuFreeMorning
+  File "game/freeMorning.rpy", line 130, in script call
+    if giveRingToUndyne and day == 3:
+  File "game/freeMorning/visit-mettaton.rpy", line 22, in script
+    mettaton "Papyrus?"
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 678, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 576, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'mettaton' is not defined.
 
-Darwin-19.5.0-x86_64-i386-64bit
+Darwin-19.6.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
-User Interface 0.3.1
-Thu Jul 16 21:44:46 2020
+User Interface 0.4.1
+Sun Aug 23 10:19:11 2020

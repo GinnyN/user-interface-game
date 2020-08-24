@@ -119,6 +119,7 @@ define toriel = Character("Toriel", color="#FF0000", what_prefix="* ", callback=
 define asgore = Character("Asgore", color="#FF0000", what_prefix="* ", callback=asgore_voice)
 define alphys = Character("Alphys", color="#FFFF00", what_prefix="* ", callback=alphys_voice)
 define metatton = Character("Metatton", color="#FFFF00", what_prefix="* ", callback=mettaton_voice)
+define phone = Character("???", what_prefix="* ", callback=default_voice)
 
 define monsterKid = Character("Kid", color="#AAAA00", what_prefix="* ", callback=default_voice)
 define grillsby = Character("Grillsby", color="#FFAA00", what_prefix="* ", callback=default_voice)
