@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/freeMorning.rpy", line 11: end of line expected.
-    jump displayMenuFreeMorning from _call_displayMenuFreeMorning
-                                ^
-
-File "game/freeMorning.rpy", line 79: end of line expected.
-    jump displayMenuFreeMorning from _call_displayMenuFreeMorning_1
-                                ^
+File "game/freeMorning/visit-mettaton.rpy", line 82: expected statement.
+    ypos 0.2
+          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Aug 23 16:15:34 2020
+Mon Aug 24 23:22:37 2020

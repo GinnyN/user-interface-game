@@ -99,21 +99,26 @@ label displayMenuFreeMorning:
         # Mettaton 
         "Let's call to Mettaton's number" if mettatonFreeMorning and not metMettaton:
             if day == 3 or giveRingToUndyne:
+                show papyrusImg coolDude delight
                 papyrus "LET'S CALL METTATON'S NUMBER!"
                 gaster "DON'T DO THAT"
                 gaster "THAT'S A BAD IDEA"
-                "Phone" "* skeeeeeeee *"
+                play sound "music/fx/telephone_ring.wav"
+                "Phone" "* Ring ring! *"
+                show papyrusImg coolDude thinking
                 papyrus "MAYBE HE'S BUSY"
                 gaster "HOPEFULLY PERMANENTLY"
                 "Phone" "* click *"
                 phone "You have called to a very personal number, if you have obtained this number ilegally, we will found you and we will destroy you"
+                show papyrusImg coolDude uhh
                 papyrus "DID I THOUGH?"
                 gaster "..."
                 gaster "YES"
+                show papyrusImg coolDude delight
                 papyrus "NO I DIDN'T"
                 phone "If you have not, please stay in line"
-                "Phone" "* skeeeeeeeeeeeee *"
                 "Phone" "* click *"
+                show papyrusImg coolDude uhh
                 phone "Right now Mettaton cannot talk with you"
                 phone "He's getting prepared for his first human tour and of course he's very busy"
                 phone "Thanks for calling"
@@ -121,6 +126,7 @@ label displayMenuFreeMorning:
                 phone "Except if you are an illegal caller"
                 phone "You must be dead by now"
                 "Phone" "* click *"
+                show papyrusImg coolDude neutral
                 papyrus "I WASN'T ILLEGAL AFTER ALL"
                 gaster "YOU SHOULDN'T RISK THAT AGAIN"
                 papyrus "BUT HE'S BUSY, LET'S SEE SOMEONE ELSE"
@@ -211,21 +217,27 @@ label displayMenuFreeAfternoon:
         # Mettaton 
         "Let's call to Mettaton's number" if mettatonFreeMorning and not metMettaton:
             if day == 3 or giveRingToUndyne:
+                show papyrusImg coolDude delight
                 papyrus "LET'S CALL METTATON'S NUMBER!"
                 gaster "DON'T DO THAT"
                 gaster "THAT'S A BAD IDEA"
-                "Phone" "* skeeeeeeee *"
+                play sound "music/fx/telephone_ring.wav"
+                pause(0.5)
+                "Phone" "* Ring ring! *"
+                show papyrusImg coolDude thinking
                 papyrus "MAYBE HE'S BUSY"
                 gaster "HOPEFULLY PERMANENTLY"
                 "Phone" "* click *"
                 phone "You have called to a very personal number, if you have obtained this number ilegally, we will found you and we will destroy you"
+                show papyrusImg coolDude uhh
                 papyrus "DID I THOUGH?"
                 gaster "..."
                 gaster "YES"
+                show papyrusImg coolDude delight
                 papyrus "NO I DIDN'T"
                 phone "If you have not, please stay in line"
-                "Phone" "* skeeeeeeeeeeeee *"
                 "Phone" "* click *"
+                show papyrusImg coolDude uhh
                 phone "Right now Mettaton cannot talk with you"
                 phone "He's getting prepared for his first human tour and of course he's very busy"
                 phone "Thanks for calling"
@@ -233,6 +245,7 @@ label displayMenuFreeAfternoon:
                 phone "Except if you are an illegal caller"
                 phone "You must be dead by now"
                 "Phone" "* click *"
+                show papyrusImg coolDude neutral
                 papyrus "I WASN'T ILLEGAL AFTER ALL"
                 gaster "YOU SHOULDN'T RISK THAT AGAIN"
                 papyrus "BUT HE'S BUSY, LET'S SEE SOMEONE ELSE"

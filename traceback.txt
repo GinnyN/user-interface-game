@@ -1,34 +1,138 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 65, in script call
+    call questionsEnd from _call_questionsEnd_4
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/questions/menu.rpy", line 64, in script call
+    call questionsMenu from _call_questionsMenu_1
+  File "game/questions/menu.rpy", line 64, in script call
+    call questionsMenu from _call_questionsMenu_1
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
   File "game/alt/day2.rpy", line 15, in script call
     call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
-  File "game/freeMorning.rpy", line 127, in script call
-    call displayMenuFreeMorning
-  File "game/freeMorning.rpy", line 130, in script call
-    if giveRingToUndyne and day == 3:
-  File "game/freeMorning/visit-mettaton.rpy", line 22, in script
-    mettaton "Papyrus?"
-Exception: Sayer 'mettaton' is not defined.
+  File "game/freeMorning.rpy", line 136, in script call
+    call visitMettaton
+  File "game/freeMorning/visit-mettaton.rpy", line 115, in script call
+    call mettatonSuprised
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 65, in script call
+    call questionsEnd from _call_questionsEnd_4
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/questions/menu.rpy", line 64, in script call
+    call questionsMenu from _call_questionsMenu_1
+  File "game/questions/menu.rpy", line 64, in script call
+    call questionsMenu from _call_questionsMenu_1
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 15, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
+  File "game/freeMorning.rpy", line 136, in script call
+    call visitMettaton
+  File "game/freeMorning/visit-mettaton.rpy", line 115, in script call
+    call mettatonSuprised
+ScriptError: could not find label 'mettatonSuprised'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 65, in script call
+    call questionsEnd from _call_questionsEnd_4
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/questions/menu.rpy", line 64, in script call
+    call questionsMenu from _call_questionsMenu_1
+  File "game/questions/menu.rpy", line 64, in script call
+    call questionsMenu from _call_questionsMenu_1
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
   File "game/alt/day2.rpy", line 15, in script call
     call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
-  File "game/freeMorning.rpy", line 127, in script call
-    call displayMenuFreeMorning
-  File "game/freeMorning.rpy", line 130, in script call
-    if giveRingToUndyne and day == 3:
-  File "game/freeMorning/visit-mettaton.rpy", line 22, in script
-    mettaton "Papyrus?"
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 678, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 576, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'mettaton' is not defined.
+  File "game/freeMorning.rpy", line 136, in script call
+    call visitMettaton
+  File "game/freeMorning/visit-mettaton.rpy", line 115, in script call
+    call mettatonSuprised
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1436, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 65, in script call
+    call questionsEnd from _call_questionsEnd_4
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/questions/menu.rpy", line 64, in script call
+    call questionsMenu from _call_questionsMenu_1
+  File "game/questions/menu.rpy", line 64, in script call
+    call questionsMenu from _call_questionsMenu_1
+  File "game/alt/day2.rpy", line 34, in script call
+    call questionsEnd from _call_questionsEnd_3
+  File "game/questions/menu.rpy", line 15, in script call
+    call questionsMenu from _call_questionsMenu
+  File "game/alt/day2.rpy", line 15, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
+  File "game/freeMorning.rpy", line 136, in script call
+    call visitMettaton
+  File "game/freeMorning/visit-mettaton.rpy", line 115, in script call
+    call mettatonSuprised
+  File "/Applications/renpy-7.3.5-sdk/renpy/script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'mettatonSuprised'.
 
 Darwin-19.6.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 User Interface 0.4.1
-Sun Aug 23 10:19:11 2020
+Mon Aug 24 23:27:01 2020

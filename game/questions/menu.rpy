@@ -48,7 +48,7 @@ label questionsMenu:
             gaster "VERY WELL"
             show gaster trapped neutral flip 
             gaster "GOOD NIGHT MY DEAR PAPYRUS"
-            stop music
+            stop music fadeout 1
             return
         "Reset" if resetFromQuestionMenu:
             show papyrusImg annoyed
