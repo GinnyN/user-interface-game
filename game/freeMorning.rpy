@@ -133,7 +133,7 @@ label displayMenuFreeMorning:
                 jump displayMenuFreeMorning
             else:
                 $ metMettaton = True
-                call visitMettaton
+                call visitMettaton from _call_visitMettaton
     
     if giveRingToUndyne and day == 3:
         call afterMorning from _call_afterMorning
@@ -252,7 +252,7 @@ label displayMenuFreeAfternoon:
                 jump displayMenuFreeMorning
             else:
                 $ metMettaton = True
-                call visitMettaton
+                call visitMettaton from _call_visitMettaton_1
     if giveRingToUndyne:
         call afterAfternoon from _call_afterAfternoon
     return

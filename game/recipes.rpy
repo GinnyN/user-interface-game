@@ -64,6 +64,7 @@ define altRoute = False
 define giveRingToUndyne = False
 define mettatonNumber = False
 define mettatonFreeMorning = False
+define wekufeMeeting = 0
 
 define weddingFrom = ""
 define weddingEnding = False

@@ -1,138 +1,26 @@
-﻿I'm sorry, but an uncaught exception occurred.
+pI'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 65, in script call
-    call questionsEnd from _call_questionsEnd_4
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 15, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
-  File "game/freeMorning.rpy", line 136, in script call
-    call visitMettaton
-  File "game/freeMorning/visit-mettaton.rpy", line 115, in script call
-    call mettatonSuprised
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 65, in script call
-    call questionsEnd from _call_questionsEnd_4
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 15, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
-  File "game/freeMorning.rpy", line 136, in script call
-    call visitMettaton
-  File "game/freeMorning/visit-mettaton.rpy", line 115, in script call
-    call mettatonSuprised
-ScriptError: could not find label 'mettatonSuprised'.
+IOError: [Errno 2] No such file or directory: u'/Users/ginnyn/Desktop/Renpy Projects/user-interface-game/game/saves/persistent.1600531552.tmp'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 65, in script call
-    call questionsEnd from _call_questionsEnd_4
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 15, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
-  File "game/freeMorning.rpy", line 136, in script call
-    call visitMettaton
-  File "game/freeMorning/visit-mettaton.rpy", line 115, in script call
-    call mettatonSuprised
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1436, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 65, in script call
-    call questionsEnd from _call_questionsEnd_4
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/alt/day2.rpy", line 34, in script call
-    call questionsEnd from _call_questionsEnd_3
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/alt/day2.rpy", line 15, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
-  File "game/freeMorning.rpy", line 136, in script call
-    call visitMettaton
-  File "game/freeMorning/visit-mettaton.rpy", line 115, in script call
-    call mettatonSuprised
-  File "/Applications/renpy-7.3.5-sdk/renpy/script.py", line 898, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'mettatonSuprised'.
+  File "/Applications/renpy-7.3.5-sdk/renpy/bootstrap.py", line 316, in bootstrap
+    renpy.main.main()
+  File "/Applications/renpy-7.3.5-sdk/renpy/main.py", line 581, in main
+    renpy.persistent.update(True)
+  File "/Applications/renpy-7.3.5-sdk/renpy/persistent.py", line 391, in update
+    save()
+  File "/Applications/renpy-7.3.5-sdk/renpy/persistent.py", line 407, in save
+    renpy.loadsave.location.save_persistent(data)
+  File "/Applications/renpy-7.3.5-sdk/renpy/savelocation.py", line 490, in save_persistent
+    l.save_persistent(data)
+  File "/Applications/renpy-7.3.5-sdk/renpy/savelocation.py", line 347, in save_persistent
+    with open(fn_tmp, "wb") as f:
+IOError: [Errno 2] No such file or directory: u'/Users/ginnyn/Desktop/Renpy Projects/user-interface-game/game/saves/persistent.1600531552.tmp'
 
 Darwin-19.6.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 User Interface 0.4.1
-Mon Aug 24 23:27:01 2020
+Sat Sep 19 14:12:25 2020

@@ -26,7 +26,7 @@ label questionsMenu:
         "Political Geography":
             call politicalGeographyTree from _call_politicalGeographyTree
         "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
-            call programmingTree
+            call programmingTree from _call_programmingTree
         "Papers with Weird Symbols only I can read" if papersPapyrusCreation and politicalGeography > 2:
             call sansPapyrusPast from _call_sansPapyrusPast
         #"Demography" if politicalGeography > 0:
@@ -37,6 +37,8 @@ label questionsMenu:
             call gasterPastTree from _call_gasterPastTree
         "Something is wrong with the program" if not firstTry:
             call programAgainTree from _call_programAgainTree
+        "I have this number on my phone" if mettatonNumber:
+            call weirdNumber
         "4th Wall Breaking Stuff":
             call fourthWallTree from _call_fourthWallTree
         "Nothing Else":
@@ -46,7 +48,7 @@ label questionsMenu:
             gaster "VERY WELL"
             show gaster trapped neutral flip 
             gaster "GOOD NIGHT MY DEAR PAPYRUS"
-            stop music
+            stop music fadeout 1
             return
         "Reset" if resetFromQuestionMenu:
             show papyrusImg annoyed

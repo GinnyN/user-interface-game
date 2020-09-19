@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/freeMorning/visit-mettaton.rpy", line 82: expected statement.
-    ypos 0.2
-          ^
+File "game/questions/wekufe.rpy", line 43: expected statement.
+    wekufeMeeting = 1
+                  ^
+
+File "game/questions/wekufe.rpy", line 64: expected statement.
+    wekufeMeeting = 3
+                  ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Aug 24 23:22:37 2020
+Sat Sep 19 13:07:27 2020
