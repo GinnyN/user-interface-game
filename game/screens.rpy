@@ -239,13 +239,9 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
 
-style choice_chosen_button is choice_button:
-    properties gui.button_properties("chosen_button")
-    activate_sound "music/fx/shop_purchase.wav"
-    hover_sound "music/fx/shop_select.wav"
+style choice_chosen_button is choice_button
 
 style choice_chosen_button_text is choice_button_text:
-    properties gui.button_properties("chosen_button")
     color "#9999cc"
 
 

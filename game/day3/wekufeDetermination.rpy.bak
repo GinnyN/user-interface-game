@@ -115,7 +115,7 @@ label wekufe3rdDayDetermination:
     papyrus "YOU ARE?"
     cuero "Ah"
     cuero "The name I give is Cuero"
-    call changeWekufe from _call_changeWekufe_1
+    call changeWekufe
     $ persistent.wekufeNames = True  
     $ renpy.save_persistent()
     show cuero flip zorder 0 at fade:

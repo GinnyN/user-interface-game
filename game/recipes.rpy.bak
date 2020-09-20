@@ -104,7 +104,7 @@ label resetVariables:
     $ weddingEnding = False
     $ metMettaton = False
     if persistent.wekufeNames:
-        call changeWekufe from _call_changeWekufe
+        call changeWekufe
     return
 
 #Define Day Alternatives

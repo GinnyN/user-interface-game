@@ -22,7 +22,7 @@ label questionsMenu:
         "What do I do with this Storage Unit?":
             call pendriveTree from _call_pendriveTree
         "Those Weird Monsters I found":
-            call monstersForest
+            call monstersForest from _call_monstersForest
         "Political Geography":
             call politicalGeographyTree from _call_politicalGeographyTree
         "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
@@ -67,9 +67,9 @@ label questionsMenu:
 label monstersForest:
     menu:
         "Those Weird Monsters I found":
-            call monstersForest1
+            call monstersForest1 from _call_monstersForest1
         "Wekufe Theory about Body and Soul" if wekufeMeeting > 2:
-            call wekufeTheory
+            call wekufeTheory from _call_wekufeTheory
         "Back":
             return
     return

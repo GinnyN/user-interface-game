@@ -10,7 +10,7 @@ label day3:
         "Let's them go alone":
             call leaveThemAlone from _call_leaveThemAlone
         "Comment about the tanks with determination" if wekufeMeeting > 0:
-            call wekufe3rdDayDetermination
+            call wekufe3rdDayDetermination from _call_wekufe3rdDayDetermination
             jump endOfDay3
             if wekufeMeeting == 1:
                 $ wekufeMeeting = 2
