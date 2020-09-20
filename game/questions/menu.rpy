@@ -21,8 +21,8 @@ label questionsMenu:
             call decisions from _call_decisions
         "What do I do with this Storage Unit?":
             call pendriveTree from _call_pendriveTree
-        #"Those Weird Monsters I found":
-        #    call monstersForest from _call_monstersForest
+        "Those Weird Monsters I found":
+            call monstersForest from _call_monstersForest
         "Political Geography":
             call politicalGeographyTree from _call_politicalGeographyTree
         "I know something I really didn't knew I knew" if papyrusKnowsProgramming:
@@ -38,7 +38,7 @@ label questionsMenu:
         "Something is wrong with the program" if not firstTry:
             call programAgainTree from _call_programAgainTree
         "I have this number on my phone" if mettatonNumber:
-            call weirdNumber
+            call weirdNumber from _call_weirdNumber
         "4th Wall Breaking Stuff":
             call fourthWallTree from _call_fourthWallTree
         "Nothing Else":
@@ -62,6 +62,16 @@ label questionsMenu:
                     gaster "VERY WELL"
                     gaster "BE CAREFUL WITH CLICKING NEXT TIME"
     call questionsMenu from _call_questionsMenu_1
+    return
+
+label monstersForest:
+    menu:
+        "Those Weird Monsters I found":
+            call monstersForest1 from _call_monstersForest1
+        "Wekufe Theory about Body and Soul" if wekufeMeeting > 2:
+            call wekufeTheory from _call_wekufeTheory
+        "Back":
+            return
     return
 
 label programAgainTree:

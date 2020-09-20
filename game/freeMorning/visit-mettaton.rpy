@@ -80,7 +80,7 @@ label visitMettaton:
     hide gaster
     show mettaton position zorder 2 at fade:
         ypos 0.2
-    call mettatonDelight
+    call mettatonDelight from _call_mettatonDelight_6
     metatton "Papyruuusssss"
     show papyrusImg coolDude surprised
     papyrus "ARGH"
@@ -91,17 +91,17 @@ label visitMettaton:
     metatton "I always wanted to talk with you"
     show papyrusImg coolDude surprised happy flip
     papyrus "REALLY?"
-    call mettatonCalamity
+    call mettatonCalamity from _call_mettatonCalamity_1
     metatton "I mean..."
-    call mettatonComplicit
+    call mettatonComplicit from _call_mettatonComplicit_3
     metatton "You were sometimes there when I went to visit Alphys and Undyne, but never seem to stay long enough so we could, you know, talk"
     metatton "Then Undyne explains me you get nervous because you are a fan, which I'm very thankful"
-    call mettatonThinking
+    call mettatonThinking from _call_mettatonThinking_2
     metatton "But I was thinking that, you know, we should know each other better if we are going to, coincide so many times"
     metatton "Plus, everybody says so many nice stuff about you"
     show papyrusImg coolDude careful flip
     papyrus "REALLY?"
-    call mettatonQuestion
+    call mettatonQuestion from _call_mettatonQuestion_3
     metatton "Undyne is always telling you are way too nice sometimes"
     metatton "And Alphys is always trying to remember your drills"
     metatton "Or Frisk tell me about your hang outs"
@@ -112,7 +112,7 @@ label visitMettaton:
     pause(1)
     stop music
     play sound "music/fx/glassbreak.wav"
-    call mettatonSurprised
+    call mettatonSurprised from _call_mettatonSurprised_3
     pause(1)
     "* window crash *"
     metatton "Always comments how cool you are"

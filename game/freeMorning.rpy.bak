@@ -8,7 +8,7 @@ label freeMorning:
     show papyrusImg coolDude thinking
     papyrus "WHAT SHALL I DO?"
     
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning
+    jump displayMenuFreeMorning
 
     return
 
@@ -25,7 +25,7 @@ label displayMenuFreeMorning:
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'toriel'
-            call weddingTorielSans
+            call weddingTorielSans from _call_weddingTorielSans
 
         # Asgore
         "Go grocery shopping" if not metAsgore and not giveRingToUndyne:
@@ -36,7 +36,7 @@ label displayMenuFreeMorning:
             call groceryShopping from _call_groceryShopping
         "I never know where the King is in the mornings" if not metAsgore and giveRingToUndyne:
             $ weddingFrom = 'asgore'
-            call weddingFriskAsgore
+            call weddingFriskAsgore from _call_weddingFriskAsgore
             $ metAsgore = True
             $ visitFrisk = True
         
@@ -49,7 +49,7 @@ label displayMenuFreeMorning:
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'sans'
-            call weddingTorielSans
+            call weddingTorielSans from _call_weddingTorielSans_1
 
         "Go check with Undyne" if not visitUndyne:
             papyrus "I SHOULD CHECK OUT WITH UNDYNE"
@@ -76,7 +76,7 @@ label displayMenuFreeMorning:
                 gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
                 show papyrusImg coolDude delight
                 papyrus "THAT'S A GOOD IDEA"
-                call displayMenuFreeMorning from _call_displayMenuFreeMorning_1
+                jump displayMenuFreeMorning
             else:
                 $ giveRingToUndyne = False
                 $ visitAlphys = True
@@ -94,11 +94,50 @@ label displayMenuFreeMorning:
             $ metAsgore = True
             $ visitFrisk = True
             $ weddingFrom = 'frisk'
-            call weddingFriskAsgore
+            call weddingFriskAsgore from _call_weddingFriskAsgore_1
+
+        # Mettaton 
+        "Let's call to Mettaton's number" if mettatonFreeMorning and not metMettaton:
+            if day == 3 or giveRingToUndyne:
+                show papyrusImg coolDude delight
+                papyrus "LET'S CALL METTATON'S NUMBER!"
+                gaster "DON'T DO THAT"
+                gaster "THAT'S A BAD IDEA"
+                play sound "music/fx/telephone_ring.wav"
+                "Phone" "* Ring ring! *"
+                show papyrusImg coolDude thinking
+                papyrus "MAYBE HE'S BUSY"
+                gaster "HOPEFULLY PERMANENTLY"
+                "Phone" "* click *"
+                phone "You have called to a very personal number, if you have obtained this number ilegally, we will found you and we will destroy you"
+                show papyrusImg coolDude uhh
+                papyrus "DID I THOUGH?"
+                gaster "..."
+                gaster "YES"
+                show papyrusImg coolDude delight
+                papyrus "NO I DIDN'T"
+                phone "If you have not, please stay in line"
+                "Phone" "* click *"
+                show papyrusImg coolDude uhh
+                phone "Right now Mettaton cannot talk with you"
+                phone "He's getting prepared for his first human tour and of course he's very busy"
+                phone "Thanks for calling"
+                phone "He will contact you eventually after the tour"
+                phone "Except if you are an illegal caller"
+                phone "You must be dead by now"
+                "Phone" "* click *"
+                show papyrusImg coolDude neutral
+                papyrus "I WASN'T ILLEGAL AFTER ALL"
+                gaster "YOU SHOULDN'T RISK THAT AGAIN"
+                papyrus "BUT HE'S BUSY, LET'S SEE SOMEONE ELSE"
+                jump displayMenuFreeMorning
+            else:
+                $ metMettaton = True
+                call visitMettaton
     
     if giveRingToUndyne and day == 3:
-        call afterMorning
-        call weddingFinal
+        call afterMorning from _call_afterMorning
+        call weddingFinal from _call_weddingFinal
     return
     
 
@@ -112,7 +151,7 @@ label displayMenuFreeAfternoon:
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'toriel'
-            call weddingTorielSans
+            call weddingTorielSans from _call_weddingTorielSans_2
 
         # Asgore
         "Maybe Asgore can help me with this" if not metAsgore and not giveRingToUndyne:
@@ -120,7 +159,7 @@ label displayMenuFreeAfternoon:
             $ metAsgore = True
         "I think the king said something about my topiary I guess" if not metAsgore and giveRingToUndyne:
             $ weddingFrom = 'asgore'
-            call weddingFriskAsgore
+            call weddingFriskAsgore from _call_weddingFriskAsgore_2
             $ metAsgore = True
             $ visitFrisk = True
             
@@ -132,7 +171,7 @@ label displayMenuFreeAfternoon:
             $ helpedToriel = True
             $ visitSans = True
             $ weddingFrom = 'sans'
-            call weddingTorielSans
+            call weddingTorielSans from _call_weddingTorielSans_3
 
         # Undyne
         "Maybe I should check with Undyne" if not visitUndyne and not giveRingToUndyne:
@@ -173,7 +212,47 @@ label displayMenuFreeAfternoon:
             $ metAsgore = True
             $ visitFrisk = True
             $ weddingFrom = 'frisk'
-            call weddingFriskAsgore
+            call weddingFriskAsgore from _call_weddingFriskAsgore_3
+
+        # Mettaton 
+        "Let's call to Mettaton's number" if mettatonFreeMorning and not metMettaton:
+            if day == 3 or giveRingToUndyne:
+                show papyrusImg coolDude delight
+                papyrus "LET'S CALL METTATON'S NUMBER!"
+                gaster "DON'T DO THAT"
+                gaster "THAT'S A BAD IDEA"
+                play sound "music/fx/telephone_ring.wav"
+                pause(0.5)
+                "Phone" "* Ring ring! *"
+                show papyrusImg coolDude thinking
+                papyrus "MAYBE HE'S BUSY"
+                gaster "HOPEFULLY PERMANENTLY"
+                "Phone" "* click *"
+                phone "You have called to a very personal number, if you have obtained this number ilegally, we will found you and we will destroy you"
+                show papyrusImg coolDude uhh
+                papyrus "DID I THOUGH?"
+                gaster "..."
+                gaster "YES"
+                show papyrusImg coolDude delight
+                papyrus "NO I DIDN'T"
+                phone "If you have not, please stay in line"
+                "Phone" "* click *"
+                show papyrusImg coolDude uhh
+                phone "Right now Mettaton cannot talk with you"
+                phone "He's getting prepared for his first human tour and of course he's very busy"
+                phone "Thanks for calling"
+                phone "He will contact you eventually after the tour"
+                phone "Except if you are an illegal caller"
+                phone "You must be dead by now"
+                "Phone" "* click *"
+                show papyrusImg coolDude neutral
+                papyrus "I WASN'T ILLEGAL AFTER ALL"
+                gaster "YOU SHOULDN'T RISK THAT AGAIN"
+                papyrus "BUT HE'S BUSY, LET'S SEE SOMEONE ELSE"
+                jump displayMenuFreeMorning
+            else:
+                $ metMettaton = True
+                call visitMettaton
     if giveRingToUndyne:
-        call afterAfternoon
+        call afterAfternoon from _call_afterAfternoon
     return

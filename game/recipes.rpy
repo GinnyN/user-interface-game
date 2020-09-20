@@ -64,6 +64,7 @@ define altRoute = False
 define giveRingToUndyne = False
 define mettatonNumber = False
 define mettatonFreeMorning = False
+define wekufeMeeting = 0
 
 define weddingFrom = ""
 define weddingEnding = False
@@ -102,6 +103,8 @@ label resetVariables:
     $ weddingFrom = ""
     $ weddingEnding = False
     $ metMettaton = False
+    if persistent.wekufeNames:
+        call changeWekufe from _call_changeWekufe
     return
 
 #Define Day Alternatives

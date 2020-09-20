@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/freeMorning/visit-mettaton.rpy", line 82: expected statement.
-    ypos 0.2
-          ^
+File "game/screens.rpy", line 216: for expects a non-empty block.
+    else:
+         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Aug 24 23:22:37 2020
+Sun Sep 20 00:35:48 2020
