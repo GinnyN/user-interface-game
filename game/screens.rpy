@@ -211,13 +211,15 @@ screen choice(items):
 
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            if i.chosen:
+                textbutton i.caption style "choice_chosen_button" action i.action
+            else:
+                textbutton i.caption style "choice_button" action i.action
 
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
 define config.narrator_menu = True
-
 
 style choice_vbox is vbox
 style choice_button is button
@@ -236,6 +238,15 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
+
+style choice_chosen_button is choice_button:
+    properties gui.button_properties("chosen_button")
+    activate_sound "music/fx/shop_purchase.wav"
+    hover_sound "music/fx/shop_select.wav"
+
+style choice_chosen_button_text is choice_button_text:
+    properties gui.button_properties("chosen_button")
+    color "#9999cc"
 
 
 ## Quick Menu screen ###########################################################

@@ -55,6 +55,7 @@ image day3 nightview background = "background/day3/nightview-background.png"
 image day3 kids cave = "background/day3/kids-in-cave.png"
 image day3 wekufeTalk frame1 = "background/day3/forest-wekufeTalk-frame-1.png"
 image day3 wekufeTalk frame2 = "background/day3/forest-wekufeTalk-frame-2.png"
+image day3 wekufeTalk labMount = "background/day3/mount-wekufeLab-pan.png"
 #Day 4
 image day4 gaster = "background/day4/gaster.png"
 image day4 homeworkAttack = "background/day4/homeworkAttack.png"

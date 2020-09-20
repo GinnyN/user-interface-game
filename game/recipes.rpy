@@ -103,6 +103,8 @@ label resetVariables:
     $ weddingFrom = ""
     $ weddingEnding = False
     $ metMettaton = False
+    if persistent.wekufeNames:
+        call changeWekufe
     return
 
 #Define Day Alternatives

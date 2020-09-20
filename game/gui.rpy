@@ -213,6 +213,17 @@ define gui.choice_button_text_idle_color = "#cccccc"
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = "#444444"
 
+define gui.chosen_button_width = 658
+define gui.chosen_button_height = None
+define gui.chosen_button_tile = False
+define gui.chosen_button_borders = Borders(84, 5, 84, 5)
+define gui.chosen_button_text_font = gui.text_font
+define gui.chosen_button_text_size = gui.text_size
+define gui.chosen_button_text_xalign = 0.5
+define gui.chosen_button_text_idle_color = "#cc0000"
+define gui.chosen_button_text_hover_color = "#ffffff"
+define gui.chosen_button_text_insensitive_color = "#444444"
+
 
 ## File Slot Buttons ###########################################################
 ##

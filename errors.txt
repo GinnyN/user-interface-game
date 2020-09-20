@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/questions/wekufe.rpy", line 43: expected statement.
-    wekufeMeeting = 1
-                  ^
-
-File "game/questions/wekufe.rpy", line 64: expected statement.
-    wekufeMeeting = 3
-                  ^
+File "game/screens.rpy", line 216: for expects a non-empty block.
+    else:
+         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Sep 19 13:07:27 2020
+Sun Sep 20 00:35:48 2020

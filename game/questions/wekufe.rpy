@@ -1,43 +1,68 @@
 label monstersForest1:
+  show papyrusImg uhh
   papyrus "I FOUND THE WEIRDEST, STIFFIEST MONSTERS IN THE FOREST WHEN WE WERE SEARCHING FOR BAD HUMANS"
+  show papyrusImg confused
   papyrus "TURN OUT THEY WERE KIDNAPPING KIDS AS WELL!"
+  show gaster trapped sad flip
   gaster "THEY MUST BE WEKUFES"
+  show papyrusImg uhh
   papyrus "DO THEY LOOK LIKE REALLY STIFF MONSTERS?"
+  show gaster trapped neutral flip
   gaster "THEY LOOK LIKE REALLY STIFF... THINGS"
   papyrus "HUH?"
+  show gaster trapped dissapointed flip
   gaster "I'M DEEPLY SORRY, BUT I DON'T KNOW THAT MUCH ABOUT THEM"
   papyrus "I'M QUITE CONFUSED"
+  show papyrusImg annoyed
+  show gaster trapped oh flip
   papyrus "THE KID THEY WERE KIDNAPPING AND WE SAVED WAS, LIKE, 3 YEARS OLDER THAN FRISK"
   papyrus "AND FRISK IS REALLY STRONG!"
   papyrus "IF THOSE THINGS WERE MONSTERS AND ANY OF THE KIDS THEY KIDNAPPED REALIZED THAT"
   papyrus "BY THIS POINT ALL OF THEM WOULD BE DUST"
   gaster "MAYBE THEY ARE REALLY GOOD AT SCARING KIDS"
   gaster "OR..."
+  show gaster trapped neutral flip
   gaster "THEY ARE NOT MONSTERS"
-  papyrus "THEN THEY ARE A TYPE OF HUMAN?"
+  show papyrusImg uhh
+  papyrus "THEN ARE THEY A TYPE OF HUMAN?"
   gaster "..."
+  show gaster trapped dissapointed flip
   gaster "I... DON'T... KNOW..."
   gaster "I DON'T KNOW THAT MUCH ABOUT HUMANS"
+  show gaster trapped neutral flip
   gaster "MY FIRST ANSWER WOULD BE NO"
   gaster "BUT I MIGHT MISSING SOME MORE DETAILED INFORMATION"
   gaster "WE WILL NEED TO ASK AN EXPERT, BUT WHO AND HOW?"
+  show papyrusImg delight
   papyrus "MAYBE I CAN JUST GO AND ASK THEM"
   gaster "..."
+  show papyrusImg annoyed
   papyrus "WHAT?"
+  show gaster trapped maybe flip
   gaster "I'M TRYING TO THINK WHY THAT IS A BAD IDEA"
+  show papyrusImg delight
   papyrus "COME ON, IF SOMETHING WEIRD HAPPENS TO ME YOU CAN JUST RESET, RIGHT?"
+  show gaster trapped sorry flip
   gaster "IT HURTS A LOT ANYWAY PAPYRUS, DO NOT FORCE ME TO DO THAT"
+  show papyrusImg confused
   papyrus "BUT, WHAT ELSE I CAN DO"
+  show papyrusImg neutral
   papyrus "GO FORWARD AND JUST ASK THEM IT CAN BE A GOOD IDEA AFTER ALL"
   papyrus "IF THEY ARE MONSTERS I CAN DEFEND MYSELF"
   gaster "AND IF THEY ARE HUMANS YOU WOULD BE DEAD"
+  show papyrusImg delight
   papyrus "BUT YOU WILL RESET AND PROBLEM SOLVED"
   gaster "..."
+  show gaster trapped oh flip
   gaster "YOU DON'T CARE ABOUT DYING"
   gaster "YOU WERE PLANNING SINCE THE BEGINNING TO GUILD TRIP THE HUMAN INTO RESETTING DURING THAT PLAYTHROUGH"
+  show papyrusImg uhh
   papyrus "OH, SO THAT'S WHY YOU HATE FRISK"
+  show papyrusImg neutral
   papyrus "GOOD I DON'T REMEMBER THAT"
+  show gaster trapped dissapointed flip
   gaster "FINE, I'M GOING TO RESET IF SOMETHING GOES WRONG..."
+  show papyrusImg delight
   papyrus "THANKS"
   if wekufeMeeting == 0:
     $ wekufeMeeting = 1
