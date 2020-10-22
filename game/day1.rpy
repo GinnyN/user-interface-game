@@ -20,6 +20,7 @@ label day1:
                     xalign 0.4
                 jump normalPath
             "Ask Gaster the Position" if gasterInformPosition:
+                $ altPath = True
                 call gasterInformThePosition from _call_gasterInformThePosition
                 jump altPath
             

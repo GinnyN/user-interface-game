@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 216: for expects a non-empty block.
-    else:
-         ^
+File "game/freeMorning/toriel-wekufe-question.rpy", line 126: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Sep 20 00:35:48 2020
+Wed Oct 21 23:19:50 2020

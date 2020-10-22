@@ -68,7 +68,7 @@ label monstersForest:
     menu:
         "Those Weird Monsters I found":
             call monstersForest1 from _call_monstersForest1
-        "Wekufe Theory about Body and Soul" if wekufeMeeting > 2:
+        "Wekufe Theory about Body and Soul" if wekufeMeeting > 1:
             call wekufeTheory from _call_wekufeTheory
         "Back":
             return

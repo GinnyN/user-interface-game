@@ -35,7 +35,6 @@ transform panningSuit:
 
 #Count Variables
 define resets = 0
-define papyrusTraining = 0
 
 #Define Mettaton Variable
 define mettatonModel = "v1"
@@ -65,6 +64,7 @@ define giveRingToUndyne = False
 define mettatonNumber = False
 define mettatonFreeMorning = False
 define wekufeMeeting = 0
+define askTorielWekufe = False
 
 define weddingFrom = ""
 define weddingEnding = False
@@ -76,6 +76,7 @@ define whoRescueMauricio = False
 define gasterPapyrusSansDad = False
 define papyrusKnowsProgramming = False
 define resetFromQuestionMenu = False
+define gasterDreamShattered = False
 
 #Free Mornings
 define helpedToriel = False

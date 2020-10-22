@@ -179,4 +179,6 @@ label wekufe3rdDayDetermination:
     show gaster trapped sad flip
     gaster "LET'S FINISH THE DAY SO MAYBE WE CAN PROCESS THIS"
     papyrus "OK"
+    if wekufeMeeting == 1:
+        $ wekufeMeeting = 2
 return
