@@ -29,19 +29,13 @@ While running game code:
     call questionsEnd from _call_questionsEnd_3
   File "game/questions/menu.rpy", line 15, in script call
     call questionsMenu from _call_questionsMenu
-  File "game/day3.rpy", line 21, in script call
-    call questionsEnd from _call_questionsEnd_1
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/alt/day2.rpy", line 50, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning_3
+  File "game/alt/day2.rpy", line 15, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
   File "game/freeMorning.rpy", line 110, in script call
     call torielWekufeQuestion
-  File "game/freeMorning/toriel-wekufe-question.rpy", line 32, in script
-    if !altRoute:
-SyntaxError: invalid syntax (toriel-wekufe-question.rpy, line 32)
+  File "game/freeMorning/toriel-wekufe-question.rpy", line 128, in script
+    ivunche "Hey, Boss..."
+Exception: Sayer 'ivunche' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -74,27 +68,19 @@ Full traceback:
     call questionsEnd from _call_questionsEnd_3
   File "game/questions/menu.rpy", line 15, in script call
     call questionsMenu from _call_questionsMenu
-  File "game/day3.rpy", line 21, in script call
-    call questionsEnd from _call_questionsEnd_1
-  File "game/questions/menu.rpy", line 15, in script call
-    call questionsMenu from _call_questionsMenu
-  File "game/questions/menu.rpy", line 64, in script call
-    call questionsMenu from _call_questionsMenu_1
-  File "game/alt/day2.rpy", line 50, in script call
-    call displayMenuFreeMorning from _call_displayMenuFreeMorning_3
+  File "game/alt/day2.rpy", line 15, in script call
+    call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
   File "game/freeMorning.rpy", line 110, in script call
     call torielWekufeQuestion
-  File "game/freeMorning/toriel-wekufe-question.rpy", line 32, in script
-    if !altRoute:
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2057, in py_eval
-    code = py_compile(code, 'eval')
-  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 692, in py_compile
-    raise e
-SyntaxError: invalid syntax (toriel-wekufe-question.rpy, line 32)
+  File "game/freeMorning/toriel-wekufe-question.rpy", line 128, in script
+    ivunche "Hey, Boss..."
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 678, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 576, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'ivunche' is not defined.
 
 Darwin-19.6.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 User Interface 0.4.2
-Wed Oct 21 23:31:14 2020
+Thu Oct 22 19:52:58 2020

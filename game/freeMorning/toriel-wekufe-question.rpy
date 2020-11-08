@@ -1,4 +1,7 @@
 label torielWekufeQuestion:
+    $ renpy.retain_after_load()
+    $ persistent.endingPapyrus = False
+    $ persistent.endingGaster = True
     papyrus "OK"
     papyrus "I NEED TO DO THIS..."
     papyrus "BUT I DON'T WANNA"
@@ -123,21 +126,21 @@ label torielWekufeQuestion:
 
     "* Papyrus runs directly to the laboratory at Mount Anemi"
    
-    if not altRoute:
+    if altRoute:
         "* Inside the Fortress *"
-        ivunche "Hey, Boss..."
+        invunche "Hey, Boss..."
         trauco "What?!"
-        ivunche "It seems a... very thin human is running up here..."
+        invunche "It seems a... very thin human is running up here..."
         trauco "Wait"
         trauco "That's not one of the monsters?"
-        ivunche "Which ones?"
+        invunche "Which ones?"
         trauco "The ones who saved our last kid this week"
-        ivunche "Ohhh..."
+        invunche "Ohhh..."
         trauco "Hey!"
         voladora "What's up boss?"
         trauco "Go tell them what's going on"
         trauco "We'll try to keep them busy"
-        ivunche "No, I will definitly not"
+        invunche "No, I will definitly not"
         cuero "There's no need"
         cuero "I will talk with him"
         trauco "But..."
@@ -258,6 +261,14 @@ label torielWekufeQuestion:
     cuero "But the body and soul I'm using is from here"
     papyrus "YOU WANT TO ESCAPE THE LOOP AND GET MONSTERS' SCIENCE KNOWLEDGE"
     cuero "That's correct"
+    if not program:
+        papyrus "WHAT WOULD HAPPEN IF YOU TRY TO REVERSE THE FLOW OF DETERMINATION AGAIN?"
+        cuero "Something with your friend I'm guessing"
+        cuero "It seems you are also linked by that determination"
+        cuero "So, something will happen to you as well"
+        sans "papyrus?"
+        sans "what are you..."
+    papyrus "..."
     papyrus "I CAN FOR SURE, ONLY GIVE YOU ONE THING OF WHAT ARE YOU ASKING"
     papyrus "THE OTHER, WELL"
     papyrus "OTHER PEOPLE CAN GET ACCESS TO IT"
@@ -266,4 +277,49 @@ label torielWekufeQuestion:
     cuero "In exchange to get you out"
     papyrus "IN EXCHANGE TO GET ME OUT"
     "* Fade to white *"
+    "Gaster is talking with Toriel at her house"
+    gaster "AND THAT WAS WHAT ROUGHLY HAPPENED"
+    toriel "Those... beings have... trapped your 2nd son...."
+    toriel "And they made a spell so we'll not remember him..."
+    gaster "ACTUALLY, THE MEMORY LOSS HAS NOTHING TO DO WITH THEM"
+    gaster "AND THEY DIDN'T CAPTURE HIM, IT'S SOMETHING PAPYRUS HIMSELF DECIDED"
+    gaster "I DON'T THINK ANYONE IS ABLE TO CAPTURE HIM"
+    gaster "BUT AT THE SAME TIME HE MUST BE UNABLE TO CAPTURE ANYONE AS WELL..."
+    toriel "He sounds like your son alright"
+    toriel "Still, it's feels weird I'm not able to remember him..."
+    toriel "Frisk told me he was their friend..."
+    gaster "YES, IT'S SAD..."
+    gaster "..."
+    gaster "I DON'T KNOW WHAT WE'RE GOING TO DO"
+    gaster "WE'RE GOING TO GET HIM OUT..."
+    gaster "I DON'T THINK THE WEKUFES WILL DO WHAT THEY SAID"
+    toriel "Do you think?"
+    gaster "I..."
+    gaster "I BELIEVE THIS WAS JUST PAPYRUS FINDING AN EXCUSE TO LET ME GO"
+    toriel "You don't want that"
+    gaster "OF COURSE NOT..."
+    gaster "THIS IS MY FAULT..."
+    gaster "IF I WEREN'T TRAPPED, HE WOULD NOT BE TRAPPED RIGHT NOW"
+    gaster "I...."
+    gaster "I...."
+    toriel "You might need help for that..."
+    toriel "Where's Sans?"
+    gaster "AT HOME"
+    gaster "LOOKING AT THE CEILING..."
+    toriel "Then lets go"
+    toriel "I think Frisk is already there..."
+    scene black with dissolve
+    nvl clear
+    "WELL, YEAH, THEY ARE RIGHT"
+    "HOPEFULLY EVERYTHING IS GOING TO BE BETTER"
+    "..."
+    ".."
+    "."
+    "HOPEFULLY "
+    nvl clear
+    ""
+    stop music fadeout(1)
+    pause(1.5)
+    # $ renpy.set_return_stack([])
+    $ renpy.quit()
 return
