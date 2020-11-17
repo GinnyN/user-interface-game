@@ -81,50 +81,82 @@ label monstersForest1:
 return
 
 label wekufeTheory:
+  show papyrusImg uhh
   papyrus "I WONDER IF THEY WERE SAYING THE TRUTH"
   papyrus "HUMANS ARE REALLY STRONG AFTER ALL"
+  show gaster trapped sorry flip
   gaster "IT'S NOT MY AREA"
+  show gaster trapped oh flip
   gaster "BUT IT SEEMS OUR FRIEND THERE WERE ESTABLISHING THE THEORY THAT HUMANS HAVE VERY STRONG PARTS BUT A VERY WEAK WHOLE"
+  show papyrusImg confused
   papyrus "SO, LIKE, WHATEVER MAKE US BEEN ONE WITH OUR BODY AND OUR SOUL..."
   papyrus "IT'S KINDA... REALLY WEAK FOR HUMANS..."
+  show gaster trapped dissapointed flip
   gaster "ACCORDING TO THEM, IT SEEMS WE DO HAVE A STRONG WHOLE AFTER ALL"
   gaster "MAYBE THE REASON WHY WHEN WE ARE KILLED, OUR BODIES INMEDIATLY DISSAPEAR LIKE ASHES"
+  show papyrusImg annoyed
   papyrus "BECAUSE WE LOSE OUR CONNECTION AND WITHOUT BEEN CONNECTED OUR BODIES AREN'T STRONG ENOUGH"
   gaster "AND PROBABLY THE SAME THING WITH OUR SOULS"
+  show papyrusImg uhh
   papyrus "I WONDER IT'S THERE A WORD FOR THAT"
+  show gaster trapped explain flip
   gaster "THE WEKUFES MAY NEED A SOUL AND A BODY TO BE... BORN..."
+  show gaster trapped dissapointed flip
   gaster "APPARENTLY"
+  show gaster trapped oh flip
   gaster "AND THEY GET THEIR SOUL AND BODY FROM HUMANS BECAUSE THOSE ARE STRONGER"
+  show papyrusImg nope
   papyrus "OR, MAYBE, BECAUSE THEY ARE EASIER TO GET FOR THEM"
   papyrus "THEY DESCRIBED THE HUMANS AS REALLY WEAK, AND WE THE MONSTERS AS STRONG"
+  show papyrusImg confused
   papyrus "WHICH, LIKE, MAKE NO SENSE AT ALL!"
+  show gaster trapped dissapointed
   gaster "..."
+  show gaster trapped sorry flip
   gaster "THIS IS NOT MY AREA"
+  show papyrusImg annoyed
   papyrus "SO, WHOM?"
+  show gaster trapped dissapointed flip
   gaster "IT'S NOT SANS' AS FAR I DO KNOW"
   gaster "IT WASN'T YOURS"
   gaster "AND THE HUMAN STUDIES"
+  show papyrusImg uhh
   papyrus "HUMAN STUDIES?"
   gaster "OF THE EX-ROYAL SCIENTIST DOESN'T SEEM TO COVER THIS AREA"
+  show papyrusImg neutral
   papyrus "AH, YOU MEAN THE HUMAN CLUB"
   gaster "AND... WELL..."
   gaster "WHEN YOU HAVE THIS PROBLEM"
+  show gaster trapped maybe flip
   gaster "YOU ASK THE OLDEST MONSTER AROUND"
+  show papyrusImg uhh
   papyrus "GERSON DIED LIKE 2 MONTHS AFTER WE GOT OUT"
   papyrus "THE LEGEND MADE IT FOR SO LONG I'M PRETTY SURE ALL OF US FORGOT HE COULD DIE"
+  show gaster trapped explain flip
   gaster "THEN IT'S ONLY THE KING AND THE QUEEN"
+  show gaster trapped sorry flip
   gaster "AND AFTER THAT WOULD BE ME"
+  show papyrusImg nope
   papyrus "NO, NO, I'M NOT GOING TO ASK TORIEL ABOUT HOW TO DESTROY HUMANS"
   papyrus "SHE WILL SET ME ON FIRE AND THEN SERVE CRISPY BONES TO THE DOGS"
+  show gaster trapped oh flip
   gaster "YOU DON'T NEED TO ASK HER ABOUT HOW TO DESTROY HUMANS"
+  show gaster trapped neutral flip
   gaster "YOU NEED TO ASK HER ABOUT WHAT KEEPS BODY AND SOUL TOGETHER"
+  show papyrusImg surprised
   papyrus "AND THEN ASK HER HOW TO SEPARATE THEM?"
+  show gaster trapped sad flip
   gaster "ONLY IF YOU WANT, BUT THAT WOULD BE A GREAT INFORMATION"
+  show papyrusImg uhh
   papyrus "..."
+  show papyrusImg neutral
   papyrus "OK"
+  show papyrusImg angry
   papyrus "BUT YOU WILL HAVE TO RESET IF I SUDDENLY BECOME CRISPY DOG DESSERT"
+  show gaster trapped neutral flip
   gaster "YES"
   gaster "BUT PLEASE GET THE INFORMATION BEFORE THAT"
+  show papyrusImg annoyed flip
   papyrus "FINE"
 
   if wekufeMeeting == 2:
