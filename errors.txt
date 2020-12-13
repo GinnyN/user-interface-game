@@ -2,7 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/freeMorning/toriel-wekufe-question.rpy", line 126: indentation mismatch.
+The label _call_afterMorning is defined twice, at
+  File "game/freeMorning.rpy", line 208 and
+  File "game/freeMorning.rpy", line 299.
+
+The label _call_weddingFinal is defined twice, at
+  File "game/freeMorning.rpy", line 209 and
+  File "game/freeMorning.rpy", line 300.
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Oct 21 23:19:50 2020
+Sun Dec 13 19:34:35 2020

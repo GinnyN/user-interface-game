@@ -20,11 +20,11 @@ label displayMenuFreeMorning:
                 $ helpedToriel = True
                 $ visitSans = True
                 $ weddingFrom = 'toriel'
-                call weddingTorielSans
+                call weddingTorielSans from _call_weddingTorielSans
             #Asgore
             "I never know where the King is in the mornings" if not metAsgore:
                 $ weddingFrom = 'asgore'
-                call weddingFriskAsgore
+                call weddingFriskAsgore from _call_weddingFriskAsgore
                 $ metAsgore = True
                 $ visitFrisk = True
             #Sans
@@ -32,7 +32,7 @@ label displayMenuFreeMorning:
                 $ helpedToriel = True
                 $ visitSans = True
                 $ weddingFrom = 'sans'
-                call weddingTorielSans
+                call weddingTorielSans from _call_weddingTorielSans_1
             #Alphys
             "I want to visit Dr. Alphys..." if not visitAlphys:
                 if penAtAlphys:
@@ -50,7 +50,7 @@ label displayMenuFreeMorning:
                     gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
                     show papyrusImg coolDude delight
                     papyrus "THAT'S A GOOD IDEA"
-                    call displayMenuFreeAfternoon
+                    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon
                 else:
                     $ giveRingToUndyne = False
                     call visitAlphys from _call_visitAlphys
@@ -60,7 +60,7 @@ label displayMenuFreeMorning:
                 $ metAsgore = True
                 $ visitFrisk = True
                 $ weddingFrom = 'frisk'
-                call weddingFriskAsgore
+                call weddingFriskAsgore from _call_weddingFriskAsgore_1
             
             #Mettaton
             "Let's call to Mettaton's number" if mettatonFreeMorning and not metMettaton:
@@ -107,7 +107,7 @@ label displayMenuFreeMorning:
                 $ helpedToriel = True
                 call torielSchool from _call_torielSchool
             "I need to ask Toriel this but I don't really wanna" if not helpedToriel and askTorielWekufe:
-                call torielWekufeQuestion
+                call torielWekufeQuestion from _call_torielWekufeQuestion
                 $ helpedToriel = True
                 $ askTorielWekufe = True
 
@@ -154,7 +154,7 @@ label displayMenuFreeMorning:
                 else:
                     $ giveRingToUndyne = False
                     $ visitAlphys = True
-                    call visitAlphys
+                    call visitAlphys from _call_visitAlphys_1
             
             # Frisk
             "Go check how Frisk is doing" if not visitFrisk and not giveRingToUndyne:
@@ -204,10 +204,10 @@ label displayMenuFreeMorning:
                     $ metMettaton = True
                     call visitMettaton from _call_visitMettaton
         
-        if giveRingToUndyne and day == 3:
-            call afterMorning from _call_afterMorning
-            call weddingFinal from _call_weddingFinal
-        return
+    if giveRingToUndyne and day == 3:
+        call afterMorning from _call_afterMorning
+        call weddingFinal from _call_weddingFinal
+    return
     
 
 label displayMenuFreeAfternoon:
@@ -248,7 +248,7 @@ label displayMenuFreeAfternoon:
                     gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
                     show papyrusImg coolDude delight
                     papyrus "THAT'S A GOOD IDEA"
-                    call displayMenuFreeAfternoon
+                    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_3
                 else:
                     $ giveRingToUndyne = False
                     call afternoonAlphys from _call_afternoonAlphys
@@ -303,7 +303,7 @@ label displayMenuFreeAfternoon:
                 call afternoonToriel from _call_afternoonToriel
                 $ helpedToriel = True
             "I need to ask Toriel this but I don't really wanna" if not helpedToriel and askTorielWekufe:
-                call torielWekufeQuestion
+                call torielWekufeQuestion from _call_torielWekufeQuestion_1
                 $ helpedToriel = True
                 $ visitSans = True
                 $ askTorielWekufe = False
@@ -342,10 +342,10 @@ label displayMenuFreeAfternoon:
                     gaster "I'LL RECOMMEND VISIT SOMEONE ELSE"
                     show papyrusImg coolDude delight
                     papyrus "THAT'S A GOOD IDEA"
-                    call displayMenuFreeAfternoon
+                    call displayMenuFreeAfternoon from _call_displayMenuFreeAfternoon_4
                 else:
                     $ giveRingToUndyne = False
-                    call afternoonAlphys
+                    call afternoonAlphys from _call_afternoonAlphys_1
                     $ visitAlphys = True
             
             # Frisk
@@ -396,6 +396,6 @@ label displayMenuFreeAfternoon:
                 else:
                     $ metMettaton = True
                     call visitMettaton from _call_visitMettaton_1
-        if giveRingToUndyne:
-            call afterAfternoon from _call_afterAfternoon
-        return
+    if giveRingToUndyne:
+        call afterAfternoon from _call_afterAfternoon
+    return

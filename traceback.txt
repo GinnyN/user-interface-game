@@ -33,9 +33,11 @@ While running game code:
     call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
   File "game/freeMorning.rpy", line 110, in script call
     call torielWekufeQuestion
-  File "game/freeMorning/toriel-wekufe-question.rpy", line 128, in script
-    ivunche "Hey, Boss..."
-Exception: Sayer 'ivunche' is not defined.
+  File "game/freeMorning/toriel-wekufe-question.rpy", line 300, in script
+    scene wekufeLab with v-punch
+  File "game/freeMorning/toriel-wekufe-question.rpy", line 300, in <module>
+    scene wekufeLab with v-punch
+NameError: name 'v' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -72,15 +74,19 @@ Full traceback:
     call displayMenuFreeMorning from _call_displayMenuFreeMorning_2
   File "game/freeMorning.rpy", line 110, in script call
     call torielWekufeQuestion
-  File "game/freeMorning/toriel-wekufe-question.rpy", line 128, in script
-    ivunche "Hey, Boss..."
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 678, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 576, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'ivunche' is not defined.
+  File "game/freeMorning/toriel-wekufe-question.rpy", line 300, in script
+    scene wekufeLab with v-punch
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1385, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/freeMorning/toriel-wekufe-question.rpy", line 300, in <module>
+    scene wekufeLab with v-punch
+NameError: name 'v' is not defined
 
 Darwin-19.6.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 User Interface 0.4.2
-Thu Oct 22 19:52:58 2020
+Sun Dec 13 17:06:03 2020

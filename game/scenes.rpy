@@ -91,6 +91,10 @@ image gasterWekufe frame1 = "background/neutralGaster/gaster-wekufe.png"
 #Ending Papyrus Prison
 image papyrusPrison frame1 = "background/neutralGaster/prison-hug.png"
 
+#Ending Papyrus Wekufe
+image papyrusWekufe frame1 = "background/wekufeEnding/frame1.png"
+image papyrusWekufe frame2 = "background/wekufeEnding/frame2.png"
+
 #Ending Gaster Wedding
 image gasterWedding papyrusRoom = "background/weddingGaster/papyrusRoom.png"
 #Ending Papyrus Wedding
